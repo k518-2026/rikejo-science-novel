@@ -287,7 +287,7 @@ HTML_STUDIO_PAGE = """<!DOCTYPE html>
         <div class="tabs">
           <button class="tab-btn active" onclick="switchTab('tabPlot', this)">📐 ① 構成作家プロット (Qwen 2.5 14B)</button>
           <button class="tab-btn" onclick="switchTab('tabManuscript', this)">🖋️ ② 小説原稿＆科学コラム (Gemma 2 9B)</button>
-          <button class="tab-btn" onclick="switchTab('tabPreview', this)">🌐 ③ WordPress 投稿プレビュー＆送信</button>
+          <button class="tab-btn" onclick="switchTab('tabPreview', this)">🌐 ③ Blogger / WP 投稿プレビュー＆送信</button>
         </div>
 
         <!-- Tab 1: Plot Blueprint -->
@@ -316,7 +316,7 @@ HTML_STUDIO_PAGE = """<!DOCTYPE html>
           </div>
         </div>
 
-        <!-- Tab 3: WordPress Preview & Email Send -->
+        <!-- Tab 3: Blogger / WordPress Preview & Email Send -->
         <div id="tabPreview" class="tab-panel">
           <div class="btn-row" style="margin-bottom: 14px; align-items: center;">
             <select id="wpStatusSelect" style="width:auto;margin-bottom:0;">
@@ -324,10 +324,10 @@ HTML_STUDIO_PAGE = """<!DOCTYPE html>
               <option value="draft">下書き (draft)</option>
             </select>
             <button class="btn btn-outline" onclick="sendToWordPress(true)">🧪 Dry-Run（送信テスト）</button>
-            <button class="btn btn-writer" onclick="sendToWordPress(false)">✉️ WordPressへメール投稿する</button>
+            <button class="btn btn-writer" onclick="sendToWordPress(false)">✉️ Blogger へメール投稿する</button>
             <button class="btn btn-director" onclick="gitPushStock()">☁️ GitHubへストックをPush</button>
           </div>
-          <div id="previewFrame">ここにWordPressメール投稿用のHTMLプレビューが表示されます。</div>
+          <div id="previewFrame">ここに Blogger メール投稿用のHTMLプレビューが表示されます。</div>
         </div>
       </div>
     </div>

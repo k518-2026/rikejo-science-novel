@@ -57,7 +57,7 @@ def get_config() -> AppConfig:
     wp_post_email = os.getenv("WP_POST_EMAIL", "").strip()
     blogger_post_email = os.getenv("BLOGGER_POST_EMAIL", "").strip()
     default_status = os.getenv("DEFAULT_POST_STATUS", "publish").strip()
-    use_jetpack_shortcodes = os.getenv("USE_JETPACK_SHORTCODES", "true").lower() in ("true", "1", "yes")
+    use_jetpack_shortcodes = os.getenv("USE_JETPACK_SHORTCODES", "false").lower() in ("true", "1", "yes")
     wp_site_url = os.getenv("WP_SITE_URL", "").strip()
     gemini_api_key = os.getenv("GEMINI_API_KEY", "").strip()
     gemini_model = os.getenv("GEMINI_TEXT_MODEL", "gemini-2.5-flash").strip()

@@ -672,20 +672,20 @@ class DualLLMStoryGenerator:
         guide_body: str,
         references_block: str,
     ) -> str:
-        safe_title = episode_title.replace('"', '\\"')
-        ep_num = work.get("episode_num", 1)
+        clean_title = re.sub(r"^【第\s*\d+\s*話】\s*", "", episode_title).strip()
+        safe_title = clean_title.replace('"', '\\"')
         faculty = work.get("faculty", "理学部")
         theme = work.get("theme", "最先端科学")
         protag = work.get("protagonist", "女子高校生")
         mentor = work.get("mentor", "大学院生")
 
         return f"""---
-title: "【第{ep_num}話】{safe_title}"
+title: "{safe_title}"
 categories: ["理系女子サイエンス小説", "大学研究室ガイド"]
 tags: ["理系女子", "ライトノベル", "最新科学", "{faculty.split('・')[0]}", "Qwen2.5×Gemma2"]
 ---
 
-> **📖 『放課後サイエンス・キャンパス』 第{ep_num}話**
+> **📖 『放課後サイエンス・キャンパス』**
 > - **舞台となる研究室**: {faculty}
 > - **今回の科学テーマ**: {theme}
 > - **登場人物**: {protag} ／ {mentor}

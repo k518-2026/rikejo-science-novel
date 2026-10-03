@@ -206,7 +206,6 @@ def _fallback_markdown_to_html(md_text: str) -> str:
 
 
 def build_next_work_preview(next_work: Dict[str, Any]) -> str:
-    ep_num = next_work.get("episode_num", "")
     title = next_work.get("title", "")
     faculty = next_work.get("faculty", "")
     theme = next_work.get("theme", "")
@@ -220,7 +219,7 @@ def build_next_work_preview(next_work: Dict[str, Any]) -> str:
 
 | 項目 | 内容 |
 |:---|:---|
-| **次回タイトル** | 第{ep_num}話『{title}』 |
+| **次回タイトル** | 『{title}』 |
 | **訪れる大学・研究室** | {faculty} |
 | **学ぶ最新科学テーマ** | {theme} |
 | **あらすじ** | {summary} |
@@ -262,7 +261,8 @@ def format_post_content(
 ) -> FormattedPost:
     meta, body = parse_markdown_with_frontmatter(file_path)
 
-    title = meta.get("title", "放課後サイエンス・キャンパス")
+    raw_title = meta.get("title", "放課後サイエンス・キャンパス")
+    title = re.sub(r"^(?:【第\s*\d+\s*話】|第\s*\d+\s*話[：:\s]*)\s*", "", str(raw_title)).strip()
     categories = meta.get("categories", ["理系女子サイエンス小説"])
     if isinstance(categories, str):
         categories = [c.strip() for c in categories.split(",")]
@@ -274,6 +274,7 @@ def format_post_content(
     status = status_override or meta.get("status", "publish")
 
     cleaned_body = re.sub(r"\[(category|tags|status|title|excerpt)[^\]]*\]", "", body).strip()
+    cleaned_body = re.sub(r"(『放課後サイエンス・キャンパス』)\s*第\s*\d+\s*話", r"\1", cleaned_body)
 
     if next_work and "次回エピソード予告" not in cleaned_body:
         cleaned_body += build_next_work_preview(next_work)

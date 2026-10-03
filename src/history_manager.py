@@ -131,9 +131,9 @@ class HistoryManager:
 
     def _update_markdown_table(self):
         lines = [
-            "# 投稿済み『放課後サイエンス・キャンパス』エピソード一覧\n",
-            "Mac mini ローカルLLM（構成作家 `qwen2.5:14b` × 執筆作家 `gemma2:9b`）と Crossref 査読論文検証により執筆・WordPressメール投稿された作品一覧です。\n\n",
-            "| 話数 | 投稿日 (JST) | エピソードタイトル | 大学の学部・研究室 | 科学テーマ | 主な引用論文 (DOI) | 状態 |",
+            "# 投稿済み『放課後サイエンス・キャンパス』作品一覧\n",
+            "Mac mini ローカルLLM（構成作家 `qwen2.5:14b` × 執筆作家 `gemma2:9b`）と Crossref 査読論文検証により執筆・Blogger/WPメール投稿された作品一覧です。\n\n",
+            "| No. | 投稿日 (JST) | 作品タイトル | 大学の学部・研究室 | 科学テーマ | 主な引用論文 (DOI) | 状態 |",
             "|:---:|:---:|:---|:---|:---|:---|:---:|",
         ]
 
@@ -142,14 +142,14 @@ class HistoryManager:
         else:
             for i, item in enumerate(self.history, start=1):
                 date_str = item.get("posted_at", "")[:10]
-                ep_num = item.get("episode_num", i)
-                title = item.get("episode_title", "")
+                raw_t = item.get("episode_title", "")
+                title = raw_t.replace("【第1話】", "").replace("【第2話】", "").strip()
                 faculty = item.get("faculty", "")
                 theme = item.get("theme", "")
                 refs = item.get("references", [])
                 ref_summary = ", ".join([r.split(".")[0] for r in refs[:2]]) if refs else "Nature/Science"
                 status = item.get("status", "published").capitalize()
-                lines.append(f"| 第{ep_num}話 | {date_str} | {title} | {faculty} | {theme} | {ref_summary} | {status} |")
+                lines.append(f"| {i} | {date_str} | {title} | {faculty} | {theme} | {ref_summary} | {status} |")
 
         TABLE_FILE.parent.mkdir(parents=True, exist_ok=True)
         TABLE_FILE.write_text("\n".join(lines) + "\n", encoding="utf-8")

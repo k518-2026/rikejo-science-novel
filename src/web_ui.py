@@ -375,7 +375,7 @@ HTML_STUDIO_PAGE = """<!DOCTYPE html>
         const opt = document.createElement('option');
         opt.value = ep.id;
         const badge = ep.posted ? '【配信済】' : (ep.stocked ? '【ストック済】' : '【未執筆】');
-        opt.textContent = `${badge} 第${ep.episode_num}話：${ep.title}（${ep.faculty}）`;
+        opt.textContent = `${badge} ${ep.title}（${ep.faculty}）`;
         sel.appendChild(opt);
       });
 
@@ -417,7 +417,7 @@ HTML_STUDIO_PAGE = """<!DOCTYPE html>
       if (data.content) {
         document.getElementById('manuscriptEditor').value = data.content;
         document.getElementById('previewFrame').innerHTML = data.html_preview || '';
-        logMsg(`第${ep.episode_num}話の保存済み原稿（${data.file_path}）を読み込みました。`);
+        logMsg(`保存済み原稿（${data.file_path}）を読み込みました。`);
       } else {
         document.getElementById('manuscriptEditor').value = '';
         document.getElementById('previewFrame').innerHTML = '（まだ原稿が生成されていません）';

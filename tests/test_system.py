@@ -15,12 +15,12 @@ class TestRikejoSystem(unittest.TestCase):
     def test_post_formatter_and_dry_run_sender(self):
         tmp_md = Path("tests/_tmp_test_ep.md")
         tmp_md.write_text(
-            '---\ntitle: "【第1話】テスト光るペチュニア"\ncategories: ["理系女子サイエンス小説"]\ntags: ["理系女子", "合成生物学"]\n---\n\n本文テストです。\n\n* * *\n\n第2シーンです。\n',
+            '---\ntitle: "テスト光るペチュニア"\ncategories: ["理系女子サイエンス小説"]\ntags: ["理系女子", "合成生物学"]\n---\n\n本文テストです。\n\n* * *\n\n第2シーンです。\n',
             encoding="utf-8",
         )
         try:
             formatted = format_post_content(str(tmp_md))
-            self.assertEqual(formatted.title, "【第1話】テスト光るペチュニア")
+            self.assertEqual(formatted.title, "テスト光るペチュニア")
             self.assertIn("✦ ✦ ✦", formatted.content_html)
             self.assertNotIn("<hr", formatted.content_html.lower())
 

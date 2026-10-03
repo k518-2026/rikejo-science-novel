@@ -264,7 +264,7 @@ class DualLLMStoryGenerator:
             return body.get("message", {}).get("content", "").strip()
 
     def _clean_llm_output(self, text: str) -> str:
-        """Removes <think> blocks, markdown code fences, and unwanted meta scene headers."""
+        """Removes <think> blocks, markdown code fences, unwanted meta scene headers, and repetition loops."""
         text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
         if text.startswith("```markdown"):
             text = text[len("```markdown"):].strip()
@@ -273,19 +273,23 @@ class DualLLMStoryGenerator:
         if text.endswith("```"):
             text = text[:-3].strip()
         text = re.sub(r"^[ \t]*#+[ \t]*(\*\s*\*\s*\*)[ \t]*$", r"\1", text, flags=re.MULTILINE)
+        text = re.sub(r"^[ \t]*#+[ \t]*\*+[ \t]*$", "* * *", text, flags=re.MULTILINE)
         text = re.sub(
-            r"^[ \t]*#+[ \t]*(?:第\s*[0-9一二三四五六]+\s*(?:シーン|幕|章|部)|シーン\s*[0-9一二三四五六]+).*$",
+            r"^[ \t]*(?:#+[ \t]*)?[【\[（(]?(?:第\s*[0-9一二三四五六七八九十]+\s*(?:シーン|幕|章|部|節)|シーン\s*[0-9一二三四五六七八九十]+)[】\]）)]?(?:[：:\s—―-].*)?$",
             "",
             text,
             flags=re.MULTILINE,
         )
-        text = re.sub(
-            r"^[ \t]*(?:【第\s*[0-9一二三四五六]+\s*(?:シーン|幕|章|部).*?】)[ \t]*$",
-            "",
-            text,
-            flags=re.MULTILINE,
-        )
-        return text.strip()
+        seen_long_lines = set()
+        deduped_lines = []
+        for line in text.splitlines():
+            s = line.strip()
+            if len(s) >= 35 and s not in ("* * *", "---"):
+                if s in seen_long_lines:
+                    continue
+                seen_long_lines.add(s)
+            deduped_lines.append(line)
+        return "\n".join(deduped_lines).strip()
 
     def _build_character_context(self, work: Dict[str, Any]) -> str:
         """Extracts matching character profiles from lorebook or falls back to work metadata."""

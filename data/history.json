@@ -12,35 +12,5 @@
       "Vukusic, P., Sambles, J. R. (2003). Photonic structures in biology. *Nature*, 424(6950), 852-855. [https://doi.org/10.1038/nature01941](https://doi.org/10.1038/nature01941)",
       "Takeoka, Y., Yoshioka, S., Takano, A., Arai, S., Nueangnoraj, K., Nishihara, H., et al. (2013). Production of Colored Pigments with Amorphous Arrays of Black and White Colloidal Particles. *Angewandte Chemie*, 125(28), 7402-7406. [https://doi.org/10.1002/ange.201301321](https://doi.org/10.1002/ange.201301321)"
     ]
-  },
-  {
-    "work_id": "ep01-bioluminescence-plant",
-    "episode_num": 1,
-    "faculty": "農学部・応用生命科学科（合成生物学研究室）",
-    "theme": "自律発光植物（真菌ルシフェリン代謝経路の植物導入）",
-    "episode_title": "夜明け前の温室で見つけた光る花々～生命の設計図を読み解く魔法～",
-    "posted_at": "2026-10-04T02:02:57.912010+09:00",
-    "file_path": "content/2026-10-04_ep01_bioluminescence_plant.md",
-    "status": "publish",
-    "references": [
-      "Mitiouchkina, T., Mishin, A. S., Somermeyer, L. G., Markina, N. M., Chepurnyh, T. V., Guglya, E. B., et al. (2020). Plants with genetically encoded autoluminescence. *Nature Biotechnology*, 38(8), 944-946. [https://doi.org/10.1038/s41587-020-0500-9](https://doi.org/10.1038/s41587-020-0500-9)",
-      "Strack, R. (2019). Harnessing fungal bioluminescence. *Nature Methods*, 16(2), 140-140. [https://doi.org/10.1038/s41592-019-0311-4](https://doi.org/10.1038/s41592-019-0311-4)",
-      "Shimomura, O., Chalfie, M., Tsien, R. Y. (2009). Cover Picture: Discovery of Green Fluorescent Protein (GFP) (Nobel Lecture) / GFP: Lighting Up Life (Nobel Lecture) / Constructing and Exploiting the Fluorescent Protein Paintbox (Nobel Lecture) (Angew. Chem. Int. Ed. 31/2009). *Angewandte Chemie International Edition*, 48(31), 5555-5555. [https://doi.org/10.1002/anie.200990159](https://doi.org/10.1002/anie.200990159)"
-    ]
-  },
-  {
-    "work_id": "ep03-mrna-lipid-nanoparticle-delivery",
-    "episode_num": 3,
-    "faculty": "薬学部・創薬科学科（ドラッグデリバリーシステム研究室）",
-    "theme": "脂質ナノ粒子（LNP）とmRNA医薬の標的細胞デリバリー",
-    "episode_title": "薬の魔法瓶 ―― 細胞への秘密の手紙",
-    "posted_at": "2026-10-04T02:31:23.314599+09:00",
-    "file_path": "content/2026-10-04_ep03_mrna_lipid_nanoparticle_delivery.md",
-    "status": "publish",
-    "references": [
-      "Karikó, K., Buckstein, M., Ni, H., Weissman, D. (2005). Suppression of RNA Recognition by Toll-like Receptors: The Impact of Nucleoside Modification and the Evolutionary Origin of RNA. *Immunity*, 23(2), 165-175. [https://doi.org/10.1016/j.immuni.2005.06.008](https://doi.org/10.1016/j.immuni.2005.06.008)",
-      "Cullis, P. R., Hope, M. J. (2017). Lipid Nanoparticle Systems for Enabling Gene Therapies. *Molecular Therapy*, 25(7), 1467-1475. [https://doi.org/10.1016/j.ymthe.2017.03.013](https://doi.org/10.1016/j.ymthe.2017.03.013)",
-      "Cheng, Q., Wei, T., Farbiak, L., Johnson, L. T., Dilliard, S. A., Siegwart, D. J. (2020). Selective organ targeting (SORT) nanoparticles for tissue-specific mRNA delivery and CRISPR–Cas gene editing. *Nature Nanotechnology*, 15(4), 313-320. [https://doi.org/10.1038/s41565-020-0669-6](https://doi.org/10.1038/s41565-020-0669-6)"
-    ]
   }
 ]

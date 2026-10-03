@@ -24,6 +24,57 @@ class WordPressMailSender:
     def __init__(self, config: AppConfig):
         self.config = config
 
+    @staticmethod
+    def _sanitize_html_for_blogger(html_text: str) -> str:
+        """
+        Simplifies HTML specifically for Blogger's 'Post using email' and strict outbound SMTP filters (e.g., Outlook.com 550 5.7.520):
+        1. Replaces <a href="...">text</a> with plain text (eliminates external URL spam-filter triggers while keeping DOI strings intact).
+        2. Converts <table> rows into simple <p> lines.
+        3. Converts styled blockquote / callout divs into clean <blockquote><p>...</p></blockquote>.
+        4. Strips inline style="..." and class="..." attributes so only lightweight semantic tags remain.
+        """
+        cleaned = html_text
+        # 1. Strip <a> tags, keeping inner text (e.g. 'DOI: 10.xxxx/...')
+        cleaned = re.sub(r"<a\b[^>]*>(.*?)</a>", r"\1", cleaned, flags=re.IGNORECASE | re.DOTALL)
+        # Remove any remaining bare http/https URLs
+        cleaned = re.sub(r"https?://(?:dx\.)?doi\.org/(10\.\S+)", r"DOI: \1", cleaned)
+        cleaned = re.sub(r"https?://\S+", "", cleaned)
+
+        # 2. Convert <table> blocks into simple paragraphs
+        def _table_to_paragraphs(match: re.Match) -> str:
+            tbl = match.group(0)
+            rows = re.findall(r"<tr\b[^>]*>(.*?)</tr>", tbl, flags=re.IGNORECASE | re.DOTALL)
+            p_lines = []
+            for row in rows:
+                if "<th" in row.lower():
+                    continue
+                cells = re.findall(r"<td\b[^>]*>(.*?)</td>", row, flags=re.IGNORECASE | re.DOTALL)
+                if len(cells) >= 2:
+                    k = re.sub(r"<[^>]+>", "", cells[0]).strip()
+                    v = cells[1].strip()
+                    p_lines.append(f"<p>・<strong>{k}</strong>：{v}</p>")
+            return "\n".join(p_lines)
+
+        cleaned = re.sub(r"<table\b[^>]*>.*?</table>", _table_to_paragraphs, cleaned, flags=re.IGNORECASE | re.DOTALL)
+
+        # 3. Replace styled scene divider divs with simple <p>
+        cleaned = re.sub(
+            r"<div\b[^>]*>\s*(?:✦ ✦ ✦|◆ ◆ ◆)\s*</div>",
+            "<p>✦ ✦ ✦</p>",
+            cleaned,
+            flags=re.IGNORECASE,
+        )
+
+        # 4. Convert remaining callout/header <div>...</div> blocks into <p>...</p> and strip outer container divs
+        cleaned = re.sub(r"<div\b[^>]*class=[\"']rikejo-novel-container[\"'][^>]*>", "", cleaned, flags=re.IGNORECASE)
+        cleaned = re.sub(r"<div\b[^>]*>(.*?)</div>", r"<p>\1</p>", cleaned, flags=re.IGNORECASE | re.DOTALL)
+        cleaned = re.sub(r"</?div\b[^>]*>", "", cleaned, flags=re.IGNORECASE)
+
+        # 5. Strip all inline style="..." and class="..." attributes
+        cleaned = re.sub(r'\s+(?:style|class)=["\'][^"\']*["\']', "", cleaned, flags=re.IGNORECASE)
+
+        return cleaned.strip()
+
     def create_mime_message(
         self,
         post: FormattedPost,
@@ -50,23 +101,12 @@ class WordPressMailSender:
         msg["Message-ID"] = make_msgid(domain=domain)
 
         if for_blogger:
-            html_body = post.content_html_clean or post.content_html
-            # Convert <a href="https://doi.org/10.xxxx">...</a> to clean non-clickable text 'DOI: 10.xxxx'
-            # so Outlook.com outbound and Blogger inbound filters never flag external redirect links
-            html_body = re.sub(
-                r'<a\b[^>]*href=["\']https?://(?:dx\.)?doi\.org/(10\.[^"\']+)["\'][^>]*>.*?</a>',
-                r'<span style="color:#0284c7;font-family:monospace;">DOI: \1</span>',
-                html_body,
-                flags=re.IGNORECASE | re.DOTALL,
-            )
-            # Strip any remaining external <a> tags while keeping inner text
-            html_body = re.sub(r"<a\b[^>]*>(.*?)</a>", r"\1", html_body, flags=re.IGNORECASE | re.DOTALL)
-            html_body = re.sub(r"https?://(?:dx\.)?doi\.org/(10\.\S+)", r"DOI: \1", html_body)
-
             raw_plain = post.content_plain_clean or post.content_plain
             plain_body = re.sub(r"\[([^\]]+)\]\(https?://[^\)]+\)", r"\1", raw_plain)
             plain_body = re.sub(r"https?://(?:dx\.)?doi\.org/(10\.\S+)", r"DOI: \1", plain_body)
             plain_body = re.sub(r"https?://\S+", "", plain_body)
+            raw_html = post.content_html_clean or post.content_html
+            html_body = self._sanitize_html_for_blogger(raw_html)
         else:
             plain_body = post.content_plain
             html_body = post.content_html

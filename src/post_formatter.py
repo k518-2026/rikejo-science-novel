@@ -278,6 +278,16 @@ def format_post_content(
     cleaned_body = re.sub(r"^[ \t]*>[ \t]*-[ \t]*\*\*執筆システム\*\*.*?\n", "", cleaned_body, flags=re.MULTILINE)
     cleaned_body = re.sub(r"---+\s*\n+###\s*🌸\s*【次回エピソード予告】.*$", "", cleaned_body, flags=re.DOTALL).strip()
 
+    # Pre-clean: strip bare scene headers
+    cleaned_body = re.sub(r"^[ \t]*#+[ \t]*(\*\s*\*\s*\*)[ \t]*$", r"\1", cleaned_body, flags=re.MULTILINE)
+    cleaned_body = re.sub(r"^[ \t]*#+[ \t]*\*+[ \t]*$", "* * *", cleaned_body, flags=re.MULTILINE)
+    cleaned_body = re.sub(
+        r"^[ \t]*(?:#+[ \t]*)?[【\[（(]?(?:第\s*[0-9一二三四五六七八九十]+\s*(?:シーン|幕|章|部|節)|シーン\s*[0-9一二三四五六七八九十]+)[】\]）)]?(?:[：:\s—―-].*)?$",
+        "",
+        cleaned_body,
+        flags=re.MULTILINE,
+    )
+
     # Replace --- lines with safe scene dividers to avoid WordPress email truncation
     cleaned_body = re.sub(r"^[ \t]*[-*_]{3,}[ \t]*$", "✦ ✦ ✦", cleaned_body, flags=re.MULTILINE)
 
@@ -285,8 +295,8 @@ def format_post_content(
 
     # Ensure all links open in new tab and format DOI anchor text cleanly
     html_body = re.sub(
-        r'(<a\b[^>]*href=["\']https?://(?:dx\.)?doi\.org/(10\.[^"\']+)["\'][^>]*>)\s*https?://(?:dx\.)?doi\.org/[^<]+\s*(</a>)',
-        r"\1DOI: \2\3",
+        r'(?:DOI:\s*)?(<a\b[^>]*href=["\']https?://(?:dx\.)?doi\.org/(10\.[^"\']+)["\'][^>]*>)\s*https?://(?:dx\.)?doi\.org/[^<]+\s*(</a>)',
+        r"DOI: \1\2\3",
         html_body,
         flags=re.IGNORECASE,
     )
@@ -320,6 +330,6 @@ def format_post_content(
         content_raw=cleaned_body,
         content_html=final_html,
         content_plain=final_plain,
-        content_html_clean=styled_html,
+        content_html_clean=html_body,
         content_plain_clean=cleaned_body,
     )

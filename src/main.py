@@ -196,12 +196,12 @@ def main():
             sys.exit(1)
 
         existing_file = history_mgr.find_stock_file_for_work(target_work["id"])
-        if existing_file and not args.force:
+        conn = generator.check_connection() if (args.force or not existing_file) else {"online": False}
+        if existing_file and (not args.force or not conn.get("online")):
             target_file = existing_file
             logger.info(f"Using pre-stocked episode file from content/: {target_file}")
             target_refs = extract_refs_from_markdown(target_file.read_text(encoding="utf-8", errors="ignore"))
         else:
-            conn = generator.check_connection()
             if not conn.get("online"):
                 logger.error(
                     f"Mac mini Ollama ({config.ollama_host}) is not reachable and no pre-stocked file found for '{target_work['id']}'."

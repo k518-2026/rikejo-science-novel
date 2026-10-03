@@ -201,12 +201,7 @@ def main():
             target_file = existing_file
             logger.info(f"Using pre-stocked episode file from content/: {target_file}")
             target_refs = extract_refs_from_markdown(target_file.read_text(encoding="utf-8", errors="ignore"))
-        else:
-            if not conn.get("online"):
-                logger.error(
-                    f"Mac mini Ollama ({config.ollama_host}) is not reachable and no pre-stocked file found for '{target_work['id']}'."
-                )
-                sys.exit(1)
+        elif conn.get("online"):
             full_md, ep_title, target_refs, _ = generator.generate_complete_episode(work=target_work)
             today_str = datetime.now(JST).strftime("%Y-%m-%d")
             safe_id = target_work["id"].replace("-", "_")
@@ -214,6 +209,26 @@ def main():
             target_file.parent.mkdir(parents=True, exist_ok=True)
             target_file.write_text(full_md, encoding="utf-8")
             logger.info(f"Generated episode saved to: {target_file}")
+        else:
+            # Running on GitHub Actions cloud runner (cannot reach local Mac mini 192.168.128.59):
+            # If user clicked Run workflow without specifying work_id, fall back to the latest stocked episode in content/
+            stocked_candidates = []
+            for w in history_mgr.catalog:
+                sf = history_mgr.find_stock_file_for_work(w["id"])
+                if sf is not None:
+                    stocked_candidates.append((w, sf))
+            if stocked_candidates:
+                target_work, target_file = stocked_candidates[-1]
+                logger.info(
+                    f"Mac mini ({config.ollama_host}) is on local LAN; falling back to latest pre-stocked episode "
+                    f"'{target_work['id']}' ({target_file}) for dispatch."
+                )
+                target_refs = extract_refs_from_markdown(target_file.read_text(encoding="utf-8", errors="ignore"))
+            else:
+                logger.error(
+                    f"Mac mini Ollama ({config.ollama_host}) is not reachable and no pre-stocked file found in content/."
+                )
+                sys.exit(1)
 
     next_work = None
     if target_work:

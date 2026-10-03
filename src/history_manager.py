@@ -76,10 +76,18 @@ class HistoryManager:
                     return w
             return unposted[0]
 
-        if force or len(posted_ids) >= len(self.catalog):
+        if force and self.catalog:
             return self.catalog[0]
 
         return None
+
+    def remove_from_history(self, work_id: str):
+        """Removes a specific work_id from history so it can be posted cleanly as an unposted episode."""
+        self.history = [item for item in self.history if item.get("work_id") != work_id]
+        self.history_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(self.history_path, "w", encoding="utf-8") as f:
+            json.dump(self.history, f, ensure_ascii=False, indent=2)
+        self._update_markdown_table()
 
     def reset_history(self, work_ids: Optional[List[str]] = None):
         if work_ids is None:

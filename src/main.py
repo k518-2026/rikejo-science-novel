@@ -118,6 +118,7 @@ def main():
     parser.add_argument("--force", action="store_true", help="Force regeneration even if stock or history exists")
     parser.add_argument("--web", action="store_true", help="Launch the interactive Web UI Studio in browser")
     parser.add_argument("--port", type=int, default=8505, help="Port for the Web UI Studio (default: 8505)")
+    parser.add_argument("--repost", default=None, help="Re-post a specific episode number or ID (e.g., 1, 2, ep01-bioluminescence-plant, or reset_all)")
     parser.add_argument("--verbose", "-v", action="store_true", help="Enable debug logging")
 
     args = parser.parse_args()
@@ -130,6 +131,22 @@ def main():
 
     config = get_config()
     history_mgr = HistoryManager()
+
+    if args.repost:
+        rep_val = str(args.repost).strip()
+        if rep_val == "reset_all":
+            history_mgr.reset_history()
+            logger.info("Reset all posting history.")
+        else:
+            matched_w = None
+            for w in history_mgr.catalog:
+                if w["id"] == rep_val or str(w.get("episode_num")) == rep_val:
+                    matched_w = w
+                    break
+            if matched_w:
+                history_mgr.remove_from_history(matched_w["id"])
+                args.work_id = matched_w["id"]
+                logger.info(f"Removed '{matched_w['id']}' from history so it can be cleanly posted.")
 
     if args.status_report:
         print_stock_status(history_mgr)
@@ -190,10 +207,35 @@ def main():
                 break
         target_refs = extract_refs_from_markdown(target_file.read_text(encoding="utf-8", errors="ignore"))
     else:
+        # Prevent duplicate consecutive posts when manual dispatch and scheduled cron overlap
+        if os.getenv("GITHUB_EVENT_NAME") == "schedule" and not args.force and history_mgr.history:
+            last_entry = history_mgr.history[-1]
+            last_posted_str = last_entry.get("posted_at", "")
+            if last_posted_str:
+                try:
+                    last_dt = datetime.fromisoformat(last_posted_str)
+                    elapsed_minutes = (datetime.now(JST) - last_dt).total_seconds() / 60.0
+                    if 0 <= elapsed_minutes < 120:
+                        logger.info(
+                            f"An episode ('{last_entry.get('episode_title')}') was already published "
+                            f"{elapsed_minutes:.1f} minutes ago. Skipping scheduled run to prevent duplicate posting."
+                        )
+                        return
+                except Exception as e:
+                    logger.warning(f"Could not parse last posted_at timestamp: {e}")
+
         target_work = history_mgr.select_next_work(work_id=args.work_id, force=args.force)
         if not target_work:
-            logger.error("No unposted episodes found in catalog!")
-            sys.exit(1)
+            logger.info("All catalog episodes have already been published! Skipping to prevent duplicate posts.")
+            return
+
+        posted_ids = history_mgr.get_posted_ids()
+        if target_work["id"] in posted_ids and not args.force and not args.repost:
+            logger.info(
+                f"Episode '{target_work['id']}' ({target_work['title']}) is already recorded in data/history.json as published. "
+                f"Skipping to strictly prevent duplicate posts. (Use --repost or --force if you intend to re-send.)"
+            )
+            return
 
         existing_file = history_mgr.find_stock_file_for_work(target_work["id"])
         conn = generator.check_connection() if (args.force or not existing_file) else {"online": False}
@@ -211,24 +253,26 @@ def main():
             logger.info(f"Generated episode saved to: {target_file}")
         else:
             # Running on GitHub Actions cloud runner (cannot reach local Mac mini 192.168.128.59):
-            # If user clicked Run workflow without specifying work_id, fall back to the latest stocked episode in content/
-            stocked_candidates = []
+            # Look ONLY for an UNPOSTED stocked episode in content/ so we NEVER send a duplicate
+            unposted_stocked = []
             for w in history_mgr.catalog:
+                if w["id"] in posted_ids:
+                    continue
                 sf = history_mgr.find_stock_file_for_work(w["id"])
                 if sf is not None:
-                    stocked_candidates.append((w, sf))
-            if stocked_candidates:
-                target_work, target_file = stocked_candidates[-1]
+                    unposted_stocked.append((w, sf))
+            if unposted_stocked:
+                target_work, target_file = unposted_stocked[0]
                 logger.info(
-                    f"Mac mini ({config.ollama_host}) is on local LAN; falling back to latest pre-stocked episode "
-                    f"'{target_work['id']}' ({target_file}) for dispatch."
+                    f"Selected unposted pre-stocked episode '{target_work['id']}' ({target_file}) for dispatch."
                 )
                 target_refs = extract_refs_from_markdown(target_file.read_text(encoding="utf-8", errors="ignore"))
             else:
-                logger.error(
-                    f"Mac mini Ollama ({config.ollama_host}) is not reachable and no pre-stocked file found in content/."
+                logger.info(
+                    "No unposted pre-stocked episodes remain in content/ and Mac mini is on local LAN. "
+                    "Skipping dispatch to prevent duplicate posts."
                 )
-                sys.exit(1)
+                return
 
     next_work = None
     if target_work:

@@ -30,6 +30,26 @@ on:
         required: false
         type: string
         default: ''
+      repost:
+        description: 'Re-post a specific episode (1: 第1話 光るペチュニア, 2: 第2話 モルフォ蝶, or reset_all)'
+        required: false
+        type: choice
+        options:
+          - none
+          - "1"
+          - "2"
+          - "3"
+          - "4"
+          - "5"
+          - "6"
+          - "7"
+          - "8"
+          - "9"
+          - "10"
+          - "11"
+          - "12"
+          - reset_all
+        default: 'none'
       force:
         description: 'Force re-post even if already published'
         required: false
@@ -78,6 +98,7 @@ jobs:
           DEFAULT_POST_STATUS: ${{ github.event.inputs.post_status || 'publish' }}
           INPUT_DRY_RUN: ${{ github.event.inputs.dry_run }}
           INPUT_WORK_ID: ${{ github.event.inputs.work_id }}
+          INPUT_REPOST: ${{ github.event.inputs.repost }}
           INPUT_FORCE: ${{ github.event.inputs.force }}
         run: |
           git pull --rebase origin main || true
@@ -87,7 +108,9 @@ jobs:
           else
             ARGS="$ARGS --send"
           fi
-          if [ -n "$INPUT_WORK_ID" ]; then
+          if [ -n "$INPUT_REPOST" ] && [ "$INPUT_REPOST" != "none" ]; then
+            ARGS="$ARGS --repost $INPUT_REPOST"
+          elif [ -n "$INPUT_WORK_ID" ]; then
             ARGS="$ARGS --work-id $INPUT_WORK_ID"
           fi
           if [ "$INPUT_FORCE" = "true" ]; then

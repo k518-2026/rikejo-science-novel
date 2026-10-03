@@ -96,9 +96,9 @@ def git_sync_and_push(generated_files: List[Path]) -> bool:
 
 def extract_refs_from_markdown(md_text: str) -> List[str]:
     refs = []
-    for m in re.finditer(r"^\d+\.\s+(.+?https?://doi\.org/\S+)", md_text, flags=re.MULTILINE | re.DOTALL):
-        line = " ".join(m.group(1).splitlines())
-        refs.append(line.strip())
+    ref_sec = md_text.split("【引用・参考文献")[-1] if "【引用・参考文献" in md_text else md_text
+    for m in re.finditer(r"^\d+\.\s+([^\n]+)\n\s*(\[https?://doi\.org/[^\]]+\]\([^\)]+\))", ref_sec, flags=re.MULTILINE):
+        refs.append(f"{m.group(1).strip()} {m.group(2).strip()}")
     return refs
 
 

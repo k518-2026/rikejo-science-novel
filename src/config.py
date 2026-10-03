@@ -47,9 +47,15 @@ def get_config() -> AppConfig:
     director_model = os.getenv("OLLAMA_DIRECTOR_MODEL", "qwen2.5:14b").strip()
     writer_model = os.getenv("OLLAMA_WRITER_MODEL", "gemma2:9b").strip()
 
-    smtp_host = os.getenv("SMTP_HOST", "smtp.gmail.com").strip()
-    smtp_port = int(os.getenv("SMTP_PORT", "587"))
     smtp_user = os.getenv("SMTP_USER", "").strip()
+    raw_smtp_host = os.getenv("SMTP_HOST", "").strip()
+    if raw_smtp_host:
+        smtp_host = raw_smtp_host
+    elif any(smtp_user.lower().endswith(d) for d in ("@outlook.com", "@hotmail.com", "@live.com", "@outlook.jp")):
+        smtp_host = "smtp-mail.outlook.com"
+    else:
+        smtp_host = "smtp.gmail.com"
+    smtp_port = int(os.getenv("SMTP_PORT", "587"))
     smtp_password = os.getenv("SMTP_PASSWORD", "").strip()
     smtp_use_tls = os.getenv("SMTP_USE_TLS", "true").lower() in ("true", "1", "yes")
     smtp_use_ssl = os.getenv("SMTP_USE_SSL", "false").lower() in ("true", "1", "yes")

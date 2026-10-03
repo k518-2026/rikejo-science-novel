@@ -50,10 +50,23 @@ class WordPressMailSender:
         msg["Message-ID"] = make_msgid(domain=domain)
 
         if for_blogger:
+            html_body = post.content_html_clean or post.content_html
+            # Convert <a href="https://doi.org/10.xxxx">...</a> to clean non-clickable text 'DOI: 10.xxxx'
+            # so Outlook.com outbound and Blogger inbound filters never flag external redirect links
+            html_body = re.sub(
+                r'<a\b[^>]*href=["\']https?://(?:dx\.)?doi\.org/(10\.[^"\']+)["\'][^>]*>.*?</a>',
+                r'<span style="color:#0284c7;font-family:monospace;">DOI: \1</span>',
+                html_body,
+                flags=re.IGNORECASE | re.DOTALL,
+            )
+            # Strip any remaining external <a> tags while keeping inner text
+            html_body = re.sub(r"<a\b[^>]*>(.*?)</a>", r"\1", html_body, flags=re.IGNORECASE | re.DOTALL)
+            html_body = re.sub(r"https?://(?:dx\.)?doi\.org/(10\.\S+)", r"DOI: \1", html_body)
+
             raw_plain = post.content_plain_clean or post.content_plain
             plain_body = re.sub(r"\[([^\]]+)\]\(https?://[^\)]+\)", r"\1", raw_plain)
             plain_body = re.sub(r"https?://(?:dx\.)?doi\.org/(10\.\S+)", r"DOI: \1", plain_body)
-            html_body = post.content_html_clean or post.content_html
+            plain_body = re.sub(r"https?://\S+", "", plain_body)
         else:
             plain_body = post.content_plain
             html_body = post.content_html

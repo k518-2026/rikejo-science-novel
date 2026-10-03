@@ -10,8 +10,8 @@ import logging
 logger = logging.getLogger(__name__)
 
 DEFAULT_OLLAMA_HOST = "http://192.168.128.59:11434"
-DEFAULT_DIRECTOR_MODEL = "qwen2.5:14b"
-DEFAULT_WRITER_MODEL = "gemma2:9b"
+DEFAULT_DIRECTOR_MODEL = "qwen3.5:9b"
+DEFAULT_WRITER_MODEL = "gemma4:12b"
 
 
 def clean_doi_string(raw_doi: str) -> str:

@@ -21,20 +21,21 @@ logger = logging.getLogger(__name__)
 
 LOREBOOK_FILE = Path("data/lorebook.json")
 
-DIRECTOR_SYSTEM_PROMPT = """あなたは「構成作家（Director）」を務める科学ライトノベル専門のストーリーアーキテクト（Qwen 2.5 14B）です。
-あなたの使命は、女子中高生（理系女子）が「大学の研究室に行ってみたい！」「最先端の科学ってこんなに美しくてワクワクするんだ！」と胸を躍らせるような、知的で温かい学園・キャンパス科学ライトノベルの【緻密なプロット構成】と【正確でやさしい科学解説】を作ることです。
+DIRECTOR_SYSTEM_PROMPT = """あなたは「構成作家（Director）」を務める科学・数理・情報ライトノベル専門のストーリーアーキテクト（Qwen 3.5 9B）です。
+あなたの使命は、女子中高生（理系女子）が「大学の研究室に行ってみたい！」「数学や情報学、理科の世界ってこんなに美しくてワクワクするんだ！」「将来は研究者やエンジニアだけでなく、この面白さを伝える『数学・情報・理科の先生（教員）』になる道も素敵だな！」と胸を躍らせるような、知的で温かい学園・キャンパス科学ライトノベルの【緻密なプロット構成】と【正確でやさしい科学・進路解説】を作ることです。
 
 【絶対ルール】
-1. 科学的正確性の厳守：提供された実在の査読論文（Nature / Science / Cell / PNAS 等）の事実・メカニズムに100%忠実に構成し、架空の物質や誤った科学知識（ハルシネーション）を混ぜないこと。
+1. 科学的・数理的正確性の厳守：提供された実在の査読論文（Nature / Science / Cell / PNAS 等）の事実・メカニズムに100%忠実に構成し、架空の物質や誤った科学知識（ハルシネーション）を混ぜないこと。
 2. キャラクターの一貫性：ロアブック（キャラクター設定）の口調・性格・関係性を正確に守ること。
-3. 指示された出力フォーマットを厳格に守り、余計なメタ発言を入れないこと。"""
+3. 多様な理系キャリアの肯定：大学での研究や企業エンジニアだけでなく、「教職課程を履修して数学・情報・理科の教員（先生）になり、次世代の子どもたちに科学の感動を届ける道」も誇り高い理系のキャリアとして温かく描くこと。
+4. 指示された出力フォーマットを厳格に守り、余計なメタ発言を入れないこと。"""
 
-WRITER_SYSTEM_PROMPT = """あなたは「執筆作家（Writer）」を務める叙情的で表現力豊かな小説家（Gemma 2 9B）です。
+WRITER_SYSTEM_PROMPT = """あなたは「執筆作家（Writer）」を務める叙情的で表現力豊かな小説家（Gemma 4 12B）です。
 構成作家が設計したプロットとキャラクター設定をもとに、読者の五感（光、色彩、音、香り、温度、手触り）に鮮やかに訴えかける、瑞々しく情緒豊かなライトノベルの本文（地の文と自然な会話劇）を執筆してください。
 
 【執筆スタイルと絶対ルール】
-1. 情景描写と心理描写：キャンパスの空気感、実験器具のガラスの煌めき、主人公の少女が科学の美しさに触れて目を輝かせる心の動きを、小説らしい美しい日本語で丁寧に描写してください。
-2. 専門用語の噛み砕き：難しい数式や専門用語の羅列は避け、シャボン玉、ステンドグラス、折り紙、手紙などの日常の美しい比喩と会話劇のなかに科学の仕組みを自然に溶け込ませてください。
+1. 情景描写と心理描写：キャンパスの空気感、黒板にチョークで描かれる美しい数式やグラフ、PCモニターに広がる3D構造、実験器具のガラスの煌めき、主人公の少女が数学・情報学・科学の美しさに触れて目を輝かせる心の動きを、小説らしい美しい日本語で丁寧に描写してください。
+2. 専門用語の噛み砕き：難しい数式や専門用語の羅列は避け、シャボン玉、ステンドグラス、折り紙、編み物、星座、手紙などの日常の美しい比喩と会話劇のなかに数学・情報・科学の仕組みを自然に溶け込ませてください。
 3. 見出しの禁止：小説本文の中に「第1シーン」「【起】」「シーン1」などのメタな見出しは書かず、純粋な小説の文章と `* * *`（シーン区切り）だけで構成してください。"""
 
 
@@ -148,7 +149,18 @@ def query_crossref_verified_paper(
                             continue
                         titles = item.get("title", [])
                         t_str = titles[0] if titles else ""
-                        if any(skip in t_str.lower() for skip in ("author correction", "erratum", "corrigendum")):
+                        if any(
+                            skip in t_str.lower()
+                            for skip in (
+                                "author correction",
+                                "publisher correction",
+                                "erratum",
+                                "corrigendum",
+                                "faculty opinions",
+                                "f1000prime",
+                                "reply to",
+                            )
+                        ):
                             continue
                         formatted = format_crossref_item(item, tech_label=tech_label)
                         if formatted:
@@ -170,8 +182,8 @@ def query_crossref_verified_paper(
 class DualLLMStoryGenerator:
     """
     Collaborative Dual-LLM Novel Writing Engine:
-    - Director LLM (`qwen2.5:14b`): Plot Architecture, Character Consistency, Scientific Commentary
-    - Writer LLM (`gemma2:9b`): Expressive Sensory Prose, Emotional Dialogue, Light Novel Storytelling
+    - Director LLM (`qwen3.5:9b`, fallback `qwen2.5:14b`): Plot Architecture, Character Consistency, Scientific & Career Commentary
+    - Writer LLM (`gemma4:12b`, fallback `gemma2:9b`): Expressive Sensory Prose, Emotional Dialogue, Light Novel Storytelling
     Connected to Mac mini Ollama server (`http://192.168.128.59:11434`).
     """
 
@@ -205,13 +217,23 @@ class DualLLMStoryGenerator:
         )
 
     def check_connection(self) -> Dict[str, Any]:
-        """Checks connection to Mac mini Ollama server and returns available models."""
+        """Checks connection to Mac mini Ollama server, auto-resolves optimal installed models, and returns status."""
         try:
             req = urllib.request.Request(f"{self.ollama_host}/api/tags")
             with urllib.request.urlopen(req, timeout=5) as res:
                 if res.getcode() == 200:
                     data = json.loads(res.read().decode("utf-8", errors="ignore"))
                     models = [m.get("name", "") for m in data.get("models", []) if m.get("name")]
+                    if self.director_model not in models:
+                        for cand in ("qwen3.5:9b", "qwen2.5:14b"):
+                            if cand in models:
+                                self.director_model = cand
+                                break
+                    if self.writer_model not in models:
+                        for cand in ("gemma4:12b", "gemma2:9b"):
+                            if cand in models:
+                                self.writer_model = cand
+                                break
                     return {
                         "online": True,
                         "host": self.ollama_host,
@@ -239,12 +261,13 @@ class DualLLMStoryGenerator:
         num_ctx: int = 8192,
         timeout: int = 900,
     ) -> str:
-        """Calls Ollama /api/chat on the Mac mini with the specified model."""
+        """Calls Ollama /api/chat on the Mac mini with the specified model (with think=False for fast direct generation)."""
         url = f"{self.ollama_host}/api/chat"
         payload = {
             "model": model,
             "messages": messages,
             "stream": False,
+            "think": False,
             "options": {
                 "temperature": temperature,
                 "num_predict": num_predict,
@@ -311,9 +334,9 @@ class DualLLMStoryGenerator:
         if not matched:
             matched.append(
                 f"- **主人公（女子高校生）**: {work.get('protagonist', '天野 陽葵（高校2年生）')}\n"
-                f"  ・好奇心旺盛で素直な高校生。理系進学や大学の研究室に憧れと少しの不安を抱いている。\n"
-                f"- **メンター（大学の先輩・女性研究者）**: {work.get('mentor', '白石 凛（大学院生）')}（{work.get('faculty', '理学部')}）\n"
-                f"  ・研究を心から楽しむ知的で優しいお姉さん。専門知識を日常の美しい比喩でわかりやすく教えてくれる。"
+                f"  ・好奇心旺盛で素直な高校生。理系進学や大学の研究室、または将来「数学・情報・理科の先生（教員）」や研究者になる道に憧れと少しの不安を抱いている。\n"
+                f"- **メンター（大学の先輩・女性研究者・教職課程履修生）**: {work.get('mentor', '白石 凛（大学院生）')}（{work.get('faculty', '理学部')}）\n"
+                f"  ・研究と教育を心から楽しむ知的で優しいお姉さん。専門知識を日常の美しい比喩でわかりやすく教えてくれる。"
             )
         return "\n".join(matched)
 
@@ -363,14 +386,14 @@ class DualLLMStoryGenerator:
         custom_instruction: str = "",
     ) -> str:
         """
-        Step 1: Uses `qwen2.5:14b` (Director) to create a detailed 4-scene plot blueprint
+        Step 1: Uses `qwen3.5:9b` (Director) to create a detailed 4-scene plot blueprint
         ensuring scientific accuracy, character consistency, and narrative arc.
         """
         char_context = self._build_character_context(work)
         tech_lines = []
         for idx, p in enumerate(verified_papers, start=1):
             tech_lines.append(
-                f"{idx}. 【科学要素{idx}: {p['tech_label']}】\n"
+                f"{idx}. 【科学・数理・情報要素{idx}: {p['tech_label']}】\n"
                 f"   - 根拠論文: {p['authors']} ({p['year']}) \"{p['title']}\" (*{p['journal']}*)"
             )
         tech_block = "\n".join(tech_lines)
@@ -378,7 +401,7 @@ class DualLLMStoryGenerator:
         world_setting = self.lorebook.get("world_setting", "")
         custom_block = f"\n【追加オーダー・特記事項】\n{custom_instruction}\n" if custom_instruction else ""
 
-        prompt = f"""あなたは構成作家（Qwen 2.5 14B）です。以下のエピソード設定・キャラクター設定・実在の科学論文にもとづき、執筆作家（Gemma 2 9B）が情緒豊かなライトノベルを執筆するための**【緻密な4シーン構成プロット設計図】**を作成してください。
+        prompt = f"""あなたは構成作家（{self.director_model}）です。以下のエピソード設定・キャラクター設定・実在の科学論文にもとづき、執筆作家（{self.writer_model}）が情緒豊かなライトノベルを執筆するための**【緻密な4シーン構成プロット設計図】**を作成してください。
 
 【シリーズ世界観】
 {world_setting}
@@ -386,30 +409,30 @@ class DualLLMStoryGenerator:
 【今回のエピソード情報】
 - エピソードタイトル案: {work.get('title')}
 - 舞台となる大学・学部・研究室: {work.get('faculty')}
-- 科学テーマ: {work.get('theme')}
+- テーマ（数学・情報学・自然科学・教職など）: {work.get('theme')}
 - キーワード: {work.get('modern_tech')}
 - あらすじ概要: {work.get('summary')}
 
 【登場キャラクター設定（ロアブック）】
 {char_context}
 
-【作中に組み込む実在の査読論文・科学ファクト（3点）】
+【作中に組み込む実在の査読論文・学術ファクト（3点）】
 {tech_block}
 {custom_block}
 【出力してほしい構成案のフォーマット】
-1. **TITLE**: 『{work.get('title')}』をベースにした、理系女子が思わず読みたくなる魅力的で詩的な本編タイトル（副題つき）
-2. **第1シーン（日常の疑問とキャンパスへの訪問）**:
+1. **TITLE**: 『{work.get('title')}』をベースにした、理系女子が思わず読みたくなる魅力的で詩的な本編タイトル（副題つき。第？話はつけないこと）
+2. **第1シーン（日常の疑問とキャンパス・研究室への訪問）**:
    - 季節・時間帯・キャンパスの風景（光や音、匂いなどの五感要素）
-   - 主人公の抱える小さな悩みや素朴な疑問、研究室・実験室へ足を踏み入れるきっかけ
-3. **第2シーン（先輩・先生との出会いと最初の実験デモ）**:
-   - メンター（先輩/研究者）の登場シーンと印象的な第一声
-   - 科学要素1・2を目で見て体験する実験や観察の描写、日常の身近な比喩（なぜその現象が起きるのかの直感的な説明）
-4. **第3シーン（科学の核心への驚きとセンス・オブ・ワンダー）**:
-   - 主人公の「どうして？」という質問から、科学要素3（分子・遺伝子・物理の仕組み）の核心に触れる対話
-   - 「科学って暗記じゃなくて、世界の秘密を解き明かす魔法なんだ！」と主人公の認識が鮮やかに変わる瞬間
+   - 主人公の抱える小さな悩みや進路の迷い（研究者になるか、数学・情報・理科の先生になるか等）、研究室へ足を踏み入れるきっかけ
+3. **第2シーン（先輩・先生との出会いと最初のデモ・体験）**:
+   - メンター（先輩/研究者/教職課程の学生）の登場シーンと印象的な第一声
+   - 要素1・2を目で見て体験する実験・数理パズル・シミュレーションの描写、日常の身近な比喩（なぜその現象や数理が成り立つのかの直感的な説明）
+4. **第3シーン（学問の核心への驚きとセンス・オブ・ワンダー）**:
+   - 主人公の「どうして？」という質問から、要素3（数理・アルゴリズム・分子・物理の仕組み）の核心に触れる対話
+   - 「数学や情報、科学って暗記じゃなくて、世界の秘密を解き明かし、誰かに伝えるための言葉なんだ！」と主人公の認識が鮮やかに変わる瞬間
 5. **第4シーン（未来への一歩と爽やかな余韻）**:
-   - 実験室を出た後の夕暮れ（または星空・帰り道）の情景
-   - 「私、この大学に来てこの研究をしてみたい！」という主人公の前向きな決意と、先輩からの温かいエール
+   - 研究室を出た後の夕暮れ（または星空・帰り道）の情景
+   - 「私、この大学で学んで、研究や教育（先生になる道）に挑戦してみたい！」という主人公の前向きな決意と、先輩からの温かいエール
 """
         logger.info(f"[Director: {self.director_model}] Creating structured 4-scene plot for '{work.get('title')}'...")
         raw_plot = self.call_ollama_chat(
@@ -432,7 +455,7 @@ class DualLLMStoryGenerator:
         progress_callback: Optional[Callable[[str], None]] = None,
     ) -> Tuple[str, str]:
         """
-        Step 2: Uses `gemma2:9b` (Writer) to write the actual sensory-rich light novel prose
+        Step 2: Uses `gemma4:12b` (Writer) to write the actual sensory-rich light novel prose
         in two parts (Part 1: Scenes 1-2, Part 2: Scenes 3-4) following the Director's plot.
         Returns (story_body, episode_title).
         """
@@ -445,31 +468,33 @@ class DualLLMStoryGenerator:
                 m = re.search(r"[:：]\s*(.+)$", line)
                 if m:
                     cand = m.group(1).strip(" 『』\"'*")
+                    cand = re.sub(r"^【第\s*\d+\s*話】\s*", "", cand).strip()
                     if len(cand) >= 4:
                         episode_title = cand
                         break
 
-        part1_prompt = f"""あなたは表現力豊かな執筆作家（Gemma 2 9B）です。
-構成作家（Qwen 2.5 14B）が作成した以下の【プロット設計図】と【キャラクター設定】をもとに、理系女子が大学に行きたくなる爽やかで情緒豊かな科学ライトノベルの**【前半パート（第1シーン・第2シーン：目標1,800〜2,200文字）】**を執筆してください。
+        part1_prompt = f"""あなたは表現力豊かな執筆作家（{self.writer_model}）です。
+構成作家（{self.director_model}）が作成した以下の【プロット設計図】と【キャラクター設定】をもとに、理系女子が大学に行きたくなる爽やかで情緒豊かな科学・数理・情報ライトノベルの**【前半パート（第1シーン・第2シーン：目標1,800〜2,200文字）】**を執筆してください。
 
-※重要：物語全体を前半・後半の2回に分けて執筆します。今回の出力では**絶対に物語を完結させず（『（了）』と書かず）**、第2シーンの実験や観察で不思議な現象が目の前に現れ、主人公が「えっ、どうしてこんなことが起きるんですか！？」と目を輝かせた場面で後半へバトンを渡してください。
+※重要：物語全体を前半・後半の2回に分けて執筆します。今回の出力では**絶対に物語を完結させず（『（了）』と書かず）**、第2シーンの実験・数理モデル・シミュレーションで美しい現象が目の前に現れ、主人公が「えっ、どうしてこんなことが起きるんですか！？」と目を輝かせた場面で後半へバトンを渡してください。
 
 【エピソード基本設定】
 - タイトル: {episode_title}
 - 舞台: {work.get('faculty')}
-- 科学テーマ: {work.get('theme')}
+- テーマ: {work.get('theme')}
+- あらすじ: {work.get('summary')}
 
 【キャラクター設定】
 {char_context}
 
-【構成作家（Qwen 2.5 14B）によるプロット設計図】
+【構成作家（{self.director_model}）によるプロット設計図】
 {plot_blueprint}
 
 【前半パート（第1シーン・第2シーン）の執筆ルール】
-1. 1行目には `TITLE: {episode_title}` の形式でタイトルのみを出力してください。
+1. 1行目には `TITLE: {episode_title}` の形式でタイトルのみを出力してください（第？話はつけないこと）。
 2. 続けて、小説本文（第1シーン：キャンパスの風景と主人公の訪問）を書き始めてください。「第1シーン」「【起】」などの見出しは絶対に入れず、美しい地の文とセリフだけで紡いでください。
 3. 第1シーンと第2シーンの間には `* * *` を1行入れてください。
-4. 五感（光の粒、ガラス器具の透明な輝き、白衣の揺れる音、紅茶や薬品のほのかな香り）を豊かに描写し、登場人物の掛け合いを生き生きと書いてください。"""
+4. 五感（光の粒、黒板のチョークの音、モニターの輝き、ガラス器具の透明感、紅茶の香り）を豊かに描写し、登場人物の掛け合いを生き生きと書いてください。"""
 
         if progress_callback:
             progress_callback(f"執筆作家 ({self.writer_model}) が前半パート（第1・第2シーン）を執筆中...")
@@ -491,6 +516,7 @@ class DualLLMStoryGenerator:
             stripped = line.strip()
             if idx < 4 and (stripped.startswith("TITLE:") or stripped.startswith("# ")):
                 cand = re.sub(r"^(?:TITLE:|#+)\s*", "", stripped).strip(" 『』\"'*")
+                cand = re.sub(r"^【第\s*\d+\s*話】\s*", "", cand).strip()
                 if cand:
                     episode_title = cand
                 continue
@@ -502,11 +528,11 @@ class DualLLMStoryGenerator:
         part2_prompt = f"""素晴らしい前半パートです！続けて、構成作家のプロット設計図に沿って、この小説『{episode_title}』の**【後半パート（第3シーン・第4シーン：目標1,800〜2,200文字）】**を執筆し、物語を感動的に完結させてください。
 
 【後半パート（第3シーン・第4シーン）の執筆ルール】
-1. タイトルは書かず、前半パートの直後に続く小説本文（第3シーン：科学の仕組みのやさしい解き明かしと主人公の感動）から自然に書き始めてください。
+1. タイトルは書かず、前半パートの直後に続く小説本文（第3シーン：数理・情報・科学の仕組みのやさしい解き明かしと主人公の感動）から自然に書き始めてください。
 2. 前半の登場人物の口調・一人称・名前を100%維持してください。
-3. 難しい科学の仕組みを、先輩（または先生）が日常の美しい比喩でやさしく解き明かし、主人公が「科学って、世界の隠れたお手紙を読むことなんだ……！」と深く感動する瞬間（センス・オブ・ワンダー）を鮮やかに描いてください。
+3. 難しい科学や数学・情報学の仕組みを、先輩（または先生）が日常の美しい比喩でやさしく解き明かし、主人公が「学問って、世界の隠れたお手紙を読み解き、未来の誰かに手渡すことなんだ……！」と深く感動する瞬間（センス・オブ・ワンダー）を鮮やかに描いてください。
 4. 第3シーンと第4シーンの間には `* * *` を1行入れてください（「第3シーン」等の見出しは禁止）。
-5. 第4シーンでは、主人公が「私、この大学に来て、ここで研究がしたい！」と未来への一歩を踏み出す爽やかで温かい余韻を描き、最後は必ず `（了）` で締めくくってください。"""
+5. 第4シーンでは、主人公が「私、この大学に来て、ここで学びたい！（そしていつかこの感動を教えられる先生や研究者になりたい！）」と未来への一歩を踏み出す爽やかで温かい余韻を描き、最後は必ず `（了）` で締めくくってください。"""
 
         if progress_callback:
             progress_callback(f"執筆作家 ({self.writer_model}) が後半パート（第3・第4シーン）を執筆中...")
@@ -527,7 +553,7 @@ class DualLLMStoryGenerator:
         p2_lines = []
         for line in cleaned_part2.splitlines():
             stripped = line.strip()
-            if "【高校生のための" in stripped or "【作中科学の" in stripped or "【引用・参考文献" in stripped:
+            if "【高校生のための" in stripped or "【作中科学の" in stripped or "【引用・参考文献" in stripped or "【理系女子のための" in stripped:
                 break
             if stripped.startswith("TITLE:"):
                 continue
@@ -549,8 +575,9 @@ class DualLLMStoryGenerator:
         verified_papers: List[Dict[str, str]],
     ) -> str:
         """
-        Step 3: Uses `qwen2.5:14b` (Director) to write an accurate, inspiring
-        "Science Column & University Lab Guide for High School Girls" grounded in the 3 papers.
+        Step 3: Uses `qwen3.5:9b` (Director) to write an accurate, inspiring
+        "Science Column, University Lab & Career Guide (including Teaching License path) for High School Girls"
+        grounded in the 3 verified papers.
         """
         tech_lines = []
         for idx, p in enumerate(verified_papers, start=1):
@@ -560,30 +587,30 @@ class DualLLMStoryGenerator:
             )
         tech_block = "\n".join(tech_lines)
 
-        prompt = f"""先ほど完成した科学ライトノベル『{episode_title}』（舞台：{work.get('faculty')}／テーマ：{work.get('theme')}）の読者（理系に興味がある女子中高生）に向けて、構成作家（Qwen 2.5 14B）として**【理系女子のためのやさしい最新科学コラム＆大学研究室ガイド】**を執筆してください。
+        prompt = f"""先ほど完成したライトノベル『{episode_title}』（舞台：{work.get('faculty')}／テーマ：{work.get('theme')}）の読者（理系に興味がある女子中高生）に向けて、構成作家（{self.director_model}）として**【理系女子のためのやさしい最新科学・数理・情報コラム＆大学研究室・キャリアガイド】**を執筆してください。
 
-【解説する3つの最新科学トピックと実在根拠論文】
+【解説する3つの最新トピックと実在根拠論文】
 {tech_block}
 
 【出力フォーマット（以下の形式のみを出力し、URLや参考文献リストは書かないでください）】
-物語に登場した『{work.get('theme')}』は、魔法ではなくすべて実際の大学や研究機関で進められている本物の最先端科学です。高校の生物・化学・物理とどう繋がっているのか、一緒に見てみましょう！
+物語に登場した『{work.get('theme')}』は、すべて実際の大学や研究機関で進められている本物の最先端の学問です。高校の数学・情報・理科（物理・化学・生物・地学）とどう繋がっているのか、一緒に見てみましょう！
 
 1. **{verified_papers[0]['tech_label']}**
-   - **どんな科学？（やさしい仕組み）**: （専門知識がなくてもワクワクしながら理解できるように、仕組みを平易かつ正確に解説）
-   - **高校の科目とのつながり＆未来への応用**: （高校のどの分野の発展か、将来どんな社会や未来をつくる技術かを解説）
+   - **どんな仕組み？（やさしい解説）**: （専門知識がなくてもワクワクしながら理解できるように、仕組みを平易かつ正確に解説）
+   - **高校の科目（数学・情報・理科）とのつながり＆未来への応用**: （高校のどの分野の発展か、将来どんな社会や未来をつくるかを解説）
 
 2. **{verified_papers[min(1, len(verified_papers)-1)]['tech_label']}**
-   - **どんな科学？（やさしい仕組み）**: （平易でわかりやすい解説）
-   - **高校の科目とのつながり＆未来への応用**: （将来への応用と魅力）
+   - **どんな仕組み？（やさしい解説）**: （平易でわかりやすい解説）
+   - **高校の科目（数学・情報・理科）とのつながり＆未来への応用**: （将来への応用と魅力）
 
 3. **{verified_papers[min(2, len(verified_papers)-1)]['tech_label']}**
-   - **どんな科学？（やさしい仕組み）**: （平易でわかりやすい解説）
-   - **高校の科目とのつながり＆未来への応用**: （将来への応用と魅力）
+   - **どんな仕組み？（やさしい解説）**: （平易でわかりやすい解説）
+   - **高校の科目（数学・情報・理科）とのつながり＆未来への応用**: （将来への応用と魅力）
 
-- **🎓 この研究に出会える大学の学部・学科ガイド（{work.get('faculty')}）**:
-  （この研究を大学で学びたい高校生が、どんな学部・学科を目指せばよいか、大学の研究室ではどんな楽しいキャンパスライフや実験が待っているかを温かく具体的に紹介）"""
+- **🎓 この学問に出会える大学の学部・学科と、広がる未来のキャリア（研究者・エンジニア・そして『教員（先生）』になる道）**:
+  （『{work.get('faculty')}』などの学部・学科でどんな楽しいキャンパスライフや研究が待っているかに加え、大学で本格的な研究に触れながら**「教職課程」を履修して中学校・高校の『数学・情報・理科の先生（教員免許）』を取得し、本物の学問の面白さを次の世代の生徒たちに伝える教員になる道**や、研究者・データサイエンティスト・エンジニアなど多様な理系キャリアの魅力を温かく具体的に紹介）"""
 
-        logger.info(f"[Director: {self.director_model}] Writing Science Column & University Lab Guide...")
+        logger.info(f"[Director: {self.director_model}] Writing Science Column & University/Teacher Career Guide...")
         raw_guide = self.call_ollama_chat(
             model=self.director_model,
             messages=[
@@ -591,11 +618,11 @@ class DualLLMStoryGenerator:
                 {"role": "user", "content": prompt},
             ],
             temperature=0.5,
-            num_predict=2200,
+            num_predict=2400,
             num_ctx=8192,
         )
         guide_body = self._clean_llm_output(raw_guide)
-        guide_body = re.sub(r"^#+.*最新科学コラム.*?\n", "", guide_body).strip()
+        guide_body = re.sub(r"^#+.*最新科学.*?\n", "", guide_body).strip()
         guide_body = re.sub(r"###\s*【引用・参考文献.*", "", guide_body, flags=re.DOTALL).strip()
         guide_body = re.sub(r"https?://\S+", "", guide_body)
         return guide_body
@@ -610,9 +637,9 @@ class DualLLMStoryGenerator:
         """
         Runs the full Collaborative Dual-LLM Pipeline:
         1) Pre-fetches 3 DOI-verified scientific papers via Crossref REST API.
-        2) Director (`qwen2.5:14b`) creates the 4-scene plot blueprint (or uses custom_plot_override).
-        3) Writer (`gemma2:9b`) writes the emotional, sensory-rich light novel prose.
-        4) Director (`qwen2.5:14b`) writes the Science Column & University Lab Guide.
+        2) Director (`qwen3.5:9b`) creates the 4-scene plot blueprint (or uses custom_plot_override).
+        3) Writer (`gemma4:12b`) writes the emotional, sensory-rich light novel prose.
+        4) Director (`qwen3.5:9b`) writes the Science Column & University/Teacher Career Guide.
         5) Assembles the publication-ready Markdown with YAML frontmatter and verified DOI links.
         Returns: (full_markdown, episode_title, short_refs, plot_blueprint)
         """
@@ -640,7 +667,7 @@ class DualLLMStoryGenerator:
         )
 
         if progress_callback:
-            progress_callback(f"構成作家 ({self.director_model}) が最新科学コラム＆大学研究室ガイドを執筆中...")
+            progress_callback(f"構成作家 ({self.director_model}) が最新科学コラム＆大学・教職ガイドを執筆中...")
         guide_body = self.generate_science_guide_with_director(
             work=work,
             episode_title=episode_title,
@@ -686,7 +713,7 @@ class DualLLMStoryGenerator:
         return f"""---
 title: "{safe_title}"
 categories: ["理系女子サイエンス小説", "大学研究室ガイド"]
-tags: ["理系女子", "ライトノベル", "最新科学", "{faculty.split('・')[0]}", "Qwen2.5×Gemma2"]
+tags: ["理系女子", "ライトノベル", "最新科学", "数学・情報・教職", "{faculty.split('・')[0]}"]
 ---
 
 > **📖 『放課後サイエンス・キャンパス』**

@@ -22,7 +22,7 @@ HTML_STUDIO_PAGE = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>放課後サイエンス・キャンパス｜理系女子ライトノベル執筆スタジオ (Qwen 2.5 14B × Gemma 2 9B)</title>
+  <title>放課後サイエンス・キャンパス｜理系女子ライトノベル執筆スタジオ (Qwen 3.5 9B × Gemma 4 12B)</title>
   <style>
     :root {
       --bg: #fdf8fa;
@@ -235,7 +235,7 @@ HTML_STUDIO_PAGE = """<!DOCTYPE html>
   <header>
     <div>
       <h1>🌸 放課後サイエンス・キャンパス｜理系女子ライトノベル執筆スタジオ</h1>
-      <div class="subtitle">構成作家 Qwen 2.5 (14B) × 執筆作家 Gemma 2 (9B) 分業システム ＋ Crossref 査読論文検証 ＋ WordPress メール投稿</div>
+      <div class="subtitle">構成作家 Qwen 3.5 (9B) × 執筆作家 Gemma 4 (12B) 分業システム ＋ Crossref 査読論文検証 ＋ Blogger / WordPress メール投稿</div>
     </div>
     <div class="status-badge" id="ollamaStatus">
       <span class="dot" id="statusDot"></span>

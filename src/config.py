@@ -44,8 +44,8 @@ class AppConfig:
 def get_config() -> AppConfig:
     """Retrieve and parse configuration from environment variables."""
     ollama_host = os.getenv("OLLAMA_HOST", "http://192.168.128.59:11434").strip()
-    director_model = os.getenv("OLLAMA_DIRECTOR_MODEL", "qwen2.5:14b").strip()
-    writer_model = os.getenv("OLLAMA_WRITER_MODEL", "gemma2:9b").strip()
+    director_model = os.getenv("OLLAMA_DIRECTOR_MODEL", "qwen3.5:9b").strip()
+    writer_model = os.getenv("OLLAMA_WRITER_MODEL", "gemma4:12b").strip()
 
     smtp_user = os.getenv("SMTP_USER", "").strip()
     raw_smtp_host = os.getenv("SMTP_HOST", "").strip()

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "ep01-bioluminescence-plant",
+    "episode_num": 1,
+    "title": "夜の温室と光るペチュニアの秘密",
+    "faculty": "農学部・応用生命科学科（合成生物学研究室）",
+    "protagonist": "天野 陽葵（あまの ひまり・高校2年生）",
+    "mentor": "白石 凛（しらいし りん・大学院生 D1）",
+    "theme": "自律発光植物（真菌ルシフェリン代謝経路の植物導入）",
+    "modern_tech": "発光キノコ由来カフェ酸サイクル遺伝子導入、オワンクラゲGFP蛍光タンパク質、植物二次代謝エンジニアリング",
+    "summary": "進路に迷う高校2年生の陽葵は、春のオープンキャンパスで夕暮れのガラス温室に迷い込み、電灯もないのにエメラルドグリーンに優しく脈動するペチュニアの花と出会う。白衣の上にカーディガンを羽織った大学院生・凛から「植物が呼吸するエネルギーで自ら光っている」と教わり、生命の設計図を書き換える合成生物学の美しさに心を奪われる。",
+    "crossref_queries": [
+      {
+        "label": "カフェ酸サイクル導入による自律発光植物（光るペチュニア）の創出",
+        "query": "Mitiouchkina Sarkisyan Plants with genetically encoded autoluminescence Nature Biotechnology 2020"
+      },
+      {
+        "label": "高輝度・自己持続型バイオルミネセンス植物の代謝工学",
+        "query": "Shakhova Sarkisyan Light-emitting plants engineered fungal bioluminescence Nature Methods 2024"
+      },
+      {
+        "label": "緑色蛍光タンパク質（GFP）の発見と生命科学への応用",
+        "query": "Shimomura Chalfie Tsien Green Fluorescent Protein Nobel Lecture Angewandte Chemie 2009"
+      }
+    ]
+  },
+  {
+    "id": "ep02-crispr-butterfly-structural-color",
+    "episode_num": 2,
+    "title": "モルフォ蝶の青い翅と、色素のない絵の具",
+    "faculty": "理学部・生物科学科 ／ 工学部・フォトニクス材料専攻",
+    "protagonist": "水瀬 結衣（みなase ゆい・高校2年生・美術部兼生物部）",
+    "mentor": "九条 彩花（くじょう あやか・准教授）",
+    "theme": "構造色（ナノフォトニック結晶）とCRISPRゲノム編集による翅の微細構造制御",
+    "modern_tech": "モルフォ蝶のナノラメラ構造色、CRISPR-Cas9によるWntA/optix遺伝子ノックアウト、退色しないバイオミメティクス光学材料",
+    "summary": "「絶対に色褪せない青」を描きたいと願う美術部員の結衣は、大学の公開講座で100年前の標本なのに輝くようなコバルトブルーを放つモルフォ蝶を見る。しかしその羽を一滴のエタノールで濡らすと、瞬時に青から緑へ色が変わった。そこには青い色素など一粒もなく、ナノスケールの微細な棚構造が光の波を選び取っているのだと知り、物理と生物が交差する世界に目を見張る。",
+    "crossref_queries": [
+      {
+        "label": "蝶の翅における構造色とナノスケール光学メカニズム",
+        "query": "Vukusic Sambles Photonic structures in biology Nature 2003"
+      },
+      {
+        "label": "CRISPR/Cas9ゲノム編集による蝶の翅模様・構造色の遺伝子機能解明",
+        "query": "Mazo-Vargas Reed Macroevolutionary shifts of WntA function potentiate butterfly wing-pattern diversity PNAS 2017"
+      },
+      {
+        "label": "自己組織化コロイド結晶による角度非依存の構造色マテリアル",
+        "query": "Takeoka Angle-independent structuralihy colored amorphous arrays Angewandte Chemie 2013"
+      }
+    ]
+  },
+  {
+    "id": "ep03-mrna-lipid-nanoparticle-delivery",
+    "episode_num": 3,
+    "title": "シャボン玉の郵便配達員――ナノ粒子の旅路",
+    "faculty": "薬学部・創薬科学科（ドラッグデリバリーシステム研究室）",
+    "protagonist": "佐倉 美咲（さくら みさき・高校3年生）",
+    "mentor": "立花 詩織（たちばな しおり・薬学部5年生）",
+    "theme": "脂質ナノ粒子（LNP）とmRNA医薬の標的細胞デリバリー",
+    "modern_tech": "イオン化脂質ナノ粒子（LNP）、pH応答性エンドソーム脱出、mRNAのシュードウリジン修飾による免疫回避",
+    "summary": "幼い頃に母を病気で亡くし「必要な場所だけに薬を届ける方法」を知りたい美咲は、薬学部の研究室見学でマイクロ流路チップの中を流れる透明な液体を見る。直径100ナノメートルの「脂質のシャボン玉（LNP）」が、壊れやすいmRNAの手紙を包み込み、細胞の検問をすり抜けて酸性になった瞬間に魔法のように中身を解き放つ化学の精巧さに感動する。",
+    "crossref_queries": [
+      {
+        "label": "mRNAのヌクレオシド修飾による自然免疫応答の回避（ノーベル賞研究）",
+        "query": "Kariko Weissman Suppression of RNA recognition by Toll-like receptors Immunity 2005"
+      },
+      {
+        "label": "脂質ナノ粒子（LNP）による核酸医薬デリバリーシステム",
+        "query": "Cullis Hope Lipid Nanoparticle Systems for Enabling Gene Therapies Molecular Therapy 2017"
+      },
+      {
+        "label": "臓器選択的mRNA送達を実現するSORT脂質ナノ粒子技術",
+        "query": "Cheng Siegwart Selective organ targeting SORT nanoparticles for tissue-specific mRNA delivery Nature Nanotechnology 2020"
+      }
+    ]
+  },
+  {
+    "id": "ep04-exoplanet-jwst-biosignature",
+    "episode_num": 4,
+    "title": "百光年先の夕焼けを、プリズムで読む方法",
+    "faculty": "理学部・地球惑星物理学科 ／ 天文宇宙専攻",
+    "protagonist": "星野 雫（ほしの しずく・高校1年生・天文部）",
+    "mentor": "天城 玲奈（あまぎ れいな・博士研究員）",
+    "theme": "系外惑星の大気透過分光観測（JWST）とバイオシグネチャー探査",
+    "modern_tech": "トランジット透過スペクトル解析、ジェイムズ・ウェッブ宇宙望遠鏡（JWST）赤外線分光、系外惑星大気の二酸化炭素・メタン・水蒸気検出",
+    "summary": "大学の屋上天文台で開催された観望会に参加した雫は、「望遠鏡で点にしか見えないほど遠い惑星に、海や生き物がいるかどうやって調べるの？」と質問する。玲奈は紅茶のカップに光を透かして見せ、惑星が恒星の前を横切るわずかな瞬間に、大気を通り抜けた「星の光の欠け方（吸収スペクトル）」から何百光年先の空の成分を読み解く天体物理学のロマンを語る。",
+    "crossref_queries": [
+      {
+        "label": "ジェイムズ・ウェッブ宇宙望遠鏡（JWST）による系外惑星大気の二酸化炭素検出",
+        "query": "Ahrer Alderson Identification of carbon dioxide in an exoplanet atmosphere Nature 2023"
+      },
+      {
+        "label": "ハビタブルゾーン系外惑星K2-18bの大気におけるメタンと二酸化炭素の検出",
+        "query": "Madhusudhan Sarkar Carbon-bearing molecules in a possible Hycean atmosphere Astrophysical Journal Letters 2023"
+      },
+      {
+        "label": "系外惑星大気における生命兆候（バイオシグネチャー）気体の探査理論",
+        "query": "Seager Bains Exoplanet Biosignatures A Review of Remotely Detectable Signs of Life Astrobiology 2018"
+      }
+    ]
+  },
+  {
+    "id": "ep05-alphafold-de-novo-protein-design",
+    "episode_num": 5,
+    "title": "折り紙でつくる、まだ地球にないタンパク質",
+    "faculty": "情報理工学部・バイオインフォマティクス専攻",
+    "protagonist": "一条 琴音（いちじょう ことね・高校2年生）",
+    "mentor": "神崎 未来（かんざき みらい・修士2年生）",
+    "theme": "AIによるタンパク質立体構造予測（AlphaFold）とゼロからの新規タンパク質設計（De novo design）",
+    "modern_tech": "AlphaFoldによるアミノ酸配列からの3D構造予測、拡散モデル（RFdiffusion）による新規機能性タンパク質の人工設計、プラスチック分解酵素の創製",
+    "summary": "プログラミングが好きなものの「画面の中だけの数字」に物足りなさを感じていた琴音は、情報科学と生物学が融合した研究室を訪れる。モニターの上でリボン状に折りたたまれる美しい3D構造が、自然界に一度も存在したことのない「新しいタンパク質」として実際に試験管の中で合成され、環境汚染物質を分解する酵素になる様子を見て、コードが生命現象に変わる瞬間を体験する。",
+    "crossref_queries": [
+      {
+        "label": "AlphaFoldによる高精度なタンパク質立体構造予測",
+        "query": "Jumper Hassabis Highly accurate protein structure prediction with AlphaFold Nature 2021"
+      },
+      {
+        "label": "拡散モデル（RFdiffusion）を用いた新規タンパク質のゼロからの設計",
+        "query": "Watson Baker De novo design of protein structure and function with RFdiffusion Nature 2023"
+      },
+      {
+        "label": "機械学習支援によるPETプラスチック分解酵素（FAST-PETase）の設計",
+        "query": "Lu Alper Machine learning-aided engineering of hydrolases for PET depolymerization Nature 2022"
+      }
+    ]
+  },
+  {
+    "id": "ep06-spider-silk-biomaterials",
+    "episode_num": 6,
+    "title": "鋼鉄より強く、風より軽いドレスを編む",
+    "faculty": "工学部・高分子材料工学科（バイオマテリアル研究室）",
+    "protagonist": "織田 紬（おだ つむぎ・高校2年生・被服部）",
+    "mentor": "橘 環（たちばな たまき・助教）",
+    "theme": "人工構造タンパク質繊維（人工クモ糸フィブロイン）と自己修復バイオポリマー",
+    "modern_tech": "微生物発酵による組換えスパイシルク（フィブロイン）生産、βシート結晶領域と非晶領域の階層構造制御、環境調和型高靭性繊維",
+    "summary": "ファッションと科学の両方に興味がある紬は、「工学部って機械や油まみれのイメージ」と思いながら女子高校生向けサイエンスカフェに参加する。そこで手渡された黄金色に輝く一本の糸は、微生物の発酵によって作られた人工スパイダーシルクだった。同じ重さの鋼鉄よりも強靭でありながら、シルクのように柔らかく土に還る分子構造の秘密を知り、未来の素材を創る化学に胸を躍らせる。",
+    "crossref_queries": [
+      {
+        "label": "クモ糸シルクの階層的ナノ構造と超高靭性メカニズム",
+        "query": "Vollrath Knight Liquid crystalline spinning of spider silk Nature 2001"
+      },
+      {
+        "label": "合成生物学・微生物発酵による高分子量スパイダーシルク繊維の人工生産",
+        "query": "Xia Lee Native-sized recombinant spider silk protein produced in metabolically engineered Escherichia coli PNAS 2010"
+      },
+      {
+        "label": "構造タンパク質材料の分子設計とサステナブル・マテリアル応用",
+        "query": "Rising Johansson Spider silk proteins mechanical properties and biomimetic spinning Nature Reviews Chemistry 2021"
+      }
+    ]
+  },
+  {
+    "id": "ep07-gut-microbiome-brain-axis",
+    "episode_num": 7,
+    "title": "お腹の中の小さな銀河と、心の処方箋",
+    "faculty": "農学部・食品生命科学科 ／ 医学部・神経免疫学連携ラボ",
+    "protagonist": "葉月 芽衣（はづき めい・高校2年生）",
+    "mentor": "朝比奈 薫（あさひな かおる・特任助教）",
+    "theme": "腸脳相関（Gut-Brain Axis）と腸内細菌叢が紡ぐ神経伝達物質・メンタルヘルス",
+    "modern_tech": "迷走神経を介した腸脳連関シグナル、腸内細菌による短鎖脂肪酸（酪酸）およびセロトニン前駆体代謝、メタゲノム解析",
+    "summary": "大事な模試の前になるとお腹が痛くなってしまう芽衣は、「心とお腹はどうして繋がっているのだろう」と疑問を抱いていた。大学のオープンラボで、腸には脳に次ぐ1億個もの神経細胞があり、さらに数兆個の腸内細菌が作る代謝物質が迷走神経を通じて心の落ち着きや幸福感を左右していることを学ぶ。顕微鏡と遺伝子解析で「お腹の中の生態系」を解き明かす栄養神経科学の魅力に目覚める。",
+    "crossref_queries": [
+      {
+        "label": "腸内細菌叢―腸―脳軸（Microbiota-Gut-Brain Axis）の神経科学",
+        "query": "Cryan Dinan Mind-altering microorganisms the impact of the gut microbiota on brain and behaviour Nature Reviews Neuroscience 2012"
+      },
+      {
+        "label": "腸内細菌によるセロトニン生合成の制御メカニズム",
+        "query": "Yano Hsiao Indigenous bacteria from the gut microbiota regulate host serotonin biosynthesis Cell 2015"
+      },
+      {
+        "label": "大規模コホートにおける腸内細菌叢とメンタルヘルス・QOLの関連解析",
+        "query": "Valles-Colomer Raes The neuroactive potential of the human gut microbiota in quality of life and depression Nature Microbiology 2019"
+      }
+    ]
+  },
+  {
+    "id": "ep08-perovskite-solar-window",
+    "episode_num": 8,
+    "title": "雨上がりのステンドグラスは太陽を醸す",
+    "faculty": "理工学部・応用化学科（次世代エネルギー材料研究室）",
+    "protagonist": "日向 葵（ひなた あおい・高校1年生）",
+    "mentor": "氷室 響子（ひむろ きょうこ・大学院生 M2）",
+    "theme": "ペロブスカイト太陽電池（塗布型・半透明・フレキシブル光電変換素子）",
+    "modern_tech": "ハロゲン化鉛ペロブスカイト結晶構造、スピンコート塗布成膜と自己組織化結晶成長、パッシベーション処理による高効率化",
+    "summary": "「太陽電池といえば屋根の上の重くて黒いパネル」と思っていた葵は、大学の実験室で響子がガラス基板の上に黄色い溶液を垂らし、くるくると回転（スピンコート）させて温めると、一瞬で鏡のように美しい結晶薄膜に変わる瞬間を目撃する。フィルムのように曲げられて、街中の窓ガラスや日傘まで発電所に変えられる日本発の化学発明「ペロブスカイト太陽電池」の美しさに魅了される。",
+    "crossref_queries": [
+      {
+        "label": "有機無機ハイブリッド・ペロブスカイト太陽電池の創製（宮坂力教授らの先駆的研究）",
+        "query": "Kojima Teshima Shirai Miyasaka Organometal Halide Perovskites as Visible-Light Sensitizers for Photovoltaic Cells JACS 2009"
+      },
+      {
+        "label": "高効率ペロブスカイト太陽電池の界面パッシベーションと結晶制御",
+        "query": "Green Ho-Baillie Snaith The emergence of perovskite solar cells Nature Photonics 2014"
+      },
+      {
+        "label": "タンデム型および半透明・フレキシブル・ペロブスカイト光電変換技術",
+        "query": "Snaith Perovskites The Emergence of a New Era for Low-Cost High-Efficiency Solar Cells Journal of Physical Chemistry Letters 2013"
+      }
+    ]
+  },
+  {
+    "id": "ep09-sleep-glymphatic-memory-consolidation",
+    "episode_num": 9,
+    "title": "眠る脳の図書館と、真夜中の水洗い",
+    "faculty": "医学部・脳神経科学専攻 ／ 睡眠医科学研究所",
+    "protagonist": "月島 ほのか（つきしま ほのか・高校3年生）",
+    "mentor": "西園寺 翠（さいおんじ みどり・教授）",
+    "theme": "睡眠中のグリンパティック系（脳内老廃物クリアランス）と海馬―大脳皮質の記憶固定化",
+    "modern_tech": "グリンパティック系による脳脊髄液（CSF）の灌流洗浄、睡眠紡錘波（スピンドル）と鋭波リップルによる記憶再生・定着、オレキシン神経系",
+    "summary": "受験勉強で睡眠時間を削っていたほのかは、模試の成績が伸び悩み、大学の市民公開シンポジウムに足を運ぶ。そこで翠教授が見せた二光子顕微鏡の映像には、深い眠りに入った瞬間に脳のグリア細胞が隙間を広げ、透明な脳脊髄液が波のように流れて日中の老廃物を洗い流し、さらに昼間学んだ記憶を海馬から大脳皮質の「本棚」へ高速コピーする様子が映し出されていた。",
+    "crossref_queries": [
+      {
+        "label": "睡眠による脳内グリンパティック系クリアランス（老廃物洗浄）の発見",
+        "query": "Xie Kang Nedergaard Sleep drives metabolite clearance from the adult brain Science 2013"
+      },
+      {
+        "label": "睡眠中の海馬神経アンサンブルの記憶再活性化（リプレイ）と記憶固定化",
+        "query": "Wilson McNaughton Reactivation of hippocampal ensemble memories during sleep Science 1994"
+      },
+      {
+        "label": "睡眠・覚醒を制御する神経ペプチド「オレキシン」と受容体機構の解明",
+        "query": "Sakurai Yanagisawa Orexins and orexin receptors a family of hypothalamic neuropeptides and G protein-coupled receptors Cell 1998"
+      }
+    ]
+  },
+  {
+    "id": "ep10-environmental-dna-ocean-ecology",
+    "episode_num": 10,
+    "title": "コップ一杯の海水から、クジラの歌を聴く",
+    "faculty": "海洋生命科学部 ／ 地球環境科学科",
+    "protagonist": "海野 凪（うみの なぎ・高校2年生）",
+    "mentor": "潮見 遥（しおみ はるか・助教）",
+    "theme": "環境DNA（eDNA）メタバーコーディングによる非侵襲的生物多様性モニタリング",
+    "modern_tech": "環境DNA（eDNA）ろ過濃縮とユニバーサルプライマーPCR（MiFish等）、次世代シーケンシングによる魚類・海洋哺乳類相の一斉同定",
+    "summary": "海と生き物が大好きだけれど、調査のために魚を網で捕획して傷つけることに心を痛めていた凪。大学の臨海実験所の実習で、遥先生と一緒にバケツ一杯の海水を汲んでフィルターで濾すだけの実験を行う。海水に溶け込んだ目に見えない「環境DNA」を読み解くだけで、その朝にその入り江を泳ぎ抜けたイルカや深海魚、絶滅危惧種までが魔法のようにリストアップされる瞬間を目撃する。",
+    "crossref_queries": [
+      {
+        "label": "魚類環境DNAメタバーコーディング用ユニバーサルプライマー（MiFish）の開発",
+        "query": "Miya Sato Fukunaga Sado Iwasaki MiFish a set of universal PCR primers for metabarcoding environmental DNA from fishes Royal Society Open Science 2015"
+      },
+      {
+        "label": "環境DNA（eDNA）による水圏生態系と絶滅危惧種の非侵襲的モニタリング",
+        "query": "Thomsen Willerslev Environmental DNA An emerging tool in conservation for monitoring past and present biodiversity Biological Conservation 2015"
+      },
+      {
+        "label": "海水中の環境DNAから海洋生物群集の動態を再構築するメタゲノム解析",
+        "query": "Stat Huggett Ecosystem biomonitoring with eDNA metabarcoding across the tree of life in a tropical marine environment Scientific Reports 2017"
+      }
+    ]
+  },
+  {
+    "id": "ep11-quantum-teleportation-cryptography",
+    "episode_num": 11,
+    "title": "アリスとボブの絶対に盗み見られない手紙",
+    "faculty": "理学部・物理学科 ／ 量子情報科学専攻",
+    "protagonist": "白河 詩音（しらかわ しおん・高校2年生・数学部）",
+    "mentor": "黒瀬 麻衣（くろせ まい・大学院生 D2）",
+    "theme": "量子もつれ（エンタングルメント）と量子暗号通信（QKD）・光格子時計",
+    "modern_tech": "ベルの不等式の破れと量子もつれ光子対、BB84量子鍵配送プロトコル、観測による波動関数の収縮を応用した盗聴検知",
+    "summary": "数学のパズルが好きな詩音は、大学の物理学科の実験室で、光学定盤の上に並ぶ無数の鏡と赤いレーザー光を見る。「誰かが途中で覗き見た瞬間に、覗き見られたことが100%わかってしまう手紙があるんだよ」と麻衣に微笑まれ、アインシュタインすら不思議がった「量子もつれ」のペア光子が織りなす量子情報科学のエレガントな論理に心を震わせる。",
+    "crossref_queries": [
+      {
+        "label": "ベルの不等式の破れの実験的検証（ノーベル物理学賞研究）",
+        "query": "Aspect Dalibard Roger Experimental Test of Bell's Inequalities Using Time-Varying Analyzers Physical Review Letters 1982"
+      },
+      {
+        "label": "量子テレポーテーションの実験的実証",
+        "query": "Bouwmeester Pan Zeilinger Experimental quantum teleportation Nature 1997"
+      },
+      {
+        "label": "衛星―地上間における長距離量子鍵配送（量子暗号通信）の実証",
+        "query": "Liao Pan Satellite-to-ground quantum key distribution Nature 2017"
+      }
+    ]
+  },
+  {
+    "id": "ep12-ips-cardiac-organoid-sheet",
+    "episode_num": 12,
+    "title": "シャーレの中で、小さな心臓が鼓動をはじめる日",
+    "faculty": "医学部・再生医療学専攻 ／ 医工学研究科",
+    "protagonist": "桜庭 くるみ（さくらば くるみ・高校2年生）",
+    "mentor": "藤堂 沙耶（とうどう さや・特任講師）",
+    "theme": "iPS細胞からの心筋シート作製と温度応答性培養皿による再生医療",
+    "modern_tech": "人工多能性幹細胞（iPS細胞）の分化誘導、PIPAAm温度応答性スマートポリマー培養皿による細胞シート工学、自己組織化心臓オルガノイド",
+    "summary": "顕微鏡を覗いたくるみは、思わず息を呑んだ。丸いシャーレの底で、薄いピンク色の細胞のシートが「トクン、トクン」と一斉にリズムを合わせて脈打っていたのだ。しかも、そのシートを傷つけずに剥がす秘密は、温度を少し下げるだけで水を吸って細胞を優しく手放す「高分子化学の魔法の皿」にあった。医学と化学と工学が手を繋いで命を救う再生医療の最前線を知る。",
+    "crossref_queries": [
+      {
+        "label": "ヒト体細胞からの人工多能性幹細胞（iPS細胞）の樹立（山中伸弥教授）",
+        "query": "Takahashi Tanabe Ohnuki Narita Ichisaka Tomoda Yamanaka Induction of Pluripotent Stem Cells from Adult Human Fibroblasts by Defined Factors Cell 2007"
+      },
+      {
+        "label": "温度応答性培養皿を用いた細胞シート工学と心筋再生医療（岡野光夫教授ら）",
+        "query": "Shimizu Yamato Kikuchi Okano Fabrication of pulsatile cardiac tissue grafts using a novel 3-dimensional cell sheet manipulation technique Circulation Research 2002"
+      },
+      {
+        "label": "ヒト多能性幹細胞からの自己組織化心臓オルガノイド（心室構造）の構築",
+        "query": "Hofbauer Mendjan Cardioids self-organizing humanogenic cardiac organoids specify a chamber-like cavity Cell 2021"
+      }
+    ]
+  }
+]

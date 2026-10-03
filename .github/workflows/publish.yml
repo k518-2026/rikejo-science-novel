@@ -1,0 +1,121 @@
+name: Daily Rikejo Science Novel to WordPress
+
+concurrency:
+  group: rikejo-science-novel-publish
+  cancel-in-progress: false
+
+on:
+  schedule:
+    # 毎日 朝07:00 JST (22:00 UTC) と 夜21:00 JST (12:00 UTC) に書き溜めストックを自動配信
+    - cron: '0 22 * * *'
+    - cron: '0 12 * * *'
+
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run mode (Simulate without sending email or committing history)'
+        required: true
+        type: boolean
+        default: false
+      post_status:
+        description: 'Post status on WordPress (publish or draft)'
+        required: true
+        type: choice
+        options:
+          - publish
+          - draft
+        default: 'publish'
+      work_id:
+        description: 'Specific Episode ID (e.g. ep01-bioluminescence-plant)'
+        required: false
+        type: string
+        default: ''
+      force:
+        description: 'Force re-post even if already published'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish-episode:
+    name: Dispatch Stocked Rikejo Science Novel to WordPress
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: |
+          python -m unittest discover tests
+
+      - name: Dispatch Episode to WordPress / Blogger via Email
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST || 'smtp.gmail.com' }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT || '587' }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_USE_TLS: ${{ secrets.SMTP_USE_TLS || 'true' }}
+          SMTP_USE_SSL: ${{ secrets.SMTP_USE_SSL || 'false' }}
+          WP_POST_EMAIL: ${{ secrets.WP_POST_EMAIL }}
+          BLOGGER_POST_EMAIL: ${{ secrets.BLOGGER_POST_EMAIL || '' }}
+          DEFAULT_POST_STATUS: ${{ github.event.inputs.post_status || 'publish' }}
+          INPUT_DRY_RUN: ${{ github.event.inputs.dry_run }}
+          INPUT_WORK_ID: ${{ github.event.inputs.work_id }}
+          INPUT_FORCE: ${{ github.event.inputs.force }}
+        run: |
+          git pull --rebase origin main || true
+          ARGS="--preview-html"
+          if [ "$INPUT_DRY_RUN" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          else
+            ARGS="$ARGS --send"
+          fi
+          if [ -n "$INPUT_WORK_ID" ]; then
+            ARGS="$ARGS --work-id $INPUT_WORK_ID"
+          fi
+          if [ "$INPUT_FORCE" = "true" ]; then
+            ARGS="$ARGS --force"
+          fi
+          if [ -n "${{ github.event.inputs.post_status }}" ]; then
+            ARGS="$ARGS --status ${{ github.event.inputs.post_status }}"
+          fi
+          python -m src.main $ARGS
+
+      - name: Upload HTML Preview Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rikejo-novel-preview-html
+          path: preview_output.html
+          if-no-files-found: ignore
+
+      - name: Commit & Push Updated History
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history.json data/POSTED_STORIES.md content/
+          if git diff --staged --quiet; then
+            echo "No history updates to commit."
+          else
+            git commit -m "chore: Record published Rikejo science novel episode [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

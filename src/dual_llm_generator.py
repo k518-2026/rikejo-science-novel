@@ -689,7 +689,6 @@ tags: ["理系女子", "ライトノベル", "最新科学", "{faculty.split('�
 > - **舞台となる研究室**: {faculty}
 > - **今回の科学テーマ**: {theme}
 > - **登場人物**: {protag} ／ {mentor}
-> - **執筆システム**: 構成作家 `qwen2.5:14b` × 執筆作家 `gemma2:9b`（Mac mini ローカルLLM分業生成）
 
 {story_body}
 

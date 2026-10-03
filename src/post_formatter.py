@@ -275,9 +275,8 @@ def format_post_content(
 
     cleaned_body = re.sub(r"\[(category|tags|status|title|excerpt)[^\]]*\]", "", body).strip()
     cleaned_body = re.sub(r"(『放課後サイエンス・キャンパス』)\s*第\s*\d+\s*話", r"\1", cleaned_body)
-
-    if next_work and "次回エピソード予告" not in cleaned_body:
-        cleaned_body += build_next_work_preview(next_work)
+    cleaned_body = re.sub(r"^[ \t]*>[ \t]*-[ \t]*\*\*執筆システム\*\*.*?\n", "", cleaned_body, flags=re.MULTILINE)
+    cleaned_body = re.sub(r"---+\s*\n+###\s*🌸\s*【次回エピソード予告】.*$", "", cleaned_body, flags=re.DOTALL).strip()
 
     # Replace --- lines with safe scene dividers to avoid WordPress email truncation
     cleaned_body = re.sub(r"^[ \t]*[-*_]{3,}[ \t]*$", "✦ ✦ ✦", cleaned_body, flags=re.MULTILINE)

@@ -29,21 +29,6 @@
     ]
   },
   {
-    "work_id": "ep01-bioluminescence-plant",
-    "episode_num": 1,
-    "faculty": "農学部・応用生命科学科（合成生物学研究室）",
-    "theme": "自律発光植物（真菌ルシフェリン代謝経路の植物導入）",
-    "episode_title": "夜明け前の温室で見つけた光る花々～生命の設計図を読み解く魔法～",
-    "posted_at": "2026-10-04T07:26:54.126713+09:00",
-    "file_path": "content/2026-10-04_ep01_bioluminescence_plant.md",
-    "status": "publish",
-    "references": [
-      "Mitiouchkina, T., Mishin, A. S., Somermeyer, L. G., Markina, N. M., Chepurnyh, T. V., Guglya, E. B., et al. (2020). Plants with genetically encoded autoluminescence. *Nature Biotechnology*, 38(8), 944-946. [https://doi.org/10.1038/s41587-020-0500-9](https://doi.org/10.1038/s41587-020-0500-9)",
-      "Strack, R. (2019). Harnessing fungal bioluminescence. *Nature Methods*, 16(2), 140-140. [https://doi.org/10.1038/s41592-019-0311-4](https://doi.org/10.1038/s41592-019-0311-4)",
-      "Shimomura, O., Chalfie, M., Tsien, R. Y. (2009). Cover Picture: Discovery of Green Fluorescent Protein (GFP) (Nobel Lecture) / GFP: Lighting Up Life (Nobel Lecture) / Constructing and Exploiting the Fluorescent Protein Paintbox (Nobel Lecture) (Angew. Chem. Int. Ed. 31/2009). *Angewandte Chemie International Edition*, 48(31), 5555-5555. [https://doi.org/10.1002/anie.200990159](https://doi.org/10.1002/anie.200990159)"
-    ]
-  },
-  {
     "work_id": "ep05-alphafold-informatics-teacher",
     "episode_num": 5,
     "faculty": "情報理工学部・コンピュータ科学科（数理情報・バイオインフォマティクス研究室／情報科教職課程）",
@@ -86,6 +71,21 @@
       "Rivest, R. L., Shamir, A., Adleman, L. (1978). A Method for Obtaining Digital Signatures and Public-Key Cryptosystems. *Defense Technical Information Center*. [https://doi.org/10.21236/ada606588](https://doi.org/10.21236/ada606588)",
       "Aspect, A., Dalibard, J., Roger, G. (1982). Experimental Test of Bell's Inequalities Using Time- Varying Analyzers. *Physical Review Letters*, 49(25), 1804-1807. [https://doi.org/10.1103/physrevlett.49.1804](https://doi.org/10.1103/physrevlett.49.1804)",
       "Marulanda Acosta, V. (2020). Quantum Key Distribution through atmospheric turbulence : secure satellite-to-ground links. *Agence Bibliographique de l'Enseignement Supérieur*. [https://doi.org/10.70675/4245e6f5z2b9bz42e2zb959zd10039e0bcee](https://doi.org/10.70675/4245e6f5z2b9bz42e2zb959zd10039e0bcee)"
+    ]
+  },
+  {
+    "work_id": "ep01-bioluminescence-plant",
+    "episode_num": 1,
+    "faculty": "農学部・応用生命科学科（合成生物学研究室）",
+    "theme": "自律発光植物（真菌ルシフェリン代謝経路の植物導入）",
+    "episode_title": "夜明け前の温室で見つけた光る花々～生命の設計図を読み解く魔法～",
+    "posted_at": "2026-10-04T11:36:15.847951+09:00",
+    "file_path": "content/2026-10-04_ep01_bioluminescence_plant.md",
+    "status": "publish",
+    "references": [
+      "Mitiouchkina, T., Mishin, A. S., Somermeyer, L. G., Markina, N. M., Chepurnyh, T. V., Guglya, E. B., et al. (2020). Plants with genetically encoded autoluminescence. *Nature Biotechnology*, 38(8), 944-946. [https://doi.org/10.1038/s41587-020-0500-9](https://doi.org/10.1038/s41587-020-0500-9)",
+      "Strack, R. (2019). Harnessing fungal bioluminescence. *Nature Methods*, 16(2), 140-140. [https://doi.org/10.1038/s41592-019-0311-4](https://doi.org/10.1038/s41592-019-0311-4)",
+      "Shimomura, O., Chalfie, M., Tsien, R. Y. (2009). Cover Picture: Discovery of Green Fluorescent Protein (GFP) (Nobel Lecture) / GFP: Lighting Up Life (Nobel Lecture) / Constructing and Exploiting the Fluorescent Protein Paintbox (Nobel Lecture) (Angew. Chem. Int. Ed. 31/2009). *Angewandte Chemie International Edition*, 48(31), 5555-5555. [https://doi.org/10.1002/anie.200990159](https://doi.org/10.1002/anie.200990159)"
     ]
   }
 ]

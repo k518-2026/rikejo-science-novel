@@ -1,4 +1,4 @@
-﻿import os
+import os
 import re
 import smtplib
 import ssl
@@ -49,18 +49,19 @@ class WordPressMailSender:
     @staticmethod
     def _sanitize_html_for_blogger(html_text: str) -> str:
         """
-        Simplifies HTML specifically for Blogger's 'Post using email' and strict outbound SMTP filters (e.g., Outlook.com 550 5.7.520):
+        Simplifies HTML specifically for Blogger's 'Post using email' and strict outbound/inbound SMTP filters:
         1. Replaces <a href="...">text</a> with plain text (eliminates external URL spam-filter triggers while keeping DOI strings intact).
-        2. Converts <table> rows into simple <p> lines.
-        3. Converts styled blockquote / callout divs into clean <blockquote><p>...</p></blockquote>.
-        4. Strips inline style="..." and class="..." attributes so only lightweight semantic tags remain.
+        2. Safely removes bare URLs without eating adjacent closing HTML tags (</li>, </div>, </p>).
+        3. Removes empty <li> / <ul> elements left behind when a bullet contained only a URL.
+        4. Converts <table> rows into simple <p> lines and inner <div> blocks into <p> blocks.
+        5. Strips inline style="..." and class="..." attributes so only lightweight semantic tags remain.
         """
         cleaned = html_text
         # 1. Strip <a> tags, keeping inner text (e.g. 'DOI: 10.xxxx/...')
         cleaned = re.sub(r"<a\b[^>]*>(.*?)</a>", r"\1", cleaned, flags=re.IGNORECASE | re.DOTALL)
-        # Remove any remaining bare http/https URLs
-        cleaned = re.sub(r"https?://(?:dx\.)?doi\.org/(10\.\S+)", r"DOI: \1", cleaned)
-        cleaned = re.sub(r"https?://\S+", "", cleaned)
+        # Convert bare DOIs to plain 'DOI: 10.xxxx' and remove remaining bare http/https URLs WITHOUT matching '<' or '>'
+        cleaned = re.sub(r"https?://(?:dx\.)?doi\.org/(10\.[^\s<>\"\)\]」』]+)", r"DOI: \1", cleaned)
+        cleaned = re.sub(r"https?://[^\s<>\"\)\]」』]+", "", cleaned)
 
         # 2. Convert <table> blocks into simple paragraphs
         def _table_to_paragraphs(match: re.Match) -> str:
@@ -79,21 +80,33 @@ class WordPressMailSender:
 
         cleaned = re.sub(r"<table\b[^>]*>.*?</table>", _table_to_paragraphs, cleaned, flags=re.IGNORECASE | re.DOTALL)
 
-        # 3. Replace styled scene divider divs with simple <p>
+        # 3. Replace styled scene divider divs (* * *, ◆ ◆ ◆, or ✦ ✦ ✦) with simple <p>
         cleaned = re.sub(
-            r"<div\b[^>]*>\s*(?:✦ ✦ ✦|◆ ◆ ◆)\s*</div>",
+            r"<div\b[^>]*>\s*(?:\*\s*\*\s*\*|◆\s*◆\s*◆|✦\s*✦\s*✦)\s*</div>",
             "<p>✦ ✦ ✦</p>",
             cleaned,
             flags=re.IGNORECASE,
         )
 
-        # 4. Convert remaining callout/header <div>...</div> blocks into <p>...</p> and strip outer container divs
+        # 4. Strip outer container div if present, then convert inner <div>...</div> blocks into <p>...</p>
         cleaned = re.sub(r"<div\b[^>]*class=[\"']rikejo-novel-container[\"'][^>]*>", "", cleaned, flags=re.IGNORECASE)
+        cleaned = re.sub(r"^\s*<div\b[^>]*max-width:\s*820px[^>]*>", "", cleaned, flags=re.IGNORECASE)
+        cleaned = re.sub(r"<div\b[^>]*>\s*<p\b[^>]*>(.*?)</p>\s*</div>", r"<p>\1</p>", cleaned, flags=re.IGNORECASE | re.DOTALL)
         cleaned = re.sub(r"<div\b[^>]*>(.*?)</div>", r"<p>\1</p>", cleaned, flags=re.IGNORECASE | re.DOTALL)
         cleaned = re.sub(r"</?div\b[^>]*>", "", cleaned, flags=re.IGNORECASE)
 
         # 5. Strip all inline style="..." and class="..." attributes
         cleaned = re.sub(r'\s+(?:style|class)=["\'][^"\']*["\']', "", cleaned, flags=re.IGNORECASE)
+
+        # 6. Clean up empty <li> items (e.g. "<li></li>" or "<li>URL: </li>") and empty <ul> blocks
+        cleaned = re.sub(
+            r"\s*<li>\s*(?:(?:URL|DOI|[^<>]{0,35}(?:Webサイト|公式ページ|リンク|検索))\s*[:：]\s*)?</li>",
+            "",
+            cleaned,
+            flags=re.IGNORECASE,
+        )
+        cleaned = re.sub(r"\s*<ul>\s*</ul>", "", cleaned, flags=re.IGNORECASE)
+        cleaned = re.sub(r"\s*<p>\s*\*\s*</p>\s*$", "", cleaned, flags=re.IGNORECASE)
 
         return cleaned.strip()
 
@@ -103,9 +116,16 @@ class WordPressMailSender:
         to_email: Optional[str] = None,
         for_blogger: bool = False,
     ) -> MIMEMultipart:
+        use_blogger = for_blogger
+        recipient = to_email if to_email is not None else (
+            self.config.blogger_post_email if use_blogger else self.config.wp_post_email
+        )
+        if recipient and "@blogger.com" in recipient.lower():
+            use_blogger = True
+
         has_image = bool(post.image_path and Path(post.image_path).exists())
         # Blogger宛の画像添付は既定で有効。バウンス時は ATTACH_IMAGES_BLOGGER=false で無効化できる
-        if has_image and for_blogger and os.environ.get(
+        if has_image and use_blogger and os.environ.get(
             "ATTACH_IMAGES_BLOGGER", "true"
         ).strip().lower() not in ("1", "true", "yes"):
             has_image = False
@@ -125,20 +145,19 @@ class WordPressMailSender:
             from_display = Header(self.config.from_name, "utf-8").encode()
         msg["From"] = f"{from_display} <{self.config.smtp_user}>"
 
-        recipient = to_email if to_email is not None else (
-            self.config.blogger_post_email if for_blogger else self.config.wp_post_email
-        )
         msg["To"] = recipient
 
+        # Standard RFC 5322 Date header; let Gmail SMTP generate its native @mail.gmail.com Message-ID when using smtp.gmail.com
         msg["Date"] = formatdate(localtime=True)
-        domain = self.config.smtp_user.split("@")[-1] if "@" in self.config.smtp_user else "rikejo-science-novel.local"
-        msg["Message-ID"] = make_msgid(domain=domain)
+        if "gmail.com" not in (self.config.smtp_host or "").lower():
+            domain = self.config.smtp_user.split("@")[-1] if "@" in self.config.smtp_user else "rikejo-science-novel.local"
+            msg["Message-ID"] = make_msgid(domain=domain)
 
-        if for_blogger:
+        if use_blogger:
             raw_plain = post.content_plain_clean or post.content_plain
             plain_body = re.sub(r"\[([^\]]+)\]\(https?://[^\)]+\)", r"\1", raw_plain)
-            plain_body = re.sub(r"https?://(?:dx\.)?doi\.org/(10\.\S+)", r"DOI: \1", plain_body)
-            plain_body = re.sub(r"https?://\S+", "", plain_body)
+            plain_body = re.sub(r"https?://(?:dx\.)?doi\.org/(10\.[^\s<>\"\)\]」』]+)", r"DOI: \1", plain_body)
+            plain_body = re.sub(r"https?://[^\s<>\"\)\]」』]+", "", plain_body)
             raw_html = post.content_html_clean or post.content_html
             html_body = self._sanitize_html_for_blogger(raw_html)
         else:

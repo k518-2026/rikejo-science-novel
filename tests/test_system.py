@@ -33,6 +33,19 @@ class TestRikejoSystem(unittest.TestCase):
             if tmp_md.exists():
                 tmp_md.unlink()
 
+    def test_sanitize_html_for_blogger_preserves_closing_tags_on_urls(self):
+        raw_html = (
+            '<ul>\n'
+            '  <li style="margin-bottom: 0.5em;">Kulkarni, S. (2024). <em>Nature</em>. <a href="https://doi.org/10.1038/d41586-024-01332-w">https://doi.org/10.1038/d41586-024-01332-w</a></li>\n'
+            '  <li style="margin-bottom: 0.5em;">URL: <a href="https://example.com/paper">https://example.com/paper</a></li>\n'
+            '</ul>'
+        )
+        sanitized = WordPressMailSender._sanitize_html_for_blogger(raw_html)
+        self.assertIn("DOI: 10.1038/d41586-024-01332-w</li>", sanitized)
+        self.assertNotIn("https://", sanitized)
+        self.assertEqual(sanitized.count("<li>"), sanitized.count("</li>"))
+        self.assertEqual(sanitized.count("<ul>"), sanitized.count("</ul>"))
+
 
 if __name__ == "__main__":
     unittest.main()

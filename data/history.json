@@ -15,21 +15,6 @@
     ]
   },
   {
-    "work_id": "ep05-alphafold-informatics-teacher",
-    "episode_num": 5,
-    "faculty": "情報理工学部・コンピュータ科学科（数理情報・バイオインフォマティクス研究室／情報科教職課程）",
-    "theme": "情報学（アルゴリズム・深層学習・グラフニューラルネットワーク）によるタンパク質構造予測（AlphaFold）と「情報・数学」教員への道",
-    "episode_title": "折り紙でつくる、まだ地球にないタンパク質――情報学とアルゴリズムの教室",
-    "posted_at": "2026-10-04T11:11:05.220671+09:00",
-    "file_path": "content/2026-10-04_ep05_alphafold_informatics_teacher.md",
-    "status": "publish",
-    "references": [
-      "Jumper, J., Hassabis, D. (2022). Protein structure predictions to atomic accuracy with AlphaFold. *Nature Methods*, 19(1), 11-12. [https://doi.org/10.1038/s41592-021-01362-6](https://doi.org/10.1038/s41592-021-01362-6)",
-      "Watson, J. L., Juergens, D., Bennett, N. R., Trippe, B. L., Yim, J., Eisenach, H. E., et al. (2023). De novo design of protein structure and function with RFdiffusion. *Nature*, 620(7976), 1089-1100. [https://doi.org/10.1038/s41586-023-06415-8](https://doi.org/10.1038/s41586-023-06415-8)",
-      "Lu, H., Diaz, D. J., Czarnecki, N. J., Zhu, C., Kim, W., Shroff, R., et al. (2022). Machine learning-aided engineering of hydrolases for PET depolymerization. *Nature*, 604(7907), 662-667. [https://doi.org/10.1038/s41586-022-04599-z](https://doi.org/10.1038/s41586-022-04599-z)"
-    ]
-  },
-  {
     "work_id": "ep04-math-topology-knot-teacher",
     "episode_num": 4,
     "faculty": "理学部・数学科 ／ 教育学部・数学教育専攻（位相幾何学・数理科学ゼミ）",
@@ -115,6 +100,21 @@
       "Watts, D. J., Strogatz, S. H. (1998). Collective dynamics of ‘small-world’ networks. *Nature*, 393(6684), 440-442. [https://doi.org/10.1038/30918](https://doi.org/10.1038/30918)",
       "Barabási, A., Albert, R. (1999). Emergence of Scaling in Random Networks. *Science*, 286(5439), 509-512. [https://doi.org/10.1126/science.286.5439.509](https://doi.org/10.1126/science.286.5439.509)",
       "Strogatz, S. H. (2000). From Kuramoto to Crawford: exploring the onset of synchronization in populations of coupled oscillators. *Physica D: Nonlinear Phenomena*, 143(1-4), 1-20. [https://doi.org/10.1016/s0167-2789(00)00094-4](https://doi.org/10.1016/s0167-2789(00)"
+    ]
+  },
+  {
+    "work_id": "ep05-alphafold-informatics-teacher",
+    "episode_num": 5,
+    "faculty": "情報理工学部・コンピュータ科学科（数理情報・バイオインフォマティクス研究室／情報科教職課程）",
+    "theme": "情報学（アルゴリズム・深層学習・グラフニューラルネットワーク）によるタンパク質構造予測（AlphaFold）と「情報・数学」教員への道",
+    "episode_title": "折り紙でつくる、まだ地球にないタンパク質――情報学とアルゴリズムの教室",
+    "posted_at": "2026-10-05T08:10:17.685010+09:00",
+    "file_path": "content/2026-10-04_ep05_alphafold_informatics_teacher.md",
+    "status": "publish",
+    "references": [
+      "Jumper, J., Hassabis, D. (2022). Protein structure predictions to atomic accuracy with AlphaFold. *Nature Methods*, 19(1), 11-12. [https://doi.org/10.1038/s41592-021-01362-6](https://doi.org/10.1038/s41592-021-01362-6)",
+      "Watson, J. L., Juergens, D., Bennett, N. R., Trippe, B. L., Yim, J., Eisenach, H. E., et al. (2023). De novo design of protein structure and function with RFdiffusion. *Nature*, 620(7976), 1089-1100. [https://doi.org/10.1038/s41586-023-06415-8](https://doi.org/10.1038/s41586-023-06415-8)",
+      "Lu, H., Diaz, D. J., Czarnecki, N. J., Zhu, C., Kim, W., Shroff, R., et al. (2022). Machine learning-aided engineering of hydrolases for PET depolymerization. *Nature*, 604(7907), 662-667. [https://doi.org/10.1038/s41586-022-04599-z](https://doi.org/10.1038/s41586-022-04599-z)"
     ]
   }
 ]

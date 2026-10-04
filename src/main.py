@@ -48,18 +48,19 @@ def print_stock_status(history_mgr: HistoryManager):
             unstocked_list.append((idx, w))
 
     print("\n" + "=" * 76)
-    print(" 【放課後サイエンス・キャンパス（Qwen2.5×Gemma2）ストック＆配信状況】")
+    print(" 【放課後サイエンス・キャンパス（Qwen3.5×Gemma4×FLUX.2）ストック＆配信状況】")
     print("=" * 76)
     print(f"  ・全エピソード数         : {len(history_mgr.catalog)} 話")
-    print(f"  ・WordPress配信済み      : {posted_count} 話")
+    print(f"  ・配信済み               : {posted_count} 話")
     print(f"  ・書き溜め済み（配信待ち）: {len(stocked_list)} 話")
     print(f"  ・未生成（今後の執筆対象）: {len(unstocked_list)} 話")
     print("-" * 76)
 
     if stocked_list:
-        print("\n[OK] 【書き溜め済み・WordPress配信待ちストック】")
+        print("\n[OK] 【書き溜め済み・配信待ちストック】")
         for idx, w, sf in stocked_list:
-            print(f"  [第{w.get('episode_num', idx):02d}話] {w['title']}（{w['faculty']}） -> {sf}")
+            img_mark = "🎨[挿絵あり]" if sf.with_suffix(".png").exists() else "  [挿絵なし]"
+            print(f"  [第{w.get('episode_num', idx):02d}話] {img_mark} {w['title']}（{w['faculty']}） -> {sf}")
     else:
         print("\n[!] 現在、未配信の書き溜めストックは 0 話です。")
 
@@ -83,11 +84,11 @@ def git_sync_and_push(generated_files: List[Path]) -> bool:
             logger.info("No new changes in content/ or data/ to commit.")
             return True
 
-        msg = f"feat(stock): Add {len(generated_files)} Rikejo science novel episode(s) via Qwen2.5xGemma2 [skip ci]"
+        msg = f"feat(stock): Add {len(generated_files)} Rikejo science novel asset(s) via Qwen3.5xGemma4xFLUX2 [skip ci]"
         subprocess.run(["git", "commit", "-m", msg], check=True)
         logger.info("Pushing to origin/main...")
         subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
-        logger.info("Successfully pushed stocked episodes to GitHub!")
+        logger.info("Successfully pushed stocked episodes & illustrations to GitHub!")
         return True
     except Exception as e:
         logger.error(f"Git push failed: {e}")
@@ -104,14 +105,15 @@ def extract_refs_from_markdown(md_text: str) -> List[str]:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Rikejo Science Light Novel Dual-LLM Generator (Qwen 2.5 14B x Gemma 2 9B) & WordPress Mail Poster"
+        description="Rikejo Science Light Novel Dual-LLM Generator (Qwen 3.5 9B x Gemma 4 12B) + Draw Things (FLUX.2) & Mail Poster"
     )
     parser.add_argument("--file", "-f", default=None, help="Path to a specific markdown file to publish directly")
     parser.add_argument("--work-id", default=None, help="Specific episode ID from data/science_catalog.json")
-    parser.add_argument("--stock-count", "-n", type=int, default=0, help="Batch-generate N episodes into content/ using Mac mini Dual-LLM")
-    parser.add_argument("--push", action="store_true", help="Git commit & push after generating stock")
+    parser.add_argument("--stock-count", "-n", type=int, default=0, help="Batch-generate N episodes + illustrations into content/")
+    parser.add_argument("--generate-images", action="store_true", help="Generate missing .png illustrations for existing stocked episodes via Draw Things")
+    parser.add_argument("--push", action="store_true", help="Git commit & push after generating stock or illustrations")
     parser.add_argument("--status-report", action="store_true", help="Show current stock & publication status")
-    parser.add_argument("--send", action="store_true", help="Actually send the email to WordPress")
+    parser.add_argument("--send", action="store_true", help="Actually send the email to Blogger / WordPress")
     parser.add_argument("--dry-run", action="store_true", help="Run in dry-run mode (no email sent, history not updated)")
     parser.add_argument("--preview-html", action="store_true", help="Export rendered HTML to preview_output.html")
     parser.add_argument("--status", choices=["publish", "draft"], default=None, help="Override post status (publish or draft)")
@@ -156,7 +158,40 @@ def main():
         ollama_host=config.ollama_host,
         director_model=config.director_model,
         writer_model=config.writer_model,
+        draw_things_host=config.draw_things_host,
     )
+
+    # Generate missing illustrations for existing stocked episodes
+    if args.generate_images:
+        dt_conn = generator.check_draw_things_connection()
+        if not dt_conn.get("online"):
+            logger.error(f"Cannot reach Draw Things HTTP API at {config.draw_things_host}: {dt_conn.get('error')}")
+            sys.exit(1)
+        posted_ids = history_mgr.get_posted_ids()
+        generated_imgs: List[Path] = []
+        for w in history_mgr.catalog:
+            if w["id"] in posted_ids and not args.force:
+                continue
+            sf = history_mgr.find_stock_file_for_work(w["id"])
+            if sf is None:
+                continue
+            img_path = sf.with_suffix(".png")
+            if img_path.exists() and not args.force:
+                logger.info(f"Illustration already exists for {w['id']}: {img_path}")
+                continue
+            md_text = sf.read_text(encoding="utf-8", errors="ignore")
+            saved_img, _ = generator.generate_illustration(
+                work=w,
+                output_image_path=img_path,
+                story_body=md_text,
+                episode_title=w["title"],
+            )
+            if saved_img:
+                generated_imgs.append(saved_img)
+        if args.push and generated_imgs:
+            git_sync_and_push(generated_imgs)
+        print_stock_status(history_mgr)
+        return
 
     # Batch stock mode
     if args.stock_count > 0:
@@ -181,6 +216,16 @@ def main():
             out_path.write_text(full_md, encoding="utf-8")
             generated_files.append(out_path)
             logger.info(f"Saved stocked episode: {out_path} ('{ep_title}')")
+
+            img_out_path = out_path.with_suffix(".png")
+            saved_img, _ = generator.generate_illustration(
+                work=work,
+                output_image_path=img_out_path,
+                story_body=full_md,
+                episode_title=ep_title,
+            )
+            if saved_img:
+                generated_files.append(saved_img)
 
         if args.push:
             git_sync_and_push(generated_files)
@@ -273,6 +318,20 @@ def main():
                     "Skipping dispatch to prevent duplicate posts."
                 )
                 return
+
+    # Ensure sidecar illustration .png exists if Draw Things is reachable on LAN
+    if target_file and target_work:
+        sidecar_png = target_file.with_suffix(".png")
+        if not sidecar_png.exists():
+            dt_conn = generator.check_draw_things_connection()
+            if dt_conn.get("online"):
+                md_text = target_file.read_text(encoding="utf-8", errors="ignore")
+                generator.generate_illustration(
+                    work=target_work,
+                    output_image_path=sidecar_png,
+                    story_body=md_text,
+                    episode_title=target_work.get("title", ""),
+                )
 
     next_work = None
     if target_work:

@@ -1,6 +1,7 @@
 import re
 import html
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import List, Optional, Tuple, Dict, Any
 
 try:
@@ -27,6 +28,7 @@ class FormattedPost:
     content_plain: str = ""
     content_html_clean: str = ""
     content_plain_clean: str = ""
+    image_path: Optional[str] = None
 
 
 def _fallback_yaml_parser(text: str) -> Dict[str, Any]:
@@ -258,8 +260,15 @@ def format_post_content(
     status_override: Optional[str] = None,
     include_jetpack_shortcodes: bool = True,
     next_work: Optional[Dict[str, Any]] = None,
+    image_path: Optional[str] = None,
 ) -> FormattedPost:
     meta, body = parse_markdown_with_frontmatter(file_path)
+
+    resolved_image_path = image_path
+    if not resolved_image_path:
+        sidecar_png = Path(file_path).with_suffix(".png")
+        if sidecar_png.exists():
+            resolved_image_path = str(sidecar_png)
 
     raw_title = meta.get("title", "放課後サイエンス・キャンパス")
     title = re.sub(r"^(?:【第\s*\d+\s*話】|第\s*\d+\s*話[：:\s]*)\s*", "", str(raw_title)).strip()
@@ -332,4 +341,5 @@ def format_post_content(
         content_plain=final_plain,
         content_html_clean=html_body,
         content_plain_clean=cleaned_body,
+        image_path=resolved_image_path,
     )

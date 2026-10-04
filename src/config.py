@@ -25,6 +25,7 @@ class AppConfig:
     ollama_host: str
     director_model: str
     writer_model: str
+    draw_things_host: str
     smtp_host: str
     smtp_port: int
     smtp_user: str
@@ -46,6 +47,7 @@ def get_config() -> AppConfig:
     ollama_host = os.getenv("OLLAMA_HOST", "http://192.168.128.59:11434").strip()
     director_model = os.getenv("OLLAMA_DIRECTOR_MODEL", "qwen3.5:9b").strip()
     writer_model = os.getenv("OLLAMA_WRITER_MODEL", "gemma4:12b").strip()
+    draw_things_host = os.getenv("DRAW_THINGS_HOST", "http://192.168.128.59:7860").strip()
 
     smtp_user = os.getenv("SMTP_USER", "").strip()
     raw_smtp_host = os.getenv("SMTP_HOST", "").strip()
@@ -72,6 +74,7 @@ def get_config() -> AppConfig:
         ollama_host=ollama_host,
         director_model=director_model,
         writer_model=writer_model,
+        draw_things_host=draw_things_host,
         smtp_host=smtp_host,
         smtp_port=smtp_port,
         smtp_user=smtp_user,

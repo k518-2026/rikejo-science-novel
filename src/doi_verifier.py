@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 DEFAULT_OLLAMA_HOST = "http://192.168.128.59:11434"
 DEFAULT_DIRECTOR_MODEL = "qwen3.5:9b"
 DEFAULT_WRITER_MODEL = "gemma4:12b"
+DEFAULT_DRAW_THINGS_HOST = "http://192.168.128.59:7860"
 
 
 def clean_doi_string(raw_doi: str) -> str:

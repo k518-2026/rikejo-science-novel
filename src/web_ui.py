@@ -602,13 +602,16 @@ class StudioRequestHandler(BaseHTTPRequestHandler):
                 ollama_host=config.ollama_host,
                 director_model=config.director_model,
                 writer_model=config.writer_model,
+                draw_things_host=config.draw_things_host,
             )
             posted_ids = hm.get_posted_ids()
             cat_out = []
             for w in hm.catalog:
                 w_copy = dict(w)
                 w_copy["posted"] = w["id"] in posted_ids
-                w_copy["stocked"] = hm.find_stock_file_for_work(w["id"]) is not None
+                sf = hm.find_stock_file_for_work(w["id"])
+                w_copy["stocked"] = sf is not None
+                w_copy["has_image"] = bool(sf and sf.with_suffix(".png").exists())
                 cat_out.append(w_copy)
 
             self._send_json({
@@ -617,6 +620,7 @@ class StudioRequestHandler(BaseHTTPRequestHandler):
                 "ollama": gen.check_connection(),
                 "director_model": config.director_model,
                 "writer_model": config.writer_model,
+                "draw_things_host": config.draw_things_host,
             })
             return
 
@@ -631,10 +635,11 @@ class StudioRequestHandler(BaseHTTPRequestHandler):
                 self._send_json({
                     "content": content,
                     "file_path": str(stock_file),
+                    "image_path": formatted.image_path or "",
                     "html_preview": formatted.content_html,
                 })
             else:
-                self._send_json({"content": "", "file_path": "", "html_preview": ""})
+                self._send_json({"content": "", "file_path": "", "image_path": "", "html_preview": ""})
             return
 
         self.send_error(404)
@@ -647,6 +652,7 @@ class StudioRequestHandler(BaseHTTPRequestHandler):
             ollama_host=config.ollama_host,
             director_model=config.director_model,
             writer_model=config.writer_model,
+            draw_things_host=config.draw_things_host,
         )
 
         if parsed.path == "/api/lorebook":
@@ -701,6 +707,14 @@ class StudioRequestHandler(BaseHTTPRequestHandler):
                 out_path.parent.mkdir(parents=True, exist_ok=True)
                 out_path.write_text(full_md, encoding="utf-8")
 
+                img_out_path = out_path.with_suffix(".png")
+                saved_img, en_prompt = gen.generate_illustration(
+                    work=work,
+                    output_image_path=img_out_path,
+                    story_body=full_md,
+                    episode_title=ep_title,
+                )
+
                 formatted = format_post_content(str(out_path))
                 Path("preview_output.html").write_text(formatted.content_html, encoding="utf-8")
 
@@ -710,6 +724,8 @@ class StudioRequestHandler(BaseHTTPRequestHandler):
                     "markdown": full_md,
                     "plot": plot_used,
                     "file_path": str(out_path),
+                    "image_path": str(saved_img) if saved_img else "",
+                    "image_prompt": en_prompt,
                     "html_preview": formatted.content_html,
                 })
             except Exception as e:
@@ -733,6 +749,7 @@ class StudioRequestHandler(BaseHTTPRequestHandler):
             self._send_json({
                 "success": True,
                 "file_path": str(stock_file),
+                "image_path": formatted.image_path or "",
                 "html_preview": formatted.content_html,
             })
             return
@@ -747,6 +764,18 @@ class StudioRequestHandler(BaseHTTPRequestHandler):
             if not stock_file or not stock_file.exists():
                 self._send_json({"success": False, "error": "原稿ファイルが見つかりません。先に執筆または保存してください。"}, 400)
                 return
+
+            sidecar_png = stock_file.with_suffix(".png")
+            if not sidecar_png.exists() and work:
+                dt_conn = gen.check_draw_things_connection()
+                if dt_conn.get("online"):
+                    md_text = stock_file.read_text(encoding="utf-8", errors="ignore")
+                    gen.generate_illustration(
+                        work=work,
+                        output_image_path=sidecar_png,
+                        story_body=md_text,
+                        episode_title=work.get("title", ""),
+                    )
 
             next_work = None
             if work:
@@ -798,7 +827,7 @@ def run_web_server(port: int = 8505, open_browser: bool = True):
     print("\n" + "=" * 72)
     print(" 🌸 放課後サイエンス・キャンパス｜理系女子ライトノベル執筆スタジオ (Web UI)")
     print(f" 🌐 URL: {url}")
-    print(" 🤖 構成作家: qwen2.5:14b  ×  執筆作家: gemma2:9b (Mac mini: 192.168.128.59:11434)")
+    print(" 🤖 構成作家: qwen3.5:9b  ×  執筆作家: gemma4:12b  ×  挿絵: FLUX.2 (Mac mini: 192.168.128.59)")
     print("=" * 72 + "\n")
     if open_browser:
         try:

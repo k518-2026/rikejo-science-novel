@@ -1,3 +1,4 @@
+﻿import os
 import re
 import smtplib
 import ssl
@@ -103,6 +104,11 @@ class WordPressMailSender:
         for_blogger: bool = False,
     ) -> MIMEMultipart:
         has_image = bool(post.image_path and Path(post.image_path).exists())
+        # Blogger宛は添付付きメールがバウンスし続けたため、明示的に許可しない限り添付しない
+        if has_image and for_blogger and os.environ.get(
+            "ATTACH_IMAGES_BLOGGER", "false"
+        ).strip().lower() not in ("1", "true", "yes"):
+            has_image = False
         if has_image:
             msg = MIMEMultipart("mixed")
             alt_part = MIMEMultipart("alternative")

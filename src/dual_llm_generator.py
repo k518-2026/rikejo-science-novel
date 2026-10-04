@@ -689,8 +689,8 @@ Based on the following Japanese science light novel episode, write a single, viv
 1. Output ONLY the raw English prompt paragraph. Do NOT include explanations, markdown formatting, quotes, or Japanese text.
 2. Start with: "Anime light novel illustration of a Japanese high school girl and a gentle female university mentor in a ..."
 3. Visually describe the characters' expressions (eyes sparkling with wonder), the university laboratory or classroom atmosphere, and the specific scientific/mathematical visual phenomenon (e.g., glowing emerald petunias, iridescent blue morpho butterfly wing, blackboard with colorful knot diagrams, glowing 3D protein hologram on monitor, rooftop telescope under starry sky, golden spider silk thread).
-4. The scene MUST be bright, light and airy: daytime, sunlit, high-key lighting, soft pastel colors, white and pale sky-blue tones, cheerful hopeful mood. Avoid night, darkness, dim rooms, heavy shadows and dark backgrounds (even for stargazing scenes, depict a bright twilight sky or a sunlit rooftop with a luminous pastel sky).
-5. End with: "masterpiece anime art style, bright and airy high-key lighting, soft pastel colors, Makoto Shinkai and Kyoto Animation inspired luminous sky, soft bokeh, highly detailed."
+4. The scene MUST be bright and cheerful yet richly colored with strong contrast: daytime, sunlit, balanced exposure, vivid saturated colors, deep blue sky, clear dark outlines, distinct light and shadow. Avoid night, gloomy darkness, AND avoid washed-out, overexposed, white-faded or pastel-hazy looks (even for stargazing scenes, depict a vivid deep-blue twilight sky glowing with warm colors).
+5. End with: "masterpiece anime art style, bright sunlit scene, balanced exposure, vivid saturated colors, strong contrast, crisp line art, Makoto Shinkai and Kyoto Animation inspired vivid sky, highly detailed."
 """
         try:
             logger.info(f"[Writer: {self.writer_model}] Generating English illustration prompt for FLUX.2...")
@@ -721,7 +721,7 @@ Based on the following Japanese science light novel episode, write a single, viv
             f"Anime light novel illustration of a Japanese high school girl with sparkling eyes and a gentle female university researcher "
             f"in a bright university laboratory, exploring {work.get('id', 'modern science').replace('-', ' ')}, "
             f"glowing scientific apparatus, blackboard and glassware reflecting warm sunlight, "
-            f"masterpiece anime art style, bright and airy high-key lighting, soft pastel colors, soft bokeh, highly detailed."
+            f"masterpiece anime art style, bright sunlit scene, balanced exposure, vivid saturated colors, strong contrast, crisp line art, highly detailed."
         )
 
     def generate_illustration(
@@ -762,16 +762,16 @@ Based on the following Japanese science light novel episode, write a single, viv
         logger.info(f"[Draw Things: {self.draw_things_host}] Generating 512x512 illustration (steps=12, guidance=4.0, sampler='Euler A Trailing')...")
 
         bright_suffix = (
-            "bright, light and airy atmosphere, high-key lighting, soft pastel colors, "
-            "sunlit daytime, clean white and pale sky-blue tones, cheerful and hopeful mood"
+            "bright sunlit daytime, balanced exposure, vivid rich saturated colors, strong contrast, "
+            "deep blue sky, crisp dark line art, distinct shadows and highlights, cheerful mood"
         )
-        if "high-key" not in en_prompt.lower():
+        if "balanced exposure" not in en_prompt.lower():
             en_prompt = f"{en_prompt.rstrip(' .')}, {bright_suffix}."
 
         url = f"{self.draw_things_host}/sdapi/v1/txt2img"
         payload = {
             "prompt": en_prompt,
-            "negative_prompt": "dark, dim, gloomy, night, low-key lighting, heavy shadows, black background, muted colors, murky",
+            "negative_prompt": "dark, gloomy, night, murky, overexposed, washed out, faded, blown-out highlights, pastel haze, low contrast, white background, flat colors",
             "width": 512,
             "height": 512,
             "steps": 12,

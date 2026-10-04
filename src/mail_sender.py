@@ -28,6 +28,24 @@ class WordPressMailSender:
         self.config = config
 
     @staticmethod
+    def _load_lightweight_image(path: Path, max_bytes: int = 120_000):
+        """Returns (bytes, mime_subtype). Converts PNG to a small JPEG so the email stays tiny."""
+        raw = path.read_bytes()
+        try:
+            import io
+            from PIL import Image
+            img = Image.open(io.BytesIO(raw)).convert("RGB")
+            for quality in (82, 72, 62, 50):
+                buf = io.BytesIO()
+                img.save(buf, "JPEG", quality=quality, optimize=True)
+                if buf.tell() <= max_bytes:
+                    break
+            return buf.getvalue(), "jpeg"
+        except Exception as e:
+            logger.warning(f"Pillow compression unavailable ({e}); attaching original image.")
+            return raw, "png"
+
+    @staticmethod
     def _sanitize_html_for_blogger(html_text: str) -> str:
         """
         Simplifies HTML specifically for Blogger's 'Post using email' and strict outbound SMTP filters (e.g., Outlook.com 550 5.7.520):
@@ -129,12 +147,12 @@ class WordPressMailSender:
 
         if has_image:
             msg.attach(alt_part)
-            img_file = Path(post.image_path)
-            img_bytes = img_file.read_bytes()
-            img_part = MIMEImage(img_bytes, name=img_file.name)
-            img_part.add_header("Content-Disposition", "attachment", filename=img_file.name)
+            img_bytes, subtype = self._load_lightweight_image(Path(post.image_path))
+            att_name = f"illustration.{'jpg' if subtype == 'jpeg' else 'png'}"
+            img_part = MIMEImage(img_bytes, _subtype=subtype, name=att_name)
+            img_part.add_header("Content-Disposition", "attachment", filename=att_name)
             msg.attach(img_part)
-            logger.info(f"Attached illustration image: {img_file.name} ({len(img_bytes)} bytes)")
+            logger.info(f"Attached illustration image: {att_name} ({len(img_bytes)} bytes)")
 
         return msg
 

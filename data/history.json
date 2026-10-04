@@ -57,5 +57,20 @@
       "Wasserman, S. A., Cozzarelli, N. R. (1986). Biochemical Topology: Applications to DNA Recombination and Replication. *Science*, 232(4753), 951-960. [https://doi.org/10.1126/science.3010458](https://doi.org/10.1126/science.3010458)",
       "Carlsson, G. (2009). Topology and data. *Bulletin of the American Mathematical Society*, 46(2), 255-308. [https://doi.org/10.1090/s0273-0979-09-01249-x](https://doi.org/10.1090/s0273-0979-09-01249-x)"
     ]
+  },
+  {
+    "work_id": "ep05-alphafold-informatics-teacher",
+    "episode_num": 5,
+    "faculty": "情報理工学部・コンピュータ科学科（数理情報・バイオインフォマティクス研究室／情報科教職課程）",
+    "theme": "情報学（アルゴリズム・深層学習・グラフニューラルネットワーク）によるタンパク質構造予測（AlphaFold）と「情報・数学」教員への道",
+    "episode_title": "折り紙でつくる、まだ地球にないタンパク質――情報学とアルゴリズムの教室",
+    "posted_at": "2026-10-04T11:11:05.220671+09:00",
+    "file_path": "content/2026-10-04_ep05_alphafold_informatics_teacher.md",
+    "status": "publish",
+    "references": [
+      "Jumper, J., Hassabis, D. (2022). Protein structure predictions to atomic accuracy with AlphaFold. *Nature Methods*, 19(1), 11-12. [https://doi.org/10.1038/s41592-021-01362-6](https://doi.org/10.1038/s41592-021-01362-6)",
+      "Watson, J. L., Juergens, D., Bennett, N. R., Trippe, B. L., Yim, J., Eisenach, H. E., et al. (2023). De novo design of protein structure and function with RFdiffusion. *Nature*, 620(7976), 1089-1100. [https://doi.org/10.1038/s41586-023-06415-8](https://doi.org/10.1038/s41586-023-06415-8)",
+      "Lu, H., Diaz, D. J., Czarnecki, N. J., Zhu, C., Kim, W., Shroff, R., et al. (2022). Machine learning-aided engineering of hydrolases for PET depolymerization. *Nature*, 604(7907), 662-667. [https://doi.org/10.1038/s41586-022-04599-z](https://doi.org/10.1038/s41586-022-04599-z)"
+    ]
   }
 ]

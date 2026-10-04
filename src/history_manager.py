@@ -44,6 +44,32 @@ class HistoryManager:
                 return f
         return None
 
+    def count_unposted_stock(self, content_dir: Path = Path("content")) -> int:
+        posted_ids = self.get_posted_ids()
+        count = 0
+        for w in self.catalog:
+            wid = w["id"]
+            if wid in posted_ids:
+                continue
+            if self.find_stock_file_for_work(wid, content_dir=content_dir) is not None:
+                count += 1
+        return count
+
+    def append_catalog_works(self, new_works: List[Dict[str, Any]]):
+        if not new_works:
+            return
+        existing_ids = {w["id"] for w in self.catalog}
+        added = False
+        for nw in new_works:
+            if nw.get("id") and nw["id"] not in existing_ids:
+                self.catalog.append(nw)
+                existing_ids.add(nw["id"])
+                added = True
+        if added:
+            self.catalog_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(self.catalog_path, "w", encoding="utf-8") as f:
+                json.dump(self.catalog, f, ensure_ascii=False, indent=2)
+
     def select_unstocked_works(self, count: int = 3, content_dir: Path = Path("content")) -> List[Dict[str, Any]]:
         posted_ids = self.get_posted_ids()
         candidates: List[Dict[str, Any]] = []

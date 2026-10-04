@@ -103,6 +103,103 @@ def extract_refs_from_markdown(md_text: str) -> List[str]:
     return refs
 
 
+def replenish_stock_if_needed(
+    history_mgr: HistoryManager,
+    generator: DualLLMStoryGenerator,
+    min_stock: int = 1,
+    target_stock: int = 6,
+    push_to_git: bool = True,
+) -> List[Path]:
+    """
+    Checks how many unposted stocked episodes remain in `content/`.
+    If the remaining unposted stock is <= `min_stock` (e.g., 0 when stock runs out, or below threshold),
+    automatically generates new episodes + Draw Things illustrations up to `target_stock` and pushes to GitHub.
+    Also ensures any existing unposted stocked episodes that lack `.png` illustrations get their images generated.
+    """
+    try:
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=False)
+        history_mgr.history = history_mgr._load_json(history_mgr.history_path)
+        history_mgr.catalog = history_mgr._load_json(history_mgr.catalog_path)
+    except Exception:
+        pass
+
+    conn = generator.check_connection()
+    if not conn.get("online"):
+        logger.info(f"Mac mini Ollama ({generator.ollama_host}) is not reachable on LAN; skipping auto-replenish.")
+        return []
+
+    generated_assets: List[Path] = []
+    posted_ids = history_mgr.get_posted_ids()
+
+    # 1. Ensure all currently unposted stocked episodes have their .png illustration
+    dt_online = conn.get("draw_things_online", False)
+    if dt_online:
+        for w in history_mgr.catalog:
+            if w["id"] in posted_ids:
+                continue
+            sf = history_mgr.find_stock_file_for_work(w["id"])
+            if sf is not None:
+                img_p = sf.with_suffix(".png")
+                if not img_p.exists():
+                    logger.info(f"[Auto-Replenish] Generating missing illustration for stocked episode '{w['id']}'...")
+                    md_text = sf.read_text(encoding="utf-8", errors="ignore")
+                    saved_img, _ = generator.generate_illustration(
+                        work=w,
+                        output_image_path=img_p,
+                        story_body=md_text,
+                        episode_title=w.get("title", ""),
+                    )
+                    if saved_img:
+                        generated_assets.append(saved_img)
+
+    # 2. Check remaining unposted stock count
+    current_stock = history_mgr.count_unposted_stock()
+    logger.info(f"[Auto-Replenish Check] Unposted stocked episodes: {current_stock} (trigger threshold <= {min_stock}, target = {target_stock})")
+
+    if current_stock <= min_stock:
+        needed = max(1, target_stock - current_stock)
+        logger.info(
+            f"[Auto-Replenish Triggered!] Unposted stock ({current_stock}) is <= {min_stock}. "
+            f"Automatically generating {needed} new episode(s) and illustration(s)..."
+        )
+        targets = history_mgr.select_unstocked_works(count=needed)
+        if len(targets) < needed:
+            missing_themes = needed - len(targets)
+            new_themes = generator.generate_new_catalog_themes(
+                existing_catalog=history_mgr.catalog,
+                count=max(3, missing_themes),
+            )
+            if new_themes:
+                history_mgr.append_catalog_works(new_themes)
+                targets = history_mgr.select_unstocked_works(count=needed)
+
+        for idx, work in enumerate(targets, start=1):
+            logger.info(f"\n=== [Auto-Replenish {idx}/{len(targets)}] Dual-LLM Generating: {work['title']} ===")
+            full_md, ep_title, refs, _ = generator.generate_complete_episode(work=work)
+            today_str = datetime.now(JST).strftime("%Y-%m-%d")
+            safe_id = work["id"].replace("-", "_")
+            out_path = Path(f"content/{today_str}_{safe_id}.md")
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            out_path.write_text(full_md, encoding="utf-8")
+            generated_assets.append(out_path)
+            logger.info(f"Saved auto-replenished episode: {out_path} ('{ep_title}')")
+
+            img_out_path = out_path.with_suffix(".png")
+            saved_img, _ = generator.generate_illustration(
+                work=work,
+                output_image_path=img_out_path,
+                story_body=full_md,
+                episode_title=ep_title,
+            )
+            if saved_img:
+                generated_assets.append(saved_img)
+
+    if generated_assets and push_to_git:
+        git_sync_and_push(generated_assets)
+
+    return generated_assets
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Rikejo Science Light Novel Dual-LLM Generator (Qwen 3.5 9B x Gemma 4 12B) + Draw Things (FLUX.2) & Mail Poster"
@@ -110,6 +207,9 @@ def main():
     parser.add_argument("--file", "-f", default=None, help="Path to a specific markdown file to publish directly")
     parser.add_argument("--work-id", default=None, help="Specific episode ID from data/science_catalog.json")
     parser.add_argument("--stock-count", "-n", type=int, default=0, help="Batch-generate N episodes + illustrations into content/")
+    parser.add_argument("--auto-replenish", action="store_true", help="Automatically generate new episodes + illustrations when unposted stock <= --min-stock")
+    parser.add_argument("--min-stock", type=int, default=0, help="Stock threshold to trigger --auto-replenish (default: 0 = when stock runs out)")
+    parser.add_argument("--target-stock", type=int, default=6, help="Target number of unposted episodes to maintain on --auto-replenish (default: 6)")
     parser.add_argument("--generate-images", action="store_true", help="Generate missing .png illustrations for existing stocked episodes via Draw Things")
     parser.add_argument("--push", action="store_true", help="Git commit & push after generating stock or illustrations")
     parser.add_argument("--status-report", action="store_true", help="Show current stock & publication status")
@@ -161,6 +261,18 @@ def main():
         draw_things_host=config.draw_things_host,
     )
 
+    # Auto-replenish mode (triggered by scheduled task or CLI when stock runs out)
+    if args.auto_replenish:
+        replenish_stock_if_needed(
+            history_mgr=history_mgr,
+            generator=generator,
+            min_stock=args.min_stock,
+            target_stock=args.target_stock,
+            push_to_git=args.push,
+        )
+        print_stock_status(history_mgr)
+        return
+
     # Generate missing illustrations for existing stocked episodes
     if args.generate_images:
         dt_conn = generator.check_draw_things_connection()
@@ -200,6 +312,14 @@ def main():
             logger.error(f"Cannot reach Mac mini Ollama server at {config.ollama_host}: {conn.get('error')}")
             sys.exit(1)
         targets = history_mgr.select_unstocked_works(count=args.stock_count)
+        if len(targets) < args.stock_count:
+            new_themes = generator.generate_new_catalog_themes(
+                existing_catalog=history_mgr.catalog,
+                count=max(3, args.stock_count - len(targets)),
+            )
+            if new_themes:
+                history_mgr.append_catalog_works(new_themes)
+                targets = history_mgr.select_unstocked_works(count=args.stock_count)
         if not targets:
             logger.info("All catalog episodes are already published or stocked!")
             print_stock_status(history_mgr)
@@ -271,8 +391,16 @@ def main():
 
         target_work = history_mgr.select_next_work(work_id=args.work_id, force=args.force)
         if not target_work:
-            logger.info("All catalog episodes have already been published! Skipping to prevent duplicate posts.")
-            return
+            # All existing catalog works have been published -> if Mac mini is online, auto-create new catalog works!
+            conn_check = generator.check_connection()
+            if conn_check.get("online"):
+                new_themes = generator.generate_new_catalog_themes(existing_catalog=history_mgr.catalog, count=3)
+                if new_themes:
+                    history_mgr.append_catalog_works(new_themes)
+                    target_work = history_mgr.select_next_work(work_id=args.work_id, force=args.force)
+            if not target_work:
+                logger.info("All catalog episodes have already been published! Skipping to prevent duplicate posts.")
+                return
 
         posted_ids = history_mgr.get_posted_ids()
         if target_work["id"] in posted_ids and not args.force and not args.repost:
@@ -289,6 +417,7 @@ def main():
             logger.info(f"Using pre-stocked episode file from content/: {target_file}")
             target_refs = extract_refs_from_markdown(target_file.read_text(encoding="utf-8", errors="ignore"))
         elif conn.get("online"):
+            logger.info(f"Stock file not found for '{target_work['id']}'. Automatically generating article & illustration via Mac mini...")
             full_md, ep_title, target_refs, _ = generator.generate_complete_episode(work=target_work)
             today_str = datetime.now(JST).strftime("%Y-%m-%d")
             safe_id = target_work["id"].replace("-", "_")
@@ -296,6 +425,13 @@ def main():
             target_file.parent.mkdir(parents=True, exist_ok=True)
             target_file.write_text(full_md, encoding="utf-8")
             logger.info(f"Generated episode saved to: {target_file}")
+            img_out_path = target_file.with_suffix(".png")
+            generator.generate_illustration(
+                work=target_work,
+                output_image_path=img_out_path,
+                story_body=full_md,
+                episode_title=ep_title,
+            )
         else:
             # Running on GitHub Actions cloud runner (cannot reach local Mac mini 192.168.128.59):
             # Look ONLY for an UNPOSTED stocked episode in content/ so we NEVER send a duplicate
@@ -368,6 +504,19 @@ def main():
             status=formatted.status,
         )
         logger.info(f"Recorded '{formatted.title}' in data/history.json and data/POSTED_STORIES.md")
+
+        # After recording a post, if unposted stock has run out (0 remaining) and Mac mini is reachable on LAN,
+        # automatically generate the next batch of articles & illustrations!
+        remaining_stock = history_mgr.count_unposted_stock()
+        if remaining_stock == 0:
+            logger.info("Unposted stock has reached 0! Checking if Mac mini is online to auto-replenish...")
+            replenish_stock_if_needed(
+                history_mgr=history_mgr,
+                generator=generator,
+                min_stock=0,
+                target_stock=6,
+                push_to_git=args.push,
+            )
 
 
 if __name__ == "__main__":

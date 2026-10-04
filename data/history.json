@@ -42,5 +42,20 @@
       "Strack, R. (2019). Harnessing fungal bioluminescence. *Nature Methods*, 16(2), 140-140. [https://doi.org/10.1038/s41592-019-0311-4](https://doi.org/10.1038/s41592-019-0311-4)",
       "Shimomura, O., Chalfie, M., Tsien, R. Y. (2009). Cover Picture: Discovery of Green Fluorescent Protein (GFP) (Nobel Lecture) / GFP: Lighting Up Life (Nobel Lecture) / Constructing and Exploiting the Fluorescent Protein Paintbox (Nobel Lecture) (Angew. Chem. Int. Ed. 31/2009). *Angewandte Chemie International Edition*, 48(31), 5555-5555. [https://doi.org/10.1002/anie.200990159](https://doi.org/10.1002/anie.200990159)"
     ]
+  },
+  {
+    "work_id": "ep04-math-topology-knot-teacher",
+    "episode_num": 4,
+    "faculty": "理学部・数学科 ／ 教育学部・数学教育専攻（位相幾何学・数理科学ゼミ）",
+    "theme": "トポロジー（位相幾何学）・結び目理論（ジョーンズ多項式）とDNAトポイソメラーゼの数理・数学教員への道",
+    "episode_title": "黒板の結び目と、ほどけない魔法の数式――数学の先生になる夢",
+    "posted_at": "2026-10-04T09:55:35.703411+09:00",
+    "file_path": "content/2026-10-04_ep04_math_topology_knot_teacher.md",
+    "status": "publish",
+    "references": [
+      "Jones, V. F. R. (1985). A polynomial invariant for knots via von Neumann algebras. *Bulletin of the American Mathematical Society*, 12(1), 103-111. [https://doi.org/10.1090/s0273-0979-1985-15304-2](https://doi.org/10.1090/s0273-0979-1985-15304-2)",
+      "Wasserman, S. A., Cozzarelli, N. R. (1986). Biochemical Topology: Applications to DNA Recombination and Replication. *Science*, 232(4753), 951-960. [https://doi.org/10.1126/science.3010458](https://doi.org/10.1126/science.3010458)",
+      "Carlsson, G. (2009). Topology and data. *Bulletin of the American Mathematical Society*, 46(2), 255-308. [https://doi.org/10.1090/s0273-0979-09-01249-x](https://doi.org/10.1090/s0273-0979-09-01249-x)"
+    ]
   }
 ]

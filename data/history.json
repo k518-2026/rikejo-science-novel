@@ -30,21 +30,6 @@
     ]
   },
   {
-    "work_id": "ep06-quantum-cryptography-math-informatics",
-    "episode_num": 6,
-    "faculty": "情報科学部・数理情報科学科 ／ 理学部・物理学科（量子情報・暗号理論研究室）",
-    "theme": "数理暗号理論（公開鍵暗号の数学）と量子情報科学（量子もつれ・BB84量子鍵配送プロトコル）",
-    "episode_title": "アリスとボブの絶対に盗み見られない手紙――素数と量子が紡ぐ情報科学",
-    "posted_at": "2026-10-04T11:34:48.468897+09:00",
-    "file_path": "content/2026-10-04_ep06_quantum_cryptography_math_informatics.md",
-    "status": "publish",
-    "references": [
-      "Rivest, R. L., Shamir, A., Adleman, L. (1978). A Method for Obtaining Digital Signatures and Public-Key Cryptosystems. *Defense Technical Information Center*. [https://doi.org/10.21236/ada606588](https://doi.org/10.21236/ada606588)",
-      "Aspect, A., Dalibard, J., Roger, G. (1982). Experimental Test of Bell's Inequalities Using Time- Varying Analyzers. *Physical Review Letters*, 49(25), 1804-1807. [https://doi.org/10.1103/physrevlett.49.1804](https://doi.org/10.1103/physrevlett.49.1804)",
-      "Marulanda Acosta, V. (2020). Quantum Key Distribution through atmospheric turbulence : secure satellite-to-ground links. *Agence Bibliographique de l'Enseignement Supérieur*. [https://doi.org/10.70675/4245e6f5z2b9bz42e2zb959zd10039e0bcee](https://doi.org/10.70675/4245e6f5z2b9bz42e2zb959zd10039e0bcee)"
-    ]
-  },
-  {
     "work_id": "ep07-exoplanet-jwst-science-teacher",
     "episode_num": 7,
     "faculty": "理学部・地球惑星物理学科 ／ 教育学部・理科教育コース（天文宇宙・分光観測研究室）",
@@ -115,6 +100,21 @@
       "Jumper, J., Hassabis, D. (2022). Protein structure predictions to atomic accuracy with AlphaFold. *Nature Methods*, 19(1), 11-12. [https://doi.org/10.1038/s41592-021-01362-6](https://doi.org/10.1038/s41592-021-01362-6)",
       "Watson, J. L., Juergens, D., Bennett, N. R., Trippe, B. L., Yim, J., Eisenach, H. E., et al. (2023). De novo design of protein structure and function with RFdiffusion. *Nature*, 620(7976), 1089-1100. [https://doi.org/10.1038/s41586-023-06415-8](https://doi.org/10.1038/s41586-023-06415-8)",
       "Lu, H., Diaz, D. J., Czarnecki, N. J., Zhu, C., Kim, W., Shroff, R., et al. (2022). Machine learning-aided engineering of hydrolases for PET depolymerization. *Nature*, 604(7907), 662-667. [https://doi.org/10.1038/s41586-022-04599-z](https://doi.org/10.1038/s41586-022-04599-z)"
+    ]
+  },
+  {
+    "work_id": "ep06-quantum-cryptography-math-informatics",
+    "episode_num": 6,
+    "faculty": "情報科学部・数理情報科学科 ／ 理学部・物理学科（量子情報・暗号理論研究室）",
+    "theme": "数理暗号理論（公開鍵暗号の数学）と量子情報科学（量子もつれ・BB84量子鍵配送プロトコル）",
+    "episode_title": "アリスとボブの絶対に盗み見られない手紙――素数と量子が紡ぐ情報科学",
+    "posted_at": "2026-10-05T08:11:16.062804+09:00",
+    "file_path": "content/2026-10-04_ep06_quantum_cryptography_math_informatics.md",
+    "status": "publish",
+    "references": [
+      "Rivest, R. L., Shamir, A., Adleman, L. (1978). A Method for Obtaining Digital Signatures and Public-Key Cryptosystems. *Defense Technical Information Center*. [https://doi.org/10.21236/ada606588](https://doi.org/10.21236/ada606588)",
+      "Aspect, A., Dalibard, J., Roger, G. (1982). Experimental Test of Bell's Inequalities Using Time- Varying Analyzers. *Physical Review Letters*, 49(25), 1804-1807. [https://doi.org/10.1103/physrevlett.49.1804](https://doi.org/10.1103/physrevlett.49.1804)",
+      "Marulanda Acosta, V. (2020). Quantum Key Distribution through atmospheric turbulence : secure satellite-to-ground links. *Agence Bibliographique de l'Enseignement Supérieur*. [https://doi.org/10.70675/4245e6f5z2b9bz42e2zb959zd10039e0bcee](https://doi.org/10.70675/4245e6f5z2b9bz42e2zb959zd10039e0bcee)"
     ]
   }
 ]

@@ -202,5 +202,17 @@
     "url": "stories/ep17-dna-origami-molecular-robotics.html",
     "image": "assets/images/ep17-dna-origami-molecular-robotics.png",
     "char_count": 7912
+  },
+  {
+    "no": 18,
+    "work_id": "ep18-gravitational-waves-laser-interferometer",
+    "title": "時空のさざ波を聴く地下の望遠鏡――ブラックホール連星と光の干渉計",
+    "faculty": "理学部・物理学科 ／ 宇宙重力波観測研究センター（レーザー干渉計実験室）",
+    "field": "物理学・宇宙・光学",
+    "theme": "レーザー干渉計による重力波直接検出（LIGO/KAGRA）と連星中性子星合体による重元素合成（キロノヴァ）",
+    "has_image": true,
+    "url": "stories/ep18-gravitational-waves-laser-interferometer.html",
+    "image": "assets/images/ep18-gravitational-waves-laser-interferometer.png",
+    "char_count": 7306
   }
 ]

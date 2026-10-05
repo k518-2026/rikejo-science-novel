@@ -190,5 +190,17 @@
     "url": "stories/ep16-topological-data-analysis-persistent-homology.html",
     "image": "assets/images/ep16-topological-data-analysis-persistent-homology.png",
     "char_count": 9201
+  },
+  {
+    "no": 17,
+    "work_id": "ep17-dna-origami-molecular-robotics",
+    "title": "一億分の五メートルの折り紙で、がん細胞だけに開く宝箱を作る",
+    "faculty": "工学部・生命分子工学科 ／ ナノバイオシステム研究室",
+    "field": "化学・薬学・材料",
+    "theme": "DNAオリガミ（DNA Origami）技術と分子ロボティクスによる標的指向性ナノカプセル設計",
+    "has_image": true,
+    "url": "stories/ep17-dna-origami-molecular-robotics.html",
+    "image": "assets/images/ep17-dna-origami-molecular-robotics.png",
+    "char_count": 7912
   }
 ]

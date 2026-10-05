@@ -671,8 +671,8 @@ class DualLLMStoryGenerator:
         char_context = self._build_character_context(work)
         story_excerpt = story_body[:1600] if story_body else work.get("summary", "")
 
-        prompt = f"""You are an expert anime light novel art director.
-Based on the following Japanese science light novel episode, write a single, vivid, highly descriptive **English image generation prompt** (60-95 words) for the FLUX.2 image model to depict the most iconic, magical scene of the story.
+        prompt = f"""You are an expert Japanese novel illustration art director.
+Based on the following Japanese science novel episode, write a single, vivid, descriptive **English image generation prompt** (60-90 words) for the FLUX.2 image model to depict the most iconic scene of the story.
 
 [Episode Info]
 - Title: {episode_title or work.get('title', '')}
@@ -687,10 +687,11 @@ Based on the following Japanese science light novel episode, write a single, viv
 
 [Rules for Output]
 1. Output ONLY the raw English prompt paragraph. Do NOT include explanations, markdown formatting, quotes, or Japanese text.
-2. Start with: "Anime light novel illustration of a Japanese high school girl and a gentle female university mentor in a ..."
-3. Visually describe the characters' expressions (eyes sparkling with wonder), the university laboratory or classroom atmosphere, and the specific scientific/mathematical visual phenomenon (e.g., glowing emerald petunias, iridescent blue morpho butterfly wing, blackboard with colorful knot diagrams, glowing 3D protein hologram on monitor, rooftop telescope under starry sky, golden spider silk thread).
-4. The scene MUST be bright and cheerful yet richly colored with strong contrast: daytime, sunlit, balanced exposure, vivid saturated colors, deep blue sky, clear dark outlines, distinct light and shadow. Avoid night, gloomy darkness, AND avoid washed-out, overexposed, white-faded or pastel-hazy looks (even for stargazing scenes, depict a vivid deep-blue twilight sky glowing with warm colors).
-5. End with: "masterpiece anime art style, bright sunlit scene, balanced exposure, vivid saturated colors, strong contrast, crisp line art, Makoto Shinkai and Kyoto Animation inspired vivid sky, highly detailed."
+2. Start with: "Japanese novel illustration of a high school girl and a gentle female university researcher in a ..."
+3. Visually describe the characters' calm, thoughtful expressions, the university laboratory or classroom atmosphere, and the visual scientific phenomenon (e.g., softly glowing emerald petunias, iridescent blue morpho butterfly wing, geometric 3D structure model, rooftop telescope under twilight sky, golden spider silk thread).
+4. NEVER mention words, text, letters, book covers, titles, labels, or writing/equations on blackboards or screens. The image must contain ZERO text or characters.
+5. Keep the tone calm and composed with rich, deep colors and strong, clear contrast: balanced natural lighting, distinct light and shadow, crisp line art, and deep harmonious tones (avoid washed-out whiteout and avoid overly flashy/gaudy effects).
+6. End with: "masterpiece Japanese anime novel illustration style, Makoto Shinkai and Kyoto Animation inspired cinematic lighting, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
 """
         try:
             logger.info(f"[Writer: {self.writer_model}] Generating English illustration prompt for FLUX.2...")
@@ -699,11 +700,11 @@ Based on the following Japanese science light novel episode, write a single, viv
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are a professional prompt engineer for FLUX.2 anime light novel illustrations. Output ONLY the English prompt text.",
+                        "content": "You are a professional prompt engineer for FLUX.2 Japanese novel illustrations. Output ONLY the English prompt text. Never include text, letters, writing, equations, or book cover elements in the prompt.",
                     },
                     {"role": "user", "content": prompt},
                 ],
-                temperature=0.65,
+                temperature=0.6,
                 num_predict=250,
                 num_ctx=4096,
                 timeout=120,
@@ -711,6 +712,8 @@ Based on the following Japanese science light novel episode, write a single, viv
             cleaned_en = self._clean_llm_output(raw_en).strip(" \"'`\n")
             cleaned_en = re.sub(r"^(?:Prompt|English Prompt)\s*[:：]\s*", "", cleaned_en, flags=re.IGNORECASE).strip()
             cleaned_en = " ".join(cleaned_en.splitlines()).strip()
+            # Remove words that trigger text/writing generation in FLUX.2
+            cleaned_en = re.sub(r"\b(?:book cover|book illustration|equations|formulas|chalk writing|written|labeled|text)\b", "diagram", cleaned_en, flags=re.IGNORECASE)
             if len(cleaned_en) >= 30 and re.search(r"[a-zA-Z]{4,}", cleaned_en):
                 logger.info(f"  -> Generated English prompt: {cleaned_en[:120]}...")
                 return cleaned_en
@@ -718,10 +721,11 @@ Based on the following Japanese science light novel episode, write a single, viv
             logger.warning(f"Failed to generate English prompt via Ollama ({e}), using fallback English prompt.")
 
         return (
-            f"Anime light novel illustration of a Japanese high school girl with sparkling eyes and a gentle female university researcher "
-            f"in a bright university laboratory, exploring {work.get('id', 'modern science').replace('-', ' ')}, "
-            f"glowing scientific apparatus, blackboard and glassware reflecting warm sunlight, "
-            f"masterpiece anime art style, bright sunlit scene, balanced exposure, vivid saturated colors, strong contrast, crisp line art, highly detailed."
+            f"Japanese novel illustration of a high school girl and a gentle female university researcher "
+            f"in a sunlit university laboratory, exploring {work.get('id', 'modern science').replace('-', ' ')}, "
+            f"scientific glass apparatus and optical instruments reflecting warm afternoon sunlight, "
+            f"masterpiece Japanese anime novel illustration style, Makoto Shinkai and Kyoto Animation inspired cinematic lighting, "
+            f"calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
         )
 
     def generate_illustration(
@@ -761,17 +765,22 @@ Based on the following Japanese science light novel episode, write a single, viv
             progress_callback(f"Draw Things ({self.draw_things_host}) で挿絵画像を生成中 (FLUX.2 [klein] 4B)...")
         logger.info(f"[Draw Things: {self.draw_things_host}] Generating 512x512 illustration (steps=12, guidance=4.0, sampler='Euler A Trailing')...")
 
-        bright_suffix = (
-            "bright sunlit daytime, balanced exposure, vivid rich saturated colors, strong contrast, "
-            "deep blue sky, crisp dark line art, distinct shadows and highlights, cheerful mood"
+        style_suffix = (
+            "calm and composed atmosphere, strong contrast, rich deep colors, balanced natural lighting, "
+            "distinct shadows and highlights, crisp clean artwork, pure illustration without any text or letters"
         )
-        if "balanced exposure" not in en_prompt.lower():
-            en_prompt = f"{en_prompt.rstrip(' .')}, {bright_suffix}."
+        if "strong contrast" not in en_prompt.lower() or "no text" not in en_prompt.lower():
+            en_prompt = f"{en_prompt.rstrip(' .')}, {style_suffix}."
 
         url = f"{self.draw_things_host}/sdapi/v1/txt2img"
         payload = {
             "prompt": en_prompt,
-            "negative_prompt": "dark, gloomy, night, murky, overexposed, washed out, faded, blown-out highlights, pastel haze, low contrast, white background, flat colors",
+            "negative_prompt": (
+                "text, letters, words, kanji, chinese characters, japanese text, english text, typography, title, "
+                "book cover, watermark, signature, logo, caption, writing, chalk equations, numbers, "
+                "overexposed, washed out, faded, blown-out highlights, whiteout, pastel haze, low contrast, "
+                "dark, gloomy, murky"
+            ),
             "width": 512,
             "height": 512,
             "steps": 12,

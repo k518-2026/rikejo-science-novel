@@ -178,5 +178,17 @@
     "url": "stories/ep15-bionanotechnology-synthetic-genetics-materials.html",
     "image": "assets/images/ep15-bionanotechnology-synthetic-genetics-materials.png",
     "char_count": 8689
+  },
+  {
+    "no": 16,
+    "work_id": "ep16-topological-data-analysis-persistent-homology",
+    "title": "散らばる点群のなかに隠れた『穴』を見つける――位相的データ解析とガラスの幾何学",
+    "faculty": "理学部・数学科 ／ データ科学イノベーション研究院（応用トポロジー研究室）",
+    "field": "数学・数理科学",
+    "theme": "位相的データ解析（TDA）・パーシステントホモロジーによるアモルファス（ガラス）構造や生命データの解明と数学教員への憧れ",
+    "has_image": true,
+    "url": "stories/ep16-topological-data-analysis-persistent-homology.html",
+    "image": "assets/images/ep16-topological-data-analysis-persistent-homology.png",
+    "char_count": 9201
   }
 ]

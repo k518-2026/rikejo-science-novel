@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `gemma4:12b` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **14** 話（うち挿絵付き **11** 話 / 最終更新: 2026-10-06 00:31 JST）
+- **収録作品数**: 全 **14** 話（うち挿絵付き **12** 話 / 最終更新: 2026-10-06 00:37 JST）
 
 ---
 
@@ -14,7 +14,7 @@
 
 | No. | タイトル | Webページで読む | 原稿 (Markdown) | 挿絵 | 舞台となる大学・研究室 | 科学・数理・情報テーマ | 文字数 |
 |:---:|:---|:---:|:---:|:---:|:---|:---|---:|
-| 01 | **[夜明け前の温室で見つけた光る花々～生命の設計図を読み解く魔法～](https://k518-2026.github.io/rikejo-science-novel/stories/ep01-bioluminescence-plant.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep01-bioluminescence-plant.html) | [📄原稿](content/2026-10-04_ep01_bioluminescence_plant.md) | — | 農学部・応用生命科学科（合成生物学研究室） | 自律発光植物（真菌ルシフェリン代謝経路の植物導入） | 4,477字 |
+| 01 | **[夜明け前の温室で見つけた光る花々～生命の設計図を読み解く魔法～](https://k518-2026.github.io/rikejo-science-novel/stories/ep01-bioluminescence-plant.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep01-bioluminescence-plant.html) | [📄原稿](content/2026-10-04_ep01_bioluminescence_plant.md) | [🎨挿絵](content/2026-10-04_ep01_bioluminescence_plant.png) | 農学部・応用生命科学科（合成生物学研究室） | 自律発光植物（真菌ルシフェリン代謝経路の植物導入） | 4,477字 |
 | 02 | **[青色の謎と光の魔法～美術部員が科学キャンパスで見つけた秘密～](https://k518-2026.github.io/rikejo-science-novel/stories/ep02-crispr-butterfly-structural-color.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep02-crispr-butterfly-structural-color.html) | [📄原稿](content/2026-10-04_ep02_crispr_butterfly_structural_color.md) | — | 理学部・生物科学科 ／ 工学部・フォトニクス材料専攻 | 構造色（ナノフォトニック結晶）とCRISPRゲノム編集による翅の微細構造制御 | 4,368字 |
 | 03 | **[薬の魔法瓶 ―― 細胞への秘密の手紙](https://k518-2026.github.io/rikejo-science-novel/stories/ep03-mrna-lipid-nanoparticle-delivery.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep03-mrna-lipid-nanoparticle-delivery.html) | [📄原稿](content/2026-10-04_ep03_mrna_lipid_nanoparticle_delivery.md) | — | 薬学部・創薬科学科（ドラッグデリバリーシステム研究室） | 脂質ナノ粒子（LNP）とmRNA医薬の標的細胞デリバリー | 3,842字 |
 | 04 | **[黒板の結び目と、ほどけない魔法の数式――数学の先生になる夢](https://k518-2026.github.io/rikejo-science-novel/stories/ep04-math-topology-knot-teacher.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep04-math-topology-knot-teacher.html) | [📄原稿](content/2026-10-04_ep04_math_topology_knot_teacher.md) | [🎨挿絵](content/2026-10-04_ep04_math_topology_knot_teacher.png) | 理学部・数学科 ／ 教育学部・数学教育専攻（位相幾何学・数理科学ゼミ） | トポロジー（位相幾何学）・結び目理論（ジョーンズ多項式）とDNAトポイソメラーゼの数理・数学教員への道 | 7,111字 |

@@ -6,9 +6,9 @@
     "faculty": "農学部・応用生命科学科（合成生物学研究室）",
     "field": "生命科学・バイオ・医学",
     "theme": "自律発光植物（真菌ルシフェリン代謝経路の植物導入）",
-    "has_image": false,
+    "has_image": true,
     "url": "stories/ep01-bioluminescence-plant.html",
-    "image": "",
+    "image": "assets/images/ep01-bioluminescence-plant.png",
     "char_count": 4477
   },
   {

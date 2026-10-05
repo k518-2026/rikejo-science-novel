@@ -298,5 +298,80 @@
         "query": "Stat Huggett Ecosystem biomonitoring with eDNA metabarcoding across the tree of life in a tropical marine environment Scientific Reports 2017"
       }
     ]
+  },
+  {
+    "id": "ep13-neural-symbolic-logic-math-teacher",
+    "episode_num": 13,
+    "title": "論理の森で踊る人工知能――記号と数式のダンス (シンボルAI・ニューラルネットワーク)",
+    "faculty": "理学部数学学科 ／ 数理情報科学専攻（認知計算研究室）",
+    "protagonist": "佐藤 莉々花（さとう りりか／さとう りりはな、高校2年生 / サッカー部マネージャー）",
+    "mentor": "田中健介先生（たなか たけすけ・准教授）、助手の鈴木愛さん（すずき あい・博士課程1年目）",
+    "theme": "数学（論理代数、組み合わせ最適化）、情報学（シンボルAI、機械学習の説明可能性XAI）と教職キャリアへの道",
+    "modern_tech": [
+      "ニューロシンボリックシステム (Neuro-Symbolic AI)",
+      "グラフニューラルネットワーク (GNN)",
+      "知識ベースの形式化"
+    ],
+    "summary": "サッカー部の試合結果を整理するのが好きだった莉々花は、なぜチームが勝つのかという「論理」に興味を持ちます。研究室では、「人間の知能と機械学習をどう調和させるか」という課題に取り組みました。従来のブラックボックスAIに代わり、ルール（数学的な証明）を組み込んだニューロシンボリックシステムを開発し、生徒たちにも「なぜその答えが正しいのか」を追及する理科の先生になる夢を抱くようになりました。",
+    "crossref_queries": [
+      {
+        "label": "論理と機械学習の融合 (Neuro-Symbolic AI)",
+        "query": "De Raedt L De Doncker J Logic-Based Machine Learning Annual Review of Information Science and Technology 2019"
+      },
+      {
+        "label": "知識ベースを用いた推論",
+        "query": "LePore S LeBlanc P Knowledge Representation Reasoning Journal of Artificial Intelligence Research 2018"
+      }
+    ]
+  },
+  {
+    "id": "ep14-statistical-mechanics-chaos-physics-teacher",
+    "episode_num": 14,
+    "title": "カオスのリズムで読む、気象予報の未来 (非線形力学・確率統計)",
+    "faculty": "理学部物理学科 ／ 理論物理学専攻（動力学系研究室）",
+    "protagonist": "山本 陽菜やまもと はるな／さくらんぼ農園（高校2年生 / アートクラブ部長）",
+    "mentor": "高橋理香子先生（たかはし りかこ・教授）、助教の佐々木大輔さん（さがきだいすけ・博士課程3年目）",
+    "theme": "物理（非線形力学、カオス理論、統計的物理学）、情報学（データ同化アルゴリズム）と教職キャリアへの道",
+    "modern_tech": [
+      "ロレンツ吸引子 (Lorenz Attractor)",
+      "エントロピー推定法",
+      "集合知に基づく気象モデル"
+    ],
+    "summary": "桜の花の散り方から「カオス」を見出す陽菜は、なぜ天気予報が不確実なのかという疑問を抱きます。研究室では、初期条件のわずかな誤差（バタフライエフェクト）をどう扱うか研究し始めました。「乱雑に見える現象に秩序があること」を実感する中で、「複雑な自然の美しさや危険性を、生徒たちにも分かりやすく伝える理科の先生になりたい」と決意しました。",
+    "crossref_queries": [
+      {
+        "label": "カオス理論とバタフライエフェクト",
+        "query": "Lorenz E N Deterministic Nonperiodic Flow Journal of the Atmospheric Sciences 1963"
+      },
+      {
+        "label": "非線形力学の基礎",
+        "query": "Guckenheimer J Holmes P Nonlinear Oscillations Dynamical Systems and Bifurcations of Vector Fields Springer Series in Applied Mathematics New York Springer-Verlag 1983"
+      }
+    ]
+  },
+  {
+    "id": "ep15-bionanotechnology-synthetic-genetics-materials",
+    "episode_num": 15,
+    "title": "細胞を設計するエンジニアリング――合成生物学の教室 (遺伝子回路・代謝工学)",
+    "faculty": "生命理工学部生体機能工学科 ／ 合成生物学分野（ゲノム編集研究室）",
+    "protagonist": "中村 響な／なかむら ひびき、高校2年生 / サークル活動「バイオハッカーズ」リーダー",
+    "mentor": "伊東美咲先生（いとう みさき・准教授）、博士後期課程の佐藤健太さん（さとうけんた）",
+    "theme": "生物工学（合成生物学、代謝経路設計）、情報学（ゲノム配列解析アルゴリズム）と教職キャリアへの道",
+    "modern_tech": [
+      "CRISPR-Cas9 ゲノム編集システム",
+      "代謝フロー分析 (Metabolic Flux Analysis)",
+      "細胞回路の遺伝子スイッチ"
+    ],
+    "summary": "廃棄される食品残渣から有用な物質を作りたいという響きは、微生物を「設計図（DNA）」として組み替えることに挑戦します。研究室でCRISPR技術を駆使し、光を感じて発光する菌や二酸化炭素を食べる酵母を開発しました。「自然の仕組みを理解し、それを人間に役立つように再構築できる技術」こそが理科教育の本質だと考え、「未来を創り出す先生になりたい」という夢を抱くようになりました。",
+    "crossref_queries": [
+      {
+        "label": "CRISPR-Cas9 の画期的応用",
+        "query": "Cong L Ran FA et al Multiplex Genome Engineering Using CRISPR/Cas Systems Science 2013"
+      },
+      {
+        "label": "合成生物学の定義と展望",
+        "query": "Endy D Synthetic Biology: A Review of the Field Annual Reviews - Information and Computational Sciences (Nature Biotechnology) 2005"
+      }
+    ]
   }
 ]

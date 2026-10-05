@@ -46,6 +46,15 @@ class TestRikejoSystem(unittest.TestCase):
         self.assertEqual(sanitized.count("<li>"), sanitized.count("</li>"))
         self.assertEqual(sanitized.count("<ul>"), sanitized.count("</ul>"))
 
+    def test_site_builder_generates_github_pages(self):
+        from src.site_builder import collect_all_stories, DOCS_DIR
+        stories = collect_all_stories()
+        self.assertGreaterEqual(len(stories), 14)
+        self.assertTrue((DOCS_DIR / "index.html").exists())
+        self.assertTrue((DOCS_DIR / "style.css").exists())
+        self.assertTrue((DOCS_DIR / "stories.json").exists())
+        self.assertTrue((DOCS_DIR / "stories" / "ep01-bioluminescence-plant.html").exists())
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>『放課後サイエンス・キャンパス』理系女子ライトノベル図書館</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-badge">RIKEJO SCIENCE LIGHT NOVEL ARCHIVE</div>
+    <h1 class="site-title">『放課後サイエンス・キャンパス』理系女子ライトノベル図書館</h1>
+    <p class="site-subtitle">
+      最先端の科学・数学・情報学の感動と、大学進学・研究者・数学／情報／理科の先生への道を優しい物語で描くサイエンス・ライトノベルシリーズ。<br/>
+      外部生成AI APIは一切使用せず、Mac mini M4 ローカルAI（Ollama Qwen3.5 &amp; Gemma4 ＋ Draw Things FLUX.2）で執筆・挿絵生成し、GitHub Pagesで公開しています。
+    </p>
+    <div class="stats-bar">
+      <div class="stat-pill"><strong>14</strong> 収録エピソード</div>
+      <div class="stat-pill"><strong>11</strong> 挿絵付き作品</div>
+      <div class="stat-pill"><strong>4</strong> 科学・数理・情報分野</div>
+      <div class="stat-pill">最終更新: 2026-10-06 00:31 JST</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="toolbar">
+      <div class="filter-group">
+        <input type="search" id="searchInput" class="search-input" placeholder="タイトル・学部・科学テーマ・登場人物で検索..." oninput="filterCards()" />
+        <select id="fieldFilter" class="select-filter" onchange="filterCards()">
+          <option value="">すべての分野（4分野）</option>
+          <option value="化学・薬学・材料">化学・薬学・材料</option>
+          <option value="数学・数理科学">数学・数理科学</option>
+          <option value="物理学・宇宙・光学">物理学・宇宙・光学</option>
+          <option value="生命科学・バイオ・医学">生命科学・バイオ・医学</option>
+        </select>
+        <select id="imageFilter" class="select-filter" onchange="filterCards()">
+          <option value="">すべて表示</option>
+          <option value="yes">🎨 挿絵ありのみ (11)</option>
+        </select>
+        <select id="sortOrder" class="select-filter" onchange="sortCards()">
+          <option value="desc">新しい順（#大 → #01）</option>
+          <option value="asc">作品番号順（#01 → #大）</option>
+        </select>
+      </div>
+      <button class="btn-toggle" onclick="toggleTheme()" id="themeBtn">🌙 ダーク表示</button>
+    </div>
+
+    <div class="story-grid" id="storyGrid">
+      <div class="story-card-wrap" data-no="14" data-field="数学・数理科学" data-illustrated="yes" data-search="散る桜のリズムが示すカオスの美学：非線形世界への招待状 理学部物理学科 ／ 理論物理学専攻（動力学系研究室） 数学・数理科学 物理（非線形力学、カオス理論、統計的物理学）、情報学（データ同化アルゴリズム）と教職キャリアへの道 [&#x27;ロレンツ吸引子 (lorenz attractor)&#x27;, &#x27;エントロピー推定法&#x27;, &#x27;集合知に基づく気象モデル&#x27;] 桜の花の散り方から「カオス」を見出す陽菜は、なぜ天気予報が不確実なのかという疑問を抱きます。研究室では、初期条件のわずかな誤差（バタフライエフェクト）をどう扱うか研究し始めました。「乱雑に見える現象に秩序があること」を実感する中で、「複雑な自然の美しさや危険性を、生徒たちにも分かりやすく伝える理科の先生になりたい」と決意しました。 山本 陽菜やまもと はるな／さくらんぼ農園（高校2年生 / アートクラブ部長） 高橋理香子先生（たかはし りかこ・教授）、助教の佐々木大輔さん（さがきだいすけ・博士課程3年目）">
+        <article class="story-card">
+          <a href="stories/ep14-statistical-mechanics-chaos-physics-teacher.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep14-statistical-mechanics-chaos-physics-teacher.png" alt="散る桜のリズムが示すカオスの美学：非線形世界への招待状" loading="lazy" />
+            <span class="card-no-badge">#14</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 理学部物理学科 ／ 理論物理学専攻（動力学系研究室）</div>
+            <h2 class="card-title"><a href="stories/ep14-statistical-mechanics-chaos-physics-teacher.html">散る桜のリズムが示すカオスの美学：非線形世界への招待状</a></h2>
+            <div class="card-tech">🔬 物理（非線形力学、カオス理論、統計的物理学）、情報学（データ同化アルゴリズム）と教職キャリアへの道</div>
+            <p class="card-summary">桜の花の散り方から「カオス」を見出す陽菜は、なぜ天気予報が不確実なのかという疑問を抱きます。研究室では、初期条件のわずかな誤差（バタフライエフェクト）をどう扱うか研究し始めました。「乱雑に見える現象に秩序があること」を実感する中で、「複雑な自然の美しさや危険性を、生徒たちにも分かりやすく伝える理科の先生になりたい」と決意しました。</p>
+            <div class="card-footer">
+              <span>約 7,984 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep14-statistical-mechanics-chaos-physics-teacher.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="13" data-field="数学・数理科学" data-illustrated="yes" data-search="サッカーボールから始まる「なぜ？」の旅——ブラックボックスを解きほぐして、誰にでもわかる科学の世界へ (neuro-symbolic ai &amp; xai) 理学部数学学科 ／ 数理情報科学専攻（認知計算研究室） 数学・数理科学 数学（論理代数、組み合わせ最適化）、情報学（シンボルai、機械学習の説明可能性xai）と教職キャリアへの道 [&#x27;ニューロシンボリックシステム (neuro-symbolic ai)&#x27;, &#x27;グラフニューラルネットワーク (gnn)&#x27;, &#x27;知識ベースの形式化&#x27;] サッカー部の試合結果を整理するのが好きだった莉々花は、なぜチームが勝つのかという「論理」に興味を持ちます。研究室では、「人間の知能と機械学習をどう調和させるか」という課題に取り組みました。従来のブラックボックスaiに代わり、ルール（数学的な証明）を組み込んだニューロシンボリックシステムを開発し、生徒たちにも「なぜその答えが正しいのか」を追及する理科の先生になる夢を抱くようになりました。 佐藤 莉々花（さとう りりか／さとう りりはな、高校2年生 / サッカー部マネージャー） 田中健介先生（たなか たけすけ・准教授）、助手の鈴木愛さん（すずき あい・博士課程1年目）">
+        <article class="story-card">
+          <a href="stories/ep13-neural-symbolic-logic-math-teacher.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep13-neural-symbolic-logic-math-teacher.png" alt="サッカーボールから始まる「なぜ？」の旅——ブラックボックスを解きほぐして、誰にでもわかる科学の世界へ (Neuro-Symbolic AI &amp; XAI)" loading="lazy" />
+            <span class="card-no-badge">#13</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 理学部数学学科 ／ 数理情報科学専攻（認知計算研究室）</div>
+            <h2 class="card-title"><a href="stories/ep13-neural-symbolic-logic-math-teacher.html">サッカーボールから始まる「なぜ？」の旅——ブラックボックスを解きほぐして、誰にでもわかる科学の世界へ (Neuro-Symbolic AI &amp; XAI)</a></h2>
+            <div class="card-tech">🔬 数学（論理代数、組み合わせ最適化）、情報学（シンボルAI、機械学習の説明可能性XAI）と教職キャリアへの道</div>
+            <p class="card-summary">サッカー部の試合結果を整理するのが好きだった莉々花は、なぜチームが勝つのかという「論理」に興味を持ちます。研究室では、「人間の知能と機械学習をどう調和させるか」という課題に取り組みました。従来のブラックボックスAIに代わり、ルール（数学的な証明）を組み込んだニューロシンボリックシステムを開発し、生徒たちにも「なぜその答えが正しいのか」を追及する理科の先生になる夢を抱くようになりました。</p>
+            <div class="card-footer">
+              <span>約 7,479 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep13-neural-symbolic-logic-math-teacher.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="12" data-field="生命科学・バイオ・医学" data-illustrated="yes" data-search="コップ一杯の海水から、クジラの歌を聴く』～目に見えない「命の文字」が紡ぐ海洋のシナリオへ～ 海洋生命科学部 ／ 地球環境科学科 生命科学・バイオ・医学 環境dna（edna）メタバーコーディングによる非侵襲的生物多様性モニタリング 環境dna（edna）ろ過濃縮とユニバーサルプライマーpcr（mifish等）、次世代シーケンシングによる魚類・海洋哺乳類相の一斉同定 海と生き物が大好きだけれど、調査のために魚を網で捕獲して傷つけることに心を痛めていた凪。大学の臨海実験所の実習で、遥先生と一緒にバケツ一杯の海水を汲んでフィルターで濾すだけの実験を行う。海水に溶け込んだ目に見えない「環境dna」を読み解くだけで、その朝にその入り江を泳ぎ抜けたイルカや深海魚、絶滅危惧種までが魔法のようにリストアップされる瞬間を目撃する。 海野 凪（うみの なぎ・高校2年生） 潮見 遥（しおみ はるか・助教）">
+        <article class="story-card">
+          <a href="stories/ep12-environmental-dna-ocean-ecology.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep12-environmental-dna-ocean-ecology.png" alt="コップ一杯の海水から、クジラの歌を聴く』～目に見えない「命の文字」が紡ぐ海洋のシナリオへ～" loading="lazy" />
+            <span class="card-no-badge">#12</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 海洋生命科学部 ／ 地球環境科学科</div>
+            <h2 class="card-title"><a href="stories/ep12-environmental-dna-ocean-ecology.html">コップ一杯の海水から、クジラの歌を聴く』～目に見えない「命の文字」が紡ぐ海洋のシナリオへ～</a></h2>
+            <div class="card-tech">🔬 環境DNA（eDNA）メタバーコーディングによる非侵襲的生物多様性モニタリング</div>
+            <p class="card-summary">海と生き物が大好きだけれど、調査のために魚を網で捕獲して傷つけることに心を痛めていた凪。大学の臨海実験所の実習で、遥先生と一緒にバケツ一杯の海水を汲んでフィルターで濾すだけの実験を行う。海水に溶け込んだ目に見えない「環境DNA」を読み解くだけで、その朝にその入り江を泳ぎ抜けたイルカや深海魚、絶滅危惧種までが魔法のようにリストアップされる瞬間を目撃する。</p>
+            <div class="card-footer">
+              <span>約 7,067 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep12-environmental-dna-ocean-ecology.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="11" data-field="生命科学・バイオ・医学" data-illustrated="yes" data-search="眠る脳の図書館と, 真夜中の水洗い 医学部・脳神経科学専攻 ／ 睡眠医科学研究所 生命科学・バイオ・医学 睡眠中のグリンパティック系（脳内老廃物クリアランス）と海馬―大脳皮質の記憶固定化 グリンパティック系による脳脊髄液（csf）の灌流洗浄、睡眠紡錘波（スピンドル）と鋭波リップルによる記憶再生・定着、オレキシン神経系 受験勉強で睡眠時間を削っていたほのかは、模試の成績が伸び悩み、大学の市民公開シンポジウムに足を運ぶ。そこで翠教授が見せた二光子顕微鏡の映像には、深い眠りに入った瞬間に脳のグリア細胞が隙間を広げ、透明な脳脊髄液が波のように流れて日中の老廃物を洗い流し、さらに昼間学んだ記憶を海馬から大脳皮質の「本棚」へ高速コピーする様子が映し出されていた。 月島 ほのか（つきしま ほのか・高校3年生） 西園寺 翠（さいおんじ みどり・教授）">
+        <article class="story-card">
+          <a href="stories/ep11-sleep-glymphatic-memory-consolidation.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep11-sleep-glymphatic-memory-consolidation.png" alt="眠る脳の図書館と, 真夜中の水洗い" loading="lazy" />
+            <span class="card-no-badge">#11</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 医学部・脳神経科学専攻 ／ 睡眠医科学研究所</div>
+            <h2 class="card-title"><a href="stories/ep11-sleep-glymphatic-memory-consolidation.html">眠る脳の図書館と, 真夜中の水洗い</a></h2>
+            <div class="card-tech">🔬 睡眠中のグリンパティック系（脳内老廃物クリアランス）と海馬―大脳皮質の記憶固定化</div>
+            <p class="card-summary">受験勉強で睡眠時間を削っていたほのかは、模試の成績が伸び悩み、大学の市民公開シンポジウムに足を運ぶ。そこで翠教授が見せた二光子顕微鏡の映像には、深い眠りに入った瞬間に脳のグリア細胞が隙間を広げ、透明な脳脊髄液が波のように流れて日中の老廃物を洗い流し、さらに昼間学んだ記憶を海馬から大脳皮質の「本棚」へ高速コピーする様子が映し出されていた。</p>
+            <div class="card-footer">
+              <span>約 8,207 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep11-sleep-glymphatic-memory-consolidation.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="10" data-field="化学・薬学・材料" data-illustrated="yes" data-search="雨上がりのステンドグラスは太陽を醸す〜黄色い液体が織りなす、光の結晶の世界へようこそ！ 理工学部・応用化学科（次世代エネルギー材料研究室） 化学・薬学・材料 ペロブスカイト太陽電池（塗布型・半透明・フレキシブル光電変換素子） ハロゲン化鉛ペロブスカイト結晶構造、スピンコート塗布成膜と自己組織化結晶成長、パッシベーション処理による高効率化 「太陽電池といえば屋根の上の重くて黒いパネル」と思っていた葵は、大学の実験室で響子がガラス基板の上に黄色い溶液を垂らし、くるくると回転（スピンコート）させて温めると、一瞬で鏡のように美しい結晶薄膜に変わる瞬間を目撃する。フィルムのように曲げられて、街中の窓ガラスや日傘まで発電所に変えられる日本発の化学発明「ペロブスカイト太陽電池」の美しさに魅了される。 日向 葵（ひなた あおい・高校1年生） 氷室 響子（ひむろ きょうこ・大学院生 m2）">
+        <article class="story-card">
+          <a href="stories/ep10-perovskite-solar-window.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep10-perovskite-solar-window.png" alt="雨上がりのステンドグラスは太陽を醸す〜黄色い液体が織りなす、光の結晶の世界へようこそ！" loading="lazy" />
+            <span class="card-no-badge">#10</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 理工学部・応用化学科（次世代エネルギー材料研究室）</div>
+            <h2 class="card-title"><a href="stories/ep10-perovskite-solar-window.html">雨上がりのステンドグラスは太陽を醸す〜黄色い液体が織りなす、光の結晶の世界へようこそ！</a></h2>
+            <div class="card-tech">🔬 ペロブスカイト太陽電池（塗布型・半透明・フレキシブル光電変換素子）</div>
+            <p class="card-summary">「太陽電池といえば屋根の上の重くて黒いパネル」と思っていた葵は、大学の実験室で響子がガラス基板の上に黄色い溶液を垂らし、くるくると回転（スピンコート）させて温めると、一瞬で鏡のように美しい結晶薄膜に変わる瞬間を目撃する。フィルムのように曲げられて、街中の窓ガラスや日傘まで発電所に変えられる日本発の化学発明「ペロブスカイト太陽電池」の美しさに魅了される。</p>
+            <div class="card-footer">
+              <span>約 8,828 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep10-perovskite-solar-window.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="9" data-field="化学・薬学・材料" data-illustrated="yes" data-search="鋼鉄より強く、風より軽いドレスを編む〜微生物の工場が紡ぐ「不可能」の糸 工学部・高分子材料工学科（バイオマテリアル研究室） 化学・薬学・材料 人工構造タンパク質繊維（人工クモ糸フィブロイン）と自己修復バイオポリマー 微生物発酵による組換えスパイダーシルク（フィブロイン）生産、βシート結晶領域と非晶領域の階層構造制御、環境調和型高靭性繊維 ファッションと科学の両方に興味がある紬は、「工学部って機械や油まみれのイメージ」と思いながら女子高校生向けサイエンスカフェに参加する。そこで手渡された黄金色に輝く一本の糸は、微生物の発酵によって作られた人工スパイダーシルクだった。同じ重さの鋼鉄よりも強靭でありながら、シルクのように柔らかく土に還る分子構造の秘密を知り、未来の素材を創る化学に胸を躍らせる。 織田 紬（おだ つむぎ・高校2年生・被服部） 橘 環（たちばな たまき・助教）">
+        <article class="story-card">
+          <a href="stories/ep09-spider-silk-biomaterials.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep09-spider-silk-biomaterials.png" alt="鋼鉄より強く、風より軽いドレスを編む〜微生物の工場が紡ぐ「不可能」の糸" loading="lazy" />
+            <span class="card-no-badge">#09</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 工学部・高分子材料工学科（バイオマテリアル研究室）</div>
+            <h2 class="card-title"><a href="stories/ep09-spider-silk-biomaterials.html">鋼鉄より強く、風より軽いドレスを編む〜微生物の工場が紡ぐ「不可能」の糸</a></h2>
+            <div class="card-tech">🔬 人工構造タンパク質繊維（人工クモ糸フィブロイン）と自己修復バイオポリマー</div>
+            <p class="card-summary">ファッションと科学の両方に興味がある紬は、「工学部って機械や油まみれのイメージ」と思いながら女子高校生向けサイエンスカフェに参加する。そこで手渡された黄金色に輝く一本の糸は、微生物の発酵によって作られた人工スパイダーシルクだった。同じ重さの鋼鉄よりも強靭でありながら、シルクのように柔らかく土に還る分子構造の秘密を知り、未来の素材を創る化学に胸を躍らせる。</p>
+            <div class="card-footer">
+              <span>約 9,375 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep09-spider-silk-biomaterials.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="8" data-field="数学・数理科学" data-illustrated="yes" data-search="六次の隔たりと、ホタルが一斉に瞬く夜の数学 理学部・数理科学科 ／ 情報学部・データサイエンス学科（複雑系・ネットワーク数理研究室） 数学・数理科学 グラフ理論・スモールワールド・ネットワーク数理と蔵本モデル（同期現象の微分方程式） ワッツ・ストロガッツのスモールワールド・ネットワーク理論、スケールフリー・ネットワーク、非線形振動子の同期現象（蔵本モデル・ホタルの集団発光） 「世界中のどんな人とも、友達の友達を6人たどれば繋がれるって本当？」そんな素朴な疑問を抱いた茉莉は、大学の『数理モデリングと教育』の公開授業を訪れる。数学と情報の教職課程も担当する静香准教授は、点と線を結ぶグラフ理論の魔法で、snsの繋がりから神経回路、さらには川辺の数千匹のホタルが指揮者もいないのにピタリとリズムを合わせて光り輝く『同期現象の数式（蔵本モデル）』までをパソコンの画面上で鮮やかに再現してみせる。世界のリズムを記述する応用数学と情報学の力に胸が躍る。 椎名 茉莉（しいな まり・高校2年生・放送部兼数学同好会） 若宮 静香（わかみや しずか・准教授・数理モデリング／教職課程担当教員）">
+        <article class="story-card">
+          <a href="stories/ep08-network-science-math-modeling.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep08-network-science-math-modeling.png" alt="六次の隔たりと、ホタルが一斉に瞬く夜の数学" loading="lazy" />
+            <span class="card-no-badge">#08</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 理学部・数理科学科 ／ 情報学部・データサイエンス学科（複雑系・ネットワーク数理研究室）</div>
+            <h2 class="card-title"><a href="stories/ep08-network-science-math-modeling.html">六次の隔たりと、ホタルが一斉に瞬く夜の数学</a></h2>
+            <div class="card-tech">🔬 グラフ理論・スモールワールド・ネットワーク数理と蔵本モデル（同期現象の微分方程式）</div>
+            <p class="card-summary">「世界中のどんな人とも、友達の友達を6人たどれば繋がれるって本当？」そんな素朴な疑問を抱いた茉莉は、大学の『数理モデリングと教育』の公開授業を訪れる。数学と情報の教職課程も担当する静香准教授は、点と線を結ぶグラフ理論の魔法で、SNSの繋がりから神経回路、さらには川辺の数千匹のホタルが指揮者もいないのにピタリとリズムを合わせて光り輝く『同期現象の数式（蔵本モデル）』までをパソコンの画面上で鮮やかに再現してみせる。世界のリズムを記述する応用数学と情報学の力に胸が躍る。</p>
+            <div class="card-footer">
+              <span>約 7,678 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep08-network-science-math-modeling.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="7" data-field="物理学・宇宙・光学" data-illustrated="yes" data-search="百光年先の夕焼けをプリズムで読む方法――星空の教室と理科の先生の夢 理学部・地球惑星物理学科 ／ 教育学部・理科教育コース（天文宇宙・分光観測研究室） 物理学・宇宙・光学 系外惑星の大気透過分光観測（jwst）・フーリエ解析と、宇宙の感動を伝える理科教員への道 トランジット透過スペクトル解析、ジェイムズ・ウェッブ宇宙望遠鏡（jwst）赤外線分光、系外惑星大気の二酸化炭素・水蒸気検出とデータサイエンス 大学の屋上天文台で開催された『高校生と理科の先生のための星空観望会』に参加した雫。「望遠鏡で小さな点にしか見えないほど遠い星に、海や空があるかどうやって調べるの？」と質問すると、高校の地学・物理の先生を目指して教職免許も取った研究員の玲奈が、紅茶のカップに光を透かして見せる。惑星が恒星の前を横切るわずかな瞬間に、大気を通り抜けた『星の光の虹の欠け方（吸収スペクトル）』と数学の波の解析から何百光年先の空の成分を読み解くロマンを知り、自分も理科の素晴らしさを伝える人になりたいと願う。 星野 雫（ほしの しずく・高校1年生・天文部） 天城 玲奈（あまぎ れいな・博士研究員／高校理科教諭免許保持）">
+        <article class="story-card">
+          <a href="stories/ep07-exoplanet-jwst-science-teacher.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep07-exoplanet-jwst-science-teacher.png" alt="百光年先の夕焼けをプリズムで読む方法――星空の教室と理科の先生の夢" loading="lazy" />
+            <span class="card-no-badge">#07</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 理学部・地球惑星物理学科 ／ 教育学部・理科教育コース（天文宇宙・分光観測研究室）</div>
+            <h2 class="card-title"><a href="stories/ep07-exoplanet-jwst-science-teacher.html">百光年先の夕焼けをプリズムで読む方法――星空の教室と理科の先生の夢</a></h2>
+            <div class="card-tech">🔬 系外惑星の大気透過分光観測（JWST）・フーリエ解析と、宇宙の感動を伝える理科教員への道</div>
+            <p class="card-summary">大学の屋上天文台で開催された『高校生と理科の先生のための星空観望会』に参加した雫。「望遠鏡で小さな点にしか見えないほど遠い星に、海や空があるかどうやって調べるの？」と質問すると、高校の地学・物理の先生を目指して教職免許も取った研究員の玲奈が、紅茶のカップに光を透かして見せる。惑星が恒星の前を横切るわずかな瞬間に、大気を通り抜けた『星の光の虹の欠け方（吸収スペクトル）』と数学の波の解析から何百光年先の空の成分を読み解くロマンを知り、自分も理科の素晴らしさを伝える人になりたいと願う。</p>
+            <div class="card-footer">
+              <span>約 8,386 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep07-exoplanet-jwst-science-teacher.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="6" data-field="数学・数理科学" data-illustrated="yes" data-search="アリスとボブの絶対に盗み見られない手紙――素数と量子が紡ぐ情報科学 情報科学部・数理情報科学科 ／ 理学部・物理学科（量子情報・暗号理論研究室） 数学・数理科学 数理暗号理論（公開鍵暗号の数学）と量子情報科学（量子もつれ・bb84量子鍵配送プロトコル） 素因数分解の計算量理論（rsa公開鍵暗号の数理）、ベルの不等式の破れと量子もつれ光子対、bb84量子鍵配送プロトコルによる無条件安全性 整数のパズルや素数の性質が好きな詩音は、「インターネットの秘密はどうやって数学で守られているの？」と疑問を持ち、情報科学部の公開セミナーに参加する。大学院生の麻衣は、大きな数を掛け算するのは簡単なのに素数に分解するのはスパコンでも難しいという『一方向性関数の数学』と、さらに誰かが途中で覗き見た瞬間に光の粒の状態が変わって100%盗聴を見破れる『量子暗号通信』の実験を見せてくれる。数学・情報・物理がひとつに溶け合う美しさに心が震える。 白河 詩音（しらかわ しおん・高校2年生・数学部兼情報同好会） 黒瀬 麻衣（くろせ まい・博士課程2年生・数理情報科学／理科・数学教職免許保持）">
+        <article class="story-card">
+          <a href="stories/ep06-quantum-cryptography-math-informatics.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep06-quantum-cryptography-math-informatics.png" alt="アリスとボブの絶対に盗み見られない手紙――素数と量子が紡ぐ情報科学" loading="lazy" />
+            <span class="card-no-badge">#06</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 情報科学部・数理情報科学科 ／ 理学部・物理学科（量子情報・暗号理論研究室）</div>
+            <h2 class="card-title"><a href="stories/ep06-quantum-cryptography-math-informatics.html">アリスとボブの絶対に盗み見られない手紙――素数と量子が紡ぐ情報科学</a></h2>
+            <div class="card-tech">🔬 数理暗号理論（公開鍵暗号の数学）と量子情報科学（量子もつれ・BB84量子鍵配送プロトコル）</div>
+            <p class="card-summary">整数のパズルや素数の性質が好きな詩音は、「インターネットの秘密はどうやって数学で守られているの？」と疑問を持ち、情報科学部の公開セミナーに参加する。大学院生の麻衣は、大きな数を掛け算するのは簡単なのに素数に分解するのはスパコンでも難しいという『一方向性関数の数学』と、さらに誰かが途中で覗き見た瞬間に光の粒の状態が変わって100%盗聴を見破れる『量子暗号通信』の実験を見せてくれる。数学・情報・物理がひとつに溶け合う美しさに心が震える。</p>
+            <div class="card-footer">
+              <span>約 7,456 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep06-quantum-cryptography-math-informatics.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="5" data-field="数学・数理科学" data-illustrated="yes" data-search="折り紙でつくる、まだ地球にないタンパク質――情報学とアルゴリズムの教室 情報理工学部・コンピュータ科学科（数理情報・バイオインフォマティクス研究室／情報科教職課程） 数学・数理科学 情報学（アルゴリズム・深層学習・グラフニューラルネットワーク）によるタンパク質構造予測（alphafold）と「情報・数学」教員への道 transformer（自己注意機構）とグラフ理論を用いたalphafold 3d構造予測、拡散モデル（rfdiffusion）による新規タンパク質設計、アルゴリズムによる環境分解酵素デザイン プログラミングやアルゴリズムが大好きで、「パソコンの画面の中のコードが、どうすれば現実の世界や誰かの未来を動かせるのだろう？」と考えていた琴音。情報理工学部で研究しながら高校『情報・数学』の教員免許を取得した先輩・未来の研究室を訪れる。グラフ理論とaiのアルゴリズムが、何億通りもの折り紙のような選択肢から生命の立体構造を一瞬で予測し、地球を救う新しい酵素を生み出す瞬間を目撃。「情報学の面白さを高校生に教える先生や研究者になりたい！」と胸を熱くする。 一条 琴音（いちじょう ことね・高校2年生・パソコン部） 神崎 未来（かんざき みらい・情報理工学専攻 修士2年生・高校「情報」教員免許取得）">
+        <article class="story-card">
+          <a href="stories/ep05-alphafold-informatics-teacher.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep05-alphafold-informatics-teacher.png" alt="折り紙でつくる、まだ地球にないタンパク質――情報学とアルゴリズムの教室" loading="lazy" />
+            <span class="card-no-badge">#05</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 情報理工学部・コンピュータ科学科（数理情報・バイオインフォマティクス研究室／情報科教職課程）</div>
+            <h2 class="card-title"><a href="stories/ep05-alphafold-informatics-teacher.html">折り紙でつくる、まだ地球にないタンパク質――情報学とアルゴリズムの教室</a></h2>
+            <div class="card-tech">🔬 情報学（アルゴリズム・深層学習・グラフニューラルネットワーク）によるタンパク質構造予測（AlphaFold）と「情報・数学」教員への道</div>
+            <p class="card-summary">プログラミングやアルゴリズムが大好きで、「パソコンの画面の中のコードが、どうすれば現実の世界や誰かの未来を動かせるのだろう？」と考えていた琴音。情報理工学部で研究しながら高校『情報・数学』の教員免許を取得した先輩・未来の研究室を訪れる。グラフ理論とAIのアルゴリズムが、何億通りもの折り紙のような選択肢から生命の立体構造を一瞬で予測し、地球を救う新しい酵素を生み出す瞬間を目撃。「情報学の面白さを高校生に教える先生や研究者になりたい！」と胸を熱くする。</p>
+            <div class="card-footer">
+              <span>約 8,049 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep05-alphafold-informatics-teacher.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="4" data-field="数学・数理科学" data-illustrated="yes" data-search="黒板の結び目と、ほどけない魔法の数式――数学の先生になる夢 理学部・数学科 ／ 教育学部・数学教育専攻（位相幾何学・数理科学ゼミ） 数学・数理科学 トポロジー（位相幾何学）・結び目理論（ジョーンズ多項式）とdnaトポイソメラーゼの数理・数学教員への道 結び目不変量（ジョーンズ多項式）、トポロジー（位相幾何学）による立体構造解析、dna超らせんの結び目解消（トポイソメラーゼ）と分子トポロジー 数学の美しさが大好きで「将来は高校の数学の先生になって、公式の暗記じゃない数学の感動を伝えたい」と願う凛花。教育実習で母校に来ていた数学科4年生の先輩・遥香に招かれ、大学の数学科ゼミ室を訪れる。チョークの粉が舞う黒板で、一見複雑に絡み合ったリボンの輪（結び目）が「多項式」という数式に翻訳され、さらにその純粋数学の理論が細胞の中のdnaの絡まりを解く生命の謎にまで直結していることを知り、数学教師になる夢を強く抱く。 早乙女 凛花（さおとめ りんか・高校2年生・数学研究部） 楠木 遥香（くすのき はるか・数学科4年生・教職課程履修／教育実習生）">
+        <article class="story-card">
+          <a href="stories/ep04-math-topology-knot-teacher.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep04-math-topology-knot-teacher.png" alt="黒板の結び目と、ほどけない魔法の数式――数学の先生になる夢" loading="lazy" />
+            <span class="card-no-badge">#04</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 理学部・数学科 ／ 教育学部・数学教育専攻（位相幾何学・数理科学ゼミ）</div>
+            <h2 class="card-title"><a href="stories/ep04-math-topology-knot-teacher.html">黒板の結び目と、ほどけない魔法の数式――数学の先生になる夢</a></h2>
+            <div class="card-tech">🔬 トポロジー（位相幾何学）・結び目理論（ジョーンズ多項式）とDNAトポイソメラーゼの数理・数学教員への道</div>
+            <p class="card-summary">数学の美しさが大好きで「将来は高校の数学の先生になって、公式の暗記じゃない数学の感動を伝えたい」と願う凛花。教育実習で母校に来ていた数学科4年生の先輩・遥香に招かれ、大学の数学科ゼミ室を訪れる。チョークの粉が舞う黒板で、一見複雑に絡み合ったリボンの輪（結び目）が「多項式」という数式に翻訳され、さらにその純粋数学の理論が細胞の中のDNAの絡まりを解く生命の謎にまで直結していることを知り、数学教師になる夢を強く抱く。</p>
+            <div class="card-footer">
+              <span>約 7,111 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep04-math-topology-knot-teacher.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="3" data-field="化学・薬学・材料" data-illustrated="no" data-search="薬の魔法瓶 ―― 細胞への秘密の手紙 薬学部・創薬科学科（ドラッグデリバリーシステム研究室） 化学・薬学・材料 脂質ナノ粒子（lnp）とmrna医薬の標的細胞デリバリー イオン化脂質ナノ粒子（lnp）、ph応答性エンドソーム脱出、mrnaのシュードウリジン修飾による免疫回避 幼い頃に母を病気で亡くし「必要な場所だけに薬を届ける方法」を知りたい美咲は、薬学部の研究室見学でマイクロ流路チップの中を流れる透明な液体を見る。直径100ナノメートルの「脂質のシャボン玉（lnp）」が、壊れやすいmrnaの手紙を包み込み、細胞の検問をすり抜けて酸性になった瞬間に魔法のように中身を解き放つ化学の精巧さに感動する。 佐倉 美咲（さくら みさき・高校3年生） 立花 詩織（たちばな しおり・薬学部5年生）">
+        <article class="story-card">
+          <a href="stories/ep03-mrna-lipid-nanoparticle-delivery.html" class="card-thumb-wrap">
+            <div class="card-placeholder"><div style="font-size:1.05rem;color:#fbcfe8;margin-bottom:0.35rem;">薬の魔法瓶</div><div style="font-size:0.8rem;">薬学部・創薬科学科（ドラッグデリバリーシステム研究室）</div></div>
+            <span class="card-no-badge">#03</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 薬学部・創薬科学科（ドラッグデリバリーシステム研究室）</div>
+            <h2 class="card-title"><a href="stories/ep03-mrna-lipid-nanoparticle-delivery.html">薬の魔法瓶 ―― 細胞への秘密の手紙</a></h2>
+            <div class="card-tech">🔬 脂質ナノ粒子（LNP）とmRNA医薬の標的細胞デリバリー</div>
+            <p class="card-summary">幼い頃に母を病気で亡くし「必要な場所だけに薬を届ける方法」を知りたい美咲は、薬学部の研究室見学でマイクロ流路チップの中を流れる透明な液体を見る。直径100ナノメートルの「脂質のシャボン玉（LNP）」が、壊れやすいmRNAの手紙を包み込み、細胞の検問をすり抜けて酸性になった瞬間に魔法のように中身を解き放つ化学の精巧さに感動する。</p>
+            <div class="card-footer">
+              <span>約 3,842 文字 </span>
+              <a class="read-link" href="stories/ep03-mrna-lipid-nanoparticle-delivery.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="2" data-field="物理学・宇宙・光学" data-illustrated="no" data-search="青色の謎と光の魔法～美術部員が科学キャンパスで見つけた秘密～ 理学部・生物科学科 ／ 工学部・フォトニクス材料専攻 物理学・宇宙・光学 構造色（ナノフォトニック結晶）とcrisprゲノム編集による翅の微細構造制御 モルフォ蝶のナノラメラ構造色、crispr-cas9によるwnta/optix遺伝子ノックアウト、退色しないバイオミメティクス光学材料 「絶対に色褪せない青」を描きたいと願う美術部員の結衣は、大学の公開講座で100年前の標本なのに輝くようなコバルトブルーを放つモルフォ蝶を見る。しかしその羽を一滴のエタノールで濡らすと、瞬時に青から緑へ色が変わった。そこには青い色素など一粒もなく、ナノスケールの微細な棚構造が光の波を選び取っているのだと知り、物理と生物が交差する世界に目を見張る。 水瀬 結衣（みなせ ゆい・高校2年生・美術部兼生物部） 九条 彩花（くじょう あやか・准教授）">
+        <article class="story-card">
+          <a href="stories/ep02-crispr-butterfly-structural-color.html" class="card-thumb-wrap">
+            <div class="card-placeholder"><div style="font-size:1.05rem;color:#fbcfe8;margin-bottom:0.35rem;">青色の謎と光の魔法～美術部員が科学キャンパスで見つけた秘密～</div><div style="font-size:0.8rem;">理学部・生物科学科 ／ 工学部・フォトニクス材料専攻</div></div>
+            <span class="card-no-badge">#02</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 理学部・生物科学科 ／ 工学部・フォトニクス材料専攻</div>
+            <h2 class="card-title"><a href="stories/ep02-crispr-butterfly-structural-color.html">青色の謎と光の魔法～美術部員が科学キャンパスで見つけた秘密～</a></h2>
+            <div class="card-tech">🔬 構造色（ナノフォトニック結晶）とCRISPRゲノム編集による翅の微細構造制御</div>
+            <p class="card-summary">「絶対に色褪せない青」を描きたいと願う美術部員の結衣は、大学の公開講座で100年前の標本なのに輝くようなコバルトブルーを放つモルフォ蝶を見る。しかしその羽を一滴のエタノールで濡らすと、瞬時に青から緑へ色が変わった。そこには青い色素など一粒もなく、ナノスケールの微細な棚構造が光の波を選び取っているのだと知り、物理と生物が交差する世界に目を見張る。</p>
+            <div class="card-footer">
+              <span>約 4,368 文字 </span>
+              <a class="read-link" href="stories/ep02-crispr-butterfly-structural-color.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="story-card-wrap" data-no="1" data-field="生命科学・バイオ・医学" data-illustrated="no" data-search="夜明け前の温室で見つけた光る花々～生命の設計図を読み解く魔法～ 農学部・応用生命科学科（合成生物学研究室） 生命科学・バイオ・医学 自律発光植物（真菌ルシフェリン代謝経路の植物導入） 発光キノコ由来カフェ酸サイクル遺伝子導入、オワンクラゲgfp蛍光タンパク質、植物二次代謝エンジニアリング 進路に迷う高校2年生の陽葵は、春のオープンキャンパスで夕暮れのガラス温室に迷い込み、電灯もないのにエメラルドグリーンに優しく脈動するペチュニアの花と出会う。白衣の上にカーディガンを羽織った大学院生・凛から「植物が呼吸するエネルギーで自ら光っている」と教わり、生命の設計図を書き換える合成生物学の美しさに心を奪われる。 天野 陽葵（あまの ひまり・高校2年生） 白石 凛（しらいし りん・大学院生 d1）">
+        <article class="story-card">
+          <a href="stories/ep01-bioluminescence-plant.html" class="card-thumb-wrap">
+            <div class="card-placeholder"><div style="font-size:1.05rem;color:#fbcfe8;margin-bottom:0.35rem;">夜明け前の温室で見つけた光る花々～生命の設計図を読み解く魔法～</div><div style="font-size:0.8rem;">農学部・応用生命科学科（合成生物学研究室）</div></div>
+            <span class="card-no-badge">#01</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 農学部・応用生命科学科（合成生物学研究室）</div>
+            <h2 class="card-title"><a href="stories/ep01-bioluminescence-plant.html">夜明け前の温室で見つけた光る花々～生命の設計図を読み解く魔法～</a></h2>
+            <div class="card-tech">🔬 自律発光植物（真菌ルシフェリン代謝経路の植物導入）</div>
+            <p class="card-summary">進路に迷う高校2年生の陽葵は、春のオープンキャンパスで夕暮れのガラス温室に迷い込み、電灯もないのにエメラルドグリーンに優しく脈動するペチュニアの花と出会う。白衣の上にカーディガンを羽織った大学院生・凛から「植物が呼吸するエネルギーで自ら光っている」と教わり、生命の設計図を書き換える合成生物学の美しさに心を奪われる。</p>
+            <div class="card-footer">
+              <span>約 4,477 文字 </span>
+              <a class="read-link" href="stories/ep01-bioluminescence-plant.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>『放課後サイエンス・キャンパス』理系女子ライトノベル図書館 — Generated locally on Mac mini M4 &amp; Published on GitHub Pages</p>
+  </footer>
+
+  <script>
+    function filterCards() {
+      const q = (document.getElementById('searchInput').value || '').trim().toLowerCase();
+      const field = document.getElementById('fieldFilter').value;
+      const imgOnly = document.getElementById('imageFilter').value;
+      const cards = document.querySelectorAll('.story-card-wrap');
+      cards.forEach(card => {
+        const matchQ = !q || (card.getAttribute('data-search') || '').includes(q);
+        const matchField = !field || card.getAttribute('data-field') === field;
+        const matchImg = !imgOnly || card.getAttribute('data-illustrated') === imgOnly;
+        card.style.display = (matchQ && matchField && matchImg) ? '' : 'none';
+      });
+    }
+    function sortCards() {
+      const order = document.getElementById('sortOrder').value;
+      const grid = document.getElementById('storyGrid');
+      const cards = Array.from(grid.querySelectorAll('.story-card-wrap'));
+      cards.sort((a, b) => {
+        const na = parseInt(a.getAttribute('data-no'), 10);
+        const nb = parseInt(b.getAttribute('data-no'), 10);
+        return order === 'asc' ? na - nb : nb - na;
+      });
+      cards.forEach(c => grid.appendChild(c));
+    }
+    function toggleTheme() {
+      const root = document.documentElement;
+      const curr = root.getAttribute('data-theme') || 'light';
+      const next = curr === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('rikejo_theme', next);
+      document.getElementById('themeBtn').textContent = next === 'dark' ? '☀️ ライト表示' : '🌙 ダーク表示';
+    }
+    (function initPrefs() {
+      const savedTheme = localStorage.getItem('rikejo_theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.getElementById('themeBtn').textContent = savedTheme === 'dark' ? '☀️ ライト表示' : '🌙 ダーク表示';
+      }
+    })();
+  </script>
+</body>
+</html>

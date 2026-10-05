@@ -85,8 +85,9 @@ jobs:
         run: |
           python -m unittest discover tests
 
-      - name: Dispatch Episode to WordPress / Blogger via Email
+      - name: Dispatch Episode or Update GitHub Pages
         env:
+          PAUSE_BLOG_AUTO_POST: 'true'
           SMTP_HOST: ${{ secrets.SMTP_HOST || '' }}
           SMTP_PORT: ${{ secrets.SMTP_PORT || '587' }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
@@ -129,16 +130,16 @@ jobs:
           path: preview_output.html
           if-no-files-found: ignore
 
-      - name: Commit & Push Updated History
+      - name: Commit & Push Updated History and GitHub Pages
         if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/history.json data/POSTED_STORIES.md content/
+          git add README.md data/history.json data/POSTED_STORIES.md content/ docs/
           if git diff --staged --quiet; then
-            echo "No history updates to commit."
+            echo "No updates to commit."
           else
-            git commit -m "chore: Record published Rikejo science novel episode [skip ci]"
+            git commit -m "chore: Update Rikejo science novel GitHub Pages [skip ci]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

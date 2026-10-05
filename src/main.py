@@ -32,43 +32,42 @@ def print_stock_status(history_mgr: HistoryManager):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     except Exception:
         pass
-    posted_ids = history_mgr.get_posted_ids()
-    posted_count = 0
-    stocked_list = []
+    published_pages_list = []
     unstocked_list = []
 
     for idx, w in enumerate(history_mgr.catalog, start=1):
         wid = w["id"]
         stock_file = history_mgr.find_stock_file_for_work(wid)
-        if wid in posted_ids:
-            posted_count += 1
-        elif stock_file is not None:
-            stocked_list.append((idx, w, stock_file))
+        if stock_file is not None:
+            published_pages_list.append((idx, w, stock_file))
         else:
             unstocked_list.append((idx, w))
 
-    print("\n" + "=" * 76)
-    print(" 【放課後サイエンス・キャンパス（Qwen3.5×Gemma4×FLUX.2）ストック＆配信状況】")
-    print("=" * 76)
-    print(f"  ・全エピソード数         : {len(history_mgr.catalog)} 話")
-    print(f"  ・配信済み               : {posted_count} 話")
-    print(f"  ・書き溜め済み（配信待ち）: {len(stocked_list)} 話")
-    print(f"  ・未生成（今後の執筆対象）: {len(unstocked_list)} 話")
-    print("-" * 76)
+    illustrated_count = sum(1 for _, _, sf in published_pages_list if sf.with_suffix(".png").exists())
 
-    if stocked_list:
-        print("\n[OK] 【書き溜め済み・配信待ちストック】")
-        for idx, w, sf in stocked_list:
+    print("\n" + "=" * 78)
+    print(" 【放課後サイエンス・キャンパス（Qwen3.5×Gemma4×FLUX.2）GitHub Pages 公開＆蓄積状況】")
+    print("=" * 78)
+    print("  ・Webサイト (GitHub Pages) : https://k518-2026.github.io/rikejo-science-novel/")
+    print("  ・ブログメール自動投稿     : 休止中（GitHub Pages 蓄積・Web公開モード）")
+    print(f"  ・カタログ総エピソード数   : {len(history_mgr.catalog)} 話")
+    print(f"  ・GitHub Pages 公開済み    : {len(published_pages_list)} 話（うち挿絵付き {illustrated_count} 話）")
+    print(f"  ・未生成（今後の執筆対象） : {len(unstocked_list)} 話")
+    print("-" * 78)
+
+    if published_pages_list:
+        print("\n[OK] 【GitHub Pages 収録・公開済みエピソード一覧】")
+        for idx, w, sf in published_pages_list:
             img_mark = "🎨[挿絵あり]" if sf.with_suffix(".png").exists() else "  [挿絵なし]"
-            print(f"  [第{w.get('episode_num', idx):02d}話] {img_mark} {w['title']}（{w['faculty']}） -> {sf}")
+            print(f"  [#{w.get('episode_num', idx):02d}] {img_mark} {w['title']}（{w['faculty']}） -> {sf}")
     else:
-        print("\n[!] 現在、未配信の書き溜めストックは 0 話です。")
+        print("\n[!] 現在、生成済みのエピソードは 0 話です。")
 
     if unstocked_list:
-        print("\n[NEXT] 【未生成・次回のMac miniローカルLLM執筆対象（先頭5件）】")
+        print("\n[NEXT] 【未生成・次回のMac mini M4ローカルLLM執筆対象（先頭5件）】")
         for idx, w in unstocked_list[:5]:
-            print(f"  [第{w.get('episode_num', idx):02d}話] {w['id']} : {w['title']}（{w['faculty']}）")
-    print("=" * 76 + "\n")
+            print(f"  [#{w.get('episode_num', idx):02d}] {w['id']} : {w['title']}（{w['faculty']}）")
+    print("=" * 78 + "\n")
 
 
 def git_sync_and_push(generated_files: List[Path]) -> bool:
@@ -78,17 +77,17 @@ def git_sync_and_push(generated_files: List[Path]) -> bool:
         logger.info("Syncing with remote GitHub repository (git pull --rebase origin main)...")
         subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=False)
 
-        subprocess.run(["git", "add", "content/", "data/"], check=True)
+        subprocess.run(["git", "add", "README.md", "content/", "data/", "docs/"], check=True)
         diff_res = subprocess.run(["git", "diff", "--staged", "--quiet"])
         if diff_res.returncode == 0:
-            logger.info("No new changes in content/ or data/ to commit.")
+            logger.info("No new changes in README.md, content/, data/, or docs/ to commit.")
             return True
 
-        msg = f"feat(stock): Add {len(generated_files)} Rikejo science novel asset(s) via Qwen3.5xGemma4xFLUX2 [skip ci]"
+        msg = f"feat(pages): Add {len(generated_files)} Rikejo science novel asset(s) via Mac mini M4 & update GitHub Pages"
         subprocess.run(["git", "commit", "-m", msg], check=True)
         logger.info("Pushing to origin/main...")
         subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
-        logger.info("Successfully pushed stocked episodes & illustrations to GitHub!")
+        logger.info("Successfully pushed episodes, illustrations & GitHub Pages to GitHub!")
         return True
     except Exception as e:
         logger.error(f"Git push failed: {e}")
@@ -111,11 +110,13 @@ def replenish_stock_if_needed(
     push_to_git: bool = True,
 ) -> List[Path]:
     """
-    Checks how many unposted stocked episodes remain in `content/`.
-    If the remaining unposted stock is <= `min_stock` (e.g., 0 when stock runs out, or below threshold),
-    automatically generates new episodes + Draw Things illustrations up to `target_stock` and pushes to GitHub.
-    Also ensures any existing unposted stocked episodes that lack `.png` illustrations get their images generated.
+    Accumulates episodes and Draw Things illustrations on GitHub and publishes them to GitHub Pages (`docs/`):
+    1. Ensures ALL existing episodes in `content/` have their `.png` illustration generated via Mac mini M4 Draw Things.
+    2. Generates new episodes + illustrations via Mac mini M4 (Ollama Qwen3.5 x Gemma4 + Draw Things FLUX.2),
+       automatically designing new catalog themes when needed, and updates `docs/` + `README.md` after each episode.
     """
+    from src.site_builder import build_github_pages
+
     try:
         subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=False)
         history_mgr.history = history_mgr._load_json(history_mgr.history_path)
@@ -129,19 +130,16 @@ def replenish_stock_if_needed(
         return []
 
     generated_assets: List[Path] = []
-    posted_ids = history_mgr.get_posted_ids()
 
-    # 1. Ensure all currently unposted stocked episodes have their .png illustration
+    # 1. Ensure ALL existing episodes in content/ have their .png illustration
     dt_online = conn.get("draw_things_online", False)
     if dt_online:
         for w in history_mgr.catalog:
-            if w["id"] in posted_ids:
-                continue
             sf = history_mgr.find_stock_file_for_work(w["id"])
             if sf is not None:
                 img_p = sf.with_suffix(".png")
                 if not img_p.exists():
-                    logger.info(f"[Auto-Replenish] Generating missing illustration for stocked episode '{w['id']}'...")
+                    logger.info(f"[Auto-Replenish] Generating missing illustration for episode '{w['id']}'...")
                     md_text = sf.read_text(encoding="utf-8", errors="ignore")
                     saved_img, _ = generator.generate_illustration(
                         work=w,
@@ -151,17 +149,27 @@ def replenish_stock_if_needed(
                     )
                     if saved_img:
                         generated_assets.append(saved_img)
+                        build_github_pages(history_mgr)
+                        if push_to_git:
+                            git_sync_and_push([saved_img])
 
-    # 2. Check remaining unposted stock count
+    # 2. Determine how many new episodes to generate into the GitHub Pages library
+    blog_paused = os.environ.get("PAUSE_BLOG_AUTO_POST", "true").strip().lower() in ("1", "true", "yes")
     current_stock = history_mgr.count_unposted_stock()
-    logger.info(f"[Auto-Replenish Check] Unposted stocked episodes: {current_stock} (trigger threshold <= {min_stock}, target = {target_stock})")
+    ungenerated = history_mgr.count_ungenerated_works()
 
-    if current_stock <= min_stock:
-        needed = max(1, target_stock - current_stock)
+    if blog_paused:
+        # In GitHub Pages accumulation mode, generate a steady batch (e.g. 2 episodes per scheduled run)
+        needed = max(1, min_stock if min_stock > 0 else 2)
         logger.info(
-            f"[Auto-Replenish Triggered!] Unposted stock ({current_stock}) is <= {min_stock}. "
-            f"Automatically generating {needed} new episode(s) and illustration(s)..."
+            f"[GitHub Pages Accumulation Mode] Generating {needed} new episode(s) and illustration(s) on Mac mini M4 "
+            f"(currently {ungenerated} ungenerated theme(s) in catalog)..."
         )
+    else:
+        logger.info(f"[Auto-Replenish Check] Unposted stocked episodes: {current_stock} (trigger threshold <= {min_stock}, target = {target_stock})")
+        needed = max(1, target_stock - current_stock) if current_stock <= min_stock else 0
+
+    if needed > 0:
         targets = history_mgr.select_unstocked_works(count=needed)
         if len(targets) < needed:
             missing_themes = needed - len(targets)
@@ -175,6 +183,7 @@ def replenish_stock_if_needed(
 
         for idx, work in enumerate(targets, start=1):
             logger.info(f"\n=== [Auto-Replenish {idx}/{len(targets)}] Dual-LLM Generating: {work['title']} ===")
+            ep_assets: List[Path] = []
             full_md, ep_title, refs, _ = generator.generate_complete_episode(work=work)
             today_str = datetime.now(JST).strftime("%Y-%m-%d")
             safe_id = work["id"].replace("-", "_")
@@ -182,7 +191,8 @@ def replenish_stock_if_needed(
             out_path.parent.mkdir(parents=True, exist_ok=True)
             out_path.write_text(full_md, encoding="utf-8")
             generated_assets.append(out_path)
-            logger.info(f"Saved auto-replenished episode: {out_path} ('{ep_title}')")
+            ep_assets.append(out_path)
+            logger.info(f"Saved episode: {out_path} ('{ep_title}')")
 
             img_out_path = out_path.with_suffix(".png")
             saved_img, _ = generator.generate_illustration(
@@ -193,34 +203,37 @@ def replenish_stock_if_needed(
             )
             if saved_img:
                 generated_assets.append(saved_img)
+                ep_assets.append(saved_img)
 
-    if generated_assets and push_to_git:
-        git_sync_and_push(generated_assets)
+            build_github_pages(history_mgr)
+            if push_to_git and ep_assets:
+                git_sync_and_push(ep_assets)
 
     return generated_assets
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Rikejo Science Light Novel Dual-LLM Generator (Qwen 3.5 9B x Gemma 4 12B) + Draw Things (FLUX.2) & Mail Poster"
+        description="Rikejo Science Light Novel Dual-LLM Generator (Qwen 3.5 9B x Gemma 4 12B) + Draw Things (FLUX.2) & GitHub Pages Publisher"
     )
-    parser.add_argument("--file", "-f", default=None, help="Path to a specific markdown file to publish directly")
+    parser.add_argument("--file", "-f", default=None, help="Path to a specific markdown file")
     parser.add_argument("--work-id", default=None, help="Specific episode ID from data/science_catalog.json")
-    parser.add_argument("--stock-count", "-n", type=int, default=0, help="Batch-generate N episodes + illustrations into content/")
-    parser.add_argument("--auto-replenish", action="store_true", help="Automatically generate new episodes + illustrations when unposted stock <= --min-stock")
-    parser.add_argument("--min-stock", type=int, default=0, help="Stock threshold to trigger --auto-replenish (default: 0 = when stock runs out)")
-    parser.add_argument("--target-stock", type=int, default=6, help="Target number of unposted episodes to maintain on --auto-replenish (default: 6)")
-    parser.add_argument("--generate-images", action="store_true", help="Generate missing .png illustrations for existing stocked episodes via Draw Things")
-    parser.add_argument("--push", action="store_true", help="Git commit & push after generating stock or illustrations")
-    parser.add_argument("--status-report", action="store_true", help="Show current stock & publication status")
-    parser.add_argument("--send", action="store_true", help="Actually send the email to Blogger / WordPress")
-    parser.add_argument("--dry-run", action="store_true", help="Run in dry-run mode (no email sent, history not updated)")
+    parser.add_argument("--stock-count", "-n", type=int, default=0, help="Batch-generate N episodes + illustrations into content/ and docs/")
+    parser.add_argument("--auto-replenish", action="store_true", help="Automatically generate new episodes + illustrations and update GitHub Pages")
+    parser.add_argument("--min-stock", type=int, default=1, help="Batch count / threshold for --auto-replenish (default: 1)")
+    parser.add_argument("--target-stock", type=int, default=6, help="Target number of episodes to maintain on --auto-replenish (default: 6)")
+    parser.add_argument("--generate-images", action="store_true", help="Generate missing .png illustrations for existing episodes in content/ via Draw Things")
+    parser.add_argument("--build-pages", action="store_true", help="Rebuild GitHub Pages static site (docs/) and README.md from content/")
+    parser.add_argument("--push", action="store_true", help="Git commit & push after generating stock, illustrations, or GitHub Pages")
+    parser.add_argument("--status-report", action="store_true", help="Show current GitHub Pages & stock status")
+    parser.add_argument("--send", action="store_true", help="(Paused by default) Send email to Blogger / WordPress only if PAUSE_BLOG_AUTO_POST=false")
+    parser.add_argument("--dry-run", action="store_true", help="Run in dry-run mode")
     parser.add_argument("--preview-html", action="store_true", help="Export rendered HTML to preview_output.html")
     parser.add_argument("--status", choices=["publish", "draft"], default=None, help="Override post status (publish or draft)")
     parser.add_argument("--force", action="store_true", help="Force regeneration even if stock or history exists")
     parser.add_argument("--web", action="store_true", help="Launch the interactive Web UI Studio in browser")
     parser.add_argument("--port", type=int, default=8505, help="Port for the Web UI Studio (default: 8505)")
-    parser.add_argument("--repost", default=None, help="Re-post a specific episode number or ID (e.g., 1, 2, ep01-bioluminescence-plant, or reset_all)")
+    parser.add_argument("--repost", default=None, help="Re-post a specific episode number or ID")
     parser.add_argument("--verbose", "-v", action="store_true", help="Enable debug logging")
 
     args = parser.parse_args()
@@ -248,9 +261,17 @@ def main():
             if matched_w:
                 history_mgr.remove_from_history(matched_w["id"])
                 args.work_id = matched_w["id"]
-                logger.info(f"Removed '{matched_w['id']}' from history so it can be cleanly posted.")
+                logger.info(f"Removed '{matched_w['id']}' from history.")
 
     if args.status_report:
+        print_stock_status(history_mgr)
+        return
+
+    if args.build_pages:
+        from src.site_builder import build_github_pages
+        build_github_pages(history_mgr)
+        if args.push:
+            git_sync_and_push([Path("docs/index.html")])
         print_stock_status(history_mgr)
         return
 
@@ -261,7 +282,7 @@ def main():
         draw_things_host=config.draw_things_host,
     )
 
-    # Auto-replenish mode (triggered by scheduled task or CLI when stock runs out)
+    # Auto-replenish mode (triggered by scheduled task or CLI)
     if args.auto_replenish:
         replenish_stock_if_needed(
             history_mgr=history_mgr,
@@ -273,16 +294,16 @@ def main():
         print_stock_status(history_mgr)
         return
 
-    # Generate missing illustrations for existing stocked episodes
+    # Generate missing illustrations for ALL existing episodes in content/
     if args.generate_images:
+        from src.site_builder import build_github_pages
         dt_conn = generator.check_draw_things_connection()
         if not dt_conn.get("online"):
             logger.error(f"Cannot reach Draw Things HTTP API at {config.draw_things_host}: {dt_conn.get('error')}")
             sys.exit(1)
-        posted_ids = history_mgr.get_posted_ids()
         generated_imgs: List[Path] = []
         for w in history_mgr.catalog:
-            if w["id"] in posted_ids and not args.force:
+            if args.work_id and w["id"] != args.work_id:
                 continue
             sf = history_mgr.find_stock_file_for_work(w["id"])
             if sf is None:
@@ -300,13 +321,15 @@ def main():
             )
             if saved_img:
                 generated_imgs.append(saved_img)
-        if args.push and generated_imgs:
-            git_sync_and_push(generated_imgs)
+                build_github_pages(history_mgr)
+                if args.push:
+                    git_sync_and_push([saved_img])
         print_stock_status(history_mgr)
         return
 
     # Batch stock mode
     if args.stock_count > 0:
+        from src.site_builder import build_github_pages
         conn = generator.check_connection()
         if not conn.get("online"):
             logger.error(f"Cannot reach Mac mini Ollama server at {config.ollama_host}: {conn.get('error')}")
@@ -321,13 +344,15 @@ def main():
                 history_mgr.append_catalog_works(new_themes)
                 targets = history_mgr.select_unstocked_works(count=args.stock_count)
         if not targets:
-            logger.info("All catalog episodes are already published or stocked!")
+            logger.info("All catalog episodes are already generated in content/!")
+            build_github_pages(history_mgr)
             print_stock_status(history_mgr)
             return
 
         generated_files: List[Path] = []
         for idx, work in enumerate(targets, start=1):
             logger.info(f"\n=== [{idx}/{len(targets)}] Dual-LLM Generating: {work['title']} ===")
+            ep_assets: List[Path] = []
             full_md, ep_title, refs, _ = generator.generate_complete_episode(work=work)
             today_str = datetime.now(JST).strftime("%Y-%m-%d")
             safe_id = work["id"].replace("-", "_")
@@ -335,7 +360,8 @@ def main():
             out_path.parent.mkdir(parents=True, exist_ok=True)
             out_path.write_text(full_md, encoding="utf-8")
             generated_files.append(out_path)
-            logger.info(f"Saved stocked episode: {out_path} ('{ep_title}')")
+            ep_assets.append(out_path)
+            logger.info(f"Saved episode: {out_path} ('{ep_title}')")
 
             img_out_path = out_path.with_suffix(".png")
             saved_img, _ = generator.generate_illustration(
@@ -346,9 +372,23 @@ def main():
             )
             if saved_img:
                 generated_files.append(saved_img)
+                ep_assets.append(saved_img)
 
+            build_github_pages(history_mgr)
+            if args.push and ep_assets:
+                git_sync_and_push(ep_assets)
+
+        print_stock_status(history_mgr)
+        return
+
+    # Default mode: Blog auto-posting is paused; rebuild GitHub Pages (docs/) and README.md
+    blog_paused = os.environ.get("PAUSE_BLOG_AUTO_POST", "true").strip().lower() in ("1", "true", "yes")
+    if blog_paused:
+        from src.site_builder import build_github_pages
+        logger.info("Blog email auto-posting is paused (PAUSE_BLOG_AUTO_POST=true). Building GitHub Pages (docs/) and README.md...")
+        build_github_pages(history_mgr)
         if args.push:
-            git_sync_and_push(generated_files)
+            git_sync_and_push([Path("docs/index.html")])
         print_stock_status(history_mgr)
         return
 
@@ -372,116 +412,22 @@ def main():
                 break
         target_refs = extract_refs_from_markdown(target_file.read_text(encoding="utf-8", errors="ignore"))
     else:
-        # Prevent duplicate consecutive posts when manual dispatch and scheduled cron overlap
-        if os.getenv("GITHUB_EVENT_NAME") == "schedule" and not args.force and history_mgr.history:
-            last_entry = history_mgr.history[-1]
-            last_posted_str = last_entry.get("posted_at", "")
-            if last_posted_str:
-                try:
-                    last_dt = datetime.fromisoformat(last_posted_str)
-                    elapsed_minutes = (datetime.now(JST) - last_dt).total_seconds() / 60.0
-                    if 0 <= elapsed_minutes < 120:
-                        logger.info(
-                            f"An episode ('{last_entry.get('episode_title')}') was already published "
-                            f"{elapsed_minutes:.1f} minutes ago. Skipping scheduled run to prevent duplicate posting."
-                        )
-                        return
-                except Exception as e:
-                    logger.warning(f"Could not parse last posted_at timestamp: {e}")
-
         target_work = history_mgr.select_next_work(work_id=args.work_id, force=args.force)
         if not target_work:
-            # All existing catalog works have been published -> if Mac mini is online, auto-create new catalog works!
-            conn_check = generator.check_connection()
-            if conn_check.get("online"):
-                new_themes = generator.generate_new_catalog_themes(existing_catalog=history_mgr.catalog, count=3)
-                if new_themes:
-                    history_mgr.append_catalog_works(new_themes)
-                    target_work = history_mgr.select_next_work(work_id=args.work_id, force=args.force)
-            if not target_work:
-                logger.info("All catalog episodes have already been published! Skipping to prevent duplicate posts.")
-                return
-
-        posted_ids = history_mgr.get_posted_ids()
-        if target_work["id"] in posted_ids and not args.force and not args.repost:
-            logger.info(
-                f"Episode '{target_work['id']}' ({target_work['title']}) is already recorded in data/history.json as published. "
-                f"Skipping to strictly prevent duplicate posts. (Use --repost or --force if you intend to re-send.)"
-            )
+            logger.info("All catalog episodes have already been published!")
             return
-
         existing_file = history_mgr.find_stock_file_for_work(target_work["id"])
-        conn = generator.check_connection() if (args.force or not existing_file) else {"online": False}
-        if existing_file and (not args.force or not conn.get("online")):
+        if existing_file:
             target_file = existing_file
-            logger.info(f"Using pre-stocked episode file from content/: {target_file}")
             target_refs = extract_refs_from_markdown(target_file.read_text(encoding="utf-8", errors="ignore"))
-        elif conn.get("online"):
-            logger.info(f"Stock file not found for '{target_work['id']}'. Automatically generating article & illustration via Mac mini...")
-            full_md, ep_title, target_refs, _ = generator.generate_complete_episode(work=target_work)
-            today_str = datetime.now(JST).strftime("%Y-%m-%d")
-            safe_id = target_work["id"].replace("-", "_")
-            target_file = Path(f"content/{today_str}_{safe_id}.md")
-            target_file.parent.mkdir(parents=True, exist_ok=True)
-            target_file.write_text(full_md, encoding="utf-8")
-            logger.info(f"Generated episode saved to: {target_file}")
-            img_out_path = target_file.with_suffix(".png")
-            generator.generate_illustration(
-                work=target_work,
-                output_image_path=img_out_path,
-                story_body=full_md,
-                episode_title=ep_title,
-            )
         else:
-            # Running on GitHub Actions cloud runner (cannot reach local Mac mini 192.168.128.59):
-            # Look ONLY for an UNPOSTED stocked episode in content/ so we NEVER send a duplicate
-            unposted_stocked = []
-            for w in history_mgr.catalog:
-                if w["id"] in posted_ids:
-                    continue
-                sf = history_mgr.find_stock_file_for_work(w["id"])
-                if sf is not None:
-                    unposted_stocked.append((w, sf))
-            if unposted_stocked:
-                target_work, target_file = unposted_stocked[0]
-                logger.info(
-                    f"Selected unposted pre-stocked episode '{target_work['id']}' ({target_file}) for dispatch."
-                )
-                target_refs = extract_refs_from_markdown(target_file.read_text(encoding="utf-8", errors="ignore"))
-            else:
-                logger.info(
-                    "No unposted pre-stocked episodes remain in content/ and Mac mini is on local LAN. "
-                    "Skipping dispatch to prevent duplicate posts."
-                )
-                return
-
-    # Ensure sidecar illustration .png exists if Draw Things is reachable on LAN
-    if target_file and target_work:
-        sidecar_png = target_file.with_suffix(".png")
-        if not sidecar_png.exists():
-            dt_conn = generator.check_draw_things_connection()
-            if dt_conn.get("online"):
-                md_text = target_file.read_text(encoding="utf-8", errors="ignore")
-                generator.generate_illustration(
-                    work=target_work,
-                    output_image_path=sidecar_png,
-                    story_body=md_text,
-                    episode_title=target_work.get("title", ""),
-                )
-
-    next_work = None
-    if target_work:
-        catalog = history_mgr.catalog
-        for idx, w in enumerate(catalog):
-            if w["id"] == target_work["id"]:
-                next_work = catalog[(idx + 1) % len(catalog)]
-                break
+            return
 
     formatted = format_post_content(
         str(target_file),
         status_override=args.status,
         include_jetpack_shortcodes=config.use_jetpack_shortcodes,
-        next_work=next_work,
+        next_work=None,
     )
 
     if args.preview_html or is_dry_run:
@@ -503,20 +449,8 @@ def main():
             references=target_refs,
             status=formatted.status,
         )
-        logger.info(f"Recorded '{formatted.title}' in data/history.json and data/POSTED_STORIES.md")
-
-        # After recording a post, if unposted stock has run out (0 remaining) and Mac mini is reachable on LAN,
-        # automatically generate the next batch of articles & illustrations!
-        remaining_stock = history_mgr.count_unposted_stock()
-        if remaining_stock == 0:
-            logger.info("Unposted stock has reached 0! Checking if Mac mini is online to auto-replenish...")
-            replenish_stock_if_needed(
-                history_mgr=history_mgr,
-                generator=generator,
-                min_stock=0,
-                target_stock=6,
-                push_to_git=args.push,
-            )
+        from src.site_builder import build_github_pages
+        build_github_pages(history_mgr)
 
 
 if __name__ == "__main__":

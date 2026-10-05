@@ -55,6 +55,13 @@ class HistoryManager:
                 count += 1
         return count
 
+    def count_ungenerated_works(self, content_dir: Path = Path("content")) -> int:
+        count = 0
+        for w in self.catalog:
+            if self.find_stock_file_for_work(w["id"], content_dir=content_dir) is None:
+                count += 1
+        return count
+
     def append_catalog_works(self, new_works: List[Dict[str, Any]]):
         if not new_works:
             return
@@ -71,12 +78,9 @@ class HistoryManager:
                 json.dump(self.catalog, f, ensure_ascii=False, indent=2)
 
     def select_unstocked_works(self, count: int = 3, content_dir: Path = Path("content")) -> List[Dict[str, Any]]:
-        posted_ids = self.get_posted_ids()
         candidates: List[Dict[str, Any]] = []
         for w in self.catalog:
             wid = w["id"]
-            if wid in posted_ids:
-                continue
             if self.find_stock_file_for_work(wid, content_dir=content_dir) is not None:
                 continue
             candidates.append(w)
@@ -158,7 +162,7 @@ class HistoryManager:
     def _update_markdown_table(self):
         lines = [
             "# 投稿済み『放課後サイエンス・キャンパス』作品一覧\n",
-            "Mac mini ローカルLLM（構成作家 `qwen2.5:14b` × 執筆作家 `gemma2:9b`）と Crossref 査読論文検証により執筆・Blogger/WPメール投稿された作品一覧です。\n\n",
+            "Mac mini M4 ローカルLLM（構成作家 `qwen3.5:9b` × 執筆作家 `gemma4:12b`）＋ Draw Things (`FLUX.2`) と Crossref 査読論文検証により執筆された作品一覧です。\n\n",
             "| No. | 投稿日 (JST) | 作品タイトル | 大学の学部・研究室 | 科学テーマ | 主な引用論文 (DOI) | 状態 |",
             "|:---:|:---:|:---|:---|:---|:---|:---:|",
         ]

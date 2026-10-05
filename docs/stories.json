@@ -214,5 +214,17 @@
     "url": "stories/ep18-gravitational-waves-laser-interferometer.html",
     "image": "assets/images/ep18-gravitational-waves-laser-interferometer.png",
     "char_count": 7306
+  },
+  {
+    "no": 19,
+    "work_id": "ep19-mof-porous-coordination-polymers-carbon-capture",
+    "title": "角砂糖ひと粒にサッカー場が広がる結晶――空気から水と未来を集める化学",
+    "faculty": "理学部・化学科 ／ 高等研究院（錯体化学・多孔性材料研究室）",
+    "field": "化学・薬学・材料",
+    "theme": "多孔性配位高分子（PCP / MOF：Metal-Organic Frameworks）によるCO2分離回収と砂漠空気からの水回収",
+    "has_image": true,
+    "url": "stories/ep19-mof-porous-coordination-polymers-carbon-capture.html",
+    "image": "assets/images/ep19-mof-porous-coordination-polymers-carbon-capture.png",
+    "char_count": 9586
   }
 ]

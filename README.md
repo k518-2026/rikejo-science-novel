@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `gemma4:12b` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **18** 話（うち挿絵付き **18** 話 / 最終更新: 2026-10-06 02:23 JST）
+- **収録作品数**: 全 **19** 話（うち挿絵付き **19** 話 / 最終更新: 2026-10-06 02:40 JST）
 
 ---
 
@@ -32,6 +32,7 @@
 | 16 | **[散らばる点群のなかに隠れた『穴』を見つける――位相的データ解析とガラスの幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep16-topological-data-analysis-persistent-homology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep16-topological-data-analysis-persistent-homology.html) | [📄原稿](content/2026-10-06_ep16_topological_data_analysis_persistent_homology.md) | [🎨挿絵](content/2026-10-06_ep16_topological_data_analysis_persistent_homology.png) | 理学部・数学科 ／ データ科学イノベーション研究院（応用トポロジー研究室） | 位相的データ解析（TDA）・パーシステントホモロジーによるアモルファス（ガラス）構造や生命データの解明と数学教員への憧れ | 9,201字 |
 | 17 | **[一億分の五メートルの折り紙で、がん細胞だけに開く宝箱を作る](https://k518-2026.github.io/rikejo-science-novel/stories/ep17-dna-origami-molecular-robotics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep17-dna-origami-molecular-robotics.html) | [📄原稿](content/2026-10-06_ep17_dna_origami_molecular_robotics.md) | [🎨挿絵](content/2026-10-06_ep17_dna_origami_molecular_robotics.png) | 工学部・生命分子工学科 ／ ナノバイオシステム研究室 | DNAオリガミ（DNA Origami）技術と分子ロボティクスによる標的指向性ナノカプセル設計 | 7,912字 |
 | 18 | **[時空のさざ波を聴く地下の望遠鏡――ブラックホール連星と光の干渉計](https://k518-2026.github.io/rikejo-science-novel/stories/ep18-gravitational-waves-laser-interferometer.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep18-gravitational-waves-laser-interferometer.html) | [📄原稿](content/2026-10-06_ep18_gravitational_waves_laser_interferometer.md) | [🎨挿絵](content/2026-10-06_ep18_gravitational_waves_laser_interferometer.png) | 理学部・物理学科 ／ 宇宙重力波観測研究センター（レーザー干渉計実験室） | レーザー干渉計による重力波直接検出（LIGO/KAGRA）と連星中性子星合体による重元素合成（キロノヴァ） | 7,306字 |
+| 19 | **[角砂糖ひと粒にサッカー場が広がる結晶――空気から水と未来を集める化学](https://k518-2026.github.io/rikejo-science-novel/stories/ep19-mof-porous-coordination-polymers-carbon-capture.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep19-mof-porous-coordination-polymers-carbon-capture.html) | [📄原稿](content/2026-10-06_ep19_mof_porous_coordination_polymers_carbon_capture.md) | [🎨挿絵](content/2026-10-06_ep19_mof_porous_coordination_polymers_carbon_capture.png) | 理学部・化学科 ／ 高等研究院（錯体化学・多孔性材料研究室） | 多孔性配位高分子（PCP / MOF：Metal-Organic Frameworks）によるCO2分離回収と砂漠空気からの水回収 | 9,586字 |
 
 ---
 

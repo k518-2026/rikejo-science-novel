@@ -18,9 +18,9 @@
     "faculty": "理学部・生物科学科 ／ 工学部・フォトニクス材料専攻",
     "field": "物理学・宇宙・光学",
     "theme": "構造色（ナノフォトニック結晶）とCRISPRゲノム編集による翅の微細構造制御",
-    "has_image": false,
+    "has_image": true,
     "url": "stories/ep02-crispr-butterfly-structural-color.html",
-    "image": "",
+    "image": "assets/images/ep02-crispr-butterfly-structural-color.png",
     "char_count": 4368
   },
   {

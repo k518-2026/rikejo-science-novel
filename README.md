@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `gemma4:12b` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **14** 話（うち挿絵付き **14** 話 / 最終更新: 2026-10-06 00:46 JST）
+- **収録作品数**: 全 **15** 話（うち挿絵付き **15** 話 / 最終更新: 2026-10-06 01:14 JST）
 
 ---
 
@@ -28,6 +28,7 @@
 | 12 | **[コップ一杯の海水から、クジラの歌を聴く』～目に見えない「命の文字」が紡ぐ海洋のシナリオへ～](https://k518-2026.github.io/rikejo-science-novel/stories/ep12-environmental-dna-ocean-ecology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep12-environmental-dna-ocean-ecology.html) | [📄原稿](content/2026-10-05_ep12_environmental_dna_ocean_ecology.md) | [🎨挿絵](content/2026-10-05_ep12_environmental_dna_ocean_ecology.png) | 海洋生命科学部 ／ 地球環境科学科 | 環境DNA（eDNA）メタバーコーディングによる非侵襲的生物多様性モニタリング | 7,067字 |
 | 13 | **[サッカーボールから始まる「なぜ？」の旅——ブラックボックスを解きほぐして、誰にでもわかる科学の世界へ (Neuro-Symbolic AI & XAI)](https://k518-2026.github.io/rikejo-science-novel/stories/ep13-neural-symbolic-logic-math-teacher.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep13-neural-symbolic-logic-math-teacher.html) | [📄原稿](content/2026-10-05_ep13_neural_symbolic_logic_math_teacher.md) | [🎨挿絵](content/2026-10-05_ep13_neural_symbolic_logic_math_teacher.png) | 理学部数学学科 ／ 数理情報科学専攻（認知計算研究室） | 数学（論理代数、組み合わせ最適化）、情報学（シンボルAI、機械学習の説明可能性XAI）と教職キャリアへの道 | 7,479字 |
 | 14 | **[散る桜のリズムが示すカオスの美学：非線形世界への招待状](https://k518-2026.github.io/rikejo-science-novel/stories/ep14-statistical-mechanics-chaos-physics-teacher.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep14-statistical-mechanics-chaos-physics-teacher.html) | [📄原稿](content/2026-10-05_ep14_statistical_mechanics_chaos_physics_teacher.md) | [🎨挿絵](content/2026-10-05_ep14_statistical_mechanics_chaos_physics_teacher.png) | 理学部物理学科 ／ 理論物理学専攻（動力学系研究室） | 物理（非線形力学、カオス理論、統計的物理学）、情報学（データ同化アルゴリズム）と教職キャリアへの道 | 7,984字 |
+| 15 | **[細胞を設計するエンジニアリング――合成生物学の教室](https://k518-2026.github.io/rikejo-science-novel/stories/ep15-bionanotechnology-synthetic-genetics-materials.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep15-bionanotechnology-synthetic-genetics-materials.html) | [📄原稿](content/2026-10-06_ep15_bionanotechnology_synthetic_genetics_materials.md) | [🎨挿絵](content/2026-10-06_ep15_bionanotechnology_synthetic_genetics_materials.png) | 生命理工学部生体機能工学科 ／ 合成生物学分野（ゲノム編集研究室） | 生物工学（合成生物学、代謝経路設計）、情報学（ゲノム配列解析アルゴリズム）と教職キャリアへの道 | 8,689字 |
 
 ---
 

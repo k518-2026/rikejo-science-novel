@@ -166,5 +166,17 @@
     "url": "stories/ep14-statistical-mechanics-chaos-physics-teacher.html",
     "image": "assets/images/ep14-statistical-mechanics-chaos-physics-teacher.png",
     "char_count": 7984
+  },
+  {
+    "no": 15,
+    "work_id": "ep15-bionanotechnology-synthetic-genetics-materials",
+    "title": "細胞を設計するエンジニアリング――合成生物学の教室",
+    "faculty": "生命理工学部生体機能工学科 ／ 合成生物学分野（ゲノム編集研究室）",
+    "field": "情報学・AI",
+    "theme": "生物工学（合成生物学、代謝経路設計）、情報学（ゲノム配列解析アルゴリズム）と教職キャリアへの道",
+    "has_image": true,
+    "url": "stories/ep15-bionanotechnology-synthetic-genetics-materials.html",
+    "image": "assets/images/ep15-bionanotechnology-synthetic-genetics-materials.png",
+    "char_count": 8689
   }
 ]

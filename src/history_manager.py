@@ -62,6 +62,26 @@ class HistoryManager:
                 count += 1
         return count
 
+    def count_episodes_generated_this_week(self, content_dir: Path = Path("content")) -> int:
+        if not content_dir.exists():
+            return 0
+        now_jst = datetime.now(JST).date()
+        current_iso_year, current_iso_week, _ = now_jst.isocalendar()
+        pages_era_start = datetime(2026, 10, 6).date()
+        count = 0
+        for md_file in content_dir.glob("*.md"):
+            prefix = md_file.name[:10]
+            try:
+                file_date = datetime.strptime(prefix, "%Y-%m-%d").date()
+                if file_date < pages_era_start:
+                    continue
+                y, w, _ = file_date.isocalendar()
+                if (y, w) == (current_iso_year, current_iso_week):
+                    count += 1
+            except ValueError:
+                continue
+        return count
+
     def append_catalog_works(self, new_works: List[Dict[str, Any]]):
         if not new_works:
             return

@@ -370,7 +370,232 @@
       },
       {
         "label": "合成生物学の定義と展望",
-        "query": "Endy D Synthetic Biology: A Review of the Field Annual Reviews - Information and Computational Sciences (Nature Biotechnology) 2005"
+        "query": "Endy D Foundations for engineering biology Nature 2005"
+      }
+    ]
+  },
+  {
+    "id": "ep16-topological-data-analysis-persistent-homology",
+    "episode_num": 16,
+    "title": "散らばる点群のなかに隠れた『穴』を見つける――位相的データ解析とガラスの幾何学",
+    "faculty": "理学部・数学科 ／ データ科学イノベーション研究院（応用トポロジー研究室）",
+    "protagonist": "早乙女 凛（さおとめ りん・高校2年生・数学研究部）",
+    "mentor": "九条 綾乃（くじょう あやの・准教授・応用位相幾何学／高校数学科教職課程担当）",
+    "theme": "位相的データ解析（TDA）・パーシステントホモロジーによるアモルファス（ガラス）構造や生命データの解明と数学教員への憧れ",
+    "modern_tech": "パーシステントホモロジー（Persistent Homology）、パーシステンス図（Persistence Diagram）、ガラス・非晶質材料の中距離秩序構造の数学的抽出",
+    "summary": "「ガラスは液体なの？固体なの？原子がバラバラに並んでいるのに、どうしてあんなに硬くて透明なの？」と疑問を持った凛。大学の『数学で読み解く物質と生命』セミナーを訪れると、綾乃准教授はバラバラな点の集まり（点群データ）の半径を少しずつ膨らませて『生まれては消える輪っか（穴）の寿命』を記録する数学――パーシステントホモロジーを教えてくれる。目に見えない秩序を浮かび上がらせるトポロジーと情報学の融合に感動し、数学の面白さを伝える先生を目指す。",
+    "crossref_queries": [
+      {
+        "label": "パーシステントホモロジーによるガラス（非晶質物質）の階層的幾何構造の解明",
+        "query": "Hiraoka Nakamura Hirata Escolar Matsue Nishiura Hierarchical structures of amorphous solids characterized by persistent homology PNAS 2016"
+      },
+      {
+        "label": "トポロジーとデータ解析の融合（Topology and Data）",
+        "query": "Carlsson Topology and data Bulletin of the American Mathematical Society 2009"
+      },
+      {
+        "label": "パーシステントホモロジーの計算アルゴリズムと基礎理論",
+        "query": "Edelsbrunner Letscher Zomorodian Topological persistence and simplification Discrete and Computational Geometry 2002"
+      }
+    ]
+  },
+  {
+    "id": "ep17-dna-origami-molecular-robotics",
+    "episode_num": 17,
+    "title": "一億分の五メートルの折り紙で、がん細胞だけに開く宝箱を作る",
+    "faculty": "工学部・生命分子工学科 ／ ナノバイオシステム研究室",
+    "protagonist": "折原 千尋（おりはら ちひろ・高校1年生・折り紙同好会兼化学部）",
+    "mentor": "水無月 薫（みなづき かおる・特任助教・DNAナノテクノロジー）",
+    "theme": "DNAオリガミ（DNA Origami）技術と分子ロボティクスによる標的指向性ナノカプセル設計",
+    "modern_tech": "ロズムンドのDNAオリガミ自己組織化法、ワトソン・クリック塩基対相補性プログラミング、アプタマー分子論理ゲート搭載DNAナノボックス",
+    "summary": "幼い頃から複雑な折り紙を折るのが得意だった千尋は、「DNAの鎖を折り紙みたいに折って、ナノメートルの箱やロボットを作る」というオープンキャンパスのチラシに目を奪われる。薫助教の研究室で、長い1本鎖DNAに短い『ホッチキス鎖（ステープル鎖）』を混ぜて温め冷ますだけで、コンピュータで設計した通りの立体ナノボックスが何十億個もひとりでに組み上がる原子間力顕微鏡（AFM）画像を見て、分子の世界の造形美に息を呑む。",
+    "crossref_queries": [
+      {
+        "label": "DNAオリガミ（DNAを折りたたんで任意の二次元・三次元ナノ構造を創る技術）の創始論文",
+        "query": "Rothemund Folding DNA to create nanoscale shapes and patterns Nature 2006"
+      },
+      {
+        "label": "分子鍵で開閉制御可能な三次元DNAオリガミ・ナノボックスの構築",
+        "query": "Andersen Dong Nielsen Jahn Subramani Mamdouh Golas Sander Stark Oliveira Pedersen Birkedal Besenbacher Gothelf Kjems Self-assembly of a nanoscale DNA box with a controllable lid Nature 2009"
+      },
+      {
+        "label": "標的細胞を認識して薬物を放出する論理ゲート搭載DNAナノロボット",
+        "query": "Douglas Bachelet Church A logic-gated nanorobot for targeted transport of molecular payloads Science 2012"
+      }
+    ]
+  },
+  {
+    "id": "ep18-gravitational-waves-laser-interferometer",
+    "episode_num": 18,
+    "title": "時空のさざ波を聴く地下の望遠鏡――ブラックホール連星と光の干渉計",
+    "faculty": "理学部・物理学科 ／ 宇宙重力波観測研究センター（レーザー干渉計実験室）",
+    "protagonist": "神崎 宙（かんざき そら・高校2年生・物理部）",
+    "mentor": "鳴海 沙耶（なるみ さや・准教授・重力波天文学／高校物理教諭免許保持）",
+    "theme": "レーザー干渉計による重力波直接検出（LIGO/KAGRA）と連星中性子星合体による重元素合成（キロノヴァ）",
+    "modern_tech": "マイケルソン・レーザー干渉計、極低温サファイア鏡と量子スクイーズド光による標準量子限界突破、重力波波形テンプレートマッチング",
+    "summary": "「私たちが身につけている金の指輪やプラチナは、宇宙のどこで生まれたの？」という疑問を抱いていた宙は、物理学科の実験教室でマイケルソン干渉計の光の縞模様（干渉縞）に触れる。高校物理の教職免許も持つ沙耶准教授は、13億光年先のブラックホールや中性子星がぶつかったときに生じる『原子核の千分の一よりも小さな時空の伸び縮み（重力波）』を光と鏡で捉える仕組みと、中性子星の合体で金やプラチナが生まれた決定的証拠を語り、物理の壮大さを伝える。",
+    "crossref_queries": [
+      {
+        "label": "連星ブラックホール合体からの重力波の史上初直接観測（GW150914・ノーベル物理学賞）",
+        "query": "Abbott et al Observation of Gravitational Waves from a Binary Black Hole Merger Physical Review Letters 2016"
+      },
+      {
+        "label": "連星中性子星合体からの重力波（GW170817）とマルチメッセンジャー天文学の幕開け",
+        "query": "Abbott et al GW170817 Observation of Gravitational Waves from a Binary Neutron Star Inspiral Physical Review Letters 2017"
+      },
+      {
+        "label": "大型低温重力波望遠鏡KAGRAの地下クライオジェニック干渉計設計",
+        "query": "Aso Michimura Somiya Ando Kawamura Kimura Hayama Kokeyama Sekiguchi Tatsumi Interferometer design of the KAGRA detector Physical Review D 2013"
+      }
+    ]
+  },
+  {
+    "id": "ep19-mof-porous-coordination-polymers-carbon-capture",
+    "episode_num": 19,
+    "title": "角砂糖ひと粒にサッカー場が広がる結晶――空気から水と未来を集める化学",
+    "faculty": "理学部・化学科 ／ 高等研究院（錯体化学・多孔性材料研究室）",
+    "protagonist": "楠木 芽衣（くすのき めい・高校1年生・科学部）",
+    "mentor": "白鷺 怜子（しらさぎ れいこ・講師・錯体化学／理科教職課程担当）",
+    "theme": "多孔性配位高分子（PCP / MOF：Metal-Organic Frameworks）によるCO2分離回収と砂漠空気からの水回収",
+    "modern_tech": "金属イオンと有機配位子の自己集合によるナノ細孔結晶（MOF/PCP）、ゲートオープン型気体吸着現象、大気中CO2直接回収（DAC）",
+    "summary": "「たった1グラムの粉末の中に、サッカー場ひとつ分の表面積が折り畳まれている結晶があるんだよ」――大学の体験実験で怜子先生が見せてくれた美しい青紫色の結晶（MOF/PCP）。金属イオンと有機分子がジャングルジムのように規則正しく組み上がることで、分子1個分のサイズの無数のトンネルができ、空気中の二酸化炭素だけを選んで捕まえたり、砂漠の乾いた空気から飲み水を集めたりできる日本発の錯体化学の魔法に芽衣は目を輝かせる。",
+    "crossref_queries": [
+      {
+        "label": "多孔性配位高分子（PCP/MOF）の合理的設計と機能性細孔の創製（北川進教授らの総説）",
+        "query": "Kitagawa Kitaura Noro Functional porous coordination polymers Angewandte Chemie International Edition 2004"
+      },
+      {
+        "label": "超高ポロシティを持つ金属有機構造体（MOF-5）の結晶設計（Yaghi教授らの研究）",
+        "query": "Li Eddaoudi O'Keeffe Yaghi Design and synthesis of an exceptionally stable and highly porous metal-organic framework Nature 1999"
+      },
+      {
+        "label": "太陽光のみで砂漠の低湿度空気から水を収穫するMOFデバイス",
+        "query": "Kim Yang Rao Narayanan Kapustin Furukawa Umans Wang Freeman Yaghi Evelyn Water harvesting from air with metal-organic frameworks powered by natural sunlight Science 2017"
+      }
+    ]
+  },
+  {
+    "id": "ep20-turing-pattern-reaction-diffusion-math-biology",
+    "episode_num": 20,
+    "title": "シマウマの縞模様と熱帯魚の迷路を描く偏微分方程式――数理生物学のスケッチブック",
+    "faculty": "理学部・数理科学科 ／ 生命理学科（数理生物学・パターン形成研究室）",
+    "protagonist": "彩瀬 くるみ（あやせ くるみ・高校2年生・美術部兼数学同好会）",
+    "mentor": "風間 律子（かざま りつこ・准教授・数理生物学／数学科教職課程担当）",
+    "theme": "アラン・チューリングの反応拡散方程式（チューリング・パターン）による生物の体表模様・形態形成の数理モデル",
+    "modern_tech": "反応拡散系偏微分方程式（活性化因子と抑制因子の拡散係数差による拡散誘導不安定性）、タテジマキンチャクダイの縞模様移動の実証",
+    "summary": "美術部で動物の絵を描いていたくるみは、「どうしてシマウマは縞模様で、ヒョウは斑点模様なの？遺伝子の設計図に1本ずつ線の引き方が書いてあるの？」と不思議に思う。数理生物学の公開講座で律子准教授は、コンピュータの創始者アラン・チューリングが遺したたった2本の微分方程式（反応拡散波）をシミュレーションしてみせる。『周りを濃くする波』と『遠くまで広がって薄める波』が重なり合うだけで、熱帯魚の美しい迷路模様が生きているように動き出す様子に、数学と生物の架け橋を見る。",
+    "crossref_queries": [
+      {
+        "label": "形態形成の化学的基礎（アラン・チューリングによる反応拡散パターンの創始論文）",
+        "query": "Turing The chemical basis of morphogenesis Philosophical Transactions of the Royal Society of London Series B 1952"
+      },
+      {
+        "label": "熱帯魚（タテジマキンチャクダイ）の体表縞模様における反応拡散波の実験的発見（近藤滋教授らの研究）",
+        "query": "Kondo Asai A reaction-diffusion wave on the skin of the marine angelfish Pomacanthus Nature 1995"
+      },
+      {
+        "label": "生物の形態形成における反応拡散モデルとしてのチューリング・パターンの展開",
+        "query": "Kondo Miura Reaction-diffusion model as a framework for understanding biological pattern formation Science 2010"
+      }
+    ]
+  },
+  {
+    "id": "ep21-compressed-sensing-black-hole-imaging-informatics",
+    "episode_num": 21,
+    "title": "地球サイズの瞳でブラックホールの影を現像する――スパースモデリングと情報科学",
+    "faculty": "情報理工学部・数理情報工学科 ／ 国立天文台連携研究室",
+    "protagonist": "高瀬 美羽（たかせ みう・高校2年生・写真部兼情報処理部）",
+    "mentor": "桐生 茜（きりゅう あかね・助教・計算イメージング／高校情報科・数学科免許保持）",
+    "theme": "スパースモデリング（圧縮センシング・L1正則化最適化）によるイベント・ホライズン・テレスコープ（EHT）ブラックホール画像再構成と高速MRI医療応用",
+    "modern_tech": "圧縮センシング（Compressed Sensing）、L1ノルム正則化と凸最適化アルゴリズム、超長基線電波干渉計（VLBI）スパース画像再構成",
+    "summary": "写真部の美羽は、「世界中の電波望遠鏡を繋いでも、地球の表面にパラパラとしかアンテナがないのに、どうやってM87銀河のブラックホールの輪っかを写真にできたの？」と疑問を持つ。情報理工学部の茜助教は、パズルのピースが9割欠けていても『自然界の美しい画像は本質的にシンプル（スパース）である』という数学の性質（L1正則化）を使えば、最も確からしい姿を復元できることをPythonの実演で見せてくれる。同じ数学が病院のMRI検査を何倍も速くして患者さんを救っていることを知り、情報学と数学の社会貢献に胸を熱くする。",
+    "crossref_queries": [
+      {
+        "label": "イベント・ホライズン・テレスコープ（EHT）による巨大ブラックホールシャドウの史上初撮像",
+        "query": "Event Horizon Telescope Collaboration Akiyama et al First M87 Event Horizon Telescope Results I The Shadow of the Supermassive Black Hole Astrophysical Journal Letters 2019"
+      },
+      {
+        "label": "圧縮センシング（Compressed Sensing）の数理理論の基礎",
+        "query": "Donoho Compressed sensing IEEE Transactions on Information Theory 2006"
+      },
+      {
+        "label": "スパース再構成（Compressed Sensing）による高速医療用MRIイメージングの実現",
+        "query": "Lustig Donoho Pauly Sparse MRI The application of compressed sensing for rapid MR imaging Magnetic Resonance in Medicine 2007"
+      }
+    ]
+  },
+  {
+    "id": "ep22-ips-organoid-regenerative-medicine-pharmacology",
+    "episode_num": 22,
+    "title": "シャーレの上の小さな鼓動――iPS細胞オルガノイドと未来の創薬",
+    "faculty": "薬学部・創薬生命科学科 ／ iPS細胞研究所連携ラボ",
+    "protagonist": "若葉 結衣（わかば ゆい・高校2年生・生物部）",
+    "mentor": "薬師寺 桜（やくしじ さくら・准教授・幹細胞創薬／薬剤師・高校理科免許保持）",
+    "theme": "人工多能性幹細胞（iPS細胞）の分化誘導と三次元ミニ臓器（オルガノイド）による難病創薬スクリーニング",
+    "modern_tech": "山中因子による体細胞リプログラミング（iPS細胞）、自己組織化による三次元オルガノイド培養、マイクロ流体Organ-on-a-Chip創薬評価",
+    "summary": "幼い頃に祖母の入院を見舞った経験から「副作用が少なくて、本当に効くお薬を早く届けるにはどうしたらいいんだろう」と考えていた結衣。薬学部のオープンラボで桜准教授から、皮膚や血液の細胞に4つの遺伝子を入れて時計の針を戻した『iPS細胞』が、シャーレの中で自律的に立体構造を作ってトクトクと拍動するミニ心臓（心筋オルガノイド）に育つ様子を顕微鏡で見せてもらう。動物実験を減らし、患者さん一人ひとりの細胞で薬の効き目を確かめる創薬科学の最前線に触れる。",
+    "crossref_queries": [
+      {
+        "label": "ヒト線維芽細胞からの人工多能性幹細胞（iPS細胞）樹立（山中伸弥教授らのノーベル賞論文）",
+        "query": "Takahashi Tanabe Ohnuki Narita Ichisaka Tomoda Yamanaka Induction of pluripotent stem cells from adult human fibroblasts by defined factors Cell 2007"
+      },
+      {
+        "label": "幹細胞の自己組織化による三次元大脳オルガノイドの形成",
+        "query": "Lancaster Renner Martin Wenzel Bicknell Hurles Homfray Penninger Jackson Knoblich Cerebral organoids model human brain development and microcephaly Nature 2013"
+      },
+      {
+        "label": "オルガノイド技術の創薬・疾患モデリングへの応用展望",
+        "query": "Clevers Modeling development and disease with organoids Cell 2016"
+      }
+    ]
+  },
+  {
+    "id": "ep23-topological-insulator-spintronics-physics",
+    "episode_num": 23,
+    "title": "中身は電気を通さないのに、表面だけを電子が疾走する――トポロジカル絶縁体と次世代コンピュータ",
+    "faculty": "理学部・物理学科 ／ 物性物理学研究所（量子物質・スピントロニクス研究室）",
+    "protagonist": "霧島 怜（きりしま れい・高校2年生・物理部）",
+    "mentor": "鷹司 晶（たかつかさ あきら・准教授・物性物理学／高校物理教職課程担当）",
+    "theme": "トポロジカル絶縁体（Topological Insulator）のディラック表面状態とゼロ散逸スピントロニクス",
+    "modern_tech": "時間反転対称性とスピン軌道相互作用、角度分解光電子分光（ARPES）によるディラックコーン観測、熱を出さない次世代低消費電力スピン素子",
+    "summary": "「スマホやデータセンターが熱くなるのは、電子が物質の中でぶつかってエネルギーを失うから。じゃあ、絶対に跳ね返されない電子のハイウェイを作れたら？」――物理学科の晶准教授が怜に見せてくれたのは、内部は絶縁体なのに表面だけを電子が質量ゼロの光のように走り抜ける『トポロジカル絶縁体』の結晶だった。数学のトポロジー（位相幾何学）が予言し、実験物理が証明した新しい物質の相に、物理と数学が織りなす奇跡を実感する。",
+    "crossref_queries": [
+      {
+        "label": "トポロジカル絶縁体の理論と実験的発見（Hasan & Kane 総説）",
+        "query": "Hasan Kane Colloquium Topological insulators Reviews of Modern Physics 2010"
+      },
+      {
+        "label": "量子スピンホール効果とトポロジカル絶縁体の基礎理論（Kane & Mele）",
+        "query": "Kane Mele Z2 topological order and the quantum spin Hall effect Physical Review Letters 2005"
+      },
+      {
+        "label": "三次元トポロジカル絶縁体Bi2Se3における単一ディラックコーン表面状態の観測",
+        "query": "Xia Qian Hsieh Wray Pal Lin Bansil Grauer Hor Cava Hasan Observation of a large-gap topological-insulator class with a single Dirac cone on the surface Nature Physics 2009"
+      }
+    ]
+  },
+  {
+    "id": "ep24-click-chemistry-bioorthogonal-reaction",
+    "episode_num": 24,
+    "title": "生きている細胞の中でパチンと留める分子のバックル――生体直交クリックケミストリー",
+    "faculty": "理学部・化学科 ／ 化学生物学（ケミカルバイオロジー）研究室",
+    "protagonist": "花村 咲良（はなむら さくら・高校1年生・化学部）",
+    "mentor": "朝倉 詩織（あさくら しおり・助教・ケミカルバイオロジー／高校化学免許保持）",
+    "theme": "クリックケミストリーと生体直交化学反応（Bioorthogonal Chemistry）による生細胞内糖鎖・分子イメージング",
+    "modern_tech": "アジド―アルキン環化付加反応（クリック反応）、銅触媒フリー歪み促進型クリック反応（SPAAC）、生細胞表面糖鎖の蛍光ラベリング",
+    "summary": "「フラスコの中なら簡単に繋がる化学反応も、水やタンパク質がいっぱいの生きている細胞の中では邪魔されてうまくいかない。でも、他のどんな生体分子とも反応せず、狙った相手とだけシートベルトのバックルみたいに『カチッ（Click）』と繋がる反応があるの」――詩織助教の言葉に引き込まれた咲良。細胞を傷つけずに表面の糖鎖を光らせて観察する『生体直交化学（ノーベル化学賞）』の実験を通じ、化学が生命の謎を照らす懐中電灯になることを知る。",
+    "crossref_queries": [
+      {
+        "label": "クリックケミストリー（Click Chemistry）の提唱と分子連結哲学（Sharpless教授らの論文）",
+        "query": "Kolb Finn Sharpless Click Chemistry Diverse Chemical Function from a Few Good Reactions Angewandte Chemie International Edition 2001"
+      },
+      {
+        "label": "生体直交化学（Bioorthogonal Chemistry）による生細胞内での銅フリー・クリック反応（Bertozzi教授らの研究）",
+        "query": "Agard Prescher Bertozzi A strain-promoted 3+2 azide-alkyne cycloaddition for covalent modification of biomolecules in living systems JACS 2004"
+      },
+      {
+        "label": "生体システムにおける生体直交化学反応の展開（Bertozzi総説）",
+        "query": "Sletten Bertozzi Bioorthogonal chemistry fishing for selectivity in a sea of functionality Angewandte Chemie International Edition 2009"
       }
     ]
   }

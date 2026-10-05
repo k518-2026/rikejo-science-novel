@@ -1,5 +1,5 @@
 param(
-    [int]$Count = 2,
+    [int]$Count = 5,
     [switch]$NoPush
 )
 
@@ -11,5 +11,5 @@ if (-not $NoPush) {
     $argsList += "--push"
 }
 
-Write-Host "Running Dual-LLM (Qwen 2.5 14B x Gemma 2 9B) Stock Generator on Mac mini (http://192.168.128.59:11434)..." -ForegroundColor Cyan
+Write-Host "Running Dual-LLM (Qwen 3.5 9B x Gemma 4 12B) + Draw Things (FLUX.2) Weekly 5-Episode Generator on Mac mini M4..." -ForegroundColor Cyan
 python @argsList

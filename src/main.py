@@ -74,9 +74,6 @@ def git_sync_and_push(generated_files: List[Path]) -> bool:
     if not generated_files:
         return True
     try:
-        logger.info("Syncing with remote GitHub repository (git pull --rebase origin main)...")
-        subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=False)
-
         subprocess.run(["git", "add", "README.md", "content/", "data/", "docs/"], check=True)
         diff_res = subprocess.run(["git", "diff", "--staged", "--quiet"])
         if diff_res.returncode == 0:
@@ -85,6 +82,8 @@ def git_sync_and_push(generated_files: List[Path]) -> bool:
 
         msg = f"feat(pages): Add {len(generated_files)} Rikejo science novel asset(s) via Mac mini M4 & update GitHub Pages"
         subprocess.run(["git", "commit", "-m", msg], check=True)
+        logger.info("Syncing with remote GitHub repository (git pull --rebase origin main)...")
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=False)
         logger.info("Pushing to origin/main...")
         subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
         logger.info("Successfully pushed episodes, illustrations & GitHub Pages to GitHub!")
@@ -105,7 +104,7 @@ def extract_refs_from_markdown(md_text: str) -> List[str]:
 def replenish_stock_if_needed(
     history_mgr: HistoryManager,
     generator: DualLLMStoryGenerator,
-    min_stock: int = 1,
+    min_stock: int = 5,
     target_stock: int = 6,
     push_to_git: bool = True,
 ) -> List[Path]:
@@ -159,12 +158,22 @@ def replenish_stock_if_needed(
     ungenerated = history_mgr.count_ungenerated_works()
 
     if blog_paused:
-        # In GitHub Pages accumulation mode, generate a steady batch (e.g. 2 episodes per scheduled run)
-        needed = max(1, min_stock if min_stock > 0 else 2)
-        logger.info(
-            f"[GitHub Pages Accumulation Mode] Generating {needed} new episode(s) and illustration(s) on Mac mini M4 "
-            f"(currently {ungenerated} ungenerated theme(s) in catalog)..."
-        )
+        # Weekly Monday/Tuesday batch accumulation mode: 5 episodes per week
+        weekly_quota = max(1, min_stock if min_stock > 0 else 5)
+        generated_this_week = history_mgr.count_episodes_generated_this_week()
+        needed = max(0, weekly_quota - generated_this_week)
+        if needed == 0:
+            logger.info(
+                f"[GitHub Pages Weekly Accumulation] Weekly quota of {weekly_quota} episode(s) already met for this week "
+                f"({generated_this_week}/{weekly_quota} generated)."
+            )
+            build_github_pages(history_mgr)
+        else:
+            logger.info(
+                f"[GitHub Pages Weekly Accumulation] Generating {needed} new episode(s) and illustration(s) on Mac mini M4 "
+                f"for this week's {weekly_quota}-episode quota ({generated_this_week}/{weekly_quota} generated this week, "
+                f"{ungenerated} ungenerated theme(s) in catalog)..."
+            )
     else:
         logger.info(f"[Auto-Replenish Check] Unposted stocked episodes: {current_stock} (trigger threshold <= {min_stock}, target = {target_stock})")
         needed = max(1, target_stock - current_stock) if current_stock <= min_stock else 0
@@ -175,7 +184,7 @@ def replenish_stock_if_needed(
             missing_themes = needed - len(targets)
             new_themes = generator.generate_new_catalog_themes(
                 existing_catalog=history_mgr.catalog,
-                count=max(3, missing_themes),
+                count=max(5, missing_themes),
             )
             if new_themes:
                 history_mgr.append_catalog_works(new_themes)
@@ -183,31 +192,35 @@ def replenish_stock_if_needed(
 
         for idx, work in enumerate(targets, start=1):
             logger.info(f"\n=== [Auto-Replenish {idx}/{len(targets)}] Dual-LLM Generating: {work['title']} ===")
-            ep_assets: List[Path] = []
-            full_md, ep_title, refs, _ = generator.generate_complete_episode(work=work)
-            today_str = datetime.now(JST).strftime("%Y-%m-%d")
-            safe_id = work["id"].replace("-", "_")
-            out_path = Path(f"content/{today_str}_{safe_id}.md")
-            out_path.parent.mkdir(parents=True, exist_ok=True)
-            out_path.write_text(full_md, encoding="utf-8")
-            generated_assets.append(out_path)
-            ep_assets.append(out_path)
-            logger.info(f"Saved episode: {out_path} ('{ep_title}')")
+            try:
+                ep_assets: List[Path] = []
+                full_md, ep_title, refs, _ = generator.generate_complete_episode(work=work)
+                today_str = datetime.now(JST).strftime("%Y-%m-%d")
+                safe_id = work["id"].replace("-", "_")
+                out_path = Path(f"content/{today_str}_{safe_id}.md")
+                out_path.parent.mkdir(parents=True, exist_ok=True)
+                out_path.write_text(full_md, encoding="utf-8")
+                generated_assets.append(out_path)
+                ep_assets.append(out_path)
+                logger.info(f"Saved episode: {out_path} ('{ep_title}')")
 
-            img_out_path = out_path.with_suffix(".png")
-            saved_img, _ = generator.generate_illustration(
-                work=work,
-                output_image_path=img_out_path,
-                story_body=full_md,
-                episode_title=ep_title,
-            )
-            if saved_img:
-                generated_assets.append(saved_img)
-                ep_assets.append(saved_img)
+                img_out_path = out_path.with_suffix(".png")
+                saved_img, _ = generator.generate_illustration(
+                    work=work,
+                    output_image_path=img_out_path,
+                    story_body=full_md,
+                    episode_title=ep_title,
+                )
+                if saved_img:
+                    generated_assets.append(saved_img)
+                    ep_assets.append(saved_img)
 
-            build_github_pages(history_mgr)
-            if push_to_git and ep_assets:
-                git_sync_and_push(ep_assets)
+                build_github_pages(history_mgr)
+                if push_to_git and ep_assets:
+                    git_sync_and_push(ep_assets)
+            except Exception as e:
+                logger.error(f"Failed to generate episode '{work.get('id')}': {e}")
+                continue
 
     return generated_assets
 
@@ -220,7 +233,7 @@ def main():
     parser.add_argument("--work-id", default=None, help="Specific episode ID from data/science_catalog.json")
     parser.add_argument("--stock-count", "-n", type=int, default=0, help="Batch-generate N episodes + illustrations into content/ and docs/")
     parser.add_argument("--auto-replenish", action="store_true", help="Automatically generate new episodes + illustrations and update GitHub Pages")
-    parser.add_argument("--min-stock", type=int, default=1, help="Batch count / threshold for --auto-replenish (default: 1)")
+    parser.add_argument("--min-stock", type=int, default=5, help="Batch count for weekly --auto-replenish (default: 5 episodes)")
     parser.add_argument("--target-stock", type=int, default=6, help="Target number of episodes to maintain on --auto-replenish (default: 6)")
     parser.add_argument("--generate-images", action="store_true", help="Generate missing .png illustrations for existing episodes in content/ via Draw Things")
     parser.add_argument("--build-pages", action="store_true", help="Rebuild GitHub Pages static site (docs/) and README.md from content/")

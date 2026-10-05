@@ -291,8 +291,9 @@ class DualLLMStoryGenerator:
         num_predict: int = 3000,
         num_ctx: int = 8192,
         timeout: int = 900,
+        max_retries: int = 3,
     ) -> str:
-        """Calls Ollama /api/chat on the Mac mini with the specified model (with think=False for fast direct generation)."""
+        """Calls Ollama /api/chat on the Mac mini with the specified model (with think=False and automatic retry)."""
         url = f"{self.ollama_host}/api/chat"
         payload = {
             "model": model,
@@ -307,15 +308,24 @@ class DualLLMStoryGenerator:
             },
         }
         data = json.dumps(payload).encode("utf-8")
-        req = urllib.request.Request(
-            url,
-            data=data,
-            headers={"Content-Type": "application/json"},
-            method="POST",
-        )
-        with urllib.request.urlopen(req, timeout=timeout) as res:
-            body = json.loads(res.read().decode("utf-8", errors="ignore"))
-            return body.get("message", {}).get("content", "").strip()
+        last_err: Optional[Exception] = None
+        for attempt in range(1, max_retries + 1):
+            try:
+                req = urllib.request.Request(
+                    url,
+                    data=data,
+                    headers={"Content-Type": "application/json"},
+                    method="POST",
+                )
+                with urllib.request.urlopen(req, timeout=timeout) as res:
+                    body = json.loads(res.read().decode("utf-8", errors="ignore"))
+                    return body.get("message", {}).get("content", "").strip()
+            except Exception as e:
+                last_err = e
+                logger.warning(f"Ollama chat call ({model}) attempt {attempt}/{max_retries} failed: {e}")
+                if attempt < max_retries:
+                    time.sleep(5 * attempt)
+        raise RuntimeError(f"Ollama chat call ({model}) failed after {max_retries} attempts: {last_err}")
 
     def _clean_llm_output(self, text: str) -> str:
         """Removes <think> blocks, markdown code fences, unwanted meta scene headers, and repetition loops."""
@@ -694,9 +704,9 @@ Based on the following Japanese science novel episode, write a single, vivid, de
 6. End with: "masterpiece Japanese anime novel illustration style, Makoto Shinkai and Kyoto Animation inspired cinematic lighting, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
 """
         try:
-            logger.info(f"[Writer: {self.writer_model}] Generating English illustration prompt for FLUX.2...")
+            logger.info(f"[Director: {self.director_model}] Generating English illustration prompt for FLUX.2...")
             raw_en = self.call_ollama_chat(
-                model=self.writer_model,
+                model=self.director_model,
                 messages=[
                     {
                         "role": "system",
@@ -708,6 +718,7 @@ Based on the following Japanese science novel episode, write a single, vivid, de
                 num_predict=250,
                 num_ctx=4096,
                 timeout=120,
+                max_retries=1,
             )
             cleaned_en = self._clean_llm_output(raw_en).strip(" \"'`\n")
             cleaned_en = re.sub(r"^(?:Prompt|English Prompt)\s*[:：]\s*", "", cleaned_en, flags=re.IGNORECASE).strip()

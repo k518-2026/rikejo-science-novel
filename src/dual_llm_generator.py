@@ -697,11 +697,11 @@ Based on the following Japanese science novel episode, write a single, vivid, de
 
 [Rules for Output]
 1. Output ONLY the raw English prompt paragraph. Do NOT include explanations, markdown formatting, quotes, or Japanese text.
-2. Start with: "Japanese novel illustration of a high school girl and a gentle female university researcher in a ..."
-3. Visually describe the characters' calm, thoughtful expressions, the university laboratory or classroom atmosphere, and the visual scientific phenomenon (e.g., softly glowing emerald petunias, iridescent blue morpho butterfly wing, geometric 3D structure model, rooftop telescope under twilight sky, golden spider silk thread).
+2. Start with: "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher in a ..."
+3. Visually describe BOTH the high school student and the female researcher with warm, happy, gentle smiles on their faces, sharing the joy of scientific discovery in the university laboratory or classroom, alongside the visual scientific phenomenon (e.g., softly glowing emerald petunias, iridescent blue morpho butterfly wing, geometric 3D structure model, rooftop telescope under twilight sky, golden spider silk thread).
 4. NEVER mention words, text, letters, book covers, titles, labels, or writing/equations on blackboards or screens. The image must contain ZERO text or characters.
 5. Keep the tone calm and composed with rich, deep colors and strong, clear contrast: balanced natural lighting, distinct light and shadow, crisp line art, and deep harmonious tones (avoid washed-out whiteout and avoid overly flashy/gaudy effects).
-6. End with: "masterpiece Japanese anime novel illustration style, Makoto Shinkai and Kyoto Animation inspired cinematic lighting, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+6. End with: "both characters smiling warmly with gentle happy smiles, masterpiece Japanese anime novel illustration style, Makoto Shinkai and Kyoto Animation inspired cinematic lighting, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
 """
         try:
             logger.info(f"[Director: {self.director_model}] Generating English illustration prompt for FLUX.2...")
@@ -710,7 +710,7 @@ Based on the following Japanese science novel episode, write a single, vivid, de
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are a professional prompt engineer for FLUX.2 Japanese novel illustrations. Output ONLY the English prompt text. Never include text, letters, writing, equations, or book cover elements in the prompt.",
+                        "content": "You are a professional prompt engineer for FLUX.2 Japanese novel illustrations. Output ONLY the English prompt text. Always depict both the student and researcher with warm, happy smiles. Never include text, letters, writing, equations, or book cover elements in the prompt.",
                     },
                     {"role": "user", "content": prompt},
                 ],
@@ -723,8 +723,9 @@ Based on the following Japanese science novel episode, write a single, vivid, de
             cleaned_en = self._clean_llm_output(raw_en).strip(" \"'`\n")
             cleaned_en = re.sub(r"^(?:Prompt|English Prompt)\s*[:：]\s*", "", cleaned_en, flags=re.IGNORECASE).strip()
             cleaned_en = " ".join(cleaned_en.splitlines()).strip()
-            # Remove words that trigger text/writing generation in FLUX.2
+            # Remove words that trigger text/writing generation or unsmiling expressions in FLUX.2
             cleaned_en = re.sub(r"\b(?:book cover|book illustration|equations|formulas|chalk writing|written|labeled|text)\b", "diagram", cleaned_en, flags=re.IGNORECASE)
+            cleaned_en = re.sub(r"\b(?:serious|solemn|stern|frowning|melancholic|sad|unsmiling|stoic)\b", "warmly smiling", cleaned_en, flags=re.IGNORECASE)
             if len(cleaned_en) >= 30 and re.search(r"[a-zA-Z]{4,}", cleaned_en):
                 logger.info(f"  -> Generated English prompt: {cleaned_en[:120]}...")
                 return cleaned_en
@@ -732,10 +733,11 @@ Based on the following Japanese science novel episode, write a single, vivid, de
             logger.warning(f"Failed to generate English prompt via Ollama ({e}), using fallback English prompt.")
 
         return (
-            f"Japanese novel illustration of a high school girl and a gentle female university researcher "
-            f"in a sunlit university laboratory, exploring {work.get('id', 'modern science').replace('-', ' ')}, "
+            f"Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
+            f"in a sunlit university laboratory, both smiling happily with gentle joyful expressions as they explore {work.get('id', 'modern science').replace('-', ' ')}, "
             f"scientific glass apparatus and optical instruments reflecting warm afternoon sunlight, "
-            f"masterpiece Japanese anime novel illustration style, Makoto Shinkai and Kyoto Animation inspired cinematic lighting, "
+            f"both characters smiling warmly with gentle happy smiles, masterpiece Japanese anime novel illustration style, "
+            f"Makoto Shinkai and Kyoto Animation inspired cinematic lighting, "
             f"calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
         )
 
@@ -765,7 +767,7 @@ Based on the following Japanese science novel episode, write a single, vivid, de
             en_prompt = custom_english_prompt.strip()
         else:
             if progress_callback:
-                progress_callback(f"執筆作家 ({self.writer_model}) が小説本文から英語の挿絵プロンプトを作成中...")
+                progress_callback(f"構成作家 ({self.director_model}) が小説本文から英語の挿絵プロンプトを作成中...")
             en_prompt = self.generate_english_image_prompt(
                 work=work,
                 story_body=story_body,
@@ -777,10 +779,11 @@ Based on the following Japanese science novel episode, write a single, vivid, de
         logger.info(f"[Draw Things: {self.draw_things_host}] Generating 512x512 illustration (steps=12, guidance=4.0, sampler='Euler A Trailing')...")
 
         style_suffix = (
+            "both student and researcher smiling warmly, gentle happy smiles on their faces, joyful and inspiring expressions, "
             "calm and composed atmosphere, strong contrast, rich deep colors, balanced natural lighting, "
             "distinct shadows and highlights, crisp clean artwork, pure illustration without any text or letters"
         )
-        if "strong contrast" not in en_prompt.lower() or "no text" not in en_prompt.lower():
+        if "smiling warmly" not in en_prompt.lower() or "strong contrast" not in en_prompt.lower() or "no text" not in en_prompt.lower():
             en_prompt = f"{en_prompt.rstrip(' .')}, {style_suffix}."
 
         url = f"{self.draw_things_host}/sdapi/v1/txt2img"
@@ -789,6 +792,7 @@ Based on the following Japanese science novel episode, write a single, vivid, de
             "negative_prompt": (
                 "text, letters, words, kanji, chinese characters, japanese text, english text, typography, title, "
                 "book cover, watermark, signature, logo, caption, writing, chalk equations, numbers, "
+                "sad, frowning, serious face, stern expression, solemn, expressionless, angry, worried, crying, gloomy face, "
                 "overexposed, washed out, faded, blown-out highlights, whiteout, pastel haze, low contrast, "
                 "dark, gloomy, murky"
             ),

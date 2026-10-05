@@ -30,9 +30,9 @@
     "faculty": "薬学部・創薬科学科（ドラッグデリバリーシステム研究室）",
     "field": "化学・薬学・材料",
     "theme": "脂質ナノ粒子（LNP）とmRNA医薬の標的細胞デリバリー",
-    "has_image": false,
+    "has_image": true,
     "url": "stories/ep03-mrna-lipid-nanoparticle-delivery.html",
-    "image": "",
+    "image": "assets/images/ep03-mrna-lipid-nanoparticle-delivery.png",
     "char_count": 3842
   },
   {

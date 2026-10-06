@@ -286,5 +286,17 @@
     "url": "stories/ep24-click-chemistry-bioorthogonal-reaction.html",
     "image": "assets/images/ep24-click-chemistry-bioorthogonal-reaction.png",
     "char_count": 6676
+  },
+  {
+    "no": 25,
+    "work_id": "ep25-fourier-transform-music-acoustics-math-teacher",
+    "title": "バイオリンの音色を数式に分解する放課後――フーリエ解析が奏でる「数学×音楽」のスプラッシュ",
+    "faculty": "理学部・数学科 ／ 教育学部・数学教育コース（調和解析・音響数理ゼミ）",
+    "field": "数学・数理科学",
+    "theme": "フーリエ級数・高速フーリエ変換（FFT）による楽音スペクトル解析と、数学の美しさを伝える教員への道",
+    "has_image": true,
+    "url": "stories/ep25-fourier-transform-music-acoustics-math-teacher.html",
+    "image": "assets/images/ep25-fourier-transform-music-acoustics-math-teacher.png",
+    "char_count": 7500
   }
 ]

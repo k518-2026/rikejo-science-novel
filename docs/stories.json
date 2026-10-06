@@ -274,5 +274,17 @@
     "url": "stories/ep23-topological-insulator-spintronics-physics.html",
     "image": "assets/images/ep23-topological-insulator-spintronics-physics.png",
     "char_count": 6047
+  },
+  {
+    "no": 24,
+    "work_id": "ep24-click-chemistry-bioorthogonal-reaction",
+    "title": "生きている細胞の中でパチンと留める分子のバックル――「カチッ」と鳴る科学の扉を開く少女たち（第 1 話）",
+    "faculty": "理学部・化学科 ／ 化学生物学（ケミカルバイオロジー）研究室",
+    "field": "化学・薬学・材料",
+    "theme": "クリックケミストリーと生体直交化学反応（Bioorthogonal Chemistry）による生細胞内糖鎖・分子イメージング",
+    "has_image": true,
+    "url": "stories/ep24-click-chemistry-bioorthogonal-reaction.html",
+    "image": "assets/images/ep24-click-chemistry-bioorthogonal-reaction.png",
+    "char_count": 6676
   }
 ]

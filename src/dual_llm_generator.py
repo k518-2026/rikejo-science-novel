@@ -289,10 +289,11 @@ class DualLLMStoryGenerator:
         model: str,
         messages: List[Dict[str, str]],
         temperature: float = 0.7,
-        num_predict: int = 3000,
-        num_ctx: int = 8192,
+        num_predict: int = 2000,
+        num_ctx: int = 4096,
         timeout: int = 900,
         max_retries: int = 3,
+        keep_alive: Optional[Any] = None,
     ) -> str:
         """Calls Ollama /api/chat on the Mac mini with the specified model (with think=False and automatic retry)."""
         url = f"{self.ollama_host}/api/chat"
@@ -306,13 +307,15 @@ class DualLLMStoryGenerator:
                 "num_ctx": num_ctx,
                 "repeat_penalty": 1.12,
             }
-        payload = {
+        payload: Dict[str, Any] = {
             "model": model,
             "messages": messages,
             "stream": False,
             "think": False,
             "options": opts,
         }
+        if keep_alive is not None:
+            payload["keep_alive"] = keep_alive
         data = json.dumps(payload).encode("utf-8")
         last_err: Optional[Exception] = None
         for attempt in range(1, max_retries + 1):
@@ -546,15 +549,21 @@ class DualLLMStoryGenerator:
         if progress_callback:
             progress_callback(f"執筆作家 ({self.writer_model}) が前半パート（第1・第2シーン）を執筆中...")
         logger.info(f"[Writer: {self.writer_model}] Writing Novel Prose Part 1 (Scenes 1 & 2)...")
-        raw_part1 = self.call_ollama_chat(
-            model=self.writer_model,
-            messages=[
+        is_shosetsu = self.writer_model.split(":")[0] == "shosetsu"
+        part1_messages = (
+            [{"role": "user", "content": part1_prompt}]
+            if is_shosetsu
+            else [
                 {"role": "system", "content": WRITER_SYSTEM_PROMPT},
                 {"role": "user", "content": part1_prompt},
-            ],
+            ]
+        )
+        raw_part1 = self.call_ollama_chat(
+            model=self.writer_model,
+            messages=part1_messages,
             temperature=0.78,
-            num_predict=3000,
-            num_ctx=8192,
+            num_predict=1800,
+            num_ctx=4096,
         )
         cleaned_part1 = self._clean_llm_output(raw_part1)
 
@@ -571,30 +580,43 @@ class DualLLMStoryGenerator:
                 continue
             p1_lines.append(line)
         part1_body = "\n".join(p1_lines).strip()
+        part1_tail = part1_body[-450:] if len(part1_body) > 450 else part1_body
 
-        part2_prompt = f"""素晴らしい前半パートです！続けて、構成作家のプロット設計図に沿って、この小説『{episode_title}』の**【後半パート（第3シーン・第4シーン：目標1,800〜2,200文字）】**を執筆し、物語を感動的に完結させてください。
+        part2_prompt = f"""以下の設定・プロット設計図・直前の本文（前半の末尾）を引き継ぎ、小説『{episode_title}』の**【後半パート（第3シーン・第4シーン：1,200〜1,600文字）】**を執筆し、物語を感動的に完結させてください。
+
+【キャラクター設定】
+{char_context}
+
+【プロット設計図】
+{plot_blueprint}
+
+【直前の本文（前半の末尾）】
+{part1_tail}
 
 【後半パート（第3シーン・第4シーン）の執筆ルール】
-1. タイトルは書かず、前半パートの直後に続く小説本文（第3シーン：数理・情報・科学の仕組みのやさしい解き明かしと主人公の感動）から自然に書き始めてください。
-2. 前半の登場人物の口調・一人称・名前を100%維持してください。
-3. 難しい科学や数学・情報学の仕組みを、先輩（または先生）が日常の美しい比喩でやさしく解き明かし、主人公が「学問って、世界の隠れたお手紙を読み解き、未来の誰かに手渡すことなんだ……！」と深く感動する瞬間（センス・オブ・ワンダー）を鮮やかに描いてください。
-4. 第3シーンと第4シーンの間には `* * *` を1行入れてください（「第3シーン」等の見出しは禁止）。
-5. 第4シーンでは、主人公が「私、この大学に来て、ここで学びたい！（そしていつかこの感動を教えられる先生や研究者になりたい！）」と未来への一歩を踏み出す爽やかで温かい余韻を描き、最後は必ず `（了）` で締めくくってください。"""
+1. タイトルは書かず、直前の本文のすぐ後に続く小説本文（第3シーン：数理・情報・科学の仕組みのやさしい解き明かしと主人公の感動）から自然に書き始めてください。
+2. 前半の登場人物の口調・一人称・名前を維持してください。
+3. 第3シーンと第4シーンの間には `* * *` を1行入れてください（「第3シーン」等の見出しは禁止）。
+4. 第4シーンでは、主人公が未来への一歩を踏み出す爽やかで温かい余韻を描き、最後は必ず `（了）` で締めくくってください。"""
 
         if progress_callback:
             progress_callback(f"執筆作家 ({self.writer_model}) が後半パート（第3・第4シーン）を執筆中...")
         logger.info(f"[Writer: {self.writer_model}] Writing Novel Prose Part 2 (Scenes 3 & 4)...")
+        part2_messages = (
+            [{"role": "user", "content": part2_prompt}]
+            if is_shosetsu
+            else [
+                {"role": "system", "content": WRITER_SYSTEM_PROMPT},
+                {"role": "user", "content": part2_prompt},
+            ]
+        )
         raw_part2 = self.call_ollama_chat(
             model=self.writer_model,
-            messages=[
-                {"role": "system", "content": WRITER_SYSTEM_PROMPT},
-                {"role": "user", "content": part1_prompt},
-                {"role": "assistant", "content": f"TITLE: {episode_title}\n\n{part1_body}"},
-                {"role": "user", "content": part2_prompt},
-            ],
+            messages=part2_messages,
             temperature=0.78,
-            num_predict=3000,
-            num_ctx=8192,
+            num_predict=1800,
+            num_ctx=4096,
+            keep_alive=0,
         )
         cleaned_part2 = self._clean_llm_output(raw_part2)
         p2_lines = []
@@ -665,8 +687,9 @@ class DualLLMStoryGenerator:
                 {"role": "user", "content": prompt},
             ],
             temperature=0.5,
-            num_predict=2400,
-            num_ctx=8192,
+            num_predict=1800,
+            num_ctx=4096,
+            keep_alive=0,
         )
         guide_body = self._clean_llm_output(raw_guide)
         guide_body = re.sub(r"^#+.*最新科学.*?\n", "", guide_body).strip()
@@ -685,7 +708,7 @@ class DualLLMStoryGenerator:
         into a concise, descriptive English image generation prompt for FLUX.2 [klein] 4B.
         """
         char_context = self._build_character_context(work)
-        story_excerpt = story_body[:1600] if story_body else work.get("summary", "")
+        story_excerpt = story_body[:500] if story_body else work.get("summary", "")
 
         prompt = f"""You are an expert Japanese novel illustration art director.
 Based on the following Japanese science novel episode, write a single, vivid, descriptive **English image generation prompt** (60-90 words) for the FLUX.2 image model to depict the most iconic scene of the story.
@@ -721,10 +744,11 @@ Based on the following Japanese science novel episode, write a single, vivid, de
                     {"role": "user", "content": prompt},
                 ],
                 temperature=0.6,
-                num_predict=250,
-                num_ctx=4096,
+                num_predict=200,
+                num_ctx=2048,
                 timeout=120,
                 max_retries=1,
+                keep_alive=0,
             )
             cleaned_en = self._clean_llm_output(raw_en).strip(" \"'`\n")
             cleaned_en = re.sub(r"^(?:Prompt|English Prompt)\s*[:：]\s*", "", cleaned_en, flags=re.IGNORECASE).strip()
@@ -967,19 +991,19 @@ Based on the following Japanese science novel episode, write a single, vivid, de
                 custom_instruction=custom_instruction,
             )
 
+        if progress_callback:
+            progress_callback(f"構成作家 ({self.director_model}) が最新科学コラム＆大学・教職ガイドを執筆中...")
+        guide_body = self.generate_science_guide_with_director(
+            work=work,
+            episode_title=work.get("title", "放課後サイエンス・キャンパス"),
+            verified_papers=verified_papers,
+        )
+
         story_body, episode_title = self.generate_prose_with_writer(
             work=work,
             plot_blueprint=plot_blueprint,
             verified_papers=verified_papers,
             progress_callback=progress_callback,
-        )
-
-        if progress_callback:
-            progress_callback(f"構成作家 ({self.director_model}) が最新科学コラム＆大学・教職ガイドを執筆中...")
-        guide_body = self.generate_science_guide_with_director(
-            work=work,
-            episode_title=episode_title,
-            verified_papers=verified_papers,
         )
 
         ref_lines = []

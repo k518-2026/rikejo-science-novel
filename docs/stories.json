@@ -250,5 +250,17 @@
     "url": "stories/ep21-compressed-sensing-black-hole-imaging-informatics.html",
     "image": "assets/images/ep21-compressed-sensing-black-hole-imaging-informatics.png",
     "char_count": 7211
+  },
+  {
+    "no": 22,
+    "work_id": "ep22-ips-organoid-regenerative-medicine-pharmacology",
+    "title": "シャーレの上の小さな鼓動――iPS細胞オルガノイドと未来の創薬",
+    "faculty": "薬学部・創薬生命科学科 ／ iPS細胞研究所連携ラボ",
+    "field": "化学・薬学・材料",
+    "theme": "人工多能性幹細胞（iPS細胞）の分化誘導と三次元ミニ臓器（オルガノイド）による難病創薬スクリーニング",
+    "has_image": true,
+    "url": "stories/ep22-ips-organoid-regenerative-medicine-pharmacology.html",
+    "image": "assets/images/ep22-ips-organoid-regenerative-medicine-pharmacology.png",
+    "char_count": 6735
   }
 ]

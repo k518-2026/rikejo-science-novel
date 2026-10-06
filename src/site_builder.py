@@ -631,7 +631,7 @@ def _build_story_page(
   </main>
 
   <footer class="site-footer">
-    <p>『放課後サイエンス・キャンパス』理系女子ライトノベル図書館 — Powered by Local LLM (Qwen3.5 &amp; Gemma4) &amp; FLUX.2 on Mac mini M4</p>
+    <p>『放課後サイエンス・キャンパス』理系女子ライトノベル図書館 — Powered by Local LLM (Qwen3.5 &amp; shosetsu) &amp; FLUX.2 on Mac mini M4</p>
   </footer>
 
   <script>
@@ -731,7 +731,7 @@ def _build_index_page(stories: List[Dict[str, Any]]) -> str:
     <h1 class="site-title">『放課後サイエンス・キャンパス』理系女子ライトノベル図書館</h1>
     <p class="site-subtitle">
       最先端の科学・数学・情報学の感動と、大学進学・研究者・数学／情報／理科の先生への道を優しい物語で描くサイエンス・ライトノベルシリーズ。<br/>
-      外部生成AI APIは一切使用せず、Mac mini M4 ローカルAI（Ollama Qwen3.5 &amp; Gemma4 ＋ Draw Things FLUX.2）で執筆・挿絵生成し、GitHub Pagesで公開しています。
+      外部生成AI APIは一切使用せず、Mac mini M4 ローカルAI（Ollama Qwen3.5 &amp; shosetsu ＋ Draw Things FLUX.2）で執筆・挿絵生成し、GitHub Pagesで公開しています。
     </p>
     <div class="stats-bar">
       <div class="stat-pill"><strong>{total_count}</strong> 収録エピソード</div>
@@ -831,7 +831,7 @@ def _write_root_readme(stories: List[Dict[str, Any]], target_readme: Path = Path
         "",
         "最先端の科学・数学・情報学の面白さと、大学進学・研究者・高校の「数学・情報・理科」教員へのキャリアパスを、女子高校生と大学研究室メンターの対話を通じて優しく正確に描くサイエンス・ライトノベルシリーズです。各話に実在する査読付き論文（DOI検証済み）の解説コラムを収録しています。",
         "",
-        "- **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `gemma4:12b` ＆ Draw Things `FLUX.2 [klein] 4B`）",
+        "- **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）",
         "- **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。",
         f"- **収録作品数**: 全 **{len(stories)}** 話（うち挿絵付き **{illustrated_count}** 話 / 最終更新: {updated_str}）",
         "",

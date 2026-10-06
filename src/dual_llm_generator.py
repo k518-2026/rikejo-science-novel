@@ -32,7 +32,7 @@ DIRECTOR_SYSTEM_PROMPT = """あなたは「構成作家（Director）」を務�
 3. 多様な理系キャリアの肯定：大学での研究や企業エンジニアだけでなく、「教職課程を履修して数学・情報・理科の教員（先生）になり、次世代の子どもたちに科学の感動を届ける道」も誇り高い理系のキャリアとして温かく描くこと。
 4. 指示された出力フォーマットを厳格に守り、余計なメタ発言を入れないこと。"""
 
-WRITER_SYSTEM_PROMPT = """あなたは「執筆作家（Writer）」を務める叙情的で表現力豊かな小説家（Gemma 4 12B）です。
+WRITER_SYSTEM_PROMPT = """あなたは「執筆作家（Writer）」を務める叙情的で表現力豊かな小説家（shosetsu）です。
 構成作家が設計したプロットとキャラクター設定をもとに、読者の五感（光、色彩、音、香り、温度、手触り）に鮮やかに訴えかける、瑞々しく情緒豊かなライトノベルの本文（地の文と自然な会話劇）を執筆してください。
 
 【執筆スタイルと絶対ルール】
@@ -249,22 +249,23 @@ class DualLLMStoryGenerator:
                 if res.getcode() == 200:
                     data = json.loads(res.read().decode("utf-8", errors="ignore"))
                     models = [m.get("name", "") for m in data.get("models", []) if m.get("name")]
-                    if self.director_model not in models:
-                        for cand in ("qwen3.5:9b", "qwen2.5:14b"):
-                            if cand in models:
+                    model_lookup = set(models) | {m.split(":")[0] for m in models}
+                    if self.director_model not in model_lookup:
+                        for cand in ("qwen3.5:9b", "ronbun", "qwen2.5:14b"):
+                            if cand in model_lookup:
                                 self.director_model = cand
                                 break
-                    if self.writer_model not in models:
-                        for cand in ("gemma4:12b", "gemma2:9b"):
-                            if cand in models:
+                    if self.writer_model not in model_lookup:
+                        for cand in ("shosetsu", "gemma4:12b", "gemma2:9b"):
+                            if cand in model_lookup:
                                 self.writer_model = cand
                                 break
                     return {
                         "online": True,
                         "host": self.ollama_host,
                         "models": models,
-                        "director_ready": self.director_model in models,
-                        "writer_ready": self.writer_model in models,
+                        "director_ready": self.director_model in model_lookup,
+                        "writer_ready": self.writer_model in model_lookup,
                         "draw_things_online": dt_status.get("online", False),
                         "draw_things_host": self.draw_things_host,
                         "draw_things_model": dt_status.get("model", ""),
@@ -295,17 +296,22 @@ class DualLLMStoryGenerator:
     ) -> str:
         """Calls Ollama /api/chat on the Mac mini with the specified model (with think=False and automatic retry)."""
         url = f"{self.ollama_host}/api/chat"
+        if model.split(":")[0] == "shosetsu":
+            # Preserve custom Modelfile parameters (temperature, repeat_penalty, top_p, top_k, num_ctx, draft_num_predict)
+            opts: Dict[str, Any] = {"num_predict": num_predict}
+        else:
+            opts = {
+                "temperature": temperature,
+                "num_predict": num_predict,
+                "num_ctx": num_ctx,
+                "repeat_penalty": 1.12,
+            }
         payload = {
             "model": model,
             "messages": messages,
             "stream": False,
             "think": False,
-            "options": {
-                "temperature": temperature,
-                "num_predict": num_predict,
-                "num_ctx": num_ctx,
-                "repeat_penalty": 1.12,
-            },
+            "options": opts,
         }
         data = json.dumps(payload).encode("utf-8")
         last_err: Optional[Exception] = None

@@ -598,5 +598,130 @@
         "query": "Sletten Bertozzi Bioorthogonal chemistry fishing for selectivity in a sea of functionality Angewandte Chemie International Edition 2009"
       }
     ]
+  },
+  {
+    "id": "ep25-fourier-transform-music-acoustics-math-teacher",
+    "episode_num": 25,
+    "title": "バイオリンの音色を数式に分解する放課後――フーリエ解析と音楽の数学",
+    "faculty": "理学部・数学科 ／ 教育学部・数学教育コース（調和解析・音響数理ゼミ）",
+    "protagonist": "音羽 奏（おとわ かなで・高校2年生・吹奏楽部）",
+    "mentor": "弦巻 響（つるまき ひびき・大学院生 M2・調和解析／高校数学教諭免許取得見込）",
+    "theme": "フーリエ級数・高速フーリエ変換（FFT）による楽音スペクトル解析と、数学の美しさを伝える教員への道",
+    "modern_tech": "フーリエ変換（Fourier Transform）、倍音スペクトルと波形合成、クーリー・テューキー型高速フーリエ変換（FFT）アルゴリズム",
+    "summary": "吹奏楽部でフルートを吹く奏は、「同じ『ラ（440Hz）』の音なのに、どうしてフルートとバイオリンとピアノでこんなにも音色が違うの？」と疑問を抱く。数学教育コースの大学院生・響は、どんなに複雑な音の波も『シンプルな正弦波（サインカーブ）の足し算』に分解できるフーリエ変換の魔法を黒板とマイク実験で見せてくれる。音楽と数学が同じ言葉で書かれていることに感動した奏は、数学の先生という夢に心を惹かれていく。",
+    "crossref_queries": [
+      {
+        "label": "高速フーリエ変換（FFT）アルゴリズムの創始論文（Cooley & Tukey）",
+        "query": "Cooley Tukey An algorithm for the machine calculation of complex Fourier series Mathematics of Computation 1965"
+      },
+      {
+        "label": "楽器音響学と倍音スペクトル構造の物理学（Fletcher & Rossing）",
+        "query": "Fletcher Nonlinear dynamics and chaos in musical instruments Reports on Progress in Physics 1999"
+      },
+      {
+        "label": "ウェーブレット変換と時間周波数解析の数理理論（Daubechies）",
+        "query": "Daubechies The wavelet transform time-frequency localization and signal analysis IEEE Transactions on Information Theory 1990"
+      }
+    ]
+  },
+  {
+    "id": "ep26-optogenetics-channelrhodopsin-neuroscience",
+    "episode_num": 26,
+    "title": "青い光のスイッチで、眠っていた記憶が目を覚ます――光遺伝学と緑藻の贈りもの",
+    "faculty": "理学部・生物科学科 ／ 脳神経科学研究センター（神経回路・オプトジェネティクス研究室）",
+    "protagonist": "緑川 碧（みどりかわ あおい・高校2年生・生物部）",
+    "mentor": "神楽坂 玲（かぐらざか れい・助教・神経生物学／高校生物教職課程担当）",
+    "theme": "光遺伝学（オプトジェネティクス・チャネルロドプシン）による特定神経回路の光制御と記憶エングラムの解明",
+    "modern_tech": "緑藻由来光駆動イオンチャネル（チャネルロドプシン2：ChR2）、光ファイバー神経回路ミリ秒制御、記憶エングラム細胞標識技術",
+    "summary": "高校の生物部で池のボルボックスやクラミドモナス（緑藻）が光に向かって泳ぐ『走光性』を観察していた碧。大学のオープンラボで玲助教から、その小さな藻類が持つ『光を感じて扉を開くタンパク質（チャネルロドプシン）』を脳の神経細胞に組み込むことで、青い光を当てた瞬間にだけ特定の神経回路や記憶のスイッチをオンにできる『光遺伝学（オプトジェネティクス）』を知る。身近な微生物の観察が脳科学の革命に繋がった事実に胸を震わせる。",
+    "crossref_queries": [
+      {
+        "label": "緑藻由来チャネルロドプシン2（ChR2）の発見と光駆動陽イオンチャネル機能（Nagel et al.）",
+        "query": "Nagel Szellas Huhn Kateriya Adeishvili Berthold Ollig Hegemann Channelrhodopsin-2 a directly light-gated cation-selective membrane channel PNAS 2003"
+      },
+      {
+        "label": "チャネルロドプシン2を用いたミリ秒時間精度での神経活動光制御（Boyden & Deisseroth）",
+        "query": "Boyden Zhang Bamberg Nagel Deisseroth Millisecond-timescale genetically targeted optical control of neural activity Nature Neuroscience 2005"
+      },
+      {
+        "label": "光遺伝学による海馬記憶エングラム細胞の光再活性化と記憶想起の実証（利根川進教授らの研究）",
+        "query": "Liu Ramirez Pang Puryear Govindarajan Deisseroth Tonegawa Optogenetic stimulation of a hippocampal engram activates fear memory recall Nature 2012"
+      }
+    ]
+  },
+  {
+    "id": "ep27-autonomous-driving-slam-bayesian-informatics",
+    "episode_num": 27,
+    "title": "霧のキャンパスを走る小さなロボット――ベイズ推定と自己位置推定のアルゴリズム",
+    "faculty": "情報理工学部・知能機械情報学科（ロボティクス・確率推論研究室）",
+    "protagonist": "速水 未来（はやみ みらい・高校1年生・ロボット研究部）",
+    "mentor": "一ノ瀬 楓（いちのせ かえで・准教授・知能ロボティクス／高校情報科教職課程担当）",
+    "theme": "確率ロボティクス（SLAM：自己位置推定と環境地図構築の同時実行）とベイズ推定・カルマンフィルタ",
+    "modern_tech": "LiDAR点群マッチング、ベイズフィルタ・拡張カルマンフィルタ（EKF）・パーティクルフィルタ（モンテカルロ位置推定）によるSLAM",
+    "summary": "ロボット部で作った自律走行カートが、少しタイヤが滑るだけで現在地を見失ってしまうことに悩んでいた未来。情報理工学部の楓准教授は、『自分の位置がわからないのに地図を作り、地図がないのに自分の位置を知る』という鶏と卵のパズルを、高校数学で習う条件付き確率（ベイズの定理）の繰り返しで鮮やかに解く『SLAM（スラム）』アルゴリズムを教えてくれる。不確かさを確率の雲として抱きしめながら進む情報学の知恵に感動する。",
+    "crossref_queries": [
+      {
+        "label": "確率的SLAM（同時自己位置推定・地図構築）の基礎理論と構造（Durrant-Whyte & Bailey）",
+        "query": "Durrant-Whyte Bailey Simultaneous localization and mapping part I IEEE Robotics and Automation Magazine 2006"
+      },
+      {
+        "label": "モンテカルロ位置推定（パーティクルフィルタ）による移動ロボットの確率的自己位置推定（Thrun et al.）",
+        "query": "Dellaert Fox Burgard Thrun Monte Carlo localization for mobile robots IEEE International Conference on Robotics and Automation 1999"
+      },
+      {
+        "label": "視覚センサを用いたリアルタイム単眼SLAM（MonoSLAM）の実現（Davison et al.）",
+        "query": "Davison Reid Molton Stasse MonoSLAM Real-time single camera SLAM IEEE Transactions on Pattern Analysis and Machine Intelligence 2007"
+      }
+    ]
+  },
+  {
+    "id": "ep28-ice-core-paleoclimate-isotope-earth-science",
+    "episode_num": 28,
+    "title": "南極の氷に閉じ込められた八十万年前の空気――同位体地球化学と地球の記憶",
+    "faculty": "理学部・地球惑星環境学科 ／ 極地雪氷研究センター（古気候・同位体地球化学研究室）",
+    "protagonist": "雪村 澄（ゆきむら すみ・高校2年生・地学部）",
+    "mentor": "氷川 晶子（ひかわ あきこ・教授・雪氷地球化学／高校地学・理科教育推進委員）",
+    "theme": "南極氷床コアの酸素・水素安定同位体比解析と気泡内古大気分析による80万年の気候変動復元",
+    "modern_tech": "氷床コア掘削解析、水分子の酸素安定同位体比（δ18O）温度計、氷床気泡中の過去の温室効果ガス（CO2・CH4）直接測定",
+    "summary": "マイナス20度の低温実験室で、南極の深さ3000メートルから掘り出された透明な氷の柱（アイスコア）を手にした澄。水に落とすとパチパチと音を立てて弾ける小さな泡は、何十万年も前の地球の空気がそのまま閉じ込められたタイムカプセルだった。さらに氷を作る水分子の『わずかに重い酸素原子（酸素18）』の割合を測るだけで、人類が誕生する前の地球の気温変化が1年単位で浮かび上がる地球化学のロマンに触れ、地学の先生になる夢を抱く。",
+    "crossref_queries": [
+      {
+        "label": "南極EPICAドームC氷床コアによる過去80万年間の高解像度二酸化炭素・気候変動記録",
+        "query": "Luthi Le Floch Bereiter Blunier Barnola Siegenthaler Raynaud Jouzel High-resolution carbon dioxide concentration record 650000-800000 years before present Nature 2008"
+      },
+      {
+        "label": "南極ボストーク氷床コアから解明された過去42万年間の気候と温室効果ガスの連動（Petit et al.）",
+        "query": "Petit Jouzel Raynaud Barkov Barnola Basile Bender Chappellaz Davis Delaygue Delmotte Climate and atmospheric history of the past 420000 years from the Vostok ice core Antarctica Nature 1999"
+      },
+      {
+        "label": "降水および極地雪氷中の酸素・水素安定同位体分別の物理化学原理（Dansgaard）",
+        "query": "Dansgaard Stable isotopes in precipitation Tellus 1964"
+      }
+    ]
+  },
+  {
+    "id": "ep29-artificial-photosynthesis-photocatalyst-chemistry",
+    "episode_num": 29,
+    "title": "太陽と水から未来の燃料を醸す葉っぱ――光触媒と人工光合成の化学",
+    "faculty": "工学部・応用化学科 ／ 人工光合成研究センター（光触媒・太陽エネルギー変換研究室）",
+    "protagonist": "葉月 陽菜（はづき ひな・高校1年生・化学部）",
+    "mentor": "水瀬 沙織（みなせ さおり・准教授・光電気化学／高校化学教職課程担当）",
+    "theme": "半導体光触媒（ホンダ・フジシマ効果）とZスキーム型人工光合成による太陽光水分解水素製造・CO2資源化",
+    "modern_tech": "酸化チタン光触媒（本多・藤嶋効果）、植物の光合成を模倣した二段階励起（Zスキーム）水分解光触媒シート、太陽光水素（ソーラー水素）製造",
+    "summary": "「植物は太陽の光と水と二酸化炭素だけで生きているのに、人間はどうしてそれと同じことができないんだろう？」――そんな素朴な疑問を抱いて大学の公開実験を訪れた陽菜。沙織准教授が白い半導体粉末を塗ったガラスシートを水に沈めて太陽光を当てると、電線も電池もないのにシュワシュワと水素と酸素の泡が立ち昇り始める。日本発の大発見『光触媒（本多・藤嶋効果）』から発展した人工光合成の最前線を知り、化学で地球を救う未来を描く。",
+    "crossref_queries": [
+      {
+        "label": "酸化チタン半導体電極を用いた光電気化学的水分解の発見（本多・藤嶋効果 / Nature 1972）",
+        "query": "Fujishima Honda Electrochemical photolysis of water at a semiconductor electrode Nature 1972"
+      },
+      {
+        "label": "大面積光触媒シートによる太陽光水分解水素製造の実証（堂免一成教授らの研究）",
+        "query": "Goto Hisatomi Wang Higashi Ishikiriyama Maeda Sakata Minegishi Takata Domen A particulate photocatalyst water-splitting panel exceeding 100 m2 Nature 2021"
+      },
+      {
+        "label": "不均一系光触媒による太陽エネルギー水分解・人工光合成の化学設計（Hisatomi, Kubota & Domen）",
+        "query": "Hisatomi Kubota Domen Recent advances in semiconductors for photocatalytic and photoelectrochemical water splitting Chemical Society Reviews 2014"
+      }
+    ]
   }
 ]

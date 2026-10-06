@@ -238,5 +238,17 @@
     "url": "stories/ep20-turing-pattern-reaction-diffusion-math-biology.html",
     "image": "assets/images/ep20-turing-pattern-reaction-diffusion-math-biology.png",
     "char_count": 7245
+  },
+  {
+    "no": 21,
+    "work_id": "ep21-compressed-sensing-black-hole-imaging-informatics",
+    "title": "地球サイズの瞳でブラックホールの影を現像する――スパースモデリングと情報科学",
+    "faculty": "情報理工学部・数理情報工学科 ／ 国立天文台連携研究室",
+    "field": "数学・数理科学",
+    "theme": "スパースモデリング（圧縮センシング・L1正則化最適化）によるイベント・ホライズン・テレスコープ（EHT）ブラックホール画像再構成と高速MRI医療応用",
+    "has_image": true,
+    "url": "stories/ep21-compressed-sensing-black-hole-imaging-informatics.html",
+    "image": "assets/images/ep21-compressed-sensing-black-hole-imaging-informatics.png",
+    "char_count": 7211
   }
 ]

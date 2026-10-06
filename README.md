@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **20** 話（うち挿絵付き **20** 話 / 最終更新: 2026-10-06 22:53 JST）
+- **収録作品数**: 全 **21** 話（うち挿絵付き **21** 話 / 最終更新: 2026-10-06 23:43 JST）
 
 ---
 
@@ -34,6 +34,7 @@
 | 18 | **[時空のさざ波を聴く地下の望遠鏡――ブラックホール連星と光の干渉計](https://k518-2026.github.io/rikejo-science-novel/stories/ep18-gravitational-waves-laser-interferometer.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep18-gravitational-waves-laser-interferometer.html) | [📄原稿](content/2026-10-06_ep18_gravitational_waves_laser_interferometer.md) | [🎨挿絵](content/2026-10-06_ep18_gravitational_waves_laser_interferometer.png) | 理学部・物理学科 ／ 宇宙重力波観測研究センター（レーザー干渉計実験室） | レーザー干渉計による重力波直接検出（LIGO/KAGRA）と連星中性子星合体による重元素合成（キロノヴァ） | 7,306字 |
 | 19 | **[角砂糖ひと粒にサッカー場が広がる結晶――空気から水と未来を集める化学](https://k518-2026.github.io/rikejo-science-novel/stories/ep19-mof-porous-coordination-polymers-carbon-capture.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep19-mof-porous-coordination-polymers-carbon-capture.html) | [📄原稿](content/2026-10-06_ep19_mof_porous_coordination_polymers_carbon_capture.md) | [🎨挿絵](content/2026-10-06_ep19_mof_porous_coordination_polymers_carbon_capture.png) | 理学部・化学科 ／ 高等研究院（錯体化学・多孔性材料研究室） | 多孔性配位高分子（PCP / MOF：Metal-Organic Frameworks）によるCO2分離回収と砂漠空気からの水回収 | 9,586字 |
 | 20 | **[シマウマの縞模様と熱帯魚の迷路を描く偏微分方程式――数理生物学のスケッチブック](https://k518-2026.github.io/rikejo-science-novel/stories/ep20-turing-pattern-reaction-diffusion-math-biology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep20-turing-pattern-reaction-diffusion-math-biology.html) | [📄原稿](content/2026-10-06_ep20_turing_pattern_reaction_diffusion_math_biology.md) | [🎨挿絵](content/2026-10-06_ep20_turing_pattern_reaction_diffusion_math_biology.png) | 理学部・数理科学科 ／ 生命理学科（数理生物学・パターン形成研究室） | アラン・チューリングの反応拡散方程式（チューリング・パターン）による生物の体表模様・形態形成の数理モデル | 7,245字 |
+| 21 | **[地球サイズの瞳でブラックホールの影を現像する――スパースモデリングと情報科学](https://k518-2026.github.io/rikejo-science-novel/stories/ep21-compressed-sensing-black-hole-imaging-informatics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep21-compressed-sensing-black-hole-imaging-informatics.html) | [📄原稿](content/2026-10-06_ep21_compressed_sensing_black_hole_imaging_informatics.md) | [🎨挿絵](content/2026-10-06_ep21_compressed_sensing_black_hole_imaging_informatics.png) | 情報理工学部・数理情報工学科 ／ 国立天文台連携研究室 | スパースモデリング（圧縮センシング・L1正則化最適化）によるイベント・ホライズン・テレスコープ（EHT）ブラックホール画像再構成と高速MRI医療応用 | 7,211字 |
 
 ---
 

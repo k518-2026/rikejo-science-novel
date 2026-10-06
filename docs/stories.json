@@ -226,5 +226,17 @@
     "url": "stories/ep19-mof-porous-coordination-polymers-carbon-capture.html",
     "image": "assets/images/ep19-mof-porous-coordination-polymers-carbon-capture.png",
     "char_count": 9586
+  },
+  {
+    "no": 20,
+    "work_id": "ep20-turing-pattern-reaction-diffusion-math-biology",
+    "title": "シマウマの縞模様と熱帯魚の迷路を描く偏微分方程式――数理生物学のスケッチブック",
+    "faculty": "理学部・数理科学科 ／ 生命理学科（数理生物学・パターン形成研究室）",
+    "field": "数学・数理科学",
+    "theme": "アラン・チューリングの反応拡散方程式（チューリング・パターン）による生物の体表模様・形態形成の数理モデル",
+    "has_image": true,
+    "url": "stories/ep20-turing-pattern-reaction-diffusion-math-biology.html",
+    "image": "assets/images/ep20-turing-pattern-reaction-diffusion-math-biology.png",
+    "char_count": 7245
   }
 ]

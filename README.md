@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **22** 話（うち挿絵付き **22** 話 / 最終更新: 2026-10-06 23:53 JST）
+- **収録作品数**: 全 **23** 話（うち挿絵付き **23** 話 / 最終更新: 2026-10-07 00:02 JST）
 
 ---
 
@@ -36,6 +36,7 @@
 | 20 | **[シマウマの縞模様と熱帯魚の迷路を描く偏微分方程式――数理生物学のスケッチブック](https://k518-2026.github.io/rikejo-science-novel/stories/ep20-turing-pattern-reaction-diffusion-math-biology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep20-turing-pattern-reaction-diffusion-math-biology.html) | [📄原稿](content/2026-10-06_ep20_turing_pattern_reaction_diffusion_math_biology.md) | [🎨挿絵](content/2026-10-06_ep20_turing_pattern_reaction_diffusion_math_biology.png) | 理学部・数理科学科 ／ 生命理学科（数理生物学・パターン形成研究室） | アラン・チューリングの反応拡散方程式（チューリング・パターン）による生物の体表模様・形態形成の数理モデル | 7,245字 |
 | 21 | **[地球サイズの瞳でブラックホールの影を現像する――スパースモデリングと情報科学](https://k518-2026.github.io/rikejo-science-novel/stories/ep21-compressed-sensing-black-hole-imaging-informatics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep21-compressed-sensing-black-hole-imaging-informatics.html) | [📄原稿](content/2026-10-06_ep21_compressed_sensing_black_hole_imaging_informatics.md) | [🎨挿絵](content/2026-10-06_ep21_compressed_sensing_black_hole_imaging_informatics.png) | 情報理工学部・数理情報工学科 ／ 国立天文台連携研究室 | スパースモデリング（圧縮センシング・L1正則化最適化）によるイベント・ホライズン・テレスコープ（EHT）ブラックホール画像再構成と高速MRI医療応用 | 7,211字 |
 | 22 | **[シャーレの上の小さな鼓動――iPS細胞オルガノイドと未来の創薬](https://k518-2026.github.io/rikejo-science-novel/stories/ep22-ips-organoid-regenerative-medicine-pharmacology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep22-ips-organoid-regenerative-medicine-pharmacology.html) | [📄原稿](content/2026-10-06_ep22_ips_organoid_regenerative_medicine_pharmacology.md) | [🎨挿絵](content/2026-10-06_ep22_ips_organoid_regenerative_medicine_pharmacology.png) | 薬学部・創薬生命科学科 ／ iPS細胞研究所連携ラボ | 人工多能性幹細胞（iPS細胞）の分化誘導と三次元ミニ臓器（オルガノイド）による難病創薬スクリーニング | 6,735字 |
+| 23 | **[中身は電気を通さないのに、表面だけを電子が疾走する――トポロジカル絶縁体と次世代コンピュータ](https://k518-2026.github.io/rikejo-science-novel/stories/ep23-topological-insulator-spintronics-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep23-topological-insulator-spintronics-physics.html) | [📄原稿](content/2026-10-07_ep23_topological_insulator_spintronics_physics.md) | [🎨挿絵](content/2026-10-07_ep23_topological_insulator_spintronics_physics.png) | 理学部・物理学科 ／ 物性物理学研究所（量子物質・スピントロニクス研究室） | トポロジカル絶縁体（Topological Insulator）のディラック表面状態とゼロ散逸スピントロニクス | 6,047字 |
 
 ---
 

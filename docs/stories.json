@@ -262,5 +262,17 @@
     "url": "stories/ep22-ips-organoid-regenerative-medicine-pharmacology.html",
     "image": "assets/images/ep22-ips-organoid-regenerative-medicine-pharmacology.png",
     "char_count": 6735
+  },
+  {
+    "no": 23,
+    "work_id": "ep23-topological-insulator-spintronics-physics",
+    "title": "中身は電気を通さないのに、表面だけを電子が疾走する――トポロジカル絶縁体と次世代コンピュータ",
+    "faculty": "理学部・物理学科 ／ 物性物理学研究所（量子物質・スピントロニクス研究室）",
+    "field": "物理学・宇宙・光学",
+    "theme": "トポロジカル絶縁体（Topological Insulator）のディラック表面状態とゼロ散逸スピントロニクス",
+    "has_image": true,
+    "url": "stories/ep23-topological-insulator-spintronics-physics.html",
+    "image": "assets/images/ep23-topological-insulator-spintronics-physics.png",
+    "char_count": 6047
   }
 ]

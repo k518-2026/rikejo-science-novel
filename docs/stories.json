@@ -298,5 +298,17 @@
     "url": "stories/ep25-fourier-transform-music-acoustics-math-teacher.html",
     "image": "assets/images/ep25-fourier-transform-music-acoustics-math-teacher.png",
     "char_count": 7500
+  },
+  {
+    "no": 26,
+    "work_id": "ep26-optogenetics-channelrhodopsin-neuroscience",
+    "title": "青い光のスイッチで、眠っていた記憶が目を覚ます――光遺伝学と緑藻の贈りもの",
+    "faculty": "理学部・生物科学科 ／ 脳神経科学研究センター（神経回路・オプトジェネティクス研究室）",
+    "field": "生命科学・バイオ・医学",
+    "theme": "光遺伝学（オプトジェネティクス・チャネルロドプシン）による特定神経回路の光制御と記憶エングラムの解明",
+    "has_image": true,
+    "url": "stories/ep26-optogenetics-channelrhodopsin-neuroscience.html",
+    "image": "assets/images/ep26-optogenetics-channelrhodopsin-neuroscience.png",
+    "char_count": 7583
   }
 ]

@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **25** 話（うち挿絵付き **25** 話 / 最終更新: 2026-10-07 00:24 JST）
+- **収録作品数**: 全 **26** 話（うち挿絵付き **26** 話 / 最終更新: 2026-10-08 07:05 JST）
 
 ---
 
@@ -39,6 +39,7 @@
 | 23 | **[中身は電気を通さないのに、表面だけを電子が疾走する――トポロジカル絶縁体と次世代コンピュータ](https://k518-2026.github.io/rikejo-science-novel/stories/ep23-topological-insulator-spintronics-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep23-topological-insulator-spintronics-physics.html) | [📄原稿](content/2026-10-07_ep23_topological_insulator_spintronics_physics.md) | [🎨挿絵](content/2026-10-07_ep23_topological_insulator_spintronics_physics.png) | 理学部・物理学科 ／ 物性物理学研究所（量子物質・スピントロニクス研究室） | トポロジカル絶縁体（Topological Insulator）のディラック表面状態とゼロ散逸スピントロニクス | 6,047字 |
 | 24 | **[生きている細胞の中でパチンと留める分子のバックル――「カチッ」と鳴る科学の扉を開く少女たち（第 1 話）](https://k518-2026.github.io/rikejo-science-novel/stories/ep24-click-chemistry-bioorthogonal-reaction.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep24-click-chemistry-bioorthogonal-reaction.html) | [📄原稿](content/2026-10-07_ep24_click_chemistry_bioorthogonal_reaction.md) | [🎨挿絵](content/2026-10-07_ep24_click_chemistry_bioorthogonal_reaction.png) | 理学部・化学科 ／ 化学生物学（ケミカルバイオロジー）研究室 | クリックケミストリーと生体直交化学反応（Bioorthogonal Chemistry）による生細胞内糖鎖・分子イメージング | 6,676字 |
 | 25 | **[バイオリンの音色を数式に分解する放課後――フーリエ解析が奏でる「数学×音楽」のスプラッシュ](https://k518-2026.github.io/rikejo-science-novel/stories/ep25-fourier-transform-music-acoustics-math-teacher.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep25-fourier-transform-music-acoustics-math-teacher.html) | [📄原稿](content/2026-10-07_ep25_fourier_transform_music_acoustics_math_teacher.md) | [🎨挿絵](content/2026-10-07_ep25_fourier_transform_music_acoustics_math_teacher.png) | 理学部・数学科 ／ 教育学部・数学教育コース（調和解析・音響数理ゼミ） | フーリエ級数・高速フーリエ変換（FFT）による楽音スペクトル解析と、数学の美しさを伝える教員への道 | 7,500字 |
+| 26 | **[青い光のスイッチで、眠っていた記憶が目を覚ます――光遺伝学と緑藻の贈りもの](https://k518-2026.github.io/rikejo-science-novel/stories/ep26-optogenetics-channelrhodopsin-neuroscience.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep26-optogenetics-channelrhodopsin-neuroscience.html) | [📄原稿](content/2026-10-08_ep26_optogenetics_channelrhodopsin_neuroscience.md) | [🎨挿絵](content/2026-10-08_ep26_optogenetics_channelrhodopsin_neuroscience.png) | 理学部・生物科学科 ／ 脳神経科学研究センター（神経回路・オプトジェネティクス研究室） | 光遺伝学（オプトジェネティクス・チャネルロドプシン）による特定神経回路の光制御と記憶エングラムの解明 | 7,583字 |
 
 ---
 

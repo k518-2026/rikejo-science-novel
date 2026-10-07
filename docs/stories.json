@@ -310,5 +310,17 @@
     "url": "stories/ep26-optogenetics-channelrhodopsin-neuroscience.html",
     "image": "assets/images/ep26-optogenetics-channelrhodopsin-neuroscience.png",
     "char_count": 7492
+  },
+  {
+    "no": 27,
+    "work_id": "ep27-autonomous-driving-slam-bayesian-informatics",
+    "title": "霧のキャンパスを走る小さなロボット――ベイズ推定と自己位置推定のアルゴリズム",
+    "faculty": "情報理工学部・知能機械情報学科（ロボティクス・確率推論研究室）",
+    "field": "情報学・AI",
+    "theme": "確率ロボティクス（SLAM：自己位置推定と環境地図構築の同時実行）とベイズ推定・カルマンフィルタ",
+    "has_image": true,
+    "url": "stories/ep27-autonomous-driving-slam-bayesian-informatics.html",
+    "image": "assets/images/ep27-autonomous-driving-slam-bayesian-informatics.png",
+    "char_count": 6790
   }
 ]

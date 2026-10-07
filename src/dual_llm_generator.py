@@ -707,8 +707,7 @@ class DualLLMStoryGenerator:
             ],
             temperature=0.5,
             num_predict=1800,
-            num_ctx=4096,
-            keep_alive=0,
+            num_ctx=8192,
         )
         guide_body = self._clean_llm_output(raw_guide)
         guide_body = re.sub(r"^#+.*最新科学.*?\n", "", guide_body).strip()
@@ -723,7 +722,7 @@ class DualLLMStoryGenerator:
         episode_title: str = "",
     ) -> str:
         """
-        Uses `gemma4:12b` (Writer) to translate the novel's most visually iconic scene
+        Uses `qwen3.5:9b` (Director) to translate the novel's most visually iconic scene
         into a concise, descriptive English image generation prompt for FLUX.2 [klein] 4B.
         """
         char_context = self._build_character_context(work)
@@ -747,7 +746,7 @@ Based on the following Japanese science novel episode, write a single, vivid, de
 1. Output ONLY the raw English prompt paragraph. Do NOT include explanations, markdown formatting, quotes, or Japanese text.
 2. Start with: "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher in a ..."
 3. Visually describe BOTH the high school student and the female researcher with warm, happy, gentle smiles on their faces, sharing the joy of scientific discovery in the university laboratory or classroom, alongside the visual scientific phenomenon (e.g., softly glowing emerald petunias, iridescent blue morpho butterfly wing, geometric 3D structure model, rooftop telescope under twilight sky, golden spider silk thread).
-4. NEVER mention words, text, letters, book covers, titles, labels, or writing/equations on blackboards or screens. The image must contain ZERO text or characters.
+4. NEVER mention words, text, letters, book covers, titles, labels, badges, emblems, or writing/equations on blackboards or screens. The image must contain ZERO text or characters.
 5. Keep the tone calm and composed with rich, deep colors and strong, clear contrast: balanced natural lighting, distinct light and shadow, crisp line art, and deep harmonious tones (avoid washed-out whiteout and avoid overly flashy/gaudy effects).
 6. End with: "both characters smiling warmly with gentle happy smiles, masterpiece Japanese anime novel illustration style, Makoto Shinkai and Kyoto Animation inspired cinematic lighting, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
 """
@@ -758,13 +757,13 @@ Based on the following Japanese science novel episode, write a single, vivid, de
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are a professional prompt engineer for FLUX.2 Japanese novel illustrations. Output ONLY the English prompt text. Always depict both the student and researcher with warm, happy smiles. Never include text, letters, writing, equations, or book cover elements in the prompt.",
+                        "content": "You are a professional prompt engineer for FLUX.2 Japanese novel illustrations. Output ONLY the English prompt text. Always depict both the student and researcher with warm, happy smiles. Never include text, letters, writing, equations, badges, or book cover elements in the prompt.",
                     },
                     {"role": "user", "content": prompt},
                 ],
                 temperature=0.6,
                 num_predict=200,
-                num_ctx=2048,
+                num_ctx=8192,
                 timeout=120,
                 max_retries=1,
                 keep_alive=0,
@@ -802,7 +801,7 @@ Based on the following Japanese science novel episode, write a single, vivid, de
         """
         Generates a 512x512 light novel illustration using Draw Things HTTP API
         (`http://192.168.128.59:7860/sdapi/v1/txt2img`, model `flux_2_klein_base_4b_i8x.ckpt`)
-        with an English prompt created by `gemma4:12b`.
+        with an English prompt created by `qwen3.5:9b`.
         Returns (saved_image_path_or_None, english_prompt_used).
         """
         dt_conn = self.check_draw_things_connection()
@@ -812,8 +811,11 @@ Based on the following Japanese science novel episode, write a single, vivid, de
             )
             return None, ""
 
+        cached_en = getattr(self, "_cached_en_prompts", {}).get(work.get("id", ""), "")
         if custom_english_prompt and custom_english_prompt.strip():
             en_prompt = custom_english_prompt.strip()
+        elif cached_en:
+            en_prompt = cached_en
         else:
             if progress_callback:
                 progress_callback(f"構成作家 ({self.director_model}) が小説本文から英語の挿絵プロンプトを作成中...")
@@ -1016,6 +1018,14 @@ Based on the following Japanese science novel episode, write a single, vivid, de
             work=work,
             episode_title=work.get("title", "放課後サイエンス・キャンパス"),
             verified_papers=verified_papers,
+        )
+
+        if not hasattr(self, "_cached_en_prompts"):
+            self._cached_en_prompts = {}
+        self._cached_en_prompts[work.get("id", "")] = self.generate_english_image_prompt(
+            work=work,
+            story_body=plot_blueprint,
+            episode_title=work.get("title", "放課後サイエンス・キャンパス"),
         )
 
         story_body, episode_title = self.generate_prose_with_writer(

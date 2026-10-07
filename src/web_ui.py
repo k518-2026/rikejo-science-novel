@@ -239,7 +239,7 @@ HTML_STUDIO_PAGE = """<!DOCTYPE html>
     </div>
     <div class="status-badge" id="ollamaStatus">
       <span class="dot" id="statusDot"></span>
-      <span id="statusText">Mac mini (192.168.128.59:11434) 接続確認中...</span>
+      <span id="statusText">Ollama (192.168.128.62 / .59) 接続確認中...</span>
     </div>
   </header>
 

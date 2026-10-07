@@ -44,7 +44,7 @@ class AppConfig:
 
 def get_config() -> AppConfig:
     """Retrieve and parse configuration from environment variables."""
-    ollama_host = os.getenv("OLLAMA_HOST", "http://192.168.128.59:11434").strip()
+    ollama_host = os.getenv("OLLAMA_HOST", "http://192.168.128.62:11434").strip()
     director_model = os.getenv("OLLAMA_DIRECTOR_MODEL", "qwen3.5:9b").strip()
     writer_model = os.getenv("OLLAMA_WRITER_MODEL", "shosetsu").strip()
     draw_things_host = os.getenv("DRAW_THINGS_HOST", "http://192.168.128.59:7860").strip()

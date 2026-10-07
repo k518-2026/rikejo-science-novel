@@ -14,6 +14,7 @@ from src.doi_verifier import (
     check_doi_validity,
     clean_doi_string,
     DEFAULT_OLLAMA_HOST,
+    FALLBACK_OLLAMA_HOSTS,
     DEFAULT_DIRECTOR_MODEL,
     DEFAULT_WRITER_MODEL,
     DEFAULT_DRAW_THINGS_HOST,
@@ -197,7 +198,14 @@ class DualLLMStoryGenerator:
         draw_things_host: Optional[str] = None,
         lorebook_path: Path = LOREBOOK_FILE,
     ):
-        self.ollama_host = (ollama_host or os.getenv("OLLAMA_HOST", DEFAULT_OLLAMA_HOST)).rstrip("/")
+        raw_host = (ollama_host or os.getenv("OLLAMA_HOST", DEFAULT_OLLAMA_HOST)).strip()
+        primary_hosts = [h.strip().rstrip("/") for h in raw_host.split(",") if h.strip()]
+        self.ollama_host = primary_hosts[0] if primary_hosts else DEFAULT_OLLAMA_HOST
+        self.ollama_hosts: List[str] = list(primary_hosts)
+        for fb in FALLBACK_OLLAMA_HOSTS:
+            fb_clean = fb.rstrip("/")
+            if fb_clean not in self.ollama_hosts:
+                self.ollama_hosts.append(fb_clean)
         self.director_model = director_model or os.getenv("OLLAMA_DIRECTOR_MODEL", DEFAULT_DIRECTOR_MODEL)
         self.writer_model = writer_model or os.getenv("OLLAMA_WRITER_MODEL", DEFAULT_WRITER_MODEL)
         self.draw_things_host = (draw_things_host or os.getenv("DRAW_THINGS_HOST", DEFAULT_DRAW_THINGS_HOST)).rstrip("/")
@@ -241,48 +249,54 @@ class DualLLMStoryGenerator:
         return {"online": False, "host": self.draw_things_host}
 
     def check_connection(self) -> Dict[str, Any]:
-        """Checks connection to Mac mini Ollama server, auto-resolves optimal installed models, and returns status."""
+        """Checks connection to LAN Ollama servers (.62 primary, .59 fallback), auto-resolves optimal installed models, and returns status."""
         dt_status = self.check_draw_things_connection()
-        try:
-            req = urllib.request.Request(f"{self.ollama_host}/api/tags")
-            with urllib.request.urlopen(req, timeout=5) as res:
-                if res.getcode() == 200:
-                    data = json.loads(res.read().decode("utf-8", errors="ignore"))
-                    models = [m.get("name", "") for m in data.get("models", []) if m.get("name")]
-                    model_lookup = set(models) | {m.split(":")[0] for m in models}
-                    if self.director_model not in model_lookup:
-                        for cand in ("qwen3.5:9b", "ronbun", "qwen2.5:14b"):
-                            if cand in model_lookup:
-                                self.director_model = cand
-                                break
-                    if self.writer_model not in model_lookup:
-                        for cand in ("shosetsu", "gemma4:12b", "gemma2:9b"):
-                            if cand in model_lookup:
-                                self.writer_model = cand
-                                break
-                    return {
-                        "online": True,
-                        "host": self.ollama_host,
-                        "models": models,
-                        "director_ready": self.director_model in model_lookup,
-                        "writer_ready": self.writer_model in model_lookup,
-                        "draw_things_online": dt_status.get("online", False),
-                        "draw_things_host": self.draw_things_host,
-                        "draw_things_model": dt_status.get("model", ""),
-                    }
-        except Exception as e:
-            return {
-                "online": False,
-                "host": self.ollama_host,
-                "models": [],
-                "error": str(e),
-                "director_ready": False,
-                "writer_ready": False,
-                "draw_things_online": dt_status.get("online", False),
-                "draw_things_host": self.draw_things_host,
-                "draw_things_model": dt_status.get("model", ""),
-            }
-        return {"online": False, "host": self.ollama_host, "models": [], "draw_things_online": dt_status.get("online", False)}
+        last_err = None
+        for candidate_host in self.ollama_hosts:
+            try:
+                req = urllib.request.Request(f"{candidate_host}/api/tags")
+                with urllib.request.urlopen(req, timeout=5) as res:
+                    if res.getcode() == 200:
+                        data = json.loads(res.read().decode("utf-8", errors="ignore"))
+                        models = [m.get("name", "") for m in data.get("models", []) if m.get("name")]
+                        if candidate_host != self.ollama_host:
+                            logger.info(f"Switched active Ollama host from {self.ollama_host} to {candidate_host}")
+                            self.ollama_host = candidate_host
+                        model_lookup = set(models) | {m.split(":")[0] for m in models}
+                        if self.director_model not in model_lookup:
+                            for cand in ("qwen3.5:9b", "ronbun", "qwen2.5:14b"):
+                                if cand in model_lookup:
+                                    self.director_model = cand
+                                    break
+                        if self.writer_model not in model_lookup:
+                            for cand in ("shosetsu", "gemma4:12b", "gemma2:9b"):
+                                if cand in model_lookup:
+                                    self.writer_model = cand
+                                    break
+                        return {
+                            "online": True,
+                            "host": self.ollama_host,
+                            "models": models,
+                            "director_ready": self.director_model in model_lookup,
+                            "writer_ready": self.writer_model in model_lookup,
+                            "draw_things_online": dt_status.get("online", False),
+                            "draw_things_host": self.draw_things_host,
+                            "draw_things_model": dt_status.get("model", ""),
+                        }
+            except Exception as e:
+                last_err = e
+                logger.debug(f"Ollama check failed on {candidate_host}: {e}")
+        return {
+            "online": False,
+            "host": self.ollama_host,
+            "models": [],
+            "error": str(last_err) if last_err else "Unreachable",
+            "director_ready": False,
+            "writer_ready": False,
+            "draw_things_online": dt_status.get("online", False),
+            "draw_things_host": self.draw_things_host,
+            "draw_things_model": dt_status.get("model", ""),
+        }
 
     def call_ollama_chat(
         self,
@@ -295,8 +309,7 @@ class DualLLMStoryGenerator:
         max_retries: int = 3,
         keep_alive: Optional[Any] = None,
     ) -> str:
-        """Calls Ollama /api/chat on the Mac mini with the specified model (with think=False and automatic retry)."""
-        url = f"{self.ollama_host}/api/chat"
+        """Calls Ollama /api/chat on LAN (.62 primary, .59 fallback) with the specified model (with think=False and automatic retry)."""
         if model.split(":")[0] == "shosetsu":
             # Preserve custom Modelfile parameters (temperature, repeat_penalty, top_p, top_k, num_ctx, draft_num_predict)
             opts: Dict[str, Any] = {"num_predict": num_predict}
@@ -317,24 +330,30 @@ class DualLLMStoryGenerator:
         if keep_alive is not None:
             payload["keep_alive"] = keep_alive
         data = json.dumps(payload).encode("utf-8")
+        hosts_to_try = [self.ollama_host] + [h for h in self.ollama_hosts if h != self.ollama_host]
         last_err: Optional[Exception] = None
         for attempt in range(1, max_retries + 1):
-            try:
-                req = urllib.request.Request(
-                    url,
-                    data=data,
-                    headers={"Content-Type": "application/json"},
-                    method="POST",
-                )
-                with urllib.request.urlopen(req, timeout=timeout) as res:
-                    body = json.loads(res.read().decode("utf-8", errors="ignore"))
-                    return body.get("message", {}).get("content", "").strip()
-            except Exception as e:
-                last_err = e
-                logger.warning(f"Ollama chat call ({model}) attempt {attempt}/{max_retries} failed: {e}")
-                if attempt < max_retries:
-                    time.sleep(5 * attempt)
-        raise RuntimeError(f"Ollama chat call ({model}) failed after {max_retries} attempts: {last_err}")
+            for host in hosts_to_try:
+                url = f"{host}/api/chat"
+                try:
+                    req = urllib.request.Request(
+                        url,
+                        data=data,
+                        headers={"Content-Type": "application/json"},
+                        method="POST",
+                    )
+                    with urllib.request.urlopen(req, timeout=timeout) as res:
+                        body = json.loads(res.read().decode("utf-8", errors="ignore"))
+                        if host != self.ollama_host:
+                            logger.info(f"Switched active Ollama host to {host}")
+                            self.ollama_host = host
+                        return body.get("message", {}).get("content", "").strip()
+                except Exception as e:
+                    last_err = e
+                    logger.warning(f"Ollama chat call ({model} @ {host}) attempt {attempt}/{max_retries} failed: {e}")
+            if attempt < max_retries:
+                time.sleep(5 * attempt)
+        raise RuntimeError(f"Ollama chat call ({model}) failed after {max_retries} attempts across {hosts_to_try}: {last_err}")
 
     def _clean_llm_output(self, text: str) -> str:
         """Removes <think> blocks, markdown code fences, unwanted meta scene headers, and repetition loops."""

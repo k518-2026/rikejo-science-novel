@@ -239,7 +239,7 @@ HTML_STUDIO_PAGE = """<!DOCTYPE html>
     </div>
     <div class="status-badge" id="ollamaStatus">
       <span class="dot" id="statusDot"></span>
-      <span id="statusText">Ollama (192.168.128.62 / .59) 接続確認中...</span>
+      <span id="statusText">Ollama (rtx5060lp / kenomac-mini) 接続確認中...</span>
     </div>
   </header>
 
@@ -827,7 +827,7 @@ def run_web_server(port: int = 8505, open_browser: bool = True):
     print("\n" + "=" * 72)
     print(" 🌸 放課後サイエンス・キャンパス｜理系女子ライトノベル執筆スタジオ (Web UI)")
     print(f" 🌐 URL: {url}")
-    print(" 🤖 構成作家: qwen3.5:9b  ×  執筆作家: gemma4:12b  ×  挿絵: FLUX.2 (Mac mini: 192.168.128.59)")
+    print(" 🤖 構成作家: qwen3.5:9b  ×  執筆作家: gemma4:12b  ×  挿絵: FLUX.2 (Mac mini: kenomac-mini)")
     print("=" * 72 + "\n")
     if open_browser:
         try:

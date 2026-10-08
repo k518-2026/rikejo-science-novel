@@ -187,7 +187,7 @@ class DualLLMStoryGenerator:
     Collaborative Dual-LLM Novel Writing Engine:
     - Director LLM (`qwen3.5:9b`, fallback `qwen2.5:14b`): Plot Architecture, Character Consistency, Scientific & Career Commentary
     - Writer LLM (`gemma4:12b`, fallback `gemma2:9b`): Expressive Sensory Prose, Emotional Dialogue, Light Novel Storytelling
-    Connected to Mac mini Ollama server (`http://192.168.128.59:11434`).
+    Connected to Ollama servers (`http://rtx5060lp:11434` / `http://kenomac-mini:11434`).
     """
 
     def __init__(
@@ -800,7 +800,7 @@ Based on the following Japanese science novel episode, write a single, vivid, de
     ) -> Tuple[Optional[Path], str]:
         """
         Generates a 512x512 light novel illustration using Draw Things HTTP API
-        (`http://192.168.128.59:7860/sdapi/v1/txt2img`, model `flux_2_klein_base_4b_i8x.ckpt`)
+        (`http://kenomac-mini:7860/sdapi/v1/txt2img`, model `flux_2_klein_base_4b_i8x.ckpt`)
         with an English prompt created by `qwen3.5:9b`.
         Returns (saved_image_path_or_None, english_prompt_used).
         """

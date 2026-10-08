@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **28** 話（うち挿絵付き **28** 話 / 最終更新: 2026-10-08 18:22 JST）
+- **収録作品数**: 全 **28** 話（うち挿絵付き **28** 話 / 最終更新: 2026-10-08 18:24 JST）
 
 ---
 
@@ -41,7 +41,7 @@
 | 25 | **[バイオリンの音色を数式に分解する放課後――フーリエ解析が奏でる「数学×音楽」のスプラッシュ](https://k518-2026.github.io/rikejo-science-novel/stories/ep25-fourier-transform-music-acoustics-math-teacher.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep25-fourier-transform-music-acoustics-math-teacher.html) | [📄原稿](content/2026-10-07_ep25_fourier_transform_music_acoustics_math_teacher.md) | [🎨挿絵](content/2026-10-07_ep25_fourier_transform_music_acoustics_math_teacher.png) | 理学部・数学科 ／ 教育学部・数学教育コース（調和解析・音響数理ゼミ） | フーリエ級数・高速フーリエ変換（FFT）による楽音スペクトル解析と、数学の美しさを伝える教員への道 | 7,500字 |
 | 26 | **[青い光のスイッチで、眠っていた記憶が目を覚ます――光遺伝学と緑藻の贈りもの](https://k518-2026.github.io/rikejo-science-novel/stories/ep26-optogenetics-channelrhodopsin-neuroscience.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep26-optogenetics-channelrhodopsin-neuroscience.html) | [📄原稿](content/2026-10-08_ep26_optogenetics_channelrhodopsin_neuroscience.md) | [🎨挿絵](content/2026-10-08_ep26_optogenetics_channelrhodopsin_neuroscience.png) | 理学部・生物科学科 ／ 脳神経科学研究センター（神経回路・オプトジェネティクス研究室） | 光遺伝学（オプトジェネティクス・チャネルロドプシン）による特定神経回路の光制御と記憶エングラムの解明 | 7,492字 |
 | 27 | **[霧のキャンパスを走る小さなロボット――ベイズ推定と自己位置推定のアルゴリズム](https://k518-2026.github.io/rikejo-science-novel/stories/ep27-autonomous-driving-slam-bayesian-informatics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep27-autonomous-driving-slam-bayesian-informatics.html) | [📄原稿](content/2026-10-08_ep27_autonomous_driving_slam_bayesian_informatics.md) | [🎨挿絵](content/2026-10-08_ep27_autonomous_driving_slam_bayesian_informatics.png) | 情報理工学部・知能機械情報学科（ロボティクス・確率推論研究室） | 確率ロボティクス（SLAM：自己位置推定と環境地図構築の同時実行）とベイズ推定・カルマンフィルタ | 6,796字 |
-| 28 | **[氷床の時空を歩く――80 万年の記憶が語る地球の色](https://k518-2026.github.io/rikejo-science-novel/stories/ep28-ice-core-paleoclimate-isotope-earth-science.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep28-ice-core-paleoclimate-isotope-earth-science.html) | [📄原稿](content/2026-10-08_ep28_ice_core_paleoclimate_isotope_earth_science.md) | [🎨挿絵](content/2026-10-08_ep28_ice_core_paleoclimate_isotope_earth_science.png) | 理学部・地球惑星環境学科 ／ 極地雪氷研究センター（古気候・同位体地球化学研究室） | 南極氷床コアの酸素・水素安定同位体比解析と気泡内古大気分析による80万年の気候変動復元 | 6,975字 |
+| 28 | **[氷床の時空を歩く――80 万年の記憶が語る地球の色](https://k518-2026.github.io/rikejo-science-novel/stories/ep28-ice-core-paleoclimate-isotope-earth-science.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep28-ice-core-paleoclimate-isotope-earth-science.html) | [📄原稿](content/2026-10-08_ep28_ice_core_paleoclimate_isotope_earth_science.md) | [🎨挿絵](content/2026-10-08_ep28_ice_core_paleoclimate_isotope_earth_science.png) | 理学部・地球惑星環境学科 ／ 極地雪氷研究センター（古気候・同位体地球化学研究室） | 南極氷床コアの酸素・水素安定同位体比解析と気泡内古大気分析による80万年の気候変動復元 | 6,981字 |
 
 ---
 

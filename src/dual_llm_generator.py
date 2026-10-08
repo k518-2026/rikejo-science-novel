@@ -1009,6 +1009,36 @@ class DualLLMStoryGenerator:
             "as they examine a translucent cylindrical Antarctic ice core sparkling with tiny ancient air bubbles in golden light, "
             "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
         ),
+        "ep29-artificial-photosynthesis-photocatalyst-chemistry": (
+            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
+            "in a sunlit photocatalyst chemistry laboratory, both smiling happily with gentle joyful expressions as they watch "
+            "fine sparkling hydrogen and oxygen bubbles rising from a submerged emerald-titanium photocatalyst leaf plate in a clear glass reactor vessel bathed in golden sunlight, "
+            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        ),
+        "ep30-graph-theory-four-color-theorem-math-teacher": (
+            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
+            "in a warm wooden mathematics classroom, both smiling happily with gentle joyful expressions beside "
+            "a colorful geometric stained-glass-like map puzzle in four vivid colors and crystal polyhedron graph models on the desk, "
+            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        ),
+        "ep31-exoplanet-transit-spectroscopy-astronomy": (
+            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
+            "in a university observatory room at twilight, both smiling happily with gentle joyful expressions beside "
+            "an illuminated celestial globe model showing a tiny planet crossing in front of a glowing golden star and a glass optical prism rainbow, "
+            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        ),
+        "ep32-gut-microbiome-brain-axis-bioscience": (
+            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
+            "in a bright life-science laboratory, both smiling happily with gentle joyful expressions beside "
+            "glowing botanical fermentation glass flasks and a warm illuminated botanical-neural network sculpture on a wooden bench, "
+            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        ),
+        "ep33-origami-engineering-miura-ori-space-solar-sail": (
+            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
+            "in an aerospace engineering studio, both smiling happily with gentle joyful expressions as they unfold "
+            "a gleaming golden geometric Miura-ori origami solar sail model catching warm afternoon sunlight, "
+            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        ),
     }
 
     def generate_english_image_prompt(

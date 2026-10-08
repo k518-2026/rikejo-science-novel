@@ -1,8 +1,8 @@
 # 📋 分散ローカルLLM 自動作業リスト (`rikejo-science-novel`)
 
 - **会話ID**: `03e1e31e-29c5-4db4-b211-06e49e17b8bd`
-- **最終同期日時 (JST)**: `2026-10-09T06:23:42`
-- **進捗サマリー**: 全 **40** 話 （完了: **28** / 挿絵待ち: **1** / **PC起動時実行キュー(`queued`)**: **5** / プロット作成済: **0** / 未着手待機: **6**）
+- **最終同期日時 (JST)**: `2026-10-09T06:28:08`
+- **進捗サマリー**: 全 **40** 話 （完了: **29** / 挿絵待ち: **0** / **PC起動時実行キュー(`queued`)**: **5** / プロット作成済: **0** / 未着手待機: **6**）
 
 ## 🖥️ 各ローカルLLMサーバーの役割分担（メインPC電源オフ時も各ノード単体で自律実行）
 
@@ -16,7 +16,6 @@
 
 | 話数 | タスクID | タイトル | 学部・研究室 | 状態 (`status`) | 次回担当ライター (交互割当) |
 |:---:|:---|:---|:---|:---:|:---|
-| #29 | `ep29-artificial-photosynthesis-photocatalyst-chemistry` | 太陽と水から未来の燃料を醸す葉っぱ――光触媒と人工光合成の化学 | 工学部・応用化学科 ／ 人工光合成研究センター（光触媒・太陽エネルギー変換研究室） | `pending_illustration` | 🎨 `kenomac-mini` (挿絵生成待ち) |
 | #30 | `ep30-graph-theory-four-color-theorem-math-teacher` | 白地図を彩る四色の魔法――グラフ理論とコンピュータが証明した数学のパズル | 理学部・数学科 ／ 教育学部・数学教育専攻（離散数学・グラフ理論研究室） | `queued` | ✨ **プライマリ `rtx5060lp`** (`shosetsu` 叙情ノベル調) |
 | #31 | `ep31-exoplanet-transit-spectroscopy-astronomy` | 幾千光年かなたの星のまばたき――系外惑星トランジット法と生命のサイン | 理学部・宇宙地球物理学科 ／ 天文学専攻（太陽系外惑星・宇宙生物学研究室） | `queued` | 🔥 **セカンダリ `sff7020`** (`gemma-4-26b` ドラマチック調) |
 | #32 | `ep32-gut-microbiome-brain-axis-bioscience` | お腹の中の小さな森が心を醸す――腸内フローラと『脳腸相関』の生命科学 | 農学部・応用生命化学科 ／ 薬学部・微生物薬品化学研究室（腸内細菌叢・神経免疫学） | `queued` | ✨ **プライマリ `rtx5060lp`** (`shosetsu` 叙情ノベル調) |
@@ -33,6 +32,7 @@
 
 | 話数 | タスクID | タイトル | 執筆担当ノード | 執筆日 | 校閲 (`sff7020`) | 挿絵 (`kenomac-mini`) |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|
+| #29 | `ep29-artificial-photosynthesis-photocatalyst-chemistry` | 太陽と水から未来の燃料を醸す葉っぱ――光触媒と人工光合成の化学 | `rtx5060lp` | 2026-10-09 | 未校閲 | 🎨 (kenomac-mini) |
 | #28 | `ep28-ice-core-paleoclimate-isotope-earth-science` | 南極の氷に閉じ込められた八十万年前の空気――同位体地球化学と地球の記憶 | `rtx5060lp` | 2026-10-09 | 未校閲 | 🎨 (kenomac-mini) |
 | #27 | `ep27-autonomous-driving-slam-bayesian-informatics` | 霧のキャンパスを走る小さなロボット――ベイズ推定と自己位置推定のアルゴリズム | `rtx5060lp` | 2026-10-08 | 未校閲 | 🎨 (kenomac-mini) |
 | #26 | `ep26-optogenetics-channelrhodopsin-neuroscience` | 青い光のスイッチで、眠っていた記憶が目を覚ます――光遺伝学と緑藻の贈りもの | `rtx5060lp` | 2026-10-08 | 未校閲 | 🎨 (kenomac-mini) |
@@ -42,4 +42,3 @@
 | #22 | `ep22-ips-organoid-regenerative-medicine-pharmacology` | シャーレの上の小さな鼓動――iPS細胞オルガノイドと未来の創薬 | `rtx5060lp` | 2026-10-06 | 未校閲 | 🎨 (kenomac-mini) |
 | #21 | `ep21-compressed-sensing-black-hole-imaging-informatics` | 地球サイズの瞳でブラックホールの影を現像する――スパースモデリングと情報科学 | `rtx5060lp` | 2026-10-06 | 未校閲 | 🎨 (kenomac-mini) |
 | #20 | `ep20-turing-pattern-reaction-diffusion-math-biology` | シマウマの縞模様と熱帯魚の迷路を描く偏微分方程式――数理生物学のスケッチブック | `rtx5060lp` | 2026-10-06 | 未校閲 | 🎨 (kenomac-mini) |
-| #19 | `ep19-mof-porous-coordination-polymers-carbon-capture` | 角砂糖ひと粒にサッカー場が広がる結晶――空気から水と未来を集める化学 | `rtx5060lp` | 2026-10-06 | 未校閲 | 🎨 (kenomac-mini) |

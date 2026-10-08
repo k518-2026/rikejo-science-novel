@@ -326,13 +326,25 @@
   {
     "no": 28,
     "work_id": "ep28-ice-core-paleoclimate-isotope-earth-science",
-    "title": "氷床の時空を歩く――80 万年の記憶が語る地球の色",
+    "title": "南極の氷が語る 80 万年前の世界――同位体比の羅針盤で読み解く地球の記憶",
     "faculty": "理学部・地球惑星環境学科 ／ 極地雪氷研究センター（古気候・同位体地球化学研究室）",
     "field": "化学・薬学・材料",
     "theme": "南極氷床コアの酸素・水素安定同位体比解析と気泡内古大気分析による80万年の気候変動復元",
-    "has_image": true,
+    "has_image": false,
     "url": "stories/ep28-ice-core-paleoclimate-isotope-earth-science.html",
-    "image": "assets/images/ep28-ice-core-paleoclimate-isotope-earth-science.png",
-    "char_count": 6981
+    "image": "",
+    "char_count": 7285
+  },
+  {
+    "no": 29,
+    "work_id": "ep29-artificial-photosynthesis-photocatalyst-chemistry",
+    "title": "太陽と水から未来の燃料を醸す葉っぱ――光触媒が紡ぐ Z スキームのパズル",
+    "faculty": "工学部・応用化学科 ／ 人工光合成研究センター（光触媒・太陽エネルギー変換研究室）",
+    "field": "化学・薬学・材料",
+    "theme": "半導体光触媒（ホンダ・フジシマ効果）とZスキーム型人工光合成による太陽光水分解水素製造・CO2資源化",
+    "has_image": false,
+    "url": "stories/ep29-artificial-photosynthesis-photocatalyst-chemistry.html",
+    "image": "",
+    "char_count": 6837
   }
 ]

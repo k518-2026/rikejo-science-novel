@@ -330,9 +330,9 @@
     "faculty": "理学部・地球惑星環境学科 ／ 極地雪氷研究センター（古気候・同位体地球化学研究室）",
     "field": "化学・薬学・材料",
     "theme": "南極氷床コアの酸素・水素安定同位体比解析と気泡内古大気分析による80万年の気候変動復元",
-    "has_image": false,
+    "has_image": true,
     "url": "stories/ep28-ice-core-paleoclimate-isotope-earth-science.html",
-    "image": "",
+    "image": "assets/images/ep28-ice-core-paleoclimate-isotope-earth-science.png",
     "char_count": 7285
   },
   {

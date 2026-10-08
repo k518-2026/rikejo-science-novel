@@ -322,5 +322,17 @@
     "url": "stories/ep27-autonomous-driving-slam-bayesian-informatics.html",
     "image": "assets/images/ep27-autonomous-driving-slam-bayesian-informatics.png",
     "char_count": 6796
+  },
+  {
+    "no": 28,
+    "work_id": "ep28-ice-core-paleoclimate-isotope-earth-science",
+    "title": "氷床の時空を歩く――80 万年の記憶が語る地球の色",
+    "faculty": "理学部・地球惑星環境学科 ／ 極地雪氷研究センター（古気候・同位体地球化学研究室）",
+    "field": "化学・薬学・材料",
+    "theme": "南極氷床コアの酸素・水素安定同位体比解析と気泡内古大気分析による80万年の気候変動復元",
+    "has_image": true,
+    "url": "stories/ep28-ice-core-paleoclimate-isotope-earth-science.html",
+    "image": "assets/images/ep28-ice-core-paleoclimate-isotope-earth-science.png",
+    "char_count": 6975
   }
 ]

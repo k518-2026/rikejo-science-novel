@@ -2,38 +2,41 @@
   "project_id": "03e1e31e-29c5-4db4-b211-06e49e17b8bd",
   "project_name": "rikejo-science-novel",
   "project_title": "放課後サイエンス・キャンパス",
-  "updated_at": "2026-10-08T20:57:49.159399+09:00",
+  "updated_at": "2026-10-08T21:37:40.942536+09:00",
   "roles": {
     "rtx5060lp": {
       "node": "rtx5060lp",
       "role": "primary_writer",
       "host": "http://rtx5060lp:11434",
       "fallback_host": "http://192.168.128.62:11434",
+      "local_host": "http://localhost:11434",
       "director_model": "qwen3.5:9b",
       "writer_model": "shosetsu",
       "daily_quota": 3,
-      "description": "プライマリ小説執筆担当（偶数話メイン / 繊細で叙情的な青春科学ノベル調・セカンダリ停止時は自動代替）"
+      "description": "プライマリ小説執筆担当（偶数話メイン / 繊細で叙情的な青春科学ノベル調・単体起動時も自律実行＆セカンダリ停止時は自動代替）"
     },
     "sff7020": {
       "node": "sff7020",
       "role": "secondary_writer",
       "host": "http://sff7020:1234",
       "fallback_host": "http://192.168.128.16:1234",
+      "local_host": "http://localhost:1234",
       "model": "google/gemma-4-26b-a4b-qat",
       "daily_quota": 3,
-      "description": "セカンダリ小説執筆＆プロット・校閲担当（奇数話メイン / 知的スリルと煽りの効いたドラマチック調・プライマリ停止時は自動代替）"
+      "description": "セカンダリ小説執筆＆校閲担当（奇数話メイン / 知的スリルと煽りの効いたドラマチック調・単体起動時も自律実行＆プライマリ停止時は自動代替）"
     },
     "kenomac-mini": {
       "node": "kenomac-mini",
       "role": "illustrator",
       "host": "http://kenomac-mini:7860",
       "fallback_host": "http://192.168.128.59:7860",
+      "local_host": "http://localhost:7860",
       "ollama_host": "http://kenomac-mini:11434",
       "fallback_ollama_host": "http://192.168.128.59:11434",
       "model": "flux_2_klein_base_4b_i8x.ckpt",
       "prompt_model": "gemma4:12b",
       "daily_quota": 5,
-      "description": "FLUX.2 挿絵生成（content/*.png）＆ GitHub Pages（docs/）ビルド更新"
+      "description": "FLUX.2 挿絵生成（content/*.png）＆ GitHub Pages（docs/）ビルド更新（単体起動時もGitHubから未挿絵原稿を取得して自律生成）"
     }
   },
   "tasks": [

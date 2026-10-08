@@ -1,5 +1,5 @@
 param(
-    [string]$Role = "startup-queue",
+    [string]$Role = "auto",
     [int]$Quota = 0,
     [int]$Enqueue = 0,
     [switch]$NoPush
@@ -19,5 +19,5 @@ if ($NoPush) {
     $argsList += "--no-push"
 }
 
-Write-Host "[$(Get-Date -Format 'HH:mm:ss')] Pulling GitHub task queue & running Alternating Local LLM Worker (Role: $Role, Primary: rtx5060lp:11434 <-> Secondary: sff7020:1234)..." -ForegroundColor Cyan
+Write-Host "[$(Get-Date -Format 'HH:mm:ss')] Starting Autonomous GitHub-Synced Local LLM Worker (Host: $env:COMPUTERNAME, Role: $Role)..." -ForegroundColor Cyan
 python @argsList

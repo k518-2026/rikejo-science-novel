@@ -14,9 +14,11 @@ from src.doi_verifier import (
     check_doi_validity,
     clean_doi_string,
     DEFAULT_OLLAMA_HOST,
+    SECONDARY_LLM_HOST,
     FALLBACK_OLLAMA_HOSTS,
     DEFAULT_DIRECTOR_MODEL,
     DEFAULT_WRITER_MODEL,
+    DEFAULT_LM_STUDIO_MODEL,
     DEFAULT_DRAW_THINGS_HOST,
 )
 
@@ -185,10 +187,14 @@ def query_crossref_verified_paper(
 class DualLLMStoryGenerator:
     """
     Collaborative Dual-LLM Novel Writing Engine:
-    - Director LLM (`qwen3.5:9b`, fallback `qwen2.5:14b`): Plot Architecture, Character Consistency, Scientific & Career Commentary
-    - Writer LLM (`gemma4:12b`, fallback `gemma2:9b`): Expressive Sensory Prose, Emotional Dialogue, Light Novel Storytelling
-    Connected to Ollama servers (`http://rtx5060lp:11434` / `http://kenomac-mini:11434`).
+    - Primary Node (`http://rtx5060lp:11434`): Ollama `qwen3.5:9b` (Director) × `shosetsu` (Writer)
+    - Secondary Node (`http://sff7020:1234`): LM Studio `google/gemma-4-26b-a4b-qat` (Dramatic / Expressive Writer & Director)
+    - Illustration Node (`http://kenomac-mini:7860`): Draw Things `FLUX.2 [klein] 4B`
+    Supports alternating episode assignment between Primary (`rtx5060lp`) and Secondary (`sff7020`) with automatic failover.
     """
+
+    PRIMARY_HOSTS = ["http://rtx5060lp:11434", "http://192.168.128.62:11434"]
+    SECONDARY_HOSTS = ["http://sff7020:1234", "http://192.168.128.16:1234"]
 
     def __init__(
         self,
@@ -197,6 +203,7 @@ class DualLLMStoryGenerator:
         writer_model: Optional[str] = None,
         draw_things_host: Optional[str] = None,
         lorebook_path: Path = LOREBOOK_FILE,
+        alternate_hosts: bool = True,
     ):
         raw_host = (ollama_host or os.getenv("OLLAMA_HOST", DEFAULT_OLLAMA_HOST)).strip()
         primary_hosts = [h.strip().rstrip("/") for h in raw_host.split(",") if h.strip()]
@@ -208,9 +215,65 @@ class DualLLMStoryGenerator:
                 self.ollama_hosts.append(fb_clean)
         self.director_model = director_model or os.getenv("OLLAMA_DIRECTOR_MODEL", DEFAULT_DIRECTOR_MODEL)
         self.writer_model = writer_model or os.getenv("OLLAMA_WRITER_MODEL", DEFAULT_WRITER_MODEL)
+        self.lm_studio_model = os.getenv("LM_STUDIO_MODEL", DEFAULT_LM_STUDIO_MODEL)
         self.draw_things_host = (draw_things_host or os.getenv("DRAW_THINGS_HOST", DEFAULT_DRAW_THINGS_HOST)).rstrip("/")
         self.lorebook_path = lorebook_path
         self.lorebook = self._load_lorebook()
+        self.alternate_hosts = alternate_hosts
+        self.last_used_node: Optional[str] = None
+
+    @staticmethod
+    def _is_openai_compatible_host(host: str) -> bool:
+        h = host.lower()
+        return ":1234" in h or "sff7020" in h or "192.168.128.16" in h
+
+    @staticmethod
+    def _node_name_for_host(host: str) -> str:
+        h = host.lower()
+        if "sff7020" in h or "192.168.128.16" in h or ":1234" in h:
+            return "sff7020"
+        return "rtx5060lp"
+
+    def select_alternating_host_for_work(
+        self,
+        work: Dict[str, Any],
+        preferred_node: Optional[str] = None,
+    ) -> str:
+        """
+        Alternates episode assignment between Primary (`rtx5060lp:11434`) and Secondary (`sff7020:1234`):
+        - If `preferred_node` is provided ('rtx5060lp' or 'sff7020'), uses that node first.
+        - Otherwise, if `self.last_used_node` is set in the current batch, switches to the other node.
+        - Otherwise, alternates by `episode_num` (odd episodes -> `sff7020`, even episodes -> `rtx5060lp`).
+        Automatic failover to the other node remains active if the preferred node is offline.
+        """
+        if not self.alternate_hosts and not preferred_node:
+            return self.ollama_host
+
+        target_node = preferred_node or work.get("assigned_writer")
+        if target_node not in ("rtx5060lp", "sff7020"):
+            if self.last_used_node == "rtx5060lp":
+                target_node = "sff7020"
+            elif self.last_used_node == "sff7020":
+                target_node = "rtx5060lp"
+            else:
+                ep_num = int(work.get("episode_num", 1) or 1)
+                target_node = "sff7020" if (ep_num % 2 == 1) else "rtx5060lp"
+
+        if target_node == "sff7020":
+            ordered = self.SECONDARY_HOSTS + self.PRIMARY_HOSTS
+        else:
+            ordered = self.PRIMARY_HOSTS + self.SECONDARY_HOSTS
+
+        for h in self.ollama_hosts:
+            if h not in ordered:
+                ordered.append(h)
+        self.ollama_hosts = ordered
+        self.ollama_host = ordered[0]
+        logger.info(
+            f"[Alternating LLM Scheduler] Episode #{work.get('episode_num', '?')} ('{work.get('id', '')}') "
+            f"assigned to '{target_node}' (primary URL: {self.ollama_host}, fallback ready)"
+        )
+        return target_node
 
     def _load_lorebook(self) -> Dict[str, Any]:
         if self.lorebook_path.exists():
@@ -230,62 +293,85 @@ class DualLLMStoryGenerator:
 
     def check_draw_things_connection(self) -> Dict[str, Any]:
         """Checks connection to Mac mini Draw Things HTTP API server (/sdapi/v1/options)."""
-        try:
-            req = urllib.request.Request(f"{self.draw_things_host}/sdapi/v1/options")
-            with urllib.request.urlopen(req, timeout=5) as res:
-                if res.getcode() == 200:
-                    data = json.loads(res.read().decode("utf-8", errors="ignore"))
-                    return {
-                        "online": True,
-                        "host": self.draw_things_host,
-                        "model": data.get("model", "flux_2_klein_base_4b_i8x.ckpt"),
-                    }
-        except Exception as e:
-            return {
-                "online": False,
-                "host": self.draw_things_host,
-                "error": str(e),
-            }
-        return {"online": False, "host": self.draw_things_host}
+        for candidate in [self.draw_things_host, "http://kenomac-mini:7860", "http://192.168.128.59:7860"]:
+            cand = candidate.rstrip("/")
+            try:
+                req = urllib.request.Request(f"{cand}/sdapi/v1/options")
+                with urllib.request.urlopen(req, timeout=5) as res:
+                    if res.getcode() == 200:
+                        data = json.loads(res.read().decode("utf-8", errors="ignore"))
+                        self.draw_things_host = cand
+                        return {
+                            "online": True,
+                            "host": self.draw_things_host,
+                            "model": data.get("model", "flux_2_klein_base_4b_i8x.ckpt"),
+                        }
+            except Exception:
+                continue
+        return {
+            "online": False,
+            "host": self.draw_things_host,
+            "error": "Unreachable",
+        }
 
     def check_connection(self) -> Dict[str, Any]:
-        """Checks connection to LAN Ollama servers (.62 primary, .59 fallback), auto-resolves optimal installed models, and returns status."""
+        """Checks connection to Primary (rtx5060lp:11434) and Secondary (sff7020:1234) LLM servers and returns status."""
         dt_status = self.check_draw_things_connection()
         last_err = None
         for candidate_host in self.ollama_hosts:
             try:
-                req = urllib.request.Request(f"{candidate_host}/api/tags")
-                with urllib.request.urlopen(req, timeout=5) as res:
-                    if res.getcode() == 200:
-                        data = json.loads(res.read().decode("utf-8", errors="ignore"))
-                        models = [m.get("name", "") for m in data.get("models", []) if m.get("name")]
-                        if candidate_host != self.ollama_host:
-                            logger.info(f"Switched active Ollama host from {self.ollama_host} to {candidate_host}")
-                            self.ollama_host = candidate_host
-                        model_lookup = set(models) | {m.split(":")[0] for m in models}
-                        if self.director_model not in model_lookup:
-                            for cand in ("qwen3.5:9b", "ronbun", "qwen2.5:14b"):
-                                if cand in model_lookup:
-                                    self.director_model = cand
-                                    break
-                        if self.writer_model not in model_lookup:
-                            for cand in ("shosetsu", "gemma4:12b", "gemma2:9b"):
-                                if cand in model_lookup:
-                                    self.writer_model = cand
-                                    break
-                        return {
-                            "online": True,
-                            "host": self.ollama_host,
-                            "models": models,
-                            "director_ready": self.director_model in model_lookup,
-                            "writer_ready": self.writer_model in model_lookup,
-                            "draw_things_online": dt_status.get("online", False),
-                            "draw_things_host": self.draw_things_host,
-                            "draw_things_model": dt_status.get("model", ""),
-                        }
+                if self._is_openai_compatible_host(candidate_host):
+                    req = urllib.request.Request(f"{candidate_host}/v1/models")
+                    with urllib.request.urlopen(req, timeout=5) as res:
+                        if res.getcode() == 200:
+                            data = json.loads(res.read().decode("utf-8", errors="ignore"))
+                            models = [m.get("id", "") for m in data.get("data", []) if m.get("id")]
+                            if candidate_host != self.ollama_host:
+                                logger.info(f"Switched active LLM host from {self.ollama_host} to {candidate_host}")
+                                self.ollama_host = candidate_host
+                            return {
+                                "online": True,
+                                "host": self.ollama_host,
+                                "models": models,
+                                "director_ready": len(models) > 0,
+                                "writer_ready": len(models) > 0,
+                                "draw_things_online": dt_status.get("online", False),
+                                "draw_things_host": self.draw_things_host,
+                                "draw_things_model": dt_status.get("model", ""),
+                            }
+                else:
+                    req = urllib.request.Request(f"{candidate_host}/api/tags")
+                    with urllib.request.urlopen(req, timeout=5) as res:
+                        if res.getcode() == 200:
+                            data = json.loads(res.read().decode("utf-8", errors="ignore"))
+                            models = [m.get("name", "") for m in data.get("models", []) if m.get("name")]
+                            if candidate_host != self.ollama_host:
+                                logger.info(f"Switched active Ollama host from {self.ollama_host} to {candidate_host}")
+                                self.ollama_host = candidate_host
+                            model_lookup = set(models) | {m.split(":")[0] for m in models}
+                            if self.director_model not in model_lookup:
+                                for cand in ("qwen3.5:9b", "ronbun", "qwen2.5:14b"):
+                                    if cand in model_lookup:
+                                        self.director_model = cand
+                                        break
+                            if self.writer_model not in model_lookup:
+                                for cand in ("shosetsu", "gemma4:12b", "gemma2:9b"):
+                                    if cand in model_lookup:
+                                        self.writer_model = cand
+                                        break
+                            return {
+                                "online": True,
+                                "host": self.ollama_host,
+                                "models": models,
+                                "director_ready": self.director_model in model_lookup,
+                                "writer_ready": self.writer_model in model_lookup,
+                                "draw_things_online": dt_status.get("online", False),
+                                "draw_things_host": self.draw_things_host,
+                                "draw_things_model": dt_status.get("model", ""),
+                            }
             except Exception as e:
                 last_err = e
-                logger.debug(f"Ollama check failed on {candidate_host}: {e}")
+                logger.debug(f"LLM check failed on {candidate_host}: {e}")
         return {
             "online": False,
             "host": self.ollama_host,
@@ -309,9 +395,11 @@ class DualLLMStoryGenerator:
         max_retries: int = 3,
         keep_alive: Optional[Any] = None,
     ) -> str:
-        """Calls Ollama /api/chat on LAN (.62 primary, .59 fallback) with the specified model (with think=False and automatic retry)."""
+        """
+        Calls either Ollama (/api/chat on rtx5060lp:11434) or LM Studio OpenAI API
+        (/v1/chat/completions on sff7020:1234 with reasoning_effort='none'), with automatic failover.
+        """
         if model.split(":")[0] == "shosetsu":
-            # Preserve custom Modelfile parameters (temperature, repeat_penalty, top_p, top_k, num_ctx, draft_num_predict)
             opts: Dict[str, Any] = {"num_predict": num_predict}
         else:
             opts = {
@@ -320,7 +408,7 @@ class DualLLMStoryGenerator:
                 "num_ctx": num_ctx,
                 "repeat_penalty": 1.12,
             }
-        payload: Dict[str, Any] = {
+        ollama_payload: Dict[str, Any] = {
             "model": model,
             "messages": messages,
             "stream": False,
@@ -328,32 +416,66 @@ class DualLLMStoryGenerator:
             "options": opts,
         }
         if keep_alive is not None:
-            payload["keep_alive"] = keep_alive
-        data = json.dumps(payload).encode("utf-8")
+            ollama_payload["keep_alive"] = keep_alive
+
         hosts_to_try = [self.ollama_host] + [h for h in self.ollama_hosts if h != self.ollama_host]
         last_err: Optional[Exception] = None
         for attempt in range(1, max_retries + 1):
             for host in hosts_to_try:
-                url = f"{host}/api/chat"
                 try:
-                    req = urllib.request.Request(
-                        url,
-                        data=data,
-                        headers={"Content-Type": "application/json"},
-                        method="POST",
-                    )
-                    with urllib.request.urlopen(req, timeout=timeout) as res:
-                        body = json.loads(res.read().decode("utf-8", errors="ignore"))
-                        if host != self.ollama_host:
-                            logger.info(f"Switched active Ollama host to {host}")
-                            self.ollama_host = host
-                        return body.get("message", {}).get("content", "").strip()
+                    if self._is_openai_compatible_host(host):
+                        url = f"{host}/v1/chat/completions"
+                        oai_messages = list(messages)
+                        if not any(m.get("role") == "system" for m in oai_messages):
+                            oai_messages.insert(0, {"role": "system", "content": WRITER_SYSTEM_PROMPT})
+                        oai_payload = {
+                            "model": self.lm_studio_model,
+                            "messages": oai_messages,
+                            "temperature": temperature,
+                            "max_tokens": num_predict,
+                            "reasoning_effort": "none",
+                            "stream": False,
+                        }
+                        req = urllib.request.Request(
+                            url,
+                            data=json.dumps(oai_payload).encode("utf-8"),
+                            headers={"Content-Type": "application/json"},
+                            method="POST",
+                        )
+                        with urllib.request.urlopen(req, timeout=timeout) as res:
+                            body = json.loads(res.read().decode("utf-8", errors="ignore"))
+                            if host != self.ollama_host:
+                                logger.info(f"Switched active LLM host to {host} (LM Studio: {self.lm_studio_model})")
+                                self.ollama_host = host
+                            self.last_used_node = self._node_name_for_host(host)
+                            choices = body.get("choices", [])
+                            if choices:
+                                msg_obj = choices[0].get("message", {})
+                                content = (msg_obj.get("content") or "").strip()
+                                if content:
+                                    return content
+                            raise RuntimeError(f"Empty content from LM Studio @ {host}")
+                    else:
+                        url = f"{host}/api/chat"
+                        req = urllib.request.Request(
+                            url,
+                            data=json.dumps(ollama_payload).encode("utf-8"),
+                            headers={"Content-Type": "application/json"},
+                            method="POST",
+                        )
+                        with urllib.request.urlopen(req, timeout=timeout) as res:
+                            body = json.loads(res.read().decode("utf-8", errors="ignore"))
+                            if host != self.ollama_host:
+                                logger.info(f"Switched active Ollama host to {host}")
+                                self.ollama_host = host
+                            self.last_used_node = self._node_name_for_host(host)
+                            return body.get("message", {}).get("content", "").strip()
                 except Exception as e:
                     last_err = e
-                    logger.warning(f"Ollama chat call ({model} @ {host}) attempt {attempt}/{max_retries} failed: {e}")
+                    logger.warning(f"LLM chat call ({model} @ {host}) attempt {attempt}/{max_retries} failed: {e}")
             if attempt < max_retries:
                 time.sleep(5 * attempt)
-        raise RuntimeError(f"Ollama chat call ({model}) failed after {max_retries} attempts across {hosts_to_try}: {last_err}")
+        raise RuntimeError(f"LLM chat call ({model}) failed after {max_retries} attempts across {hosts_to_try}: {last_err}")
 
     def _clean_llm_output(self, text: str) -> str:
         """Removes <think> blocks, markdown code fences, unwanted meta scene headers, and repetition loops."""
@@ -986,16 +1108,20 @@ Based on the following Japanese science novel episode, write a single, vivid, de
         custom_plot_override: Optional[str] = None,
         custom_instruction: str = "",
         progress_callback: Optional[Callable[[str], None]] = None,
+        preferred_node: Optional[str] = None,
     ) -> Tuple[str, str, List[str], str]:
         """
-        Runs the full Collaborative Dual-LLM Pipeline:
+        Runs the full Collaborative Dual-LLM Pipeline, alternating between Primary (`rtx5060lp:11434`)
+        and Secondary (`sff7020:1234`) per episode with automatic failover:
         1) Pre-fetches 3 DOI-verified scientific papers via Crossref REST API.
-        2) Director (`qwen3.5:9b`) creates the 4-scene plot blueprint (or uses custom_plot_override).
-        3) Writer (`gemma4:12b`) writes the emotional, sensory-rich light novel prose.
-        4) Director (`qwen3.5:9b`) writes the Science Column & University/Teacher Career Guide.
+        2) Creates the 4-scene plot blueprint (or uses custom_plot_override).
+        3) Writes the Science Column & University/Teacher Career Guide + English illustration prompt.
+        4) Writes the emotional, sensory-rich light novel prose.
         5) Assembles the publication-ready Markdown with YAML frontmatter and verified DOI links.
         Returns: (full_markdown, episode_title, short_refs, plot_blueprint)
         """
+        self.select_alternating_host_for_work(work=work, preferred_node=preferred_node)
+
         if progress_callback:
             progress_callback("Crossref API から実在する査読付き科学論文（DOI）を検索・検証中...")
         verified_papers = self.fetch_verified_references_for_work(work)
@@ -1050,8 +1176,9 @@ Based on the following Japanese science novel episode, write a single, vivid, de
             references_block=references_block,
         )
 
+        active_node = self.last_used_node or self._node_name_for_host(self.ollama_host)
         logger.info(
-            f"[Dual-LLM Complete] '{episode_title}' | Director: {self.director_model} × Writer: {self.writer_model} | "
+            f"[Dual-LLM Complete] '{episode_title}' | Node: {active_node} ({self.ollama_host}) | "
             f"Total chars: {len(full_markdown)} (Novel body: {len(story_body)} chars)"
         )
         return full_markdown, episode_title, short_refs, plot_blueprint

@@ -1,0 +1,48 @@
+name: Enqueue Local LLM Tasks on GitHub
+
+on:
+  schedule:
+    # Weekly on Monday & Tuesday at 09:00 JST (00:00 UTC)
+    - cron: "0 0 * * 1,2"
+  workflow_dispatch:
+    inputs:
+      enqueue_count:
+        description: "Number of episodes to enqueue in data/tasks.json for next PC startup"
+        required: false
+        default: "5"
+
+permissions:
+  contents: write
+
+jobs:
+  enqueue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Enqueue tasks in data/tasks.json & data/TASKS.md
+        env:
+          ENQUEUE_COUNT: ${{ github.event.inputs.enqueue_count || '5' }}
+        run: |
+          python -m src.task_worker --role enqueue --enqueue "${ENQUEUE_COUNT}" --no-push
+
+      - name: Commit and push updated task queue to GitHub
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/tasks.json data/TASKS.md
+          if git diff --staged --quiet; then
+            echo "Task queue already has sufficient queued tasks."
+          else
+            git commit -m "chore(queue): Accumulate tasks on GitHub for PC startup execution"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

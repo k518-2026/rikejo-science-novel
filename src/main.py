@@ -109,12 +109,17 @@ def replenish_stock_if_needed(
     push_to_git: bool = True,
 ) -> List[Path]:
     """
-    Accumulates episodes and Draw Things illustrations on GitHub and publishes them to GitHub Pages (`docs/`):
-    1. Ensures ALL existing episodes in `content/` have their `.png` illustration generated via Mac mini M4 Draw Things.
-    2. Generates new episodes + illustrations via Mac mini M4 (Ollama Qwen3.5 x Gemma4 + Draw Things FLUX.2),
-       automatically designing new catalog themes when needed, and updates `docs/` + `README.md` after each episode.
+    Pulls accumulated tasks (`data/tasks.json`) from GitHub on PC startup or scheduled run,
+    completes any missing illustrations via `kenomac-mini:7860`, and writes queued/due episodes
+    by alternating between Primary (`http://rtx5060lp:11434`) and Secondary (`http://sff7020:1234`).
     """
     from src.site_builder import build_github_pages
+    from src.task_worker import (
+        TASKS_JSON_PATH,
+        default_assigned_writer_for_episode,
+        sync_tasks_manifest,
+        write_tasks_markdown,
+    )
 
     try:
         subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=False)
@@ -123,9 +128,11 @@ def replenish_stock_if_needed(
     except Exception:
         pass
 
+    manifest = sync_tasks_manifest(history_mgr)
+
     conn = generator.check_connection()
     if not conn.get("online"):
-        logger.info(f"Mac mini Ollama ({generator.ollama_host}) is not reachable on LAN; skipping auto-replenish.")
+        logger.info("Neither Primary (rtx5060lp:11434) nor Secondary (sff7020:1234) is reachable on LAN; skipping auto-replenish.")
         return []
 
     generated_assets: List[Path] = []
@@ -148,17 +155,24 @@ def replenish_stock_if_needed(
                     )
                     if saved_img:
                         generated_assets.append(saved_img)
+                        manifest = sync_tasks_manifest(history_mgr)
                         build_github_pages(history_mgr)
                         if push_to_git:
                             git_sync_and_push([saved_img])
 
-    # 2. Determine how many new episodes to generate into the GitHub Pages library
+    # 2. Check GitHub task queue (`status == 'queued'`) first, then weekly quota
+    queued_task_ids = [t["id"] for t in manifest.get("tasks", []) if t.get("status") == "queued"]
     blog_paused = os.environ.get("PAUSE_BLOG_AUTO_POST", "true").strip().lower() in ("1", "true", "yes")
     current_stock = history_mgr.count_unposted_stock()
     ungenerated = history_mgr.count_ungenerated_works()
 
-    if blog_paused:
-        # Weekly Monday/Tuesday batch accumulation mode: 5 episodes per week
+    if queued_task_ids:
+        needed = len(queued_task_ids) if min_stock <= 0 else min(len(queued_task_ids), max(1, min_stock))
+        logger.info(
+            f"[GitHub Task Queue Startup] Found {len(queued_task_ids)} queued task(s) on GitHub (`data/tasks.json`). "
+            f"Executing {needed} episode(s) alternating between rtx5060lp and sff7020..."
+        )
+    elif blog_paused:
         weekly_quota = max(1, min_stock if min_stock > 0 else 5)
         generated_this_week = history_mgr.count_episodes_generated_this_week()
         needed = max(0, weekly_quota - generated_this_week)
@@ -170,9 +184,8 @@ def replenish_stock_if_needed(
             build_github_pages(history_mgr)
         else:
             logger.info(
-                f"[GitHub Pages Weekly Accumulation] Generating {needed} new episode(s) and illustration(s) on Mac mini M4 "
-                f"for this week's {weekly_quota}-episode quota ({generated_this_week}/{weekly_quota} generated this week, "
-                f"{ungenerated} ungenerated theme(s) in catalog)..."
+                f"[GitHub Pages Weekly Accumulation] Generating {needed} new episode(s) alternating between rtx5060lp and sff7020 "
+                f"({generated_this_week}/{weekly_quota} generated this week, {ungenerated} ungenerated in catalog)..."
             )
     else:
         logger.info(f"[Auto-Replenish Check] Unposted stocked episodes: {current_stock} (trigger threshold <= {min_stock}, target = {target_stock})")
@@ -188,13 +201,26 @@ def replenish_stock_if_needed(
             )
             if new_themes:
                 history_mgr.append_catalog_works(new_themes)
+                manifest = sync_tasks_manifest(history_mgr)
                 targets = history_mgr.select_unstocked_works(count=needed)
 
+        task_map = {t["id"]: t for t in manifest.get("tasks", [])}
         for idx, work in enumerate(targets, start=1):
-            logger.info(f"\n=== [Auto-Replenish {idx}/{len(targets)}] Dual-LLM Generating: {work['title']} ===")
+            t_entry = task_map.get(work["id"], {})
+            preferred_writer = t_entry.get("assigned_writer") or default_assigned_writer_for_episode(
+                int(work.get("episode_num", idx))
+            )
+            logger.info(
+                f"\n=== [Auto-Replenish {idx}/{len(targets)}] Alternating Dual-Node Generating: "
+                f"{work['title']} (Assigned: {preferred_writer}) ==="
+            )
             try:
                 ep_assets: List[Path] = []
-                full_md, ep_title, refs, _ = generator.generate_complete_episode(work=work)
+                full_md, ep_title, refs, _ = generator.generate_complete_episode(
+                    work=work,
+                    preferred_node=preferred_writer,
+                )
+                actual_writer = generator.last_used_node or preferred_writer
                 today_str = datetime.now(JST).strftime("%Y-%m-%d")
                 safe_id = work["id"].replace("-", "_")
                 out_path = Path(f"content/{today_str}_{safe_id}.md")
@@ -202,7 +228,11 @@ def replenish_stock_if_needed(
                 out_path.write_text(full_md, encoding="utf-8")
                 generated_assets.append(out_path)
                 ep_assets.append(out_path)
-                logger.info(f"Saved episode: {out_path} ('{ep_title}')")
+                logger.info(f"Saved episode: {out_path} ('{ep_title}', written_by={actual_writer})")
+
+                if work["id"] in task_map:
+                    task_map[work["id"]]["written_by"] = actual_writer
+                    task_map[work["id"]]["written_at"] = datetime.now(JST).isoformat()
 
                 img_out_path = out_path.with_suffix(".png")
                 saved_img, _ = generator.generate_illustration(
@@ -215,6 +245,10 @@ def replenish_stock_if_needed(
                     generated_assets.append(saved_img)
                     ep_assets.append(saved_img)
 
+                manifest["updated_at"] = datetime.now(JST).isoformat()
+                TASKS_JSON_PATH.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                manifest = sync_tasks_manifest(history_mgr)
+                write_tasks_markdown(manifest)
                 build_github_pages(history_mgr)
                 if push_to_git and ep_assets:
                     git_sync_and_push(ep_assets)

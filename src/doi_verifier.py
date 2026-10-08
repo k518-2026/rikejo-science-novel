@@ -10,14 +10,16 @@ import logging
 logger = logging.getLogger(__name__)
 
 DEFAULT_OLLAMA_HOST = "http://rtx5060lp:11434"
+SECONDARY_LLM_HOST = "http://sff7020:1234"
 FALLBACK_OLLAMA_HOSTS = [
     "http://rtx5060lp:11434",
     "http://192.168.128.62:11434",
-    "http://kenomac-mini:11434",
-    "http://192.168.128.59:11434",
+    "http://sff7020:1234",
+    "http://192.168.128.16:1234",
 ]
 DEFAULT_DIRECTOR_MODEL = "qwen3.5:9b"
 DEFAULT_WRITER_MODEL = "shosetsu"
+DEFAULT_LM_STUDIO_MODEL = "google/gemma-4-26b-a4b-qat"
 DEFAULT_DRAW_THINGS_HOST = "http://kenomac-mini:7860"
 
 

@@ -723,5 +723,280 @@
         "query": "Hisatomi Kubota Domen Recent advances in semiconductors for photocatalytic and photoelectrochemical water splitting Chemical Society Reviews 2014"
       }
     ]
+  },
+  {
+    "id": "ep30-graph-theory-four-color-theorem-math-teacher",
+    "episode_num": 30,
+    "title": "白地図を彩る四色の魔法――グラフ理論とコンピュータが証明した数学のパズル",
+    "faculty": "理学部・数学科 ／ 教育学部・数学教育専攻（離散数学・グラフ理論研究室）",
+    "protagonist": "彩瀬 七海（あやせ ななみ・高校2年生・美術部兼数学同好会）",
+    "mentor": "染谷 凛（そめや りん・大学院生・離散数学専攻／中学・高校数学教員免許取得見込）",
+    "theme": "四色定理（Appel & Haken）とグラフ彩色問題・計算機援用証明（形式検証 Coq）と数学教育",
+    "modern_tech": "平面グラフの四彩色定理、不可避集合と可約性の計算機探索、定理証明支援系（Coq）による形式証明（Gonthier）",
+    "summary": "文化祭の案内マップを色分けしていた七海は、「どんなに複雑な地図でも4色あれば隣り合う領域を違う色で塗れる」という不思議な法則に気づく。大学院生の凛先輩は、複雑な地図を『点（頂点）と線（辺）』のシンプルなネットワーク（平面グラフ）に変換するグラフ理論の魔法を黒板で実演し、100年以上数学者を悩ませた『四色問題』が人間とコンピュータの協力で証明されたドラマを語る。",
+    "crossref_queries": [
+      {
+        "label": "すべての平面地図は4色で塗り分け可能であることの証明（Appel & Haken / 四色定理）",
+        "query": "Appel Haken Every planar map is four colorable Bulletin of the American Mathematical Society 1976"
+      },
+      {
+        "label": "四色定理の簡略化された新しい証明アルゴリズム（Robertson, Sanders, Seymour & Thomas）",
+        "query": "Robertson Sanders Seymour Thomas The four-colour theorem Journal of Combinatorial Theory Series B 1997"
+      },
+      {
+        "label": "定理証明支援系による四色定理の完全な形式証明（Gonthier）",
+        "query": "Gonthier Formal proof the four-color theorem Notices of the American Mathematical Society 2008"
+      }
+    ]
+  },
+  {
+    "id": "ep31-exoplanet-transit-spectroscopy-astronomy",
+    "episode_num": 31,
+    "title": "幾千光年かなたの星のまばたき――系外惑星トランジット法と生命のサイン",
+    "faculty": "理学部・宇宙地球物理学科 ／ 天文学専攻（太陽系外惑星・宇宙生物学研究室）",
+    "protagonist": "星野 昴（ほしの すばる・高校2年生・天文部）",
+    "mentor": "天城 遥（あまぎ はるか・助教・系外惑星天文学／高校地学・物理教育連携担当）",
+    "theme": "太陽系外惑星のトランジット法・視線速度法（Mayor & Queloz）と透過分光による惑星大気バイオシグネチャ探査",
+    "modern_tech": "トランジット測光曲線解析、ドップラー分光法（視線速度法）、ジェイムズ・ウェッブ宇宙望遠鏡（JWST）による系外惑星大気透過スペクトル観測",
+    "summary": "大学の屋上天文台で恒星の明るさを記録していた昴は、星が数時間だけほんの1パーセント暗くなる周期的な『まばたき』を見つける。遥助教は、それが遠い恒星の前を見えない惑星が横切る『トランジット現象』であり、惑星の空気を通り抜けてきた星の光（透過スペクトル）を虹色に分けることで、何十光年も離れた惑星の空に水蒸気や酸素があるかまでわかることを教えてくれる。",
+    "crossref_queries": [
+      {
+        "label": "太陽型恒星を公転する初の太陽系外惑星（ペガスス座51番星b）の発見（Mayor & Queloz / 2019年ノーベル物理学賞）",
+        "query": "Mayor Queloz A Jupiter-mass companion to a solar-type star Nature 1995"
+      },
+      {
+        "label": "太陽系外惑星のトランジット（食）観測による半径と質量の決定（Charbonneau et al.）",
+        "query": "Charbonneau Brown Noyes Gilliland Detection of Planetary Transits Across a Sun-like Star Astrophysical Journal 2000"
+      },
+      {
+        "label": "系外惑星大気の透過分光観測とバイオシグネチャ探査の理論と展望（Seager & Deming）",
+        "query": "Seager Deming Exoplanet Atmospheres Annual Review of Astronomy and Astrophysics 2010"
+      }
+    ]
+  },
+  {
+    "id": "ep32-gut-microbiome-brain-axis-bioscience",
+    "episode_num": 32,
+    "title": "お腹の中の小さな森が心を醸す――腸内フローラと『脳腸相関』の生命科学",
+    "faculty": "農学部・応用生命化学科 ／ 薬学部・微生物薬品化学研究室（腸内細菌叢・神経免疫学）",
+    "protagonist": "発酵 みのり（はっこう みのり・高校1年生・家庭科部）",
+    "mentor": "善玉 優香（ぜんだま ゆうか・准教授・腸内環境科学／高校生物・家庭科教員研修講師）",
+    "theme": "腸内マイクロバイオーム（腸内細菌叢）が産生する短鎖脂肪酸・神経伝達物質前駆体と迷走神経を介した脳腸相関（Gut-Brain Axis）",
+    "modern_tech": "16S rRNAメタゲノム解析、酪酸・プロピオン酸などの短鎖脂肪酸（SCFA）による制御性T細胞誘導と迷走神経シグナル、脳腸相関",
+    "summary": "大事な発表の前に緊張するとお腹が痛くなる理由を知りたかったみのり。優香准教授の研究室で、人間の腸内には約40兆個もの微生物が暮らす『生態系（マイクロバイオーム）』が広がっており、食物繊維から作られる短鎖脂肪酸などの分子が迷走神経を通じて脳の安心感や免疫まで支えている『脳腸相関』の仕組みを知る。",
+    "crossref_queries": [
+      {
+        "label": "腸内細菌叢（マイクロバイオータ）と脳・行動を結ぶ『脳腸相関』の分子機構（Cryan & Dinan）",
+        "query": "Cryan Dinan Mind-altering microorganisms the impact of the gut microbiota on brain and behaviour Nature Reviews Neuroscience 2012"
+      },
+      {
+        "label": "腸内細菌が産生する酪酸（短鎖脂肪酸）による大腸制御性T細胞の分化誘導（Furusawa, Honda et al. / Nature 2013）",
+        "query": "Furusawa Obata Fukuda Endo Nakato Takahashi Nakanishi Uetake Katoisho Honda Commensal microbe-derived butyrate induces the differentiation of colonic regulatory T cells Nature 2013"
+      },
+      {
+        "label": "ヒトマイクロバイオームの構造・機能と多様性（Human Microbiome Project Consortium）",
+        "query": "Human Microbiome Project Consortium Structure function and diversity of the healthy human microbiome Nature 2012"
+      }
+    ]
+  },
+  {
+    "id": "ep33-origami-engineering-miura-ori-space-solar-sail",
+    "episode_num": 33,
+    "title": "一枚の折り紙が宇宙で翼を広げる日――ミウラ折りと折紙工学の幾何学",
+    "faculty": "工学部・航空宇宙工学科 ／ 先端学際工学専攻（折紙工学・展開構造物研究室）",
+    "protagonist": "折原 千鶴（おりはら ちづる・高校2年生・数学研究部）",
+    "mentor": "三浦 翼（みうら つばさ・特任講師・宇宙構造工学／数学・情報教職課程アドバイザー）",
+    "theme": "剛体折紙の幾何学（ミウラ折り・川崎の定理・前川の定理）と宇宙太陽発電パネル・医療ステントへの工学的応用",
+    "modern_tech": "ミウラ折り（剛体折紙による1自由度展開機構）、平坦折り可能性の数学定理（川崎の定理・前川の定理）、宇宙展開構造物・メタマテリアル設計",
+    "summary": "日本の伝統的な折り紙が、どうして最先端の宇宙工学や医療機器に使われているのだろう？ 千鶴が訪れた宇宙構造研究室では、対角線をつまんで引くだけで一瞬で開閉する『ミウラ折り』の太陽電池パネル模型が動いていた。頂点に集まる折り線の角度の和が必ず180度になる『川崎の定理』など、折り紙の中に潜む美しい幾何学の法則に感動する。",
+    "crossref_queries": [
+      {
+        "label": "剛体折紙『ミウラ折り』による折り畳み地図と宇宙展開構造物の設計原理（三浦公亮）",
+        "query": "Miura Method of packaging for deployable membrane space structures International Astronautical Congress 1985"
+      },
+      {
+        "label": "ミウラ折り構造が持つ特異な機械的メタマテリアル特性（負のポアソン比）の解明（Wei, Mahadevan et al.）",
+        "query": "Wei Guo Dudte Liang Mahadevan Geometric mechanics of periodic pleated origami Physical Review Letters 2013"
+      },
+      {
+        "label": "折紙のアルゴリズムと計算幾何学的折りたたみ理論（Demaine & O'Rourke）",
+        "query": "Silverberg Evans McLeod Hayward Hull Santangelo Gerbode Cohen Using origami design principles to fold reprogrammable mechanical metamaterials Science 2014"
+      }
+    ]
+  },
+  {
+    "id": "ep34-bioluminescence-gfp-live-cell-imaging",
+    "episode_num": 34,
+    "title": "オワンクラゲの緑の灯火――GFPが照らし出す生きた細胞の小宇宙",
+    "faculty": "理学部・生物科学科 ／ 生命機能イメージング研究センター（分子細胞生物学研究室）",
+    "protagonist": "水無月 蛍（みなづき ほたる・高校2年生・生物部）",
+    "mentor": "下村 碧（しもむら みどり・准教授・生物発光イメージング／高校生物教育推進担当）",
+    "theme": "緑色蛍光タンパク質（GFP / 下村脩博士ら）の発見と生細胞ライブイメージングによる生命現象の可視化",
+    "modern_tech": "緑色蛍光タンパク質（GFP）の発光団形成機構、遺伝子融合レポーターによる生細胞内タンパク質動態追跡、蛍光共鳴エネルギー移動（FRET）バイオセンサー",
+    "summary": "暗室の蛍光顕微鏡を覗き込んだ蛍の目に、エメラルドグリーンに輝く神経細胞のネットワークが飛び込んでくる。かつては細胞を固定して染めることしかできなかった生物学に、『生きたまま細胞の中で働くタンパク質に光る名札をつける』革命をもたらしたオワンクラゲの緑色蛍光タンパク質（GFP）の物語と、地道な基礎研究が世界を変えた感動を知る。",
+    "crossref_queries": [
+      {
+        "label": "発光クラゲ（オワンクラゲ）からのイクオリンおよび緑色蛍光タンパク質の発見・抽出（Shimomura, Johnson & Saiga / 2008年ノーベル化学賞）",
+        "query": "Shimomura Johnson Saiga Extraction purification and properties of aequorin a bioluminescent protein from the luminous hydromedusan Aequorea Journal of Cellular and Comparative Physiology 1962"
+      },
+      {
+        "label": "緑色蛍光タンパク質（GFP）を生きた生物の遺伝子発現マーカーとして用いる画期的手法の確立（Chalfie et al. / Science 1994）",
+        "query": "Chalfie Tu Euskirchen Ward Prasher Green fluorescent protein as a marker for gene expression Science 1994"
+      },
+      {
+        "label": "緑色蛍光タンパク質（GFP）の生化学的特徴と多彩な蛍光変異体の創製（Tsien / 2008年ノーベル化学賞）",
+        "query": "Tsien The green fluorescent protein Annual Review of Biochemistry 1998"
+      }
+    ]
+  },
+  {
+    "id": "ep35-error-correcting-codes-reed-solomon-space-probe",
+    "episode_num": 35,
+    "title": "傷ついたQRコードと深宇宙からの手紙――誤り訂正符号の代数幾何学",
+    "faculty": "情報理工学部・数理情報工学科 ／ 教育学部・情報科教育専攻（符号理論・情報理論研究室）",
+    "protagonist": "符号 琴音（ふごう ことね・高校1年生・情報処理部）",
+    "mentor": "香農 結衣（しゃのん ゆい・准教授・情報理論・符号理論／高校「情報I・II」教科書編集委員）",
+    "theme": "シャノンの情報理論とハミング符号・リード・ソロモン符号による誤り訂正アルゴリズム（QRコード・小惑星探査機通信）",
+    "modern_tech": "通信路符号化定理（シャノン）、パリティ検査行列とハミング符号、有限体（ガロア体）上の多項式を用いたリード・ソロモン符号",
+    "summary": "雨粒で一部が汚れてしまった文化祭ポスターのQRコードが、スマホをかざすと一瞬で正しく読み取れたことに驚いた琴音。結衣准教授は、それが数億キロ離れた宇宙探査機ボイジャーやはやぶさ2がノイズだらけの宇宙空間から地球へ鮮明な画像を送るためにも使われている『誤り訂正符号（リード・ソロモン符号）』の数学であることを、高校の多項式を使ってわかりやすく解き明かす。",
+    "crossref_queries": [
+      {
+        "label": "通信の数学的理論と誤りのない情報伝送の限界（Claude Shannon / 情報理論の創始）",
+        "query": "Shannon A mathematical theory of communication Bell System Technical Journal 1948"
+      },
+      {
+        "label": "誤り検出および誤り訂正符号の構築（Richard Hamming / ハミング符号）",
+        "query": "Hamming Error detecting and error correcting codes Bell System Technical Journal 1950"
+      },
+      {
+        "label": "有限体上の多項式を用いたリード・ソロモン符号の提案（Reed & Solomon / QRコードや深宇宙通信の基盤）",
+        "query": "Reed Solomon Polynomial codes over certain finite fields Journal of the Society for Industrial and Applied Mathematics 1960"
+      }
+    ]
+  },
+  {
+    "id": "ep36-superconductivity-meissner-quantum-levitation",
+    "episode_num": 36,
+    "title": "液体窒素の白い霧と空中に浮かぶ磁石――超伝導と量子ピン止め効果の物理",
+    "faculty": "理学部・物理学科 ／ 物性物理学研究所（低温物理・超伝導物質研究室）",
+    "protagonist": "磁場 あかり（じば あかり・高校2年生・物理部）",
+    "mentor": "朝永 玲奈（ともなが れいな・助教・凝縮系物理学／高校物理実験ワークショップ講師）",
+    "theme": "超伝導現象（電気抵抗ゼロ・マイスナー効果・磁束の量子化）とクーパー対（BCS理論）・リニアモーターカーや量子コンピュータへの応用",
+    "modern_tech": "BCS理論（電子のクーパー対形成とマクロな量子凝縮状態）、マイスナー効果と第II種超伝導体における量子磁束ピン止め、超伝導量子干渉計（SQUID）",
+    "summary": "液体窒素で冷やした黒いセラミックスの円盤の上にネオジム磁石を置くと、磁石が空中にピタリと浮かび、さらにはレールを逆さまにしても落ちずに滑り続ける！ あかりの目の前で起きた『量子浮上（磁束ピン止め効果）』の不思議から、普段は反発し合う電子たちが結晶の振動を仲立ちに手をつなぐ『クーパー対（BCS理論）』の美しい量子力学の世界を学ぶ。",
+    "crossref_queries": [
+      {
+        "label": "超伝導の微視的理論：電子対（クーパー対）による巨視的量子凝縮の解明（Bardeen, Cooper & Schrieffer / BCS理論）",
+        "query": "Bardeen Cooper Schrieffer Theory of superconductivity Physical Review 1957"
+      },
+      {
+        "label": "銅酸化物系における高温超伝導の発見（Bednorz & Muller / 1987年ノーベル物理学賞）",
+        "query": "Bednorz Muller Possible high Tc superconductivity in the Ba-La-Cu-O system Zeitschrift fur Physik B Condensed Matter 1986"
+      },
+      {
+        "label": "鉄系高温超伝導物質（LaFeAsO1-xFx）の発見（細野秀雄教授らの研究 / JACS 2008）",
+        "query": "Kamihara Watanabe Hirano Hosono Iron-based layered superconductor LaO1-xFxFeAs with Tc = 26 K Journal of the American Chemical Society 2008"
+      }
+    ]
+  },
+  {
+    "id": "ep37-circadian-rhythm-clock-genes-chronobiology",
+    "episode_num": 37,
+    "title": "朝顔が咲く時刻を刻む細胞の振り子――時計遺伝子と体内時計の生物学",
+    "faculty": "理学部・生物科学科 ／ 生命理学専攻（時間生物学・概日リズム研究室）",
+    "protagonist": "朝比奈 陽葵（あさひな ひまり・高校1年生・園芸部）",
+    "mentor": "時任 麻衣（ときとう まい・准教授・時間生物学／中学・高校理科教育課程担当）",
+    "theme": "概日リズム（サーカディアンリズム）を生み出す時計遺伝子（Period / Timeless / Clock / Bmal1）の転写翻訳負帰還ループ",
+    "modern_tech": "時計遺伝子（Period, Cryptochrome, Clock, Bmal1）の転写・翻訳ネガティブフィードバックループ、視交叉上核（SCN）の光同調、時間薬理学（クロノセラピー）",
+    "summary": "真っ暗な部屋に置いたオジギソウや朝顔が、太陽が見えないはずなのに朝になるとちゃんと葉を開くのはなぜ？ 陽葵の素朴な疑問から、すべての生き物の細胞の中に『自分で作って自分でブレーキをかけるタンパク質（時計遺伝子）』の24時間周期の振り子が備わっていることを知り、朝日を浴びることの大切さや薬が最も効く時刻を探る『時間生物学』の魅力に目覚める。",
+    "crossref_queries": [
+      {
+        "label": "ショウジョウバエの概日リズムを制御する時計遺伝子Periodの同定と分子機構（Hall, Rosbash & Young / 2017年ノーベル生理学・医学賞）",
+        "query": "Hardin Hall Rosbash Feedback of the Drosophila period gene product on circadian cycling of its messenger RNA levels Nature 1990"
+      },
+      {
+        "label": "哺乳類における時計遺伝子Clockの単離と概日リズム制御機構の解明（Takahashi et al.）",
+        "query": "King Zhao Sangoram Wilsbacher Tanaka Antoch Steeves Vitaterna Kornhauser Lowrey Turek Takahashi Positional cloning of the mouse circadian clock gene Cell 1997"
+      },
+      {
+        "label": "シアノバクテリアの3つの時計タンパク質（KaiA, KaiB, KaiC）とATPだけで試験管内に再構成された24時間化学振動（近藤孝男教授らの研究 / Science 2005）",
+        "query": "Nakajima Imai Ito Nishiwaki Murayama Iwasaki Oyama Kondo Reconstitution of circadian oscillation of cyanobacterial KaiC phosphorylation in vitro Science 2005"
+      }
+    ]
+  },
+  {
+    "id": "ep38-causal-inference-natural-experiment-data-science",
+    "episode_num": 38,
+    "title": "アイスクリームが売れると水難事故が増える？――相関と因果を見抜く統計学",
+    "faculty": "データサイエンス学部 ／ 経済・数理統計学科（統計的因果推論・教育データ科学研究室）",
+    "protagonist": "数見 真白（かずみ ましろ・高校2年生・生徒会調査係）",
+    "mentor": "検証 聡美（けんしょう さとみ・准教授・統計的因果推論／高校数学「データの分析」・情報科連携講師）",
+    "theme": "疑似相関（交絡因子）の排除と統計的因果推論（反事実モデル・傾向スコア・差分の差分法・回帰不連続デザイン）",
+    "modern_tech": "ルービンの因果モデル（潜在的結果変数のフレームワーク）、パールの構造的因果モデル（DAG・バックドア基準）、自然実験（差分の差分法 DiD・操作変数法）",
+    "summary": "生徒会アンケートで『図書室の利用回数が多い生徒ほど数学の成績が高い』というグラフを見つけた真白。「全員を図書室に行かせれば成績が上がる！」と結論づけそうになった彼女に、聡美准教授は『相関関係は因果関係ではない（第3の要因＝交絡因子）』という統計学の最も大切な知恵と、タイムマシンがなくても「もし〜だったら」の因果効果をデータから正しく推論する『統計的因果推論』の技法を伝授する。",
+    "crossref_queries": [
+      {
+        "label": "観察研究における因果効果推定のための潜在的結果変数モデル（Donald Rubin / ルービン因果モデル）",
+        "query": "Rubin Estimating causal effects of treatments in randomized and nonrandomized studies Journal of Educational Psychology 1974"
+      },
+      {
+        "label": "観察研究において交絡バイアスを調整する『傾向スコア（Propensity Score）』の中心的な役割（Rosenbaum & Rubin）",
+        "query": "Rosenbaum Rubin The central role of the propensity score in observational studies for causal effects Biometrika 1983"
+      },
+      {
+        "label": "自然実験を用いた因果関係の検証と労働経済・社会データ分析（Angrist, Card & Imbens / 2021年ノーベル経済学賞関連）",
+        "query": "Angrist Imbens Rubin Identification of causal effects using instrumental variables Journal of the American Statistical Association 1996"
+      }
+    ]
+  },
+  {
+    "id": "ep39-metamaterials-acoustic-cloaking-wave-physics",
+    "episode_num": 39,
+    "title": "光と音を曲げる透明マントの設計図――メタマテリアルと波動の幾何学",
+    "faculty": "工学部・物理工学科 ／ 先端フォトニクス・音響工学研究センター（波動メタマテリアル研究室）",
+    "protagonist": "波多野 響（はたの ひびき・高校2年生・吹奏楽部）",
+    "mentor": "屈折 詩織（くっせつ しおり・准教授・光・音響メタマテリアル／高校物理・数学アウトリーチ担当）",
+    "theme": "負の屈折率を持つ人工微細構造『メタマテリアル』と変換光学・音響メタマテリアルによる防音・超解像レンズ",
+    "modern_tech": "波長より小さな周期構造によるメタマテリアル（負の誘電率・透磁率）、変換光学（Transformation Optics）によるクローキング（透明マント）、音響メタマテリアルとフラットレンズ（メタレンズ）",
+    "summary": "吹奏楽部の練習室の窓を開けても外に音が漏れず、風だけが通る不思議な格子パネルを見学した響。詩織准教授は、物質の『化学成分』ではなく、波長よりも小さな『ミクロな幾何学の形（メタマテリアル）』をデザインすることで、自然界ではあり得ない方向へ光や音波を曲げたり、回折限界を超えた極薄レンズを作ったりできる物理工学の最前線を見せてくれる。",
+    "crossref_queries": [
+      {
+        "label": "電磁波の進行を自在に制御し物体を不可視化する『変換光学（クローキング）』の理論（Pendry, Schurig & Smith / Science 2006）",
+        "query": "Pendry Schurig Smith Controlling electromagnetic fields Science 2006"
+      },
+      {
+        "label": "マイクロ波領域におけるメタマテリアル不可視化クロークの実験的実証（Schurig et al. / Science 2006）",
+        "query": "Schurig Mock Justice Cummer Pendry Starr Smith Metamaterial electromagnetic cloak at microwave frequencies Science 2006"
+      },
+      {
+        "label": "可視光領域で回折限界に迫る平面メタサーフェス・レンズ（メタレンズ）の実現（Khorasaninejad & Capasso / Science 2016）",
+        "query": "Khorasaninejad Chen Devlin Oh Zhu Capasso Metalenses at visible wavelengths Diffraction-limited focusing and subwavelength resolution imaging Science 2016"
+      }
+    ]
+  },
+  {
+    "id": "ep40-explainable-ai-medical-imaging-informatics-teacher",
+    "episode_num": 40,
+    "title": "AIの『まなざし』を言葉に翻訳する――説明可能なAI（XAI）と信頼のアルゴリズム",
+    "faculty": "情報学部・知能情報学科 ／ 教育学部・情報教育課程（人間中心AI・医療画像解析研究室）",
+    "protagonist": "真鍋 結（まなべ ゆい・高校2年生・パソコン部）",
+    "mentor": "明智 希（あけち のぞみ・准教授・説明可能AI・人間中心情報学／高校「情報」教員養成主担当）",
+    "theme": "深層学習のブラックボックス問題と説明可能なAI（Explainable AI: Grad-CAM / SHAP / 協力ゲーム理論のシャープレイ値）",
+    "modern_tech": "畳み込みニューラルネットワークの視覚的根拠可視化（Grad-CAM）、協力ゲーム理論に基づく特徴量寄与度算出（SHAP / シャープレイ値）、人間とAIの協働意思決定",
+    "summary": "「AIが99パーセントの確率で正しいと答えても、どうしてそう判断したのか理由がわからなかったら、お医者さんや先生は安心して使えるかな？」――希准教授の問いかけにハッとする結。AIが画像のどこに注目したかをヒートマップで映し出す『Grad-CAM』や、経済学の協力ゲーム理論（シャープレイ値）を応用して各データの貢献度を公平に計算する『SHAP』を学び、人とAIを信頼でつなぐ情報科の先生になる夢を見つける。",
+    "crossref_queries": [
+      {
+        "label": "深層ニューラルネットワークの判断根拠を勾配情報から視覚化する『Grad-CAM』（Selvaraju et al.）",
+        "query": "Selvaraju Cogswell Das Vedantam Parikh Batra Grad-CAM Visual explanations from deep networks via gradient-based localization International Conference on Computer Vision 2017"
+      },
+      {
+        "label": "協力ゲーム理論のシャープレイ値を用いてあらゆる機械学習モデルの予測根拠を統一的に説明する『SHAP』（Lundberg & Lee）",
+        "query": "Lundberg Lee A unified approach to interpreting model predictions Advances in Neural Information Processing Systems 2017"
+      },
+      {
+        "label": "任意の分類器の予測を局所的な線形近似によって人間が理解可能な形で説明する『LIME』（Ribeiro, Singh & Guestrin）",
+        "query": "Ribeiro Singh Guestrin Why should I trust you Explaining the predictions of any classifier Knowledge Discovery and Data Mining 2016"
+      }
+    ]
   }
-]
+]

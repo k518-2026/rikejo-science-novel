@@ -130,5 +130,20 @@
       "Vollrath, F., Knight, D. P. (2001). Liquid crystalline spinning of spider silk. *Nature*, 410(6828), 541-548. [https://doi.org/10.1038/35069000](https://doi.org/10.1038/35069000)",
       "Schmuck, B., Greco, G., Bäcklund, F. G., Pugno, N. M., Johansson, J., Rising, A. (2022). Impact of physio-chemical spinning conditions on the mechanical properties of biomimetic spider silk fibers. *Communications Materials*, 3(1). [https://doi.org/10.1038/s43246-022-00307-6](https://doi.org/10.1038/s43246-022-00307-6)"
     ]
+  },
+  {
+    "work_id": "ep10-perovskite-solar-window",
+    "episode_num": 10,
+    "faculty": "理工学部・応用化学科（次世代エネルギー材料研究室）",
+    "theme": "ペロブスカイト太陽電池（塗布型・半透明・フレキシブル光電変換素子）",
+    "episode_title": "雨上がりのステンドグラスは太陽を醸す〜黄色い液体が織りなす、光の結晶の世界へようこそ！",
+    "posted_at": "2026-10-10T07:10:00.052579+09:00",
+    "file_path": "content/2026-10-05_ep10_perovskite_solar_window.md",
+    "status": "publish",
+    "references": [
+      "Kojima, A., Teshima, K., Shirai, Y., Miyasaka, T. (2009). Organometal Halide Perovskites as Visible-Light Sensitizers for Photovoltaic Cells. *Journal of the American Chemical Society*, 131(17), 6050-6051. [https://doi.org/10.1021/ja809598r](https://doi.org/10.1021/ja809598r)",
+      "Green, M. A., Ho-Baillie, A., Snaith, H. J. (2014). The emergence of perovskite solar cells. *Nature Photonics*, 8(7), 506-514. [https://doi.org/10.1038/nphoton.2014.134](https://doi.org/10.1038/nphoton.2014.134)",
+      "Snaith, H. J. (2013). Perovskites: The Emergence of a New Era for Low-Cost, High-Efficiency Solar Cells. *The Journal of Physical Chemistry Letters*, 4(21), 3623-3630. [https://doi.org/10.1021/jz4020162](https://doi.org/10.1021/jz4020162)"
+    ]
   }
 ]

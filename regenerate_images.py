@@ -1,6 +1,9 @@
-"""Regenerate illustrations with smiling characters and strong contrast for stocked episodes.
+"""Regenerate illustrations with 4-panel manga layout (512x1024) for stocked episodes.
 
-Usage: python regenerate_images.py [from_ep=15] [--push]
+Usage:
+    python regenerate_images.py [start_ep] [end_ep] [--push]
+Example:
+    python regenerate_images.py 10 12 --push
 """
 import re
 import sys
@@ -14,10 +17,13 @@ from src.main import git_sync_and_push, setup_logging
 
 
 def main():
-    setup_logging(False)
-    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    setup_logging(True)
+    non_flags = [a for a in sys.argv[1:] if not a.startswith("--")]
     push = "--push" in sys.argv[1:]
-    start = int(args[0]) if args else 15
+
+    start = int(non_flags[0]) if len(non_flags) >= 1 else 10
+    end = int(non_flags[1]) if len(non_flags) >= 2 else start
+
     config = get_config()
     gen = DualLLMStoryGenerator(
         ollama_host=config.ollama_host,
@@ -26,16 +32,26 @@ def main():
         draw_things_host=config.draw_things_host,
     )
     hm = HistoryManager()
+
+    print(f"=== Regenerating 4-panel manga illustrations: #{start:02d} to #{end:02d} ===", flush=True)
+
+    generated_any = False
     for w in hm.catalog:
         sf = hm.find_stock_file_for_work(w["id"])
         if sf is None:
             continue
         m = re.search(r"_ep(\d+)_", sf.name)
-        if not m or int(m.group(1)) < start:
+        if not m:
             continue
+        ep_n = int(m.group(1))
+        if ep_n < start or ep_n > end:
+            continue
+
         png = sf.with_suffix(".png")
         tmp = sf.with_suffix(".new.png")
-        saved, _ = gen.generate_illustration(
+        print(f"\n[#{ep_n:02d}] Generating 4-panel manga for '{w.get('title')}' ({w['id']})...", flush=True)
+
+        saved, prompt_used = gen.generate_illustration(
             work=w,
             output_image_path=tmp,
             story_body=sf.read_text(encoding="utf-8", errors="ignore"),
@@ -43,15 +59,28 @@ def main():
         )
         if saved and tmp.exists():
             tmp.replace(png)
-            build_github_pages(hm)
-            if push:
-                git_sync_and_push([png])
-            print(f"OK {png}", flush=True)
+            print(f"[#{ep_n:02d}] SUCCESS: Saved 512x1024 4-panel manga to {png}", flush=True)
+            generated_any = True
         else:
-            print(f"FAILED {sf.name}", flush=True)
+            print(f"[#{ep_n:02d}] FAILED to generate illustration for {sf.name}", flush=True)
+
+    if generated_any:
+        print("\nRebuilding GitHub Pages (docs/)...", flush=True)
+        build_github_pages(hm)
+        if push:
+            print("Committing and pushing to GitHub...", flush=True)
+            msg = f"art(4koma): Regenerate 4-panel manga illustrations up to #{end:02d} & update GitHub Pages"
+            import subprocess
+            subprocess.run(["git", "add", "content/", "docs/", "README.md"], check=True)
+            diff_res = subprocess.run(["git", "diff", "--staged", "--quiet"])
+            if diff_res.returncode != 0:
+                subprocess.run(["git", "commit", "-m", msg], check=True)
+                subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=False)
+                subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
+                print("Successfully pushed to GitHub!", flush=True)
+            else:
+                print("No changes to commit.", flush=True)
 
 
 if __name__ == "__main__":
     main()
-
-

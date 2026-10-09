@@ -51,12 +51,22 @@ def main():
         tmp = sf.with_suffix(".new.png")
         print(f"\n[#{ep_n:02d}] Generating 4-panel manga for '{w.get('title')}' ({w['id']})...", flush=True)
 
-        saved, prompt_used = gen.generate_illustration(
-            work=w,
-            output_image_path=tmp,
-            story_body=sf.read_text(encoding="utf-8", errors="ignore"),
-            episode_title=w.get("title", ""),
-        )
+        saved = None
+        for attempt in range(1, 4):
+            try:
+                saved, prompt_used = gen.generate_illustration(
+                    work=w,
+                    output_image_path=tmp,
+                    story_body=sf.read_text(encoding="utf-8", errors="ignore"),
+                    episode_title=w.get("title", ""),
+                )
+                if saved and tmp.exists():
+                    break
+            except Exception as ex:
+                print(f"[#{ep_n:02d}] Attempt {attempt} failed: {ex}. Retrying...", flush=True)
+            import time
+            time.sleep(10)
+
         if saved and tmp.exists():
             tmp.replace(png)
             print(f"[#{ep_n:02d}] SUCCESS: Saved 512x1024 4-panel manga to {png}", flush=True)

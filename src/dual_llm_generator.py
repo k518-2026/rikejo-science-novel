@@ -837,207 +837,191 @@ class DualLLMStoryGenerator:
         guide_body = re.sub(r"https?://\S+", "", guide_body)
         return guide_body
 
+    @staticmethod
+    def _koma(p1: str, p2: str, p3: str, p4: str) -> str:
+        return (
+            "Vertical four-panel comic strip, Japanese yonkoma manga layout, 4 rectangular panels stacked vertically from top to bottom with clean white borders separating the panels, full color Japanese anime art style. "
+            f"Top panel 1 (Introduction): {p1.strip()} "
+            f"Second panel 2 (Development): {p2.strip()} "
+            f"Third panel 3 (Climax): {p3.strip()} "
+            f"Bottom panel 4 (Resolution): {p4.strip()} "
+            "Masterpiece anime comic strip, clean panel division, rich deep colors, high contrast, crisp lines, completely pure illustration, NO speech bubbles, NO text, NO words, NO letters, NO Japanese characters, NO sound effects."
+        )
+
     CURATED_EPISODE_IMAGE_PROMPTS: Dict[str, str] = {
-        "ep01-bioluminescence-plant": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a twilight botanical laboratory, both smiling happily with gentle joyful expressions as they admire "
-            "softly glowing emerald-green bioluminescent petunia flowers in glass flasks on a wooden lab bench, "
-            "warm golden sunset light through window contrasting with deep emerald glow, masterpiece Japanese anime novel illustration style, "
-            "calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep01-bioluminescence-plant": _koma.__func__(
+            "a high school girl arriving at a sunlit university science campus with curiosity.",
+            "the girl meets a warmly smiling female researcher in a botany laboratory with emerald petunias.",
+            "close-up of both smiling happily as they examine the glowing bioluminescent plant in a glass flask.",
+            "both the high school girl and female researcher smiling joyfully together under the evening starry sky, looking toward the future.",
         ),
-        "ep02-crispr-butterfly-structural-color": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a sunlit biology laboratory, both smiling happily with gentle joyful expressions as they observe "
-            "an iridescent metallic-blue Morpho butterfly resting near a glass optical prism and stereo microscope, "
-            "vivid cobalt-blue structural color shimmering in warm afternoon sunlight, masterpiece Japanese anime novel illustration style, "
-            "calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep02-crispr-butterfly-structural-color": _koma.__func__(
+            "a high school girl entering a university biology lab filled with warm afternoon sunlight.",
+            "a smiling female researcher introduces optical microscope slides and butterfly specimens.",
+            "both smiling in wonder at an iridescent metallic-blue Morpho butterfly structural color shimmering near an optical prism.",
+            "both smiling warmly side by side with hopeful expressions by the twilight window.",
         ),
-        "ep03-mrna-lipid-nanoparticle-delivery": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a modern pharmaceutical laboratory, both smiling happily with gentle joyful expressions beside "
-            "translucent glowing spherical lipid nanoparticle molecular models and glass microfluidic tubes reflecting warm amber light, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep03-mrna-lipid-nanoparticle-delivery": _koma.__func__(
+            "a high school girl visiting a modern pharmaceutical science building.",
+            "a female researcher in a lab coat enthusiastically demonstrating microfluidic glass tubes.",
+            "both smiling brightly at translucent glowing spherical lipid nanoparticle molecular models on the workbench.",
+            "both smiling together looking toward the future of medicine under soft evening lights.",
         ),
-        "ep04-math-topology-knot-teacher": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a warm wooden mathematics seminar room, both smiling happily with gentle joyful expressions as they hold "
-            "colorful braided topological knot rings and Möbius strip ribbons in their hands by a sunlit window, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep04-math-topology-knot-teacher": _koma.__func__(
+            "a high school girl looking puzzled at geometric diagrams in a math seminar room.",
+            "a smiling female mathematics mentor researcher offering colorful braided ribbons with an encouraging smile.",
+            "both smiling happily as they manipulate colorful topological knot loops and Möbius strip rings.",
+            "both smiling warmly in front of the sunlit blackboard with newfound love for mathematics.",
         ),
-        "ep05-alphafold-informatics-teacher": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a university bioinformatics studio, both smiling happily with gentle joyful expressions as they look at "
-            "a colorful 3D folded protein ribbon sculpture model with alpha-helices in teal and coral hues on the desk, "
-            "warm sunset light streaming through glass windows, masterpiece Japanese anime novel illustration style, "
-            "calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep05-alphafold-informatics-teacher": _koma.__func__(
+            "a high school girl arriving at a university bioinformatics computer workstation studio.",
+            "a female researcher enthusiastically pointing toward an open workspace with molecular graphics.",
+            "both smiling in awe at a colorful 3D folded protein ribbon model with teal and coral alpha-helices.",
+            "both smiling brightly together looking forward to careers in data science and teaching.",
         ),
-        "ep06-quantum-cryptography-math-informatics": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a photonics optics laboratory, both smiling happily with gentle joyful expressions beside "
-            "crystal optical prisms and mirrors splitting a delicate cyan and magenta laser light beam across an optical table, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep06-quantum-cryptography-math-informatics": _koma.__func__(
+            "a high school girl stepping into an optics and quantum information laboratory.",
+            "a smiling female researcher adjusting optical mirrors and crystal prisms on an optical table.",
+            "both smiling in wonder at a delicate cyan and magenta entangled laser beam splitting across crystals.",
+            "both smiling joyfully side by side in the twilight laboratory holding optical lenses.",
         ),
-        "ep07-exoplanet-jwst-science-teacher": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "at a university rooftop astronomical observatory Dome at twilight, both smiling happily with gentle joyful expressions "
-            "beside a gleaming golden hexagonal segmented mirror model and an astronomical telescope under a deep indigo starry sky, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep07-exoplanet-jwst-science-teacher": _koma.__func__(
+            "a high school girl climbing up the stairs of a university astronomical observatory dome.",
+            "a female astronomy researcher pointing toward the opening slit of the dome under twilight.",
+            "both smiling in delight beside a gleaming golden hexagonal segmented telescope mirror model.",
+            "both looking up with gentle joyful smiles at the vast starry sky filled with shining exoplanets.",
         ),
-        "ep08-network-science-math-modeling": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a sunlit applied mathematics lounge, both smiling happily with gentle joyful expressions beside "
-            "an illuminated 3D geometric network sculpture of glowing golden nodes and delicate connecting threads on a wooden table, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep08-network-science-math-modeling": _koma.__func__(
+            "a high school girl entering a bright applied mathematics lounge with curiosity.",
+            "a smiling female mentor researcher showing natural graph patterns and complex systems.",
+            "both smiling happily at an illuminated 3D geometric network sculpture of glowing golden nodes and connecting lines.",
+            "both smiling warmly together by the sunny window inspired by the harmony of network mathematics.",
         ),
-        "ep09-spider-silk-biomaterials": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a biomaterials engineering laboratory, both smiling happily with gentle joyful expressions as they examine "
-            "a shimmering golden artificial spider-silk fiber spool glistening like sunlight on a glass stand, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep09-spider-silk-biomaterials": _koma.__func__(
+            "a high school girl arriving at a high-tech polymer biomaterials laboratory.",
+            "a smiling female researcher presenting natural silk cocoons and spinning micro-needles.",
+            "both smiling with delight as they examine a shimmering golden artificial spider-silk spool glistening in the light.",
+            "both smiling proudly together side by side, looking forward to sustainable future engineering.",
         ),
-        "ep10-perovskite-solar-window": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a clean energy materials lab, both smiling happily with gentle joyful expressions as they hold up "
-            "a thin flexible ruby-amber translucent perovskite solar film catching warm golden afternoon sunlight by the window, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep10-perovskite-solar-window": _koma.__func__(
+            "a high school girl visiting a renewable energy and materials chemistry laboratory.",
+            "a female researcher demonstrating thin film coating techniques on glass substrates.",
+            "both smiling brightly as they hold up a thin flexible ruby-amber translucent perovskite solar film catching golden sunlight.",
+            "both smiling warmly side by side with clean energy dreams shining in their eyes.",
         ),
-        "ep11-sleep-glymphatic-memory-consolidation": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a calm neuroscience laboratory at dusk, both smiling happily with gentle joyful expressions beside "
-            "a translucent crystal brain sculpture softly illuminated with flowing sapphire-blue and starlight-gold pathways, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep11-sleep-glymphatic-memory-consolidation": _koma.__func__(
+            "a high school girl visiting a quiet neuroscience laboratory at dusk.",
+            "a smiling female researcher introducing the mystery of brain cleansing during sleep.",
+            "both smiling in awe beside a crystal brain model softly glowing with flowing sapphire-blue and golden neural pathways.",
+            "both smiling warmly together under the evening sky, appreciating the marvels of the human brain.",
         ),
-        "ep12-environmental-dna-ocean-ecology": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "on a sunlit marine biology research deck overlooking a sparkling deep-blue ocean bay, both smiling happily with gentle joyful expressions "
-            "as they hold a clear glass water sampler bottle glittering in the sea breeze, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep12-environmental-dna-ocean-ecology": _koma.__func__(
+            "a high school girl walking onto a marine biology research deck overlooking a sparkling blue bay.",
+            "a smiling female marine ecologist demonstrating water sampling filters and DNA sequencing tubes.",
+            "both smiling with joy as they hold a clear glass seawater sample bottle glittering in the ocean breeze.",
+            "both smiling side by side gazing out at the vast ocean horizon under bright sunny skies.",
         ),
-        "ep13-neural-symbolic-logic-math-teacher": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a sunlit mathematics and AI seminar room, both smiling happily with gentle joyful expressions beside "
-            "geometric polyhedron crystal models and a warm wooden desk bathed in golden afternoon light, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep13-neural-symbolic-logic-math-teacher": _koma.__func__(
+            "a high school girl entering a warm wooden math and AI seminar room.",
+            "a smiling female researcher showing geometric logic puzzles and symbolic reasoning models.",
+            "both smiling happily as they assemble translucent geometric polyhedron crystal models in golden sunlight.",
+            "both smiling warmly with confidence in logic and mathematics by the afternoon window.",
         ),
-        "ep14-statistical-mechanics-chaos-physics-teacher": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a classic physics laboratory, both smiling happily with gentle joyful expressions as they watch "
-            "a brass double pendulum and swirling iridescent soap-film convection patterns glowing in warm sunlight, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep14-statistical-mechanics-chaos-physics-teacher": _koma.__func__(
+            "a high school girl visiting a classic physics and dynamics laboratory.",
+            "a female physics researcher setting up a brass double pendulum and fluid dynamics apparatus.",
+            "both smiling in fascination at swirling iridescent soap-film convection patterns and chaotic trajectories glowing in sunlight.",
+            "both smiling joyfully side by side, discovering the hidden beauty within chaos physics.",
         ),
-        "ep15-bionanotechnology-synthetic-genetics-materials": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a synthetic biology laboratory, both smiling happily with gentle joyful expressions beside "
-            "an iridescent pearl-like nacre shell model and colorful double-helix molecular models on a sunlit workbench, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep15-bionanotechnology-synthetic-genetics-materials": _koma.__func__(
+            "a high school girl arriving at a synthetic genetics and bio-nanotechnology lab.",
+            "a female researcher displaying natural nacre sea shells and biomolecular structure diagrams.",
+            "both smiling in wonder beside an iridescent pearl-like artificial shell model and colorful DNA double-helix models.",
+            "both smiling warmly together with enthusiasm for creative bioengineering careers.",
         ),
-        "ep16-topological-data-analysis-persistent-homology": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a data science studio, both smiling happily with gentle joyful expressions beside "
-            "a translucent 3D geometric simplicial complex crystal model and torus rings catching warm afternoon light, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep16-topological-data-analysis-persistent-homology": _koma.__func__(
+            "a high school girl visiting an advanced data science and applied topology studio.",
+            "a smiling female data scientist explaining geometric data shapes and persistent homology.",
+            "both smiling happily examining a 3D simplicial complex crystal sculpture and torus models catching warm light.",
+            "both smiling brightly side by side with newfound appreciation for abstract geometry.",
         ),
-        "ep17-dna-origami-molecular-robotics": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a molecular nanotechnology lab, both smiling happily with gentle joyful expressions as they hold "
-            "delicate colorful Japanese paper origami cranes alongside a glowing nanoscale polyhedral DNA box model, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep17-dna-origami-molecular-robotics": _koma.__func__(
+            "a high school girl entering a molecular robotics laboratory with colorful paper cranes.",
+            "a smiling female researcher demonstrating nanoscale self-folding DNA nanostructures.",
+            "both smiling in delight as they hold folded origami paper beside a glowing nanoscale DNA box model.",
+            "both smiling joyfully side by side inspired by the union of traditional origami and molecular robotics.",
         ),
-        "ep18-gravitational-waves-laser-interferometer": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a precision gravitational-wave optics lab, both smiling happily with gentle joyful expressions beside "
-            "a suspended sapphire mirror pendulum and intersecting emerald laser beams on an optical bench, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep18-gravitational-waves-laser-interferometer": _koma.__func__(
+            "a high school girl visiting a precision laser optics and gravitational wave laboratory.",
+            "a female astrophysics researcher demonstrating ultra-quiet vibration isolation pendulums.",
+            "both smiling in awe beside a suspended sapphire mirror pendulum reflecting emerald laser beams.",
+            "both smiling warmly side by side, listening to the cosmic ripples of the universe.",
         ),
-        "ep19-mof-porous-coordination-polymers-carbon-capture": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a coordination chemistry laboratory, both smiling happily with gentle joyful expressions as they admire "
-            "a turquoise-blue porous crystal lattice model (Metal-Organic Framework) and sparkling glass vials in warm sunlight, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep19-mof-porous-coordination-polymers-carbon-capture": _koma.__func__(
+            "a high school girl arriving at a coordination chemistry and molecular sponge laboratory.",
+            "a smiling female chemist presenting porous crystals capable of trapping carbon dioxide.",
+            "both smiling in wonder at a turquoise-blue porous crystal lattice MOF model catching bright afternoon sunlight.",
+            "both smiling brightly together side by side, dreaming of a greener future for our planet.",
         ),
-        "ep20-turing-pattern-reaction-diffusion-math-biology": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a mathematical biology room, both smiling happily with gentle joyful expressions beside "
-            "colorful seashells with intricate natural stripe patterns and a glass petri dish with concentric ripple waves, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep20-turing-pattern-reaction-diffusion-math-biology": _koma.__func__(
+            "a high school girl entering a mathematical biology laboratory.",
+            "a smiling female mentor researcher showing natural seashell patterns and differential equations.",
+            "both smiling happily observing seashells with intricate stripe patterns beside a ripple wave petri dish.",
+            "both smiling warmly side by side with deep admiration for the mathematical patterns of nature.",
         ),
-        "ep21-compressed-sensing-black-hole-imaging-informatics": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in an astrophysics and informatics studio at dusk, both smiling happily with gentle joyful expressions beside "
-            "a glowing golden ring model of a black hole shadow and a miniature parabolic radio dish on the table, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep21-compressed-sensing-black-hole-imaging-informatics": _koma.__func__(
+            "a high school girl arriving at an astrophysics informatics lab at dusk.",
+            "a female researcher demonstrating sparse modeling and radio telescope image reconstruction.",
+            "both smiling in wonder beside a glowing golden ring model of a black hole shadow and miniature radio dish.",
+            "both smiling joyfully together side by side under the darkening twilight sky.",
         ),
-        "ep22-ips-organoid-regenerative-medicine-pharmacology": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a bright regenerative medicine laboratory, both smiling happily with gentle joyful expressions beside "
-            "a stereo microscope and a glass culture dish glowing softly with warm ruby-pink light in the afternoon sun, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep22-ips-organoid-regenerative-medicine-pharmacology": _koma.__func__(
+            "a high school girl visiting a bright regenerative medicine and stem cell lab.",
+            "a smiling female pharmacologist preparing culture dishes and stereo microscopes.",
+            "both smiling in joy observing tiny organoid tissues softly glowing with warm ruby-pink light in a culture dish.",
+            "both smiling warmly together side by side, inspired by the future of personalized medicine.",
         ),
-        "ep23-topological-insulator-spintronics-physics": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a solid-state physics lab, both smiling happily with gentle joyful expressions as they examine "
-            "a metallic bismuth-telluride crystal specimen and a glowing Dirac cone geometric sculpture in warm sunlight, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep23-topological-insulator-spintronics-physics": _koma.__func__(
+            "a high school girl entering a quantum materials and solid-state physics lab.",
+            "a smiling female physicist presenting crystal specimens and electronic surface band models.",
+            "both smiling in amazement examining a metallic bismuth-telluride crystal and a glowing Dirac cone sculpture.",
+            "both smiling brightly side by side with excitement for next-generation quantum technology.",
         ),
-        "ep24-click-chemistry-bioorthogonal-reaction": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a chemical biology laboratory, both smiling happily with gentle joyful expressions as they hold "
-            "interlocking colorful molecular ring models that snap together like a buckle beside glowing fluorescent flasks, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep24-click-chemistry-bioorthogonal-reaction": _koma.__func__(
+            "a high school girl visiting a chemical biology and click chemistry laboratory.",
+            "a female researcher demonstrating snap-together bioorthogonal reaction mechanisms.",
+            "both smiling with delight as they snap together interlocking colorful molecular ring models beside fluorescent flasks.",
+            "both smiling warmly side by side, proud of the elegant power of molecular chemistry.",
         ),
-        "ep25-fourier-transform-music-acoustics-math-teacher": (
-            "Japanese novel illustration of a smiling high school girl holding a wooden violin and a warmly smiling female university researcher "
-            "in a sunlit acoustics and mathematics room, both smiling happily with gentle joyful expressions beside "
-            "smooth golden harmonic wave sculptures catching the warm afternoon light, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep25-fourier-transform-music-acoustics-math-teacher": _koma.__func__(
+            "a high school girl holding a violin entering a sunlit acoustics and mathematics room.",
+            "a smiling female researcher listening to violin tones and analyzing soundwave harmonics.",
+            "both smiling happily beside golden harmonic wave sculptures resonating with musical pitch in afternoon light.",
+            "both smiling joyfully side by side, celebrating the beautiful harmony of music and mathematics.",
         ),
-        "ep26-optogenetics-channelrhodopsin-neuroscience": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a neurobiology optics laboratory, both smiling happily with gentle joyful expressions beside "
-            "a delicate sapphire-blue fiber-optic light beam illuminating a green microalgae flask and crystal neuron model, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep26-optogenetics-channelrhodopsin-neuroscience": _koma.__func__(
+            "a high school girl arriving at an optogenetics neurobiology laboratory.",
+            "a female neuroscientist presenting green microalgae flasks and optical fiber switches.",
+            "both smiling in wonder as a delicate sapphire-blue fiber-optic light beam activates channelrhodopsin models.",
+            "both smiling brightly together side by side, fascinated by the light switches of the brain.",
         ),
-        "ep27-autonomous-driving-slam-bayesian-informatics": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a robotics laboratory, both smiling happily with gentle joyful expressions beside "
-            "a cute compact wheeled autonomous rover robot equipped with a cylindrical silver LiDAR sensor on a workbench, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep27-autonomous-driving-slam-bayesian-informatics": _koma.__func__(
+            "a high school girl visiting an autonomous robotics and artificial intelligence laboratory.",
+            "a smiling female roboticist demonstrating mapping algorithms and Bayesian sensor estimation.",
+            "both smiling with joy beside a compact wheeled autonomous rover robot with a spinning silver LiDAR sensor.",
+            "both smiling warmly side by side with confidence in robotics and engineering.",
         ),
-        "ep28-ice-core-paleoclimate-isotope-earth-science": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "wearing warm winter jackets over lab coats in a paleoclimate ice-core laboratory, both smiling happily with gentle joyful expressions "
-            "as they examine a translucent cylindrical Antarctic ice core sparkling with tiny ancient air bubbles in golden light, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep28-ice-core-paleoclimate-isotope-earth-science": _koma.__func__(
+            "a high school girl in a winter jacket entering a paleoclimate ice-core laboratory.",
+            "a smiling female geochemist preparing cold-storage Antarctic ice specimens.",
+            "both smiling in awe as they examine a cylindrical Antarctic ice core sparkling with ancient atmospheric air bubbles.",
+            "both smiling warmly side by side, reading eighty-thousand years of Earth history.",
         ),
-        "ep29-artificial-photosynthesis-photocatalyst-chemistry": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a sunlit photocatalyst chemistry laboratory, both smiling happily with gentle joyful expressions as they watch "
-            "fine sparkling hydrogen and oxygen bubbles rising from a submerged emerald-titanium photocatalyst leaf plate in a clear glass reactor vessel bathed in golden sunlight, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
-        ),
-        "ep30-graph-theory-four-color-theorem-math-teacher": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a warm wooden mathematics classroom, both smiling happily with gentle joyful expressions beside "
-            "a colorful geometric stained-glass-like map puzzle in four vivid colors and crystal polyhedron graph models on the desk, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
-        ),
-        "ep31-exoplanet-transit-spectroscopy-astronomy": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a university observatory room at twilight, both smiling happily with gentle joyful expressions beside "
-            "an illuminated celestial globe model showing a tiny planet crossing in front of a glowing golden star and a glass optical prism rainbow, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
-        ),
-        "ep32-gut-microbiome-brain-axis-bioscience": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in a bright life-science laboratory, both smiling happily with gentle joyful expressions beside "
-            "glowing botanical fermentation glass flasks and a warm illuminated botanical-neural network sculpture on a wooden bench, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
-        ),
-        "ep33-origami-engineering-miura-ori-space-solar-sail": (
-            "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            "in an aerospace engineering studio, both smiling happily with gentle joyful expressions as they unfold "
-            "a gleaming golden geometric Miura-ori origami solar sail model catching warm afternoon sunlight, "
-            "masterpiece Japanese anime novel illustration style, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        "ep29-artificial-photosynthesis-photocatalyst-chemistry": _koma.__func__(
+            "a high school girl visiting a sunlit solar chemistry and artificial photosynthesis laboratory.",
+            "a female researcher demonstrating titanium photocatalyst electrodes submerged in water.",
+            "both smiling in delight watching sparkling hydrogen and oxygen bubbles rising from an emerald-titanium leaf plate in a glass reactor.",
+            "both smiling joyfully side by side in the golden sunlight, inspired by the future of clean solar fuels.",
         ),
     }
 
@@ -1048,33 +1032,31 @@ class DualLLMStoryGenerator:
         episode_title: str = "",
     ) -> str:
         """
-        Returns a scene-accurate English image generation prompt for FLUX.2 [klein] 9B.
-        Uses curated scene-specific prompts when available, or queries the active LLM if online.
+        Returns a scene-accurate English 4-panel comic strip prompt for FLUX.2 [klein] 9B.
+        Uses curated 4-koma prompts when available, or queries the active LLM if online.
         """
         wid = work.get("id", "")
         if wid in self.CURATED_EPISODE_IMAGE_PROMPTS:
             curated = self.CURATED_EPISODE_IMAGE_PROMPTS[wid]
-            logger.info(f"[Curated FLUX.2 Prompt] Using tailored scene prompt for '{wid}': {curated[:110]}...")
+            logger.info(f"[Curated FLUX.2 4-Panel Prompt] Using 4-panel manga prompt for '{wid}': {curated[:110]}...")
             return curated
 
         # Fast check if any LLM host is online before attempting chat call
         conn = self.check_connection()
         if not conn.get("online"):
-            logger.info(f"LLM servers are currently offline; using structured scene prompt for '{wid}'.")
-            return (
-                f"Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-                f"in a sunlit university laboratory, both smiling happily with gentle joyful expressions as they explore {wid.replace('-', ' ')}, "
-                f"scientific glass apparatus and optical instruments reflecting warm afternoon sunlight, "
-                f"both characters smiling warmly with gentle happy smiles, masterpiece Japanese anime novel illustration style, "
-                f"Makoto Shinkai and Kyoto Animation inspired cinematic lighting, "
-                f"calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+            logger.info(f"LLM servers are currently offline; using structured 4-panel prompt for '{wid}'.")
+            return self._koma(
+                f"a high school girl arriving at a university science department exploring {wid.replace('-', ' ')} with curiosity.",
+                "the girl meets a warmly smiling female researcher in a modern laboratory.",
+                f"both smiling in wonder as they examine the core scientific phenomenon of {wid.replace('-', ' ')} on the workbench.",
+                "both characters smiling joyfully together side by side under the evening sky, looking toward the future.",
             )
 
         char_context = self._build_character_context(work)
         story_excerpt = story_body[:500] if story_body else work.get("summary", "")
 
-        prompt = f"""You are an expert Japanese novel illustration art director.
-Based on the following Japanese science novel episode, write a single, vivid, descriptive **English image generation prompt** (60-90 words) for the FLUX.2 image model to depict the most iconic scene of the story.
+        prompt = f"""You are an expert Japanese manga and light novel art director.
+Based on the following Japanese science novel episode (structured into 4 scenes: 起承転結), write a single, vivid **English image generation prompt** for FLUX.2 to render a **vertical four-panel comic strip (Yonkoma manga layout: 4 vertically stacked rectangular panels with clean white borders separating the panels)** in full color anime art style.
 
 [Episode Info]
 - Title: {episode_title or work.get('title', '')}
@@ -1088,26 +1070,29 @@ Based on the following Japanese science novel episode, write a single, vivid, de
 {story_excerpt}
 
 [Rules for Output]
-1. Output ONLY the raw English prompt paragraph. Do NOT include explanations, markdown formatting, quotes, or Japanese text.
-2. Start with: "Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher in a ..."
-3. Visually describe BOTH the high school student and the female researcher with warm, happy, gentle smiles on their faces, sharing the joy of scientific discovery in the university laboratory or classroom, alongside the visual scientific phenomenon.
-4. NEVER mention words, text, letters, book covers, titles, labels, badges, emblems, or writing/equations on blackboards or screens. The image must contain ZERO text or characters.
-5. Keep the tone calm and composed with rich, deep colors and strong, clear contrast: balanced natural lighting, distinct light and shadow, crisp line art, and deep harmonious tones.
-6. End with: "both characters smiling warmly with gentle happy smiles, masterpiece Japanese anime novel illustration style, Makoto Shinkai and Kyoto Animation inspired cinematic lighting, calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+1. Output ONLY the raw English prompt paragraph. Do NOT include markdown formatting, quotes, or Japanese text.
+2. Structure the prompt into 4 vertically stacked panels corresponding to the story's 起承転結:
+   - Start with: "Vertical four-panel comic strip, Japanese yonkoma manga layout, 4 rectangular panels stacked vertically from top to bottom with clean white borders separating the panels, full color Japanese anime art style."
+   - Top panel 1 (Introduction / 起): The high school girl visiting the university campus or lab with curiosity.
+   - Second panel 2 (Development / 承): The girl meets the female mentor researcher and engages in interactive experiment or demonstration.
+   - Third panel 3 (Climax / 転): Both smiling in wonder at the breathtaking visual scientific or mathematical phenomenon.
+   - Bottom panel 4 (Resolution / 結): Both characters smiling joyfully together looking toward their future under the evening sky.
+3. NEVER mention speech bubbles, words, text, letters, book covers, titles, or dialogue.
+4. End with: "Masterpiece anime comic strip, clean panel division, rich deep colors, high contrast, crisp lines, completely pure illustration, NO speech bubbles, NO text, NO words, NO letters, NO Japanese characters, NO sound effects."
 """
         try:
-            logger.info(f"[Director: {self.director_model}] Generating English illustration prompt for FLUX.2...")
+            logger.info(f"[Director: {self.director_model}] Generating English 4-panel manga prompt for FLUX.2...")
             raw_en = self.call_ollama_chat(
                 model=self.director_model,
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are a professional prompt engineer for FLUX.2 Japanese novel illustrations. Output ONLY the English prompt text. Always depict both the student and researcher with warm, happy smiles. Never include text, letters, writing, equations, badges, or book cover elements in the prompt.",
+                        "content": "You are a professional prompt engineer for FLUX.2 vertical 4-panel manga comic strips. Output ONLY the English prompt text. Never include speech bubbles, text, letters, or writing.",
                     },
                     {"role": "user", "content": prompt},
                 ],
                 temperature=0.6,
-                num_predict=200,
+                num_predict=220,
                 num_ctx=8192,
                 timeout=120,
                 max_retries=1,
@@ -1116,21 +1101,18 @@ Based on the following Japanese science novel episode, write a single, vivid, de
             cleaned_en = self._clean_llm_output(raw_en).strip(" \"'`\n")
             cleaned_en = re.sub(r"^(?:Prompt|English Prompt)\s*[:：]\s*", "", cleaned_en, flags=re.IGNORECASE).strip()
             cleaned_en = " ".join(cleaned_en.splitlines()).strip()
-            cleaned_en = re.sub(r"\b(?:book cover|book illustration|equations|formulas|chalk writing|written|labeled|text)\b", "diagram", cleaned_en, flags=re.IGNORECASE)
-            cleaned_en = re.sub(r"\b(?:serious|solemn|stern|frowning|melancholic|sad|unsmiling|stoic)\b", "warmly smiling", cleaned_en, flags=re.IGNORECASE)
-            if len(cleaned_en) >= 30 and re.search(r"[a-zA-Z]{4,}", cleaned_en):
-                logger.info(f"  -> Generated English prompt: {cleaned_en[:120]}...")
+            cleaned_en = re.sub(r"\b(?:speech bubble|dialogue bubble|text|words|letters|kanji)\b", "clean visual", cleaned_en, flags=re.IGNORECASE)
+            if len(cleaned_en) >= 40 and "four-panel" in cleaned_en.lower():
+                logger.info(f"  -> Generated English 4-panel prompt: {cleaned_en[:120]}...")
                 return cleaned_en
         except Exception as e:
-            logger.warning(f"Failed to generate English prompt via Ollama ({e}), using fallback English prompt.")
+            logger.warning(f"Failed to generate English 4-panel prompt via LLM ({e}), using fallback.")
 
-        return (
-            f"Japanese novel illustration of a smiling high school girl and a warmly smiling female university researcher "
-            f"in a sunlit university laboratory, both smiling happily with gentle joyful expressions as they explore {wid.replace('-', ' ')}, "
-            f"scientific glass apparatus and optical instruments reflecting warm afternoon sunlight, "
-            f"both characters smiling warmly with gentle happy smiles, masterpiece Japanese anime novel illustration style, "
-            f"Makoto Shinkai and Kyoto Animation inspired cinematic lighting, "
-            f"calm and composed atmosphere, strong contrast, rich deep colors, crisp details, no text, no letters."
+        return self._koma(
+            f"a high school girl arriving at a university science department exploring {wid.replace('-', ' ')} with curiosity.",
+            "the girl meets a warmly smiling female researcher in a modern laboratory.",
+            f"both smiling in wonder as they examine the core scientific phenomenon of {wid.replace('-', ' ')} on the workbench.",
+            "both characters smiling joyfully together side by side under the evening sky, looking toward the future.",
         )
 
     def generate_illustration(
@@ -1143,8 +1125,8 @@ Based on the following Japanese science novel episode, write a single, vivid, de
         progress_callback: Optional[Callable[[str], None]] = None,
     ) -> Tuple[Optional[Path], str]:
         """
-        Generates a 512x512 light novel illustration using Draw Things HTTP API
-        (`http://kenomac-mini:7860/sdapi/v1/txt2img`, model `flux_2_klein_base_9b_i8x.ckpt`).
+        Generates a vertical 512x1024 4-panel comic strip (Yonkoma manga layout for 起承転結)
+        using Draw Things HTTP API (`http://kenomac-mini:7860/sdapi/v1/txt2img`, model `flux_2_klein_base_9b_i8x.ckpt`).
         Returns (saved_image_path_or_None, english_prompt_used).
         """
         dt_conn = self.check_draw_things_connection()
@@ -1161,7 +1143,7 @@ Based on the following Japanese science novel episode, write a single, vivid, de
             en_prompt = cached_en
         else:
             if progress_callback:
-                progress_callback(f"構成作家 ({self.director_model}) が小説本文から英語の挿絵プロンプトを作成中...")
+                progress_callback(f"構成作家 ({self.director_model}) が小説本文から英語の4コマ漫画プロンプトを作成中...")
             en_prompt = self.generate_english_image_prompt(
                 work=work,
                 story_body=story_body,
@@ -1170,30 +1152,22 @@ Based on the following Japanese science novel episode, write a single, vivid, de
 
         dt_model = dt_conn.get("model", "flux_2_klein_base_9b_i8x.ckpt")
         if progress_callback:
-            progress_callback(f"Draw Things ({self.draw_things_host}) で挿絵画像を生成中 ({dt_model})...")
-        logger.info(f"[Draw Things: {self.draw_things_host} ({dt_model})] Generating 512x512 illustration (steps=12, guidance=4.0, sampler='Euler A Trailing')...")
-
-        style_suffix = (
-            "both student and researcher smiling warmly, gentle happy smiles on their faces, joyful and inspiring expressions, "
-            "calm and composed atmosphere, strong contrast, rich deep colors, balanced natural lighting, "
-            "distinct shadows and highlights, crisp clean artwork, pure illustration without any text or letters"
-        )
-        if "smiling warmly" not in en_prompt.lower() or "strong contrast" not in en_prompt.lower() or "no text" not in en_prompt.lower():
-            en_prompt = f"{en_prompt.rstrip(' .')}, {style_suffix}."
+            progress_callback(f"Draw Things ({self.draw_things_host}) で4コマ漫画風の縦長挿絵を生成中 ({dt_model})...")
+        logger.info(f"[Draw Things: {self.draw_things_host} ({dt_model})] Generating 512x1024 4-panel manga illustration...")
 
         url = f"{self.draw_things_host}/sdapi/v1/txt2img"
         payload = {
             "prompt": en_prompt,
             "negative_prompt": (
-                "text, letters, words, kanji, chinese characters, japanese text, english text, typography, title, "
+                "speech bubble, dialogue bubble, speech balloon, text, words, letters, kanji, chinese characters, japanese text, english text, typography, title, "
                 "book cover, watermark, signature, logo, caption, writing, chalk equations, numbers, "
+                "blurry panels, merged frames, chaotic layout, irregular frame borders, "
                 "sad, frowning, serious face, stern expression, solemn, expressionless, angry, worried, crying, gloomy face, "
-                "overexposed, washed out, faded, blown-out highlights, whiteout, pastel haze, low contrast, "
-                "dark, gloomy, murky"
+                "overexposed, washed out, faded, blown-out highlights, whiteout, low contrast, dark, gloomy, hat, cap, helmet"
             ),
             "width": 512,
-            "height": 512,
-            "steps": 12,
+            "height": 1024,
+            "steps": 16,
             "guidance_scale": 4.0,
             "sampler": "Euler A Trailing",
         }
@@ -1206,7 +1180,7 @@ Based on the following Japanese science novel episode, write a single, vivid, de
                 method="POST",
             )
             start_t = time.time()
-            with urllib.request.urlopen(req, timeout=600) as res:
+            with urllib.request.urlopen(req, timeout=900) as res:
                 body = json.loads(res.read().decode("utf-8", errors="ignore"))
                 images = body.get("images", [])
                 if images and images[0]:
@@ -1216,7 +1190,7 @@ Based on the following Japanese science novel episode, write a single, vivid, de
                     output_image_path.write_bytes(img_bytes)
                     elapsed = time.time() - start_t
                     logger.info(
-                        f"[Draw Things Complete] Saved illustration to {output_image_path} "
+                        f"[Draw Things Complete] Saved 4-panel manga illustration to {output_image_path} "
                         f"({len(img_bytes)} bytes in {elapsed:.1f}s)"
                     )
                     return output_image_path, en_prompt

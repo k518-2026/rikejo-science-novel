@@ -845,7 +845,7 @@ class DualLLMStoryGenerator:
             f"Second panel 2 (Development): {p2.strip()} "
             f"Third panel 3 (Climax): {p3.strip()} "
             f"Bottom panel 4 (Resolution): {p4.strip()} "
-            "Masterpiece anime comic strip, clean panel division, rich deep colors, high contrast, crisp lines, completely pure illustration, beautiful detailed anime eyes with clear pupils and iris, naturally smiling cute faces, NO speech bubbles, NO text, NO words, NO letters, NO Japanese characters, NO sound effects."
+            "Masterpiece anime comic strip, clean panel division, rich deep colors, high contrast, crisp lines, completely pure illustration, beautiful detailed anime eyes with clear pupils and iris, soft relaxed eyelids, natural warm friendly smiles, sweet gentle expressions, NO speech bubbles, NO text, NO words, NO letters, NO Japanese characters, NO sound effects."
         )
 
     CURATED_EPISODE_IMAGE_PROMPTS: Dict[str, str] = {
@@ -1018,10 +1018,10 @@ class DualLLMStoryGenerator:
             "both smiling warmly side by side, reading eighty-thousand years of Earth history.",
         ),
         "ep29-artificial-photosynthesis-photocatalyst-chemistry": _koma.__func__(
-            "a high school girl visiting a sunlit solar chemistry and artificial photosynthesis laboratory.",
-            "a female researcher demonstrating titanium photocatalyst electrodes submerged in water.",
-            "both smiling in delight watching sparkling hydrogen and oxygen bubbles rising from an emerald-titanium leaf plate in a glass reactor.",
-            "both smiling joyfully side by side in the golden sunlight, inspired by the future of clean solar fuels.",
+            "a cute high school girl with soft gentle eyes and a friendly warm smile, arriving at a sunlit solar chemistry and artificial photosynthesis laboratory.",
+            "a kind female researcher with gentle smiling eyes, demonstrating titanium photocatalyst electrodes submerged in clean water.",
+            "both smiling in delight with sweet, kind expressions, watching sparkling hydrogen and oxygen bubbles rising from an emerald-titanium leaf plate in a glass reactor.",
+            "both characters smiling gently and warmly side by side with soft, kind eyes and peaceful, sweet happy smiles, basking in gentle warm afternoon sunlight.",
         ),
     }
 
@@ -1161,7 +1161,7 @@ Based on the following Japanese science novel episode (structured into 4 scenes:
             "negative_prompt": (
                 "speech bubble, dialogue bubble, speech balloon, text, words, letters, kanji, chinese characters, japanese text, english text, typography, title, "
                 "font, calligraphy, signage, label, poster text, book text, fake letters, gibberish, runes, symbols, alphabet, numbers, subtitles, captions, "
-                "deformed eyes, misaligned eyes, crossed eyes, bad eyes, poorly drawn eyes, unnatural eyes, asymmetric eyes, blank eyes, missing pupil, distorted pupils, weird gaze, bad face, deformed face, disfigured face, "
+                "deformed eyes, misaligned eyes, crossed eyes, bad eyes, poorly drawn eyes, unnatural eyes, asymmetric eyes, blank eyes, missing pupil, distorted pupils, weird gaze, scary eyes, creepy eyes, wide open unblinking eyes, staring eyes, intense glare, crazy eyes, yandere, psycho expression, creepy smile, forced grin, scary face, uncanny valley, harsh facial shadows, bad face, deformed face, disfigured face, "
                 "book cover, watermark, signature, logo, caption, writing, chalk equations, "
                 "blurry panels, merged frames, chaotic layout, irregular frame borders, "
                 "sad, frowning, serious face, stern expression, solemn, expressionless, angry, worried, crying, gloomy face, "

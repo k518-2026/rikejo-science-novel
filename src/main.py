@@ -273,7 +273,8 @@ def main():
     parser.add_argument("--build-pages", action="store_true", help="Rebuild GitHub Pages static site (docs/) and README.md from content/")
     parser.add_argument("--push", action="store_true", help="Git commit & push after generating stock, illustrations, or GitHub Pages")
     parser.add_argument("--status-report", action="store_true", help="Show current GitHub Pages & stock status")
-    parser.add_argument("--send", action="store_true", help="(Paused by default) Send email to Blogger / WordPress only if PAUSE_BLOG_AUTO_POST=false")
+    parser.add_argument("--send", action="store_true", help="Send email to publish the episode")
+    parser.add_argument("--blogger-only", action="store_true", help="Post strictly to Blogger (okscience2026.blogspot.com)")
     parser.add_argument("--dry-run", action="store_true", help="Run in dry-run mode")
     parser.add_argument("--preview-html", action="store_true", help="Export rendered HTML to preview_output.html")
     parser.add_argument("--status", choices=["publish", "draft"], default=None, help="Override post status (publish or draft)")
@@ -428,9 +429,11 @@ def main():
         print_stock_status(history_mgr)
         return
 
-    # Default mode: Blog auto-posting is paused; rebuild GitHub Pages (docs/) and README.md
-    blog_paused = os.environ.get("PAUSE_BLOG_AUTO_POST", "true").strip().lower() in ("1", "true", "yes")
-    if blog_paused:
+    # Blog auto-posting pause check:
+    # If explicitly --send is provided, proceed with posting.
+    # Otherwise check PAUSE_BLOG_AUTO_POST (defaults to false when resuming).
+    blog_paused = os.environ.get("PAUSE_BLOG_AUTO_POST", "false").strip().lower() in ("1", "true", "yes")
+    if blog_paused and not args.send:
         from src.site_builder import build_github_pages
         logger.info("Blog email auto-posting is paused (PAUSE_BLOG_AUTO_POST=true). Building GitHub Pages (docs/) and README.md...")
         build_github_pages(history_mgr)
@@ -442,6 +445,23 @@ def main():
     is_dry_run = True
     if args.send and not args.dry_run:
         is_dry_run = False
+
+    is_blogger_only = args.blogger_only or os.environ.get("BLOGGER_ONLY", "false").strip().lower() in ("1", "true", "yes")
+
+    # 規約違反（過度な短時間連続投稿・スパム判定）を防止するための1日1話安全制御ガード
+    if not args.force and not is_dry_run:
+        today_jst_str = datetime.now(JST).strftime("%Y-%m-%d")
+        already_posted_today = any(
+            item.get("posted_at", "")[:10] == today_jst_str
+            for item in history_mgr.history
+        )
+        if already_posted_today:
+            logger.warning(
+                f"[安全ガード作動] 本日 ({today_jst_str} JST) は既にエピソードが投稿済みです。"
+                f"Bloggerの規約遵守（スパム・連続投稿防止）のため、本日の追加自動配信をスキップします。"
+                f"（強制再投稿する場合は --force を指定してください）"
+            )
+            return
 
     target_file: Optional[Path] = None
     target_work = None
@@ -483,7 +503,7 @@ def main():
         logger.info(f"Rendered HTML preview saved to: {preview_file.resolve()}")
 
     sender = WordPressMailSender(config)
-    result = sender.send_post(formatted, dry_run=is_dry_run)
+    result = sender.send_post(formatted, dry_run=is_dry_run, blogger_only=is_blogger_only)
     if not result.get("success"):
         logger.error(f"Dispatch failed: {result.get('error')}")
         sys.exit(1)

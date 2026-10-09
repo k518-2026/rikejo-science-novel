@@ -1,14 +1,14 @@
-name: Daily Rikejo Science Novel to WordPress
+name: Daily Rikejo Science Novel to Blogger
 
 concurrency:
   group: rikejo-science-novel-publish
   cancel-in-progress: false
 
 on:
-  # schedule:  # 2026-10-05 WordPress 異議申し立ての結果待ちのため一時停止。再開は # を外す
-    # 毎日 朝07:00 JST (22:00 UTC) と 夜21:00 JST (12:00 UTC) に書き溜めストックを自動配信
-    # - cron: '0 22 * * *'
-    # - cron: '0 12 * * *'
+  schedule:
+    # 毎朝 06:25 JST (前日 21:25 UTC) に書き溜めストックから1話ずつ Blogger へ自動投稿
+    # 規約違反（過度な短時間連続投稿・スパム判定）防止のため1日1話限定
+    - cron: '25 21 * * *'
 
   workflow_dispatch:
     inputs:
@@ -17,16 +17,8 @@ on:
         required: true
         type: boolean
         default: false
-      post_status:
-        description: 'Post status on WordPress (publish or draft)'
-        required: true
-        type: choice
-        options:
-          - publish
-          - draft
-        default: 'publish'
       work_id:
-        description: 'Specific Episode ID (e.g. ep01-bioluminescence-plant)'
+        description: 'Specific Episode ID (e.g. ep10-perovskite-solar-window)'
         required: false
         type: string
         default: ''
@@ -51,7 +43,7 @@ on:
           - reset_all
         default: 'none'
       force:
-        description: 'Force re-post even if already published'
+        description: 'Force re-post even if already published today'
         required: false
         type: boolean
         default: false
@@ -61,7 +53,7 @@ permissions:
 
 jobs:
   publish-episode:
-    name: Dispatch Stocked Rikejo Science Novel to WordPress
+    name: Dispatch Stocked Rikejo Science Novel to Blogger
     runs-on: ubuntu-latest
 
     steps:
@@ -85,25 +77,26 @@ jobs:
         run: |
           python -m unittest discover tests
 
-      - name: Dispatch Episode or Update GitHub Pages
+      - name: Dispatch Episode to Blogger & Update GitHub Pages
         env:
-          PAUSE_BLOG_AUTO_POST: 'true'
+          PAUSE_BLOG_AUTO_POST: 'false'
           SMTP_HOST: ${{ secrets.SMTP_HOST || '' }}
           SMTP_PORT: ${{ secrets.SMTP_PORT || '587' }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           SMTP_USE_TLS: ${{ secrets.SMTP_USE_TLS || 'true' }}
           SMTP_USE_SSL: ${{ secrets.SMTP_USE_SSL || 'false' }}
-          WP_POST_EMAIL: ${{ secrets.WP_POST_EMAIL }}
+          WP_POST_EMAIL: ''
           BLOGGER_POST_EMAIL: ${{ secrets.BLOGGER_POST_EMAIL || '' }}
-          DEFAULT_POST_STATUS: ${{ github.event.inputs.post_status || 'publish' }}
+          BLOGGER_ONLY: 'true'
+          DEFAULT_POST_STATUS: 'publish'
           INPUT_DRY_RUN: ${{ github.event.inputs.dry_run }}
           INPUT_WORK_ID: ${{ github.event.inputs.work_id }}
           INPUT_REPOST: ${{ github.event.inputs.repost }}
           INPUT_FORCE: ${{ github.event.inputs.force }}
         run: |
           git pull --rebase origin main || true
-          ARGS="--preview-html"
+          ARGS="--preview-html --blogger-only"
           if [ "$INPUT_DRY_RUN" = "true" ]; then
             ARGS="$ARGS --dry-run"
           else
@@ -116,9 +109,6 @@ jobs:
           fi
           if [ "$INPUT_FORCE" = "true" ]; then
             ARGS="$ARGS --force"
-          fi
-          if [ -n "${{ github.event.inputs.post_status }}" ]; then
-            ARGS="$ARGS --status ${{ github.event.inputs.post_status }}"
           fi
           python -m src.main $ARGS
 
@@ -139,7 +129,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No updates to commit."
           else
-            git commit -m "chore: Update Rikejo science novel GitHub Pages [skip ci]"
+            git commit -m "chore: Update Rikejo science novel GitHub Pages & post history [skip ci]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

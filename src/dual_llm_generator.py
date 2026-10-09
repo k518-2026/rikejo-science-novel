@@ -910,10 +910,10 @@ class DualLLMStoryGenerator:
             "both smiling warmly side by side with clean energy dreams shining in their eyes.",
         ),
         "ep11-sleep-glymphatic-memory-consolidation": _koma.__func__(
-            "a high school girl visiting a quiet neuroscience laboratory at dusk.",
-            "a smiling female researcher introducing the mystery of brain cleansing during sleep.",
-            "both smiling in awe beside a crystal brain model softly glowing with flowing sapphire-blue and golden neural pathways.",
-            "both smiling warmly together under the evening sky, appreciating the marvels of the human brain.",
+            "a high school girl with dark hair arriving at a quiet medical neuroscience and sleep laboratory at twilight with a thoughtful expression.",
+            "a smiling female professor wearing glasses and white lab coat showing a luminous display illustrating clear water waves flowing through cellular spaces.",
+            "both smiling in wonder examining an exquisite translucent crystal brain sculpture softly glowing with flowing sapphire-blue liquid streams and golden floating particles.",
+            "both smiling brightly and warmly side by side by the dawn window, completely refreshed and inspired by brain science.",
         ),
         "ep12-environmental-dna-ocean-ecology": _koma.__func__(
             "a high school girl walking onto a marine biology research deck overlooking a sparkling blue bay.",
@@ -1160,7 +1160,8 @@ Based on the following Japanese science novel episode (structured into 4 scenes:
             "prompt": en_prompt,
             "negative_prompt": (
                 "speech bubble, dialogue bubble, speech balloon, text, words, letters, kanji, chinese characters, japanese text, english text, typography, title, "
-                "book cover, watermark, signature, logo, caption, writing, chalk equations, numbers, "
+                "font, calligraphy, signage, label, poster text, book text, fake letters, gibberish, runes, symbols, alphabet, numbers, subtitles, captions, "
+                "book cover, watermark, signature, logo, caption, writing, chalk equations, "
                 "blurry panels, merged frames, chaotic layout, irregular frame borders, "
                 "sad, frowning, serious face, stern expression, solemn, expressionless, angry, worried, crying, gloomy face, "
                 "overexposed, washed out, faded, blown-out highlights, whiteout, low contrast, dark, gloomy, hat, cap, helmet"

@@ -935,13 +935,13 @@ class DualLLMStoryGenerator:
         ),
         "ep15-bionanotechnology-synthetic-genetics-materials": _koma.__func__(
             "a high school girl arriving at a synthetic genetics and bio-nanotechnology lab.",
-            "a female researcher displaying natural nacre sea shells and biomolecular structure diagrams.",
+            "a female researcher displaying natural nacre sea shells and colorful molecular models of mother-of-pearl protein layers.",
             "both smiling in wonder beside an iridescent pearl-like artificial shell model and colorful DNA double-helix models.",
             "both smiling warmly together with enthusiasm for creative bioengineering careers.",
         ),
         "ep16-topological-data-analysis-persistent-homology": _koma.__func__(
             "a high school girl visiting an advanced data science and applied topology studio.",
-            "a smiling female data scientist explaining geometric data shapes and persistent homology.",
+            "a smiling female data scientist presenting glowing 3D topological wireframe shapes and manifolds.",
             "both smiling happily examining a 3D simplicial complex crystal sculpture and torus models catching warm light.",
             "both smiling brightly side by side with newfound appreciation for abstract geometry.",
         ),
@@ -965,7 +965,7 @@ class DualLLMStoryGenerator:
         ),
         "ep20-turing-pattern-reaction-diffusion-math-biology": _koma.__func__(
             "a high school girl entering a mathematical biology laboratory.",
-            "a smiling female mentor researcher showing natural seashell patterns and differential equations.",
+            "a smiling female mentor researcher showing natural seashell patterns and swirling reaction-diffusion liquid patterns in shallow dishes.",
             "both smiling happily observing seashells with intricate stripe patterns beside a ripple wave petri dish.",
             "both smiling warmly side by side with deep admiration for the mathematical patterns of nature.",
         ),

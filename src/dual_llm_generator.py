@@ -845,7 +845,7 @@ class DualLLMStoryGenerator:
             f"Second panel 2 (Development): {p2.strip()} "
             f"Third panel 3 (Climax): {p3.strip()} "
             f"Bottom panel 4 (Resolution): {p4.strip()} "
-            "Masterpiece anime comic strip, clean panel division, rich deep colors, high contrast, crisp lines, completely pure illustration, NO speech bubbles, NO text, NO words, NO letters, NO Japanese characters, NO sound effects."
+            "Masterpiece anime comic strip, clean panel division, rich deep colors, high contrast, crisp lines, completely pure illustration, beautiful detailed anime eyes with clear pupils and iris, naturally smiling cute faces, NO speech bubbles, NO text, NO words, NO letters, NO Japanese characters, NO sound effects."
         )
 
     CURATED_EPISODE_IMAGE_PROMPTS: Dict[str, str] = {
@@ -904,10 +904,10 @@ class DualLLMStoryGenerator:
             "both smiling proudly together side by side, looking forward to sustainable future engineering.",
         ),
         "ep10-perovskite-solar-window": _koma.__func__(
-            "a high school girl visiting a renewable energy and materials chemistry laboratory.",
-            "a female researcher demonstrating thin film coating techniques on glass substrates.",
-            "both smiling brightly as they hold up a thin flexible ruby-amber translucent perovskite solar film catching golden sunlight.",
-            "both smiling warmly side by side with clean energy dreams shining in their eyes.",
+            "a cute high school girl with charming facial features and clear sparkling anime eyes, arriving at a bright renewable energy and materials chemistry laboratory with an intrigued happy smile.",
+            "a smiling female researcher with neat glasses and clear bright eyes demonstrating thin film coating techniques on glass substrates.",
+            "both characters smiling brightly with beautiful clear eyes as they hold up a thin flexible ruby-amber translucent perovskite solar film catching golden sunlight.",
+            "both smiling warmly side by side with clean energy dreams shining in their clear sparkling eyes.",
         ),
         "ep11-sleep-glymphatic-memory-consolidation": _koma.__func__(
             "a high school girl with dark hair arriving at a quiet medical neuroscience and sleep laboratory at twilight with a thoughtful expression.",
@@ -1161,6 +1161,7 @@ Based on the following Japanese science novel episode (structured into 4 scenes:
             "negative_prompt": (
                 "speech bubble, dialogue bubble, speech balloon, text, words, letters, kanji, chinese characters, japanese text, english text, typography, title, "
                 "font, calligraphy, signage, label, poster text, book text, fake letters, gibberish, runes, symbols, alphabet, numbers, subtitles, captions, "
+                "deformed eyes, misaligned eyes, crossed eyes, bad eyes, poorly drawn eyes, unnatural eyes, asymmetric eyes, blank eyes, missing pupil, distorted pupils, weird gaze, bad face, deformed face, disfigured face, "
                 "book cover, watermark, signature, logo, caption, writing, chalk equations, "
                 "blurry panels, merged frames, chaotic layout, irregular frame borders, "
                 "sad, frowning, serious face, stern expression, solemn, expressionless, angry, worried, crying, gloomy face, "

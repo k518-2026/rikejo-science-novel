@@ -358,5 +358,17 @@
     "url": "stories/ep30-graph-theory-four-color-theorem-math-teacher.html",
     "image": "assets/images/ep30-graph-theory-four-color-theorem-math-teacher.png",
     "char_count": 7161
+  },
+  {
+    "no": 31,
+    "work_id": "ep31-exoplanet-transit-spectroscopy-astronomy",
+    "title": "幾千光年かなたの星のまばたき――系外惑星トランジット法と生命のサイン",
+    "faculty": "理学部・宇宙地球物理学科 ／ 天文学専攻（太陽系外惑星・宇宙生物学研究室）",
+    "field": "物理学・宇宙・光学",
+    "theme": "太陽系外惑星のトランジット法・視線速度法（Mayor & Queloz）と透過分光による惑星大気バイオシグネチャ探査",
+    "has_image": true,
+    "url": "stories/ep31-exoplanet-transit-spectroscopy-astronomy.html",
+    "image": "assets/images/ep31-exoplanet-transit-spectroscopy-astronomy.png",
+    "char_count": 6751
   }
 ]

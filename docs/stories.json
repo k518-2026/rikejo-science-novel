@@ -370,5 +370,17 @@
     "url": "stories/ep31-exoplanet-transit-spectroscopy-astronomy.html",
     "image": "assets/images/ep31-exoplanet-transit-spectroscopy-astronomy.png",
     "char_count": 6751
+  },
+  {
+    "no": 32,
+    "work_id": "ep32-gut-microbiome-brain-axis-bioscience",
+    "title": "お腹の中の小さな森が心を醸す――腸内フローラと『脳腸相関』の生命科学",
+    "faculty": "農学部・応用生命化学科 ／ 薬学部・微生物薬品化学研究室（腸内細菌叢・神経免疫学）",
+    "field": "化学・薬学・材料",
+    "theme": "腸内マイクロバイオーム（腸内細菌叢）が産生する短鎖脂肪酸・神経伝達物質前駆体と迷走神経を介した脳腸相関（Gut-Brain Axis）",
+    "has_image": true,
+    "url": "stories/ep32-gut-microbiome-brain-axis-bioscience.html",
+    "image": "assets/images/ep32-gut-microbiome-brain-axis-bioscience.png",
+    "char_count": 7432
   }
 ]

@@ -934,10 +934,10 @@ class DualLLMStoryGenerator:
             "both smiling joyfully side by side, discovering the hidden beauty within chaos physics.",
         ),
         "ep15-bionanotechnology-synthetic-genetics-materials": _koma.__func__(
-            "a high school girl arriving at a synthetic genetics and bio-nanotechnology lab.",
-            "a female researcher displaying natural nacre sea shells and colorful molecular models of mother-of-pearl protein layers.",
-            "both smiling in wonder beside an iridescent pearl-like artificial shell model and colorful DNA double-helix models.",
-            "both smiling warmly together with enthusiasm for creative bioengineering careers.",
+            "a cute high school girl with soft gentle eyes and a curious warm smile, arriving at a sunlit synthetic genetics and bio-nanotechnology lab.",
+            "a friendly female researcher with kind smiling eyes and relaxed expression, presenting natural nacre sea shells and colorful molecular models of mother-of-pearl.",
+            "both characters smiling delightfully with sweet gentle faces, observing an iridescent pearl-like bioengineered shell model beside colorful DNA models.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and happy, sweet smiles under soft afternoon light.",
         ),
         "ep16-topological-data-analysis-persistent-homology": _koma.__func__(
             "a high school girl visiting an advanced data science and applied topology studio.",

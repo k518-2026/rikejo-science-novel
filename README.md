@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **29** 話（うち挿絵付き **29** 話 / 最終更新: 2026-10-10 10:01 JST）
+- **収録作品数**: 全 **30** 話（うち挿絵付き **30** 話 / 最終更新: 2026-10-10 21:30 JST）
 
 ---
 
@@ -43,6 +43,7 @@
 | 27 | **[霧のキャンパスを走る小さなロボット――ベイズ推定と自己位置推定のアルゴリズム](https://k518-2026.github.io/rikejo-science-novel/stories/ep27-autonomous-driving-slam-bayesian-informatics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep27-autonomous-driving-slam-bayesian-informatics.html) | [📄原稿](content/2026-10-08_ep27_autonomous_driving_slam_bayesian_informatics.md) | [🎨挿絵](content/2026-10-08_ep27_autonomous_driving_slam_bayesian_informatics.png) | 情報理工学部・知能機械情報学科（ロボティクス・確率推論研究室） | 確率ロボティクス（SLAM：自己位置推定と環境地図構築の同時実行）とベイズ推定・カルマンフィルタ | 6,796字 |
 | 28 | **[氷床の時空を歩く――80 万年の記憶が語る地球の色](https://k518-2026.github.io/rikejo-science-novel/stories/ep28-ice-core-paleoclimate-isotope-earth-science.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep28-ice-core-paleoclimate-isotope-earth-science.html) | [📄原稿](content/2026-10-08_ep28_ice_core_paleoclimate_isotope_earth_science.md) | [🎨挿絵](content/2026-10-08_ep28_ice_core_paleoclimate_isotope_earth_science.png) | 理学部・地球惑星環境学科 ／ 極地雪氷研究センター（古気候・同位体地球化学研究室） | 南極氷床コアの酸素・水素安定同位体比解析と気泡内古大気分析による80万年の気候変動復元 | 6,981字 |
 | 29 | **[太陽と水から未来の燃料を醸す葉っぱ――光触媒が紡ぐ Z スキームのパズル](https://k518-2026.github.io/rikejo-science-novel/stories/ep29-artificial-photosynthesis-photocatalyst-chemistry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep29-artificial-photosynthesis-photocatalyst-chemistry.html) | [📄原稿](content/2026-10-09_ep29_artificial_photosynthesis_photocatalyst_chemistry.md) | [🎨挿絵](content/2026-10-09_ep29_artificial_photosynthesis_photocatalyst_chemistry.png) | 工学部・応用化学科 ／ 人工光合成研究センター（光触媒・太陽エネルギー変換研究室） | 半導体光触媒（ホンダ・フジシマ効果）とZスキーム型人工光合成による太陽光水分解水素製造・CO2資源化 | 6,837字 |
+| 30 | **[白地図を彩る四色の魔法――グラフ理論の鍵が解き明かす、世界の「つながり」](https://k518-2026.github.io/rikejo-science-novel/stories/ep30-graph-theory-four-color-theorem-math-teacher.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep30-graph-theory-four-color-theorem-math-teacher.html) | [📄原稿](content/2026-10-10_ep30_graph_theory_four_color_theorem_math_teacher.md) | [🎨挿絵](content/2026-10-10_ep30_graph_theory_four_color_theorem_math_teacher.png) | 理学部・数学科 ／ 教育学部・数学教育専攻（離散数学・グラフ理論研究室） | 四色定理（Appel & Haken）とグラフ彩色問題・計算機援用証明（形式検証 Coq）と数学教育 | 7,161字 |
 
 ---
 

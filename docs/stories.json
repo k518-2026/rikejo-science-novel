@@ -346,5 +346,17 @@
     "url": "stories/ep29-artificial-photosynthesis-photocatalyst-chemistry.html",
     "image": "assets/images/ep29-artificial-photosynthesis-photocatalyst-chemistry.png",
     "char_count": 6837
+  },
+  {
+    "no": 30,
+    "work_id": "ep30-graph-theory-four-color-theorem-math-teacher",
+    "title": "白地図を彩る四色の魔法――グラフ理論の鍵が解き明かす、世界の「つながり」",
+    "faculty": "理学部・数学科 ／ 教育学部・数学教育専攻（離散数学・グラフ理論研究室）",
+    "field": "数学・数理科学",
+    "theme": "四色定理（Appel & Haken）とグラフ彩色問題・計算機援用証明（形式検証 Coq）と数学教育",
+    "has_image": true,
+    "url": "stories/ep30-graph-theory-four-color-theorem-math-teacher.html",
+    "image": "assets/images/ep30-graph-theory-four-color-theorem-math-teacher.png",
+    "char_count": 7161
   }
 ]

@@ -1023,6 +1023,24 @@ class DualLLMStoryGenerator:
             "both smiling in delight with sweet, kind expressions, watching sparkling hydrogen and oxygen bubbles rising from an emerald-titanium leaf plate in a glass reactor.",
             "both characters smiling gently and warmly side by side with soft, kind eyes and peaceful, sweet happy smiles, basking in gentle warm afternoon sunlight.",
         ),
+        "ep30-graph-theory-four-color-theorem-math-teacher": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a sketchbook, entering a sunlit mathematics seminar room.",
+            "a smiling female mathematics mentor researcher in glasses demonstrating geometric graph theory networks with chalk on a blackboard.",
+            "both characters smiling happily side by side as they color a complex planar map on the wooden desk using exactly four vibrant pastel markers.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and happy, sweet smiles beside colorful graph diagrams in warm afternoon light.",
+        ),
+        "ep31-exoplanet-transit-spectroscopy-astronomy": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and a warm smile arriving at an astronomical observatory roof at twilight.",
+            "a smiling female astronomer demonstrating optical telescope monitors and periodic transit light curves with gentle friendly eyes.",
+            "both characters smiling in wonder looking at a holographic model of a distant exoplanet transiting across a glowing golden star.",
+            "both characters smiling peacefully and joyfully together side by side with soft, kind eyes under a starry night sky sparkling with distant constellations.",
+        ),
+        "ep32-gut-microbiome-brain-axis-bioscience": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and a cheerful warm smile visiting a bright bioscience and microbiome research laboratory.",
+            "a kind female researcher with gentle smiling eyes explaining beneficial gut flora and neurotransmitter models with microscope slides.",
+            "both characters smiling with sweet, delightful expressions observing colorful translucent probiotic bacterial models and healthy gut-brain communication diagrams.",
+            "both characters smiling warmly and happily side by side with soft, kind eyes and natural sweet smiles in gentle sunlit science laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

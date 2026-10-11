@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **35** 話（うち挿絵付き **35** 話 / 最終更新: 2026-10-11 16:27 JST）
+- **収録作品数**: 全 **36** 話（うち挿絵付き **36** 話 / 最終更新: 2026-10-11 23:07 JST）
 
 ---
 
@@ -49,6 +49,7 @@
 | 33 | **[一枚の折り紙が宇宙で翼を広げる日――ミウラ折りと折紙工学の幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep33-origami-engineering-miura-ori-space-solar-sail.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep33-origami-engineering-miura-ori-space-solar-sail.html) | [📄原稿](content/2026-10-11_ep33_origami_engineering_miura_ori_space_solar_sail.md) | [🎨挿絵](content/2026-10-11_ep33_origami_engineering_miura_ori_space_solar_sail.png) | 工学部・航空宇宙工学科 ／ 先端学際工学専攻（折紙工学・展開構造物研究室） | 剛体折紙の幾何学（ミウラ折り・川崎の定理・前川の定理）と宇宙太陽発電パネル・医療ステントへの工学的応用 | 7,244字 |
 | 34 | **[オワンクラゲの緑の灯火――GFP が照らし出す生きた細胞の小宇宙](https://k518-2026.github.io/rikejo-science-novel/stories/ep34-bioluminescence-gfp-live-cell-imaging.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep34-bioluminescence-gfp-live-cell-imaging.html) | [📄原稿](content/2026-10-11_ep34_bioluminescence_gfp_live_cell_imaging.md) | [🎨挿絵](content/2026-10-11_ep34_bioluminescence_gfp_live_cell_imaging.png) | 理学部・生物科学科 ／ 生命機能イメージング研究センター（分子細胞生物学研究室） | 緑色蛍光タンパク質（GFP / 下村脩博士ら）の発見と生細胞ライブイメージングによる生命現象の可視化 | 7,283字 |
 | 35 | **[傷ついたQRコードと深宇宙からの手紙――誤り訂正符号の代数幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep35-error-correcting-codes-reed-solomon-space-probe.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep35-error-correcting-codes-reed-solomon-space-probe.html) | [📄原稿](content/2026-10-11_ep35_error_correcting_codes_reed_solomon_space_probe.md) | [🎨挿絵](content/2026-10-11_ep35_error_correcting_codes_reed_solomon_space_probe.png) | 情報理工学部・数理情報工学科 ／ 教育学部・情報科教育専攻（符号理論・情報理論研究室） | シャノンの情報理論とハミング符号・リード・ソロモン符号による誤り訂正アルゴリズム（QRコード・小惑星探査機通信） | 6,275字 |
+| 36 | **[液体窒素の白い霧と空中に浮かぶ磁石――超伝導と量子ピン止め効果](https://k518-2026.github.io/rikejo-science-novel/stories/ep36-superconductivity-meissner-quantum-levitation.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep36-superconductivity-meissner-quantum-levitation.html) | [📄原稿](content/2026-10-11_ep36_superconductivity_meissner_quantum_levitation.md) | [🎨挿絵](content/2026-10-11_ep36_superconductivity_meissner_quantum_levitation.png) | 理学部・物理学科 ／ 物性物理学研究所（低温物理・超伝導物質研究室） | 超伝導現象（電気抵抗ゼロ・マイスナー効果・磁束の量子化）とクーパー対（BCS理論）・リニアモーターカーや量子コンピュータへの応用 | 6,719字 |
 
 ---
 

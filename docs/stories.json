@@ -418,5 +418,17 @@
     "url": "stories/ep35-error-correcting-codes-reed-solomon-space-probe.html",
     "image": "assets/images/ep35-error-correcting-codes-reed-solomon-space-probe.png",
     "char_count": 6275
+  },
+  {
+    "no": 36,
+    "work_id": "ep36-superconductivity-meissner-quantum-levitation",
+    "title": "液体窒素の白い霧と空中に浮かぶ磁石――超伝導と量子ピン止め効果",
+    "faculty": "理学部・物理学科 ／ 物性物理学研究所（低温物理・超伝導物質研究室）",
+    "field": "情報学・AI",
+    "theme": "超伝導現象（電気抵抗ゼロ・マイスナー効果・磁束の量子化）とクーパー対（BCS理論）・リニアモーターカーや量子コンピュータへの応用",
+    "has_image": true,
+    "url": "stories/ep36-superconductivity-meissner-quantum-levitation.html",
+    "image": "assets/images/ep36-superconductivity-meissner-quantum-levitation.png",
+    "char_count": 6719
   }
 ]

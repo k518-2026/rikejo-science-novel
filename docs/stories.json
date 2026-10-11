@@ -382,5 +382,17 @@
     "url": "stories/ep32-gut-microbiome-brain-axis-bioscience.html",
     "image": "assets/images/ep32-gut-microbiome-brain-axis-bioscience.png",
     "char_count": 7432
+  },
+  {
+    "no": 33,
+    "work_id": "ep33-origami-engineering-miura-ori-space-solar-sail",
+    "title": "一枚の折り紙が宇宙で翼を広げる日――ミウラ折りと折紙工学の幾何学",
+    "faculty": "工学部・航空宇宙工学科 ／ 先端学際工学専攻（折紙工学・展開構造物研究室）",
+    "field": "物理学・宇宙・光学",
+    "theme": "剛体折紙の幾何学（ミウラ折り・川崎の定理・前川の定理）と宇宙太陽発電パネル・医療ステントへの工学的応用",
+    "has_image": true,
+    "url": "stories/ep33-origami-engineering-miura-ori-space-solar-sail.html",
+    "image": "assets/images/ep33-origami-engineering-miura-ori-space-solar-sail.png",
+    "char_count": 7244
   }
 ]

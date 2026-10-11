@@ -1041,6 +1041,24 @@ class DualLLMStoryGenerator:
             "both characters smiling with sweet, delightful expressions observing colorful translucent probiotic bacterial models and healthy gut-brain communication diagrams.",
             "both characters smiling warmly and happily side by side with soft, kind eyes and natural sweet smiles in gentle sunlit science laboratory.",
         ),
+        "ep33-origami-engineering-miura-ori-space-solar-sail": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a colorful folded origami paper, arriving at an aerospace engineering lab.",
+            "a smiling female engineering mentor with kind friendly eyes demonstrating deployable space solar sail panels and geometric tessellations.",
+            "both characters smiling in wonder and joy as they gently pull the diagonal corners of an accordion-folded silver Miura-ori solar panel model.",
+            "both characters smiling warmly side by side with soft, kind eyes and peaceful sweet happy smiles beside gleaming metallic origami sculptures in golden afternoon light.",
+        ),
+        "ep34-bioluminescence-gfp-live-cell-imaging": _koma.__func__(
+            "a cute high school girl with soft gentle eyes entering a dim optical microscopy laboratory with a curious warm smile.",
+            "a kind female biology researcher with gentle smiling eyes adjusting a fluorescence microscope glowing with soft emerald light.",
+            "both characters smiling in awe and delight watching luminous green fluorescent protein ribbons and glowing live cells sparkling on a high-resolution display.",
+            "both characters smiling peacefully and warmly side by side with soft, kind eyes and sweet friendly smiles illuminated by a gentle green emerald glow.",
+        ),
+        "ep35-error-correcting-codes-reed-solomon-space-probe": _koma.__func__(
+            "a cute high school girl with soft gentle eyes looking at a printed QR code banner, visiting an informatics seminar room.",
+            "a smiling female computer science professor with kind eyes demonstrating polynomial equations and algebraic matrix codes on a clean whiteboard.",
+            "both characters smiling cheerfully side by side as they test digital error correction codes on a laptop beside a metallic space probe model.",
+            "both characters smiling warmly and joyfully side by side with soft, kind eyes and peaceful happy smiles in afternoon sunlight.",
+        ),
     }
 
     def generate_english_image_prompt(

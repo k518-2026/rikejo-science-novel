@@ -1,4 +1,4 @@
-name: Daily Rikejo Science Novel to Blogger
+name: Daily Rikejo Science Novel Publisher to Blogger
 
 concurrency:
   group: rikejo-science-novel-publish

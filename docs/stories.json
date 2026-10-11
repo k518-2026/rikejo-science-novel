@@ -442,5 +442,17 @@
     "url": "stories/ep37-circadian-rhythm-clock-genes-chronobiology.html",
     "image": "assets/images/ep37-circadian-rhythm-clock-genes-chronobiology.png",
     "char_count": 7758
+  },
+  {
+    "no": 38,
+    "work_id": "ep38-causal-inference-natural-experiment-data-science",
+    "title": "相関は嘘つき？「もし・たら」の魔法を解き放て！――データから因果を読み取る統計学への招待",
+    "faculty": "データサイエンス学部 ／ 経済・数理統計学科（統計的因果推論・教育データ科学研究室）",
+    "field": "数学・数理科学",
+    "theme": "疑似相関（交絡因子）の排除と統計的因果推論（反事実モデル・傾向スコア・差分の差分法・回帰不連続デザイン）",
+    "has_image": true,
+    "url": "stories/ep38-causal-inference-natural-experiment-data-science.html",
+    "image": "assets/images/ep38-causal-inference-natural-experiment-data-science.png",
+    "char_count": 7229
   }
 ]

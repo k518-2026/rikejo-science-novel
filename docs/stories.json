@@ -394,5 +394,17 @@
     "url": "stories/ep33-origami-engineering-miura-ori-space-solar-sail.html",
     "image": "assets/images/ep33-origami-engineering-miura-ori-space-solar-sail.png",
     "char_count": 7244
+  },
+  {
+    "no": 34,
+    "work_id": "ep34-bioluminescence-gfp-live-cell-imaging",
+    "title": "オワンクラゲの緑の灯火――GFP が照らし出す生きた細胞の小宇宙",
+    "faculty": "理学部・生物科学科 ／ 生命機能イメージング研究センター（分子細胞生物学研究室）",
+    "field": "生命科学・バイオ・医学",
+    "theme": "緑色蛍光タンパク質（GFP / 下村脩博士ら）の発見と生細胞ライブイメージングによる生命現象の可視化",
+    "has_image": true,
+    "url": "stories/ep34-bioluminescence-gfp-live-cell-imaging.html",
+    "image": "assets/images/ep34-bioluminescence-gfp-live-cell-imaging.png",
+    "char_count": 7283
   }
 ]

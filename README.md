@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **36** 話（うち挿絵付き **36** 話 / 最終更新: 2026-10-11 23:07 JST）
+- **収録作品数**: 全 **37** 話（うち挿絵付き **37** 話 / 最終更新: 2026-10-11 23:23 JST）
 
 ---
 
@@ -50,6 +50,7 @@
 | 34 | **[オワンクラゲの緑の灯火――GFP が照らし出す生きた細胞の小宇宙](https://k518-2026.github.io/rikejo-science-novel/stories/ep34-bioluminescence-gfp-live-cell-imaging.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep34-bioluminescence-gfp-live-cell-imaging.html) | [📄原稿](content/2026-10-11_ep34_bioluminescence_gfp_live_cell_imaging.md) | [🎨挿絵](content/2026-10-11_ep34_bioluminescence_gfp_live_cell_imaging.png) | 理学部・生物科学科 ／ 生命機能イメージング研究センター（分子細胞生物学研究室） | 緑色蛍光タンパク質（GFP / 下村脩博士ら）の発見と生細胞ライブイメージングによる生命現象の可視化 | 7,283字 |
 | 35 | **[傷ついたQRコードと深宇宙からの手紙――誤り訂正符号の代数幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep35-error-correcting-codes-reed-solomon-space-probe.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep35-error-correcting-codes-reed-solomon-space-probe.html) | [📄原稿](content/2026-10-11_ep35_error_correcting_codes_reed_solomon_space_probe.md) | [🎨挿絵](content/2026-10-11_ep35_error_correcting_codes_reed_solomon_space_probe.png) | 情報理工学部・数理情報工学科 ／ 教育学部・情報科教育専攻（符号理論・情報理論研究室） | シャノンの情報理論とハミング符号・リード・ソロモン符号による誤り訂正アルゴリズム（QRコード・小惑星探査機通信） | 6,275字 |
 | 36 | **[液体窒素の白い霧と空中に浮かぶ磁石――超伝導と量子ピン止め効果](https://k518-2026.github.io/rikejo-science-novel/stories/ep36-superconductivity-meissner-quantum-levitation.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep36-superconductivity-meissner-quantum-levitation.html) | [📄原稿](content/2026-10-11_ep36_superconductivity_meissner_quantum_levitation.md) | [🎨挿絵](content/2026-10-11_ep36_superconductivity_meissner_quantum_levitation.png) | 理学部・物理学科 ／ 物性物理学研究所（低温物理・超伝導物質研究室） | 超伝導現象（電気抵抗ゼロ・マイスナー効果・磁束の量子化）とクーパー対（BCS理論）・リニアモーターカーや量子コンピュータへの応用 | 6,719字 |
+| 37 | **[朝顔が咲く時刻を刻む細胞の振り子――時計遺伝子と体内時計の生物学](https://k518-2026.github.io/rikejo-science-novel/stories/ep37-circadian-rhythm-clock-genes-chronobiology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep37-circadian-rhythm-clock-genes-chronobiology.html) | [📄原稿](content/2026-10-11_ep37_circadian_rhythm_clock_genes_chronobiology.md) | [🎨挿絵](content/2026-10-11_ep37_circadian_rhythm_clock_genes_chronobiology.png) | 理学部・生物科学科 ／ 生命理学専攻（時間生物学・概日リズム研究室） | 概日リズム（サーカディアンリズム）を生み出す時計遺伝子（Period / Timeless / Clock / Bmal1）の転写翻訳負帰還ループ | 7,758字 |
 
 ---
 

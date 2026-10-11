@@ -430,5 +430,17 @@
     "url": "stories/ep36-superconductivity-meissner-quantum-levitation.html",
     "image": "assets/images/ep36-superconductivity-meissner-quantum-levitation.png",
     "char_count": 6719
+  },
+  {
+    "no": 37,
+    "work_id": "ep37-circadian-rhythm-clock-genes-chronobiology",
+    "title": "朝顔が咲く時刻を刻む細胞の振り子――時計遺伝子と体内時計の生物学",
+    "faculty": "理学部・生物科学科 ／ 生命理学専攻（時間生物学・概日リズム研究室）",
+    "field": "生命科学・バイオ・医学",
+    "theme": "概日リズム（サーカディアンリズム）を生み出す時計遺伝子（Period / Timeless / Clock / Bmal1）の転写翻訳負帰還ループ",
+    "has_image": true,
+    "url": "stories/ep37-circadian-rhythm-clock-genes-chronobiology.html",
+    "image": "assets/images/ep37-circadian-rhythm-clock-genes-chronobiology.png",
+    "char_count": 7758
   }
 ]

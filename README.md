@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **34** 話（うち挿絵付き **34** 話 / 最終更新: 2026-10-11 16:17 JST）
+- **収録作品数**: 全 **35** 話（うち挿絵付き **35** 話 / 最終更新: 2026-10-11 16:27 JST）
 
 ---
 
@@ -48,6 +48,7 @@
 | 32 | **[お腹の中の小さな森が心を醸す――腸内フローラと『脳腸相関』の生命科学](https://k518-2026.github.io/rikejo-science-novel/stories/ep32-gut-microbiome-brain-axis-bioscience.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep32-gut-microbiome-brain-axis-bioscience.html) | [📄原稿](content/2026-10-10_ep32_gut_microbiome_brain_axis_bioscience.md) | [🎨挿絵](content/2026-10-10_ep32_gut_microbiome_brain_axis_bioscience.png) | 農学部・応用生命化学科 ／ 薬学部・微生物薬品化学研究室（腸内細菌叢・神経免疫学） | 腸内マイクロバイオーム（腸内細菌叢）が産生する短鎖脂肪酸・神経伝達物質前駆体と迷走神経を介した脳腸相関（Gut-Brain Axis） | 7,432字 |
 | 33 | **[一枚の折り紙が宇宙で翼を広げる日――ミウラ折りと折紙工学の幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep33-origami-engineering-miura-ori-space-solar-sail.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep33-origami-engineering-miura-ori-space-solar-sail.html) | [📄原稿](content/2026-10-11_ep33_origami_engineering_miura_ori_space_solar_sail.md) | [🎨挿絵](content/2026-10-11_ep33_origami_engineering_miura_ori_space_solar_sail.png) | 工学部・航空宇宙工学科 ／ 先端学際工学専攻（折紙工学・展開構造物研究室） | 剛体折紙の幾何学（ミウラ折り・川崎の定理・前川の定理）と宇宙太陽発電パネル・医療ステントへの工学的応用 | 7,244字 |
 | 34 | **[オワンクラゲの緑の灯火――GFP が照らし出す生きた細胞の小宇宙](https://k518-2026.github.io/rikejo-science-novel/stories/ep34-bioluminescence-gfp-live-cell-imaging.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep34-bioluminescence-gfp-live-cell-imaging.html) | [📄原稿](content/2026-10-11_ep34_bioluminescence_gfp_live_cell_imaging.md) | [🎨挿絵](content/2026-10-11_ep34_bioluminescence_gfp_live_cell_imaging.png) | 理学部・生物科学科 ／ 生命機能イメージング研究センター（分子細胞生物学研究室） | 緑色蛍光タンパク質（GFP / 下村脩博士ら）の発見と生細胞ライブイメージングによる生命現象の可視化 | 7,283字 |
+| 35 | **[傷ついたQRコードと深宇宙からの手紙――誤り訂正符号の代数幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep35-error-correcting-codes-reed-solomon-space-probe.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep35-error-correcting-codes-reed-solomon-space-probe.html) | [📄原稿](content/2026-10-11_ep35_error_correcting_codes_reed_solomon_space_probe.md) | [🎨挿絵](content/2026-10-11_ep35_error_correcting_codes_reed_solomon_space_probe.png) | 情報理工学部・数理情報工学科 ／ 教育学部・情報科教育専攻（符号理論・情報理論研究室） | シャノンの情報理論とハミング符号・リード・ソロモン符号による誤り訂正アルゴリズム（QRコード・小惑星探査機通信） | 6,275字 |
 
 ---
 

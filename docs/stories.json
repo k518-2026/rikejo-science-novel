@@ -406,5 +406,17 @@
     "url": "stories/ep34-bioluminescence-gfp-live-cell-imaging.html",
     "image": "assets/images/ep34-bioluminescence-gfp-live-cell-imaging.png",
     "char_count": 7283
+  },
+  {
+    "no": 35,
+    "work_id": "ep35-error-correcting-codes-reed-solomon-space-probe",
+    "title": "傷ついたQRコードと深宇宙からの手紙――誤り訂正符号の代数幾何学",
+    "faculty": "情報理工学部・数理情報工学科 ／ 教育学部・情報科教育専攻（符号理論・情報理論研究室）",
+    "field": "数学・数理科学",
+    "theme": "シャノンの情報理論とハミング符号・リード・ソロモン符号による誤り訂正アルゴリズム（QRコード・小惑星探査機通信）",
+    "has_image": true,
+    "url": "stories/ep35-error-correcting-codes-reed-solomon-space-probe.html",
+    "image": "assets/images/ep35-error-correcting-codes-reed-solomon-space-probe.png",
+    "char_count": 6275
   }
 ]

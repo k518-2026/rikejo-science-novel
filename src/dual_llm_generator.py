@@ -1059,6 +1059,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully side by side as they test digital error correction codes on a laptop beside a metallic space probe model.",
             "both characters smiling warmly and joyfully side by side with soft, kind eyes and peaceful happy smiles in afternoon sunlight.",
         ),
+        "ep36-superconductivity-meissner-quantum-levitation": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and an eager warm smile, visiting a low-temperature physics laboratory.",
+            "a friendly female physicist with kind smiling eyes safely pouring misty white liquid nitrogen into an insulated beaker.",
+            "both characters smiling in wonder and delight as a silver neodymium magnet levitates steadily above a frosted black superconductor disc.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet happy smiles beside the floating magnet in golden afternoon light.",
+        ),
+        "ep37-circadian-rhythm-clock-genes-chronobiology": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a potted morning glory flower, visiting a chronobiology laboratory.",
+            "a kind female biology professor with gentle smiling eyes showing a 24-hour molecular clock gene oscillation model on a desk.",
+            "both characters smiling with sweet, delightful expressions observing glowing protein rhythm diagrams beside blooming purple morning glory petals.",
+            "both characters smiling peacefully and warmly side by side with soft, kind eyes and natural sweet smiles in gentle morning sunlight.",
+        ),
+        "ep38-causal-inference-natural-experiment-data-science": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a questionnaire chart, entering a sunlit data science seminar room.",
+            "a smiling female statistics mentor researcher in glasses demonstrating causal graphs and correlation diagrams on a glass board.",
+            "both characters smiling happily side by side comparing colorful ice-cream sales versus temperature scatter plots on a laptop monitor.",
+            "both characters smiling warmly and joyfully side by side with soft, kind eyes and peaceful confident smiles beside data charts in afternoon light.",
+        ),
     }
 
     def generate_english_image_prompt(

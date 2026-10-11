@@ -11,6 +11,12 @@ on:
     # 規約違反（過度な短時間連続投稿・スパム判定）防止のため1日1話限定
     - cron: '43 20 * * *'
 
+  push:
+    branches:
+      - main
+    paths:
+      - '.trigger_publish'
+
   workflow_dispatch:
     inputs:
       dry_run:

@@ -490,5 +490,17 @@
     "url": "stories/ep41-quantum-teleportation-entanglement-photon-physics.html",
     "image": "assets/images/ep41-quantum-teleportation-entanglement-photon-physics.png",
     "char_count": 7747
+  },
+  {
+    "no": 42,
+    "work_id": "ep42-paleoclimatology-milankovitch-cycles-earth-science",
+    "title": "星屑が織りなす氷の旋律――ミランコビッチ・サイクルで解く地球の鼓動",
+    "faculty": "理学部・地球惑星科学科 ／ 大気海洋研究所・古環境動態研究部門（古気候モデリング・堆積物解析研究室）",
+    "field": "数学・数理科学",
+    "theme": "地球の離心率・地軸傾斜・歳差運動（ミランコビッチ・サイクル）による氷期・間氷期サイクルの数理天文学と、深海堆積物・氷床コア同位体比記録",
+    "has_image": true,
+    "url": "stories/ep42-paleoclimatology-milankovitch-cycles-earth-science.html",
+    "image": "assets/images/ep42-paleoclimatology-milankovitch-cycles-earth-science.png",
+    "char_count": 7243
   }
 ]

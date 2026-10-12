@@ -1023,5 +1023,80 @@
         "query": "Aspect Dalibard Roger Experimental test of Bell's inequalities using time-varying analyzers Physical Review Letters 1982"
       }
     ]
+  },
+  {
+    "id": "ep42-paleoclimatology-milankovitch-cycles-earth-science",
+    "episode_num": 42,
+    "title": "地球の鼓動が刻む氷河期の謎――ミランコビッチ・サイクルと古気候天文学",
+    "faculty": "理学部・地球惑星科学科 ／ 大気海洋研究所・古環境動態研究部門（古気候モデリング・堆積物解析研究室）",
+    "protagonist": "氷室 雫（ひむろ しずく・高校2年生・地学部）",
+    "mentor": "織座 遥（おりざ はるか・助教・古気候学・地球軌道要素シミュレーション／高校地学教員養成担当）",
+    "theme": "地球の離心率・地軸傾斜・歳差運動（ミランコビッチ・サイクル）による氷期・間氷期サイクルの数理天文学と、深海堆積物・氷床コア同位体比記録",
+    "modern_tech": "深海堆積物コアの酸素同位体比（δ18O）質量分析、三体問題・天体力学数値シミュレーション（軌道要素長期計算）、地球システム気候モデル（AOGCM）",
+    "summary": "「10万年、4万年、2万年――空の星の引力と地球の軌道のダンスが、地球を凍らせたり温めたりしてきたの」――織座助教が見せてくれたのは、深海堆積物コアの縞模様と天体の軌道計算がピタリと一致するグラフ。高校の地学で知った気候変動のスケールに息を呑む雫は、天文学と地球科学が交差する古気候学のロマンに魅せられ、高校の理科の先生として地球の壮大な歴史を伝える未来を描く。",
+    "crossref_queries": [
+      {
+        "label": "深海堆積物コアの同位体比分析からミランコビッチ説を実証した金字塔的論文（Hays, Imbrie, Shackleton）",
+        "query": "Hays Imbrie Shackleton Variations in the Earth Orbit Pacemaker of the Ice Ages Science 1976"
+      },
+      {
+        "label": "地球の日射量変動と第四紀気候変動を結びつける長周期軌道計算法（Berger）",
+        "query": "Berger Long-Term Variations of Daily Insolation and Quaternary Climatic Changes Journal of the Atmospheric Sciences 1978"
+      },
+      {
+        "label": "太陽系天体力学の高精度数値解による過去数千万年の日射量解（Laskar et al.）",
+        "query": "Laskar Robutel Joutel Gastineau Correia Levrard A long-term numerical solution for the insolation quantities of the Earth Astronomy & Astrophysics 2004"
+      }
+    ]
+  },
+  {
+    "id": "ep43-synthetic-biology-minimal-cell-genome",
+    "episode_num": 43,
+    "title": "いのちの最小限レシピを求めて――合成生物学と人工ゲノムデザイン",
+    "faculty": "生命科学部・生命医科学科 ／ 先端バイオ生命工学研究所（合成ゲノム・システム生命科学研究室）",
+    "protagonist": "桐生 萌花（きりゅう もか・高校2年生・生物部）",
+    "mentor": "神崎 結衣（かんざき ゆい・准教授・合成生物学・ゲノム合成工学／理科教育法担当）",
+    "theme": "生命が自立して生存・増殖するために最低限必要な遺伝子セット（Minimal Cell / JCVI-syn3.0）の設計・全合成と生命システムの基本原理",
+    "modern_tech": "化学全合成DNAアセンブリ技術（酵母内相同組換え）、マイコプラズマ人工ゲノム移植技術、必須遺伝子・非必須遺伝子同定（トランスポゾン変異導入）、最小細胞プラットフォーム",
+    "summary": "「生命はどこまでシンプルになれると思う？」――神崎准教授が顕微鏡で見せるのは、人間がコンピュータ上で設計し全合成したゲノムだけで生きる最小人工細胞『JCVI-syn3.0』。473個という生命の必要最小限遺伝子のうち、149個がいまだ機能未知という事実に衝撃を受ける萌花。「生きているとは何か」を生命を組み立てることで解き明かす合成生物学のフロンティアに心を躍らせる。",
+    "crossref_queries": [
+      {
+        "label": "化学合成ゲノムによって制御される人工細菌細胞の創出（Gibson, Venter et al.）",
+        "query": "Gibson Glass Creation of a Bacterial Cell Controlled by a Chemically Synthesized Genome Science 2010"
+      },
+      {
+        "label": "473個の遺伝子からなる最小人工細菌ゲノムの設計と合成（Hutchison, Venter et al.）",
+        "query": "Hutchison Chuang Design and synthesis of a minimal bacterial genome Science 2016"
+      },
+      {
+        "label": "最小細菌の生存に不可欠な必須遺伝子の包括的同定（Glass et al.）",
+        "query": "Glass Assad-Garcia Essential genes of a minimal bacterium Proceedings of the National Academy of Sciences 2006"
+      }
+    ]
+  },
+  {
+    "id": "ep44-p-vs-np-computational-complexity-math-informatics",
+    "episode_num": 44,
+    "title": "解く難しさと確かめる優しさの狭間で――P対NP問題と計算量理論の地平",
+    "faculty": "情報理工学部・数理情報学科 ／ 理学部・情報科学科（計算量理論・アルゴリズム幾何学研究室）",
+    "protagonist": "数馬 涼音（かずま すずね・高校2年生・数学部兼競技プログラミング部）",
+    "mentor": "桂木 朔夜（かつらぎ さくや・講師・計算量理論・離散数学／情報・数学教員免許担当）",
+    "theme": "ミレニアム懸賞問題「P対NP問題」とNP完全性理論、多項式時間還元、暗号理論と計算困難性の本質",
+    "modern_tech": "チューリング機械・多項式時間還元（Cook-Levin定理）、巡回セールスマン問題やSAT問題の計算複雑さクラス、現代暗号（公開鍵暗号・格子暗号）の計算困難性基盤",
+    "summary": "「解くのは難しくても、正解を見せられたら一瞬で確かめられる問題があるでしょ？ PとNPがもし等しかったら、世界中の暗号は一瞬で崩壊するの」――朔夜講師の言葉に息を呑む涼音。競技プログラミングで痛感した計算爆発の壁が、現代暗号の盾であり数学未解決の最大懸賞問題につながっていることを知る。難しさを美しさに変える計算量理論の深淵に触れ、数学と情報を両輪で教える高校教員を志す。",
+    "crossref_queries": [
+      {
+        "label": "定理証明手続きの計算複雑さとNP完全性の概念を導入した基礎論文（Cook）",
+        "query": "Cook The complexity of theorem-proving procedures ACM symposium on Theory of computing 1971"
+      },
+      {
+        "label": "21の主要な組合せ最適化問題がNP完全であることを示した記念碑的論文（Karp）",
+        "query": "Karp Reducibility among Combinatorial Problems Complexity of Computer Computations 1972"
+      },
+      {
+        "label": "平均時計算量理論の展望とアルゴリズムの複雑さ（Impagliazzo）",
+        "query": "Impagliazzo A personal view of average-case complexity IEEE Structure in Complexity Theory Conference 1995"
+      }
+    ]
   }
 ]

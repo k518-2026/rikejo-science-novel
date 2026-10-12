@@ -454,5 +454,17 @@
     "url": "stories/ep38-causal-inference-natural-experiment-data-science.html",
     "image": "assets/images/ep38-causal-inference-natural-experiment-data-science.png",
     "char_count": 7229
+  },
+  {
+    "no": 39,
+    "work_id": "ep39-metamaterials-acoustic-cloaking-wave-physics",
+    "title": "光と音を曲げる透明マント：波の幾何学が描く未来』（～メタマテリアルと変換光学への招待）",
+    "faculty": "工学部・物理工学科 ／ 先端フォトニクス・音響工学研究センター（波動メタマテリアル研究室）",
+    "field": "物理学・宇宙・光学",
+    "theme": "負の屈折率を持つ人工微細構造『メタマテリアル』と変換光学・音響メタマテリアルによる防音・超解像レンズ",
+    "has_image": true,
+    "url": "stories/ep39-metamaterials-acoustic-cloaking-wave-physics.html",
+    "image": "assets/images/ep39-metamaterials-acoustic-cloaking-wave-physics.png",
+    "char_count": 8001
   }
 ]

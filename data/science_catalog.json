@@ -998,5 +998,30 @@
         "query": "Ribeiro Singh Guestrin Why should I trust you Explaining the predictions of any classifier Knowledge Discovery and Data Mining 2016"
       }
     ]
+  },
+  {
+    "id": "ep41-quantum-teleportation-entanglement-photon-physics",
+    "episode_num": 41,
+    "title": "二つの光子が織りなす見えない糸――量子もつれとテレポーテーションの物理",
+    "faculty": "理学部・物理学科 ／ 量子情報物理学研究センター（量子光学・光量子情報研究室）",
+    "protagonist": "光石 結花（みついし ゆか・高校2年生・写真部兼天文部）",
+    "mentor": "波島 凛（なみしま りん・助教・量子光学／高校物理教育アウトリーチ担当）",
+    "theme": "量子力学の非局所性（アインシュタインのEPRパラドックス・ベルの不等式）と光子対による量子テレポーテーション実験（Zeilingerらノーベル物理学賞）",
+    "modern_tech": "非線形光学結晶による偏光もつれ光子対生成、ベル測定と量子テレポーテーションプロトコル、量子インターネット・超長基線干渉計への応用",
+    "summary": "写真のレンズを通る光の粒に興味を持っていた結花。物理学科の研究室で、一つの結晶から生まれた双子の光子が、何十キロ離れても瞬時に互いの状態を伝え合う『量子もつれ』の実験を目撃する。『不気味な遠隔作用』とアインシュタインを悩ませた謎が、今や情報を瞬間移動させる『量子テレポーテーション』として未来の暗号通信を切り拓いていることに深く感動する。",
+    "crossref_queries": [
+      {
+        "label": "未知の量子状態を離れた場所へ伝送する量子テレポーテーションの理論（Bennett et al.）",
+        "query": "Bennett Brassard Crepeau Jozsa Peres Wootters Teleporting an unknown quantum state via dual classical and Einstein-Podolsky-Rosen channels Physical Review Letters 1993"
+      },
+      {
+        "label": "光子の偏光もつれを用いた量子テレポーテーションの初の実験的実証（Bouwmeester, Zeilinger et al. / 2022年ノーベル物理学賞）",
+        "query": "Bouwmeester Pan Mattle Eibl Weinfurter Zeilinger Experimental quantum teleportation Nature 1997"
+      },
+      {
+        "label": "量子もつれ光子対を用いたベルの不等式の破れの実験的検証（Aspect et al. / 2022年ノーベル物理学賞）",
+        "query": "Aspect Dalibard Roger Experimental test of Bell's inequalities using time-varying analyzers Physical Review Letters 1982"
+      }
+    ]
   }
 ]

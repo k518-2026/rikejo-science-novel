@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **38** 話（うち挿絵付き **38** 話 / 最終更新: 2026-10-12 06:44 JST）
+- **収録作品数**: 全 **39** 話（うち挿絵付き **39** 話 / 最終更新: 2026-10-12 19:19 JST）
 
 ---
 
@@ -52,6 +52,7 @@
 | 36 | **[液体窒素の白い霧と空中に浮かぶ磁石――超伝導と量子ピン止め効果](https://k518-2026.github.io/rikejo-science-novel/stories/ep36-superconductivity-meissner-quantum-levitation.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep36-superconductivity-meissner-quantum-levitation.html) | [📄原稿](content/2026-10-11_ep36_superconductivity_meissner_quantum_levitation.md) | [🎨挿絵](content/2026-10-11_ep36_superconductivity_meissner_quantum_levitation.png) | 理学部・物理学科 ／ 物性物理学研究所（低温物理・超伝導物質研究室） | 超伝導現象（電気抵抗ゼロ・マイスナー効果・磁束の量子化）とクーパー対（BCS理論）・リニアモーターカーや量子コンピュータへの応用 | 6,719字 |
 | 37 | **[朝顔が咲く時刻を刻む細胞の振り子――時計遺伝子と体内時計の生物学](https://k518-2026.github.io/rikejo-science-novel/stories/ep37-circadian-rhythm-clock-genes-chronobiology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep37-circadian-rhythm-clock-genes-chronobiology.html) | [📄原稿](content/2026-10-11_ep37_circadian_rhythm_clock_genes_chronobiology.md) | [🎨挿絵](content/2026-10-11_ep37_circadian_rhythm_clock_genes_chronobiology.png) | 理学部・生物科学科 ／ 生命理学専攻（時間生物学・概日リズム研究室） | 概日リズム（サーカディアンリズム）を生み出す時計遺伝子（Period / Timeless / Clock / Bmal1）の転写翻訳負帰還ループ | 7,758字 |
 | 38 | **[相関は嘘つき？「もし・たら」の魔法を解き放て！――データから因果を読み取る統計学への招待](https://k518-2026.github.io/rikejo-science-novel/stories/ep38-causal-inference-natural-experiment-data-science.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep38-causal-inference-natural-experiment-data-science.html) | [📄原稿](content/2026-10-11_ep38_causal_inference_natural_experiment_data_science.md) | [🎨挿絵](content/2026-10-11_ep38_causal_inference_natural_experiment_data_science.png) | データサイエンス学部 ／ 経済・数理統計学科（統計的因果推論・教育データ科学研究室） | 疑似相関（交絡因子）の排除と統計的因果推論（反事実モデル・傾向スコア・差分の差分法・回帰不連続デザイン） | 7,229字 |
+| 39 | **[光と音を曲げる透明マント：波の幾何学が描く未来』（～メタマテリアルと変換光学への招待）](https://k518-2026.github.io/rikejo-science-novel/stories/ep39-metamaterials-acoustic-cloaking-wave-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep39-metamaterials-acoustic-cloaking-wave-physics.html) | [📄原稿](content/2026-10-12_ep39_metamaterials_acoustic_cloaking_wave_physics.md) | [🎨挿絵](content/2026-10-12_ep39_metamaterials_acoustic_cloaking_wave_physics.png) | 工学部・物理工学科 ／ 先端フォトニクス・音響工学研究センター（波動メタマテリアル研究室） | 負の屈折率を持つ人工微細構造『メタマテリアル』と変換光学・音響メタマテリアルによる防音・超解像レンズ | 8,001字 |
 
 ---
 

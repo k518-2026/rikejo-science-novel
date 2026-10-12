@@ -502,5 +502,17 @@
     "url": "stories/ep42-paleoclimatology-milankovitch-cycles-earth-science.html",
     "image": "assets/images/ep42-paleoclimatology-milankovitch-cycles-earth-science.png",
     "char_count": 7243
+  },
+  {
+    "no": 43,
+    "work_id": "ep43-synthetic-biology-minimal-cell-genome",
+    "title": "いのちの最小限レシピを求めて――473 の遺伝子が織りなす、宇宙への招待状",
+    "faculty": "生命科学部・生命医科学科 ／ 先端バイオ生命工学研究所（合成ゲノム・システム生命科学研究室）",
+    "field": "生命科学・バイオ・医学",
+    "theme": "生命が自立して生存・増殖するために最低限必要な遺伝子セット（Minimal Cell / JCVI-syn3.0）の設計・全合成と生命システムの基本原理",
+    "has_image": true,
+    "url": "stories/ep43-synthetic-biology-minimal-cell-genome.html",
+    "image": "assets/images/ep43-synthetic-biology-minimal-cell-genome.png",
+    "char_count": 8403
   }
 ]

@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **42** 話（うち挿絵付き **42** 話 / 最終更新: 2026-10-13 08:13 JST）
+- **収録作品数**: 全 **43** 話（うち挿絵付き **43** 話 / 最終更新: 2026-10-13 08:50 JST）
 
 ---
 
@@ -56,6 +56,7 @@
 | 40 | **[AI の「まなざし」を言葉に翻訳する――説明可能な AI と信頼のアルゴリズム](https://k518-2026.github.io/rikejo-science-novel/stories/ep40-explainable-ai-medical-imaging-informatics-teacher.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep40-explainable-ai-medical-imaging-informatics-teacher.html) | [📄原稿](content/2026-10-12_ep40_explainable_ai_medical_imaging_informatics_teacher.md) | [🎨挿絵](content/2026-10-12_ep40_explainable_ai_medical_imaging_informatics_teacher.png) | 情報学部・知能情報学科 ／ 教育学部・情報教育課程（人間中心AI・医療画像解析研究室） | 深層学習のブラックボックス問題と説明可能なAI（Explainable AI: Grad-CAM / SHAP / 協力ゲーム理論のシャープレイ値） | 7,179字 |
 | 41 | **[二つの光子が織りなす見えない糸――量子もつれとテレポーテーションの物理](https://k518-2026.github.io/rikejo-science-novel/stories/ep41-quantum-teleportation-entanglement-photon-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep41-quantum-teleportation-entanglement-photon-physics.html) | [📄原稿](content/2026-10-12_ep41_quantum_teleportation_entanglement_photon_physics.md) | [🎨挿絵](content/2026-10-12_ep41_quantum_teleportation_entanglement_photon_physics.png) | 理学部・物理学科 ／ 量子情報物理学研究センター（量子光学・光量子情報研究室） | 量子力学の非局所性（アインシュタインのEPRパラドックス・ベルの不等式）と光子対による量子テレポーテーション実験（Zeilingerらノーベル物理学賞） | 7,747字 |
 | 42 | **[星屑が織りなす氷の旋律――ミランコビッチ・サイクルで解く地球の鼓動](https://k518-2026.github.io/rikejo-science-novel/stories/ep42-paleoclimatology-milankovitch-cycles-earth-science.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep42-paleoclimatology-milankovitch-cycles-earth-science.html) | [📄原稿](content/2026-10-13_ep42_paleoclimatology_milankovitch_cycles_earth_science.md) | [🎨挿絵](content/2026-10-13_ep42_paleoclimatology_milankovitch_cycles_earth_science.png) | 理学部・地球惑星科学科 ／ 大気海洋研究所・古環境動態研究部門（古気候モデリング・堆積物解析研究室） | 地球の離心率・地軸傾斜・歳差運動（ミランコビッチ・サイクル）による氷期・間氷期サイクルの数理天文学と、深海堆積物・氷床コア同位体比記録 | 7,243字 |
+| 43 | **[いのちの最小限レシピを求めて――473 の遺伝子が織りなす、宇宙への招待状](https://k518-2026.github.io/rikejo-science-novel/stories/ep43-synthetic-biology-minimal-cell-genome.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep43-synthetic-biology-minimal-cell-genome.html) | [📄原稿](content/2026-10-13_ep43_synthetic_biology_minimal_cell_genome.md) | [🎨挿絵](content/2026-10-13_ep43_synthetic_biology_minimal_cell_genome.png) | 生命科学部・生命医科学科 ／ 先端バイオ生命工学研究所（合成ゲノム・システム生命科学研究室） | 生命が自立して生存・増殖するために最低限必要な遺伝子セット（Minimal Cell / JCVI-syn3.0）の設計・全合成と生命システムの基本原理 | 8,403字 |
 
 ---
 

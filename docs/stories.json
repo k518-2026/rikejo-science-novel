@@ -466,5 +466,17 @@
     "url": "stories/ep39-metamaterials-acoustic-cloaking-wave-physics.html",
     "image": "assets/images/ep39-metamaterials-acoustic-cloaking-wave-physics.png",
     "char_count": 8001
+  },
+  {
+    "no": 40,
+    "work_id": "ep40-explainable-ai-medical-imaging-informatics-teacher",
+    "title": "AI の「まなざし」を言葉に翻訳する――説明可能な AI と信頼のアルゴリズム",
+    "faculty": "情報学部・知能情報学科 ／ 教育学部・情報教育課程（人間中心AI・医療画像解析研究室）",
+    "field": "情報学・AI",
+    "theme": "深層学習のブラックボックス問題と説明可能なAI（Explainable AI: Grad-CAM / SHAP / 協力ゲーム理論のシャープレイ値）",
+    "has_image": true,
+    "url": "stories/ep40-explainable-ai-medical-imaging-informatics-teacher.html",
+    "image": "assets/images/ep40-explainable-ai-medical-imaging-informatics-teacher.png",
+    "char_count": 7179
   }
 ]

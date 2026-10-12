@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **40** 話（うち挿絵付き **40** 話 / 最終更新: 2026-10-12 19:29 JST）
+- **収録作品数**: 全 **41** 話（うち挿絵付き **40** 話 / 最終更新: 2026-10-12 19:34 JST）
 
 ---
 
@@ -54,6 +54,7 @@
 | 38 | **[相関は嘘つき？「もし・たら」の魔法を解き放て！――データから因果を読み取る統計学への招待](https://k518-2026.github.io/rikejo-science-novel/stories/ep38-causal-inference-natural-experiment-data-science.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep38-causal-inference-natural-experiment-data-science.html) | [📄原稿](content/2026-10-11_ep38_causal_inference_natural_experiment_data_science.md) | [🎨挿絵](content/2026-10-11_ep38_causal_inference_natural_experiment_data_science.png) | データサイエンス学部 ／ 経済・数理統計学科（統計的因果推論・教育データ科学研究室） | 疑似相関（交絡因子）の排除と統計的因果推論（反事実モデル・傾向スコア・差分の差分法・回帰不連続デザイン） | 7,229字 |
 | 39 | **[光と音を曲げる透明マント：波の幾何学が描く未来』（～メタマテリアルと変換光学への招待）](https://k518-2026.github.io/rikejo-science-novel/stories/ep39-metamaterials-acoustic-cloaking-wave-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep39-metamaterials-acoustic-cloaking-wave-physics.html) | [📄原稿](content/2026-10-12_ep39_metamaterials_acoustic_cloaking_wave_physics.md) | [🎨挿絵](content/2026-10-12_ep39_metamaterials_acoustic_cloaking_wave_physics.png) | 工学部・物理工学科 ／ 先端フォトニクス・音響工学研究センター（波動メタマテリアル研究室） | 負の屈折率を持つ人工微細構造『メタマテリアル』と変換光学・音響メタマテリアルによる防音・超解像レンズ | 8,001字 |
 | 40 | **[AI の「まなざし」を言葉に翻訳する――説明可能な AI と信頼のアルゴリズム](https://k518-2026.github.io/rikejo-science-novel/stories/ep40-explainable-ai-medical-imaging-informatics-teacher.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep40-explainable-ai-medical-imaging-informatics-teacher.html) | [📄原稿](content/2026-10-12_ep40_explainable_ai_medical_imaging_informatics_teacher.md) | [🎨挿絵](content/2026-10-12_ep40_explainable_ai_medical_imaging_informatics_teacher.png) | 情報学部・知能情報学科 ／ 教育学部・情報教育課程（人間中心AI・医療画像解析研究室） | 深層学習のブラックボックス問題と説明可能なAI（Explainable AI: Grad-CAM / SHAP / 協力ゲーム理論のシャープレイ値） | 7,179字 |
+| 41 | **[二つの光子が織りなす見えない糸――量子もつれとテレポーテーションの物理](https://k518-2026.github.io/rikejo-science-novel/stories/ep41-quantum-teleportation-entanglement-photon-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep41-quantum-teleportation-entanglement-photon-physics.html) | [📄原稿](content/2026-10-12_ep41_quantum_teleportation_entanglement_photon_physics.md) | — | 理学部・物理学科 ／ 量子情報物理学研究センター（量子光学・光量子情報研究室） | 量子力学の非局所性（アインシュタインのEPRパラドックス・ベルの不等式）と光子対による量子テレポーテーション実験（Zeilingerらノーベル物理学賞） | 7,747字 |
 
 ---
 

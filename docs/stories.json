@@ -478,5 +478,17 @@
     "url": "stories/ep40-explainable-ai-medical-imaging-informatics-teacher.html",
     "image": "assets/images/ep40-explainable-ai-medical-imaging-informatics-teacher.png",
     "char_count": 7179
+  },
+  {
+    "no": 41,
+    "work_id": "ep41-quantum-teleportation-entanglement-photon-physics",
+    "title": "二つの光子が織りなす見えない糸――量子もつれとテレポーテーションの物理",
+    "faculty": "理学部・物理学科 ／ 量子情報物理学研究センター（量子光学・光量子情報研究室）",
+    "field": "情報学・AI",
+    "theme": "量子力学の非局所性（アインシュタインのEPRパラドックス・ベルの不等式）と光子対による量子テレポーテーション実験（Zeilingerらノーベル物理学賞）",
+    "has_image": false,
+    "url": "stories/ep41-quantum-teleportation-entanglement-photon-physics.html",
+    "image": "",
+    "char_count": 7747
   }
 ]

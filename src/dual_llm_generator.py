@@ -1077,6 +1077,24 @@ class DualLLMStoryGenerator:
             "both characters smiling happily side by side comparing colorful ice-cream sales versus temperature scatter plots on a laptop monitor.",
             "both characters smiling warmly and joyfully side by side with soft, kind eyes and peaceful confident smiles beside data charts in afternoon light.",
         ),
+        "ep39-metamaterials-acoustic-cloaking-wave-physics": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a shiny musical flute, arriving at an advanced wave physics laboratory.",
+            "a smiling female physicist with kind eyes showing microstructured acoustic acoustic metamaterial panels and optical prism arrays.",
+            "both characters smiling in wonder and delight watching a laser beam smoothly curve around a metallic cylindrical cloaking shell.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet happy smiles beside gleaming metallic metamaterial models in afternoon light.",
+        ),
+        "ep40-explainable-ai-medical-imaging-informatics-teacher": _koma.__func__(
+            "a cute high school girl with soft gentle eyes entering a bright computer science seminar room.",
+            "a smiling female computer science professor with kind eyes demonstrating explainable AI heatmap visualizations on a clear whiteboard.",
+            "both characters smiling cheerfully looking at colorful Grad-CAM feature attention heatmaps on a high-resolution workstation display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in gentle sunlit computer laboratory.",
+        ),
+        "ep41-quantum-teleportation-entanglement-photon-physics": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and an eager warm smile, visiting an optical quantum physics laboratory.",
+            "a friendly female quantum physicist with kind smiling eyes showing optical fiber splitters and entangled photon laser crystals.",
+            "both characters smiling in wonder as twin sapphire-blue laser beams synchronize across a vibration-isolated optical table.",
+            "both characters smiling peacefully and happily side by side with soft, kind eyes and sweet gentle smiles under soft twilight laboratory lighting.",
+        ),
     }
 
     def generate_english_image_prompt(
@@ -1324,7 +1342,7 @@ Based on the following Japanese science novel episode (structured into 4 scenes:
             m = re.search(r"\[\s*\{.*\}\s*\]", cleaned, flags=re.DOTALL)
             if m:
                 cleaned = m.group(0)
-            items = json.loads(cleaned)
+            items = json.loads(cleaned, strict=False)
             if isinstance(items, list):
                 valid_items = []
                 existing_ids = {w.get("id") for w in existing_catalog}

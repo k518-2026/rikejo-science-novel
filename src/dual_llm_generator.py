@@ -134,7 +134,7 @@ def query_crossref_verified_paper(
         "query.bibliographic": query_str,
         "rows": 8,
         "select": "DOI,title,author,container-title,publisher,published-print,published-online,issued,volume,issue,page",
-        "mailto": "kouy@outlook.com",
+        "mailto": "yamamoto.k518@gmail.com",
     })
     url = f"https://api.crossref.org/works?{params}"
     for attempt in range(3):
@@ -142,7 +142,7 @@ def query_crossref_verified_paper(
             time.sleep(0.8 * (attempt + 1))
             req = urllib.request.Request(
                 url,
-                headers={"User-Agent": "RikejoSciNovelBot/1.0 (https://github.com/k518-2026/rikejo-science-novel; mailto:kouy@outlook.com)"}
+                headers={"User-Agent": "RikejoSciNovelBot/1.0 (https://github.com/k518-2026/rikejo-science-novel; mailto:yamamoto.k518@gmail.com)"}
             )
             with urllib.request.urlopen(req, timeout=12) as res:
                 if res.getcode() == 200:

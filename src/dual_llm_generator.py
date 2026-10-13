@@ -1095,6 +1095,24 @@ class DualLLMStoryGenerator:
             "both characters smiling in wonder as twin sapphire-blue laser beams synchronize across a vibration-isolated optical table.",
             "both characters smiling peacefully and happily side by side with soft, kind eyes and sweet gentle smiles under soft twilight laboratory lighting.",
         ),
+        "ep42-paleoclimatology-milankovitch-cycles-earth-science": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and an eager warm smile, entering an atmospheric and oceanic earth science laboratory.",
+            "a friendly female earth scientist with kind smiling eyes pointing at deep-sea sediment core samples and astronomical Milankovitch orbital cycle charts.",
+            "both characters smiling in wonder looking at periodic ice age climate curves matching Earth's orbital eccentricity and precession on a dual monitor display.",
+            "both characters smiling peacefully and warmly side by side with soft, kind eyes and natural sweet smiles in gentle sunlit earth science laboratory.",
+        ),
+        "ep43-synthetic-biology-minimal-cell-genome": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and a curious warm smile, visiting an advanced synthetic biology laboratory.",
+            "a smiling female bioengineering professor with kind eyes explaining synthetic minimal genome design on an illuminated glass board.",
+            "both characters smiling cheerfully observing microscopic living artificial JCVI-syn3.0 minimal cells glowing under a fluorescence microscope.",
+            "both characters smiling peacefully and happily side by side with soft, kind eyes and sweet gentle smiles in bright sunny biotechnology laboratory.",
+        ),
+        "ep44-p-vs-np-computational-complexity-math-informatics": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a notebook, visiting a mathematical computer science research seminar room.",
+            "a kind female theoretical computer scientist with gentle smiling eyes illustrating P vs NP complexity classes and polynomial reduction graphs on a clean blackboard.",
+            "both characters smiling excitedly examining algorithmic verification trees and cryptographic complexity formulas on a laptop screen.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit math and informatics seminar room.",
+        ),
     }
 
     def generate_english_image_prompt(

@@ -514,5 +514,17 @@
     "url": "stories/ep43-synthetic-biology-minimal-cell-genome.html",
     "image": "assets/images/ep43-synthetic-biology-minimal-cell-genome.png",
     "char_count": 8403
+  },
+  {
+    "no": 44,
+    "work_id": "ep44-p-vs-np-computational-complexity-math-informatics",
+    "title": "解く難しさと確かめる優しさの狭間で――P対NP問題と計算量理論の地平",
+    "faculty": "情報理工学部・数理情報学科 ／ 理学部・情報科学科（計算量理論・アルゴリズム幾何学研究室）",
+    "field": "数学・数理科学",
+    "theme": "ミレニアム懸賞問題「P対NP問題」とNP完全性理論、多項式時間還元、暗号理論と計算困難性の本質",
+    "has_image": true,
+    "url": "stories/ep44-p-vs-np-computational-complexity-math-informatics.html",
+    "image": "assets/images/ep44-p-vs-np-computational-complexity-math-informatics.png",
+    "char_count": 7164
   }
 ]

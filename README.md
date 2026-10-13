@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **43** 話（うち挿絵付き **43** 話 / 最終更新: 2026-10-13 08:50 JST）
+- **収録作品数**: 全 **44** 話（うち挿絵付き **44** 話 / 最終更新: 2026-10-13 09:27 JST）
 
 ---
 
@@ -57,6 +57,7 @@
 | 41 | **[二つの光子が織りなす見えない糸――量子もつれとテレポーテーションの物理](https://k518-2026.github.io/rikejo-science-novel/stories/ep41-quantum-teleportation-entanglement-photon-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep41-quantum-teleportation-entanglement-photon-physics.html) | [📄原稿](content/2026-10-12_ep41_quantum_teleportation_entanglement_photon_physics.md) | [🎨挿絵](content/2026-10-12_ep41_quantum_teleportation_entanglement_photon_physics.png) | 理学部・物理学科 ／ 量子情報物理学研究センター（量子光学・光量子情報研究室） | 量子力学の非局所性（アインシュタインのEPRパラドックス・ベルの不等式）と光子対による量子テレポーテーション実験（Zeilingerらノーベル物理学賞） | 7,747字 |
 | 42 | **[星屑が織りなす氷の旋律――ミランコビッチ・サイクルで解く地球の鼓動](https://k518-2026.github.io/rikejo-science-novel/stories/ep42-paleoclimatology-milankovitch-cycles-earth-science.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep42-paleoclimatology-milankovitch-cycles-earth-science.html) | [📄原稿](content/2026-10-13_ep42_paleoclimatology_milankovitch_cycles_earth_science.md) | [🎨挿絵](content/2026-10-13_ep42_paleoclimatology_milankovitch_cycles_earth_science.png) | 理学部・地球惑星科学科 ／ 大気海洋研究所・古環境動態研究部門（古気候モデリング・堆積物解析研究室） | 地球の離心率・地軸傾斜・歳差運動（ミランコビッチ・サイクル）による氷期・間氷期サイクルの数理天文学と、深海堆積物・氷床コア同位体比記録 | 7,243字 |
 | 43 | **[いのちの最小限レシピを求めて――473 の遺伝子が織りなす、宇宙への招待状](https://k518-2026.github.io/rikejo-science-novel/stories/ep43-synthetic-biology-minimal-cell-genome.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep43-synthetic-biology-minimal-cell-genome.html) | [📄原稿](content/2026-10-13_ep43_synthetic_biology_minimal_cell_genome.md) | [🎨挿絵](content/2026-10-13_ep43_synthetic_biology_minimal_cell_genome.png) | 生命科学部・生命医科学科 ／ 先端バイオ生命工学研究所（合成ゲノム・システム生命科学研究室） | 生命が自立して生存・増殖するために最低限必要な遺伝子セット（Minimal Cell / JCVI-syn3.0）の設計・全合成と生命システムの基本原理 | 8,403字 |
+| 44 | **[解く難しさと確かめる優しさの狭間で――P対NP問題と計算量理論の地平](https://k518-2026.github.io/rikejo-science-novel/stories/ep44-p-vs-np-computational-complexity-math-informatics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep44-p-vs-np-computational-complexity-math-informatics.html) | [📄原稿](content/2026-10-13_ep44_p_vs_np_computational_complexity_math_informatics.md) | [🎨挿絵](content/2026-10-13_ep44_p_vs_np_computational_complexity_math_informatics.png) | 情報理工学部・数理情報学科 ／ 理学部・情報科学科（計算量理論・アルゴリズム幾何学研究室） | ミレニアム懸賞問題「P対NP問題」とNP完全性理論、多項式時間還元、暗号理論と計算困難性の本質 | 7,164字 |
 
 ---
 

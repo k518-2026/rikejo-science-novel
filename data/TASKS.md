@@ -1,8 +1,8 @@
 # 📋 分散ローカルLLM 自動作業リスト (`rikejo-science-novel`)
 
 - **会話ID**: `03e1e31e-29c5-4db4-b211-06e49e17b8bd`
-- **最終同期日時 (JST)**: `2026-10-10T12:55:40`
-- **進捗サマリー**: 全 **40** 話 （完了: **29** / 挿絵待ち: **0** / **PC起動時実行キュー(`queued`)**: **5** / プロット作成済: **0** / 未着手待機: **6**）
+- **最終同期日時 (JST)**: `2026-10-13T09:00:00`
+- **進捗サマリー**: 全 **44** 話 （完了: **43** / 挿絵待ち: **0** / **PC起動時実行キュー(`queued`)**: **1** / プロット作成済: **0** / 未着手待機: **0**）
 
 ## 🖥️ 各ローカルLLMサーバーの役割分担（メインPC電源オフ時も各ノード単体で自律実行）
 
@@ -16,29 +16,19 @@
 
 | 話数 | タスクID | タイトル | 学部・研究室 | 状態 (`status`) | 次回担当ライター (交互割当) |
 |:---:|:---|:---|:---|:---:|:---|
-| #30 | `ep30-graph-theory-four-color-theorem-math-teacher` | 白地図を彩る四色の魔法――グラフ理論とコンピュータが証明した数学のパズル | 理学部・数学科 ／ 教育学部・数学教育専攻（離散数学・グラフ理論研究室） | `queued` | ✨ **プライマリ `rtx5060lp`** (`shosetsu` 叙情ノベル調) |
-| #31 | `ep31-exoplanet-transit-spectroscopy-astronomy` | 幾千光年かなたの星のまばたき――系外惑星トランジット法と生命のサイン | 理学部・宇宙地球物理学科 ／ 天文学専攻（太陽系外惑星・宇宙生物学研究室） | `queued` | 🔥 **セカンダリ `sff7020`** (`gemma-4-26b` ドラマチック調) |
-| #32 | `ep32-gut-microbiome-brain-axis-bioscience` | お腹の中の小さな森が心を醸す――腸内フローラと『脳腸相関』の生命科学 | 農学部・応用生命化学科 ／ 薬学部・微生物薬品化学研究室（腸内細菌叢・神経免疫学） | `queued` | ✨ **プライマリ `rtx5060lp`** (`shosetsu` 叙情ノベル調) |
-| #33 | `ep33-origami-engineering-miura-ori-space-solar-sail` | 一枚の折り紙が宇宙で翼を広げる日――ミウラ折りと折紙工学の幾何学 | 工学部・航空宇宙工学科 ／ 先端学際工学専攻（折紙工学・展開構造物研究室） | `queued` | 🔥 **セカンダリ `sff7020`** (`gemma-4-26b` ドラマチック調) |
-| #34 | `ep34-bioluminescence-gfp-live-cell-imaging` | オワンクラゲの緑の灯火――GFPが照らし出す生きた細胞の小宇宙 | 理学部・生物科学科 ／ 生命機能イメージング研究センター（分子細胞生物学研究室） | `queued` | ✨ **プライマリ `rtx5060lp`** (`shosetsu` 叙情ノベル調) |
-| #35 | `ep35-error-correcting-codes-reed-solomon-space-probe` | 傷ついたQRコードと深宇宙からの手紙――誤り訂正符号の代数幾何学 | 情報理工学部・数理情報工学科 ／ 教育学部・情報科教育専攻（符号理論・情報理論研究室） | `pending` | 🔥 **セカンダリ `sff7020`** (`gemma-4-26b` ドラマチック調) |
-| #36 | `ep36-superconductivity-meissner-quantum-levitation` | 液体窒素の白い霧と空中に浮かぶ磁石――超伝導と量子ピン止め効果の物理 | 理学部・物理学科 ／ 物性物理学研究所（低温物理・超伝導物質研究室） | `pending` | ✨ **プライマリ `rtx5060lp`** (`shosetsu` 叙情ノベル調) |
-| #37 | `ep37-circadian-rhythm-clock-genes-chronobiology` | 朝顔が咲く時刻を刻む細胞の振り子――時計遺伝子と体内時計の生物学 | 理学部・生物科学科 ／ 生命理学専攻（時間生物学・概日リズム研究室） | `pending` | 🔥 **セカンダリ `sff7020`** (`gemma-4-26b` ドラマチック調) |
-| #38 | `ep38-causal-inference-natural-experiment-data-science` | アイスクリームが売れると水難事故が増える？――相関と因果を見抜く統計学 | データサイエンス学部 ／ 経済・数理統計学科（統計的因果推論・教育データ科学研究室） | `pending` | ✨ **プライマリ `rtx5060lp`** (`shosetsu` 叙情ノベル調) |
-| #39 | `ep39-metamaterials-acoustic-cloaking-wave-physics` | 光と音を曲げる透明マントの設計図――メタマテリアルと波動の幾何学 | 工学部・物理工学科 ／ 先端フォトニクス・音響工学研究センター（波動メタマテリアル研究室） | `pending` | 🔥 **セカンダリ `sff7020`** (`gemma-4-26b` ドラマチック調) |
-| #40 | `ep40-explainable-ai-medical-imaging-informatics-teacher` | AIの『まなざし』を言葉に翻訳する――説明可能なAI（XAI）と信頼のアルゴリズム | 情報学部・知能情報学科 ／ 教育学部・情報教育課程（人間中心AI・医療画像解析研究室） | `pending` | ✨ **プライマリ `rtx5060lp`** (`shosetsu` 叙情ノベル調) |
+| #44 | `ep44-p-vs-np-computational-complexity-math-informatics` | 解く難しさと確かめる優しさの狭間で――P対NP問題と計算量理論の地平 | 情報理工学部・数理情報学科 ／ 理学部・情報科学科（計算量理論・アルゴリズム幾何学研究室） | `queued` | ✨ **プライマリ `rtx5060lp`** (`shosetsu` 叙情ノベル調) |
 
 ## ✅ 完了済みエピソード（最新10件）
 
 | 話数 | タスクID | タイトル | 執筆担当ノード | 執筆日 | 校閲 (`sff7020`) | 挿絵 (`kenomac-mini`) |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|
-| #29 | `ep29-artificial-photosynthesis-photocatalyst-chemistry` | 太陽と水から未来の燃料を醸す葉っぱ――光触媒と人工光合成の化学 | `rtx5060lp` | 2026-10-09 | 未校閲 | 🎨 (kenomac-mini) |
-| #28 | `ep28-ice-core-paleoclimate-isotope-earth-science` | 南極の氷に閉じ込められた八十万年前の空気――同位体地球化学と地球の記憶 | `rtx5060lp` | 2026-10-09 | 未校閲 | 🎨 (kenomac-mini) |
-| #27 | `ep27-autonomous-driving-slam-bayesian-informatics` | 霧のキャンパスを走る小さなロボット――ベイズ推定と自己位置推定のアルゴリズム | `rtx5060lp` | 2026-10-08 | 未校閲 | 🎨 (kenomac-mini) |
-| #26 | `ep26-optogenetics-channelrhodopsin-neuroscience` | 青い光のスイッチで、眠っていた記憶が目を覚ます――光遺伝学と緑藻の贈りもの | `rtx5060lp` | 2026-10-08 | 未校閲 | 🎨 (kenomac-mini) |
-| #25 | `ep25-fourier-transform-music-acoustics-math-teacher` | バイオリンの音色を数式に分解する放課後――フーリエ解析と音楽の数学 | `rtx5060lp` | 2026-10-07 | 未校閲 | 🎨 (kenomac-mini) |
-| #24 | `ep24-click-chemistry-bioorthogonal-reaction` | 生きている細胞の中でパチンと留める分子のバックル――生体直交クリックケミストリー | `rtx5060lp` | 2026-10-07 | 未校閲 | 🎨 (kenomac-mini) |
-| #23 | `ep23-topological-insulator-spintronics-physics` | 中身は電気を通さないのに、表面だけを電子が疾走する――トポロジカル絶縁体と次世代コンピュータ | `rtx5060lp` | 2026-10-07 | 未校閲 | 🎨 (kenomac-mini) |
-| #22 | `ep22-ips-organoid-regenerative-medicine-pharmacology` | シャーレの上の小さな鼓動――iPS細胞オルガノイドと未来の創薬 | `rtx5060lp` | 2026-10-06 | 未校閲 | 🎨 (kenomac-mini) |
-| #21 | `ep21-compressed-sensing-black-hole-imaging-informatics` | 地球サイズの瞳でブラックホールの影を現像する――スパースモデリングと情報科学 | `rtx5060lp` | 2026-10-06 | 未校閲 | 🎨 (kenomac-mini) |
-| #20 | `ep20-turing-pattern-reaction-diffusion-math-biology` | シマウマの縞模様と熱帯魚の迷路を描く偏微分方程式――数理生物学のスケッチブック | `rtx5060lp` | 2026-10-06 | 未校閲 | 🎨 (kenomac-mini) |
+| #43 | `ep43-synthetic-biology-minimal-cell-genome` | いのちの最小限レシピを求めて――合成生物学と人工ゲノムデザイン | `rtx5060lp` | 2026-10-13 | 未校閲 | 🎨 (kenomac-mini) |
+| #42 | `ep42-paleoclimatology-milankovitch-cycles-earth-science` | 地球の鼓動が刻む氷河期の謎――ミランコビッチ・サイクルと古気候天文学 | `rtx5060lp` | 2026-10-13 | 未校閲 | 🎨 (kenomac-mini) |
+| #41 | `ep41-quantum-teleportation-entanglement-photon-physics` | 二つの光子が織りなす見えない糸――量子もつれとテレポーテーションの物理 | `rtx5060lp` | 2026-10-12 | 未校閲 | 🎨 (kenomac-mini) |
+| #40 | `ep40-explainable-ai-medical-imaging-informatics-teacher` | AIの『まなざし』を言葉に翻訳する――説明可能なAI（XAI）と信頼のアルゴリズム | `rtx5060lp` | 2026-10-12 | 未校閲 | 🎨 (kenomac-mini) |
+| #39 | `ep39-metamaterials-acoustic-cloaking-wave-physics` | 光と音を曲げる透明マントの設計図――メタマテリアルと波動の幾何学 | `rtx5060lp` | 2026-10-12 | 未校閲 | 🎨 (kenomac-mini) |
+| #38 | `ep38-causal-inference-natural-experiment-data-science` | アイスクリームが売れると水難事故が増える？――相関と因果を見抜く統計学 | `rtx5060lp` | 2026-10-11 | 未校閲 | 🎨 (kenomac-mini) |
+| #37 | `ep37-circadian-rhythm-clock-genes-chronobiology` | 朝顔が咲く時刻を刻む細胞の振り子――時計遺伝子と体内時計の生物学 | `rtx5060lp` | 2026-10-11 | 未校閲 | 🎨 (kenomac-mini) |
+| #36 | `ep36-superconductivity-meissner-quantum-levitation` | 液体窒素の白い霧と空中に浮かぶ磁石――超伝導と量子ピン止め効果の物理 | `rtx5060lp` | 2026-10-11 | 未校閲 | 🎨 (kenomac-mini) |
+| #35 | `ep35-error-correcting-codes-reed-solomon-space-probe` | 傷ついたQRコードと深宇宙からの手紙――誤り訂正符号の代数幾何学 | `rtx5060lp` | 2026-10-11 | 未校閲 | 🎨 (kenomac-mini) |
+| #34 | `ep34-bioluminescence-gfp-live-cell-imaging` | オワンクラゲの緑の灯火――GFPが照らし出す生きた細胞の小宇宙 | `rtx5060lp` | 2026-10-11 | 未校閲 | 🎨 (kenomac-mini) |

@@ -1113,6 +1113,24 @@ class DualLLMStoryGenerator:
             "both characters smiling excitedly examining algorithmic verification trees and cryptographic complexity formulas on a laptop screen.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit math and informatics seminar room.",
         ),
+        "ep45-higgs-boson-standard-model-particle-physics": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and an eager warm smile, visiting a particle physics research center.",
+            "a friendly female particle physicist with kind smiling eyes explaining the Higgs field with a bowl of syrup analogy on a whiteboard.",
+            "both characters smiling in wonder looking at a colorful LHC collision event display with particle tracks on a large monitor.",
+            "both characters smiling peacefully and happily side by side with soft, kind eyes and sweet gentle smiles in a sunlit physics laboratory.",
+        ),
+        "ep46-transformer-attention-language-model-informatics": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a notebook, entering a bright natural language processing laboratory.",
+            "a kind female computer science professor with gentle smiling eyes drawing attention weight lines between words on a clean whiteboard.",
+            "both characters smiling excitedly looking at a colorful attention heatmap between words on a laptop screen.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in a sunlit informatics seminar room.",
+        ),
+        "ep47-lithium-ion-battery-intercalation-chemistry": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and a curious warm smile, visiting a battery materials chemistry laboratory.",
+            "a smiling female chemistry professor with kind eyes showing a layered crystal structure model with lithium ions on a desk.",
+            "both characters smiling cheerfully watching a small coin cell battery power a tiny LED in a bright lab.",
+            "both characters smiling peacefully and happily side by side with soft, kind eyes and sweet gentle smiles in a sunny chemistry laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

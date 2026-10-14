@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **45** 話（うち挿絵付き **45** 話 / 最終更新: 2026-10-14 13:05 JST）
+- **収録作品数**: 全 **46** 話（うち挿絵付き **46** 話 / 最終更新: 2026-10-14 13:16 JST）
 
 ---
 
@@ -59,6 +59,7 @@
 | 43 | **[いのちの最小限レシピを求めて――473 の遺伝子が織りなす、宇宙への招待状](https://k518-2026.github.io/rikejo-science-novel/stories/ep43-synthetic-biology-minimal-cell-genome.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep43-synthetic-biology-minimal-cell-genome.html) | [📄原稿](content/2026-10-13_ep43_synthetic_biology_minimal_cell_genome.md) | [🎨挿絵](content/2026-10-13_ep43_synthetic_biology_minimal_cell_genome.png) | 生命科学部・生命医科学科 ／ 先端バイオ生命工学研究所（合成ゲノム・システム生命科学研究室） | 生命が自立して生存・増殖するために最低限必要な遺伝子セット（Minimal Cell / JCVI-syn3.0）の設計・全合成と生命システムの基本原理 | 8,403字 |
 | 44 | **[解く難しさと確かめる優しさの狭間で――P対NP問題と計算量理論の地平](https://k518-2026.github.io/rikejo-science-novel/stories/ep44-p-vs-np-computational-complexity-math-informatics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep44-p-vs-np-computational-complexity-math-informatics.html) | [📄原稿](content/2026-10-13_ep44_p_vs_np_computational_complexity_math_informatics.md) | [🎨挿絵](content/2026-10-13_ep44_p_vs_np_computational_complexity_math_informatics.png) | 情報理工学部・数理情報学科 ／ 理学部・情報科学科（計算量理論・アルゴリズム幾何学研究室） | ミレニアム懸賞問題「P対NP問題」とNP完全性理論、多項式時間還元、暗号理論と計算困難性の本質 | 7,164字 |
 | 45 | **[宇宙に質量を与えた見えない海――ヒッグス粒子と素粒子の標準模型](https://k518-2026.github.io/rikejo-science-novel/stories/ep45-higgs-boson-standard-model-particle-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep45-higgs-boson-standard-model-particle-physics.html) | [📄原稿](content/2026-10-14_ep45_higgs_boson_standard_model_particle_physics.md) | [🎨挿絵](content/2026-10-14_ep45_higgs_boson_standard_model_particle_physics.png) | 理学部・物理学科 ／ 素粒子物理学研究センター（加速器実験・ヒッグス物理研究室） | 標準模型における自発的対称性の破れとヒッグス機構、LHC実験によるヒッグス粒子発見 | 6,421字 |
+| 46 | **[言葉の結び目を解く『注意』――Transformer・BERT と大規模言語モデルが織りなす詩学](https://k518-2026.github.io/rikejo-science-novel/stories/ep46-transformer-attention-language-model-informatics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep46-transformer-attention-language-model-informatics.html) | [📄原稿](content/2026-10-14_ep46_transformer_attention_language_model_informatics.md) | [🎨挿絵](content/2026-10-14_ep46_transformer_attention_language_model_informatics.png) | 情報理工学部・知能情報学科 ／ 教育学部・情報教育課程（自然言語処理・言語モデル研究室） | 自己注意機構（Self-Attention）とTransformer、事前学習による大規模言語モデルの仕組みと言葉の数理 | 6,978字 |
 
 ---
 

@@ -574,5 +574,17 @@
     "url": "stories/ep48-muography-cosmic-ray-imaging-physics.html",
     "image": "assets/images/ep48-muography-cosmic-ray-imaging-physics.png",
     "char_count": 7095
+  },
+  {
+    "no": 49,
+    "work_id": "ep49-catastrophe-theory-bifurcation-nonlinear-math",
+    "title": "折れ曲がる曲面が教える突然の変容――カタストロピー理論と非線形ダイナミクス",
+    "faculty": "理学部・数学科 ／ 数理科学研究科（微分トポロジー・力学系理論研究室）",
+    "field": "数学・数理科学",
+    "theme": "微分トポロジー・特異点論に基づくカタストロフィー理論（トム、ジーマン）と非線形力学系の分岐現象（急変・相転移の数理）",
+    "has_image": true,
+    "url": "stories/ep49-catastrophe-theory-bifurcation-nonlinear-math.html",
+    "image": "assets/images/ep49-catastrophe-theory-bifurcation-nonlinear-math.png",
+    "char_count": 7950
   }
 ]

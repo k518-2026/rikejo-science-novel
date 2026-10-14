@@ -1173,5 +1173,80 @@
         "query": "Tarascon Armand Issues and challenges facing rechargeable lithium batteries Nature 2001"
       }
     ]
+  },
+  {
+    "id": "ep48-muography-cosmic-ray-imaging-physics",
+    "episode_num": 48,
+    "title": "空から降る素粒子で地球の鼓動を透視する――ミュオグラフィと宇宙線イメージング",
+    "faculty": "理学部・物理学科 ／ 地震研究所・火山噴火予知研究推進センター（高エネルギー素粒子地球物理学研究室）",
+    "protagonist": "望月 葵（もちづき あおい・高校2年生・天文兼地学部）",
+    "mentor": "鳴滝 栞（なるたき しおり・助教・宇宙線物理学・ミュオグラフィ探査／高校理科教員養成担当）",
+    "theme": "宇宙線ミューオンの物質透過性とエネルギー損失、巨大構造物・火山マグマ流路のレントゲン透視技術（ミュオグラフィ）",
+    "modern_tech": "原子核乾板・シンチレーション検出器、ミューオン軌跡追跡アルゴリズム、火山マグマ流路イメージング・文化遺産内部非破壊探査",
+    "summary": "「宇宙の彼方から降り注ぐミューオンを使えば、巨大な火山もピラミッドも、レントゲン写真みたいに中身が透けて見えるの」――栞助教が見せてくれたのは、浅間山やピラミッド内部の巨大空間を映し出した鮮やかな断層画像。素粒子物理と地球科学が交差する壮大なスケールに圧倒された葵は、見えない素粒子で地球を見つめる感動を伝える高校教師の夢を抱く。",
+    "crossref_queries": [
+      {
+        "label": "火山内部構造を可視化する原子核乾板ミュオグラフィ探査（Tanaka et al.）",
+        "query": "Tanaka Uchida Cosmic-ray muon radiography of any large volcanic edifice Nuclear Instruments and Methods in Physics Research Section A 2007"
+      },
+      {
+        "label": "宇宙線ミューオンによるクフ王ピラミッド内部の巨大未知空間発見（Morishima et al.）",
+        "query": "Morishima Kuno Discovery of a big void in Khufu Pyramid by observation of cosmic-ray muons Nature 2017"
+      },
+      {
+        "label": "宇宙線ミューオンによるピラミッド内部探査の原点となった研究（Alvarez et al. / ノーベル物理学賞）",
+        "query": "Alvarez Anderson Search for Hidden Chambers in the Pyramids Science 1970"
+      }
+    ]
+  },
+  {
+    "id": "ep49-catastrophe-theory-bifurcation-nonlinear-math",
+    "episode_num": 49,
+    "title": "折れ曲がる曲面が教える突然の変容――カタストロフィー理論と非線形ダイナミクス",
+    "faculty": "理学部・数学科 ／ 数理科学研究科（微分トポロジー・力学系理論研究室）",
+    "protagonist": "幾島 志穂（いくしま しほ・高校2年生・数学部）",
+    "mentor": "嶺岸 紗英（みねぎし さえ・講師・特異点論・分岐理論／高校数学教員養成担当）",
+    "theme": "微分トポロジー・特異点論に基づくカタストロフィー理論（トム、ジーマン）と非線形力学系の分岐現象（急変・相転移の数理）",
+    "modern_tech": "カスプ・カタストロフィー曲面モデル、サドルノード分岐・ホップ分岐解析、生態系レジームシフト・相転移現象の数理モデリング",
+    "summary": "「なめらかに変化していたはずのパラメータが、ある境界を越えた瞬間に突然別の状態へジャンプする――これがカタストロフィーの幾何学よ」――紗英講師が卓上に置いた美しい折り曲げられた立体曲面（カスプ曲面）。滑らかな数式から突如現れる急変の正体が、折りたたまれたトポロジーの影であると知り鳥肌が立つ志穂。自然界や社会の急変を数理の目で解き明かす数学の美しさに目覚め、数学の面白さを伝える先生を目指す。",
+    "crossref_queries": [
+      {
+        "label": "形態形成と構造安定性を微分トポロジーで体系化した記念碑的著作（Thom / フィールズ賞）",
+        "query": "Thom Structural Stability and Morphogenesis 1975"
+      },
+      {
+        "label": "カタストロフィー理論の数理と応用を平易に解説した名著（Zeeman）",
+        "query": "Zeeman Catastrophe Theory Scientific American 1976"
+      },
+      {
+        "label": "非線形力学系における臨界転移・カタストロフィーの早期警告シグナル（Scheffer et al.）",
+        "query": "Scheffer Carpenter Early-warning signals for critical transitions Nature 2009"
+      }
+    ]
+  },
+  {
+    "id": "ep50-cryo-electron-microscopy-structural-biology",
+    "episode_num": 50,
+    "title": "マイナス百九十度の氷が捉えた生命の素顔――クライオ電子顕微鏡と構造生物学",
+    "faculty": "薬学部・創薬科学科 ／ 放射光・クライオバイオ解析センター（分子構造薬理学研究室）",
+    "protagonist": "氷上 紬（ひかみ つむぎ・高校2年生・科学部兼写真部）",
+    "mentor": "霜月 千歳（しもつき ちとせ・准教授・クライオ電子顕微鏡・タンパク質構造創薬／理科教職担当）",
+    "theme": "急速凍結ガラス状氷包埋によるクライオ電子顕微鏡単粒子解析（Cryo-EM SPA）と生体高分子の原子分解能立体構造解明（2017年ノーベル化学賞）",
+    "modern_tech": "液体エタンによる急速凍結（ガラス状氷包埋）、単粒子解析法（SPA）による3次元立体再構成、直接電子検出器（DDD）と原子分解能構造決定",
+    "summary": "「結晶化できないタンパク質でも、マイナス190度のガラスのような氷の中に閉じ込めれば、水溶液の中のありのままの姿を原子レベルで写真に撮れるの」――千歳准教授が見せてくれたのは、ウイルスや受容体が薬と結合する生々しい原子模型。2017年ノーベル化学賞に輝いたクライオ電顕の解像度革命に息を呑む紬は、生命のミクロな美しさを科学教育と創薬につなげる未来を描く。",
+    "crossref_queries": [
+      {
+        "label": "電子顕微鏡単粒子画像からの3次元高分子立体再構成手法の確立（Frank / 2017年ノーベル化学賞）",
+        "query": "Frank Single-Particle Reconstruction of Biological Macromolecules Quarterly Reviews of Biophysics 2006"
+      },
+      {
+        "label": "クライオ電子顕微鏡による原子分解能構造生物学の解像度革命（Kühlbrandt）",
+        "query": "Kuhlbrandt The resolution revolution Science 2014"
+      },
+      {
+        "label": "電子線による生体高分子原子分解能観察の理論的限界と可能性（Henderson / 2017年ノーベル化学賞）",
+        "query": "Henderson The potential and limitations of neutrons electrons and X-rays Quarterly Reviews of Biophysics 1995"
+      }
+    ]
   }
 ]

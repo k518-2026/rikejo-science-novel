@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **47** 話（うち挿絵付き **47** 話 / 最終更新: 2026-10-15 07:39 JST）
+- **収録作品数**: 全 **48** 話（うち挿絵付き **48** 話 / 最終更新: 2026-10-15 08:10 JST）
 
 ---
 
@@ -61,6 +61,7 @@
 | 45 | **[宇宙に質量を与えた見えない海――ヒッグス粒子と素粒子の標準模型](https://k518-2026.github.io/rikejo-science-novel/stories/ep45-higgs-boson-standard-model-particle-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep45-higgs-boson-standard-model-particle-physics.html) | [📄原稿](content/2026-10-14_ep45_higgs_boson_standard_model_particle_physics.md) | [🎨挿絵](content/2026-10-14_ep45_higgs_boson_standard_model_particle_physics.png) | 理学部・物理学科 ／ 素粒子物理学研究センター（加速器実験・ヒッグス物理研究室） | 標準模型における自発的対称性の破れとヒッグス機構、LHC実験によるヒッグス粒子発見 | 6,421字 |
 | 46 | **[言葉の結び目を解く『注意』――Transformer・BERT と大規模言語モデルが織りなす詩学](https://k518-2026.github.io/rikejo-science-novel/stories/ep46-transformer-attention-language-model-informatics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep46-transformer-attention-language-model-informatics.html) | [📄原稿](content/2026-10-14_ep46_transformer_attention_language_model_informatics.md) | [🎨挿絵](content/2026-10-14_ep46_transformer_attention_language_model_informatics.png) | 情報理工学部・知能情報学科 ／ 教育学部・情報教育課程（自然言語処理・言語モデル研究室） | 自己注意機構（Self-Attention）とTransformer、事前学習による大規模言語モデルの仕組みと言葉の数理 | 6,978字 |
 | 47 | **[リチウムイオンが旅する結晶の隙間――充電池の化学とノーベル賞の物語](https://k518-2026.github.io/rikejo-science-novel/stories/ep47-lithium-ion-battery-intercalation-chemistry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep47-lithium-ion-battery-intercalation-chemistry.html) | [📄原稿](content/2026-10-14_ep47_lithium_ion_battery_intercalation_chemistry.md) | [🎨挿絵](content/2026-10-14_ep47_lithium_ion_battery_intercalation_chemistry.png) | 工学部・応用化学科 ／ 蓄電材料研究センター（固体イオニクス・電池材料研究室） | リチウムイオン電池の層状酸化物へのインターカレーション反応と正極・負極材料の設計（2019年ノーベル化学賞） | 8,098字 |
+| 48 | **[空から降る素粒子で地球の鼓動を透視する――ミュオグラフィと宇宙線イメージング](https://k518-2026.github.io/rikejo-science-novel/stories/ep48-muography-cosmic-ray-imaging-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep48-muography-cosmic-ray-imaging-physics.html) | [📄原稿](content/2026-10-15_ep48_muography_cosmic_ray_imaging_physics.md) | [🎨挿絵](content/2026-10-15_ep48_muography_cosmic_ray_imaging_physics.png) | 理学部・物理学科 ／ 地震研究所・火山噴火予知研究推進センター（高エネルギー素粒子地球物理学研究室） | 宇宙線ミューオンの物質透過性とエネルギー損失、巨大構造物・火山マグマ流路のレントゲン透視技術（ミュオグラフィ） | 7,095字 |
 
 ---
 

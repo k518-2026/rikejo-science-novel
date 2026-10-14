@@ -562,5 +562,17 @@
     "url": "stories/ep47-lithium-ion-battery-intercalation-chemistry.html",
     "image": "assets/images/ep47-lithium-ion-battery-intercalation-chemistry.png",
     "char_count": 8098
+  },
+  {
+    "no": 48,
+    "work_id": "ep48-muography-cosmic-ray-imaging-physics",
+    "title": "空から降る素粒子で地球の鼓動を透視する――ミュオグラフィと宇宙線イメージング",
+    "faculty": "理学部・物理学科 ／ 地震研究所・火山噴火予知研究推進センター（高エネルギー素粒子地球物理学研究室）",
+    "field": "物理学・宇宙・光学",
+    "theme": "宇宙線ミューオンの物質透過性とエネルギー損失、巨大構造物・火山マグマ流路のレントゲン透視技術（ミュオグラフィ）",
+    "has_image": true,
+    "url": "stories/ep48-muography-cosmic-ray-imaging-physics.html",
+    "image": "assets/images/ep48-muography-cosmic-ray-imaging-physics.png",
+    "char_count": 7095
   }
 ]

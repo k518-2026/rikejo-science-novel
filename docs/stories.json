@@ -586,5 +586,17 @@
     "url": "stories/ep49-catastrophe-theory-bifurcation-nonlinear-math.html",
     "image": "assets/images/ep49-catastrophe-theory-bifurcation-nonlinear-math.png",
     "char_count": 7950
+  },
+  {
+    "no": 50,
+    "work_id": "ep50-cryo-electron-microscopy-structural-biology",
+    "title": "マイナス百九十度の氷が捉えた生命の素顔――クライオ電子顕微鏡と構造生物学",
+    "faculty": "薬学部・創薬科学科 ／ 放射光・クライオバイオ解析センター（分子構造薬理学研究室）",
+    "field": "化学・薬学・材料",
+    "theme": "急速凍結ガラス状氷包埋によるクライオ電子顕微鏡単粒子解析（Cryo-EM SPA）と生体高分子の原子分解能立体構造解明（2017年ノーベル化学賞）",
+    "has_image": true,
+    "url": "stories/ep50-cryo-electron-microscopy-structural-biology.html",
+    "image": "assets/images/ep50-cryo-electron-microscopy-structural-biology.png",
+    "char_count": 7290
   }
 ]

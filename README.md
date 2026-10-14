@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **49** 話（うち挿絵付き **49** 話 / 最終更新: 2026-10-15 08:21 JST）
+- **収録作品数**: 全 **50** 話（うち挿絵付き **50** 話 / 最終更新: 2026-10-15 08:31 JST）
 
 ---
 
@@ -63,6 +63,7 @@
 | 47 | **[リチウムイオンが旅する結晶の隙間――充電池の化学とノーベル賞の物語](https://k518-2026.github.io/rikejo-science-novel/stories/ep47-lithium-ion-battery-intercalation-chemistry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep47-lithium-ion-battery-intercalation-chemistry.html) | [📄原稿](content/2026-10-14_ep47_lithium_ion_battery_intercalation_chemistry.md) | [🎨挿絵](content/2026-10-14_ep47_lithium_ion_battery_intercalation_chemistry.png) | 工学部・応用化学科 ／ 蓄電材料研究センター（固体イオニクス・電池材料研究室） | リチウムイオン電池の層状酸化物へのインターカレーション反応と正極・負極材料の設計（2019年ノーベル化学賞） | 8,098字 |
 | 48 | **[空から降る素粒子で地球の鼓動を透視する――ミュオグラフィと宇宙線イメージング](https://k518-2026.github.io/rikejo-science-novel/stories/ep48-muography-cosmic-ray-imaging-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep48-muography-cosmic-ray-imaging-physics.html) | [📄原稿](content/2026-10-15_ep48_muography_cosmic_ray_imaging_physics.md) | [🎨挿絵](content/2026-10-15_ep48_muography_cosmic_ray_imaging_physics.png) | 理学部・物理学科 ／ 地震研究所・火山噴火予知研究推進センター（高エネルギー素粒子地球物理学研究室） | 宇宙線ミューオンの物質透過性とエネルギー損失、巨大構造物・火山マグマ流路のレントゲン透視技術（ミュオグラフィ） | 7,095字 |
 | 49 | **[折れ曲がる曲面が教える突然の変容――カタストロピー理論と非線形ダイナミクス](https://k518-2026.github.io/rikejo-science-novel/stories/ep49-catastrophe-theory-bifurcation-nonlinear-math.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep49-catastrophe-theory-bifurcation-nonlinear-math.html) | [📄原稿](content/2026-10-15_ep49_catastrophe_theory_bifurcation_nonlinear_math.md) | [🎨挿絵](content/2026-10-15_ep49_catastrophe_theory_bifurcation_nonlinear_math.png) | 理学部・数学科 ／ 数理科学研究科（微分トポロジー・力学系理論研究室） | 微分トポロジー・特異点論に基づくカタストロフィー理論（トム、ジーマン）と非線形力学系の分岐現象（急変・相転移の数理） | 7,950字 |
+| 50 | **[マイナス百九十度の氷が捉えた生命の素顔――クライオ電子顕微鏡と構造生物学](https://k518-2026.github.io/rikejo-science-novel/stories/ep50-cryo-electron-microscopy-structural-biology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep50-cryo-electron-microscopy-structural-biology.html) | [📄原稿](content/2026-10-15_ep50_cryo_electron_microscopy_structural_biology.md) | [🎨挿絵](content/2026-10-15_ep50_cryo_electron_microscopy_structural_biology.png) | 薬学部・創薬科学科 ／ 放射光・クライオバイオ解析センター（分子構造薬理学研究室） | 急速凍結ガラス状氷包埋によるクライオ電子顕微鏡単粒子解析（Cryo-EM SPA）と生体高分子の原子分解能立体構造解明（2017年ノーベル化学賞） | 7,290字 |
 
 ---
 

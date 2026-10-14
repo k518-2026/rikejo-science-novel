@@ -1112,6 +1112,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully watching a small coin cell battery power a tiny LED in a bright lab.",
             "both characters smiling peacefully and happily side by side with soft, kind eyes and sweet gentle smiles in a sunny chemistry laboratory.",
         ),
+        "ep48-muography-cosmic-ray-imaging-physics": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and an eager warm smile, entering a cosmic ray particle physics research center.",
+            "a friendly female particle geophysicist with kind smiling eyes pointing at an emulsion plate muon detector and a volcanic cross-section diagram on a whiteboard.",
+            "both characters smiling in wonder looking at high-resolution muon radiography density slices of a volcano interior on a wide monitor display.",
+            "both characters smiling peacefully and happily side by side with soft, kind eyes and natural sweet smiles in gentle sunlit physics laboratory.",
+        ),
+        "ep49-catastrophe-theory-bifurcation-nonlinear-math": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a mathematics sketchbook, visiting a differential topology research seminar room.",
+            "a kind female mathematician with gentle smiling eyes explaining a 3D folded cusp catastrophe smooth surface model on a table.",
+            "both characters smiling excitedly examining nonlinear bifurcation curves and phase transition jump points on a laptop screen.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit mathematical sciences seminar room.",
+        ),
+        "ep50-cryo-electron-microscopy-structural-biology": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and a curious warm smile, visiting an advanced cryo-electron microscopy center.",
+            "a smiling female structural biologist with kind eyes explaining rapid ethane plunge freezing and vitreous ice embedding on a glass whiteboard.",
+            "both characters smiling cheerfully observing atomic-resolution 3D protein particle reconstructions glowing on a high-definition monitor.",
+            "both characters smiling peacefully and happily side by side with soft, kind eyes and sweet gentle smiles in bright sunny structural pharmacology laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

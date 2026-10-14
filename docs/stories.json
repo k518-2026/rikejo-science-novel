@@ -526,5 +526,17 @@
     "url": "stories/ep44-p-vs-np-computational-complexity-math-informatics.html",
     "image": "assets/images/ep44-p-vs-np-computational-complexity-math-informatics.png",
     "char_count": 7164
+  },
+  {
+    "no": 45,
+    "work_id": "ep45-higgs-boson-standard-model-particle-physics",
+    "title": "宇宙に質量を与えた見えない海――ヒッグス粒子と素粒子の標準模型",
+    "faculty": "理学部・物理学科 ／ 素粒子物理学研究センター（加速器実験・ヒッグス物理研究室）",
+    "field": "物理学・宇宙・光学",
+    "theme": "標準模型における自発的対称性の破れとヒッグス機構、LHC実験によるヒッグス粒子発見",
+    "has_image": true,
+    "url": "stories/ep45-higgs-boson-standard-model-particle-physics.html",
+    "image": "assets/images/ep45-higgs-boson-standard-model-particle-physics.png",
+    "char_count": 6421
   }
 ]

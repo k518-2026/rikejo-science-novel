@@ -1098,5 +1098,80 @@
         "query": "Impagliazzo A personal view of average-case complexity IEEE Structure in Complexity Theory Conference 1995"
       }
     ]
+  },
+  {
+    "id": "ep45-higgs-boson-standard-model-particle-physics",
+    "episode_num": 45,
+    "title": "宇宙に質量を与えた見えない海――ヒッグス粒子と素粒子の標準模型",
+    "faculty": "理学部・物理学科 ／ 素粒子物理学研究センター（加速器実験・ヒッグス物理研究室）",
+    "protagonist": "天野 澪（あまの みお・高校2年生・物理部）",
+    "mentor": "粒来 咲（つぶらい さき・助教・素粒子実験物理／高校物理教員養成担当）",
+    "theme": "標準模型における自発的対称性の破れとヒッグス機構、LHC実験によるヒッグス粒子発見",
+    "modern_tech": "大型ハドロン衝突型加速器LHC、ATLAS/CMS検出器、ヒッグス粒子崩壊事象の統計的解析、機械学習によるイベント選別",
+    "summary": "「物に重さがあるのは当たり前じゃないの？」――咲助教の問いに首をかしげる澪。宇宙を満たすヒッグス場が素粒子に質量を与えるという理論と、2012年にLHCで見つかった粒子の発見までの半世紀の物語に触れ、物理の面白さを高校生に伝える教員を志す。",
+    "crossref_queries": [
+      {
+        "label": "ヒッグス機構による質量生成の理論（Higgs 1964）",
+        "query": "Higgs Broken Symmetries and the Masses of Gauge Bosons Physical Review Letters 1964"
+      },
+      {
+        "label": "ATLAS実験によるヒッグス粒子様新粒子の発見",
+        "query": "ATLAS Collaboration Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC Physics Letters B 2012"
+      },
+      {
+        "label": "CMS実験によるヒッグス粒子様新粒子の発見",
+        "query": "CMS Collaboration Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC Physics Letters B 2012"
+      }
+    ]
+  },
+  {
+    "id": "ep46-transformer-attention-language-model-informatics",
+    "episode_num": 46,
+    "title": "言葉の関係を見つめる『注意』のしくみ――Transformerと大規模言語モデルの情報学",
+    "faculty": "情報理工学部・知能情報学科 ／ 教育学部・情報教育課程（自然言語処理・言語モデル研究室）",
+    "protagonist": "言葉 紬（ことば つむぎ・高校2年生・文芸部兼情報部）",
+    "mentor": "千里 汐（せんり うしお・准教授・自然言語処理・機械学習／高校「情報」教員養成担当）",
+    "theme": "自己注意機構（Self-Attention）とTransformer、事前学習による大規模言語モデルの仕組みと言葉の数理",
+    "modern_tech": "Transformer、Self-Attention、事前学習と微調整（BERT）、大規模言語モデルのスケーリング則",
+    "summary": "小説を書くのが好きな紬は、AIがどうやって文章の続きを選ぶのか知りたくなる。汐准教授と一緒に、単語同士の関連の強さを数値で測る『注意』のしくみを手で計算し、言葉と数学がつながる驚きと、AIと人が協力して創作する未来、そして情報科の先生になる夢を見つける。",
+    "crossref_queries": [
+      {
+        "label": "Self-Attentionのみで構成するTransformerの提案（Vaswani et al.）",
+        "query": "Vaswani Shazeer Parmar Uszkoreit Jones Gomez Kaiser Polosukhin Attention is all you need Advances in Neural Information Processing Systems 2017"
+      },
+      {
+        "label": "双方向事前学習による言語理解モデルBERT（Devlin et al.）",
+        "query": "Devlin Chang Lee Toutanova BERT Pre-training of Deep Bidirectional Transformers for Language Understanding NAACL 2019"
+      },
+      {
+        "label": "ニューラル言語モデルのスケーリング則（Kaplan et al.）",
+        "query": "Kaplan McCandlish Henighan Scaling Laws for Neural Language Models arXiv 2020"
+      }
+    ]
+  },
+  {
+    "id": "ep47-lithium-ion-battery-intercalation-chemistry",
+    "episode_num": 47,
+    "title": "リチウムイオンが旅する結晶の隙間――充電池の化学とノーベル賞の物語",
+    "faculty": "工学部・応用化学科 ／ 蓄電材料研究センター（固体イオニクス・電池材料研究室）",
+    "protagonist": "電光 陽菜（でんこう ひな・高校2年生・化学部）",
+    "mentor": "充谷 彩（みつたに あや・准教授・電気化学・電池材料／高校化学教員養成担当）",
+    "theme": "リチウムイオン電池の層状酸化物へのインターカレーション反応と正極・負極材料の設計（2019年ノーベル化学賞）",
+    "modern_tech": "層状コバルト酸リチウム正極、炭素系負極、固体電解質、全固体電池、第一原理計算による材料探索",
+    "summary": "スマートフォンが毎日充電できる不思議を調べる陽菜は、結晶の層のあいだをリチウムイオンが行き来する仕組みを彩准教授と模型で体験する。吉野彰らの発明の歴史と、全固体電池という未来を知り、化学で社会を支える教員の道を思い描く。",
+    "crossref_queries": [
+      {
+        "label": "コバルト酸リチウム正極の発見（Mizushima, Goodenough et al.）",
+        "query": "Mizushima Jones Wiseman Goodenough LixCoO2 a new cathode material for batteries of high energy density Materials Research Bulletin 1980"
+      },
+      {
+        "label": "リチウムイオン電池の発展と展望（Goodenough & Park）",
+        "query": "Goodenough Park The Li-ion rechargeable battery a perspective Journal of the American Chemical Society 2013"
+      },
+      {
+        "label": "充電池の材料と将来（Tarascon & Armand）",
+        "query": "Tarascon Armand Issues and challenges facing rechargeable lithium batteries Nature 2001"
+      }
+    ]
   }
-]
+]

@@ -550,5 +550,17 @@
     "url": "stories/ep46-transformer-attention-language-model-informatics.html",
     "image": "assets/images/ep46-transformer-attention-language-model-informatics.png",
     "char_count": 6978
+  },
+  {
+    "no": 47,
+    "work_id": "ep47-lithium-ion-battery-intercalation-chemistry",
+    "title": "リチウムイオンが旅する結晶の隙間――充電池の化学とノーベル賞の物語",
+    "faculty": "工学部・応用化学科 ／ 蓄電材料研究センター（固体イオニクス・電池材料研究室）",
+    "field": "化学・薬学・材料",
+    "theme": "リチウムイオン電池の層状酸化物へのインターカレーション反応と正極・負極材料の設計（2019年ノーベル化学賞）",
+    "has_image": true,
+    "url": "stories/ep47-lithium-ion-battery-intercalation-chemistry.html",
+    "image": "assets/images/ep47-lithium-ion-battery-intercalation-chemistry.png",
+    "char_count": 8098
   }
 ]

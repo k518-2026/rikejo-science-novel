@@ -111,7 +111,7 @@ def replenish_stock_if_needed(
     """
     Pulls accumulated tasks (`data/tasks.json`) from GitHub on PC startup or scheduled run,
     completes any missing illustrations via `kenomac-mini:7860`, and writes queued/due episodes
-    by alternating between Primary (`http://rtx5060lp:11434`) and Secondary (`http://sff7020:1234`).
+    using Primary (`http://rtx5060lp:11434`).
     """
     from src.site_builder import build_github_pages
     from src.task_worker import (
@@ -132,7 +132,7 @@ def replenish_stock_if_needed(
 
     conn = generator.check_connection()
     if not conn.get("online"):
-        logger.info("Neither Primary (rtx5060lp:11434) nor Secondary (sff7020:1234) is reachable on LAN; skipping auto-replenish.")
+        logger.info("Primary (rtx5060lp:11434) is not reachable on LAN; skipping auto-replenish.")
         return []
 
     generated_assets: List[Path] = []
@@ -170,7 +170,7 @@ def replenish_stock_if_needed(
         needed = len(queued_task_ids) if min_stock <= 0 else min(len(queued_task_ids), max(1, min_stock))
         logger.info(
             f"[GitHub Task Queue Startup] Found {len(queued_task_ids)} queued task(s) on GitHub (`data/tasks.json`). "
-            f"Executing {needed} episode(s) alternating between rtx5060lp and sff7020..."
+            f"Executing {needed} episode(s) via rtx5060lp..."
         )
     elif blog_paused:
         weekly_quota = max(1, min_stock if min_stock > 0 else 5)
@@ -184,7 +184,7 @@ def replenish_stock_if_needed(
             build_github_pages(history_mgr)
         else:
             logger.info(
-                f"[GitHub Pages Weekly Accumulation] Generating {needed} new episode(s) alternating between rtx5060lp and sff7020 "
+                f"[GitHub Pages Weekly Accumulation] Generating {needed} new episode(s) via rtx5060lp "
                 f"({generated_this_week}/{weekly_quota} generated this week, {ungenerated} ungenerated in catalog)..."
             )
     else:

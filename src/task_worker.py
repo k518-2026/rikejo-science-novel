@@ -131,11 +131,10 @@ def resolve_reachable_url(candidates: List[str], probe_path: str, timeout: int =
 
 def default_assigned_writer_for_episode(ep_num: int) -> str:
     """
-    Alternates episode writing assignment between Primary (rtx5060lp) and Secondary (sff7020):
-    - Odd episodes (#29, #31, #33...): 'sff7020' (LM Studio Gemma 4 26B — dramatic & provocative hook style)
-    - Even episodes (#30, #32, #34...): 'rtx5060lp' (Ollama Qwen3.5 9B x shosetsu — delicate literary style)
+    Assigned writing node:
+    - Exclusively 'rtx5060lp' (Ollama Qwen3.5 9B x shosetsu)
     """
-    return "sff7020" if (ep_num % 2 == 1) else "rtx5060lp"
+    return "rtx5060lp"
 
 
 def sync_tasks_manifest(history_mgr: HistoryManager, default_queued_count: int = 5) -> Dict[str, Any]:
@@ -182,7 +181,7 @@ def sync_tasks_manifest(history_mgr: HistoryManager, default_queued_count: int =
         if stock_md and re.match(r"^\d{4}-\d{2}-\d{2}_", stock_md.name):
             inferred_date = stock_md.name[:10]
 
-        assigned_writer = prev.get("assigned_writer") or default_assigned_writer_for_episode(ep_num)
+        assigned_writer = "rtx5060lp"
 
         task_entry = {
             "id": wid,
@@ -542,13 +541,13 @@ def run_alternating_startup_queue(
         director_model="qwen3.5:9b",
         writer_model="shosetsu",
         draw_things_host=dt_host,
-        alternate_nodes=True,
+        alternate_hosts=False,
     )
 
     conn = generator.check_connection()
     if not conn.get("online"):
         logger.warning(
-            "[Startup Queue] プライマリ (rtx5060lp:11434) もセカンダリ (sff7020:1234) もオフラインのため、"
+            "[Startup Queue] プライマリ (rtx5060lp:11434) がオフラインのため、"
             "GitHub キューの実行を次回起動時まで保留します。"
         )
         return 0
@@ -559,7 +558,7 @@ def run_alternating_startup_queue(
 
     logger.info(
         f"[Startup Queue] GitHub から読み取った実行待ちタスク {len(targets)} 件を "
-        f"rtx5060lp ⇄ sff7020 交互担当モードで実行開始します..."
+        f"rtx5060lp 専用モードで実行開始します..."
     )
 
     for idx, task in enumerate(targets, start=1):

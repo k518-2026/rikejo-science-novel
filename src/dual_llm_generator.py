@@ -194,7 +194,7 @@ class DualLLMStoryGenerator:
     """
 
     PRIMARY_HOSTS = ["http://rtx5060lp:11434", "http://192.168.128.62:11434"]
-    SECONDARY_HOSTS = ["http://sff7020:1234", "http://192.168.128.16:1234"]
+    SECONDARY_HOSTS = ["http://rtx5060lp:11434", "http://192.168.128.62:11434"]
 
     def __init__(
         self,
@@ -203,24 +203,30 @@ class DualLLMStoryGenerator:
         writer_model: Optional[str] = None,
         draw_things_host: Optional[str] = None,
         lorebook_path: Path = LOREBOOK_FILE,
-        alternate_hosts: bool = True,
+        alternate_hosts: bool = False,
+        **kwargs: Any,
     ):
         raw_host = (ollama_host or os.getenv("OLLAMA_HOST", DEFAULT_OLLAMA_HOST)).strip()
         primary_hosts = [h.strip().rstrip("/") for h in raw_host.split(",") if h.strip()]
         self.ollama_host = primary_hosts[0] if primary_hosts else DEFAULT_OLLAMA_HOST
-        self.ollama_hosts: List[str] = list(primary_hosts)
+        self.ollama_hosts: List[str] = [
+            h for h in primary_hosts if not self._is_openai_compatible_host(h) and "sff7020" not in h
+        ]
         for fb in FALLBACK_OLLAMA_HOSTS:
             fb_clean = fb.rstrip("/")
-            if fb_clean not in self.ollama_hosts:
+            if fb_clean not in self.ollama_hosts and not self._is_openai_compatible_host(fb_clean) and "sff7020" not in fb_clean:
                 self.ollama_hosts.append(fb_clean)
+        if not self.ollama_hosts:
+            self.ollama_hosts = list(self.PRIMARY_HOSTS)
+            self.ollama_host = self.PRIMARY_HOSTS[0]
         self.director_model = director_model or os.getenv("OLLAMA_DIRECTOR_MODEL", DEFAULT_DIRECTOR_MODEL)
         self.writer_model = writer_model or os.getenv("OLLAMA_WRITER_MODEL", DEFAULT_WRITER_MODEL)
         self.lm_studio_model = os.getenv("LM_STUDIO_MODEL", DEFAULT_LM_STUDIO_MODEL)
         self.draw_things_host = (draw_things_host or os.getenv("DRAW_THINGS_HOST", DEFAULT_DRAW_THINGS_HOST)).rstrip("/")
         self.lorebook_path = lorebook_path
         self.lorebook = self._load_lorebook()
-        self.alternate_hosts = alternate_hosts
-        self.last_used_node: Optional[str] = None
+        self.alternate_hosts = False
+        self.last_used_node: Optional[str] = "rtx5060lp"
 
     @staticmethod
     def _is_openai_compatible_host(host: str) -> bool:
@@ -229,9 +235,6 @@ class DualLLMStoryGenerator:
 
     @staticmethod
     def _node_name_for_host(host: str) -> str:
-        h = host.lower()
-        if "sff7020" in h or "192.168.128.16" in h or ":1234" in h:
-            return "sff7020"
         return "rtx5060lp"
 
     def select_alternating_host_for_work(
@@ -240,38 +243,16 @@ class DualLLMStoryGenerator:
         preferred_node: Optional[str] = None,
     ) -> str:
         """
-        Alternates episode assignment between Primary (`rtx5060lp:11434`) and Secondary (`sff7020:1234`):
-        - If `preferred_node` is provided ('rtx5060lp' or 'sff7020'), uses that node first.
-        - Otherwise, if `self.last_used_node` is set in the current batch, switches to the other node.
-        - Otherwise, alternates by `episode_num` (odd episodes -> `sff7020`, even episodes -> `rtx5060lp`).
-        Automatic failover to the other node remains active if the preferred node is offline.
+        Assigns episode writing exclusively to Primary Node (`rtx5060lp:11434`).
         """
-        if not self.alternate_hosts and not preferred_node:
-            return self.ollama_host
-
-        target_node = preferred_node or work.get("assigned_writer")
-        if target_node not in ("rtx5060lp", "sff7020"):
-            if self.last_used_node == "rtx5060lp":
-                target_node = "sff7020"
-            elif self.last_used_node == "sff7020":
-                target_node = "rtx5060lp"
-            else:
-                ep_num = int(work.get("episode_num", 1) or 1)
-                target_node = "sff7020" if (ep_num % 2 == 1) else "rtx5060lp"
-
-        if target_node == "sff7020":
-            ordered = self.SECONDARY_HOSTS + self.PRIMARY_HOSTS
-        else:
-            ordered = self.PRIMARY_HOSTS + self.SECONDARY_HOSTS
-
-        for h in self.ollama_hosts:
-            if h not in ordered:
-                ordered.append(h)
+        target_node = "rtx5060lp"
+        ordered = list(self.PRIMARY_HOSTS)
         self.ollama_hosts = ordered
         self.ollama_host = ordered[0]
+        self.last_used_node = "rtx5060lp"
         logger.info(
-            f"[Alternating LLM Scheduler] Episode #{work.get('episode_num', '?')} ('{work.get('id', '')}') "
-            f"assigned to '{target_node}' (primary URL: {self.ollama_host}, fallback ready)"
+            f"[LLM Scheduler] Episode #{work.get('episode_num', '?')} ('{work.get('id', '')}') "
+            f"assigned exclusively to '{target_node}' (URL: {self.ollama_host})"
         )
         return target_node
 

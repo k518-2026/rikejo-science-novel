@@ -1130,6 +1130,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully observing atomic-resolution 3D protein particle reconstructions glowing on a high-definition monitor.",
             "both characters smiling peacefully and happily side by side with soft, kind eyes and sweet gentle smiles in bright sunny structural pharmacology laboratory.",
         ),
+        "ep51-seismic-tomography-mantle-plume-earth-interior": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and an eager warm smile, entering a geophysics and computational seismology research laboratory.",
+            "a friendly female geophysicist with kind smiling eyes explaining 3D seismic wave tomography and mantle plume structures on a clear whiteboard.",
+            "both characters smiling in wonder looking at colorful 3D cross-section slices of Earth's mantle and core boundary plumes on a dual monitor display.",
+            "both characters smiling peacefully and happily side by side with soft, kind eyes and natural sweet smiles in gentle sunlit geophysics seminar room.",
+        ),
+        "ep52-soliton-waves-kdv-equation-nonlinear-physics": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a physics notebook, visiting a nonlinear wave dynamics water channel laboratory.",
+            "a smiling female mathematical physicist with kind eyes pointing at a solitary soliton wave traveling smoothly in a clear water tank.",
+            "both characters smiling cheerfully looking at Korteweg-de Vries equation simulation curves and optical soliton wave pulses on a laptop screen.",
+            "both characters smiling peacefully and warmly side by side with soft, kind eyes and sweet gentle smiles in bright sunny physics laboratory.",
+        ),
+        "ep53-quantum-annealing-ising-combinatorial-optimization": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and a curious warm smile, visiting an advanced quantum computing research laboratory.",
+            "a kind female quantum computer scientist with gentle smiling eyes explaining quantum tunneling through energy barriers on a clean blackboard.",
+            "both characters smiling excitedly examining 3D spin glass energy landscape visualizations and quantum annealing optimization graphs on a workstation monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit quantum informatics seminar room.",
+        ),
     }
 
     def generate_english_image_prompt(

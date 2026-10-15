@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **51** 話（うち挿絵付き **51** 話 / 最終更新: 2026-10-15 21:13 JST）
+- **収録作品数**: 全 **52** 話（うち挿絵付き **52** 話 / 最終更新: 2026-10-15 21:23 JST）
 
 ---
 
@@ -65,6 +65,7 @@
 | 49 | **[折れ曲がる曲面が教える突然の変容――カタストロピー理論と非線形ダイナミクス](https://k518-2026.github.io/rikejo-science-novel/stories/ep49-catastrophe-theory-bifurcation-nonlinear-math.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep49-catastrophe-theory-bifurcation-nonlinear-math.html) | [📄原稿](content/2026-10-15_ep49_catastrophe_theory_bifurcation_nonlinear_math.md) | [🎨挿絵](content/2026-10-15_ep49_catastrophe_theory_bifurcation_nonlinear_math.png) | 理学部・数学科 ／ 数理科学研究科（微分トポロジー・力学系理論研究室） | 微分トポロジー・特異点論に基づくカタストロフィー理論（トム、ジーマン）と非線形力学系の分岐現象（急変・相転移の数理） | 7,950字 |
 | 50 | **[マイナス百九十度の氷が捉えた生命の素顔――クライオ電子顕微鏡と構造生物学](https://k518-2026.github.io/rikejo-science-novel/stories/ep50-cryo-electron-microscopy-structural-biology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep50-cryo-electron-microscopy-structural-biology.html) | [📄原稿](content/2026-10-15_ep50_cryo_electron_microscopy_structural_biology.md) | [🎨挿絵](content/2026-10-15_ep50_cryo_electron_microscopy_structural_biology.png) | 薬学部・創薬科学科 ／ 放射光・クライオバイオ解析センター（分子構造薬理学研究室） | 急速凍結ガラス状氷包埋によるクライオ電子顕微鏡単粒子解析（Cryo-EM SPA）と生体高分子の原子分解能立体構造解明（2017年ノーベル化学賞） | 7,290字 |
 | 51 | **[地震の波が照らす地球の深奥――地震波トモグラフィーとマントルプルーム](https://k518-2026.github.io/rikejo-science-novel/stories/ep51-seismic-tomography-mantle-plume-earth-interior.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep51-seismic-tomography-mantle-plume-earth-interior.html) | [📄原稿](content/2026-10-15_ep51_seismic_tomography_mantle_plume_earth_interior.md) | [🎨挿絵](content/2026-10-15_ep51_seismic_tomography_mantle_plume_earth_interior.png) | 理学部・地球惑星物理学科 ／ 地震研究所（地球内部ダイナミクス・計算地震学研究室） | 世界中の地震計波形記録から地球内部の3次元速度構造を再構築する地震波トモグラフィーと、核マントル境界から立ち昇るマントルプルームの物理 | 7,771字 |
+| 52 | **[運河を駆ける永遠の孤立波――ソリトンが紡ぐ世界への招待状](https://k518-2026.github.io/rikejo-science-novel/stories/ep52-soliton-waves-kdv-equation-nonlinear-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep52-soliton-waves-kdv-equation-nonlinear-physics.html) | [📄原稿](content/2026-10-15_ep52_soliton_waves_kdv_equation_nonlinear_physics.md) | [🎨挿絵](content/2026-10-15_ep52_soliton_waves_kdv_equation_nonlinear_physics.png) | 理学部・数学科 ／ 工学部・物理工学科（非線形波動・数理物理学研究室） | 衝突しても形を崩さず進み続ける孤立波「ソリトン」の発見とKdV方程式（非線形効果と分散の調和）、完全可積分系の数理と光ソリトン通信 | 7,285字 |
 
 ---
 

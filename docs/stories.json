@@ -610,5 +610,17 @@
     "url": "stories/ep51-seismic-tomography-mantle-plume-earth-interior.html",
     "image": "assets/images/ep51-seismic-tomography-mantle-plume-earth-interior.png",
     "char_count": 7771
+  },
+  {
+    "no": 52,
+    "work_id": "ep52-soliton-waves-kdv-equation-nonlinear-physics",
+    "title": "運河を駆ける永遠の孤立波――ソリトンが紡ぐ世界への招待状",
+    "faculty": "理学部・数学科 ／ 工学部・物理工学科（非線形波動・数理物理学研究室）",
+    "field": "数学・数理科学",
+    "theme": "衝突しても形を崩さず進み続ける孤立波「ソリトン」の発見とKdV方程式（非線形効果と分散の調和）、完全可積分系の数理と光ソリトン通信",
+    "has_image": true,
+    "url": "stories/ep52-soliton-waves-kdv-equation-nonlinear-physics.html",
+    "image": "assets/images/ep52-soliton-waves-kdv-equation-nonlinear-physics.png",
+    "char_count": 7285
   }
 ]

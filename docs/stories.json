@@ -598,5 +598,17 @@
     "url": "stories/ep50-cryo-electron-microscopy-structural-biology.html",
     "image": "assets/images/ep50-cryo-electron-microscopy-structural-biology.png",
     "char_count": 7290
+  },
+  {
+    "no": 51,
+    "work_id": "ep51-seismic-tomography-mantle-plume-earth-interior",
+    "title": "地震の波が照らす地球の深奥――地震波トモグラフィーとマントルプルーム",
+    "faculty": "理学部・地球惑星物理学科 ／ 地震研究所（地球内部ダイナミクス・計算地震学研究室）",
+    "field": "物理学・宇宙・光学",
+    "theme": "世界中の地震計波形記録から地球内部の3次元速度構造を再構築する地震波トモグラフィーと、核マントル境界から立ち昇るマントルプルームの物理",
+    "has_image": true,
+    "url": "stories/ep51-seismic-tomography-mantle-plume-earth-interior.html",
+    "image": "assets/images/ep51-seismic-tomography-mantle-plume-earth-interior.png",
+    "char_count": 7771
   }
 ]

@@ -1248,5 +1248,80 @@
         "query": "Henderson The potential and limitations of neutrons electrons and X-rays Quarterly Reviews of Biophysics 1995"
       }
     ]
+  },
+  {
+    "id": "ep51-seismic-tomography-mantle-plume-earth-interior",
+    "episode_num": 51,
+    "title": "地震の波が照らす地球の深奥――地震波トモグラフィーとマントルプルーム",
+    "faculty": "理学部・地球惑星物理学科 ／ 地震研究所（地球内部ダイナミクス・計算地震学研究室）",
+    "protagonist": "鳴海 響（なるみ ひびき・高校2年生・地学部）",
+    "mentor": "深町 渚（ふかまち なぎさ・准教授・地震波トモグラフィー・マントル対流モデリング／理科教員養成担当）",
+    "theme": "世界中の地震計波形記録から地球内部の3次元速度構造を再構築する地震波トモグラフィーと、核マントル境界から立ち昇るマントルプルームの物理",
+    "modern_tech": "広帯域地震観測網（F-net/GSN）、有限差分・スペクトル要素法による全波形インバージョン（FWI）、地球深部スーパープルーム3次元可視化",
+    "summary": "「地震は怖い災害だけれど、その揺れの波は、地球の真ん中まで潜り込んで戻ってくるメッセンジャーでもあるの」――渚准教授が見せてくれたのは、地球を丸ごとCTスキャンしたような極彩色の3次元断面図。地下2900キロメートルの核マントル境界から湧き上がる巨大な熱の柱「スーパープルーム」の姿に息を呑む響。地球内部の壮大な対流を数理物理の力で可視化するロマンに魅せられ、高校の理科教師として地球のダイナミズムを伝える未来を決意する。",
+    "crossref_queries": [
+      {
+        "label": "地球内部の3次元速度構造を初めて地球規模で可視化した金字塔的研究（Dziewonski & Woodhouse）",
+        "query": "Dziewonski Woodhouse Global images of the Earth interior Science 1987"
+      },
+      {
+        "label": "地震波速度異常からマントル深部の上昇熱プルームを捉えた研究（Ritsema & van Heijst）",
+        "query": "Ritsema van Heijst Seismic Imaging of Mantle Plumes Science 1999"
+      },
+      {
+        "label": "アジョイント法を用いた全波形インバージョンと高解像度地震波トモグラフィー（Tromp et al.）",
+        "query": "Tromp Tape Liu Seismic tomography adjoint methods Science 2005"
+      }
+    ]
+  },
+  {
+    "id": "ep52-soliton-waves-kdv-equation-nonlinear-physics",
+    "episode_num": 52,
+    "title": "運河を駆ける永遠の孤立波――ソリトンと非線形波動の数理",
+    "faculty": "理学部・数学科 ／ 工学部・物理工学科（非線形波動・数理物理学研究室）",
+    "protagonist": "浅葱 澄玲（あさぎ すみれ・高校2年生・物理部兼カヌー部）",
+    "mentor": "水守 晶（みずもり あきら・助教・可積分系・ソリトン方程式／高校数学教員養成担当）",
+    "theme": "衝突しても形を崩さず進み続ける孤立波「ソリトン」の発見とKdV方程式（非線形効果と分散の調和）、完全可積分系の数理と光ソリトン通信",
+    "modern_tech": "水槽造波実験、KdV方程式・非線形シュレディンガー方程式数値解法、光ファイバー超高速光ソリトン通信、津波・異常巨大波解析",
+    "summary": "カヌーの練習中、水面を進む一筋の盛り上がった波がどこまでも形を崩さずに進んでいく様子に目を奪われた澄玲。晶助教の研究室で、それが1834年に馬に乗って追跡したスコット・ラッセルが発見した奇跡の波「ソリトン」だと知る。波の分散と非線形効果が奇跡的に釣り合う数理美（KdV方程式）と、現代の光ファイバー通信を支える技術への広がりに感動し、物理と数学を架橋する教育者を志す。",
+    "crossref_queries": [
+      {
+        "label": "衝突後も形状を保つ孤立波に「ソリトン」と命名した記念碑的論文（Zabusky & Kruskal）",
+        "query": "Zabusky Kruskal Interaction of Solitons in a Collisionless Plasma Physical Review Letters 1965"
+      },
+      {
+        "label": "逆散乱法によりKdV方程式の厳密解を導いた解析力学の金字塔（Gardner, Greene, Kruskal, Miura）",
+        "query": "Gardner Greene Miura Method for Solving the Korteweg-deVries Equation Physical Review Letters 1967"
+      },
+      {
+        "label": "光ファイバー中の光ソリトン伝送の理論的提唱（Hasegawa & Tappert）",
+        "query": "Hasegawa Tappert Transmission of stationary nonlinear optical pulses Applied Physics Letters 1973"
+      }
+    ]
+  },
+  {
+    "id": "ep53-quantum-annealing-ising-combinatorial-optimization",
+    "episode_num": 53,
+    "title": "量子のゆらぎが越える険しい峠――量子アニーリングと最適化の幾何学",
+    "faculty": "情報理工学部・数理情報学科 ／ 先導量子コンピューティング研究センター（量子アルゴリズム・イジングモデル研究室）",
+    "protagonist": "鞍馬 琴音（くらま ことね・高校2年生・パソコン部兼囲碁部）",
+    "mentor": "八重垣 楓（やえがき かえで・講師・量子情報科学・統計力学的最適化／情報科教職担当）",
+    "theme": "巡回セールスマン問題や組合せ最適化問題をイジング模型に帰着させ、量子トンネル効果のゆらぎによって大域的最適解を探索する量子アニーリングの原理",
+    "modern_tech": "超伝導磁束量子ビット（RF-SQUID）イジングマシン、QUBO（二次無制約二値最適化）定式化、物流ルート最適化・創薬スクリーニング",
+    "summary": "「山と谷が入り組んだ複雑な迷路で、普通のコンピュータは高い山を一つ一つ登って越えなきゃいけない。でも量子は、トンネルを掘って一瞬ですり抜けちゃうの」――楓講師がプロジェクターで見せるエネルギー地形図と量子の跳躍。囲碁の盤面のように複雑な組み合わせ問題を解き明かす量子アニーリングの原理に触れた琴音は、難解な情報科学を親しみやすく生徒に教える高校「情報」の先生を目指す。",
+    "crossref_queries": [
+      {
+        "label": "横磁場イジング模型における量子アニーリングの概念を世界で初めて提唱した原著論文（Kadowaki & Nishimori）",
+        "query": "Kadowaki Nishimori Quantum annealing in the transverse Ising model Physical Review E 1998"
+      },
+      {
+        "label": "NP完全問題に対する断熱量子計算アルゴリズムの提案（Farhi et al.）",
+        "query": "Farhi Goldstone Gutmann A Quantum Adiabatic Evolution Algorithm Science 2001"
+      },
+      {
+        "label": "超伝導磁束量子ビットを用いた量子アニーリングプロセッサの実証（Johnson et al.）",
+        "query": "Johnson Amin Quantum annealing with manufactured spins Nature 2011"
+      }
+    ]
   }
 ]

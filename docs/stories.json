@@ -622,5 +622,17 @@
     "url": "stories/ep52-soliton-waves-kdv-equation-nonlinear-physics.html",
     "image": "assets/images/ep52-soliton-waves-kdv-equation-nonlinear-physics.png",
     "char_count": 7285
+  },
+  {
+    "no": 53,
+    "work_id": "ep53-quantum-annealing-ising-combinatorial-optimization",
+    "title": "量子のトンネルを越えて――迷路の果てにある最適解",
+    "faculty": "情報理工学部・数理情報学科 ／ 先導量子コンピューティング研究センター（量子アルゴリズム・イジングモデル研究室）",
+    "field": "数学・数理科学",
+    "theme": "巡回セールスマン問題や組合せ最適化問題をイジング模型に帰着させ、量子トンネル効果のゆらぎによって大域的最適解を探索する量子アニーリングの原理",
+    "has_image": true,
+    "url": "stories/ep53-quantum-annealing-ising-combinatorial-optimization.html",
+    "image": "assets/images/ep53-quantum-annealing-ising-combinatorial-optimization.png",
+    "char_count": 7691
   }
 ]

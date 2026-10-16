@@ -682,5 +682,17 @@
     "url": "stories/ep57-optical-tweezers-laser-single-molecule-biophysics.html",
     "image": "assets/images/ep57-optical-tweezers-laser-single-molecule-biophysics.png",
     "char_count": 7535
+  },
+  {
+    "no": 58,
+    "work_id": "ep58-deep-sea-hydrothermal-vent-origin-of-life-geochemistry",
+    "title": "深海のチムニーが灯した最初の命――熱水噴出孔と地球化学の記憶",
+    "faculty": "理学部・地球惑星環境学科 ／ 海洋研究開発機構連携（深海熱水系・地球生命起源研究室）",
+    "field": "生命科学・バイオ・医学",
+    "theme": "深海底のアルカリ熱水噴出孔における蛇紋岩化反応、鉱物微細孔によるプロトン濃度勾配と初期生命代謝（逆TCA回路）の起源",
+    "has_image": true,
+    "url": "stories/ep58-deep-sea-hydrothermal-vent-origin-of-life-geochemistry.html",
+    "image": "assets/images/ep58-deep-sea-hydrothermal-vent-origin-of-life-geochemistry.png",
+    "char_count": 7261
   }
 ]

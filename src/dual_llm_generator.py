@@ -1184,6 +1184,12 @@ class DualLLMStoryGenerator:
             "both characters smiling excitedly examining colorful simulated random walk particle paths and diffusion curves on a laptop screen.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit mathematical sciences seminar room.",
         ),
+        "ep60-wilson-cloud-chamber-positron-particle-physics": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and an eager warm smile, visiting a radiation and particle physics detection laboratory.",
+            "a friendly female particle physicist with kind smiling eyes demonstrating a Peltier diffusion cloud chamber filled with illuminated alcohol mist on a table.",
+            "both characters smiling in wonder watching delicate white cosmic ray vapor tracks streak across the illuminated dark cloud chamber.",
+            "both characters smiling peacefully and happily side by side with soft, kind eyes and natural sweet smiles in gentle sunlit physics laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

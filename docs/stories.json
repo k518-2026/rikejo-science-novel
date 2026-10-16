@@ -694,5 +694,17 @@
     "url": "stories/ep58-deep-sea-hydrothermal-vent-origin-of-life-geochemistry.html",
     "image": "assets/images/ep58-deep-sea-hydrothermal-vent-origin-of-life-geochemistry.png",
     "char_count": 7261
+  },
+  {
+    "no": 59,
+    "work_id": "ep59-random-walk-brownian-motion-stochastic-calculus",
+    "title": "酔っぱらいの足跡が描く宇宙の法則――ランダムウォークと確率微積分の数学",
+    "faculty": "理学部・数学科 ／ 大学院数理科学研究科（確率論・確率解析研究室）",
+    "field": "数学・数理科学",
+    "theme": "ランダムウォークの極限としてのブラウン運動、伊藤清の確率積分・伊藤の公式（確率微積分 / ガウス賞）、偶然と拡散現象の数理",
+    "has_image": true,
+    "url": "stories/ep59-random-walk-brownian-motion-stochastic-calculus.html",
+    "image": "assets/images/ep59-random-walk-brownian-motion-stochastic-calculus.png",
+    "char_count": 6029
   }
 ]

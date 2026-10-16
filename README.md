@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **58** 話（うち挿絵付き **58** 話 / 最終更新: 2026-10-17 02:51 JST）
+- **収録作品数**: 全 **59** 話（うち挿絵付き **59** 話 / 最終更新: 2026-10-17 03:01 JST）
 
 ---
 
@@ -72,6 +72,7 @@
 | 56 | **[細胞の掃除機を呼び寄せる魔法の分子――標的タンパク質分解（PROTAC）の化学](https://k518-2026.github.io/rikejo-science-novel/stories/ep56-targeted-protein-degradation-protac-chemical-biology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep56-targeted-protein-degradation-protac-chemical-biology.html) | [📄原稿](content/2026-10-16_ep56_targeted_protein_degradation_protac_chemical_biology.md) | [🎨挿絵](content/2026-10-16_ep56_targeted_protein_degradation_protac_chemical_biology.png) | 薬学部・創薬生命科学科 ／ 創薬科学総合研究センター（生体機能分子・ケミカルバイオロジー研究室） | 病気の原因タンパク質と細胞内ユビキチンE3リガーゼを二頭リガンドで結合させ、細胞本来の分解システム（プロテアソーム）で消去する標的タンパク質分解（PROTAC）の化学 | 6,886字 |
 | 57 | **[光の指先が触れる生命のモーター――光ピンセットと単一分子の力学](https://k518-2026.github.io/rikejo-science-novel/stories/ep57-optical-tweezers-laser-single-molecule-biophysics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep57-optical-tweezers-laser-single-molecule-biophysics.html) | [📄原稿](content/2026-10-17_ep57_optical_tweezers_laser_single_molecule_biophysics.md) | [🎨挿絵](content/2026-10-17_ep57_optical_tweezers_laser_single_molecule_biophysics.png) | 理学部・物理学科 ／ 統合生命科学研究所（生体ナノ物理・光量子バイオ研究室） | レーザー光の放射圧（勾配力）で微小粒子や生体分子を非接触で捕捉・操作する光ピンセット技術（2018年ノーベル物理学賞 アーサー・アシュキン）とキネシン分子モーターのピコニュートン力学 | 7,535字 |
 | 58 | **[深海のチムニーが灯した最初の命――熱水噴出孔と地球化学の記憶](https://k518-2026.github.io/rikejo-science-novel/stories/ep58-deep-sea-hydrothermal-vent-origin-of-life-geochemistry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep58-deep-sea-hydrothermal-vent-origin-of-life-geochemistry.html) | [📄原稿](content/2026-10-17_ep58_deep_sea_hydrothermal_vent_origin_of_life_geochemistry.md) | [🎨挿絵](content/2026-10-17_ep58_deep_sea_hydrothermal_vent_origin_of_life_geochemistry.png) | 理学部・地球惑星環境学科 ／ 海洋研究開発機構連携（深海熱水系・地球生命起源研究室） | 深海底のアルカリ熱水噴出孔における蛇紋岩化反応、鉱物微細孔によるプロトン濃度勾配と初期生命代謝（逆TCA回路）の起源 | 7,261字 |
+| 59 | **[酔っぱらいの足跡が描く宇宙の法則――ランダムウォークと確率微積分の数学](https://k518-2026.github.io/rikejo-science-novel/stories/ep59-random-walk-brownian-motion-stochastic-calculus.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep59-random-walk-brownian-motion-stochastic-calculus.html) | [📄原稿](content/2026-10-17_ep59_random_walk_brownian_motion_stochastic_calculus.md) | [🎨挿絵](content/2026-10-17_ep59_random_walk_brownian_motion_stochastic_calculus.png) | 理学部・数学科 ／ 大学院数理科学研究科（確率論・確率解析研究室） | ランダムウォークの極限としてのブラウン運動、伊藤清の確率積分・伊藤の公式（確率微積分 / ガウス賞）、偶然と拡散現象の数理 | 6,029字 |
 
 ---
 

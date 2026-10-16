@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **54** 話（うち挿絵付き **54** 話 / 最終更新: 2026-10-16 20:07 JST）
+- **収録作品数**: 全 **55** 話（うち挿絵付き **55** 話 / 最終更新: 2026-10-16 20:17 JST）
 
 ---
 
@@ -68,6 +68,7 @@
 | 52 | **[運河を駆ける永遠の孤立波――ソリトンが紡ぐ世界への招待状](https://k518-2026.github.io/rikejo-science-novel/stories/ep52-soliton-waves-kdv-equation-nonlinear-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep52-soliton-waves-kdv-equation-nonlinear-physics.html) | [📄原稿](content/2026-10-15_ep52_soliton_waves_kdv_equation_nonlinear_physics.md) | [🎨挿絵](content/2026-10-15_ep52_soliton_waves_kdv_equation_nonlinear_physics.png) | 理学部・数学科 ／ 工学部・物理工学科（非線形波動・数理物理学研究室） | 衝突しても形を崩さず進み続ける孤立波「ソリトン」の発見とKdV方程式（非線形効果と分散の調和）、完全可積分系の数理と光ソリトン通信 | 7,285字 |
 | 53 | **[量子のトンネルを越えて――迷路の果てにある最適解](https://k518-2026.github.io/rikejo-science-novel/stories/ep53-quantum-annealing-ising-combinatorial-optimization.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep53-quantum-annealing-ising-combinatorial-optimization.html) | [📄原稿](content/2026-10-15_ep53_quantum_annealing_ising_combinatorial_optimization.md) | [🎨挿絵](content/2026-10-15_ep53_quantum_annealing_ising_combinatorial_optimization.png) | 情報理工学部・数理情報学科 ／ 先導量子コンピューティング研究センター（量子アルゴリズム・イジングモデル研究室） | 巡回セールスマン問題や組合せ最適化問題をイジング模型に帰着させ、量子トンネル効果のゆらぎによって大域的最適解を探索する量子アニーリングの原理 | 7,691字 |
 | 54 | **[南極の氷底から届く幽霊粒子の手紙——IceCube とニュートリノ天文学](https://k518-2026.github.io/rikejo-science-novel/stories/ep54-icecube-neutrino-astronomy-multimessenger-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep54-icecube-neutrino-astronomy-multimessenger-physics.html) | [📄原稿](content/2026-10-16_ep54_icecube_neutrino_astronomy_multimessenger_physics.md) | [🎨挿絵](content/2026-10-16_ep54_icecube_neutrino_astronomy_multimessenger_physics.png) | 理学部・宇宙物理学科 ／ 宇宙線研究所（高エネルギーニュートリノ天文学研究室） | 南極氷河深部1立方キロメートルに展開された超巨大検出器IceCubeによる高エネルギー宇宙ニュートリノ検出と、ブレーザー放射源同定・マルチメッセンジャー天文学の幕開け | 7,265字 |
+| 55 | **[複雑な世界を小さな三角形にほどく午後――有限要素法と構造解析の幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep55-finite-element-method-fluid-structure-applied-math.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep55-finite-element-method-fluid-structure-applied-math.html) | [📄原稿](content/2026-10-16_ep55_finite_element_method_fluid_structure_applied_math.md) | [🎨挿絵](content/2026-10-16_ep55_finite_element_method_fluid_structure_applied_math.png) | 工学部・システム創成学科 ／ 大学院情報理工学系研究科（計算数理・シミュレーション工学研究室） | 複雑な形状の偏微分方程式を無数の微小メッシュ（三角形・四面体）に分割して解く「有限要素法（FEM）」と弱形式・変分原理の数学、流体-構造連成解析 | 7,679字 |
 
 ---
 

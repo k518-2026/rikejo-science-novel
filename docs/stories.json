@@ -646,5 +646,17 @@
     "url": "stories/ep54-icecube-neutrino-astronomy-multimessenger-physics.html",
     "image": "assets/images/ep54-icecube-neutrino-astronomy-multimessenger-physics.png",
     "char_count": 7265
+  },
+  {
+    "no": 55,
+    "work_id": "ep55-finite-element-method-fluid-structure-applied-math",
+    "title": "複雑な世界を小さな三角形にほどく午後――有限要素法と構造解析の幾何学",
+    "faculty": "工学部・システム創成学科 ／ 大学院情報理工学系研究科（計算数理・シミュレーション工学研究室）",
+    "field": "数学・数理科学",
+    "theme": "複雑な形状の偏微分方程式を無数の微小メッシュ（三角形・四面体）に分割して解く「有限要素法（FEM）」と弱形式・変分原理の数学、流体-構造連成解析",
+    "has_image": true,
+    "url": "stories/ep55-finite-element-method-fluid-structure-applied-math.html",
+    "image": "assets/images/ep55-finite-element-method-fluid-structure-applied-math.png",
+    "char_count": 7679
   }
 ]

@@ -658,5 +658,17 @@
     "url": "stories/ep55-finite-element-method-fluid-structure-applied-math.html",
     "image": "assets/images/ep55-finite-element-method-fluid-structure-applied-math.png",
     "char_count": 7679
+  },
+  {
+    "no": 56,
+    "work_id": "ep56-targeted-protein-degradation-protac-chemical-biology",
+    "title": "細胞の掃除機を呼び寄せる魔法の分子――標的タンパク質分解（PROTAC）の化学",
+    "faculty": "薬学部・創薬生命科学科 ／ 創薬科学総合研究センター（生体機能分子・ケミカルバイオロジー研究室）",
+    "field": "化学・薬学・材料",
+    "theme": "病気の原因タンパク質と細胞内ユビキチンE3リガーゼを二頭リガンドで結合させ、細胞本来の分解システム（プロテアソーム）で消去する標的タンパク質分解（PROTAC）の化学",
+    "has_image": true,
+    "url": "stories/ep56-targeted-protein-degradation-protac-chemical-biology.html",
+    "image": "assets/images/ep56-targeted-protein-degradation-protac-chemical-biology.png",
+    "char_count": 6886
   }
 ]

@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **56** 話（うち挿絵付き **56** 話 / 最終更新: 2026-10-16 20:27 JST）
+- **収録作品数**: 全 **57** 話（うち挿絵付き **57** 話 / 最終更新: 2026-10-17 02:41 JST）
 
 ---
 
@@ -70,6 +70,7 @@
 | 54 | **[南極の氷底から届く幽霊粒子の手紙——IceCube とニュートリノ天文学](https://k518-2026.github.io/rikejo-science-novel/stories/ep54-icecube-neutrino-astronomy-multimessenger-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep54-icecube-neutrino-astronomy-multimessenger-physics.html) | [📄原稿](content/2026-10-16_ep54_icecube_neutrino_astronomy_multimessenger_physics.md) | [🎨挿絵](content/2026-10-16_ep54_icecube_neutrino_astronomy_multimessenger_physics.png) | 理学部・宇宙物理学科 ／ 宇宙線研究所（高エネルギーニュートリノ天文学研究室） | 南極氷河深部1立方キロメートルに展開された超巨大検出器IceCubeによる高エネルギー宇宙ニュートリノ検出と、ブレーザー放射源同定・マルチメッセンジャー天文学の幕開け | 7,265字 |
 | 55 | **[複雑な世界を小さな三角形にほどく午後――有限要素法と構造解析の幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep55-finite-element-method-fluid-structure-applied-math.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep55-finite-element-method-fluid-structure-applied-math.html) | [📄原稿](content/2026-10-16_ep55_finite_element_method_fluid_structure_applied_math.md) | [🎨挿絵](content/2026-10-16_ep55_finite_element_method_fluid_structure_applied_math.png) | 工学部・システム創成学科 ／ 大学院情報理工学系研究科（計算数理・シミュレーション工学研究室） | 複雑な形状の偏微分方程式を無数の微小メッシュ（三角形・四面体）に分割して解く「有限要素法（FEM）」と弱形式・変分原理の数学、流体-構造連成解析 | 7,679字 |
 | 56 | **[細胞の掃除機を呼び寄せる魔法の分子――標的タンパク質分解（PROTAC）の化学](https://k518-2026.github.io/rikejo-science-novel/stories/ep56-targeted-protein-degradation-protac-chemical-biology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep56-targeted-protein-degradation-protac-chemical-biology.html) | [📄原稿](content/2026-10-16_ep56_targeted_protein_degradation_protac_chemical_biology.md) | [🎨挿絵](content/2026-10-16_ep56_targeted_protein_degradation_protac_chemical_biology.png) | 薬学部・創薬生命科学科 ／ 創薬科学総合研究センター（生体機能分子・ケミカルバイオロジー研究室） | 病気の原因タンパク質と細胞内ユビキチンE3リガーゼを二頭リガンドで結合させ、細胞本来の分解システム（プロテアソーム）で消去する標的タンパク質分解（PROTAC）の化学 | 6,886字 |
+| 57 | **[光の指先が触れる生命のモーター――光ピンセットと単一分子の力学](https://k518-2026.github.io/rikejo-science-novel/stories/ep57-optical-tweezers-laser-single-molecule-biophysics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep57-optical-tweezers-laser-single-molecule-biophysics.html) | [📄原稿](content/2026-10-17_ep57_optical_tweezers_laser_single_molecule_biophysics.md) | [🎨挿絵](content/2026-10-17_ep57_optical_tweezers_laser_single_molecule_biophysics.png) | 理学部・物理学科 ／ 統合生命科学研究所（生体ナノ物理・光量子バイオ研究室） | レーザー光の放射圧（勾配力）で微小粒子や生体分子を非接触で捕捉・操作する光ピンセット技術（2018年ノーベル物理学賞 アーサー・アシュキン）とキネシン分子モーターのピコニュートン力学 | 7,535字 |
 
 ---
 

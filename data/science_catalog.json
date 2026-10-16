@@ -1398,5 +1398,80 @@
         "query": "Winter Buckley Paul Phthalimide conjugations promote the degradation of aberrant proteins Science 2015"
       }
     ]
+  },
+  {
+    "id": "ep57-optical-tweezers-laser-single-molecule-biophysics",
+    "episode_num": 57,
+    "title": "光の指先が触れる生命のモーター――光ピンセットと単一分子の力学",
+    "faculty": "理学部・物理学科 ／ 統合生命科学研究所（生体ナノ物理・光量子バイオ研究室）",
+    "protagonist": "椎名 涼風（しいな すずか・高校2年生・物理部）",
+    "mentor": "宇治川 柚季（うじがわ ゆずき・助教・レーザー物理学・単一分子生体力学／高校物理教員養成担当）",
+    "theme": "レーザー光の放射圧（勾配力）で微小粒子や生体分子を非接触で捕捉・操作する光ピンセット技術（2018年ノーベル物理学賞 アーサー・アシュキン）とキネシン分子モーターのピコニュートン力学",
+    "modern_tech": "近赤外レーザー集光トラップ、ピエゾ駆動ステージ、ナノメートル・ピコニュートン変位センシング、キネシンのステッピング運動追跡",
+    "summary": "「光には重さがないけれど、跳ね返るときに運動量を相手に渡すの。強く絞ったレーザー光を使えば、細胞の中の分子をピンセットみたいにつまめるんだよ」――柚季助教が見せてくれたのは、光の力で捕らえられた直径1マイクロメートルのガラス球が、微小管の上を1歩8ナノメートルで歩くキネシンモーターに引っ張られて動く様子。光で生命の最小の歯車に触れる物理の驚異に息を呑む涼風は、目に見えない光の力を高校生に教える物理教師を志す。",
+    "crossref_queries": [
+      {
+        "label": "放射圧による微粒子の加速と捕捉の原理を提唱した記念碑的論文（Ashkin / 2018年ノーベル物理学賞）",
+        "query": "Ashkin Acceleration and trapping of particles by radiation pressure Physical Review Letters 1970"
+      },
+      {
+        "label": "単一レーザービームの勾配力による光ピンセットの実験的実現（Ashkin, Chu et al.）",
+        "query": "Ashkin Dziedzic Chu Observation of a single-beam gradient force optical trap Optics Letters 1986"
+      },
+      {
+        "label": "光ピンセットを用いたキネシン分子モーターのステップ運動の直接観察（Svoboda, Block et al.）",
+        "query": "Svoboda Schmidt Schnapp Block Direct observation of kinesin stepping by optical trapping Nature 1993"
+      }
+    ]
+  },
+  {
+    "id": "ep58-deep-sea-hydrothermal-vent-origin-of-life-geochemistry",
+    "episode_num": 58,
+    "title": "深海のチムニーが灯した最初の命――熱水噴出孔と地球化学の記憶",
+    "faculty": "理学部・地球惑星環境学科 ／ 海洋研究開発機構連携（深海熱水系・地球生命起源研究室）",
+    "protagonist": "海音寺 汐音（かいおんじ しおね・高校2年生・科学部兼水泳部）",
+    "mentor": "倉橋 澪（くらはし みお・准教授・同位体地球化学・海底熱水生態系／高校理科教員養成担当）",
+    "theme": "深海底のアルカリ熱水噴出孔における蛇紋岩化反応、鉱物微細孔によるプロトン濃度勾配と初期生命代謝（逆TCA回路）の起源",
+    "modern_tech": "有人潜水調査船（しんかい6500）、熱水噴出孔チムニー鉱物分析、高温高圧還元環境フローリアクター実験、鉄硫黄クラスター触媒",
+    "summary": "「光の届かない水深数千メートルの真っ暗な深海で、地球の内部から噴き出す熱いスープと鉱物の壁が、生命最初の細胞膜と電池になったの」――澪准教授の研究室で見たのは、潜水艇が持ち帰った深海チムニー鉱物の多孔質断面。太陽光に頼らず、地球の熱と化学エネルギーだけで生まれた始原生命のたくましさに圧倒された汐音は、地球と生命の切っても切れない絆を伝える地学・理科教員への道を歩み出す。",
+    "crossref_queries": [
+      {
+        "label": "ガラパゴス海嶺における深海熱水噴出孔の歴史的発見（Corliss et al.）",
+        "query": "Corliss Dymond Gordon Submarine Thermal Springs on the Galapagos Rift Science 1979"
+      },
+      {
+        "label": "アルカリ熱水噴出孔の無機鉱物微細孔を生命細胞の起源とする仮説（Martin & Russell）",
+        "query": "Martin Russell On the origins of cells a hypothesis for the evolutionary transitions Philosophical Transactions 2003"
+      },
+      {
+        "label": "鉄硫黄鉱物表面での化学進化と代謝起源の鉄硫黄ワールド仮説（Wächtershäuser）",
+        "query": "Wachtershauser Groundworks for an evolutionary biochemistry the iron-sulphur world Progress in Biophysics 1992"
+      }
+    ]
+  },
+  {
+    "id": "ep59-random-walk-brownian-motion-stochastic-calculus",
+    "episode_num": 59,
+    "title": "酔っぱらいの足跡が描く宇宙の法則――ランダムウォークと確率微積分の数学",
+    "faculty": "理学部・数学科 ／ 大学院数理科学研究科（確率論・確率解析研究室）",
+    "protagonist": "舞原 紬（まいはら つむぎ・高校2年生・数学部）",
+    "mentor": "鳴瀬 燈花（なるせ とうか・講師・確率微分方程式・マリアバン解析／高校数学教員養成担当）",
+    "theme": "ランダムウォークの極限としてのブラウン運動、伊藤清の確率積分・伊藤の公式（確率微積分 / ガウス賞）、偶然と拡散現象の数理",
+    "modern_tech": "伊藤の公式・確率微分方程式（SDE）、マルチンゲール理論、モンテカルロ経路シミュレーション、熱伝導方程式との双対性",
+    "summary": "「コイン投げの裏表を一秒に何千回も繰り返して極限をとると、ギザギザなのにどこでも微分できない不思議な曲線が現れるの。それがブラウン運動よ」――燈花講師がPC画面に描いた無数のランダムウォーク軌跡。日本人数学者・伊藤清が創り上げた「伊藤の公式」によって、偶然という予測不能な波が美しい微積分の数式で厳密に手なずけられる奇跡に心震える紬。偶然と必然をつなぐ数学の魅力を教室で語れる先生になりたいと目を輝かせる。",
+    "crossref_queries": [
+      {
+        "label": "熱の分子運動論に基づく懸濁粒子のブラウン運動に関する記念碑的論文（Einstein）",
+        "query": "Einstein Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung Annalen der Physik 1905"
+      },
+      {
+        "label": "確率積分と確率微分方程式の基礎を確立した世界的研究（Ito / ガウス賞）",
+        "query": "Ito On stochastic differential equations Memoirs of the American Mathematical Society 1951"
+      },
+      {
+        "label": "平面ランダムウォークの共形不変性とシュラム・レヴナー発展（Lawler, Schramm, Werner / フィールズ賞）",
+        "query": "Lawler Schramm Werner Conformal invariance of planar loop-erased random walks Annals of Probability 2004"
+      }
+    ]
   }
 ]

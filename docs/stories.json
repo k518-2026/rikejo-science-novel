@@ -670,5 +670,17 @@
     "url": "stories/ep56-targeted-protein-degradation-protac-chemical-biology.html",
     "image": "assets/images/ep56-targeted-protein-degradation-protac-chemical-biology.png",
     "char_count": 6886
+  },
+  {
+    "no": 57,
+    "work_id": "ep57-optical-tweezers-laser-single-molecule-biophysics",
+    "title": "光の指先が触れる生命のモーター――光ピンセットと単一分子の力学",
+    "faculty": "理学部・物理学科 ／ 統合生命科学研究所（生体ナノ物理・光量子バイオ研究室）",
+    "field": "物理学・宇宙・光学",
+    "theme": "レーザー光の放射圧（勾配力）で微小粒子や生体分子を非接触で捕捉・操作する光ピンセット技術（2018年ノーベル物理学賞 アーサー・アシュキン）とキネシン分子モーターのピコニュートン力学",
+    "has_image": true,
+    "url": "stories/ep57-optical-tweezers-laser-single-molecule-biophysics.html",
+    "image": "assets/images/ep57-optical-tweezers-laser-single-molecule-biophysics.png",
+    "char_count": 7535
   }
 ]

@@ -1148,6 +1148,24 @@ class DualLLMStoryGenerator:
             "both characters smiling excitedly examining 3D spin glass energy landscape visualizations and quantum annealing optimization graphs on a workstation monitor.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit quantum informatics seminar room.",
         ),
+        "ep54-icecube-neutrino-astronomy-multimessenger-physics": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and an eager warm smile, entering an Antarctic neutrino astrophysics research institute.",
+            "a friendly female neutrino astrophysicist with kind smiling eyes explaining deep-ice Cherenkov detectors and optical sensors on a clean whiteboard.",
+            "both characters smiling in wonder looking at colorful 3D neutrino particle tracks lighting up the South Pole ice grid on a high-resolution display.",
+            "both characters smiling peacefully and happily side by side with soft, kind eyes and natural sweet smiles in gentle sunlit astrophysics seminar room.",
+        ),
+        "ep55-finite-element-method-fluid-structure-applied-math": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a sketching notebook, visiting an applied mathematics and computational mechanics seminar room.",
+            "a kind female computational mathematician with gentle smiling eyes showing an airplane wing mesh broken into tiny triangular elements on a whiteboard.",
+            "both characters smiling excitedly examining colorful structural stress distribution heatmaps and finite element grid simulations on a workstation screen.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit computational mathematics laboratory.",
+        ),
+        "ep56-targeted-protein-degradation-protac-chemical-biology": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and a curious warm smile, visiting an advanced chemical biology and pharmacology laboratory.",
+            "a smiling female chemical biologist with kind eyes explaining two-headed PROTAC molecules recruiting ubiquitin ligases on a clear glass board.",
+            "both characters smiling cheerfully observing colorful molecular models of target proteins being guided to cellular proteasome degradation on a dual monitor display.",
+            "both characters smiling peacefully and happily side by side with soft, kind eyes and sweet gentle smiles in bright sunny pharmacology laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

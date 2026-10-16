@@ -1166,6 +1166,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully observing colorful molecular models of target proteins being guided to cellular proteasome degradation on a dual monitor display.",
             "both characters smiling peacefully and happily side by side with soft, kind eyes and sweet gentle smiles in bright sunny pharmacology laboratory.",
         ),
+        "ep57-optical-tweezers-laser-single-molecule-biophysics": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and an eager warm smile, visiting an optical biophysics and laser manipulation laboratory.",
+            "a friendly female laser physicist with kind smiling eyes pointing at an inverted microscope and optical tweezers beam path on a clean whiteboard.",
+            "both characters smiling in wonder looking at microscopic polystyrene beads trapped by infrared laser light moving in nanometer steps on a monitor.",
+            "both characters smiling peacefully and happily side by side with soft, kind eyes and natural sweet smiles in gentle sunlit optical physics laboratory.",
+        ),
+        "ep58-deep-sea-hydrothermal-vent-origin-of-life-geochemistry": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and a curious warm smile, visiting a deep-sea hydrothermal vent and geochemistry laboratory.",
+            "a smiling female marine geochemist with kind eyes showing a porous mineral hydrothermal chimney sample and deep-sea submarine photos on a desk.",
+            "both characters smiling cheerfully observing microscopic mineral chambers mimicking prebiotic cellular membranes under a microscope.",
+            "both characters smiling peacefully and warmly side by side with soft, kind eyes and sweet gentle smiles in bright sunny earth science laboratory.",
+        ),
+        "ep59-random-walk-brownian-motion-stochastic-calculus": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a mathematics notebook, visiting a stochastic analysis and probability theory seminar room.",
+            "a kind female mathematician with gentle smiling eyes explaining Brownian motion curves and Ito's calculus formula on a clean blackboard.",
+            "both characters smiling excitedly examining colorful simulated random walk particle paths and diffusion curves on a laptop screen.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit mathematical sciences seminar room.",
+        ),
     }
 
     def generate_english_image_prompt(

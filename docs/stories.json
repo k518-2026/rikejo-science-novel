@@ -634,5 +634,17 @@
     "url": "stories/ep53-quantum-annealing-ising-combinatorial-optimization.html",
     "image": "assets/images/ep53-quantum-annealing-ising-combinatorial-optimization.png",
     "char_count": 7691
+  },
+  {
+    "no": 54,
+    "work_id": "ep54-icecube-neutrino-astronomy-multimessenger-physics",
+    "title": "南極の氷底から届く幽霊粒子の手紙——IceCube とニュートリノ天文学",
+    "faculty": "理学部・宇宙物理学科 ／ 宇宙線研究所（高エネルギーニュートリノ天文学研究室）",
+    "field": "物理学・宇宙・光学",
+    "theme": "南極氷河深部1立方キロメートルに展開された超巨大検出器IceCubeによる高エネルギー宇宙ニュートリノ検出と、ブレーザー放射源同定・マルチメッセンジャー天文学の幕開け",
+    "has_image": true,
+    "url": "stories/ep54-icecube-neutrino-astronomy-multimessenger-physics.html",
+    "image": "assets/images/ep54-icecube-neutrino-astronomy-multimessenger-physics.png",
+    "char_count": 7265
   }
 ]

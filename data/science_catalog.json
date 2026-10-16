@@ -1323,5 +1323,80 @@
         "query": "Johnson Amin Quantum annealing with manufactured spins Nature 2011"
       }
     ]
+  },
+  {
+    "id": "ep54-icecube-neutrino-astronomy-multimessenger-physics",
+    "episode_num": 54,
+    "title": "南極の氷底から届く幽霊粒子の手紙――IceCubeとニュートリノ天文学",
+    "faculty": "理学部・宇宙物理学科 ／ 宇宙線研究所（高エネルギーニュートリノ天文学研究室）",
+    "protagonist": "星名 瑠璃（ほしな るり・高校2年生・天文部）",
+    "mentor": "氷川 冴（ひかわ さえ・助教・ニュートリノ天文学・マルチメッセンジャー観測／高校理科教員養成担当）",
+    "theme": "南極氷河深部1立方キロメートルに展開された超巨大検出器IceCubeによる高エネルギー宇宙ニュートリノ検出と、ブレーザー放射源同定・マルチメッセンジャー天文学の幕開け",
+    "modern_tech": "南極氷底5160個の光電子増倍管（DOM）、チェレンコフ光波形再構成、アラート即時配信網（GCN）、マルチメッセンジャー協調観測",
+    "summary": "「どんな厚い星の壁もすり抜けて、宇宙の最果ての爆発からまっすぐに届く粒子があるの」――冴助教が見せてくれたのは、南極点直下の氷の奥深くに埋められた数千個の光センサーが捉えた、一本の青白いチェレンコフ光の軌跡。40億光年彼方の超巨大ブラックホール（ブレーザー）から飛来したニュートリノを世界中の望遠鏡が追跡したマルチメッセンジャー天文学の幕開けに心を奪われた瑠璃は、宇宙の謎を生徒たちに熱く伝える理科の先生を志す。",
+    "crossref_queries": [
+      {
+        "label": "太陽系外からの高エネルギー宇宙ニュートリノの初検出（IceCube Collaboration）",
+        "query": "IceCube Collaboration Evidence for high-energy extraterrestrial neutrinos Science 2013"
+      },
+      {
+        "label": "高エネルギーニュートリノ放射源としてのブレーザー増光の同定（IceCube et al.）",
+        "query": "Multimessenger observations of a flaring blazar coincident with high-energy neutrino IceCube-170922A Science 2018 361 eaat1378"
+      },
+      {
+        "label": "南極氷河を用いた1立方キロメートル巨大ニュートリノ望遠鏡IceCubeの設計と原理（Halzen & Klein）",
+        "query": "Halzen Klein IceCube an instrument for neutrino astronomy Review of Scientific Instruments 2010"
+      }
+    ]
+  },
+  {
+    "id": "ep55-finite-element-method-fluid-structure-applied-math",
+    "episode_num": 55,
+    "title": "複雑な世界を小さな三角形にほどく午後――有限要素法と構造解析の幾何学",
+    "faculty": "工学部・システム創成学科 ／ 大学院情報理工学系研究科（計算数理・シミュレーション工学研究室）",
+    "protagonist": "網野 琴美（あみの ことみ・高校2年生・数理研究部兼美術部）",
+    "mentor": "菱沼 茜（ひしぬま あかね・講師・偏微分方程式数値解法・連成シミュレーション／高校情報・数学教職担当）",
+    "theme": "複雑な形状の偏微分方程式を無数の微小メッシュ（三角形・四面体）に分割して解く「有限要素法（FEM）」と弱形式・変分原理の数学、流体-構造連成解析",
+    "modern_tech": "自動3次元非構造格子メッシュ生成、ガラーキン法・弱形式定式化、大規模スパース行列反復解法、流体-構造連成（FSI）解析",
+    "summary": "デッサンでモチーフの立体感を面の集まりとして捉えるのが得意だった琴美。茜講師の研究室で、飛行機の翼の空気抵抗やビルが風で揺れる様子を、無数の小さな四面体メッシュ（有限要素）に分けて解き明かす「有限要素法」の美しさに触れる。微分方程式という自然の法則が、美術のデッサンのように分割された幾何学と線形代数の力で解ける瞬間の喜びに目覚め、数学とコンピュータの架け橋となる情報科の教員を目指す。",
+    "crossref_queries": [
+      {
+        "label": "変分法と領域分割による偏微分方程式数値解法の基礎を築いた先駆的論文（Courant）",
+        "query": "Courant Variational methods for the solution of problems of equilibrium Bulletin of the American Mathematical Society 1943"
+      },
+      {
+        "label": "有限要素法の数理的基礎と誤差解析を体系化した記念碑的名著（Strang & Fix）",
+        "query": "Strang Fix An Analysis of the Finite Element Method Prentice-Hall 1973"
+      },
+      {
+        "label": "線形静解析および動解析における有限要素法の標準的体系（Hughes）",
+        "query": "Hughes The Finite Element Method Linear Static and Dynamic Finite Element Analysis 2000"
+      }
+    ]
+  },
+  {
+    "id": "ep56-targeted-protein-degradation-protac-chemical-biology",
+    "episode_num": 56,
+    "title": "細胞の掃除機を呼び寄せる魔法の分子――標的タンパク質分解（PROTAC）の化学",
+    "faculty": "薬学部・創薬生命科学科 ／ 創薬科学総合研究センター（生体機能分子・ケミカルバイオロジー研究室）",
+    "protagonist": "橘 柚葉（たちばな ゆずは・高校2年生・化学部）",
+    "mentor": "宇佐見 玲奈（うさみ れな・准教授・分子標的創薬・生体直交機能分子／高校化学教員養成担当）",
+    "theme": "病気の原因タンパク質と細胞内ユビキチンE3リガーゼを二頭リガンドで結合させ、細胞本来の分解システム（プロテアソーム）で消去する標的タンパク質分解（PROTAC）の化学",
+    "modern_tech": "二機能性ハイブリッド小分子（ヘテロ二官能性リガンド）、E3リガーゼ（CRBN/VHL）リクルート、三者複合体（Ternary Complex）結晶構造解析、アンドラッガブル標的の分解",
+    "summary": "「これまでの薬は、タンパク質の鍵穴に蓋をして邪魔するだけだった。でもこの分子は、細胞の中のお掃除係（ユビキチン・プロテアソーム系）を手招きして、悪玉タンパク質そのものを跡形もなく粉砕させちゃうの」――玲奈准教授が見せてくれたのは、2つの鍵が細い鎖で結ばれたような不思議な二頭分子「PROTAC」。これまでの薬では手が出せなかった難病の原因分子を消し去る化学の力に衝撃を受けた柚葉は、生命現象を分子の言葉で生徒に語れる化学の先生になりたいと目を輝かせる。",
+    "crossref_queries": [
+      {
+        "label": "標的タンパク質をユビキチン化・分解に導くPROTAC分子の世界初の提唱（Sakamoto et al. / Crews & Deshaies）",
+        "query": "Sakamoto Kim Kumagai Protacs Chimeric molecules that target proteins PNAS 2001"
+      },
+      {
+        "label": "小分子PROTACによる生体内触媒的タンパク質ノックダウンの実証（Bondeson et al.）",
+        "query": "Bondeson Mares Smith Catalytic in vivo protein knockdown by small-molecule PROTACs Nature Chemical Biology 2015"
+      },
+      {
+        "label": "サリドマイド誘導体（イミド骨格）を用いたE3リガーゼ結合と標的タンパク質分解（Winter et al.）",
+        "query": "Winter Buckley Paul Phthalimide conjugations promote the degradation of aberrant proteins Science 2015"
+      }
+    ]
   }
 ]

@@ -1473,5 +1473,30 @@
         "query": "Lawler Schramm Werner Conformal invariance of planar loop-erased random walks Annals of Probability 2004"
       }
     ]
+  },
+  {
+    "id": "ep60-wilson-cloud-chamber-positron-particle-physics",
+    "episode_num": 60,
+    "title": "霧の小宇宙を切り裂く光の軌跡――ウィルソンの霧箱と反物質の発見",
+    "faculty": "理学部・物理学科 ／ 原子核・高エネルギー物理学研究所（放射線物理・素粒子検出器研究室）",
+    "protagonist": "霧島 霞（きりしま かすみ・高校2年生・物理部）",
+    "mentor": "雲井 紗雪（くもい さゆき・助教・放射線計測物理・素粒子実験／高校物理・理科教員養成担当）",
+    "theme": "過飽和蒸気中のイオン凝縮核による荷電粒子の飛跡可視化（ウィルソンの霧箱 / 1927年ノーベル物理学賞）と宇宙線中の陽電子・反物質の発見（アンダーソン / 1936年ノーベル物理学賞）",
+    "modern_tech": "ペルチェ冷却式連続拡散型霧箱、過飽和イソプロピルアルコール蒸気層、磁場印加によるローレンツ力飛跡曲率測定、宇宙線ミューオン・対生成観察",
+    "summary": "「スコットランドの山頂で霧の美しさに魅せられた物理学者ウィルソンが、蒸気の雲で素粒子の足跡を見る装置を作ったの」――紗雪助教が黒い小箱を冷やすと、過飽和アルコール蒸気の中に突如、飛行機雲のようにスッと走る何本もの白い飛跡。宇宙から降るミューオンや、磁場で逆向きに曲がる陽電子（反物質）の足跡を肉眼で目撃した霞。身近な『霧』という気象現象が素粒子物理の扉を開いた感動に胸を打たれ、実験の驚きを伝える物理教師になる夢を抱く。",
+    "crossref_queries": [
+      {
+        "label": "気体中の電離粒子の飛跡を蒸気凝縮により可視化する膨張装置の原理（Wilson / 1927年ノーベル物理学賞）",
+        "query": "Wilson On an expansion apparatus for making visible the paths of ionising particles in gases Proceedings of the Royal Society of London 1912"
+      },
+      {
+        "label": "霧箱写真による宇宙線中の陽電子（反電子・反物質）の歴史的発見（Anderson / 1936年ノーベル物理学賞）",
+        "query": "Anderson The Positive Electron Physical Review 1933"
+      },
+      {
+        "label": "ガイガー計数管制御霧箱による透過放射線・対生成飛跡の撮影（Blackett & Occhialini / 1948年ノーベル物理学賞）",
+        "query": "Blackett Occhialini Some photographs of the tracks of penetrating radiation Proceedings of the Royal Society of London 1933"
+      }
+    ]
   }
 ]

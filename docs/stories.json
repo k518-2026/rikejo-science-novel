@@ -742,5 +742,17 @@
     "url": "stories/ep62-supercritical-fluid-green-chemistry-materials.html",
     "image": "assets/images/ep62-supercritical-fluid-green-chemistry-materials.png",
     "char_count": 6677
+  },
+  {
+    "no": 63,
+    "work_id": "ep63-epigenetics-dna-methylation-chromatin-biology",
+    "title": "塩基配列の向こうに灯るスイッチ――エピジェネティクスと運命の分子生物学",
+    "faculty": "理学部・生物学科 ／ ゲノム機能構造・エピゲノム分子生物学研究室",
+    "field": "化学・薬学・材料",
+    "theme": "DNAの塩基配列を変えずに遺伝子の働きをオン・オフするDNAメチル化やヒストン化学修飾（エピジェネティクス）と、分化細胞のリプログラミング（iPS細胞）",
+    "has_image": true,
+    "url": "stories/ep63-epigenetics-dna-methylation-chromatin-biology.html",
+    "image": "assets/images/ep63-epigenetics-dna-methylation-chromatin-biology.png",
+    "char_count": 7496
   }
 ]

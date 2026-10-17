@@ -1498,5 +1498,80 @@
         "query": "Blackett Occhialini Some photographs of the tracks of penetrating radiation Proceedings of the Royal Society of London 1933"
       }
     ]
+  },
+  {
+    "id": "ep61-gravitational-lensing-dark-matter-astrophysics",
+    "episode_num": 61,
+    "title": "時空の歪みが映す光のリング――重力レンズ効果と見えない暗黒物質",
+    "faculty": "理学部・天文学科 ／ 宇宙理論・重力天文学研究室",
+    "protagonist": "天城 昴（あまぎ すばる・高校2年生・天文部）",
+    "mentor": "鏡原 梢（かがみはら こずえ・准教授・宇宙論・重力レンズ解析／高校地学教員養成担当）",
+    "theme": "アインシュタインの一般相対性理論に基づく重力レンズ効果（アインシュタインリング、多重像、タイムディレイ）と、光を発しない暗黒物質（ダークマター）の重力ポテンシャルマッピング",
+    "modern_tech": "ハッブル・ジェームズウェッブ宇宙望遠鏡（JWST）観測データ、弱重力レンズ剪断（コスミック・シア）統計解析、弾丸銀河団（Bullet Cluster）ダークマター分布復元",
+    "summary": "「遠くの銀河が、なぜ丸いリング状に歪んで見えると思う？ 途中に巨大な質量の塊があって、光の進む空間そのものを曲げているからよ」――梢准教授が見せてくれたのは、宇宙望遠鏡が捉えた息を呑むほど美しい『アインシュタインリング』。光すら曲げる見えない正体『暗黒物質』の質量分布を数学と物理で透視する天文学のロマンに圧倒された昴は、宇宙の雄大さと物理の美しさを次世代に伝える高校地学の先生を志す。",
+    "crossref_queries": [
+      {
+        "label": "重力レンズ効果によるツインクエーサー多重像の世界初の実証（Walsh et al.）",
+        "query": "Walsh Gravitational lens system 0957+561 A, B Nature 1979"
+      },
+      {
+        "label": "重力レンズ多重像の時間遅延を用いたハッブル定数決定理論（Refsdal）",
+        "query": "Refsdal On the possibility of determining Hubble parameter from gravitational lenses Monthly Notices of the Royal Astronomical Society 1964"
+      },
+      {
+        "label": "弾丸銀河団の弱重力レンズ解析による暗黒物質の直接的実証（Clowe et al.）",
+        "query": "Clowe A direct empirical proof of the existence of dark matter Astrophysical Journal Letters 2006"
+      }
+    ]
+  },
+  {
+    "id": "ep62-supercritical-fluid-green-chemistry-materials",
+    "episode_num": 62,
+    "title": "気体と液体の境界が溶け合う場所――超臨界流体とグリーンケミストリー",
+    "faculty": "工学部・応用化学科 ／ 高圧力熱力学・先端グリーンプロセス研究室",
+    "protagonist": "水沢 翠（みずさわ すい・高校2年生・化学部）",
+    "mentor": "有栖川 遥（ありすがわ はるか・助教・超臨界流体工学・相平衡熱力学／高校化学教員養成担当）",
+    "theme": "気体と液体の区別がなくなる臨界点（臨界温度・臨界圧力）と超臨界流体（超臨界二酸化炭素・超臨界水）の特異な溶解力、環境調和型グリーン抽出・ナノ粒子合成",
+    "modern_tech": "高圧光学セルによる臨界乳光（Critical Opalescence）観察、超臨界CO2によるカフェイン非加熱抽出、超臨界水酸化有害物質分解、高温高圧熱力学平衡計算",
+    "summary": "「温度と圧力を上げていくと、液体と気体の境目（メニスカス）がパッと消えて、全体が白く輝く瞬間があるの。それが超臨界流体よ」――遥助教が見せてくれた高圧耐圧ガラスセルの中、臨界点に達した二酸化炭素が激しい『臨界乳光』とともに一つに溶け合う奇跡の瞬間。気体の拡散性と液体の溶解性を兼ね備え、有害有機溶媒を使わずに物質を抽出・リサイクルできる究極のクリーン技術に感動した翠は、環境と未来を守る化学教育者を志す。",
+    "crossref_queries": [
+      {
+        "label": "超臨界流体および気液界面の密度汎関数理論的解明（Gross）",
+        "query": "Gross A density functional theory for vapor-liquid interfaces Journal of Chemical Physics 2009"
+      },
+      {
+        "label": "臨界点近傍における熱力学表面と臨界スケーリング則の体系化（Kamgar-Parsi, Sengers et al.）",
+        "query": "Kamgar-Parsi Levelt Sengers Thermodynamic properties of fluids in the critical region 1984"
+      },
+      {
+        "label": "化学反応および持続可能プロセスの溶媒としての超臨界流体（Eckert et al.）",
+        "query": "Eckert Supercritical fluids as solvents for chemical reactions Nature 1996"
+      }
+    ]
+  },
+  {
+    "id": "ep63-epigenetics-dna-methylation-chromatin-biology",
+    "episode_num": 63,
+    "title": "塩基配列の向こうに灯るスイッチ――エピジェネティクスと運命の分子生物学",
+    "faculty": "理学部・生物学科 ／ ゲノム機能構造・エピゲノム分子生物学研究室",
+    "protagonist": "真木 琴葉（まき ことは・高校2年生・生物部）",
+    "mentor": "風早 栞子（かざはや しおりこ・准教授・エピジェネティクス・クロマチン動態制御／理科教職担当）",
+    "theme": "DNAの塩基配列を変えずに遺伝子の働きをオン・オフするDNAメチル化やヒストン化学修飾（エピジェネティクス）と、分化細胞のリプログラミング（iPS細胞）",
+    "modern_tech": "バイサルファイト・シーケンシング（DNAメチル化解析）、ChIP-seq（ヒストン修飾ゲノム網羅的マッピング）、エピゲノム編集（dCas9-TET1 / dCas9-DNMT3A）",
+    "summary": "「受精卵というたった一つの細胞から、どうして皮膚や心臓や脳といった全然違う細胞が生まれると思う？ DNAの楽譜は同じでも、付箋（メチル基）を貼る場所によって演奏するメロディが変わるからよ」――栞子准教授がモニターに映し出したのは、DNAに巻き付くヒストンのしっぽに無数の化学修飾が灯る神秘的な3次元アニメーション。後天的な環境や経験が遺伝子の使われ方を調律するという生命の柔軟さに心を揺さぶられた琴葉は、いのちの不思議を深く教える高校生物の先生を目指す。",
+    "crossref_queries": [
+      {
+        "label": "分化細胞の初期化による人工多能性幹細胞（iPS細胞）の樹立（Takahashi & Yamanaka / ノーベル生理学・医学賞）",
+        "query": "Takahashi Yamanaka Induction of Pluripotent Stem Cells from Mouse Embryonic and Adult Fibroblast Cultures by Defined Factors Cell 2006"
+      },
+      {
+        "label": "動物ゲノムにおけるDNAメチル化とCpGアイランドの機能的役割（Bird）",
+        "query": "Bird DNA methylation and the frequency of CpG in animal genomes Nucleic Acids Research 1980"
+      },
+      {
+        "label": "発生と細胞分化におけるDNA修飾と遺伝子活性化制御の基本原理（Holliday & Pugh）",
+        "query": "Holliday Pugh DNA modification mechanisms and gene activity Science 1975"
+      }
+    ]
   }
 ]

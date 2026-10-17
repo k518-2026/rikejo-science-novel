@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **60** 話（うち挿絵付き **60** 話 / 最終更新: 2026-10-17 08:00 JST）
+- **収録作品数**: 全 **61** 話（うち挿絵付き **61** 話 / 最終更新: 2026-10-17 22:16 JST）
 
 ---
 
@@ -74,6 +74,7 @@
 | 58 | **[深海のチムニーが灯した最初の命――熱水噴出孔と地球化学の記憶](https://k518-2026.github.io/rikejo-science-novel/stories/ep58-deep-sea-hydrothermal-vent-origin-of-life-geochemistry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep58-deep-sea-hydrothermal-vent-origin-of-life-geochemistry.html) | [📄原稿](content/2026-10-17_ep58_deep_sea_hydrothermal_vent_origin_of_life_geochemistry.md) | [🎨挿絵](content/2026-10-17_ep58_deep_sea_hydrothermal_vent_origin_of_life_geochemistry.png) | 理学部・地球惑星環境学科 ／ 海洋研究開発機構連携（深海熱水系・地球生命起源研究室） | 深海底のアルカリ熱水噴出孔における蛇紋岩化反応、鉱物微細孔によるプロトン濃度勾配と初期生命代謝（逆TCA回路）の起源 | 7,261字 |
 | 59 | **[酔っぱらいの足跡が描く宇宙の法則――ランダムウォークと確率微積分の数学](https://k518-2026.github.io/rikejo-science-novel/stories/ep59-random-walk-brownian-motion-stochastic-calculus.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep59-random-walk-brownian-motion-stochastic-calculus.html) | [📄原稿](content/2026-10-17_ep59_random_walk_brownian_motion_stochastic_calculus.md) | [🎨挿絵](content/2026-10-17_ep59_random_walk_brownian_motion_stochastic_calculus.png) | 理学部・数学科 ／ 大学院数理科学研究科（確率論・確率解析研究室） | ランダムウォークの極限としてのブラウン運動、伊藤清の確率積分・伊藤の公式（確率微積分 / ガウス賞）、偶然と拡散現象の数理 | 6,029字 |
 | 60 | **[霧の小宇宙を切り裂く光の軌跡――ウィルソンの霧箱と反物質の発見](https://k518-2026.github.io/rikejo-science-novel/stories/ep60-wilson-cloud-chamber-positron-particle-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep60-wilson-cloud-chamber-positron-particle-physics.html) | [📄原稿](content/2026-10-17_ep60_wilson_cloud_chamber_positron_particle_physics.md) | [🎨挿絵](content/2026-10-17_ep60_wilson_cloud_chamber_positron_particle_physics.png) | 理学部・物理学科 ／ 原子核・高エネルギー物理学研究所（放射線物理・素粒子検出器研究室） | 過飽和蒸気中のイオン凝縮核による荷電粒子の飛跡可視化（ウィルソンの霧箱 / 1927年ノーベル物理学賞）と宇宙線中の陽電子・反物質の発見（アンダーソン / 1936年ノーベル物理学賞） | 7,947字 |
+| 61 | **[時空が織り交ぜる虹色のリング――重力レンズ効果から見える宇宙の姿と、未来への教鞭](https://k518-2026.github.io/rikejo-science-novel/stories/ep61-gravitational-lensing-dark-matter-astrophysics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep61-gravitational-lensing-dark-matter-astrophysics.html) | [📄原稿](content/2026-10-17_ep61_gravitational_lensing_dark_matter_astrophysics.md) | [🎨挿絵](content/2026-10-17_ep61_gravitational_lensing_dark_matter_astrophysics.png) | 理学部・天文学科 ／ 宇宙理論・重力天文学研究室 | アインシュタインの一般相対性理論に基づく重力レンズ効果（アインシュタインリング、多重像、タイムディレイ）と、光を発しない暗黒物質（ダークマター）の重力ポテンシャルマッピング | 7,291字 |
 
 ---
 

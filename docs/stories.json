@@ -718,5 +718,17 @@
     "url": "stories/ep60-wilson-cloud-chamber-positron-particle-physics.html",
     "image": "assets/images/ep60-wilson-cloud-chamber-positron-particle-physics.png",
     "char_count": 7947
+  },
+  {
+    "no": 61,
+    "work_id": "ep61-gravitational-lensing-dark-matter-astrophysics",
+    "title": "時空が織り交ぜる虹色のリング――重力レンズ効果から見える宇宙の姿と、未来への教鞭",
+    "faculty": "理学部・天文学科 ／ 宇宙理論・重力天文学研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "アインシュタインの一般相対性理論に基づく重力レンズ効果（アインシュタインリング、多重像、タイムディレイ）と、光を発しない暗黒物質（ダークマター）の重力ポテンシャルマッピング",
+    "has_image": true,
+    "url": "stories/ep61-gravitational-lensing-dark-matter-astrophysics.html",
+    "image": "assets/images/ep61-gravitational-lensing-dark-matter-astrophysics.png",
+    "char_count": 7291
   }
 ]

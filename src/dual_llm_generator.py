@@ -1190,6 +1190,24 @@ class DualLLMStoryGenerator:
             "both characters smiling in wonder watching delicate white cosmic ray vapor tracks streak across the illuminated dark cloud chamber.",
             "both characters smiling peacefully and happily side by side with soft, kind eyes and natural sweet smiles in gentle sunlit physics laboratory.",
         ),
+        "ep61-gravitational-lensing-dark-matter-astrophysics": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and an eager warm smile, visiting an astrophysics and gravitational lens research observatory.",
+            "a friendly female astrophysicist with kind smiling eyes explaining general relativity spacetime curvature and Einstein rings on a clear whiteboard.",
+            "both characters smiling in wonder looking at colorful cosmic Einstein rings and dark matter gravity potential maps on a wide monitor.",
+            "both characters smiling peacefully and happily side by side with soft, kind eyes and natural sweet smiles in gentle sunlit astronomy seminar room.",
+        ),
+        "ep62-supercritical-fluid-green-chemistry-materials": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a chemistry notebook, visiting a high-pressure thermodynamics research laboratory.",
+            "a smiling female chemical engineer with kind eyes demonstrating a thick sapphire-window high pressure cell with supercritical CO2 on a table.",
+            "both characters smiling cheerfully observing the meniscus line disappear as milky critical opalescence glows inside the illuminated pressure chamber.",
+            "both characters smiling peacefully and warmly side by side with soft, kind eyes and sweet gentle smiles in bright sunny chemistry laboratory.",
+        ),
+        "ep63-epigenetics-dna-methylation-chromatin-biology": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and a curious warm smile, visiting an epigenetics and molecular genomics laboratory.",
+            "a kind female epigeneticist with gentle smiling eyes explaining histone tail modifications and DNA methylation tags on an illuminated whiteboard.",
+            "both characters smiling excitedly examining colorful chromatin landscape maps and DNA methylation peaks on a high-resolution display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit molecular biology seminar room.",
+        ),
     }
 
     def generate_english_image_prompt(

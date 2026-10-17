@@ -730,5 +730,17 @@
     "url": "stories/ep61-gravitational-lensing-dark-matter-astrophysics.html",
     "image": "assets/images/ep61-gravitational-lensing-dark-matter-astrophysics.png",
     "char_count": 7291
+  },
+  {
+    "no": 62,
+    "work_id": "ep62-supercritical-fluid-green-chemistry-materials",
+    "title": "気体と液体の境界が溶け合う場所――超臨界流体とグリーンケミストリー",
+    "faculty": "工学部・応用化学科 ／ 高圧力熱力学・先端グリーンプロセス研究室",
+    "field": "化学・薬学・材料",
+    "theme": "気体と液体の区別がなくなる臨界点（臨界温度・臨界圧力）と超臨界流体（超臨界二酸化炭素・超臨界水）の特異な溶解力、環境調和型グリーン抽出・ナノ粒子合成",
+    "has_image": true,
+    "url": "stories/ep62-supercritical-fluid-green-chemistry-materials.html",
+    "image": "assets/images/ep62-supercritical-fluid-green-chemistry-materials.png",
+    "char_count": 6677
   }
 ]

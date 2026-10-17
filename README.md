@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **61** 話（うち挿絵付き **61** 話 / 最終更新: 2026-10-17 22:16 JST）
+- **収録作品数**: 全 **62** 話（うち挿絵付き **62** 話 / 最終更新: 2026-10-17 22:26 JST）
 
 ---
 
@@ -75,6 +75,7 @@
 | 59 | **[酔っぱらいの足跡が描く宇宙の法則――ランダムウォークと確率微積分の数学](https://k518-2026.github.io/rikejo-science-novel/stories/ep59-random-walk-brownian-motion-stochastic-calculus.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep59-random-walk-brownian-motion-stochastic-calculus.html) | [📄原稿](content/2026-10-17_ep59_random_walk_brownian_motion_stochastic_calculus.md) | [🎨挿絵](content/2026-10-17_ep59_random_walk_brownian_motion_stochastic_calculus.png) | 理学部・数学科 ／ 大学院数理科学研究科（確率論・確率解析研究室） | ランダムウォークの極限としてのブラウン運動、伊藤清の確率積分・伊藤の公式（確率微積分 / ガウス賞）、偶然と拡散現象の数理 | 6,029字 |
 | 60 | **[霧の小宇宙を切り裂く光の軌跡――ウィルソンの霧箱と反物質の発見](https://k518-2026.github.io/rikejo-science-novel/stories/ep60-wilson-cloud-chamber-positron-particle-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep60-wilson-cloud-chamber-positron-particle-physics.html) | [📄原稿](content/2026-10-17_ep60_wilson_cloud_chamber_positron_particle_physics.md) | [🎨挿絵](content/2026-10-17_ep60_wilson_cloud_chamber_positron_particle_physics.png) | 理学部・物理学科 ／ 原子核・高エネルギー物理学研究所（放射線物理・素粒子検出器研究室） | 過飽和蒸気中のイオン凝縮核による荷電粒子の飛跡可視化（ウィルソンの霧箱 / 1927年ノーベル物理学賞）と宇宙線中の陽電子・反物質の発見（アンダーソン / 1936年ノーベル物理学賞） | 7,947字 |
 | 61 | **[時空が織り交ぜる虹色のリング――重力レンズ効果から見える宇宙の姿と、未来への教鞭](https://k518-2026.github.io/rikejo-science-novel/stories/ep61-gravitational-lensing-dark-matter-astrophysics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep61-gravitational-lensing-dark-matter-astrophysics.html) | [📄原稿](content/2026-10-17_ep61_gravitational_lensing_dark_matter_astrophysics.md) | [🎨挿絵](content/2026-10-17_ep61_gravitational_lensing_dark_matter_astrophysics.png) | 理学部・天文学科 ／ 宇宙理論・重力天文学研究室 | アインシュタインの一般相対性理論に基づく重力レンズ効果（アインシュタインリング、多重像、タイムディレイ）と、光を発しない暗黒物質（ダークマター）の重力ポテンシャルマッピング | 7,291字 |
+| 62 | **[気体と液体の境界が溶け合う場所――超臨界流体とグリーンケミストリー](https://k518-2026.github.io/rikejo-science-novel/stories/ep62-supercritical-fluid-green-chemistry-materials.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep62-supercritical-fluid-green-chemistry-materials.html) | [📄原稿](content/2026-10-17_ep62_supercritical_fluid_green_chemistry_materials.md) | [🎨挿絵](content/2026-10-17_ep62_supercritical_fluid_green_chemistry_materials.png) | 工学部・応用化学科 ／ 高圧力熱力学・先端グリーンプロセス研究室 | 気体と液体の区別がなくなる臨界点（臨界温度・臨界圧力）と超臨界流体（超臨界二酸化炭素・超臨界水）の特異な溶解力、環境調和型グリーン抽出・ナノ粒子合成 | 6,677字 |
 
 ---
 

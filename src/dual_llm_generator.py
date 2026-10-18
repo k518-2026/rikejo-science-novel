@@ -1208,6 +1208,24 @@ class DualLLMStoryGenerator:
             "both characters smiling excitedly examining colorful chromatin landscape maps and DNA methylation peaks on a high-resolution display.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit molecular biology seminar room.",
         ),
+        "ep64-metrology-optical-lattice-clock-space-time": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a physics notebook, visiting an optical lattice clock and quantum metrology laboratory.",
+            "a smiling female quantum metrologist with kind eyes pointing at a stainless vacuum chamber with intersecting optical lattice laser beams on an optical table.",
+            "both characters smiling cheerfully looking at a real-time 18-digit atomic frequency readout and gravitational time dilation graph on a monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit quantum physics laboratory.",
+        ),
+        "ep65-dna-computing-molecular-automata-biomath": _koma.__func__(
+            "a cute high school girl with soft gentle eyes and a curious warm smile, visiting a biomolecular computing and DNA nanotechnology laboratory.",
+            "a kind female biomathematician with gentle smiling eyes demonstrating a DNA strand displacement cascade and molecular logic gate model on a glass board.",
+            "both characters smiling excitedly observing a glowing test tube carrying billions of DNA computing molecules solving a graph traversal problem.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in bright modern bioinformatics laboratory.",
+        ),
+        "ep66-paleomagnetism-geomagnetic-reversal-chiba-period": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a geology field notebook, visiting a paleomagnetism and earth science laboratory.",
+            "a smiling female geophysicist with kind eyes demonstrating a SQUID magnetometer and sedimentary rock core samples from Chibanian strata on a clean desk.",
+            "both characters smiling cheerfully examining a Matuyama-Brunhes geomagnetic polarity reversal curve plotted across geological depth on a display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit earth planetary science laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

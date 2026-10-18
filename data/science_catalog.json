@@ -1648,5 +1648,80 @@
         "query": "Glatzmaier Roberts A three-dimensional self-consistent computer simulation of a geomagnetic field reversal Nature 1995"
       }
     ]
+  },
+  {
+    "id": "ep67-metal-organic-frameworks-porous-materials",
+    "episode_num": 67,
+    "title": "スプーン一杯に広がるサッカー場――金属有機構造体（MOF/PCP）とナノ細孔の化学",
+    "faculty": "理学部・化学科 ／ ナノ錯体物性・多孔性材料化学研究室",
+    "protagonist": "結城 希空（ゆうき のあ・高校2年生・化学部）",
+    "mentor": "細野 栞里（ほその しおり・准教授・錯体化学・多孔性配位高分子／高校理科教職担当）",
+    "theme": "金属イオンと有機配位子の自己組織化によって無数のナノ細孔（ジャングルジム構造）を組み上げる金属有機構造体（MOF/PCP）の設計と、気体貯蔵・二酸化炭素吸着・空気中からの水分回収",
+    "modern_tech": "MOF/PCP設計合成、窒素ガス吸着等温線・BET比表面積測定、単結晶X線回折（SC-XRD）、大気中二酸化炭素直接回収（DAC）",
+    "summary": "「この小さな結晶、スプーン1杯分でサッカー場1面分以上の表面積があるのよ」――栞里准教授の手のひらには、まるで砂糖のようにさらさらとした結晶の粉末。金属と有機分子が幾何学的なカゴを組み上げ、目に見えない気体分子を捕獲するナノ細孔の化学に息を呑んだ希空。地球温暖化を防ぐ二酸化炭素回収やクリーンエネルギーの鍵を握る現代化学の底力に感動し、未来を拓く化学の面白さを届ける高校の先生を志す。",
+    "crossref_queries": [
+      {
+        "label": "並外れた安定性と高多孔性を持つ金属有機構造体の設計と合成（Li, Yaghi et al. / Nature）",
+        "query": "Li Design and synthesis of an exceptionally stable and highly porous metal-organic framework Nature 1999"
+      },
+      {
+        "label": "配位結合の幾何学による多孔性配位高分子（PCP）の体系的機能開拓（Kitagawa et al. / Angewandte Chemie）",
+        "query": "Kitagawa Functional Porous Coordination Polymers Angewandte Chemie 2004"
+      },
+      {
+        "label": "超巨大細孔容積を有するクロムテレフタル酸系MOFの発見（Férey et al. / Science）",
+        "query": "Ferey A Chromium Terephthalate-Based Solid with Unusually Large Pore Volumes Science 2005"
+      }
+    ]
+  },
+  {
+    "id": "ep68-cryosphere-ice-albedo-feedback-climate",
+    "episode_num": 68,
+    "title": "白い氷が世界を冷ます――海氷アルベドフィードバックと極域気候科学",
+    "faculty": "理学部・地球惑星環境学科 ／ 極域環境・大気海洋相互作用研究室",
+    "protagonist": "白瀬 涼香（しらせ すずか・高校2年生・地学兼気象部）",
+    "mentor": "氷室 遥（ひむろ はるか・助教・極域海洋物理学・地球気候システム／高校理科教員養成担当）",
+    "theme": "白い海氷が入射太陽光の80%以上を反射し地球の温度を保つアルベド効果と、融解がさらなる温暖化を呼ぶ「海氷アルベド正のフィードバック」、極域増幅（Polar Amplification）の数理",
+    "modern_tech": "衛星マイクロ波放射計（海氷密接度解析）、極域アルベド観測ドローン、大気海洋結合大循環モデル（GCM）、エネルギー収支気候モデル（EBM）",
+    "summary": "「真っ白な氷は太陽の光を跳ね返して地球のラジエーターになっているけれど、一度氷が解けて青黒い海が広がると、熱をどんどん吸収して温暖化を加速させてしまうの」――遥助教がモニターで見せる北極海の劇的な海氷減少アニメーションと数理気候モデル。ほんの数パーセントの反射率（アルベド）の違いが地球全体の気候バランスを大きく左右するという惑星スケールのダイナミクスに心を打たれた涼香は、地球環境の今を科学的に伝える高校地学の教員への道を歩み出す。",
+    "crossref_queries": [
+      {
+        "label": "エネルギー収支気候モデルと氷アルベドフィードバックの先駆理論（Budyko 1969 / Tellus）",
+        "query": "Budyko The effect of solar radiation variations on the climate of the Earth Tellus 1969"
+      },
+      {
+        "label": "海氷-アルベド気候フィードバックメカニズムの総合的解明（Curry et al. / Journal of Climate）",
+        "query": "Curry Sea Ice-Albedo Climate Feedback Mechanism Journal of Climate 1995"
+      },
+      {
+        "label": "北極海における日光・水・海氷のエネルギー収支と急激な融解機構（Perovich et al. / GRL）",
+        "query": "Perovich Sunlight water and ice Extreme Arctic sea ice melt during 2008"
+      }
+    ]
+  },
+  {
+    "id": "ep69-prime-numbers-bounded-gaps-analytic-number-theory",
+    "episode_num": 69,
+    "title": "無限の星屑に潜む等差数列――素数の間隔と解析的数論の地平",
+    "faculty": "理学部・数学科 ／ 数理科学研究室（解析的数論・代数的整数論）",
+    "protagonist": "数馬 莉乃（かずま りの・高校2年生・数学部）",
+    "mentor": "有栖川 栞（ありすがわ しおり・助教・解析的数論・篩法理論／高校数学教員養成担当）",
+    "theme": "素数は無限に存在しランダムに見えながらも、素数の中に任意の長さの等差数列が存在する（グリーン・タオの定理）ことや、隣り合う素数の間隔が有限の幅で無限に続く（素数の有界間隔定理・張益唐・メイナード）という数論の奇跡",
+    "modern_tech": "セルバーグの篩法・高次元多次元篩、ハーディ・リトルウッドの円周法、リーマンゼータ関数と零点分布、素数間隔の多変量最適化",
+    "summary": "「2, 3, 5, 7, 11……素数は桁が大きくなるほどまばらになるのに、どんなに遠くに行っても『幅が一定以下の素数のペア』が無限に現れるのよ」――栞助教が黒板いっぱいに展開する素数分布の美しい数式。2000年以上未解決の双子素数予想に迫る現代数学の革命的なブレイクスルーと、整数の深淵に触れた莉乃は、数学の純粋な美しさと考える歓びを教室で分かち合える高校数学の教員を目指す。",
+    "crossref_queries": [
+      {
+        "label": "素数は任意に長い等差数列を含む（グリーン・タオの定理 / Annals of Mathematics）",
+        "query": "Green Tao The primes contain arbitrarily long arithmetic progressions Annals of Mathematics 2008"
+      },
+      {
+        "label": "隣り合う素数の間隔が有界であることの歴史的証明（張益唐 / Annals of Mathematics）",
+        "query": "Zhang Bounded gaps between primes Annals of Mathematics 2014"
+      },
+      {
+        "label": "多次元篩法による素数間隔の精密化と双子素数予想への進展（Maynard / Annals of Mathematics）",
+        "query": "Maynard Small gaps between primes Annals of Mathematics 2015"
+      }
+    ]
   }
 ]

@@ -790,5 +790,17 @@
     "url": "stories/ep66-paleomagnetism-geomagnetic-reversal-chiba-period.html",
     "image": "assets/images/ep66-paleomagnetism-geomagnetic-reversal-chiba-period.png",
     "char_count": 7039
+  },
+  {
+    "no": 67,
+    "work_id": "ep67-metal-organic-frameworks-porous-materials",
+    "title": "スプーン一杯に広がるサッカー場――金属有機構造体（MOF/PCP）とナノ細孔の化学",
+    "faculty": "理学部・化学科 ／ ナノ錯体物性・多孔性材料化学研究室",
+    "field": "化学・薬学・材料",
+    "theme": "金属イオンと有機配位子の自己組織化によって無数のナノ細孔（ジャングルジム構造）を組み上げる金属有機構造体（MOF/PCP）の設計と、気体貯蔵・二酸化炭素吸着・空気中からの水分回収",
+    "has_image": true,
+    "url": "stories/ep67-metal-organic-frameworks-porous-materials.html",
+    "image": "assets/images/ep67-metal-organic-frameworks-porous-materials.png",
+    "char_count": 7402
   }
 ]

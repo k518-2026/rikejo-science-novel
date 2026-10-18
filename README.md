@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **66** 話（うち挿絵付き **66** 話 / 最終更新: 2026-10-18 12:01 JST）
+- **収録作品数**: 全 **67** 話（うち挿絵付き **67** 話 / 最終更新: 2026-10-18 22:00 JST）
 
 ---
 
@@ -80,6 +80,7 @@
 | 64 | **[時空の歪みを測る光の格子――18桁精度の光格子時計と相対論的測地学](https://k518-2026.github.io/rikejo-science-novel/stories/ep64-metrology-optical-lattice-clock-space-time.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep64-metrology-optical-lattice-clock-space-time.html) | [📄原稿](content/2026-10-18_ep64_metrology_optical_lattice_clock_space_time.md) | [🎨挿絵](content/2026-10-18_ep64_metrology_optical_lattice_clock_space_time.png) | 理学部・物理学科 ／ 先端量子物理研究センター（量子光エレクトロニクス・光周波数標準研究室） | レーザー干渉で作る光の格子にストロンチウム原子を捕獲し、18桁精度（数百億年に1秒の狂い）で時空の進み方の違いを捉える光格子時計と、アインシュタインの一般相対性理論を地上スケールで検証する相対論的測地学 | 7,621字 |
 | 65 | **[試験管で巡る最短ルート――DNA分子コンピューティングと自律型ナノオートマトン](https://k518-2026.github.io/rikejo-science-novel/stories/ep65-dna-computing-molecular-automata-biomath.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep65-dna-computing-molecular-automata-biomath.html) | [📄原稿](content/2026-10-18_ep65_dna_computing_molecular_automata_biomath.md) | [🎨挿絵](content/2026-10-18_ep65_dna_computing_molecular_automata_biomath.png) | 情報理工学部・数理情報工学科 ／ 先端ナノバイオ情報学研究室（分子計算機科学・DNAナノシステム） | シリコン半導体ではなくDNA分子の自己集合とハイブリダイゼーションを利用した超並列分子計算、DNAストランドディスプレイスメント（鎖置換反応）による論理ゲート、生体適合型分子オートマトン | 7,558字 |
 | 66 | **[地層の砂粒が記憶した北と南――古地磁気の鼓動と、未来への羅針盤](https://k518-2026.github.io/rikejo-science-novel/stories/ep66-paleomagnetism-geomagnetic-reversal-chiba-period.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep66-paleomagnetism-geomagnetic-reversal-chiba-period.html) | [📄原稿](content/2026-10-18_ep66_paleomagnetism_geomagnetic_reversal_chiba_period.md) | [🎨挿絵](content/2026-10-18_ep66_paleomagnetism_geomagnetic_reversal_chiba_period.png) | 理学部・地球惑星環境学科 ／ 堆積古地磁気・地球磁気圏ダイナミクス研究室 | 地球磁場が過去に何度も南北反転してきた歴史（松山-ブリュンヌ境界）、地層中の磁性鉱物（残留磁気）の解析による地磁気逆転プロセスの復元、地質年代チバニアン（Chibanian）の決定と地球ダイナモの数理 | 7,039字 |
+| 67 | **[スプーン一杯に広がるサッカー場――金属有機構造体（MOF/PCP）とナノ細孔の化学](https://k518-2026.github.io/rikejo-science-novel/stories/ep67-metal-organic-frameworks-porous-materials.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep67-metal-organic-frameworks-porous-materials.html) | [📄原稿](content/2026-10-18_ep67_metal_organic_frameworks_porous_materials.md) | [🎨挿絵](content/2026-10-18_ep67_metal_organic_frameworks_porous_materials.png) | 理学部・化学科 ／ ナノ錯体物性・多孔性材料化学研究室 | 金属イオンと有機配位子の自己組織化によって無数のナノ細孔（ジャングルジム構造）を組み上げる金属有機構造体（MOF/PCP）の設計と、気体貯蔵・二酸化炭素吸着・空気中からの水分回収 | 7,402字 |
 
 ---
 

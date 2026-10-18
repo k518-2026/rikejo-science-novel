@@ -778,5 +778,17 @@
     "url": "stories/ep65-dna-computing-molecular-automata-biomath.html",
     "image": "assets/images/ep65-dna-computing-molecular-automata-biomath.png",
     "char_count": 7558
+  },
+  {
+    "no": 66,
+    "work_id": "ep66-paleomagnetism-geomagnetic-reversal-chiba-period",
+    "title": "地層の砂粒が記憶した北と南――古地磁気の鼓動と、未来への羅針盤",
+    "faculty": "理学部・地球惑星環境学科 ／ 堆積古地磁気・地球磁気圏ダイナミクス研究室",
+    "field": "数学・数理科学",
+    "theme": "地球磁場が過去に何度も南北反転してきた歴史（松山-ブリュンヌ境界）、地層中の磁性鉱物（残留磁気）の解析による地磁気逆転プロセスの復元、地質年代チバニアン（Chibanian）の決定と地球ダイナモの数理",
+    "has_image": true,
+    "url": "stories/ep66-paleomagnetism-geomagnetic-reversal-chiba-period.html",
+    "image": "assets/images/ep66-paleomagnetism-geomagnetic-reversal-chiba-period.png",
+    "char_count": 7039
   }
 ]

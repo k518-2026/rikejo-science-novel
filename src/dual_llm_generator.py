@@ -1226,6 +1226,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully examining a Matuyama-Brunhes geomagnetic polarity reversal curve plotted across geological depth on a display.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit earth planetary science laboratory.",
         ),
+        "ep67-metal-organic-frameworks-porous-materials": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a chemistry notebook, visiting a porous coordination polymers and MOF laboratory.",
+            "a kind female chemist with gentle smiling eyes holding a small glass vial of sparkling crystalline MOF powder and pointing at a molecular 3D lattice cage model on a table.",
+            "both characters smiling cheerfully looking at a gas adsorption isotherm graph showing massive surface area on a clean computer monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit materials chemistry laboratory.",
+        ),
+        "ep68-cryosphere-ice-albedo-feedback-climate": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a weather and earth science notebook, visiting a polar oceanography and climate laboratory.",
+            "a smiling female climate scientist with kind eyes demonstrating an optical albedo radiometer and polar sea ice satellite maps on a clean whiteboard.",
+            "both characters smiling cheerfully looking at an interactive ice-albedo positive feedback energy balance simulation on a wide display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in bright polar earth science seminar room.",
+        ),
+        "ep69-prime-numbers-bounded-gaps-analytic-number-theory": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a mathematics sketchbook, visiting an analytic number theory and arithmetic research room.",
+            "a kind female number theorist with gentle smiling eyes writing Green-Tao arithmetic progressions and bounded prime gap formulas on a clean blackboard.",
+            "both characters smiling cheerfully examining a beautiful colorful sieve of Eratosthenes and prime gap distribution chart on a wooden desk.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit mathematics library seminar room.",
+        ),
     }
 
     def generate_english_image_prompt(

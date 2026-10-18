@@ -802,5 +802,17 @@
     "url": "stories/ep67-metal-organic-frameworks-porous-materials.html",
     "image": "assets/images/ep67-metal-organic-frameworks-porous-materials.png",
     "char_count": 7402
+  },
+  {
+    "no": 68,
+    "work_id": "ep68-cryosphere-ice-albedo-feedback-climate",
+    "title": "白い氷が世界を冷ます――海氷アルベドフィードバックと極域気候科学",
+    "faculty": "理学部・地球惑星環境学科 ／ 極域環境・大気海洋相互作用研究室",
+    "field": "数学・数理科学",
+    "theme": "白い海氷が入射太陽光の80%以上を反射し地球の温度を保つアルベド効果と、融解がさらなる温暖化を呼ぶ「海氷アルベド正のフィードバック」、極域増幅（Polar Amplification）の数理",
+    "has_image": true,
+    "url": "stories/ep68-cryosphere-ice-albedo-feedback-climate.html",
+    "image": "assets/images/ep68-cryosphere-ice-albedo-feedback-climate.png",
+    "char_count": 7682
   }
 ]

@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **67** 話（うち挿絵付き **67** 話 / 最終更新: 2026-10-18 22:00 JST）
+- **収録作品数**: 全 **68** 話（うち挿絵付き **68** 話 / 最終更新: 2026-10-18 22:11 JST）
 
 ---
 
@@ -81,6 +81,7 @@
 | 65 | **[試験管で巡る最短ルート――DNA分子コンピューティングと自律型ナノオートマトン](https://k518-2026.github.io/rikejo-science-novel/stories/ep65-dna-computing-molecular-automata-biomath.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep65-dna-computing-molecular-automata-biomath.html) | [📄原稿](content/2026-10-18_ep65_dna_computing_molecular_automata_biomath.md) | [🎨挿絵](content/2026-10-18_ep65_dna_computing_molecular_automata_biomath.png) | 情報理工学部・数理情報工学科 ／ 先端ナノバイオ情報学研究室（分子計算機科学・DNAナノシステム） | シリコン半導体ではなくDNA分子の自己集合とハイブリダイゼーションを利用した超並列分子計算、DNAストランドディスプレイスメント（鎖置換反応）による論理ゲート、生体適合型分子オートマトン | 7,558字 |
 | 66 | **[地層の砂粒が記憶した北と南――古地磁気の鼓動と、未来への羅針盤](https://k518-2026.github.io/rikejo-science-novel/stories/ep66-paleomagnetism-geomagnetic-reversal-chiba-period.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep66-paleomagnetism-geomagnetic-reversal-chiba-period.html) | [📄原稿](content/2026-10-18_ep66_paleomagnetism_geomagnetic_reversal_chiba_period.md) | [🎨挿絵](content/2026-10-18_ep66_paleomagnetism_geomagnetic_reversal_chiba_period.png) | 理学部・地球惑星環境学科 ／ 堆積古地磁気・地球磁気圏ダイナミクス研究室 | 地球磁場が過去に何度も南北反転してきた歴史（松山-ブリュンヌ境界）、地層中の磁性鉱物（残留磁気）の解析による地磁気逆転プロセスの復元、地質年代チバニアン（Chibanian）の決定と地球ダイナモの数理 | 7,039字 |
 | 67 | **[スプーン一杯に広がるサッカー場――金属有機構造体（MOF/PCP）とナノ細孔の化学](https://k518-2026.github.io/rikejo-science-novel/stories/ep67-metal-organic-frameworks-porous-materials.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep67-metal-organic-frameworks-porous-materials.html) | [📄原稿](content/2026-10-18_ep67_metal_organic_frameworks_porous_materials.md) | [🎨挿絵](content/2026-10-18_ep67_metal_organic_frameworks_porous_materials.png) | 理学部・化学科 ／ ナノ錯体物性・多孔性材料化学研究室 | 金属イオンと有機配位子の自己組織化によって無数のナノ細孔（ジャングルジム構造）を組み上げる金属有機構造体（MOF/PCP）の設計と、気体貯蔵・二酸化炭素吸着・空気中からの水分回収 | 7,402字 |
+| 68 | **[白い氷が世界を冷ます――海氷アルベドフィードバックと極域気候科学](https://k518-2026.github.io/rikejo-science-novel/stories/ep68-cryosphere-ice-albedo-feedback-climate.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep68-cryosphere-ice-albedo-feedback-climate.html) | [📄原稿](content/2026-10-18_ep68_cryosphere_ice_albedo_feedback_climate.md) | [🎨挿絵](content/2026-10-18_ep68_cryosphere_ice_albedo_feedback_climate.png) | 理学部・地球惑星環境学科 ／ 極域環境・大気海洋相互作用研究室 | 白い海氷が入射太陽光の80%以上を反射し地球の温度を保つアルベド効果と、融解がさらなる温暖化を呼ぶ「海氷アルベド正のフィードバック」、極域増幅（Polar Amplification）の数理 | 7,682字 |
 
 ---
 

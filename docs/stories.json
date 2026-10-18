@@ -814,5 +814,17 @@
     "url": "stories/ep68-cryosphere-ice-albedo-feedback-climate.html",
     "image": "assets/images/ep68-cryosphere-ice-albedo-feedback-climate.png",
     "char_count": 7682
+  },
+  {
+    "no": 69,
+    "work_id": "ep69-prime-numbers-bounded-gaps-analytic-number-theory",
+    "title": "Green-Tao の定理、張益唐教授の発見、Mayard 法の奇跡が織りなす青春方程式",
+    "faculty": "理学部・数学科 ／ 数理科学研究室（解析的数論・代数的整数論）",
+    "field": "数学・数理科学",
+    "theme": "素数は無限に存在しランダムに見えながらも、素数の中に任意の長さの等差数列が存在する（グリーン・タオの定理）ことや、隣り合う素数の間隔が有限の幅で無限に続く（素数の有界間隔定理・張益唐・メイナード）という数論の奇跡",
+    "has_image": true,
+    "url": "stories/ep69-prime-numbers-bounded-gaps-analytic-number-theory.html",
+    "image": "assets/images/ep69-prime-numbers-bounded-gaps-analytic-number-theory.png",
+    "char_count": 6982
   }
 ]

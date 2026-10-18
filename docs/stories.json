@@ -766,5 +766,17 @@
     "url": "stories/ep64-metrology-optical-lattice-clock-space-time.html",
     "image": "assets/images/ep64-metrology-optical-lattice-clock-space-time.png",
     "char_count": 7621
+  },
+  {
+    "no": 65,
+    "work_id": "ep65-dna-computing-molecular-automata-biomath",
+    "title": "試験管で巡る最短ルート――DNA分子コンピューティングと自律型ナノオートマトン",
+    "faculty": "情報理工学部・数理情報工学科 ／ 先端ナノバイオ情報学研究室（分子計算機科学・DNAナノシステム）",
+    "field": "数学・数理科学",
+    "theme": "シリコン半導体ではなくDNA分子の自己集合とハイブリダイゼーションを利用した超並列分子計算、DNAストランドディスプレイスメント（鎖置換反応）による論理ゲート、生体適合型分子オートマトン",
+    "has_image": true,
+    "url": "stories/ep65-dna-computing-molecular-automata-biomath.html",
+    "image": "assets/images/ep65-dna-computing-molecular-automata-biomath.png",
+    "char_count": 7558
   }
 ]

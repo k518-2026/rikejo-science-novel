@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **64** 話（うち挿絵付き **64** 話 / 最終更新: 2026-10-18 11:41 JST）
+- **収録作品数**: 全 **65** 話（うち挿絵付き **65** 話 / 最終更新: 2026-10-18 11:51 JST）
 
 ---
 
@@ -78,6 +78,7 @@
 | 62 | **[気体と液体の境界が溶け合う場所――超臨界流体とグリーンケミストリー](https://k518-2026.github.io/rikejo-science-novel/stories/ep62-supercritical-fluid-green-chemistry-materials.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep62-supercritical-fluid-green-chemistry-materials.html) | [📄原稿](content/2026-10-17_ep62_supercritical_fluid_green_chemistry_materials.md) | [🎨挿絵](content/2026-10-17_ep62_supercritical_fluid_green_chemistry_materials.png) | 工学部・応用化学科 ／ 高圧力熱力学・先端グリーンプロセス研究室 | 気体と液体の区別がなくなる臨界点（臨界温度・臨界圧力）と超臨界流体（超臨界二酸化炭素・超臨界水）の特異な溶解力、環境調和型グリーン抽出・ナノ粒子合成 | 6,677字 |
 | 63 | **[塩基配列の向こうに灯るスイッチ――エピジェネティクスと運命の分子生物学](https://k518-2026.github.io/rikejo-science-novel/stories/ep63-epigenetics-dna-methylation-chromatin-biology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep63-epigenetics-dna-methylation-chromatin-biology.html) | [📄原稿](content/2026-10-17_ep63_epigenetics_dna_methylation_chromatin_biology.md) | [🎨挿絵](content/2026-10-17_ep63_epigenetics_dna_methylation_chromatin_biology.png) | 理学部・生物学科 ／ ゲノム機能構造・エピゲノム分子生物学研究室 | DNAの塩基配列を変えずに遺伝子の働きをオン・オフするDNAメチル化やヒストン化学修飾（エピジェネティクス）と、分化細胞のリプログラミング（iPS細胞） | 7,496字 |
 | 64 | **[時空の歪みを測る光の格子――18桁精度の光格子時計と相対論的測地学](https://k518-2026.github.io/rikejo-science-novel/stories/ep64-metrology-optical-lattice-clock-space-time.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep64-metrology-optical-lattice-clock-space-time.html) | [📄原稿](content/2026-10-18_ep64_metrology_optical_lattice_clock_space_time.md) | [🎨挿絵](content/2026-10-18_ep64_metrology_optical_lattice_clock_space_time.png) | 理学部・物理学科 ／ 先端量子物理研究センター（量子光エレクトロニクス・光周波数標準研究室） | レーザー干渉で作る光の格子にストロンチウム原子を捕獲し、18桁精度（数百億年に1秒の狂い）で時空の進み方の違いを捉える光格子時計と、アインシュタインの一般相対性理論を地上スケールで検証する相対論的測地学 | 7,621字 |
+| 65 | **[試験管で巡る最短ルート――DNA分子コンピューティングと自律型ナノオートマトン](https://k518-2026.github.io/rikejo-science-novel/stories/ep65-dna-computing-molecular-automata-biomath.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep65-dna-computing-molecular-automata-biomath.html) | [📄原稿](content/2026-10-18_ep65_dna_computing_molecular_automata_biomath.md) | [🎨挿絵](content/2026-10-18_ep65_dna_computing_molecular_automata_biomath.png) | 情報理工学部・数理情報工学科 ／ 先端ナノバイオ情報学研究室（分子計算機科学・DNAナノシステム） | シリコン半導体ではなくDNA分子の自己集合とハイブリダイゼーションを利用した超並列分子計算、DNAストランドディスプレイスメント（鎖置換反応）による論理ゲート、生体適合型分子オートマトン | 7,558字 |
 
 ---
 

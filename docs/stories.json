@@ -754,5 +754,17 @@
     "url": "stories/ep63-epigenetics-dna-methylation-chromatin-biology.html",
     "image": "assets/images/ep63-epigenetics-dna-methylation-chromatin-biology.png",
     "char_count": 7496
+  },
+  {
+    "no": 64,
+    "work_id": "ep64-metrology-optical-lattice-clock-space-time",
+    "title": "時空の歪みを測る光の格子――18桁精度の光格子時計と相対論的測地学",
+    "faculty": "理学部・物理学科 ／ 先端量子物理研究センター（量子光エレクトロニクス・光周波数標準研究室）",
+    "field": "物理学・宇宙・光学",
+    "theme": "レーザー干渉で作る光の格子にストロンチウム原子を捕獲し、18桁精度（数百億年に1秒の狂い）で時空の進み方の違いを捉える光格子時計と、アインシュタインの一般相対性理論を地上スケールで検証する相対論的測地学",
+    "has_image": true,
+    "url": "stories/ep64-metrology-optical-lattice-clock-space-time.html",
+    "image": "assets/images/ep64-metrology-optical-lattice-clock-space-time.png",
+    "char_count": 7621
   }
 ]

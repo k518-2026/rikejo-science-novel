@@ -1573,5 +1573,80 @@
         "query": "Holliday Pugh DNA modification mechanisms and gene activity Science 1975"
       }
     ]
+  },
+  {
+    "id": "ep64-metrology-optical-lattice-clock-space-time",
+    "episode_num": 64,
+    "title": "時空の歪みを測る光の格子――18桁精度の光格子時計と相対論的測地学",
+    "faculty": "理学部・物理学科 ／ 先端量子物理研究センター（量子光エレクトロニクス・光周波数標準研究室）",
+    "protagonist": "時任 志帆（ときとう しほ・高校2年生・天文兼物理部）",
+    "mentor": "鐘崎 暦（かねざき こよみ・助教・量子計測物理・光格子時計／高校物理教員養成担当）",
+    "theme": "レーザー干渉で作る光の格子にストロンチウム原子を捕獲し、18桁精度（数百億年に1秒の狂い）で時空の進み方の違いを捉える光格子時計と、アインシュタインの一般相対性理論を地上スケールで検証する相対論的測地学",
+    "modern_tech": "光格子時計（魔法波長レーザー冷却トラップ）、超狭線幅光周波数コム、可搬型超高精度光格子時計、相対論的標高差測定（ミリメートル級測地学）",
+    "summary": "「高い場所に登ると時間の進み方がほんのわずかに速くなるの。東京スカイツリーの展望台と地上で、アインシュタインの一般相対論の予言通りに時間がずれるのを測りきったのが日本の光格子時計よ」――暦助教が指差す実験台の上には、レーザー光が交差して無数の光の檻を作る神秘的な真空チャンバー。時間という概念そのものが重力と空間によって変化する現代物理学の深淵に触れた志帆は、目に見えない自然の法則の美しさを次世代へ届ける高校物理の教員を目指す。",
+    "crossref_queries": [
+      {
+        "label": "光シフトを打ち消す魔法波長を用いた光格子時計の提唱と実証（Katori et al.）",
+        "query": "Katori Ultrastable Optical Clock with Neutral Atoms in an Engineered Light Shift Free Optical Lattice Physical Review Letters 2003"
+      },
+      {
+        "label": "18桁精度の極限周波数安定度を達成したストロンチウム光格子時計（Bloom et al. / Nature）",
+        "query": "Bloom An optical lattice clock with accuracy and stability at the 10-18 level Nature 2014"
+      },
+      {
+        "label": "可搬型光格子時計による東京スカイツリーでの一般相対性理論の超精密実証（Takano et al. / Nature Photonics）",
+        "query": "Takano Test of general relativity by a pair of transportable optical lattice clocks Nature Photonics 2020"
+      }
+    ]
+  },
+  {
+    "id": "ep65-dna-computing-molecular-automata-biomath",
+    "episode_num": 65,
+    "title": "試験管で巡る最短ルート――DNA分子コンピューティングと自律型ナノオートマトン",
+    "faculty": "情報理工学部・数理情報工学科 ／ 先端ナノバイオ情報学研究室（分子計算機科学・DNAナノシステム）",
+    "protagonist": "螺旋 萌衣（らせん めい・高校2年生・数理情報部）",
+    "mentor": "織部 瑠奈（おりべ るな・准教授・分子計算機科学・DNAナノオートマトン／高校「情報」教職担当）",
+    "theme": "シリコン半導体ではなくDNA分子の自己集合とハイブリダイゼーションを利用した超並列分子計算、DNAストランドディスプレイスメント（鎖置換反応）による論理ゲート、生体適合型分子オートマトン",
+    "modern_tech": "DNAストランドディスプレイスメント（DSDカスケード）、分子有限オートマトン、DNA折り紙論理ゲート、超並列ハミルトン閉路探索",
+    "summary": "「組み合わせが爆発してスパコンでも解くのが大変なグラフ探索問題も、10の14乗個のDNA分子に一斉に計算させれば、試験管の中で一瞬にして答えの分子が繋がるのよ」――瑠奈准教授の見せる試験管には、透明な液体の中に無数の微小な演算ユニットが蠢いている。生命の設計図であるDNAがプログラミング可能な計算基盤になるという情報数理と分子生物学の融合に胸を熱くした萌衣は、高校「情報」の先生となって計算科学の広大な地平を生徒たちに伝える未来を描き始める。",
+    "crossref_queries": [
+      {
+        "label": "DNA分子の超並列自己集合を用いたハミルトン閉路問題の計算（Adleman / Science金字塔）",
+        "query": "Adleman Molecular Computation of Solutions to Combinatorial Problems Science 1994"
+      },
+      {
+        "label": "DNAストランドディスプレイスメントによる大規模デジタル論理回路の構築（Qian & Winfree / Science）",
+        "query": "Qian Winfree Scaling Up Digital Circuit Computation with DNA Strand Displacement Cascades Science 2011"
+      },
+      {
+        "label": "生体分子で構成された自律動作型プログラマブル有限オートマトン（Benenson et al. / Nature）",
+        "query": "Benenson Programmable and autonomous computing machine made of biomolecules Nature 2001"
+      }
+    ]
+  },
+  {
+    "id": "ep66-paleomagnetism-geomagnetic-reversal-chiba-period",
+    "episode_num": 66,
+    "title": "地層の砂粒が記憶した北と南――地磁気逆転の古地磁気学とチバニアンの地球科学",
+    "faculty": "理学部・地球惑星環境学科 ／ 堆積古地磁気・地球磁気圏ダイナミクス研究室",
+    "protagonist": "磁場 柚子（じば ゆず・高校2年生・地学部）",
+    "mentor": "桑島 栞（くわしま しおり・助教・古地磁気年代学・古海洋環境変動／高校地学教員養成担当）",
+    "theme": "地球磁場が過去に何度も南北反転してきた歴史（松山-ブリュンヌ境界）、地層中の磁性鉱物（残留磁気）の解析による地磁気逆転プロセスの復元、地質年代チバニアン（Chibanian）の決定と地球ダイナモの数理",
+    "modern_tech": "超伝導量子干渉計（SQUID磁束計）、高分解能熱残留磁気測定（NRM/TRM）、海洋酸素同位体比層序（MIS）、地球ダイナモ3次元数値シミュレーション",
+    "summary": "「コンパスの針が今と逆に南を指していた時代が、77万年前にあったの。千葉県の養老川沿いの地層には、地球の磁石がひっくり返ったまさにその瞬間の記録が、途切れることなく閉じ込められているのよ」――栞助教が超伝導磁束計（SQUID）で微小な砂粒の磁気を測定するのを見つめる柚子。目に見えない地磁気の鼓動と、地球46億年のダイナミクスを解き明かす地学のロマンに魅了され、身近な大地の声を聞く楽しさを教える高校地学の教職への志を固める。",
+    "crossref_queries": [
+      {
+        "label": "玄武岩の残留磁気から地磁気の逆転を発見した歴史的先駆研究（松山基範 / 1929年）",
+        "query": "Matuyama On the Direction of Magnetisation of Basalt in Japan Tyosen and Manchuria Proceedings of the Imperial Academy 1929"
+      },
+      {
+        "label": "千葉複合セクションにおける松山-ブリュンヌ地磁気逆転の完全連続記録とチバニアンGSSP（Suganuma et al.）",
+        "query": "Suganuma A full sequence of the Matuyama Brunhes geomagnetic reversal in the Chiba composite section Progress in Earth and Planetary Science 2020"
+      },
+      {
+        "label": "地球コアの熱対流と電磁流体力学による地磁気反転の3次元自己無撞着数値シミュレーション（Glatzmaier & Roberts / Nature）",
+        "query": "Glatzmaier Roberts A three-dimensional self-consistent computer simulation of a geomagnetic field reversal Nature 1995"
+      }
+    ]
   }
 ]

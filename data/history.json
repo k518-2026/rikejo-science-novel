@@ -145,5 +145,20 @@
       "Green, M. A., Ho-Baillie, A., Snaith, H. J. (2014). The emergence of perovskite solar cells. *Nature Photonics*, 8(7), 506-514. [https://doi.org/10.1038/nphoton.2014.134](https://doi.org/10.1038/nphoton.2014.134)",
       "Snaith, H. J. (2013). Perovskites: The Emergence of a New Era for Low-Cost, High-Efficiency Solar Cells. *The Journal of Physical Chemistry Letters*, 4(21), 3623-3630. [https://doi.org/10.1021/jz4020162](https://doi.org/10.1021/jz4020162)"
     ]
+  },
+  {
+    "work_id": "ep11-sleep-glymphatic-memory-consolidation",
+    "episode_num": 11,
+    "faculty": "医学部・脳神経科学専攻 ／ 睡眠医科学研究所",
+    "theme": "睡眠中のグリンパティック系（脳内老廃物クリアランス）と海馬―大脳皮質の記憶固定化",
+    "episode_title": "眠る脳の図書館と, 真夜中の水洗い",
+    "posted_at": "2026-10-20T08:55:05.089565+09:00",
+    "file_path": "content/2026-10-05_ep11_sleep_glymphatic_memory_consolidation.md",
+    "status": "publish",
+    "references": [
+      "Xie, L., Kang, H., Xu, Q., Chen, M. J., Liao, Y., Thiyagarajan, M., et al. (2013). Sleep Drives Metabolite Clearance from the Adult Brain. *Science*, 342(6156), 373-377. [https://doi.org/10.1126/science.1241224](https://doi.org/10.1126/science.1241224)",
+      "Wilson, M. A., McNaughton, B. L. (1994). Reactivation of Hippocampal Ensemble Memories During Sleep. *Science*, 265(5172), 676-679. [https://doi.org/10.1126/science.8036517](https://doi.org/10.1126/science.8036517)",
+      "Matsuki, T., Sakurai, T. (2020). Orexins and Orexin Receptors: From Molecules to Integrative Physiology. *Results and Problems in Cell Differentiation*, 27-55. [https://doi.org/10.1007/400_2007_047](https://doi.org/10.1007/400_2007_047)"
+    ]
   }
 ]

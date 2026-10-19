@@ -865,38 +865,14 @@
   },
   {
     "no": 73,
-    "work_id": "ep73-quantum-sensing-magnetometry-biophysics-coding-healthcare",
-    "title": "磁場が揺れる瞬間を捉える―量子センシングと生体分子の探査 (原子レベルのスピン状態を検出する「超感応磁力計（NVセンターなど）」を用いて、細胞内の微小な磁場変化や酵素反応を追跡する技術)",
-    "faculty": "理学部物理学科／量子光学分野（ナノバイオサイエンス研究室）",
+    "work_id": "ep73-quantum-sensing-diamond-nv-center",
+    "title": "ダイヤモンドの傷が診る生体分子――NVセンターと極限量子センシング",
+    "faculty": "理学部・物理学科 ／ 量子光学・ナノスピン物理研究室",
     "field": "物理学・宇宙・光学",
-    "theme": "量子力学と生命科学の融合（Quantum Biology）とその医療応用",
+    "theme": "ダイヤモンド結晶中の窒素-空孔中心（NVセンター）のスピン状態を光で検出し、細胞内や生体単一分子レベルの微小な磁場や温度変化を常温大気圧下で可視化する量子センシング",
     "has_image": true,
-    "url": "stories/ep73-quantum-sensing-magnetometry-biophysics-coding-healthcare.html",
-    "image": "assets/images/ep73-quantum-sensing-magnetometry-biophysics-coding-healthcare.png",
-    "char_count": 7691
-  },
-  {
-    "no": 74,
-    "work_id": "ep74-stochastic-differential-equations-finance-bio-math-coding",
-    "title": "不確定性の花火―伊藤積分が描く未来の軌跡",
-    "faculty": "理学部数学科／確率統計分野（数理金融・リスク管理研究室）",
-    "field": "数学・数理科学",
-    "theme": "応用数学（確率過程）の金融・生物系への多分野適用",
-    "has_image": true,
-    "url": "stories/ep74-stochastic-differential-equations-finance-bio-math-coding.html",
-    "image": "assets/images/ep74-stochastic-differential-equations-finance-bio-math-coding.png",
-    "char_count": 7254
-  },
-  {
-    "no": 75,
-    "work_id": "ep75-adaptive-algorithms-genetic-programming-evolution-computing-coding",
-    "title": "自我を進化させるプログラム―適応型アルゴリズムと遺伝的プログラミング (生物の進化のようにコードが自己改良する「ゲネティック・プログラミング」を用いて、多様化する環境に対応できる自律エージェントを創り出す)",
-    "faculty": "工学部情報工学科／人工知能分野（進化的計算研究室）",
-    "field": "情報学・AI",
-    "theme": "人工知能（AI）と生物学的適応の融合・自律型システムの設計",
-    "has_image": true,
-    "url": "stories/ep75-adaptive-algorithms-genetic-programming-evolution-computing-coding.html",
-    "image": "assets/images/ep75-adaptive-algorithms-genetic-programming-evolution-computing-coding.png",
-    "char_count": 6471
+    "url": "stories/ep73-quantum-sensing-diamond-nv-center.html",
+    "image": "assets/images/ep73-quantum-sensing-diamond-nv-center.png",
+    "char_count": 7947
   }
 ]

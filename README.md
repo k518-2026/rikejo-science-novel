@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **74** 話（うち挿絵付き **74** 話 / 最終更新: 2026-10-19 21:51 JST）
+- **収録作品数**: 全 **75** 話（うち挿絵付き **75** 話 / 最終更新: 2026-10-19 22:01 JST）
 
 ---
 
@@ -88,6 +88,7 @@
 | 72 | **[余りの魔法が織りなす安全の世界―楕円曲線の鍵と、次代を照らす「科学の灯」](https://k518-2026.github.io/rikejo-science-novel/stories/ep72-finite-field-cryptography-elliptic-curves-security.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep72-finite-field-cryptography-elliptic-curves-security.html) | [📄原稿](content/2026-10-19_ep72_finite_field_cryptography_elliptic_curves_security.md) | [🎨挿絵](content/2026-10-19_ep72_finite_field_cryptography_elliptic_curves_security.png) | 理学部・数学科 ／ 情報数理科学研究室（代数幾何学・暗号理論） | 有限体上の楕円曲線における加法演算（群構造）と離散対数問題の計算困難性を基盤とし、現代のインターネット通信やブロックチェーンを支える楕円曲線暗号（ECC）の数学 | 6,936字 |
 | 73 | **[磁場が揺れる瞬間を捉える―量子センシングと生体分子の探査 (原子レベルのスピン状態を検出する「超感応磁力計（NVセンターなど）」を用いて、細胞内の微小な磁場変化や酵素反応を追跡する技術)](https://k518-2026.github.io/rikejo-science-novel/stories/ep73-quantum-sensing-magnetometry-biophysics-coding-healthcare.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep73-quantum-sensing-magnetometry-biophysics-coding-healthcare.html) | [📄原稿](content/2026-10-19_ep73_quantum_sensing_magnetometry_biophysics_coding_healthcare.md) | [🎨挿絵](content/2026-10-19_ep73_quantum_sensing_magnetometry_biophysics_coding_healthcare.png) | 理学部物理学科／量子光学分野（ナノバイオサイエンス研究室） | 量子力学と生命科学の融合（Quantum Biology）とその医療応用 | 7,691字 |
 | 74 | **[不確定性の花火―伊藤積分が描く未来の軌跡](https://k518-2026.github.io/rikejo-science-novel/stories/ep74-stochastic-differential-equations-finance-bio-math-coding.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep74-stochastic-differential-equations-finance-bio-math-coding.html) | [📄原稿](content/2026-10-19_ep74_stochastic_differential_equations_finance_bio_math_coding.md) | [🎨挿絵](content/2026-10-19_ep74_stochastic_differential_equations_finance_bio_math_coding.png) | 理学部数学科／確率統計分野（数理金融・リスク管理研究室） | 応用数学（確率過程）の金融・生物系への多分野適用 | 7,254字 |
+| 75 | **[自我を進化させるプログラム―適応型アルゴリズムと遺伝的プログラミング (生物の進化のようにコードが自己改良する「ゲネティック・プログラミング」を用いて、多様化する環境に対応できる自律エージェントを創り出す)](https://k518-2026.github.io/rikejo-science-novel/stories/ep75-adaptive-algorithms-genetic-programming-evolution-computing-coding.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep75-adaptive-algorithms-genetic-programming-evolution-computing-coding.html) | [📄原稿](content/2026-10-19_ep75_adaptive_algorithms_genetic_programming_evolution_computing_coding.md) | [🎨挿絵](content/2026-10-19_ep75_adaptive_algorithms_genetic_programming_evolution_computing_coding.png) | 工学部情報工学科／人工知能分野（進化的計算研究室） | 人工知能（AI）と生物学的適応の融合・自律型システムの設計 | 6,471字 |
 
 ---
 

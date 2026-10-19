@@ -886,5 +886,17 @@
     "url": "stories/ep74-stochastic-differential-equations-finance-bio-math-coding.html",
     "image": "assets/images/ep74-stochastic-differential-equations-finance-bio-math-coding.png",
     "char_count": 7254
+  },
+  {
+    "no": 75,
+    "work_id": "ep75-adaptive-algorithms-genetic-programming-evolution-computing-coding",
+    "title": "自我を進化させるプログラム―適応型アルゴリズムと遺伝的プログラミング (生物の進化のようにコードが自己改良する「ゲネティック・プログラミング」を用いて、多様化する環境に対応できる自律エージェントを創り出す)",
+    "faculty": "工学部情報工学科／人工知能分野（進化的計算研究室）",
+    "field": "情報学・AI",
+    "theme": "人工知能（AI）と生物学的適応の融合・自律型システムの設計",
+    "has_image": true,
+    "url": "stories/ep75-adaptive-algorithms-genetic-programming-evolution-computing-coding.html",
+    "image": "assets/images/ep75-adaptive-algorithms-genetic-programming-evolution-computing-coding.png",
+    "char_count": 6471
   }
 ]

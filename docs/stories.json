@@ -874,5 +874,17 @@
     "url": "stories/ep73-quantum-sensing-diamond-nv-center.html",
     "image": "assets/images/ep73-quantum-sensing-diamond-nv-center.png",
     "char_count": 7947
+  },
+  {
+    "no": 74,
+    "work_id": "ep74-atmospheric-photochemistry-ozone-hole-catalysis",
+    "title": "極夜の成層圏が解いた塩素の連鎖――オゾン層破壊の光化学と地球の盾",
+    "faculty": "理学部・化学科 ／ 大気化学・環境光化学研究室",
+    "field": "化学・薬学・材料",
+    "theme": "フロンガス（CFCs）から紫外線で遊離した塩素原子が触媒サイクルで何万個ものオゾンを分解する連鎖反応機構、南極上空の極成層圏雲（PSC）における不均一反応とオゾンホールの形成",
+    "has_image": true,
+    "url": "stories/ep74-atmospheric-photochemistry-ozone-hole-catalysis.html",
+    "image": "assets/images/ep74-atmospheric-photochemistry-ozone-hole-catalysis.png",
+    "char_count": 7569
   }
 ]

@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **73** 話（うち挿絵付き **73** 話 / 最終更新: 2026-10-20 07:37 JST）
+- **収録作品数**: 全 **74** 話（うち挿絵付き **74** 話 / 最終更新: 2026-10-20 07:48 JST）
 
 ---
 
@@ -87,6 +87,7 @@
 | 71 | **[大きさが色を決めるナノの魔法――量子ドットが織りなす虹色の方程式](https://k518-2026.github.io/rikejo-science-novel/stories/ep71-quantum-dots-nanocrystals-colloidal-chemistry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep71-quantum-dots-nanocrystals-colloidal-chemistry.html) | [📄原稿](content/2026-10-19_ep71_quantum_dots_nanocrystals_colloidal_chemistry.md) | [🎨挿絵](content/2026-10-19_ep71_quantum_dots_nanocrystals_colloidal_chemistry.png) | 理学部・化学科 ／ 先端無機材料化学・ナノ物性制御研究室 | 数ナノメートルの半導体結晶内部で電子が閉じ込められる「量子閉じ込め効果」により、粒子のサイズを変えるだけで発光色を自在に制御できる量子ドット（ノーベル化学賞2023） | 8,025字 |
 | 72 | **[余りの魔法が織りなす安全の世界―楕円曲線の鍵と、次代を照らす「科学の灯」](https://k518-2026.github.io/rikejo-science-novel/stories/ep72-finite-field-cryptography-elliptic-curves-security.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep72-finite-field-cryptography-elliptic-curves-security.html) | [📄原稿](content/2026-10-19_ep72_finite_field_cryptography_elliptic_curves_security.md) | [🎨挿絵](content/2026-10-19_ep72_finite_field_cryptography_elliptic_curves_security.png) | 理学部・数学科 ／ 情報数理科学研究室（代数幾何学・暗号理論） | 有限体上の楕円曲線における加法演算（群構造）と離散対数問題の計算困難性を基盤とし、現代のインターネット通信やブロックチェーンを支える楕円曲線暗号（ECC）の数学 | 6,936字 |
 | 73 | **[ダイヤモンドの傷が診る生体分子――NVセンターと極限量子センシング](https://k518-2026.github.io/rikejo-science-novel/stories/ep73-quantum-sensing-diamond-nv-center.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep73-quantum-sensing-diamond-nv-center.html) | [📄原稿](content/2026-10-20_ep73_quantum_sensing_diamond_nv_center.md) | [🎨挿絵](content/2026-10-20_ep73_quantum_sensing_diamond_nv_center.png) | 理学部・物理学科 ／ 量子光学・ナノスピン物理研究室 | ダイヤモンド結晶中の窒素-空孔中心（NVセンター）のスピン状態を光で検出し、細胞内や生体単一分子レベルの微小な磁場や温度変化を常温大気圧下で可視化する量子センシング | 7,947字 |
+| 74 | **[極夜の成層圏が解いた塩素の連鎖――オゾン層破壊の光化学と地球の盾](https://k518-2026.github.io/rikejo-science-novel/stories/ep74-atmospheric-photochemistry-ozone-hole-catalysis.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep74-atmospheric-photochemistry-ozone-hole-catalysis.html) | [📄原稿](content/2026-10-20_ep74_atmospheric_photochemistry_ozone_hole_catalysis.md) | [🎨挿絵](content/2026-10-20_ep74_atmospheric_photochemistry_ozone_hole_catalysis.png) | 理学部・化学科 ／ 大気化学・環境光化学研究室 | フロンガス（CFCs）から紫外線で遊離した塩素原子が触媒サイクルで何万個ものオゾンを分解する連鎖反応機構、南極上空の極成層圏雲（PSC）における不均一反応とオゾンホールの形成 | 7,569字 |
 
 ---
 

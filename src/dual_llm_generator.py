@@ -1244,6 +1244,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully examining a beautiful colorful sieve of Eratosthenes and prime gap distribution chart on a wooden desk.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit mathematics library seminar room.",
         ),
+        "ep70-graph-isomorphism-complexity-quasipolynomial": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a computer science notebook, visiting a computational complexity and graph theory laboratory.",
+            "a kind female computer scientist with gentle smiling eyes drawing two topologically equivalent networks with rearranged colored vertices on a clean whiteboard.",
+            "both characters smiling cheerfully looking at a Babai quasipolynomial time algorithm decision tree and permutation group chart on a display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit theoretical computer science room.",
+        ),
+        "ep71-quantum-dots-nanocrystals-colloidal-chemistry": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a chemistry notebook, visiting a nanomaterials chemistry and quantum dots laboratory.",
+            "a smiling female inorganic chemist with kind eyes holding a rack of glass vials with quantum dot colloidal solutions glowing in rainbow colors under UV light.",
+            "both characters smiling excitedly examining a Schrödinger particle-in-a-box quantum confinement energy level diagram on a clear monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in bright chemistry laboratory.",
+        ),
+        "ep72-finite-field-cryptography-elliptic-curves-security": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a mathematics notebook, visiting an algebraic geometry and cryptography seminar room.",
+            "a kind female number theorist with gentle smiling eyes drawing an elliptic curve graph with chord and tangent group addition rules on a clean blackboard.",
+            "both characters smiling cheerfully looking at a finite field Fp discrete point scatter plot and ECDLP security key exchange diagram on a display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit mathematics seminar room.",
+        ),
     }
 
     def generate_english_image_prompt(

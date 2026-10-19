@@ -886,5 +886,17 @@
     "url": "stories/ep74-atmospheric-photochemistry-ozone-hole-catalysis.html",
     "image": "assets/images/ep74-atmospheric-photochemistry-ozone-hole-catalysis.png",
     "char_count": 7569
+  },
+  {
+    "no": 75,
+    "work_id": "ep75-genetic-programming-symbolic-regression-evolution",
+    "title": "数式が自ら進化する樹木――遺伝的プログラミングと記号回帰のアルゴリズム",
+    "faculty": "工学部・情報工学科 ／ 知能情報学・進化的知能計算研究室",
+    "field": "情報学・AI",
+    "theme": "木構造（構文木）で表現された数式やプログラムが、生物の交差・突然変異・自然淘汰を繰り返しながら自己改良する「遺伝的プログラミング（GP）」と、観測データから物理法則の数式を自動発見する「記号回帰」",
+    "has_image": true,
+    "url": "stories/ep75-genetic-programming-symbolic-regression-evolution.html",
+    "image": "assets/images/ep75-genetic-programming-symbolic-regression-evolution.png",
+    "char_count": 7638
   }
 ]

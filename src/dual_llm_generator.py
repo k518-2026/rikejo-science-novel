@@ -1262,6 +1262,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully looking at a finite field Fp discrete point scatter plot and ECDLP security key exchange diagram on a display.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit mathematics seminar room.",
         ),
+        "ep73-quantum-sensing-diamond-nv-center": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a biophysics notebook, visiting a quantum optics and diamond magnetometry laboratory.",
+            "a smiling female quantum physicist with kind eyes pointing at an optically detected magnetic resonance setup and green laser beam on an optical table.",
+            "both characters smiling cheerfully looking at an NV center single-spin resonance dip spectrum and live cell thermal imaging map on a monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in bright quantum biophysics laboratory.",
+        ),
+        "ep74-atmospheric-photochemistry-ozone-hole-catalysis": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding an environmental science notebook, visiting an atmospheric photochemistry laboratory.",
+            "a kind female atmospheric chemist with gentle smiling eyes explaining chlorine radical catalytic ozone destruction cycles on a clean whiteboard.",
+            "both characters smiling cheerfully looking at satellite total ozone mapping false-color polar projection maps showing atmospheric recovery on a display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in bright sunlit atmospheric chemistry room.",
+        ),
+        "ep75-genetic-programming-symbolic-regression-evolution": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a coding notebook, visiting an evolutionary computation and machine learning laboratory.",
+            "a smiling female computer scientist with kind eyes showing an evolving parse tree structure of mathematical formulas and cross-over operations on a whiteboard.",
+            "both characters smiling excitedly watching a symbolic regression algorithm discover Newton's gravitational formula from raw experimental data on a monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in modern computer science laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

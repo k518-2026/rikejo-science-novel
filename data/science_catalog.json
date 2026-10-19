@@ -1723,5 +1723,155 @@
         "query": "Maynard Small gaps between primes Annals of Mathematics 2015"
       }
     ]
+  },
+  {
+    "id": "ep70-graph-isomorphism-complexity-quasipolynomial",
+    "episode_num": 70,
+    "title": "見かけが違っても同じ構造――グラフ同型問題と計算複雑性の迷宮",
+    "faculty": "理学部・情報科学科 ／ 計算理論・アルゴリズム構造研究室",
+    "protagonist": "佐藤 陽菜（さとう ひな・高校2年生・数理情報部）",
+    "mentor": "田中 健太郎（たなか けんたろう・助教・計算複雑性理論・代数的グラフ理論／高校情報教職担当）",
+    "theme": "一見まったく異なる頂点と辺の結びつきが同じ形状（同型）であるかを判定する「グラフ同型問題（GI）」と、Babaiによる準多項式時間アルゴリズム、NP中間問題の深淵",
+    "modern_tech": "準多項式時間アルゴリズム（Babai 2016）、Weisfeiler-Leman（WL）アルゴリズム、グラフニューラルネットワーク（GNN）表現限界、有限置換群の構造解析",
+    "summary": "「頂点の並べ方を変えただけで、スパコンでも同じグラフだと見抜くのが途端に難しくなるの。でも2015年、ババイ教授が半世紀の壁を破って準多項式時間で解けることを証明したのよ」――健太郎助教がホワイトボードに描いた2つの複雑なネットワーク図。頂点をたどりながら隠された対称性を暴く代数的群論の魔法に息を呑んだ陽菜は、アルゴリズムの思考力を高校生に教える情報科の教員を目指す。",
+    "crossref_queries": [
+      {
+        "label": "グラフ同型問題を準多項式時間で解く画期的アルゴリズム（Babai / STOC）",
+        "query": "Babai Graph isomorphism in quasipolynomial time STOC 2016"
+      },
+      {
+        "label": "有界次数のグラフ同型判定を多項式時間で解く置換群論的アルゴリズム（Luks）",
+        "query": "Luks Isomorphism of graphs of bounded valence can be tested in polynomial time 1982"
+      },
+      {
+        "label": "記述的複雑性・カノニカル化・定義可能グラフ構造の体系的理論（Grohe / Cambridge）",
+        "query": "Grohe Descriptive Complexity Canonisation and Definable Graph Cambridge 2017"
+      }
+    ]
+  },
+  {
+    "id": "ep71-quantum-dots-nanocrystals-colloidal-chemistry",
+    "episode_num": 71,
+    "title": "大きさが色を決めるナノの魔法――量子ドットとコロイド半導体化学",
+    "faculty": "理学部・化学科 ／ 先端無機材料化学・ナノ物性制御研究室",
+    "protagonist": "高橋 莉子（たかはし りこ・高校2年生・化学部）",
+    "mentor": "中村 美咲（なかむら みさき・助教・ナノ材料化学・コロイド量子結晶／高校理科教員養成担当）",
+    "theme": "数ナノメートルの半導体結晶内部で電子が閉じ込められる「量子閉じ込め効果」により、粒子のサイズを変えるだけで発光色を自在に制御できる量子ドット（ノーベル化学賞2023）",
+    "modern_tech": "高温有機溶媒コロイド合成法、量子閉じ込め効果のシュレーディンガー方程式解析、QLED（量子ドットディスプレイ）、生体蛍光ナノ標識",
+    "summary": "「同じ半導体の結晶なのに、サイズが3ナノメートルだと青く光り、6ナノメートルに育つと赤く光るのよ」――美咲助教が紫外線を当てると、試験管に並んだコロイド溶液が虹のように鮮やかに発光する。高校の教科書にある『井戸型ポテンシャルの量子力学』が手のひらの試験管の中で鮮やかに実証される光景に感動した莉子は、目に見える実験で物理化学の面白さを伝える高校の先生への夢を抱く。",
+    "crossref_queries": [
+      {
+        "label": "半導体微結晶におけるサイズ量子化効果の発見（Ekimov et al. / ノーベル化学賞）",
+        "query": "Ekimov Quantum Size Effect in Three-Dimensional Microscopic Semiconductor 1981"
+      },
+      {
+        "label": "均一サイズ単分散コロイド半導体ナノ結晶の精密熱分解合成法（Bawendi et al. / JACS）",
+        "query": "Murray Norris Bawendi Synthesis and characterization of nearly monodisperse CdE semiconductor nanocrystallites 1993"
+      },
+      {
+        "label": "コロイド量子ドットを用いた先端オプトエレクトロニクス素子の構築（Kagan et al. / Science）",
+        "query": "Kagan Building devices from colloidal quantum dots Science 2016"
+      }
+    ]
+  },
+  {
+    "id": "ep72-finite-field-cryptography-elliptic-curves-security",
+    "episode_num": 72,
+    "title": "有限の世界で織りなす安全の鎖――楕円曲線暗号と数論幾何学のセキュリティ",
+    "faculty": "理学部・数学科 ／ 情報数理科学研究室（代数幾何学・暗号理論）",
+    "protagonist": "山本 翔太（やまもと しょうた・高校2年生・数理情報部）",
+    "mentor": "伊藤 真理子（いとう まりこ・助教・数論幾何学・代数曲線論／高校数学教職担当）",
+    "theme": "有限体上の楕円曲線における加法演算（群構造）と離散対数問題の計算困難性を基盤とし、現代のインターネット通信やブロックチェーンを支える楕円曲線暗号（ECC）の数学",
+    "modern_tech": "有限体（Fp）上の楕円曲線（Weierstrass標準形）、楕円曲線離散対数問題（ECDLP）、ECDSA署名、ペアリング暗号、同種写像暗号（耐量子暗号）",
+    "summary": "「スマホでWebサイトを安全に見られるのは、実は『余りの世界』にある楕円曲線の幾何学のおかげなのよ」――真理子助教が方眼紙に描いたのは、有限体の上で散らばる点の群構造。直線を引いて第3の点を求め、それを折り返すという幾何学的なルールが、世界最強の暗号鍵を生み出すという数論幾何の美しさに息を呑んだ翔太は、抽象的な数学がいかに社会の安全を支えているかを生徒に教える高校数学の教職を志す。",
+    "crossref_queries": [
+      {
+        "label": "楕円曲線を用いた公開鍵暗号系の提案（Miller / CRYPTO）",
+        "query": "Miller Use of Elliptic Curves in Cryptography CRYPTO 1985"
+      },
+      {
+        "label": "楕円曲線暗号系の独立提案と数論的計算構造（Koblitz / Math. Comp.）",
+        "query": "Koblitz Elliptic curve cryptosystems Mathematics of Computation 1987"
+      },
+      {
+        "label": "楕円曲線を用いた高速な素因数分解アルゴリズム（Lenstra / Annals of Mathematics）",
+        "query": "Lenstra Factoring Integers with Elliptic Curves Annals of Mathematics 1987"
+      }
+    ]
+  },
+  {
+    "id": "ep73-quantum-sensing-magnetometry-biophysics-coding-healthcare",
+    "episode_num": 73,
+    "title": "磁場が揺れる瞬間を捉える―量子センシングと生体分子の探査 (原子レベルのスピン状態を検出する「超感応磁力計（NVセンターなど）」を用いて、細胞内の微小な磁性変化や酵素反応を追跡する技術)",
+    "faculty": "理学部物理学科／量子光学分野（ナノバイオサイエンス研究室）",
+    "protagonist": "小林 愛 (こばやし まい / 高校2年生 / 生物情報学同好会)",
+    "mentor": "佐々木健二 (さざき たけじ / アシスタント教授／量子生物学・医用物理、教員免許保持者)",
+    "theme": "量子力学と生命科学の融合（Quantum Biology）とその医療応用",
+    "modern_tech": [
+      "ダイヤモンドNVセンター (Nitrogen-Vacancy Center) ",
+      "光誘起スピン共鳴光学読み出し法",
+      "単一分子検出"
+    ],
+    "summary": "愛は、細胞内の酵素が働く時の微小な磁場変化を測りたいと願っています。佐々木先生に導かれ、「ダイヤモンドの不純物（欠陥）」を使って生体分子の動きを検知する実験を行います。「肉眼では見えない量子の世界」から生命活動を解明する方法論に触れ、未来の医療技術の可能性を感じます。",
+    "crossref_queries": [
+      {
+        "label": "NVセンターによる磁力計",
+        "query": "Johannes Wrachtrup Dirk Loss Quantum Sensing Diamond Defects Nature 2015"
+      },
+      {
+        "label": "量子生物学的イメージング",
+        "query": "Gregory Scholes John Grossman Photosynthesis Exciton Transport Spin Physics Science 2014"
+      }
+    ]
+  },
+  {
+    "id": "ep74-stochastic-differential-equations-finance-bio-math-coding",
+    "episode_num": 74,
+    "title": "ブラウン運動の先にある未来―確率微分方程式と不確定性のモデル化 (ランダムな歩行（ブラウン運動）や株式価格変動を記述する「ストキャスティック・ディファレンシャル・エクス」を用いて、予測不能な現象からパターンを見出す)",
+    "faculty": "理学部数学科／確率統計分野（数理金融・リスク管理研究室）",
+    "protagonist": "松本 大地 (まつもと だいち / 高校2年生 / 経済同好会)",
+    "mentor": "井上由香里 (いのうえ ゆかり / マスターズ課程学生／確率論と時系列解析、教員免許取得を目指す)",
+    "theme": "応用数学（確率過程）の金融・生物系への多分野適用",
+    "modern_tech": [
+      "伊藤積分 (Itô Calculus) ",
+      "幾何ブラウン運動 (Geometric Brownian Motion) ",
+      "モンテカルロシミュレーション"
+    ],
+    "summary": "大地は、「予測不可能な株価や気候変動」を数学でどう扱うかを知りたいです。井上先輩から「確率の連続時間モデル（伊藤積分）」について学び、乱数の山積みから将来のパターンをシミュレートする実験を行います。「偶然に埋もれた必然性」という統計学の奥深さに触れ、不確定な世界を読み解く力を養います。",
+    "crossref_queries": [
+      {
+        "label": "伊藤積分と確率微分方程式",
+        "query": "Kiyosi Itô Stochastic Processes Differential Equations Mathematics Journal 1945"
+      },
+      {
+        "label": "ブラック・ショールズモデルの拡張",
+        "query": "Fischer Black Myron Scholes Option Pricing Formula Bell System Technical Journal Year 1973"
+      }
+    ]
+  },
+  {
+    "id": "ep75-adaptive-algorithms-genetic-programming-evolution-computing-coding",
+    "episode_num": 75,
+    "title": "自我を進化させるプログラム―適応型アルゴリズムと遺伝的プログラミング (生物の進化のようにコードが自己改良する「ゲネティック・プログラミング」を用いて、多様化する環境に対応できる自律エージェントを創り出す)",
+    "faculty": "工学部情報工学科／人工知能分野（進化的計算研究室）",
+    "protagonist": "渡辺 結衣 (わたなべ ゆい / 高校2年生 / コーディング同好会)",
+    "mentor": "森田隆志 (もりた たかし / アシスタント教授／進化アルゴリズム・ロボット制御、教員免許保持者)",
+    "theme": "人工知能（AI）と生物学的適応の融合・自律型システムの設計",
+    "modern_tech": [
+      "遺伝的プログラミング (Genetic Programming) ",
+      "自然選択演算子",
+      "多形関数"
+    ],
+    "summary": "結衣は、「自分でコードを書き換えて成長するプログラム」を作りたいと提案します。森田先生から「生物の突然変異や交叉（crossover）」を模倣してプログラムの構造を進化させる手法について学び、複雑化する課題に対応できる柔軟なAIシステムの設計に挑戦し、「生命のような計算」という新しい視点を体験します。",
+    "crossref_queries": [
+      {
+        "label": "遺伝的プログラミングの起源 (Koza)",
+        "query": "John Koza Genetic Programming Automata Evolutionary Computation MIT Press Book Year 1992"
+      },
+      {
+        "label": "進化計算と最適化",
+        "query": "David Goldberg Deception in Genetic Algorithms Journal Theoretical Computer Science Conference Paper 1987"
+      }
+    ]
   }
 ]

@@ -826,5 +826,53 @@
     "url": "stories/ep69-prime-numbers-bounded-gaps-analytic-number-theory.html",
     "image": "assets/images/ep69-prime-numbers-bounded-gaps-analytic-number-theory.png",
     "char_count": 6982
+  },
+  {
+    "no": 70,
+    "work_id": "ep70-graph-isomorphism-complexity-quasipolynomial",
+    "title": "見かけが違っても同じ構造――グラフ同型問題と計算複雑性の迷宮",
+    "faculty": "理学部・情報科学科 ／ 計算理論・アルゴリズム構造研究室",
+    "field": "情報学・AI",
+    "theme": "一見まったく異なる頂点と辺の結びつきが同じ形状（同型）であるかを判定する「グラフ同型問題（GI）」と、Babaiによる準多項式時間アルゴリズム、NP中間問題の深淵",
+    "has_image": true,
+    "url": "stories/ep70-graph-isomorphism-complexity-quasipolynomial.html",
+    "image": "assets/images/ep70-graph-isomorphism-complexity-quasipolynomial.png",
+    "char_count": 8076
+  },
+  {
+    "no": 71,
+    "work_id": "ep72-finite-field-cryptography-elliptic-curves-security",
+    "title": "余りの魔法が織りなす安全の世界―楕円曲線の鍵と、次代を照らす「科学の灯」",
+    "faculty": "理学部・数学科 ／ 情報数理科学研究室（代数幾何学・暗号理論）",
+    "field": "数学・数理科学",
+    "theme": "有限体上の楕円曲線における加法演算（群構造）と離散対数問題の計算困難性を基盤とし、現代のインターネット通信やブロックチェーンを支える楕円曲線暗号（ECC）の数学",
+    "has_image": true,
+    "url": "stories/ep72-finite-field-cryptography-elliptic-curves-security.html",
+    "image": "assets/images/ep72-finite-field-cryptography-elliptic-curves-security.png",
+    "char_count": 6936
+  },
+  {
+    "no": 72,
+    "work_id": "ep73-quantum-sensing-magnetometry-biophysics-coding-healthcare",
+    "title": "磁場が揺れる瞬間を捉える―量子センシングと生体分子の探査 (原子レベルのスピン状態を検出する「超感応磁力計（NVセンターなど）」を用いて、細胞内の微小な磁場変化や酵素反応を追跡する技術)",
+    "faculty": "理学部物理学科／量子光学分野（ナノバイオサイエンス研究室）",
+    "field": "物理学・宇宙・光学",
+    "theme": "量子力学と生命科学の融合（Quantum Biology）とその医療応用",
+    "has_image": true,
+    "url": "stories/ep73-quantum-sensing-magnetometry-biophysics-coding-healthcare.html",
+    "image": "assets/images/ep73-quantum-sensing-magnetometry-biophysics-coding-healthcare.png",
+    "char_count": 7691
+  },
+  {
+    "no": 73,
+    "work_id": "ep74-stochastic-differential-equations-finance-bio-math-coding",
+    "title": "不確定性の花火―伊藤積分が描く未来の軌跡",
+    "faculty": "理学部数学科／確率統計分野（数理金融・リスク管理研究室）",
+    "field": "数学・数理科学",
+    "theme": "応用数学（確率過程）の金融・生物系への多分野適用",
+    "has_image": true,
+    "url": "stories/ep74-stochastic-differential-equations-finance-bio-math-coding.html",
+    "image": "assets/images/ep74-stochastic-differential-equations-finance-bio-math-coding.png",
+    "char_count": 7254
   }
 ]

@@ -160,5 +160,20 @@
       "Wilson, M. A., McNaughton, B. L. (1994). Reactivation of Hippocampal Ensemble Memories During Sleep. *Science*, 265(5172), 676-679. [https://doi.org/10.1126/science.8036517](https://doi.org/10.1126/science.8036517)",
       "Matsuki, T., Sakurai, T. (2020). Orexins and Orexin Receptors: From Molecules to Integrative Physiology. *Results and Problems in Cell Differentiation*, 27-55. [https://doi.org/10.1007/400_2007_047](https://doi.org/10.1007/400_2007_047)"
     ]
+  },
+  {
+    "work_id": "ep12-environmental-dna-ocean-ecology",
+    "episode_num": 12,
+    "faculty": "海洋生命科学部 ／ 地球環境科学科",
+    "theme": "環境DNA（eDNA）メタバーコーディングによる非侵襲的生物多様性モニタリング",
+    "episode_title": "コップ一杯の海水から、クジラの歌を聴く』～目に見えない「命の文字」が紡ぐ海洋のシナリオへ～",
+    "posted_at": "2026-10-21T08:22:52.059677+09:00",
+    "file_path": "content/2026-10-05_ep12_environmental_dna_ocean_ecology.md",
+    "status": "publish",
+    "references": [
+      "Miya, M., Sato, Y., Fukunaga, T., Sado, T., Poulsen, J. Y., Sato, K., et al. (2015). MiFish, a set of universal PCR primers for metabarcoding environmental DNA from fishes: detection of more than 230 subtropical marine species. *Royal Society Open Science*, 2(7), 150088. [https://doi.org/10.1098/rsos.150088](https://doi.org/10.1098/rsos.150088)",
+      "Thomsen, P. F., Willerslev, E. (2015). Environmental DNA – An emerging tool in conservation for monitoring past and present biodiversity. *Biological Conservation*, 183, 4-18. [https://doi.org/10.1016/j.biocon.2014.11.019](https://doi.org/10.1016/j.biocon.2014.11.019)",
+      "Stat, M., Huggett, M. J., Bernasconi, R., DiBattista, J. D., Berry, T. E., Newman, S. J., et al. (2017). Ecosystem biomonitoring with eDNA: metabarcoding across the tree of life in a tropical marine environment. *Scientific Reports*, 7(1). [https://doi.org/10.1038/s41598-017-12501-5](https://doi.org/10.1038/s41598-017-12501-5)"
+    ]
   }
 ]

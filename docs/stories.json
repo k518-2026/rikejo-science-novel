@@ -982,5 +982,17 @@
     "url": "stories/ep82-quantum-hall-effect-topology-metrology.html",
     "image": "assets/images/ep82-quantum-hall-effect-topology-metrology.png",
     "char_count": 7661
+  },
+  {
+    "no": 83,
+    "work_id": "ep83-convolutional-neural-networks-visual-cortex-ai",
+    "title": "視覚を織り込む幾何学のレンズ──畳み込みニューラルネットワークが解き明かす「猫の目」の世界",
+    "faculty": "情報理工学部・知能情報学科 ／ 視覚情報処理・深層学習数理研究室",
+    "field": "数学・数理科学",
+    "theme": "哺乳類の視覚皮質における受容野（単純細胞と複雑細胞）の知見から着想を得て、空間の並進不変性を利用した畳み込み層とプーリング層を重ねることで画像の特徴を階層的に抽出する畳み込みニューラルネットワーク（CNN）の数理",
+    "has_image": true,
+    "url": "stories/ep83-convolutional-neural-networks-visual-cortex-ai.html",
+    "image": "assets/images/ep83-convolutional-neural-networks-visual-cortex-ai.png",
+    "char_count": 8116
   }
 ]

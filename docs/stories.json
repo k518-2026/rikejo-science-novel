@@ -946,5 +946,17 @@
     "url": "stories/ep79-metamaterials-transformation-optics-invisibility.html",
     "image": "assets/images/ep79-metamaterials-transformation-optics-invisibility.png",
     "char_count": 7475
+  },
+  {
+    "no": 80,
+    "work_id": "ep80-ribozyme-rna-world-origin-of-life",
+    "title": "酵素の帽子を脱いだ核酸――リボザイムが紡ぐ太古のリズム",
+    "faculty": "理学部・生物化学科 ／ 生体超分子構造・分子進化学研究室",
+    "field": "情報学・AI",
+    "theme": "酵素タンパク質の手を借りずに自らリン酸エステル結合を切断・再結合する触媒能を持つRNA分子「リボザイム（自己スプライシングRNA）」の発見と、生命誕生の初期に遺伝情報の保持と化学反応の触媒の双方をRNAが担っていたとする「RNAワールド仮説」",
+    "has_image": true,
+    "url": "stories/ep80-ribozyme-rna-world-origin-of-life.html",
+    "image": "assets/images/ep80-ribozyme-rna-world-origin-of-life.png",
+    "char_count": 6911
   }
 ]

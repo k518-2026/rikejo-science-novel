@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **79** 話（うち挿絵付き **79** 話 / 最終更新: 2026-10-21 00:03 JST）
+- **収録作品数**: 全 **80** 話（うち挿絵付き **80** 話 / 最終更新: 2026-10-21 00:13 JST）
 
 ---
 
@@ -93,6 +93,7 @@
 | 77 | **[微小な雫が仕分ける一細胞の設計図――シングルセル RNA-seq と生命情報学の詩](https://k518-2026.github.io/rikejo-science-novel/stories/ep77-single-cell-rna-seq-droplet-cell-atlas.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep77-single-cell-rna-seq-droplet-cell-atlas.html) | [📄原稿](content/2026-10-20_ep77_single_cell_rna_seq_droplet_cell_atlas.md) | [🎨挿絵](content/2026-10-20_ep77_single_cell_rna_seq_droplet_cell_atlas.png) | 理学部・生物情報学科 ／ ゲノムダイナミクス・単一細胞トランスクリプトミクス研究室 | 油中水滴（液滴マイクロフルイディクス）と細胞バーコード技術によって数万個の細胞の遺伝子発現を1細胞ごとに同時解析するシングルセルRNA-seqと、全身の細胞の多様性を解き明かすヒューマン・セル・アトラス | 8,154字 |
 | 78 | **[予測不能な樹木が生む暗号の迷宮――擬似ランダム関数（GGM木）と計算論的暗号の数学](https://k518-2026.github.io/rikejo-science-novel/stories/ep78-pseudorandom-functions-ggm-tree-cryptography.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep78-pseudorandom-functions-ggm-tree-cryptography.html) | [📄原稿](content/2026-10-20_ep78_pseudorandom_functions_ggm_tree_cryptography.md) | [🎨挿絵](content/2026-10-20_ep78_pseudorandom_functions_ggm_tree_cryptography.png) | 理学部・数学科 ／ 情報数理・計算論的セキュリティ研究室 | 一方向性関数の存在を仮定して、多項式時間アルゴリズムでは真のランダム関数と見分けがつかない「擬似ランダム関数（PRF）」を二分木構造のビット伸長カスケードによって厳密に構築するGGM（Goldreich-Goldwasser-Micali）構成法 | 7,885字 |
 | 79 | **[光を曲げて世界を消す――メタマテリアルと変換光学の幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep79-metamaterials-transformation-optics-invisibility.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep79-metamaterials-transformation-optics-invisibility.html) | [📄原稿](content/2026-10-20_ep79_metamaterials_transformation_optics_invisibility.md) | [🎨挿絵](content/2026-10-20_ep79_metamaterials_transformation_optics_invisibility.png) | 工学部・応用物理学科 ／ 先端フォトニクス・波動制御工学研究室 | 時空の座標変換によって光や電磁波の軌道を空間ごと曲げ、障害物を滑らかに迂回させて背後を復元する「変換光学（Transformation Optics）」と、自然界にない負の屈折率・誘電率・透磁率を人工構造で実現する「電磁波クローキング（透明マント）」 | 7,475字 |
+| 80 | **[酵素の帽子を脱いだ核酸――リボザイムが紡ぐ太古のリズム](https://k518-2026.github.io/rikejo-science-novel/stories/ep80-ribozyme-rna-world-origin-of-life.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep80-ribozyme-rna-world-origin-of-life.html) | [📄原稿](content/2026-10-21_ep80_ribozyme_rna_world_origin_of_life.md) | [🎨挿絵](content/2026-10-21_ep80_ribozyme_rna_world_origin_of_life.png) | 理学部・生物化学科 ／ 生体超分子構造・分子進化学研究室 | 酵素タンパク質の手を借りずに自らリン酸エステル結合を切断・再結合する触媒能を持つRNA分子「リボザイム（自己スプライシングRNA）」の発見と、生命誕生の初期に遺伝情報の保持と化学反応の触媒の双方をRNAが担っていたとする「RNAワールド仮説」 | 6,911字 |
 
 ---
 

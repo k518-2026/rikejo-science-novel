@@ -2023,5 +2023,80 @@
         "query": "Kleiner Lott Notes on Perelmans papers Geometry and Topology 2008"
       }
     ]
+  },
+  {
+    "id": "ep82-quantum-hall-effect-topology-metrology",
+    "episode_num": 82,
+    "title": "二次元の電子が刻む不変の階段――量子ホール効果とトポロジカル抵抗標準",
+    "faculty": "理学部・物理学科 ／ 固体量子物性・低温ナノ物理研究室",
+    "protagonist": "階堂 紬（かいどう つむぎ・高校2年生・物理部）",
+    "mentor": "棚橋 晶（たなはし あきら・助教・量子物性物理・トポロジカル量子標準／高校物理教職担当）",
+    "theme": "強磁場・極低温の二次元電子ガスにおいて、ホール伝導率が物質の不純物や形状によらずプランク定数hと電気素量eのみで決まる整数値（h/e²の整数分の1）として階段状に厳密に量子化される整数量子ホール効果と、トポロジー不変量（チャーン数）による数理的証明",
+    "modern_tech": "二次元電子ガス（GaAs/AlGaAsヘテロ接合）、強磁場超伝導マグネット（15テスラ）、量子抵抗標準（フォン・クリッツィング定数 RK）、チャーン数（TKNN数理）",
+    "summary": "【パターン3：文化祭・オープンキャンパスの出展バトル】文化祭で「目に見えない電気の基準をどうやって測るの？」という中学生向けの体験展示を企画した紬。晶助教と試行錯誤しながら、強磁場の中で電子が描くサイクロトロン軌道と、端っこだけを流れるエッジ状態の階段モデルを工夫。「どんなに散乱があっても決して狂わない量子の階段」を直感的なデモで表現し、来場者の驚きと笑顔を引き出す中で、物理を教えることの真の楽しさに目覚める。",
+    "crossref_queries": [
+      {
+        "label": "量子化ホール抵抗による微細構造定数の超精密決定（von Klitzing / ノーベル物理学賞）",
+        "query": "Klitzing New method for high-accuracy determination of the fine-structure constant based on quantized Hall resistance 1980"
+      },
+      {
+        "label": "ゲージ不変性に基づく二次元量子ホール伝導度の厳密な理論的証明（Laughlin / ノーベル物理学賞）",
+        "query": "Laughlin Quantized Hall conductivity in two dimensions Physical Review B 1981"
+      },
+      {
+        "label": "トポロジカル不変量（チャーン数）による量子ホール伝導度の幾何学的導出（Thouless, Kohmoto et al. / ノーベル物理学賞）",
+        "query": "Thouless Kohmoto Nightingale den Nijs Quantized Hall Conductance in a Two-Dimensional Periodic Potential 1982"
+      }
+    ]
+  },
+  {
+    "id": "ep83-convolutional-neural-networks-visual-cortex-ai",
+    "episode_num": 83,
+    "title": "視覚の受容野を畳み込むレンズ――畳み込みニューラルネットワーク（CNN）と画像認識の幾何学",
+    "faculty": "情報理工学部・知能情報学科 ／ 視覚情報処理・深層学習数理研究室",
+    "protagonist": "鏡野 志保（かがみの しほ・高校2年生・数理情報部）",
+    "mentor": "一条 冴（いちじょう さえ・助教・画像情報数理・深層幾何学／高校「情報」教職担当）",
+    "theme": "哺乳類の視覚皮質における受容野（単純細胞と複雑細胞）の知見から着想を得て、空間の並進不変性を利用した畳み込み層とプーリング層を重ねることで画像の特徴を階層的に抽出する畳み込みニューラルネットワーク（CNN）の数理",
+    "modern_tech": "二次元畳み込みカーネル演算、特徴マップと受容野（Receptive Field）、LeNet-5アーキテクチャ、視覚大脳皮質V1野神経モデリング",
+    "summary": "【パターン4：ライバル・天敵との衝突と共闘】「画像認識なんて輪郭の幾何学特徴を手作業で抽出する方が正確だ」と主張する伝統派のライバル生徒と、「多層畳み込みで特徴自体を自己学習させるべきだ」という志保が情報コンテストの課題画像認識で真っ向から対立。冴助教の立会いの下、お互いのモデルを競わせる中で双方が限界に直面。猫の視覚野の階層構造に倣った畳み込みフィルターの真価を理解し、両者の長所を組み合わせることで最高精度の認識器を共闘して完成させる。",
+    "crossref_queries": [
+      {
+        "label": "ネコの視覚皮質における受容野構造と機能的階層構造の発見（Hubel & Wiesel / ノーベル生理学・医学賞）",
+        "query": "Hubel Wiesel Receptive fields binocular interaction and functional architecture in the cats visual cortex 1962"
+      },
+      {
+        "label": "視覚神経受容野に基づく階層型自己組織化ネットワーク「ネオコグニトロン」（Fukushima）",
+        "query": "Fukushima Neocognitron A self-organizing neural network model for a mechanism of pattern recognition 1980"
+      },
+      {
+        "label": "勾配法による学習と畳み込みニューラルネットワークによる文書認識（LeCun et al. / チューリング賞）",
+        "query": "LeCun Gradient-based learning applied to document recognition 1998"
+      }
+    ]
+  },
+  {
+    "id": "ep84-polynomial-time-primality-aks-algorithm-number-theory",
+    "episode_num": 84,
+    "title": "素数の扉を開く多項式の鍵――AKS素数判定法と計算複雑性の奇跡",
+    "faculty": "理学部・数学科 ／ 代数数理・計算代数解析研究室",
+    "protagonist": "数村 乃愛（かずむら のあ・高校2年生・数学部）",
+    "mentor": "有馬 翠（ありま みどり・助教・計算数論・代数的アルゴリズム／高校数学教職担当）",
+    "theme": "何千年も確率的判定（ミラー・ラビン判定法）や未証明の仮想（一般化リーマン予想）に依存していた素数判定が、多項式環上の合同式 (x - a)^n ≡ (x^n - a) (mod n) を巧妙に次数低減することで、決定的にかつ無条件で多項式時間（P）で判定できることを証明した「AKS素数判定法（2002年）」の金字塔",
+    "modern_tech": "多項式環上の合同式 (x-a)^n ≡ x^n - a mod (x^r - 1, n)、計算量理論（クラスPへの所属）、ミラー・ラビン確率的素数判定法、フェルマーの小定理の代数的一般化",
+    "summary": "【パターン5：落ちこぼれ・挫折からの大逆転】合同式や整数の論証問題でミスを連発し、「私には厳密な証明の才能がない」と自信を失っていた乃愛。翠助教が取り出したのは、巨大な素数判定のパズル。フェルマーの小定理を文字の多項式へと広げるだけで、何千年も人類が解けなかった決定性多項式時間判定が解けたというAKSアルゴリズムのシンプルで美しい発想に触れ、自分の素朴な疑問や粘り強さが大きな力になることを実感。挫折を乗り越えて高校数学の教員への志を固める。",
+    "crossref_queries": [
+      {
+        "label": "素数判定問題が無条件かつ決定的に多項式時間で解けることの証明（Agrawal, Kayal, Saxena / AKSアルゴリズム）",
+        "query": "Agrawal Kayal Saxena PRIMES is in P Annals of Mathematics 2004"
+      },
+      {
+        "label": "一般化リーマン予想を仮定した決定的素数判定アルゴリズムの基礎理論（Miller / JCSS）",
+        "query": "Miller Riemanns Hypothesis and Tests for Primality 1976"
+      },
+      {
+        "label": "実用的な高速確率的素数判定アルゴリズム（Rabin / J. Number Theory）",
+        "query": "Rabin Probabilistic algorithm for testing primality 1980"
+      }
+    ]
   }
 ]

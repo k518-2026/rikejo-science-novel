@@ -970,5 +970,17 @@
     "url": "stories/ep81-poincare-conjecture-ricci-flow-geometric-surgery.html",
     "image": "assets/images/ep81-poincare-conjecture-ricci-flow-geometric-surgery.png",
     "char_count": 7471
+  },
+  {
+    "no": 82,
+    "work_id": "ep82-quantum-hall-effect-topology-metrology",
+    "title": "二次元の電子が刻む不変の階段――量子ホール効果とトポロジカル抵抗標準",
+    "faculty": "理学部・物理学科 ／ 固体量子物性・低温ナノ物理研究室",
+    "field": "数学・数理科学",
+    "theme": "強磁場・極低温の二次元電子ガスにおいて、ホール伝導率が物質の不純物や形状によらずプランク定数hと電気素量eのみで決まる整数値（h/e²の整数分の1）として階段状に厳密に量子化される整数量子ホール効果と、トポロジー不変量（チャーン数）による数理的証明",
+    "has_image": true,
+    "url": "stories/ep82-quantum-hall-effect-topology-metrology.html",
+    "image": "assets/images/ep82-quantum-hall-effect-topology-metrology.png",
+    "char_count": 7661
   }
 ]

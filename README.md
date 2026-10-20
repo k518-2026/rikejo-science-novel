@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **75** 話（うち挿絵付き **75** 話 / 最終更新: 2026-10-20 08:55 JST）
+- **収録作品数**: 全 **76** 話（うち挿絵付き **76** 話 / 最終更新: 2026-10-20 12:12 JST）
 
 ---
 
@@ -89,6 +89,7 @@
 | 73 | **[ダイヤモンドの傷が診る生体分子――NVセンターと極限量子センシング](https://k518-2026.github.io/rikejo-science-novel/stories/ep73-quantum-sensing-diamond-nv-center.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep73-quantum-sensing-diamond-nv-center.html) | [📄原稿](content/2026-10-20_ep73_quantum_sensing_diamond_nv_center.md) | [🎨挿絵](content/2026-10-20_ep73_quantum_sensing_diamond_nv_center.png) | 理学部・物理学科 ／ 量子光学・ナノスピン物理研究室 | ダイヤモンド結晶中の窒素-空孔中心（NVセンター）のスピン状態を光で検出し、細胞内や生体単一分子レベルの微小な磁場や温度変化を常温大気圧下で可視化する量子センシング | 7,947字 |
 | 74 | **[極夜の成層圏が解いた塩素の連鎖――オゾン層破壊の光化学と地球の盾](https://k518-2026.github.io/rikejo-science-novel/stories/ep74-atmospheric-photochemistry-ozone-hole-catalysis.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep74-atmospheric-photochemistry-ozone-hole-catalysis.html) | [📄原稿](content/2026-10-20_ep74_atmospheric_photochemistry_ozone_hole_catalysis.md) | [🎨挿絵](content/2026-10-20_ep74_atmospheric_photochemistry_ozone_hole_catalysis.png) | 理学部・化学科 ／ 大気化学・環境光化学研究室 | フロンガス（CFCs）から紫外線で遊離した塩素原子が触媒サイクルで何万個ものオゾンを分解する連鎖反応機構、南極上空の極成層圏雲（PSC）における不均一反応とオゾンホールの形成 | 7,569字 |
 | 75 | **[数式が自ら進化する樹木――遺伝的プログラミングと記号回帰のアルゴリズム](https://k518-2026.github.io/rikejo-science-novel/stories/ep75-genetic-programming-symbolic-regression-evolution.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep75-genetic-programming-symbolic-regression-evolution.html) | [📄原稿](content/2026-10-20_ep75_genetic_programming_symbolic_regression_evolution.md) | [🎨挿絵](content/2026-10-20_ep75_genetic_programming_symbolic_regression_evolution.png) | 工学部・情報工学科 ／ 知能情報学・進化的知能計算研究室 | 木構造（構文木）で表現された数式やプログラムが、生物の交差・突然変異・自然淘汰を繰り返しながら自己改良する「遺伝的プログラミング（GP）」と、観測データから物理法則の数式を自動発見する「記号回帰」 | 7,638字 |
+| 76 | **[氷点下の円舞曲』〜100 億分の 1 を捉えた魔法の数式、そして次世代を照らす灯りへ〜](https://k518-2026.github.io/rikejo-science-novel/stories/ep76-superconductivity-josephson-junction-squid.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep76-superconductivity-josephson-junction-squid.html) | [📄原稿](content/2026-10-20_ep76_superconductivity_josephson_junction_squid.md) | [🎨挿絵](content/2026-10-20_ep76_superconductivity_josephson_junction_squid.png) | 理学部・物理学科 ／ 低温量子物性・超伝導エレクトロニクス研究室 | 超伝導体間の極薄絶縁障壁をクーパー対が通り抜けるジョセフソン効果と、磁束の量子化を利用して地球磁場の100億分の1という極限の微小磁場を計測するSQUID（超伝導量子干渉計） | 7,351字 |
 
 ---
 

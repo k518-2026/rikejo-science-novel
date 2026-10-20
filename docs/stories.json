@@ -898,5 +898,17 @@
     "url": "stories/ep75-genetic-programming-symbolic-regression-evolution.html",
     "image": "assets/images/ep75-genetic-programming-symbolic-regression-evolution.png",
     "char_count": 7638
+  },
+  {
+    "no": 76,
+    "work_id": "ep76-superconductivity-josephson-junction-squid",
+    "title": "氷点下の円舞曲』〜100 億分の 1 を捉えた魔法の数式、そして次世代を照らす灯りへ〜",
+    "faculty": "理学部・物理学科 ／ 低温量子物性・超伝導エレクトロニクス研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "超伝導体間の極薄絶縁障壁をクーパー対が通り抜けるジョセフソン効果と、磁束の量子化を利用して地球磁場の100億分の1という極限の微小磁場を計測するSQUID（超伝導量子干渉計）",
+    "has_image": true,
+    "url": "stories/ep76-superconductivity-josephson-junction-squid.html",
+    "image": "assets/images/ep76-superconductivity-josephson-junction-squid.png",
+    "char_count": 7351
   }
 ]

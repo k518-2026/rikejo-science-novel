@@ -1873,5 +1873,80 @@
         "query": "David Goldberg Deception in Genetic Algorithms 1987"
       }
     ]
+  },
+  {
+    "id": "ep76-superconductivity-josephson-junction-squid",
+    "episode_num": 76,
+    "title": "極低温の輪が数える磁束の粒――ジョセフソン効果とSQUID磁束計の超伝導物理",
+    "faculty": "理学部・物理学科 ／ 低温量子物性・超伝導エレクトロニクス研究室",
+    "protagonist": "氷室 栞（ひむろ しおり・高校2年生・物理部）",
+    "mentor": "寒河江 律（さがえ りつ・助教・超伝導デバイス・量子干渉計／高校物理教職担当）",
+    "theme": "超伝導体間の極薄絶縁障壁をクーパー対が通り抜けるジョセフソン効果と、磁束の量子化を利用して地球磁場の100億分の1という極限の微小磁場を計測するSQUID（超伝導量子干渉計）",
+    "modern_tech": "直流SQUID磁束計（DC-SQUID）、磁束量子化（h/2e）、希釈冷凍機・極低温測定系、心磁図・脳磁図（MEG）医療診断技術",
+    "summary": "「絶対零度近くまで冷やした超伝導のリングの中では、磁力線が一本、二本と『粒（磁束量子）』として数えられるのよ」――律助教が液体ヘリウムのデュワーから引き上げたのは、微小なジョセフソン接合が刻まれたシリコンチップ。肉眼で見えるスケールの回路全体がひとつの巨大な量子力学的波動として振る舞い、心臓や脳の微かな磁気を捉える超伝導の深奥に触れた栞は、自然界の驚くべき調和を教える高校物理の先生を目指す。",
+    "crossref_queries": [
+      {
+        "label": "超伝導トンネル障壁における巨視的量子現象の予言（Josephson / ノーベル物理学賞）",
+        "query": "Josephson Possible new effects in superconductive tunnelling 1962"
+      },
+      {
+        "label": "超伝導量子干渉計（SQUID）による巨視的量子干渉効果の実験的検証（Jaklevic et al.）",
+        "query": "Jaklevic Macroscopic Quantum Interference in Superconductors 1965"
+      },
+      {
+        "label": "SQUIDの基礎原理とセンシング技術の包括的体系化（Clarke & Braginski）",
+        "query": "Clarke The SQUID Handbook Fundamentals and Technology of SQUIDs 2004"
+      }
+    ]
+  },
+  {
+    "id": "ep77-single-cell-rna-seq-droplet-cell-atlas",
+    "episode_num": 77,
+    "title": "微小な雫が仕分ける一細胞の設計図――シングルセルRNA-seqと細胞アトラスの生命情報学",
+    "faculty": "理学部・生物情報学科 ／ ゲノムダイナミクス・単一細胞トランスクリプトミクス研究室",
+    "protagonist": "滴草 雫（しずくさ しずく・高校2年生・生物部）",
+    "mentor": "水無瀬 響（みなせ ひびき・助教・バイオインフォマティクス・発生細胞学／高校理科教職担当）",
+    "theme": "油中水滴（液滴マイクロフルイディクス）と細胞バーコード技術によって数万個の細胞の遺伝子発現を1細胞ごとに同時解析するシングルセルRNA-seqと、全身の細胞の多様性を解き明かすヒューマン・セル・アトラス",
+    "modern_tech": "液滴マイクロ流路デバイス（Droplet-based scRNA-seq）、固有分子識別子（UMI）バーコード、高次元発現データクラスタリング（UMAP/t-SNE）、軌跡推定（Pseudotime解析）",
+    "summary": "「何十万もの細胞をごちゃ混ぜにしてすり潰すのではなく、オイルの中で1個ずつシャボン玉に閉じ込めてバーコードを貼るの。そうすれば、同じ『免疫細胞』の中でも一人ひとり全く違う個性や役割が見えてくるのよ」――響助教が見せるカラフルなUMAP散布図には、幹細胞が運命を決めて分化していくグラデーションが鮮やかに浮かび上がる。生命の多様性と情報科学が織りなす新時代の生物学に心を奪われた雫は、いのちの複雑さを解き明かす歓びを伝える高校生物の教員への道を志す。",
+    "crossref_queries": [
+      {
+        "label": "単一細胞からの全トランスクリプトームmRNAシーケンシングの初実証（Tang et al. / Nature Methods）",
+        "query": "Tang mRNA Seq whole transcriptome analysis of a single cell 2009"
+      },
+      {
+        "label": "ナノリットル液滴を用いた超並列シングルセル遺伝子発現プロファイリング（Macosko et al. / Cell）",
+        "query": "Macosko Highly Parallel Genome wide Expression Profiling of Individual Cells 2015"
+      },
+      {
+        "label": "液滴バーコード法による単一細胞トランスクリプトミクスと細胞運命解析（Klein et al. / Cell）",
+        "query": "Klein Droplet Barcoding for Single Cell Transcriptomics Applied to 2015"
+      }
+    ]
+  },
+  {
+    "id": "ep78-pseudorandom-functions-ggm-tree-cryptography",
+    "episode_num": 78,
+    "title": "予測不能な樹木が生む暗号の迷宮――擬似ランダム関数（GGM木）と計算論的暗号の数学",
+    "faculty": "理学部・数学科 ／ 情報数理・計算論的セキュリティ研究室",
+    "protagonist": "乱数 琴音（らんすう ことね・高校2年生・数理情報部）",
+    "mentor": "鍵村 沙羅（かぎむら さら・助教・暗号理論・計算複雑性理論／高校数学教職担当）",
+    "theme": "一方向性関数の存在を仮定して、多項式時間アルゴリズムでは真のランダム関数と見分けがつかない「擬似ランダム関数（PRF）」を二分木構造のビット伸長カスケードによって厳密に構築するGGM（Goldreich-Goldwasser-Micali）構成法",
+    "modern_tech": "GGM木構造構築法、擬似ランダム生成器（PRG）から擬似ランダム置換（PRP/Feistel構造）への展開、識別不可能性（Indistinguishability）、計算論的還元証明",
+    "summary": "「コインを何兆回投げても追いつかない真の乱数を、コンピュータの中で『誰にも見破られないランダム』として数学的に作り出す方法があるのよ」――沙羅助教が黒板に描いたのは、1本の短い秘密の種（シード）から無限に枝分かれしていく巨大な二分木のダイアグラム。計算量の壁を利用して絶対の安全性を生み出す現代暗号数学のエレガントさに息を呑んだ琴音は、抽象的な数学が現代のデジタル社会の安全をいかに支えているかを生徒たちに教える高校数学の教員を目指す。",
+    "crossref_queries": [
+      {
+        "label": "擬似ランダム関数の厳密な構成法と理論的基礎（Goldreich, Goldwasser, Micali / J. ACM）",
+        "query": "Goldreich Goldwasser Micali How to construct random functions 1986"
+      },
+      {
+        "label": "擬似ランダム関数から擬似ランダム置換への変換定理（Luby & Rackoff / SIAM）",
+        "query": "Luby Rackoff How to Construct Pseudorandom Permutations from Pseudorandom 1988"
+      },
+      {
+        "label": "任意の一方向性関数からの擬似ランダム生成器の構築（Håstad et al. / SIAM）",
+        "query": "Hastad Impagliazzo Levin Luby A Pseudorandom Generator from any One way Function 1999"
+      }
+    ]
   }
 ]

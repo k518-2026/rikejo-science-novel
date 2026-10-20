@@ -934,5 +934,17 @@
     "url": "stories/ep78-pseudorandom-functions-ggm-tree-cryptography.html",
     "image": "assets/images/ep78-pseudorandom-functions-ggm-tree-cryptography.png",
     "char_count": 7885
+  },
+  {
+    "no": 79,
+    "work_id": "ep79-metamaterials-transformation-optics-invisibility",
+    "title": "光を曲げて世界を消す――メタマテリアルと変換光学の幾何学",
+    "faculty": "工学部・応用物理学科 ／ 先端フォトニクス・波動制御工学研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "時空の座標変換によって光や電磁波の軌道を空間ごと曲げ、障害物を滑らかに迂回させて背後を復元する「変換光学（Transformation Optics）」と、自然界にない負の屈折率・誘電率・透磁率を人工構造で実現する「電磁波クローキング（透明マント）」",
+    "has_image": true,
+    "url": "stories/ep79-metamaterials-transformation-optics-invisibility.html",
+    "image": "assets/images/ep79-metamaterials-transformation-optics-invisibility.png",
+    "char_count": 7475
   }
 ]

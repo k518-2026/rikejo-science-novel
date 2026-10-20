@@ -1948,5 +1948,80 @@
         "query": "Hastad Impagliazzo Levin Luby A Pseudorandom Generator from any One way Function 1999"
       }
     ]
+  },
+  {
+    "id": "ep79-metamaterials-transformation-optics-invisibility",
+    "episode_num": 79,
+    "title": "光を曲げて世界を消す――メタマテリアルと変換光学の幾何学",
+    "faculty": "工学部・応用物理学科 ／ 先端フォトニクス・波動制御工学研究室",
+    "protagonist": "隠岐 陽葵（おき ひまり・高校2年生・物理部兼美術部）",
+    "mentor": "真壁 玲（まかべ れい・助教・ナノ光学・変換電磁気学／高校物理教職担当）",
+    "theme": "時空の座標変換によって光や電磁波の軌道を空間ごと曲げ、障害物を滑らかに迂回させて背後を復元する「変換光学（Transformation Optics）」と、自然界にない負の屈折率・誘電率・透磁率を人工構造で実現する「電磁波クローキング（透明マント）」",
+    "modern_tech": "スプリットリング共振器（SRR）、異方性誘電率・透磁率設計、マイクロ波クローキング実験、幾何光学的座標変換理論",
+    "summary": "「障害物を避けて光が流れるように空間そのものを歪ませてしまえば、中にいる物体は光の影も作らず完全に透明になるのよ」――玲助教が見せてくれたのは、微小な金属リングが整然と並ぶ同心円状のメタマテリアル円筒。マイクロ波を照射すると、中心に置かれた金属柱があたかも存在しないかのように背後へと電磁波が直進していく。マクスウェル方程式と微分幾何学が融合してSFの透明マントを現実にする光物理の奇跡に息を呑んだ陽葵は、目に見えない光の数理を教える高校物理の先生を目指す。",
+    "crossref_queries": [
+      {
+        "label": "座標変換による電磁場と光線の自在な空間制御理論（Pendry et al. / Science）",
+        "query": "Pendry Controlling Electromagnetic Fields Science 2006"
+      },
+      {
+        "label": "人工メタマテリアルを用いたマイクロ波電磁波クローキング（透明化）の初実証（Schurig et al. / Science）",
+        "query": "Schurig Metamaterial Electromagnetic Cloak at Microwave Frequencies Science 2006"
+      },
+      {
+        "label": "等角写像と幾何光学による屈折率分布制御の提案（Leonhardt / Science）",
+        "query": "Leonhardt Optical Conformal Mapping Science 2006"
+      }
+    ]
+  },
+  {
+    "id": "ep80-ribozyme-rna-world-origin-of-life",
+    "episode_num": 80,
+    "title": "酵素の帽子を脱いだ核酸――リボザイムと太古のRNAワールド",
+    "faculty": "理学部・生物化学科 ／ 生体超分子構造・分子進化学研究室",
+    "protagonist": "生島 紗奈（いくしま さな・高校2年生・生物部）",
+    "mentor": "早瀬 紡（はやせ つむぎ・助教・RNA分子生物学・リボザイム工学／高校生物教職担当）",
+    "theme": "酵素タンパク質の手を借りずに自らリン酸エステル結合を切断・再結合する触媒能を持つRNA分子「リボザイム（自己スプライシングRNA）」の発見と、生命誕生の初期に遺伝情報の保持と化学反応の触媒の双方をRNAが担っていたとする「RNAワールド仮説」",
+    "modern_tech": "インビトロ分子進化（SELEX法）、自己スプライシング反応速度論、クライオ電顕RNA三次元立体構造解析、ハンマーヘッド型リボザイム創薬",
+    "summary": "「『タンパク質が酵素になり、DNAが遺伝情報を保存する』という教科書の常識を覆したのが、自分自身をハサミのように切り刻んで繋ぎ合わせるRNA――リボザイムよ」――紡助教が試験管内で蛍光標識されたRNA断片の切断反応を見せると、マグネシウムイオンの添加とともに分子が自律的に切断され輝きを変える。生命の起源において最初の主役を演じたRNAの変幻自在な美しさに心を奪われた紗奈は、分子のドラマを通じていのちの歴史を教える高校生物の教員への道を志す。",
+    "crossref_queries": [
+      {
+        "label": "テトラヒメナrRNAにおける自己スプライシング反応と触媒RNAの発見（Kruger, Cech et al. / ノーベル化学賞）",
+        "query": "Kruger Self splicing RNA autoexcision and autocyclization of the ribosomal RNA intervening sequence of Tetrahymena Cell 1982"
+      },
+      {
+        "label": "リボヌクレアーゼPにおけるRNA分子自体の触媒活性の実証（Guerrier-Takada, Altman et al. / ノーベル化学賞）",
+        "query": "Guerrier Takada The RNA moiety of ribonuclease P is the catalytic subunit of the enzyme Cell 1983"
+      },
+      {
+        "label": "生命の起源におけるRNA主導の世界「RNAワールド」の提唱（Gilbert / Nature）",
+        "query": "Gilbert Origin of life The RNA world Nature 1986"
+      }
+    ]
+  },
+  {
+    "id": "ep81-poincare-conjecture-ricci-flow-geometric-surgery",
+    "episode_num": 81,
+    "title": "宇宙の形を丸める熱の方程式――リッチフローとポアンカレ予想の解決",
+    "faculty": "理学部・数学科 ／ 微分幾何学・大域解析学研究室",
+    "protagonist": "球磨川 遥（くまがわ はるか・高校2年生・数学部）",
+    "mentor": "高遠 理央（たかとお りお・准教授・リーマン幾何学・幾何解析学／高校数学教職担当）",
+    "theme": "「単連結な3次元閉多様体は3次元球面に同相であるか」という100年の難問ポアンカレ予想を、空間の曲率を熱伝導のように滑らかに均す非線形偏微分方程式「リッチフロー（Ricci Flow）」と特異点手術によって証明したハミルトン・ペレルマンの幾何解析学",
+    "modern_tech": "リッチフロー方程式（Hamilton 1982）、ペレルマンのWエントロピー汎関数、幾何学的特異点手術（Surgery on singularities）、サーストンの幾何化予想",
+    "summary": "「もしも私たちが住む宇宙が3次元の風船のような形をしているか知りたければ、宇宙の歪みを少しずつ熱のように均していけばいい――それがリッチフローという微分方程式のアイデアよ」――理央准教授が黒板に描いたのは、くびれが千切れ、滑らかな球面に縮退していく高次元多様体のアニメーション。純粋なトポロジーの難問が物理の熱方程式と結びついて解き明かされた数学史上の奇跡に息を呑んだ遥は、困難な問題に粘り強く立ち向かう数学の気高さを伝える高校数学の先生を志す。",
+    "crossref_queries": [
+      {
+        "label": "正のリッチ曲率を持つ3次元多様体とリッチフローの創始（Hamilton / JDG）",
+        "query": "Hamilton Three manifolds with positive Ricci curvature Journal of Differential Geometry 1982"
+      },
+      {
+        "label": "リッチフローと幾何学的特異点手術によるポアンカレ予想の完全証明（Cao & Zhu / Asian J. Math.）",
+        "query": "Cao Zhu A Complete Proof of the Poincare and Geometrization Conjectures Asian Journal of Mathematics 2006"
+      },
+      {
+        "label": "ペレルマンの幾何解析論文に関する詳細解説と検証体系（Kleiner & Lott / Geom. Topol.）",
+        "query": "Kleiner Lott Notes on Perelmans papers Geometry and Topology 2008"
+      }
+    ]
   }
 ]

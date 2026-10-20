@@ -551,6 +551,56 @@ class DualLLMStoryGenerator:
 
         return verified_papers
 
+
+    NARRATIVE_PATTERNS = [
+        {
+            "id": "pattern_1_mystery",
+            "name": "パターン1：日常の謎・トラブル解決（名探偵型）",
+            "instruction": """【プロット構造：パターン1 日常の謎・トラブル解決（名探偵型）】
+    - 第1シーン：学校・部活動・身近な日常で起きた不可解なトラブルや謎（例：機器の異常、植物や素材の奇妙な変化、データの矛盾、実験の思わぬ破綻）が発生し、主人公が首を傾げながら研究室へ持ち込む。
+    - 第2シーン：メンター（助教や先輩）と共に現場検証・初期観測・数理モデル化。一見無関係に見える最新科学の知見（要素1・2）が事件の糸口になる。
+    - 第3シーン：実験室の高度な分析装置やシミュレーション（要素3）を駆使し、謎の背後にある「目に見えない科学法則」を鮮やかに解き明かすカタルシス。
+    - 第4シーン：事件が解決して日常が戻り、「身の回りの謎を科学の眼で解き明かす面白さ」と、それを誰かに伝え導く教職・研究への憧れを胸に夕暮れの帰路につく。"""
+        },
+        {
+            "id": "pattern_3_festival",
+            "name": "パターン3：文化祭・オープンキャンパスの出展バトル（お祭り・エンタメ型）",
+            "instruction": """【プロット構造：パターン3 文化祭・オープンキャンパスの出展バトル（お祭り・エンタメ型）】
+    - 第1シーン：学校の文化祭展示や大学オープンキャンパスの企画段階。「難しい数理・科学を、小さな子どもや文系の友達にどう伝えれば感動してもらえるか？」という伝え方の壁に直面する。
+    - 第2シーン：メンターと共に、身近な材料を使った体験型デモや視覚的トリック、インタラクティブな実験装置を試作・検証（要素1・2）。「ただ正確なだけでなく、相手の目を輝かせるには？」と試行錯誤。
+    - 第3シーン：最先端理論の本質（要素3）を思いもよらない直感的なメタファーや体験に落とし込むブレイクスルー。「伝えることこそが、自分自身の理解を深めるんだ」という実感。
+    - 第4シーン：展示は大成功し、来場者の笑顔と歓声に包まれる。未来の先生（教育者）として「知る歓びの種を蒔く人になりたい」という強い確信を抱く。"""
+        },
+        {
+            "id": "pattern_4_rival",
+            "name": "パターン4：ライバル・天敵との衝突と共闘（ライバル対決型）",
+            "instruction": """【プロット構造：パターン4 ライバル・天敵との衝突と共闘（ライバル対決型）】
+    - 第1シーン：別のアプローチや考え方を持つ強気なライバル生徒（または隣の研究室の仲間）が登場。同じ科学現象や課題の解釈を巡って意見が真っ向から対立し、火花を散らす。
+    - 第2シーン：メンターが温かく見守る中、お互いの仮説を検証するための対抗実験やシミュレーション勝負を開始（要素1・2）。それぞれの長所と盲点が見えてくる。
+    - 第3シーン：予期せぬ実験結果に双方が行き詰まる中、お互いのデータを組み合わせることで初めて核心の真理（要素3）に到達。対立を越えてハイタッチする最高の共闘。
+    - 第4シーン：「あいつがいたからここまで来られた」。良きライバルと認め合い、多様な視点を認め合える教育者・研究者への道を笑顔で語り合う。"""
+        },
+        {
+            "id": "pattern_5_comeback",
+            "name": "パターン5：落ちこぼれ・挫折からの大逆転（リベンジ・覚醒型）",
+            "instruction": """【プロット構造：パターン5 落ちこぼれ・挫折からの大逆転（リベンジ・覚醒型）】
+    - 第1シーン：教科のテストでつまずいたり、部活の実験が失敗続きで「私には理系の才能がないのかも…」と自信を失い、一人研究室の片隅で落ち込んでいる主人公。
+    - 第2シーン：メンターが主人公の失敗の原因を優しく肯定し、全く別の身近な日常の比喩や手遊びから理論の直感的なイメージ（要素1・2）を解きほぐす。
+    - 第3シーン：主人公ならではの独自の視点（観察眼や素朴な疑問）が、実は教科書を超えた最先端科学（要素3）の本質を突いていたことに気づき、劇的な覚醒と大逆転を果たす。
+    - 第4シーン：「つまずいた経験があるからこそ、わからない人の気持ちに寄り添える先生になれる」。挫折を宝物に変えて、前を向いて歩き出す。"""
+        },
+        {
+            "id": "pattern_8_mentoring",
+            "name": "パターン8：後輩指導・ミニ先生体験の奮闘（ミニ先生体験型）",
+            "instruction": """【プロット構造：パターン8 後輩指導・ミニ先生体験の奮闘（ミニ先生体験型）】
+    - 第1シーン：主人公が初めて「教える側」として、科学に苦手意識を持つ後輩や中学生、見学に来た生徒の相談に乗ることに。専門用語ばかり並べて相手を困らせてしまい、自分の未熟さに悩む。
+    - 第2シーン：メンターから「教育とは知識の詰め込みではなく、驚きの共有だよ」と助言を受け、最新科学の仕掛け（要素1・2）を使った工夫あふれる教え方を一緒に考案。
+    - 第3シーン：工夫を凝らした対話と実験デモ（要素3）を通じて、後輩の目がパッと輝き「分かった！ 面白い！」と叫ぶ感動の瞬間。
+    - 第4シーン：後輩を見送った後、自分の心に残る温かい充足感に浸りながら、「やっぱり私、絶対に学校の先生になる！」と確信を持って誓う。"""
+        }
+    ]
+
+
     def generate_plot_with_director(
         self,
         work: Dict[str, Any],
@@ -571,6 +621,14 @@ class DualLLMStoryGenerator:
         tech_block = "\n".join(tech_lines)
 
         world_setting = self.lorebook.get("world_setting", "")
+        
+        # Determine Narrative Pattern based on episode_num (rotating through patterns 1, 3, 4, 5, 8)
+        ep_num = work.get("episode_num", 1)
+        pattern_idx = (ep_num - 1) % len(self.NARRATIVE_PATTERNS)
+        chosen_pattern = self.NARRATIVE_PATTERNS[pattern_idx]
+        logger.info(f"[Narrative Pattern] Episode #{ep_num} -> {chosen_pattern['name']}")
+        
+        pattern_instruction = chosen_pattern["instruction"]
         custom_block = f"\n【追加オーダー・特記事項】\n{custom_instruction}\n" if custom_instruction else ""
 
         prompt = f"""あなたは構成作家（{self.director_model}）です。以下のエピソード設定・キャラクター設定・実在の科学論文にもとづき、執筆作家（{self.writer_model}）が情緒豊かなライトノベルを執筆するための**【緻密な4シーン構成プロット設計図】**を作成してください。
@@ -591,6 +649,9 @@ class DualLLMStoryGenerator:
 【作中に組み込む実在の査読論文・学術ファクト（3点）】
 {tech_block}
 {custom_block}
+【本エピソードで厳格に採用するストーリーパターン】
+{pattern_instruction}
+
 【出力してほしい構成案のフォーマット】
 1. **TITLE**: 『{work.get('title')}』をベースにした、理系女子が思わず読みたくなる魅力的で詩的な本編タイトル（副題つき。第？話はつけないこと）
 2. **第1シーン（日常の疑問とキャンパス・研究室への訪問）**:
@@ -1315,6 +1376,24 @@ class DualLLMStoryGenerator:
             "a smiling female mathematician with kind eyes sketching a 3D manifold Ricci flow smoothing and neckpinch surgical topology transition on a blackboard.",
             "both characters smiling cheerfully looking at a colorful computer visualization of a 3-sphere geometric surgery evolution on a display.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit mathematics research library.",
+        ),
+        "ep82-quantum-hall-effect-topology-metrology": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a physics notebook, preparing an interactive science festival booth in a university hall.",
+            "a smiling female physicist with kind eyes helping the girl set up a hands-on rolling ball quantized staircase model demonstrating Hall plateau resistance.",
+            "both characters smiling cheerfully observing excited festival visitors and students testing the interactive quantum Hall resistance demo.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in brightly decorated festival hall.",
+        ),
+        "ep83-convolutional-neural-networks-visual-cortex-ai": _koma.__func__(
+            "two high school girl rivals with determined expressions standing at computer desks during an AI image recognition hackathon in a computer lab.",
+            "a kind female AI researcher with gentle smiling eyes showing both girls how biological visual cortex receptive fields inspire convolutional filter kernels on a whiteboard.",
+            "both rival girls smiling cheerfully and giving each other a supportive high-five as their combined hybrid CNN model achieves record accuracy on screen.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in modern computer science laboratory.",
+        ),
+        "ep84-polynomial-time-primality-aks-algorithm-number-theory": _koma.__func__(
+            "a cute high school girl looking down at her marked mathematics notebook with an uneasy expression in a quiet algebra seminar room.",
+            "a gentle female number theorist with kind smiling eyes comforting her and writing a simple polynomial identity (x-a)^n on a clean blackboard.",
+            "the high school girl smiling with renewed confidence and shining eyes as she grasps the elegant deterministic polynomial-time primality test on a wooden desk.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit mathematics library.",
         ),
     }
 

@@ -1298,6 +1298,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully examining a cryptographic pseudorandom bit sequence distribution and security reduction proof chart on a desk.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in bright sunlit mathematics seminar room.",
         ),
+        "ep79-metamaterials-transformation-optics-invisibility": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a physics notebook, visiting an advanced metamaterials and transformation optics laboratory.",
+            "a smiling female optical physicist with kind eyes pointing at a cylindrical metamaterial cloaking structure with split-ring resonators on a test bench.",
+            "both characters smiling cheerfully observing microwave transmission fields curving smoothly around a central object without shadow on a monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in bright optics laboratory.",
+        ),
+        "ep80-ribozyme-rna-world-origin-of-life": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a molecular biology notebook, visiting an RNA biochemistry and chemical evolution laboratory.",
+            "a kind female RNA biochemist with gentle smiling eyes demonstrating a self-splicing ribozyme catalytic cleavage reaction in a small vial on a clean desk.",
+            "both characters smiling excitedly examining a 3D folded hammerhead ribozyme molecular structure and RNA world evolutionary timeline on a screen.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit biochemistry laboratory.",
+        ),
+        "ep81-poincare-conjecture-ricci-flow-geometric-surgery": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a differential geometry sketchbook, visiting a geometric analysis and Riemannian manifolds seminar room.",
+            "a smiling female mathematician with kind eyes sketching a 3D manifold Ricci flow smoothing and neckpinch surgical topology transition on a blackboard.",
+            "both characters smiling cheerfully looking at a colorful computer visualization of a 3-sphere geometric surgery evolution on a display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit mathematics research library.",
+        ),
     }
 
     def generate_english_image_prompt(

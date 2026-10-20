@@ -994,5 +994,17 @@
     "url": "stories/ep83-convolutional-neural-networks-visual-cortex-ai.html",
     "image": "assets/images/ep83-convolutional-neural-networks-visual-cortex-ai.png",
     "char_count": 8116
+  },
+  {
+    "no": 84,
+    "work_id": "ep84-polynomial-time-primality-aks-algorithm-number-theory",
+    "title": "素数の扉を開く多項式の鍵――AKS素数判定法と計算複雑性の奇跡",
+    "faculty": "理学部・数学科 ／ 代数数理・計算代数解析研究室",
+    "field": "数学・数理科学",
+    "theme": "何千年も確率的判定（ミラー・ラビン判定法）や未証明の仮想（一般化リーマン予想）に依存していた素数判定が、多項式環上の合同式 (x - a)^n ≡ (x^n - a) (mod n) を巧妙に次数低減することで、決定的にかつ無条件で多項式時間（P）で判定できることを証明した「AKS素数判定法（2002年）」の金字塔",
+    "has_image": true,
+    "url": "stories/ep84-polynomial-time-primality-aks-algorithm-number-theory.html",
+    "image": "assets/images/ep84-polynomial-time-primality-aks-algorithm-number-theory.png",
+    "char_count": 7375
   }
 ]

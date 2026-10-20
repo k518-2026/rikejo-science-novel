@@ -1280,6 +1280,24 @@ class DualLLMStoryGenerator:
             "both characters smiling excitedly watching a symbolic regression algorithm discover Newton's gravitational formula from raw experimental data on a monitor.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in modern computer science laboratory.",
         ),
+        "ep76-superconductivity-josephson-junction-squid": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a physics notebook, visiting a low-temperature quantum physics and superconductivity laboratory.",
+            "a kind female physicist with gentle smiling eyes holding a microchip with superconducting Josephson junctions near a liquid helium dewar.",
+            "both characters smiling cheerfully looking at a real-time SQUID magnetometer quantum interference magnetic flux readout on a computer display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit cryogenic physics laboratory.",
+        ),
+        "ep77-single-cell-rna-seq-droplet-cell-atlas": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a biology notebook, visiting a single-cell genomics and bioinformatics laboratory.",
+            "a smiling female bioinformatician with kind eyes pointing at a microfluidic chip generating microscopic aqueous droplets with cellular barcodes.",
+            "both characters smiling excitedly examining a colorful UMAP single-cell transcriptomic gene expression cluster map on a wide monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in modern bioinformatics research room.",
+        ),
+        "ep78-pseudorandom-functions-ggm-tree-cryptography": _koma.__func__(
+            "a cute high school girl with soft gentle eyes holding a mathematics notebook, visiting a computational cryptography and theoretical informatics room.",
+            "a kind female cryptographer with gentle smiling eyes drawing a branching Goldreich-Goldwasser-Micali GGM binary tree with seed expansions on a clean blackboard.",
+            "both characters smiling cheerfully examining a cryptographic pseudorandom bit sequence distribution and security reduction proof chart on a desk.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in bright sunlit mathematics seminar room.",
+        ),
     }
 
     def generate_english_image_prompt(

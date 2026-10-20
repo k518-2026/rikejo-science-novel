@@ -922,5 +922,17 @@
     "url": "stories/ep77-single-cell-rna-seq-droplet-cell-atlas.html",
     "image": "assets/images/ep77-single-cell-rna-seq-droplet-cell-atlas.png",
     "char_count": 8154
+  },
+  {
+    "no": 78,
+    "work_id": "ep78-pseudorandom-functions-ggm-tree-cryptography",
+    "title": "予測不能な樹木が生む暗号の迷宮――擬似ランダム関数（GGM木）と計算論的暗号の数学",
+    "faculty": "理学部・数学科 ／ 情報数理・計算論的セキュリティ研究室",
+    "field": "数学・数理科学",
+    "theme": "一方向性関数の存在を仮定して、多項式時間アルゴリズムでは真のランダム関数と見分けがつかない「擬似ランダム関数（PRF）」を二分木構造のビット伸長カスケードによって厳密に構築するGGM（Goldreich-Goldwasser-Micali）構成法",
+    "has_image": true,
+    "url": "stories/ep78-pseudorandom-functions-ggm-tree-cryptography.html",
+    "image": "assets/images/ep78-pseudorandom-functions-ggm-tree-cryptography.png",
+    "char_count": 7885
   }
 ]

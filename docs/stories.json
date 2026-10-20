@@ -910,5 +910,17 @@
     "url": "stories/ep76-superconductivity-josephson-junction-squid.html",
     "image": "assets/images/ep76-superconductivity-josephson-junction-squid.png",
     "char_count": 7351
+  },
+  {
+    "no": 77,
+    "work_id": "ep77-single-cell-rna-seq-droplet-cell-atlas",
+    "title": "微小な雫が仕分ける一細胞の設計図――シングルセル RNA-seq と生命情報学の詩",
+    "faculty": "理学部・生物情報学科 ／ ゲノムダイナミクス・単一細胞トランスクリプトミクス研究室",
+    "field": "情報学・AI",
+    "theme": "油中水滴（液滴マイクロフルイディクス）と細胞バーコード技術によって数万個の細胞の遺伝子発現を1細胞ごとに同時解析するシングルセルRNA-seqと、全身の細胞の多様性を解き明かすヒューマン・セル・アトラス",
+    "has_image": true,
+    "url": "stories/ep77-single-cell-rna-seq-droplet-cell-atlas.html",
+    "image": "assets/images/ep77-single-cell-rna-seq-droplet-cell-atlas.png",
+    "char_count": 8154
   }
 ]

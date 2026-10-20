@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **80** 話（うち挿絵付き **80** 話 / 最終更新: 2026-10-21 00:13 JST）
+- **収録作品数**: 全 **81** 話（うち挿絵付き **81** 話 / 最終更新: 2026-10-21 00:23 JST）
 
 ---
 
@@ -94,6 +94,7 @@
 | 78 | **[予測不能な樹木が生む暗号の迷宮――擬似ランダム関数（GGM木）と計算論的暗号の数学](https://k518-2026.github.io/rikejo-science-novel/stories/ep78-pseudorandom-functions-ggm-tree-cryptography.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep78-pseudorandom-functions-ggm-tree-cryptography.html) | [📄原稿](content/2026-10-20_ep78_pseudorandom_functions_ggm_tree_cryptography.md) | [🎨挿絵](content/2026-10-20_ep78_pseudorandom_functions_ggm_tree_cryptography.png) | 理学部・数学科 ／ 情報数理・計算論的セキュリティ研究室 | 一方向性関数の存在を仮定して、多項式時間アルゴリズムでは真のランダム関数と見分けがつかない「擬似ランダム関数（PRF）」を二分木構造のビット伸長カスケードによって厳密に構築するGGM（Goldreich-Goldwasser-Micali）構成法 | 7,885字 |
 | 79 | **[光を曲げて世界を消す――メタマテリアルと変換光学の幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep79-metamaterials-transformation-optics-invisibility.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep79-metamaterials-transformation-optics-invisibility.html) | [📄原稿](content/2026-10-20_ep79_metamaterials_transformation_optics_invisibility.md) | [🎨挿絵](content/2026-10-20_ep79_metamaterials_transformation_optics_invisibility.png) | 工学部・応用物理学科 ／ 先端フォトニクス・波動制御工学研究室 | 時空の座標変換によって光や電磁波の軌道を空間ごと曲げ、障害物を滑らかに迂回させて背後を復元する「変換光学（Transformation Optics）」と、自然界にない負の屈折率・誘電率・透磁率を人工構造で実現する「電磁波クローキング（透明マント）」 | 7,475字 |
 | 80 | **[酵素の帽子を脱いだ核酸――リボザイムが紡ぐ太古のリズム](https://k518-2026.github.io/rikejo-science-novel/stories/ep80-ribozyme-rna-world-origin-of-life.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep80-ribozyme-rna-world-origin-of-life.html) | [📄原稿](content/2026-10-21_ep80_ribozyme_rna_world_origin_of_life.md) | [🎨挿絵](content/2026-10-21_ep80_ribozyme_rna_world_origin_of_life.png) | 理学部・生物化学科 ／ 生体超分子構造・分子進化学研究室 | 酵素タンパク質の手を借りずに自らリン酸エステル結合を切断・再結合する触媒能を持つRNA分子「リボザイム（自己スプライシングRNA）」の発見と、生命誕生の初期に遺伝情報の保持と化学反応の触媒の双方をRNAが担っていたとする「RNAワールド仮説」 | 6,911字 |
+| 81 | **[宇宙の形を丸める熱の方程式――リッチフローとポアンカレ予想の解決](https://k518-2026.github.io/rikejo-science-novel/stories/ep81-poincare-conjecture-ricci-flow-geometric-surgery.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep81-poincare-conjecture-ricci-flow-geometric-surgery.html) | [📄原稿](content/2026-10-21_ep81_poincare_conjecture_ricci_flow_geometric_surgery.md) | [🎨挿絵](content/2026-10-21_ep81_poincare_conjecture_ricci_flow_geometric_surgery.png) | 理学部・数学科 ／ 微分幾何学・大域解析学研究室 | 「単連結な3次元閉多様体は3次元球面に同相であるか」という100年の難問ポアンカレ予想を、空間の曲率を熱伝導のように滑らかに均す非線形偏微分方程式「リッチフロー（Ricci Flow）」と特異点手術によって証明したハミルトン・ペレルマンの幾何解析学 | 7,471字 |
 
 ---
 

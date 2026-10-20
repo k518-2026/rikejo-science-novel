@@ -958,5 +958,17 @@
     "url": "stories/ep80-ribozyme-rna-world-origin-of-life.html",
     "image": "assets/images/ep80-ribozyme-rna-world-origin-of-life.png",
     "char_count": 6911
+  },
+  {
+    "no": 81,
+    "work_id": "ep81-poincare-conjecture-ricci-flow-geometric-surgery",
+    "title": "宇宙の形を丸める熱の方程式――リッチフローとポアンカレ予想の解決",
+    "faculty": "理学部・数学科 ／ 微分幾何学・大域解析学研究室",
+    "field": "数学・数理科学",
+    "theme": "「単連結な3次元閉多様体は3次元球面に同相であるか」という100年の難問ポアンカレ予想を、空間の曲率を熱伝導のように滑らかに均す非線形偏微分方程式「リッチフロー（Ricci Flow）」と特異点手術によって証明したハミルトン・ペレルマンの幾何解析学",
+    "has_image": true,
+    "url": "stories/ep81-poincare-conjecture-ricci-flow-geometric-surgery.html",
+    "image": "assets/images/ep81-poincare-conjecture-ricci-flow-geometric-surgery.png",
+    "char_count": 7471
   }
 ]

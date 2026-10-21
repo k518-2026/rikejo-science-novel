@@ -175,5 +175,19 @@
       "Thomsen, P. F., Willerslev, E. (2015). Environmental DNA – An emerging tool in conservation for monitoring past and present biodiversity. *Biological Conservation*, 183, 4-18. [https://doi.org/10.1016/j.biocon.2014.11.019](https://doi.org/10.1016/j.biocon.2014.11.019)",
       "Stat, M., Huggett, M. J., Bernasconi, R., DiBattista, J. D., Berry, T. E., Newman, S. J., et al. (2017). Ecosystem biomonitoring with eDNA: metabarcoding across the tree of life in a tropical marine environment. *Scientific Reports*, 7(1). [https://doi.org/10.1038/s41598-017-12501-5](https://doi.org/10.1038/s41598-017-12501-5)"
     ]
+  },
+  {
+    "work_id": "ep13-neural-symbolic-logic-math-teacher",
+    "episode_num": 13,
+    "faculty": "理学部数学学科 ／ 数理情報科学専攻（認知計算研究室）",
+    "theme": "数学（論理代数、組み合わせ最適化）、情報学（シンボルAI、機械学習の説明可能性XAI）と教職キャリアへの道",
+    "episode_title": "サッカーボールから始まる「なぜ？」の旅——ブラックボックスを解きほぐして、誰にでもわかる科学の世界へ (Neuro-Symbolic AI & XAI)",
+    "posted_at": "2026-10-22T08:35:57.143560+09:00",
+    "file_path": "content/2026-10-05_ep13_neural_symbolic_logic_math_teacher.md",
+    "status": "publish",
+    "references": [
+      "De Raedt, L. (2016). Inductive Logic Programming. *Encyclopedia of Machine Learning and Data Mining*, 1-8. [https://doi.org/10.1007/978-1-4899-7502-7_135-1](https://doi.org/10.1007/978-1-4899-7502-7_135-1)",
+      "Soni, R., Singh, N. (2017). Knowledge Representation in Artificial Intelligence using Domain Knowledge and Reasoning Mechanism. *International Journal of Scientific Engineering and Research*, 5(3), 17-20. [https://doi.org/10.70729/ijser151274](https://doi.org/10.70729/ijser151274)"
+    ]
   }
 ]

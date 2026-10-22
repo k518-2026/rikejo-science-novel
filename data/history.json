@@ -189,5 +189,19 @@
       "De Raedt, L. (2016). Inductive Logic Programming. *Encyclopedia of Machine Learning and Data Mining*, 1-8. [https://doi.org/10.1007/978-1-4899-7502-7_135-1](https://doi.org/10.1007/978-1-4899-7502-7_135-1)",
       "Soni, R., Singh, N. (2017). Knowledge Representation in Artificial Intelligence using Domain Knowledge and Reasoning Mechanism. *International Journal of Scientific Engineering and Research*, 5(3), 17-20. [https://doi.org/10.70729/ijser151274](https://doi.org/10.70729/ijser151274)"
     ]
+  },
+  {
+    "work_id": "ep14-statistical-mechanics-chaos-physics-teacher",
+    "episode_num": 14,
+    "faculty": "理学部物理学科 ／ 理論物理学専攻（動力学系研究室）",
+    "theme": "物理（非線形力学、カオス理論、統計的物理学）、情報学（データ同化アルゴリズム）と教職キャリアへの道",
+    "episode_title": "散る桜のリズムが示すカオスの美学：非線形世界への招待状",
+    "posted_at": "2026-10-23T08:34:10.103146+09:00",
+    "file_path": "content/2026-10-05_ep14_statistical_mechanics_chaos_physics_teacher.md",
+    "status": "publish",
+    "references": [
+      "Lorenz, E. N. (1963). Deterministic Nonperiodic Flow. *Journal of the Atmospheric Sciences*, 20(2), 130-141. [https://doi.org/10.1175/1520-0469(1963)020<0130:dnf>2.0.co;2](https://doi.org/10.1175/1520-0469(1963)",
+      "Guckenheimer, J., Holmes, P. (1983). Nonlinear Oscillations, Dynamical Systems, and Bifurcations of Vector Fields. *Applied Mathematical Sciences*. [https://doi.org/10.1007/978-1-4612-1140-2](https://doi.org/10.1007/978-1-4612-1140-2)"
+    ]
   }
 ]

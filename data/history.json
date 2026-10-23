@@ -203,5 +203,19 @@
       "Lorenz, E. N. (1963). Deterministic Nonperiodic Flow. *Journal of the Atmospheric Sciences*, 20(2), 130-141. [https://doi.org/10.1175/1520-0469(1963)020<0130:dnf>2.0.co;2](https://doi.org/10.1175/1520-0469(1963)",
       "Guckenheimer, J., Holmes, P. (1983). Nonlinear Oscillations, Dynamical Systems, and Bifurcations of Vector Fields. *Applied Mathematical Sciences*. [https://doi.org/10.1007/978-1-4612-1140-2](https://doi.org/10.1007/978-1-4612-1140-2)"
     ]
+  },
+  {
+    "work_id": "ep15-bionanotechnology-synthetic-genetics-materials",
+    "episode_num": 15,
+    "faculty": "生命理工学部生体機能工学科 ／ 合成生物学分野（ゲノム編集研究室）",
+    "theme": "生物工学（合成生物学、代謝経路設計）、情報学（ゲノム配列解析アルゴリズム）と教職キャリアへの道",
+    "episode_title": "細胞を設計するエンジニアリング――合成生物学の教室",
+    "posted_at": "2026-10-24T08:27:49.029629+09:00",
+    "file_path": "content/2026-10-06_ep15_bionanotechnology_synthetic_genetics_materials.md",
+    "status": "publish",
+    "references": [
+      "Cong, L., Ran, F. A., Cox, D., Lin, S., Barretto, R., Habib, N., et al. (2013). Multiplex Genome Engineering Using CRISPR/Cas Systems. *Science*, 339(6121), 819-823. [https://doi.org/10.1126/science.1231143](https://doi.org/10.1126/science.1231143)",
+      "Endy, D. (2005). Foundations for engineering biology. *Nature*, 438(7067), 449-453. [https://doi.org/10.1038/nature04342](https://doi.org/10.1038/nature04342)"
+    ]
   }
 ]

@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **84** 話（うち挿絵付き **84** 話 / 最終更新: 2026-10-23 08:34 JST）
+- **収録作品数**: 全 **85** 話（うち挿絵付き **85** 話 / 最終更新: 2026-10-23 20:15 JST）
 
 ---
 
@@ -98,6 +98,7 @@
 | 82 | **[二次元の電子が刻む不変の階段――量子ホール効果とトポロジカル抵抗標準](https://k518-2026.github.io/rikejo-science-novel/stories/ep82-quantum-hall-effect-topology-metrology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep82-quantum-hall-effect-topology-metrology.html) | [📄原稿](content/2026-10-21_ep82_quantum_hall_effect_topology_metrology.md) | [🎨挿絵](content/2026-10-21_ep82_quantum_hall_effect_topology_metrology.png) | 理学部・物理学科 ／ 固体量子物性・低温ナノ物理研究室 | 強磁場・極低温の二次元電子ガスにおいて、ホール伝導率が物質の不純物や形状によらずプランク定数hと電気素量eのみで決まる整数値（h/e²の整数分の1）として階段状に厳密に量子化される整数量子ホール効果と、トポロジー不変量（チャーン数）による数理的証明 | 7,661字 |
 | 83 | **[視覚を織り込む幾何学のレンズ──畳み込みニューラルネットワークが解き明かす「猫の目」の世界](https://k518-2026.github.io/rikejo-science-novel/stories/ep83-convolutional-neural-networks-visual-cortex-ai.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep83-convolutional-neural-networks-visual-cortex-ai.html) | [📄原稿](content/2026-10-21_ep83_convolutional_neural_networks_visual_cortex_ai.md) | [🎨挿絵](content/2026-10-21_ep83_convolutional_neural_networks_visual_cortex_ai.png) | 情報理工学部・知能情報学科 ／ 視覚情報処理・深層学習数理研究室 | 哺乳類の視覚皮質における受容野（単純細胞と複雑細胞）の知見から着想を得て、空間の並進不変性を利用した畳み込み層とプーリング層を重ねることで画像の特徴を階層的に抽出する畳み込みニューラルネットワーク（CNN）の数理 | 8,116字 |
 | 84 | **[素数の扉を開く多項式の鍵――AKS素数判定法と計算複雑性の奇跡](https://k518-2026.github.io/rikejo-science-novel/stories/ep84-polynomial-time-primality-aks-algorithm-number-theory.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep84-polynomial-time-primality-aks-algorithm-number-theory.html) | [📄原稿](content/2026-10-21_ep84_polynomial_time_primality_aks_algorithm_number_theory.md) | [🎨挿絵](content/2026-10-21_ep84_polynomial_time_primality_aks_algorithm_number_theory.png) | 理学部・数学科 ／ 代数数理・計算代数解析研究室 | 何千年も確率的判定（ミラー・ラビン判定法）や未証明の仮想（一般化リーマン予想）に依存していた素数判定が、多項式環上の合同式 (x - a)^n ≡ (x^n - a) (mod n) を巧妙に次数低減することで、決定的にかつ無条件で多項式時間（P）で判定できることを証明した「AKS素数判定法（2002年）」の金字塔 | 7,375字 |
+| 85 | **[青い閃光が灯す記憶のシナプス――チャネルロドプシンで開く未来への扉](https://k518-2026.github.io/rikejo-science-novel/stories/ep85-optogenetics-neural-circuits-light-control.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep85-optogenetics-neural-circuits-light-control.html) | [📄原稿](content/2026-10-23_ep85_optogenetics_neural_circuits_light_control.md) | [🎨挿絵](content/2026-10-23_ep85_optogenetics_neural_circuits_light_control.png) | 医学部・脳神経科学科 ／ 生体光量子制御・分子神経生物学研究室 | 緑藻由来の光駆動性陽イオンチャネル（チャネルロドプシン-2）の遺伝子を特定の神経細胞に導入し、光ファイバーからの青色光パルスでミリ秒精度の脱分極と神経発火を非侵襲的に遠隔操作する「光遺伝学（オプトジェネティクス）」の技術体系 | 7,989字 |
 
 ---
 

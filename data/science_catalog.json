@@ -2098,5 +2098,80 @@
         "query": "Rabin Probabilistic algorithm for testing primality 1980"
       }
     ]
+  },
+  {
+    "id": "ep85-optogenetics-neural-circuits-light-control",
+    "episode_num": 85,
+    "title": "青い閃光が灯す記憶のシナプス――光遺伝学（オプトジェネティクス）と神経回路の生体制御",
+    "faculty": "医学部・脳神経科学科 ／ 生体光量子制御・分子神経生物学研究室",
+    "protagonist": "灯野 瑠璃（ひの るり・高校2年生・生物部）",
+    "mentor": "神崎 依茉（かんざき えま・助教・神経生理学・光生体制御／高校理科教職担当）",
+    "theme": "緑藻由来の光駆動性陽イオンチャネル（チャネルロドプシン-2）の遺伝子を特定の神経細胞に導入し、光ファイバーからの青色光パルスでミリ秒精度の脱分極と神経発火を非侵襲的に遠隔操作する「光遺伝学（オプトジェネティクス）」の技術体系",
+    "modern_tech": "チャネルロドプシン-2（ChR2）発現アデノ随伴ウイルスベクター、埋め込み型光ファイバー神経刺激カニューレ、ミリ秒パルス青色半導体レーザー、パッチクランプ膜電位固定法",
+    "summary": "【パターン8：後輩指導・ミニ先生体験の奮闘】見学に訪れた中学生の「脳の電気信号って本当に光で操れるの？」という疑問に対し、うまく言葉で説明できず専門用語を並べて困らせてしまった瑠璃。依茉助教のアドバイスを受け、単細胞緑藻が光に向かって泳ぐ目（眼点）の仕組みと、脳神経の活動電位の発生を、直感的なドミノ倒しと光スイッチの工作モデルで実演。中学生の瞳がパッと輝き「脳って光で繋がるんだ！」と歓声が上がった瞬間、瑠璃は自分の心に芽生えた教育者としての確信を噛みしめる。",
+    "crossref_queries": [
+      {
+        "label": "光駆動性イオンチャネルによる神経活動のミリ秒時間スケール光制御の実証（Boyden et al. / Nature Neuroscience）",
+        "query": "Boyden Millisecond timescale genetically targeted optical control of neural activity Nature Neuroscience 2005"
+      },
+      {
+        "label": "クラミドモナス由来光感受性陽イオンチャネル・チャネルロドプシン-2の同定（Nagel et al. / PNAS）",
+        "query": "Nagel Channelrhodopsin 2 a directly light gated cation selective membrane channel 2003"
+      },
+      {
+        "label": "光遺伝学（オプトジェネティクス）の原理と神経科学における革命的進展（Deisseroth / Nature Methods）",
+        "query": "Deisseroth Optogenetics Nature Methods 2011"
+      }
+    ]
+  },
+  {
+    "id": "ep86-radiocarbon-dating-accelerator-mass-spectrometry",
+    "episode_num": 86,
+    "title": "炭素十四が刻んだ五万年の鼓動――放射性炭素年代測定と加速器質量分析の地球化学",
+    "faculty": "理学部・地球惑星環境学科 ／ 年代測定・同位体地球化学研究室",
+    "protagonist": "砂原 翠（すなはら みどり・高校2年生・地学部兼歴史部）",
+    "mentor": "時枝 楓（ときえだ かえで・助教・年代測定学・環境古気候解析／高校地学教職担当）",
+    "theme": "宇宙線によって大気上層で生成される炭素14（¹⁴C）が生物遺骸中で半減期5730年でβ崩壊して減少する原理を利用し、加速器質量分析計（AMS）によって原子1個単位で同位体比を数える放射性炭素年代測定法と、年輪・堆積物（水月湖の年縞など）による国際較正曲線（IntCal）の数理",
+    "modern_tech": "加速器質量分析計（AMS-C14）、炭素同位体比測定（¹⁴C/¹²C）、IntCal20放射性炭素年代較正曲線、水月湖年縞高精度タイムスケール",
+    "summary": "【パターン1：日常の謎・トラブル解決（名探偵型）】歴史部の部室奥から見つかった出所不明の古文書木箱。「江戸時代のものか、それとも明治の模造品か？」という真贋を巡り部内で意見が真っ二つに割れる。地学部も兼ねる翠は、楓助教の助けを借りて木箱の極微小な木片を研究室の加速器質量分析計（AMS）にかける。炭素14の放射壊変と国際較正曲線IntCal20を照合し、樹木が伐採された正確な年代を原子レベルの物理から特定。歴史の謎を科学のメスで鮮やかに解明した快感に胸を高鳴らせる。",
+    "crossref_queries": [
+      {
+        "label": "年代既知の古代木材試料による放射性炭素年代測定原理の歴史的実証（Arnold & Libby / ノーベル化学賞）",
+        "query": "Arnold Libby Age Determinations by Radiocarbon Content Checks with Samples of Known Age Science 1949"
+      },
+      {
+        "label": "放射性炭素測定法の確立と年代測定リスト（Libby / Science）",
+        "query": "Libby Radiocarbon Dates II Science 1951"
+      },
+      {
+        "label": "北半球放射性炭素年代較正曲線IntCal20の構築と年代学への影響（Reimer et al. / Radiocarbon）",
+        "query": "Reimer Composition and consequences of the IntCal20 radiocarbon calibration Radiocarbon 2020"
+      }
+    ]
+  },
+  {
+    "id": "ep87-differential-privacy-laplace-mechanism-cryptography",
+    "episode_num": 87,
+    "title": "雑音のヴェールが守る個人の秘密――差分プライバシーと数理統計の防壁",
+    "faculty": "情報理工学部・数理情報学科 ／ セキュア情報数理・プライバシー保護AI研究室",
+    "protagonist": "保坂 友香（ほさか ともか・高校2年生・数理情報部）",
+    "mentor": "真壁 志乃（まかべ しの・助教・暗号理論・差分プライバシー保護数理／高校「情報」教職担当）",
+    "theme": "データベースに特定の個人が含まれているか否かによってクエリの出力確率分布が定数倍（e^ε）以上乖離しないことを数学的に保証する「差分プライバシー（Differential Privacy）」と、大域的感度に応じたラプラス分布のノイズ付加機構（ラプラスメカニズム）",
+    "modern_tech": "ε-差分プライバシー定義、ラプラス機構（Laplace Mechanism）、ガウス機構、プライバシー損失会計（Privacy Loss Budgeting）、連合学習プライバシー保護",
+    "summary": "【パターン3：文化祭・オープンキャンパスの出展バトル】文化祭で「全校生徒のアンケート結果から面白い相関を暴くAI展示」を企画した友香たち。「でも個人の回答が特定されたらプライバシー侵害になるのでは？」という壁に突き当たる。志乃助教の指導のもと、回答の集計結果に数学的に厳密に計算されたラプラス分布のノイズを微量に混ぜる「差分プライバシー」を実装。「統計としての全体傾向は正確に見えるのに、どんなハッカーでも個人の特定は確率的に不可能」という魔法の展示を完成させ、来場者の大絶賛を浴びる。",
+    "crossref_queries": [
+      {
+        "label": "差分プライバシー（Differential Privacy）の数学的定式化と基礎理論（Dwork / ICALP）",
+        "query": "Dwork Differential Privacy ICALP 2006"
+      },
+      {
+        "label": "感度に基づくノイズ付加（ラプラスメカニズム）によるプライバシー保護（Dwork, McSherry et al.）",
+        "query": "Dwork McSherry Nissim Smith Calibrating Noise to Sensitivity in Private Data Analysis 2006"
+      },
+      {
+        "label": "差分プライバシーのアルゴリズム的基礎に関する体系的モノグラフ（Dwork & Roth）",
+        "query": "Dwork Roth The Algorithmic Foundations of Differential Privacy 2014"
+      }
+    ]
   }
 ]

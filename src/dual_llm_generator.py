@@ -1395,6 +1395,24 @@ class DualLLMStoryGenerator:
             "the high school girl smiling with renewed confidence and shining eyes as she grasps the elegant deterministic polynomial-time primality test on a wooden desk.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit mathematics library.",
         ),
+        "ep85-optogenetics-neural-circuits-light-control": _koma.__func__(
+            "a cute high school girl acting as a student teacher with a gentle smile, explaining neural circuits to an eager younger junior high student in a biology lab.",
+            "a smiling female neuroscientist with kind eyes helping demonstrate an optical fiber laser illumination setup and green algae eyespot channelrhodopsin on a desk.",
+            "both characters smiling excitedly watching a glowing neuron model light up under a blue LED pulse as the younger student points in understanding.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit molecular neuroscience room.",
+        ),
+        "ep86-radiocarbon-dating-accelerator-mass-spectrometry": _koma.__func__(
+            "a cute high school girl holding an antique wooden box fragment with a curious detective-like expression in a geology laboratory.",
+            "a smiling female geochemist with kind eyes pointing at a large shiny accelerator mass spectrometer AMS vacuum tube and carbon-14 decay curve on a whiteboard.",
+            "both characters smiling cheerfully looking at a calibrated calendar year peak on an IntCal20 radiocarbon age distribution graph on a monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in bright earth science laboratory.",
+        ),
+        "ep87-differential-privacy-laplace-mechanism-cryptography": _koma.__func__(
+            "a cute high school girl preparing an interactive school festival math booth with posters and a laptop in a brightly decorated university hall.",
+            "a kind female computer scientist with gentle smiling eyes demonstrating a Laplace noise distribution curve and private data histogram on a screen.",
+            "both characters smiling cheerfully observing excited festival visitors querying the privacy-preserving survey algorithm without revealing personal secrets.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in brightly lit festival seminar hall.",
+        ),
     }
 
     def generate_english_image_prompt(

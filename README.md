@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **86** 話（うち挿絵付き **86** 話 / 最終更新: 2026-10-23 20:26 JST）
+- **収録作品数**: 全 **87** 話（うち挿絵付き **87** 話 / 最終更新: 2026-10-23 20:37 JST）
 
 ---
 
@@ -100,6 +100,7 @@
 | 84 | **[素数の扉を開く多項式の鍵――AKS素数判定法と計算複雑性の奇跡](https://k518-2026.github.io/rikejo-science-novel/stories/ep84-polynomial-time-primality-aks-algorithm-number-theory.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep84-polynomial-time-primality-aks-algorithm-number-theory.html) | [📄原稿](content/2026-10-21_ep84_polynomial_time_primality_aks_algorithm_number_theory.md) | [🎨挿絵](content/2026-10-21_ep84_polynomial_time_primality_aks_algorithm_number_theory.png) | 理学部・数学科 ／ 代数数理・計算代数解析研究室 | 何千年も確率的判定（ミラー・ラビン判定法）や未証明の仮想（一般化リーマン予想）に依存していた素数判定が、多項式環上の合同式 (x - a)^n ≡ (x^n - a) (mod n) を巧妙に次数低減することで、決定的にかつ無条件で多項式時間（P）で判定できることを証明した「AKS素数判定法（2002年）」の金字塔 | 7,375字 |
 | 85 | **[青い閃光が灯す記憶のシナプス――チャネルロドプシンで開く未来への扉](https://k518-2026.github.io/rikejo-science-novel/stories/ep85-optogenetics-neural-circuits-light-control.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep85-optogenetics-neural-circuits-light-control.html) | [📄原稿](content/2026-10-23_ep85_optogenetics_neural_circuits_light_control.md) | [🎨挿絵](content/2026-10-23_ep85_optogenetics_neural_circuits_light_control.png) | 医学部・脳神経科学科 ／ 生体光量子制御・分子神経生物学研究室 | 緑藻由来の光駆動性陽イオンチャネル（チャネルロドプシン-2）の遺伝子を特定の神経細胞に導入し、光ファイバーからの青色光パルスでミリ秒精度の脱分極と神経発火を非侵襲的に遠隔操作する「光遺伝学（オプトジェネティクス）」の技術体系 | 7,989字 |
 | 86 | **[炭素十四が刻んだ五万年の鼓動――加速器質量分析計と IntCal20 で解読する歴史の真偽](https://k518-2026.github.io/rikejo-science-novel/stories/ep86-radiocarbon-dating-accelerator-mass-spectrometry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep86-radiocarbon-dating-accelerator-mass-spectrometry.html) | [📄原稿](content/2026-10-23_ep86_radiocarbon_dating_accelerator_mass_spectrometry.md) | [🎨挿絵](content/2026-10-23_ep86_radiocarbon_dating_accelerator_mass_spectrometry.png) | 理学部・地球惑星環境学科 ／ 年代測定・同位体地球化学研究室 | 宇宙線によって大気上層で生成される炭素14（¹⁴C）が生物遺骸中で半減期5730年でβ崩壊して減少する原理を利用し、加速器質量分析計（AMS）によって原子1個単位で同位体比を数える放射性炭素年代測定法と、年輪・堆積物（水月湖の年縞など）による国際較正曲線（IntCal）の数理 | 7,336字 |
+| 87 | **[雑音のヴェールが守る個人の秘密――差分プライバシーと数理統計の防壁](https://k518-2026.github.io/rikejo-science-novel/stories/ep87-differential-privacy-laplace-mechanism-cryptography.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep87-differential-privacy-laplace-mechanism-cryptography.html) | [📄原稿](content/2026-10-23_ep87_differential_privacy_laplace_mechanism_cryptography.md) | [🎨挿絵](content/2026-10-23_ep87_differential_privacy_laplace_mechanism_cryptography.png) | 情報理工学部・数理情報学科 ／ セキュア情報数理・プライバシー保護AI研究室 | データベースに特定の個人が含まれているか否かによってクエリの出力確率分布が定数倍（e^ε）以上乖離しないことを数学的に保証する「差分プライバシー（Differential Privacy）」と、大域的感度に応じたラプラス分布のノイズ付加機構（ラプラスメカニズム） | 7,739字 |
 
 ---
 

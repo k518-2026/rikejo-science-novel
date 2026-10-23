@@ -1030,5 +1030,17 @@
     "url": "stories/ep86-radiocarbon-dating-accelerator-mass-spectrometry.html",
     "image": "assets/images/ep86-radiocarbon-dating-accelerator-mass-spectrometry.png",
     "char_count": 7336
+  },
+  {
+    "no": 87,
+    "work_id": "ep87-differential-privacy-laplace-mechanism-cryptography",
+    "title": "雑音のヴェールが守る個人の秘密――差分プライバシーと数理統計の防壁",
+    "faculty": "情報理工学部・数理情報学科 ／ セキュア情報数理・プライバシー保護AI研究室",
+    "field": "数学・数理科学",
+    "theme": "データベースに特定の個人が含まれているか否かによってクエリの出力確率分布が定数倍（e^ε）以上乖離しないことを数学的に保証する「差分プライバシー（Differential Privacy）」と、大域的感度に応じたラプラス分布のノイズ付加機構（ラプラスメカニズム）",
+    "has_image": true,
+    "url": "stories/ep87-differential-privacy-laplace-mechanism-cryptography.html",
+    "image": "assets/images/ep87-differential-privacy-laplace-mechanism-cryptography.png",
+    "char_count": 7739
   }
 ]

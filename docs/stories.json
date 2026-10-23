@@ -1018,5 +1018,17 @@
     "url": "stories/ep85-optogenetics-neural-circuits-light-control.html",
     "image": "assets/images/ep85-optogenetics-neural-circuits-light-control.png",
     "char_count": 7989
+  },
+  {
+    "no": 86,
+    "work_id": "ep86-radiocarbon-dating-accelerator-mass-spectrometry",
+    "title": "炭素十四が刻んだ五万年の鼓動――加速器質量分析計と IntCal20 で解読する歴史の真偽",
+    "faculty": "理学部・地球惑星環境学科 ／ 年代測定・同位体地球化学研究室",
+    "field": "数学・数理科学",
+    "theme": "宇宙線によって大気上層で生成される炭素14（¹⁴C）が生物遺骸中で半減期5730年でβ崩壊して減少する原理を利用し、加速器質量分析計（AMS）によって原子1個単位で同位体比を数える放射性炭素年代測定法と、年輪・堆積物（水月湖の年縞など）による国際較正曲線（IntCal）の数理",
+    "has_image": true,
+    "url": "stories/ep86-radiocarbon-dating-accelerator-mass-spectrometry.html",
+    "image": "assets/images/ep86-radiocarbon-dating-accelerator-mass-spectrometry.png",
+    "char_count": 7336
   }
 ]

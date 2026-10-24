@@ -217,5 +217,20 @@
       "Cong, L., Ran, F. A., Cox, D., Lin, S., Barretto, R., Habib, N., et al. (2013). Multiplex Genome Engineering Using CRISPR/Cas Systems. *Science*, 339(6121), 819-823. [https://doi.org/10.1126/science.1231143](https://doi.org/10.1126/science.1231143)",
       "Endy, D. (2005). Foundations for engineering biology. *Nature*, 438(7067), 449-453. [https://doi.org/10.1038/nature04342](https://doi.org/10.1038/nature04342)"
     ]
+  },
+  {
+    "work_id": "ep16-topological-data-analysis-persistent-homology",
+    "episode_num": 16,
+    "faculty": "理学部・数学科 ／ データ科学イノベーション研究院（応用トポロジー研究室）",
+    "theme": "位相的データ解析（TDA）・パーシステントホモロジーによるアモルファス（ガラス）構造や生命データの解明と数学教員への憧れ",
+    "episode_title": "散らばる点群のなかに隠れた『穴』を見つける――位相的データ解析とガラスの幾何学",
+    "posted_at": "2026-10-25T07:42:54.121012+09:00",
+    "file_path": "content/2026-10-06_ep16_topological_data_analysis_persistent_homology.md",
+    "status": "publish",
+    "references": [
+      "Hiraoka, Y., Nakamura, T., Hirata, A., Escolar, E. G., Matsue, K., Nishiura, Y. (2016). Hierarchical structures of amorphous solids characterized by persistent homology. *Proceedings of the National Academy of Sciences*, 113(26), 7035-7040. [https://doi.org/10.1073/pnas.1520877113](https://doi.org/10.1073/pnas.1520877113)",
+      "Carlsson, G. (2009). Topology and data. *Bulletin of the American Mathematical Society*, 46(2), 255-308. [https://doi.org/10.1090/s0273-0979-09-01249-x](https://doi.org/10.1090/s0273-0979-09-01249-x)",
+      "Edelsbrunner, Letscher, Zomorodian (2002). Topological Persistence and Simplification. *Discrete &amp; Computational Geometry*, 28(4), 511-533. [https://doi.org/10.1007/s00454-002-2885-2](https://doi.org/10.1007/s00454-002-2885-2)"
+    ]
   }
 ]

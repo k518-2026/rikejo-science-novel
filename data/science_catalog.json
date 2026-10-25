@@ -2173,5 +2173,80 @@
         "query": "Dwork Roth The Algorithmic Foundations of Differential Privacy 2014"
       }
     ]
+  },
+  {
+    "id": "ep88-cosmic-microwave-background-big-bang-radiometry",
+    "episode_num": 88,
+    "title": "二点七ケルビンの静寂が語るビッグバン――宇宙マイクロ波背景放射（CMB）と電波天文学の原点",
+    "faculty": "理学部・天文学科 ／ 宇宙電波天文学・電波干渉計研究室",
+    "protagonist": "織茂 星羅（おりも せいら・高校2年生・天文部）",
+    "mentor": "鳴神 律花（なるかみ りつか・助教・電波天文学・CMB観測／高校地学教職担当）",
+    "theme": "全天から均一に降り注ぐ絶対温度約2.7Kの電波ノイズ「宇宙マイクロ波背景放射（CMB）」の発見と、熱い初期宇宙の膨張によって引き伸ばされた黒体放射スペクトルが証明するビッグバン理論の数理物理",
+    "modern_tech": "極低温クライオホーンアンテナ、ディッケ放射計、COBE/Planck衛星全天異方性マップ、プランクの放射則・宇宙黒体放射スペクトル解析",
+    "summary": "【パターン4：ライバル・天敵との衝突と共闘】「アンテナに入り込む微弱ノイズなんて機器内部の熱雑音か鳥のフンだ」と切り捨てる完璧主義のライバル部員と、「どの方向に向けても昼夜関係なく同じ強さで届くのは宇宙そのものの光だ」と信じる星羅が天文コンテストの観測データ解析で激突。律花助教の見守る中、ディッケ放射計の基準ノイズと徹底的に比較対決する中で、二人は協力して雑音成分を差し引き、見事に絶対温度2.7ケルビンの等方的な黒体放射曲線を浮き彫りにする。対立を乗り越えて最高のバディとなった二人は、大宇宙の歴史を解き明かす地学教育のロマンを語り合う。",
+    "crossref_queries": [
+      {
+        "label": "4080MHzにおける等方性アンテナ超過温度の測定（Penzias & Wilson / ノーベル物理学賞）",
+        "query": "Penzias Wilson A Measurement of Excess Antenna Temperature at 4080 Mc s 1965"
+      },
+      {
+        "label": "宇宙初期の火の玉モデルと黒体放射残光の予言（Dicke, Peebles, Roll, Wilkinson）",
+        "query": "Dicke Peebles Roll Wilkinson Cosmic Black Body Radiation 1965"
+      },
+      {
+        "label": "COBE衛星FIRAS観測による宇宙背景放射の厳密な黒体放射スペクトル決定（Fixsen, Mather et al.）",
+        "query": "Fixsen The Spectrum of the Cosmic Microwave Background Anisotropy 1996"
+      }
+    ]
+  },
+  {
+    "id": "ep89-quantum-computing-shors-algorithm-number-theory",
+    "episode_num": 89,
+    "title": "量子の波がほどく素因数分解――ショアのアルゴリズムと量子超越性の数理",
+    "faculty": "理学部・数学科 ／ 大学院数理科学研究科（量子アルゴリズム・計算数理研究室）",
+    "protagonist": "葉月 涼香（はづき すずか・高校2年生・数学部）",
+    "mentor": "浅葱 遥（あさぎ はるか・助教・量子情報数理・離散フーリエ解析／高校数学教職担当）",
+    "theme": "古典コンピュータでは超指数時間（準指数時間）を要する巨大合成数の素因数分解を、周期関数の位相推定と量子フーリエ変換（QFT）による量子の重ね合わせと干渉を利用して多項式時間で解いてしまうショアのアルゴリズム（Shor 1994）",
+    "modern_tech": "量子ビット（Qubit）のユニタリ変換、量子フーリエ変換（QFT）、位数発見アルゴリズム、RSA公開鍵暗号の解読耐性・ポスト量子暗号（PQC）",
+    "summary": "【パターン5：落ちこぼれ・挫折からの大逆転】合同式の剰余演算や素因数分解の古典的アルゴリズムの計算量爆発に圧倒され、「私にはこんな超巨大な数の壁を突破する才能なんてない…」と自信を失っていた涼香。遥助教から「古典的な足し算ではなく、波の重ね合わせで解く方法があるの」とショアのアルゴリズムを教わる。数のパズルが量子波の周期干渉として一瞬にして解き明かされる鮮やかさに衝撃を受け、自分の素朴な疑問や粘り強い探究心こそが武器になると開眼。挫折を宝物に変えて高校数学の教員への道を力強く歩み出す。",
+    "crossref_queries": [
+      {
+        "label": "量子コンピュータによる素因数分解と離散対数の多項式時間アルゴリズム（Shor / FOCS金字塔）",
+        "query": "Shor Algorithms for quantum computation discrete logarithms and factoring 1994"
+      },
+      {
+        "label": "ショアの量子アルゴリズムの数学的証明と詳細理論体系（Shor / SIAM J. Comput.）",
+        "query": "Shor Polynomial Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer 1997"
+      },
+      {
+        "label": "量子計算と量子情報の体系的基礎理論（Nielsen & Chuang / Cambridge）",
+        "query": "Nielsen Chuang Quantum Computation and Quantum Information Cambridge 2000"
+      }
+    ]
+  },
+  {
+    "id": "ep90-crispr-base-editing-precision-genome-medicine",
+    "episode_num": 90,
+    "title": "二重らせんを傷つけずに書き換える魔法のペン――CRISPR塩基編集（Base Editing）と精密遺伝子医療",
+    "faculty": "理学部・生物学科 ／ ゲノム工学・分子遺伝治療研究室",
+    "protagonist": "水原 萌花（みずはら もか・高校2年生・生物部）",
+    "mentor": "橘 紗英（たちばな さえ・助教・エピゲノム編集・生体機能分子学／高校生物教職担当）",
+    "theme": "従来のCRISPR-Cas9のようにDNAの二重鎖を完全に切断（DSB）することなく、デアミナーゼ（脱アミノ化酵素）を融合した不活化Cas9（dCas9/nCas9）を用いて標的の一塩基だけをC→TやA→Gに高精度で置換する「塩基編集（Base Editing）」およびプライム編集の分子機構",
+    "modern_tech": "シトシン塩基編集（CBE）、アデニン塩基編集（ABE）、プライム編集（PE）、デアミナーゼ-nCas9融合タンパク質、遺伝性一塩基変異症ターゲット治療",
+    "summary": "【パターン8：後輩指導・ミニ先生体験の奮闘】オープンキャンパスで見学に訪れた中学生から「ゲノム編集ってDNAをハサミで切るから、切り間違えてガンになったりしないんですか？」と鋭い質問を受け、専門用語ばかり並べて相手を困らせてしまった萌花。紗英助教の助言を受け、DNAを切断する「ハサミ」から、文字だけを消して直す「鉛筆と消しゴム（塩基編集）」へと進化した最新分子技術の工作モデルを考案。中学生の目が輝いて「これなら安全に病気が治せる！」と笑顔がこぼれた瞬間に、教える喜びと教育者への夢を確信する。",
+    "crossref_queries": [
+      {
+        "label": "DNA二本鎖切断を伴わない標的一塩基プログラマブル編集（Komor, Liu et al. / Nature）",
+        "query": "Komor Programmable editing of a target base in genomic DNA without double stranded DNA cleavage 2016"
+      },
+      {
+        "label": "アデニンからグアニンへの標的一塩基置換を行うアデニン塩基編集の創出（Gaudelli et al. / Nature）",
+        "query": "Gaudelli Programmable base editing of A T to G C in genomic DNA without DNA cleavage 2017"
+      },
+      {
+        "label": "二本鎖切断やドナーDNA不要のサーチ＆リプレース型プライム編集（Anzalone et al. / Nature）",
+        "query": "10.1038/s41586-019-1711-4"
+      }
+    ]
   }
 ]

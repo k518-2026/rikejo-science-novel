@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **87** 話（うち挿絵付き **87** 話 / 最終更新: 2026-10-25 07:42 JST）
+- **収録作品数**: 全 **88** 話（うち挿絵付き **88** 話 / 最終更新: 2026-10-25 15:31 JST）
 
 ---
 
@@ -101,6 +101,7 @@
 | 85 | **[青い閃光が灯す記憶のシナプス――チャネルロドプシンで開く未来への扉](https://k518-2026.github.io/rikejo-science-novel/stories/ep85-optogenetics-neural-circuits-light-control.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep85-optogenetics-neural-circuits-light-control.html) | [📄原稿](content/2026-10-23_ep85_optogenetics_neural_circuits_light_control.md) | [🎨挿絵](content/2026-10-23_ep85_optogenetics_neural_circuits_light_control.png) | 医学部・脳神経科学科 ／ 生体光量子制御・分子神経生物学研究室 | 緑藻由来の光駆動性陽イオンチャネル（チャネルロドプシン-2）の遺伝子を特定の神経細胞に導入し、光ファイバーからの青色光パルスでミリ秒精度の脱分極と神経発火を非侵襲的に遠隔操作する「光遺伝学（オプトジェネティクス）」の技術体系 | 7,989字 |
 | 86 | **[炭素十四が刻んだ五万年の鼓動――加速器質量分析計と IntCal20 で解読する歴史の真偽](https://k518-2026.github.io/rikejo-science-novel/stories/ep86-radiocarbon-dating-accelerator-mass-spectrometry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep86-radiocarbon-dating-accelerator-mass-spectrometry.html) | [📄原稿](content/2026-10-23_ep86_radiocarbon_dating_accelerator_mass_spectrometry.md) | [🎨挿絵](content/2026-10-23_ep86_radiocarbon_dating_accelerator_mass_spectrometry.png) | 理学部・地球惑星環境学科 ／ 年代測定・同位体地球化学研究室 | 宇宙線によって大気上層で生成される炭素14（¹⁴C）が生物遺骸中で半減期5730年でβ崩壊して減少する原理を利用し、加速器質量分析計（AMS）によって原子1個単位で同位体比を数える放射性炭素年代測定法と、年輪・堆積物（水月湖の年縞など）による国際較正曲線（IntCal）の数理 | 7,336字 |
 | 87 | **[雑音のヴェールが守る個人の秘密――差分プライバシーと数理統計の防壁](https://k518-2026.github.io/rikejo-science-novel/stories/ep87-differential-privacy-laplace-mechanism-cryptography.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep87-differential-privacy-laplace-mechanism-cryptography.html) | [📄原稿](content/2026-10-23_ep87_differential_privacy_laplace_mechanism_cryptography.md) | [🎨挿絵](content/2026-10-23_ep87_differential_privacy_laplace_mechanism_cryptography.png) | 情報理工学部・数理情報学科 ／ セキュア情報数理・プライバシー保護AI研究室 | データベースに特定の個人が含まれているか否かによってクエリの出力確率分布が定数倍（e^ε）以上乖離しないことを数学的に保証する「差分プライバシー（Differential Privacy）」と、大域的感度に応じたラプラス分布のノイズ付加機構（ラプラスメカニズム） | 7,739字 |
+| 88 | **[二点七ケルビンの静寂が語るビッグバン――宇宙マイクロ波背景放射（CMB）と電波天文学の原点](https://k518-2026.github.io/rikejo-science-novel/stories/ep88-cosmic-microwave-background-big-bang-radiometry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep88-cosmic-microwave-background-big-bang-radiometry.html) | [📄原稿](content/2026-10-25_ep88_cosmic_microwave_background_big_bang_radiometry.md) | [🎨挿絵](content/2026-10-25_ep88_cosmic_microwave_background_big_bang_radiometry.png) | 理学部・天文学科 ／ 宇宙電波天文学・電波干渉計研究室 | 全天から均一に降り注ぐ絶対温度約2.7Kの電波ノイズ「宇宙マイクロ波背景放射（CMB）」の発見と、熱い初期宇宙の膨張によって引き伸ばされた黒体放射スペクトルが証明するビッグバン理論の数理物理 | 7,877字 |
 
 ---
 

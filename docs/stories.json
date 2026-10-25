@@ -1042,5 +1042,17 @@
     "url": "stories/ep87-differential-privacy-laplace-mechanism-cryptography.html",
     "image": "assets/images/ep87-differential-privacy-laplace-mechanism-cryptography.png",
     "char_count": 7739
+  },
+  {
+    "no": 88,
+    "work_id": "ep88-cosmic-microwave-background-big-bang-radiometry",
+    "title": "二点七ケルビンの静寂が語るビッグバン――宇宙マイクロ波背景放射（CMB）と電波天文学の原点",
+    "faculty": "理学部・天文学科 ／ 宇宙電波天文学・電波干渉計研究室",
+    "field": "数学・数理科学",
+    "theme": "全天から均一に降り注ぐ絶対温度約2.7Kの電波ノイズ「宇宙マイクロ波背景放射（CMB）」の発見と、熱い初期宇宙の膨張によって引き伸ばされた黒体放射スペクトルが証明するビッグバン理論の数理物理",
+    "has_image": true,
+    "url": "stories/ep88-cosmic-microwave-background-big-bang-radiometry.html",
+    "image": "assets/images/ep88-cosmic-microwave-background-big-bang-radiometry.png",
+    "char_count": 7877
   }
 ]

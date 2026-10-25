@@ -232,5 +232,20 @@
       "Carlsson, G. (2009). Topology and data. *Bulletin of the American Mathematical Society*, 46(2), 255-308. [https://doi.org/10.1090/s0273-0979-09-01249-x](https://doi.org/10.1090/s0273-0979-09-01249-x)",
       "Edelsbrunner, Letscher, Zomorodian (2002). Topological Persistence and Simplification. *Discrete &amp; Computational Geometry*, 28(4), 511-533. [https://doi.org/10.1007/s00454-002-2885-2](https://doi.org/10.1007/s00454-002-2885-2)"
     ]
+  },
+  {
+    "work_id": "ep17-dna-origami-molecular-robotics",
+    "episode_num": 17,
+    "faculty": "工学部・生命分子工学科 ／ ナノバイオシステム研究室",
+    "theme": "DNAオリガミ（DNA Origami）技術と分子ロボティクスによる標的指向性ナノカプセル設計",
+    "episode_title": "一億分の五メートルの折り紙で、がん細胞だけに開く宝箱を作る",
+    "posted_at": "2026-10-26T07:47:17.952328+09:00",
+    "file_path": "content/2026-10-06_ep17_dna_origami_molecular_robotics.md",
+    "status": "publish",
+    "references": [
+      "Rothemund, P. W. K. (2006). Folding DNA to create nanoscale shapes and patterns. *Nature*, 440(7082), 297-302. [https://doi.org/10.1038/nature04586](https://doi.org/10.1038/nature04586)",
+      "Andersen, E. S., Dong, M., Nielsen, M. M., Jahn, K., Subramani, R., Mamdouh, W., et al. (2009). Self-assembly of a nanoscale DNA box with a controllable lid. *Nature*, 459(7243), 73-76. [https://doi.org/10.1038/nature07971](https://doi.org/10.1038/nature07971)",
+      "Douglas, S. M., Bachelet, I., Church, G. M. (2012). A Logic-Gated Nanorobot for Targeted Transport of Molecular Payloads. *Science*, 335(6070), 831-834. [https://doi.org/10.1126/science.1214081](https://doi.org/10.1126/science.1214081)"
+    ]
   }
 ]

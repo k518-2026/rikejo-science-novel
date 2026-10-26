@@ -1090,5 +1090,17 @@
     "url": "stories/ep91-quantum-entanglement-bells-theorem-nonlocality.html",
     "image": "assets/images/ep91-quantum-entanglement-bells-theorem-nonlocality.png",
     "char_count": 7611
+  },
+  {
+    "no": 92,
+    "work_id": "ep92-monte-carlo-tree-search-alphago-game-math",
+    "title": "ランダムな枝が切り拓く神の一手――モンテカルロ木探索で咲かせる「知る歓び」",
+    "faculty": "情報理工学部・知能情報学科 ／ 離散アルゴリズム・意思決定数理研究室",
+    "field": "数学・数理科学",
+    "theme": "局面の評価関数を人間が手作業で作る限界を破り、ランダムなプレイアウト（乱数シミュレーション）を木構造上で選択・拡張・更新（UCTアルゴリズム）することで、広大な探索空間から最善手を確率的に収束させていく「モンテカルロ木探索（MCTS）」のアルゴリズム数理",
+    "has_image": true,
+    "url": "stories/ep92-monte-carlo-tree-search-alphago-game-math.html",
+    "image": "assets/images/ep92-monte-carlo-tree-search-alphago-game-math.png",
+    "char_count": 7490
   }
 ]

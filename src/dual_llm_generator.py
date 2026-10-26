@@ -1413,6 +1413,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully observing excited festival visitors querying the privacy-preserving survey algorithm without revealing personal secrets.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in brightly lit festival seminar hall.",
         ),
+        "ep88-cosmic-microwave-background-big-bang-radiometry": _koma.__func__(
+            "two high school girl rivals standing with determined expressions at an outdoor radio astronomy horn antenna observation deck.",
+            "a kind female radio astronomer with gentle smiling eyes demonstrating a Dicke radiometer and black-body microwave spectrum on a portable screen.",
+            "both rival girls smiling cheerfully and giving each other a supportive high-five as their joint antenna data plots a clean 2.7 Kelvin Planck radiation curve.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit radio observatory.",
+        ),
+        "ep89-quantum-computing-shors-algorithm-number-theory": _koma.__func__(
+            "a cute high school girl looking down at an overwhelming algebra notebook with a discouraged expression in a quiet mathematics seminar room.",
+            "a kind female quantum computer scientist with gentle smiling eyes comforting her and drawing quantum Fourier transform wave interference patterns on a blackboard.",
+            "the high school girl smiling with renewed confidence and shining eyes as she understands how quantum phase estimation finds periodic factors.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit mathematics research library.",
+        ),
+        "ep90-crispr-base-editing-precision-genome-medicine": _koma.__func__(
+            "a cute high school girl acting as a student mentor with a gentle smile, explaining molecular biology to an eager junior high visitor in a laboratory.",
+            "a smiling female molecular geneticist with kind eyes holding a colorful DNA double-helix model with a pencil-and-eraser base editor tool.",
+            "both characters smiling excitedly watching a digital molecular animation showing a single cytidine base cleanly converting to thymine without breaking the DNA backbone.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in bright sunlit genetics laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

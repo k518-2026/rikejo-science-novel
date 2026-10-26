@@ -2248,5 +2248,55 @@
         "query": "10.1038/s41586-019-1711-4"
       }
     ]
+  },
+  {
+    "id": "ep91-quantum-entanglement-bells-theorem-nonlocality",
+    "episode_num": 91,
+    "title": "月が見ていなくても世界はあるか――ベルの不等式の破れと量子非局所性",
+    "faculty": "理学部・物理学科 ／ 量子基礎物理・光量子情報実験室",
+    "protagonist": "天道 鈴音（てんどう すずね・高校2年生・天文兼物理部）",
+    "mentor": "神楽坂 舞（かぐらざか まい・助教・量子光学・光子もつれ実験／高校物理教職担当）",
+    "theme": "離れた2つの粒子が光速を超えて相関を持つように見える「量子もつれ」に対し、アインシュタインの局所実在論（隠れた変数理論）が成立するならば満たすべき限界「ベルの不等式（CHSH不等式）」を、アスペらの実験が決定的に破って「世界は局所実在論的ではない」ことを証明した現代物理学の革命（2022年ノーベル物理学賞）",
+    "modern_tech": "自発的パラメトリック下方変換（SPDC）もつれ光子対光源、CHSH型ベルの不等式検証装置、時間相関単一光子計数法（TCSPC）、ループホールフリー・ベル検証",
+    "summary": "【パターン1：日常の謎・トラブル解決（名探偵型）】物理部の実験室で「何度光子の偏光を測定しても、古典的な確率計算より強い相関が出てしまう。測定器のノイズか回路のバグでは？」という異常現象が発生。鈴音は舞助教の指導のもと、2つの光子が時空を超えて結びつく「ベルの不等式の破れ」の本格検証に乗り出す。古典的な隠れた変数の上限（S ≤ 2）を打ち破り、量子力学の予言通り 2√2 ≈ 2.82 に達する鮮やかな測定データが得られた瞬間、日常の常識が覆るカタルシスに息を呑み、世界の真実を次代に伝える高校物理の教職を志す。",
+    "crossref_queries": [
+      {
+        "label": "EPRパラドックスと局所隠れた変数理論を検証するベルの不等式の導出（Bell / 歴史的論文）",
+        "query": "Bell On the Einstein Podolsky Rosen paradox 1964"
+      },
+      {
+        "label": "実験室系で検証可能なCHSH型ベルの不等式の提唱（Clauser, Horne, Shimony, Holt）",
+        "query": "Clauser Proposed Experiment to Test Local Hidden Variable Theories 1969"
+      },
+      {
+        "label": "タイムライクに分離された偏光板を用いたベルの不等式の破れの決定的実証（Aspect et al. / ノーベル物理学賞）",
+        "query": "Aspect Experimental Realization of Einstein Podolsky Rosen Bohm Gedankenexperiment 1982"
+      }
+    ]
+  },
+  {
+    "id": "ep92-monte-carlo-tree-search-alphago-game-math",
+    "episode_num": 92,
+    "title": "ランダムな枝が切り拓く神の一手――モンテカルロ木探索（MCTS）とゲーム数理情報学",
+    "faculty": "情報理工学部・知能情報学科 ／ 離散アルゴリズム・意思決定数理研究室",
+    "protagonist": "棋馬 綾香（きば あやか・高校2年生・囲碁将棋部兼情報部）",
+    "mentor": "藤咲 詩織（ふじさき しおり・助教・機械学習・ゲーム木探索数理／高校「情報」教職担当）",
+    "theme": "局面の評価関数を人間が手作業で作る限界を破り、ランダムなプレイアウト（乱数シミュレーション）を木構造上で選択・拡張・更新（UCTアルゴリズム）することで、広大な探索空間から最善手を確率的に収束させていく「モンテカルロ木探索（MCTS）」のアルゴリズム数理",
+    "modern_tech": "UCTアルゴリズム（Upper Confidence Bound applied to Trees）、多腕バンディット問題の探査と活用のトレードオフ、ディープニューラルネットワーク（方策・価値ネットワーク）融合、AlphaGo探索エンジン",
+    "summary": "【パターン3：文化祭・オープンキャンパスの出展バトル】文化祭の出し物として「生徒や先生が誰でも対局できるミニ囲碁・オセロAI対戦ブース」を企画した綾香。しかし全探索では思考時間が長すぎてPCがフリーズし、単純な評価関数では初心者にすら負けてしまう。詩織助教から「当てずっぽうの乱数勝負（モンテカルロ）を賢く木構造に積み上げる手法」を伝授され、直感的な数式で探査と活用を両立させたUCTアルゴリズムを実装。来場者の長蛇の列と白熱の対局が生まれ、大喝采を浴びる中で情報教育の面白さに開眼する。",
+    "crossref_queries": [
+      {
+        "label": "モンテカルロ木探索（MCTS）の効率的選択・バックアップオペレータの提唱（Coulom）",
+        "query": "Coulom Efficient Selectivity and Backup Operators in Monte Carlo Tree Search 2006"
+      },
+      {
+        "label": "バンディット理論に基づく木探索アルゴリズムUCTの定式化（Kocsis & Szepesvári）",
+        "query": "Kocsis Bandit Based Monte Carlo Planning 2006"
+      },
+      {
+        "label": "深層ニューラルネットワークとモンテカルロ木探索の融合による囲碁の極致（Silver et al. / AlphaGo Nature）",
+        "query": "10.1038/nature16961"
+      }
+    ]
   }
 ]

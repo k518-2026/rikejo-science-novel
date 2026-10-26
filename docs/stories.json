@@ -1078,5 +1078,17 @@
     "url": "stories/ep90-crispr-base-editing-precision-genome-medicine.html",
     "image": "assets/images/ep90-crispr-base-editing-precision-genome-medicine.png",
     "char_count": 7471
+  },
+  {
+    "no": 91,
+    "work_id": "ep91-quantum-entanglement-bells-theorem-nonlocality",
+    "title": "月が見ていなくても世界はあるか――ベルの不等式の破れと量子非局所性",
+    "faculty": "理学部・物理学科 ／ 量子基礎物理・光量子情報実験室",
+    "field": "数学・数理科学",
+    "theme": "離れた2つの粒子が光速を超えて相関を持つように見える「量子もつれ」に対し、アインシュタインの局所実在論（隠れた変数理論）が成立するならば満たすべき限界「ベルの不等式（CHSH不等式）」を、アスペらの実験が決定的に破って「世界は局所実在論的ではない」ことを証明した現代物理学の革命（2022年ノーベル物理学賞）",
+    "has_image": true,
+    "url": "stories/ep91-quantum-entanglement-bells-theorem-nonlocality.html",
+    "image": "assets/images/ep91-quantum-entanglement-bells-theorem-nonlocality.png",
+    "char_count": 7611
   }
 ]

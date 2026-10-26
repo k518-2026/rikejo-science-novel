@@ -1431,6 +1431,18 @@ class DualLLMStoryGenerator:
             "both characters smiling excitedly watching a digital molecular animation showing a single cytidine base cleanly converting to thymine without breaking the DNA backbone.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in bright sunlit genetics laboratory.",
         ),
+        "ep91-quantum-entanglement-bells-theorem-nonlocality": _koma.__func__(
+            "a cute high school girl with a determined investigative expression examining an unexpected photon polarization coincidence counter in a dark optical physics lab.",
+            "a kind female quantum physicist with gentle smiling eyes explaining Bell inequality violation and spooky action at a distance on a clean whiteboard.",
+            "both characters smiling cheerfully looking at a real-time data curve breaking the classical limit of 2 and reaching 2.82 on a display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in bright modern quantum optics laboratory.",
+        ),
+        "ep92-monte-carlo-tree-search-alphago-game-math": _koma.__func__(
+            "a cute high school girl setting up an interactive AI game tournament booth with wooden Go boards and laptops in a colorful school festival hall.",
+            "a smiling female computer scientist with kind eyes showing an expanding Monte Carlo search tree and UCB1 bandit formula on a whiteboard.",
+            "both characters smiling cheerfully observing excited festival visitors playing against the fast probabilistic tree search AI without freezing.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit festival hall.",
+        ),
     }
 
     def generate_english_image_prompt(

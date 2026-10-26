@@ -1066,5 +1066,17 @@
     "url": "stories/ep89-quantum-computing-shors-algorithm-number-theory.html",
     "image": "assets/images/ep89-quantum-computing-shors-algorithm-number-theory.png",
     "char_count": 7190
+  },
+  {
+    "no": 90,
+    "work_id": "ep90-crispr-base-editing-precision-genome-medicine",
+    "title": "二重らせんを傷つけずに書き換える魔法のペン――CRISPR塩基編集（Base Editing）と精密遺伝子医療",
+    "faculty": "理学部・生物学科 ／ ゲノム工学・分子遺伝治療研究室",
+    "field": "生命科学・バイオ・医学",
+    "theme": "従来のCRISPR-Cas9のようにDNAの二重鎖を完全に切断（DSB）することなく、デアミナーゼ（脱アミノ化酵素）を融合した不活化Cas9（dCas9/nCas9）を用いて標的の一塩基だけをC→TやA→Gに高精度で置換する「塩基編集（Base Editing）」およびプライム編集の分子機構",
+    "has_image": true,
+    "url": "stories/ep90-crispr-base-editing-precision-genome-medicine.html",
+    "image": "assets/images/ep90-crispr-base-editing-precision-genome-medicine.png",
+    "char_count": 7471
   }
 ]

@@ -1,8 +1,8 @@
 # 📋 分散ローカルLLM 自動作業リスト (`rikejo-science-novel`)
 
 - **会話ID**: `03e1e31e-29c5-4db4-b211-06e49e17b8bd`
-- **最終同期日時 (JST)**: `2026-10-20T09:00:01`
-- **進捗サマリー**: 全 **75** 話 （完了: **75** / 挿絵待ち: **0** / **PC起動時実行キュー(`queued`)**: **0** / プロット作成済: **0** / 未着手待機: **0**）
+- **最終同期日時 (JST)**: `2026-10-26T17:23:45`
+- **進捗サマリー**: 全 **90** 話 （完了: **89** / 挿絵待ち: **0** / **PC起動時実行キュー(`queued`)**: **1** / プロット作成済: **0** / 未着手待機: **0**）
 
 ## 🖥️ 各ローカルLLMサーバーの役割分担（メインPC電源オフ時も各ノード単体で自律実行）
 
@@ -16,19 +16,19 @@
 
 | 話数 | タスクID | タイトル | 学部・研究室 | 状態 (`status`) | 次回担当ライター (交互割当) |
 |:---:|:---|:---|:---|:---:|:---|
-| - | - | （全エピソード完了済み・次回起動時に新規テーマ自動生成） | - | Completed | `sff7020` / `rtx5060lp` |
+| #90 | `ep90-crispr-base-editing-precision-genome-medicine` | 二重らせんを傷つけずに書き換える魔法のペン――CRISPR塩基編集（Base Editing）と精密遺伝子医療 | 理学部・生物学科 ／ ゲノム工学・分子遺伝治療研究室 | `queued` | ✨ **プライマリ `rtx5060lp`** (`shosetsu` 叙情ノベル調) |
 
 ## ✅ 完了済みエピソード（最新10件）
 
 | 話数 | タスクID | タイトル | 執筆担当ノード | 執筆日 | 校閲 (`sff7020`) | 挿絵 (`kenomac-mini`) |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|
-| #75 | `ep75-genetic-programming-symbolic-regression-evolution` | 数式が自ら進化する樹木――遺伝的プログラミングと記号回帰のアルゴリズム | `rtx5060lp` | 2026-10-20 | 未校閲 | 🎨 (kenomac-mini) |
-| #74 | `ep74-atmospheric-photochemistry-ozone-hole-catalysis` | 極夜の成層圏が解いた塩素の連鎖――オゾン層破壊の光化学と地球の盾 | `rtx5060lp` | 2026-10-20 | 未校閲 | 🎨 (kenomac-mini) |
-| #73 | `ep73-quantum-sensing-diamond-nv-center` | ダイヤモンドの傷が診る生体分子――NVセンターと極限量子センシング | `rtx5060lp` | 2026-10-20 | 未校閲 | 🎨 (kenomac-mini) |
-| #72 | `ep72-finite-field-cryptography-elliptic-curves-security` | 有限の世界で織りなす安全の鎖――楕円曲線暗号と数論幾何学のセキュリティ | `rtx5060lp` | 2026-10-19 | 未校閲 | 🎨 (kenomac-mini) |
-| #71 | `ep71-quantum-dots-nanocrystals-colloidal-chemistry` | 大きさが色を決めるナノの魔法――量子ドットとコロイド半導体化学 | `rtx5060lp` | 2026-10-19 | 未校閲 | 🎨 (kenomac-mini) |
-| #70 | `ep70-graph-isomorphism-complexity-quasipolynomial` | 見かけが違っても同じ構造――グラフ同型問題と計算複雑性の迷宮 | `rtx5060lp` | 2026-10-19 | 未校閲 | 🎨 (kenomac-mini) |
-| #69 | `ep69-prime-numbers-bounded-gaps-analytic-number-theory` | 無限の星屑に潜む等差数列――素数の間隔と解析的数論の地平 | `rtx5060lp` | 2026-10-18 | 未校閲 | 🎨 (kenomac-mini) |
-| #68 | `ep68-cryosphere-ice-albedo-feedback-climate` | 白い氷が世界を冷ます――海氷アルベドフィードバックと極域気候科学 | `rtx5060lp` | 2026-10-18 | 未校閲 | 🎨 (kenomac-mini) |
-| #67 | `ep67-metal-organic-frameworks-porous-materials` | スプーン一杯に広がるサッカー場――金属有機構造体（MOF/PCP）とナノ細孔の化学 | `rtx5060lp` | 2026-10-18 | 未校閲 | 🎨 (kenomac-mini) |
-| #66 | `ep66-paleomagnetism-geomagnetic-reversal-chiba-period` | 地層の砂粒が記憶した北と南――地磁気逆転の古地磁気学とチバニアンの地球科学 | `rtx5060lp` | 2026-10-18 | 未校閲 | 🎨 (kenomac-mini) |
+| #89 | `ep89-quantum-computing-shors-algorithm-number-theory` | 量子の波がほどく素因数分解――ショアのアルゴリズムと量子超越性の数理 | `rtx5060lp` | 2026-10-25 | 未校閲 | 🎨 (kenomac-mini) |
+| #88 | `ep88-cosmic-microwave-background-big-bang-radiometry` | 二点七ケルビンの静寂が語るビッグバン――宇宙マイクロ波背景放射（CMB）と電波天文学の原点 | `rtx5060lp` | 2026-10-25 | 未校閲 | 🎨 (kenomac-mini) |
+| #87 | `ep87-differential-privacy-laplace-mechanism-cryptography` | 雑音のヴェールが守る個人の秘密――差分プライバシーと数理統計の防壁 | `rtx5060lp` | 2026-10-23 | 未校閲 | 🎨 (kenomac-mini) |
+| #86 | `ep86-radiocarbon-dating-accelerator-mass-spectrometry` | 炭素十四が刻んだ五万年の鼓動――放射性炭素年代測定と加速器質量分析の地球化学 | `rtx5060lp` | 2026-10-23 | 未校閲 | 🎨 (kenomac-mini) |
+| #85 | `ep85-optogenetics-neural-circuits-light-control` | 青い閃光が灯す記憶のシナプス――光遺伝学（オプトジェネティクス）と神経回路の生体制御 | `rtx5060lp` | 2026-10-23 | 未校閲 | 🎨 (kenomac-mini) |
+| #84 | `ep84-polynomial-time-primality-aks-algorithm-number-theory` | 素数の扉を開く多項式の鍵――AKS素数判定法と計算複雑性の奇跡 | `rtx5060lp` | 2026-10-21 | 未校閲 | 🎨 (kenomac-mini) |
+| #83 | `ep83-convolutional-neural-networks-visual-cortex-ai` | 視覚の受容野を畳み込むレンズ――畳み込みニューラルネットワーク（CNN）と画像認識の幾何学 | `rtx5060lp` | 2026-10-21 | 未校閲 | 🎨 (kenomac-mini) |
+| #82 | `ep82-quantum-hall-effect-topology-metrology` | 二次元の電子が刻む不変の階段――量子ホール効果とトポロジカル抵抗標準 | `rtx5060lp` | 2026-10-21 | 未校閲 | 🎨 (kenomac-mini) |
+| #81 | `ep81-poincare-conjecture-ricci-flow-geometric-surgery` | 宇宙の形を丸める熱の方程式――リッチフローとポアンカレ予想の解決 | `rtx5060lp` | 2026-10-21 | 未校閲 | 🎨 (kenomac-mini) |
+| #80 | `ep80-ribozyme-rna-world-origin-of-life` | 酵素の帽子を脱いだ核酸――リボザイムと太古のRNAワールド | `rtx5060lp` | 2026-10-21 | 未校閲 | 🎨 (kenomac-mini) |

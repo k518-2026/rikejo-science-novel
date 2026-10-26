@@ -1054,5 +1054,17 @@
     "url": "stories/ep88-cosmic-microwave-background-big-bang-radiometry.html",
     "image": "assets/images/ep88-cosmic-microwave-background-big-bang-radiometry.png",
     "char_count": 7877
+  },
+  {
+    "no": 89,
+    "work_id": "ep89-quantum-computing-shors-algorithm-number-theory",
+    "title": "量子の波がほどく素因数分解――ショアのアルゴリズムと量子超越性の数理",
+    "faculty": "理学部・数学科 ／ 大学院数理科学研究科（量子アルゴリズム・計算数理研究室）",
+    "field": "数学・数理科学",
+    "theme": "古典コンピュータでは超指数時間（準指数時間）を要する巨大合成数の素因数分解を、周期関数の位相推定と量子フーリエ変換（QFT）による量子の重ね合わせと干渉を利用して多項式時間で解いてしまうショアのアルゴリズム（Shor 1994）",
+    "has_image": true,
+    "url": "stories/ep89-quantum-computing-shors-algorithm-number-theory.html",
+    "image": "assets/images/ep89-quantum-computing-shors-algorithm-number-theory.png",
+    "char_count": 7190
   }
 ]

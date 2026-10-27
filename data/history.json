@@ -262,5 +262,20 @@
       "Parisi, A., Sturani, R. (2018). Gravitational waves from neutron star excitations in a binary inspiral. *Physical Review D*, 97(4). [https://doi.org/10.1103/physrevd.97.043015](https://doi.org/10.1103/physrevd.97.043015)",
       "Aso, Y., Michimura, Y., Somiya, K., Ando, M., Miyakawa, O., Sekiguchi, T., et al. (2013). Interferometer design of the KAGRA gravitational wave detector. *Physical Review D*, 88(4). [https://doi.org/10.1103/physrevd.88.043007](https://doi.org/10.1103/physrevd.88.043007)"
     ]
+  },
+  {
+    "work_id": "ep19-mof-porous-coordination-polymers-carbon-capture",
+    "episode_num": 19,
+    "faculty": "理学部・化学科 ／ 高等研究院（錯体化学・多孔性材料研究室）",
+    "theme": "多孔性配位高分子（PCP / MOF：Metal-Organic Frameworks）によるCO2分離回収と砂漠空気からの水回収",
+    "episode_title": "角砂糖ひと粒にサッカー場が広がる結晶――空気から水と未来を集める化学",
+    "posted_at": "2026-10-28T08:58:37.030976+09:00",
+    "file_path": "content/2026-10-06_ep19_mof_porous_coordination_polymers_carbon_capture.md",
+    "status": "publish",
+    "references": [
+      "Kitagawa, S., Kitaura, R., Noro, S. (2004). Functional Porous Coordination Polymers. *Angewandte Chemie International Edition*, 43(18), 2334-2375. [https://doi.org/10.1002/anie.200300610](https://doi.org/10.1002/anie.200300610)",
+      "Li, H., Eddaoudi, M., O'Keeffe, M., Yaghi, O. M. (1999). Design and synthesis of an exceptionally stable and highly porous metal-organic framework. *Nature*, 402(6759), 276-279. [https://doi.org/10.1038/46248](https://doi.org/10.1038/46248)",
+      "Kim, H., Yang, S., Rao, S. R., Narayanan, S., Kapustin, E. A., Furukawa, H., et al. (2017). Water harvesting from air with metal-organic frameworks powered by natural sunlight. *Science*, 356(6336), 430-434. [https://doi.org/10.1126/science.aam8743](https://doi.org/10.1126/science.aam8743)"
+    ]
   }
 ]

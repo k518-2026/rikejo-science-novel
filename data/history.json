@@ -247,5 +247,20 @@
       "Andersen, E. S., Dong, M., Nielsen, M. M., Jahn, K., Subramani, R., Mamdouh, W., et al. (2009). Self-assembly of a nanoscale DNA box with a controllable lid. *Nature*, 459(7243), 73-76. [https://doi.org/10.1038/nature07971](https://doi.org/10.1038/nature07971)",
       "Douglas, S. M., Bachelet, I., Church, G. M. (2012). A Logic-Gated Nanorobot for Targeted Transport of Molecular Payloads. *Science*, 335(6070), 831-834. [https://doi.org/10.1126/science.1214081](https://doi.org/10.1126/science.1214081)"
     ]
+  },
+  {
+    "work_id": "ep18-gravitational-waves-laser-interferometer",
+    "episode_num": 18,
+    "faculty": "理学部・物理学科 ／ 宇宙重力波観測研究センター（レーザー干渉計実験室）",
+    "theme": "レーザー干渉計による重力波直接検出（LIGO/KAGRA）と連星中性子星合体による重元素合成（キロノヴァ）",
+    "episode_title": "時空のさざ波を聴く地下の望遠鏡――ブラックホール連星と光の干渉計",
+    "posted_at": "2026-10-27T09:03:35.152763+09:00",
+    "file_path": "content/2026-10-06_ep18_gravitational_waves_laser_interferometer.md",
+    "status": "publish",
+    "references": [
+      "Hawke, I. (2021). Review: \"Reproducing GW150914: the first observation of gravitational waves from a binary black hole merger\". *Wiley*. [https://doi.org/10.22541/au.161220228.87275329/v1](https://doi.org/10.22541/au.161220228.87275329/v1)",
+      "Parisi, A., Sturani, R. (2018). Gravitational waves from neutron star excitations in a binary inspiral. *Physical Review D*, 97(4). [https://doi.org/10.1103/physrevd.97.043015](https://doi.org/10.1103/physrevd.97.043015)",
+      "Aso, Y., Michimura, Y., Somiya, K., Ando, M., Miyakawa, O., Sekiguchi, T., et al. (2013). Interferometer design of the KAGRA gravitational wave detector. *Physical Review D*, 88(4). [https://doi.org/10.1103/physrevd.88.043007](https://doi.org/10.1103/physrevd.88.043007)"
+    ]
   }
 ]

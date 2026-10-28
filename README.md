@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **94** 話（うち挿絵付き **94** 話 / 最終更新: 2026-10-29 07:38 JST）
+- **収録作品数**: 全 **95** 話（うち挿絵付き **95** 話 / 最終更新: 2026-10-29 07:44 JST）
 
 ---
 
@@ -108,6 +108,7 @@
 | 92 | **[ランダムな枝が切り拓く神の一手――モンテカルロ木探索で咲かせる「知る歓び」](https://k518-2026.github.io/rikejo-science-novel/stories/ep92-monte-carlo-tree-search-alphago-game-math.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep92-monte-carlo-tree-search-alphago-game-math.html) | [📄原稿](content/2026-10-26_ep92_monte_carlo_tree_search_alphago_game_math.md) | [🎨挿絵](content/2026-10-26_ep92_monte_carlo_tree_search_alphago_game_math.png) | 情報理工学部・知能情報学科 ／ 離散アルゴリズム・意思決定数理研究室 | 局面の評価関数を人間が手作業で作る限界を破り、ランダムなプレイアウト（乱数シミュレーション）を木構造上で選択・拡張・更新（UCTアルゴリズム）することで、広大な探索空間から最善手を確率的に収束させていく「モンテカルロ木探索（MCTS）」のアルゴリズム数理 | 7,490字 |
 | 93 | **[天体の時計が刻む氷河期の鼓動――ミランコビッチ・サイクルと軌道古気候学](https://k518-2026.github.io/rikejo-science-novel/stories/ep93-orbital-forcing-milankovitch-cycles-paleoclimate.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep93-orbital-forcing-milankovitch-cycles-paleoclimate.html) | [📄原稿](content/2026-10-29_ep93_orbital_forcing_milankovitch_cycles_paleoclimate.md) | [🎨挿絵](content/2026-10-29_ep93_orbital_forcing_milankovitch_cycles_paleoclimate.png) | 理学部・地球惑星環境学科 ／ 古海洋学・地球軌道古気候モデリング研究室 | 地球の公転軌道離心率（約10万年周期）・地軸の傾斜角（約4.1万年周期）・歳差運動（約2.3万年周期）という天体力学的摂動が北半球高緯度の夏季日射量を変動させ、氷期・間氷期の周期的サイクルを引き起こす「ミランコビッチ・理論（軌道強制力）」の数理天文学と古海洋堆積物（深海コア酸素同位体比）による実証 | 7,378字 |
 | 94 | **[公開された南京錠と秘密の鍵――RSA公開鍵暗号と合同式の幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep94-public-key-rsa-cryptography-modular-arithmetic.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep94-public-key-rsa-cryptography-modular-arithmetic.html) | [📄原稿](content/2026-10-29_ep94_public_key_rsa_cryptography_modular_arithmetic.md) | [🎨挿絵](content/2026-10-29_ep94_public_key_rsa_cryptography_modular_arithmetic.png) | 理学部・数学科 ／ 情報数理科学研究室（代数的暗号理論・計算複雑性） | 誰でも鍵をかけられる「公開鍵」と本人しか開けられない「秘密鍵」を分離し、巨大素数の積の一方向性とオイラーの定理・フェルマーの小定理に基づく合同式（剰余算）によって安全な通信を実現する「RSA公開鍵暗号（1978年）」の数学的構造 | 7,966字 |
+| 95 | **[回折の壁を打ち破る光のドーナツ――超解像蛍光顕微鏡（STED）と分子ナノバイオロジー](https://k518-2026.github.io/rikejo-science-novel/stories/ep95-super-resolution-microscopy-sted-nanoscopy.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep95-super-resolution-microscopy-sted-nanoscopy.html) | [📄原稿](content/2026-10-29_ep95_super_resolution_microscopy_sted_nanoscopy.md) | [🎨挿絵](content/2026-10-29_ep95_super_resolution_microscopy_sted_nanoscopy.png) | 理学部・物理学科 ／ 生体分子フォトニクス・超解像ナノ計測研究室 | 光の波としての性質によるアッベの回折限界（約200nm）を、誘導放出を利用したドーナツ型レーザービームで外周部の蛍光分子を強制消光させることで突破し、十数ナノメートルの極限解像度を達成する「STED（誘導放出抑制）顕微鏡」（2014年ノーベル化学賞） | 7,536字 |
 
 ---
 

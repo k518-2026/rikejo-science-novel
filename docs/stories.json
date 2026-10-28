@@ -1126,5 +1126,17 @@
     "url": "stories/ep94-public-key-rsa-cryptography-modular-arithmetic.html",
     "image": "assets/images/ep94-public-key-rsa-cryptography-modular-arithmetic.png",
     "char_count": 7966
+  },
+  {
+    "no": 95,
+    "work_id": "ep95-super-resolution-microscopy-sted-nanoscopy",
+    "title": "回折の壁を打ち破る光のドーナツ――超解像蛍光顕微鏡（STED）と分子ナノバイオロジー",
+    "faculty": "理学部・物理学科 ／ 生体分子フォトニクス・超解像ナノ計測研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "光の波としての性質によるアッベの回折限界（約200nm）を、誘導放出を利用したドーナツ型レーザービームで外周部の蛍光分子を強制消光させることで突破し、十数ナノメートルの極限解像度を達成する「STED（誘導放出抑制）顕微鏡」（2014年ノーベル化学賞）",
+    "has_image": true,
+    "url": "stories/ep95-super-resolution-microscopy-sted-nanoscopy.html",
+    "image": "assets/images/ep95-super-resolution-microscopy-sted-nanoscopy.png",
+    "char_count": 7536
   }
 ]

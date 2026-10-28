@@ -1443,6 +1443,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully observing excited festival visitors playing against the fast probabilistic tree search AI without freezing.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit festival hall.",
         ),
+        "ep93-orbital-forcing-milankovitch-cycles-paleoclimate": _koma.__func__(
+            "a cute high school girl and a rival student debating intensely over deep-sea sediment core climate graphs in an earth science laboratory.",
+            "a smiling female paleoclimatologist with gentle eyes pointing at orbital eccentricity, obliquity, and precession cycle models on a blackboard.",
+            "both students smiling excitedly discovering the 100,000-year and 41,000-year spectral peak resonance in marine isotope records on a screen.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit geology laboratory.",
+        ),
+        "ep94-public-key-rsa-cryptography-modular-arithmetic": _koma.__func__(
+            "a cute high school girl sitting at a desk with a troubled look over clock arithmetic and prime factorization math problems.",
+            "a kind female mathematician with smiling eyes holding an open brass padlock and sketching modular exponentiation on a whiteboard.",
+            "both characters smiling cheerfully watching a clean Python demonstration of RSA public-key encryption and decryption succeed on a laptop.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in modern bright math laboratory.",
+        ),
+        "ep95-super-resolution-microscopy-sted-nanoscopy": _koma.__func__(
+            "a cute high school girl mentoring a puzzled junior student in front of a blurry conventional fluorescence optical microscope.",
+            "a smiling female optical physicist with gentle eyes explaining the donut-shaped STED depletion laser and breaking Abbe diffraction limit on a whiteboard.",
+            "both students smiling with bright eyes watching nanoscale cellular tubulin filaments resolve crisply under 20-nanometer super-resolution imaging.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in bright optics laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

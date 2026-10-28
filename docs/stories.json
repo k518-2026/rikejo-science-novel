@@ -1114,5 +1114,17 @@
     "url": "stories/ep93-orbital-forcing-milankovitch-cycles-paleoclimate.html",
     "image": "assets/images/ep93-orbital-forcing-milankovitch-cycles-paleoclimate.png",
     "char_count": 7378
+  },
+  {
+    "no": 94,
+    "work_id": "ep94-public-key-rsa-cryptography-modular-arithmetic",
+    "title": "公開された南京錠と秘密の鍵――RSA公開鍵暗号と合同式の幾何学",
+    "faculty": "理学部・数学科 ／ 情報数理科学研究室（代数的暗号理論・計算複雑性）",
+    "field": "数学・数理科学",
+    "theme": "誰でも鍵をかけられる「公開鍵」と本人しか開けられない「秘密鍵」を分離し、巨大素数の積の一方向性とオイラーの定理・フェルマーの小定理に基づく合同式（剰余算）によって安全な通信を実現する「RSA公開鍵暗号（1978年）」の数学的構造",
+    "has_image": true,
+    "url": "stories/ep94-public-key-rsa-cryptography-modular-arithmetic.html",
+    "image": "assets/images/ep94-public-key-rsa-cryptography-modular-arithmetic.png",
+    "char_count": 7966
   }
 ]

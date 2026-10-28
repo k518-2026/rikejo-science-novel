@@ -2298,5 +2298,80 @@
         "query": "10.1038/nature16961"
       }
     ]
+  },
+  {
+    "id": "ep93-orbital-forcing-milankovitch-cycles-paleoclimate",
+    "episode_num": 93,
+    "title": "天体の時計が刻む氷河期の鼓動――ミランコビッチ・サイクルと軌道古気候学",
+    "faculty": "理学部・地球惑星環境学科 ／ 古海洋学・地球軌道古気候モデリング研究室",
+    "protagonist": "天川 碧（あまかわ あおい・高校2年生・天文兼地学部）",
+    "mentor": "佐伯 暦（さえき こよみ・助教・古気候天文学・堆積層序数理／高校地学教職担当）",
+    "theme": "地球の公転軌道離心率（約10万年周期）・地軸の傾斜角（約4.1万年周期）・歳差運動（約2.3万年周期）という天体力学的摂動が北半球高緯度の夏季日射量を変動させ、氷期・間氷期の周期的サイクルを引き起こす「ミランコビッチ・理論（軌道強制力）」の数理天文学と古海洋堆積物（深海コア酸素同位体比）による実証",
+    "modern_tech": "深海堆積物コア酸素同位体比層序（δ¹⁸O）、天文年代チューニング（Astrochronology）、天体力学長期間軌道計算（La2004モデル）、フーリエ周波数解析スペクトル",
+    "summary": "【パターン4：ライバル・天敵との衝突と共闘】「地球の過去の氷河期は火山活動や大気成分の急変が主因だ」と主張する地学部のライバル生徒と、「太陽系天体の重力相互作用による地球軌道の変化がペースメーカーだ」と信じる碧が地学オリンピック予選課題の気候データ解析で真っ向から衝突。暦助教の仲介で、深海コアの酸素同位体比時系列にフーリエ変換をかける共同検証を開始。見事に10万年・4万年・2万年の天体軌道周期ピークが鮮やかに浮かび上がり、両者の視点が地球内部と宇宙の相互作用として結びつく。ライバルと固い握手を交わした碧は、大宇宙と地球の共鳴を伝える高校地学の教職を目指す。",
+    "crossref_queries": [
+      {
+        "label": "深海堆積物コア記録によるミランコビッチ氷期サイクルの実証（Hays, Imbrie, Shackleton / Science金字塔）",
+        "query": "Hays Imbrie Shackleton Variations in the Earths Orbit Pacemaker of the Ice Ages Science 1976"
+      },
+      {
+        "label": "第四紀気候変動における日射量長期変動の天文計算法（Berger / J. Atmos. Sci.）",
+        "query": "10.1175/1520-0469(1978)035<2362:ltvodi>2.0.co;2"
+      },
+      {
+        "label": "過去数千万年にわたる地球軌道計算と日射量数値解（Laskar et al. / A&A）",
+        "query": "Laskar A long-term numerical solution for the insolation quantities of the Earth 2004"
+      }
+    ]
+  },
+  {
+    "id": "ep94-public-key-rsa-cryptography-modular-arithmetic",
+    "episode_num": 94,
+    "title": "公開された南京錠と秘密の鍵――RSA公開鍵暗号と合同式の幾何学",
+    "faculty": "理学部・数学科 ／ 情報数理科学研究室（代数的暗号理論・計算複雑性）",
+    "protagonist": "真田 結月（さなだ ゆづき・高校2年生・数学部）",
+    "mentor": "神鳥 遥（かんどり はるか・助教・代数数論・公開鍵暗号数理／高校数学教職担当）",
+    "theme": "誰でも鍵をかけられる「公開鍵」と本人しか開けられない「秘密鍵」を分離し、巨大素数の積の一方向性とオイラーの定理・フェルマーの小定理に基づく合同式（剰余算）によって安全な通信を実現する「RSA公開鍵暗号（1978年）」の数学的構造",
+    "modern_tech": "オイラーのトーシェント関数 φ(n)、拡張ユークリッドの互除法（モジュラ逆数）、冪剰余高速計算（バイナリ法）、素因数分解困難性仮定",
+    "summary": "【パターン5：落ちこぼれ・挫折からの大逆転】合同式（mod）の計算や代数の抽象的な論理展開でつまずき、「私にはこんな記号だらけの数学をマスターする才能はない…」とテストの返却後に一人落ち込んでいた結月。遥助教から「暗号の南京錠をみんなに配って、自分だけが持っている秘密の鍵で開ける」という公開鍵の直感的なパズルを渡される。高校で習う素数と割り算の余りが、インターネット全体の安全を守る最強の盾（RSA暗号）になっている美しさに衝撃を受け、素朴な疑問こそが理解の原動力だと開眼。挫折を宝物に変え、高校数学の教員への道を笑顔で誓う。",
+    "crossref_queries": [
+      {
+        "label": "公開鍵暗号系の概念創始（Diffie & Hellman / チューリング賞）",
+        "query": "Diffie Hellman New Directions in Cryptography 1976"
+      },
+      {
+        "label": "素因数分解困難性に基づくRSA公開鍵暗号の実装方式（Rivest, Shamir, Adleman / CACM金字塔）",
+        "query": "10.1145/359340.359342"
+      },
+      {
+        "label": "素因数分解と同等な難しさを持つ公開鍵暗号関数系（Rabin / 1979）",
+        "query": "Rabin Digitalized signatures and public-key functions as intractable as factorization"
+      }
+    ]
+  },
+  {
+    "id": "ep95-super-resolution-microscopy-sted-nanoscopy",
+    "episode_num": 95,
+    "title": "回折の壁を打ち破る光のドーナツ――超解像蛍光顕微鏡（STED）と分子ナノバイオロジー",
+    "faculty": "理学部・物理学科 ／ 生体分子フォトニクス・超解像ナノ計測研究室",
+    "protagonist": "宮下 紬（みやした つむぎ・高校2年生・物理部兼生物部）",
+    "mentor": "白鳥 霞（しらとり かすみ・助教・光量子工学・超解像生体イメージング／高校理科教職担当）",
+    "theme": "光の波としての性質によるアッベの回折限界（約200nm）を、誘導放出を利用したドーナツ型レーザービームで外周部の蛍光分子を強制消光させることで突破し、十数ナノメートルの極限解像度を達成する「STED（誘導放出抑制）顕微鏡」（2014年ノーベル化学賞）",
+    "modern_tech": "励起レーザーパルスと誘導放出（STED）ドーナツビーム位相変調、アッベの回折限界突破（λ / 2NAの壁）、単一分子局在化（PALM/STORM）、生細胞シナプス小胞リアルタイムナノ追跡",
+    "summary": "【パターン8：後輩指導・ミニ先生体験の奮闘】オープンキャンパスで見学に来た中学生から「顕微鏡の倍率をもっと上げれば、ウイルスや分子の形まで光学顕微鏡で見えるんじゃないの？」と素朴に尋ねられ、「波の回折限界（アッベの限界）があるから光では200nmより小さいものはぼやけて見えない」と教科書通りに答えて相手をがっかりさせてしまった紬。霞助教の助言を受け、「光で光を消すドーナツ状のビーム（STED）」の仕組みを、型抜きクッキーや光のマスキング工作で直感的に実演。中学生の瞳が輝いて「光の穴を小さく絞ればもっと見えちゃうんだ！」と歓声が上がった瞬間、知識を伝える歓びと教育者への夢を胸に刻む。",
+    "crossref_queries": [
+      {
+        "label": "誘導放出抑制（STED）による回折限界突破顕微鏡の理論的提唱（Hell & Wichmann / ノーベル化学賞）",
+        "query": "Hell Breaking the diffraction resolution limit by stimulated emission stimulated emission depletion Optics Letters 1994"
+      },
+      {
+        "label": "STED顕微鏡による回折限界を超えるナノスケール蛍光解像の初実証（Klar et al. / PNAS）",
+        "query": "Klar Fluorescence microscopy with diffraction resolution barrier PNAS 2000"
+      },
+      {
+        "label": "単一蛍光分子局在化によるナノ分解能生体分子イメージング（Betzig et al. / Science）",
+        "query": "Betzig Imaging Intracellular Fluorescent Proteins at Nanometer Resolution Science 2006"
+      }
+    ]
   }
 ]

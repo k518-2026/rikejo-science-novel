@@ -1102,5 +1102,17 @@
     "url": "stories/ep92-monte-carlo-tree-search-alphago-game-math.html",
     "image": "assets/images/ep92-monte-carlo-tree-search-alphago-game-math.png",
     "char_count": 7490
+  },
+  {
+    "no": 93,
+    "work_id": "ep93-orbital-forcing-milankovitch-cycles-paleoclimate",
+    "title": "天体の時計が刻む氷河期の鼓動――ミランコビッチ・サイクルと軌道古気候学",
+    "faculty": "理学部・地球惑星環境学科 ／ 古海洋学・地球軌道古気候モデリング研究室",
+    "field": "数学・数理科学",
+    "theme": "地球の公転軌道離心率（約10万年周期）・地軸の傾斜角（約4.1万年周期）・歳差運動（約2.3万年周期）という天体力学的摂動が北半球高緯度の夏季日射量を変動させ、氷期・間氷期の周期的サイクルを引き起こす「ミランコビッチ・理論（軌道強制力）」の数理天文学と古海洋堆積物（深海コア酸素同位体比）による実証",
+    "has_image": true,
+    "url": "stories/ep93-orbital-forcing-milankovitch-cycles-paleoclimate.html",
+    "image": "assets/images/ep93-orbital-forcing-milankovitch-cycles-paleoclimate.png",
+    "char_count": 7378
   }
 ]

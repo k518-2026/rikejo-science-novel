@@ -277,5 +277,20 @@
       "Li, H., Eddaoudi, M., O'Keeffe, M., Yaghi, O. M. (1999). Design and synthesis of an exceptionally stable and highly porous metal-organic framework. *Nature*, 402(6759), 276-279. [https://doi.org/10.1038/46248](https://doi.org/10.1038/46248)",
       "Kim, H., Yang, S., Rao, S. R., Narayanan, S., Kapustin, E. A., Furukawa, H., et al. (2017). Water harvesting from air with metal-organic frameworks powered by natural sunlight. *Science*, 356(6336), 430-434. [https://doi.org/10.1126/science.aam8743](https://doi.org/10.1126/science.aam8743)"
     ]
+  },
+  {
+    "work_id": "ep20-turing-pattern-reaction-diffusion-math-biology",
+    "episode_num": 20,
+    "faculty": "理学部・数理科学科 ／ 生命理学科（数理生物学・パターン形成研究室）",
+    "theme": "アラン・チューリングの反応拡散方程式（チューリング・パターン）による生物の体表模様・形態形成の数理モデル",
+    "episode_title": "シマウマの縞模様と熱帯魚の迷路を描く偏微分方程式――数理生物学のスケッチブック",
+    "posted_at": "2026-10-29T09:21:39.317032+09:00",
+    "file_path": "content/2026-10-06_ep20_turing_pattern_reaction_diffusion_math_biology.md",
+    "status": "publish",
+    "references": [
+      "Turing, A. M. (1952). The chemical basis of morphogenesis. *Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences*, 237(641), 37-72. [https://doi.org/10.1098/rstb.1952.0012](https://doi.org/10.1098/rstb.1952.0012)",
+      "Kondo, S., Asai, R. (1995). A reaction–diffusion wave on the skin of the marine angelfish Pomacanthus. *Nature*, 376(6543), 765-768. [https://doi.org/10.1038/376765a0](https://doi.org/10.1038/376765a0)",
+      "Kondo, S., Miura, T. (2010). Reaction-Diffusion Model as a Framework for Understanding Biological Pattern Formation. *Science*, 329(5999), 1616-1620. [https://doi.org/10.1126/science.1179047](https://doi.org/10.1126/science.1179047)"
+    ]
   }
 ]

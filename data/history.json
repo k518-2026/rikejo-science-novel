@@ -292,5 +292,20 @@
       "Kondo, S., Asai, R. (1995). A reaction–diffusion wave on the skin of the marine angelfish Pomacanthus. *Nature*, 376(6543), 765-768. [https://doi.org/10.1038/376765a0](https://doi.org/10.1038/376765a0)",
       "Kondo, S., Miura, T. (2010). Reaction-Diffusion Model as a Framework for Understanding Biological Pattern Formation. *Science*, 329(5999), 1616-1620. [https://doi.org/10.1126/science.1179047](https://doi.org/10.1126/science.1179047)"
     ]
+  },
+  {
+    "work_id": "ep21-compressed-sensing-black-hole-imaging-informatics",
+    "episode_num": 21,
+    "faculty": "情報理工学部・数理情報工学科 ／ 国立天文台連携研究室",
+    "theme": "スパースモデリング（圧縮センシング・L1正則化最適化）によるイベント・ホライズン・テレスコープ（EHT）ブラックホール画像再構成と高速MRI医療応用",
+    "episode_title": "地球サイズの瞳でブラックホールの影を現像する――スパースモデリングと情報科学",
+    "posted_at": "2026-10-30T09:17:34.742793+09:00",
+    "file_path": "content/2026-10-06_ep21_compressed_sensing_black_hole_imaging_informatics.md",
+    "status": "publish",
+    "references": [
+      "Gómez, A. (2019). Visualizing the Ergosphere from Supermassive Black Hole M87 shadow image taken by Event Horizon Telescope. *Wiley*. [https://doi.org/10.22541/au.156616161.14868661](https://doi.org/10.22541/au.156616161.14868661)",
+      "Donoho, D. L. (2006). Compressed sensing. *IEEE Transactions on Information Theory*, 52(4), 1289-1306. [https://doi.org/10.1109/tit.2006.871582](https://doi.org/10.1109/tit.2006.871582)",
+      "Lustig, M., Donoho, D., Pauly, J. M. (2007). Sparse MRI: The application of compressed sensing for rapid MR imaging. *Magnetic Resonance in Medicine*, 58(6), 1182-1195. [https://doi.org/10.1002/mrm.21391](https://doi.org/10.1002/mrm.21391)"
+    ]
   }
 ]

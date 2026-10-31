@@ -1198,5 +1198,17 @@
     "url": "stories/ep100-accelerating-universe-dark-energy-type-ia-supernovae.html",
     "image": "assets/images/ep100-accelerating-universe-dark-energy-type-ia-supernovae.png",
     "char_count": 7434
+  },
+  {
+    "no": 101,
+    "work_id": "ep101-dna-double-helix-x-ray-diffraction-molecular-crystallography",
+    "title": "X 線が舞う春のキャンパス――Photo 51 と生命の二重らせんへの招待状",
+    "faculty": "理学部・物理学科 ／ 生体分子物理学・X線構造解析研究室",
+    "field": "情報学・AI",
+    "theme": "生命の遺伝情報を担うDNAの分子構造を、ロザリンド・フランクリンが撮影した歴史的X線回折写真「Photo 51」のX字状回折パターン（らせんのフーリエ変換）、シャルガフの等量則（A=T, G=C）、そして水素結合相補性に基づいて解き明かした二重らせん構造モデル（1953年、1962年ノーベル医学生理学賞）",
+    "has_image": true,
+    "url": "stories/ep101-dna-double-helix-x-ray-diffraction-molecular-crystallography.html",
+    "image": "assets/images/ep101-dna-double-helix-x-ray-diffraction-molecular-crystallography.png",
+    "char_count": 7081
   }
 ]

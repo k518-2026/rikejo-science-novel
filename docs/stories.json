@@ -1174,5 +1174,17 @@
     "url": "stories/ep98-allosteric-regulation-hemoglobin-cooperativity-structural-biology.html",
     "image": "assets/images/ep98-allosteric-regulation-hemoglobin-cooperativity-structural-biology.png",
     "char_count": 7166
+  },
+  {
+    "no": 99,
+    "work_id": "ep99-game-theory-nash-equilibrium-fixed-point-theorem",
+    "title": "誰も裏切れない沈黙の均衡――ナッシュ均衡と不動点定理の数理経済学",
+    "faculty": "理学部・数学科 ／ 応用数学・数理ゲーム理論研究室",
+    "field": "数学・数理科学",
+    "theme": "複数のプレイヤーが互いの戦略を予測し合い、誰も自分だけ戦略を変更しても得をしない状態「ナッシュ均衡（Nash Equilibrium 1950）」の存在定理。角谷の不動点定理やブラウワーの不動点定理を用いた位相空間上のトポロジカルな証明と、囚人のジレンマに代表される非協力ゲームの数理構造",
+    "has_image": true,
+    "url": "stories/ep99-game-theory-nash-equilibrium-fixed-point-theorem.html",
+    "image": "assets/images/ep99-game-theory-nash-equilibrium-fixed-point-theorem.png",
+    "char_count": 7021
   }
 ]

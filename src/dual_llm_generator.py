@@ -1461,6 +1461,24 @@ class DualLLMStoryGenerator:
             "both students smiling with bright eyes watching nanoscale cellular tubulin filaments resolve crisply under 20-nanometer super-resolution imaging.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in bright optics laboratory.",
         ),
+        "ep96-shannon-entropy-information-theory-coding": _koma.__func__(
+            "a cute high school girl looking puzzled at a server rack error monitor showing uncompressed noisy data files in a computer lab.",
+            "a smiling female computer scientist with gentle eyes drawing binary decision trees and Shannon entropy formula H equals negative sum p log p on a whiteboard.",
+            "both characters smiling cheerfully looking at a cleanly balanced Huffman coding tree compressing file sizes on a laptop screen.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in modern bright computer laboratory.",
+        ),
+        "ep97-quantum-grovers-algorithm-amplitude-amplification": _koma.__func__(
+            "a cute high school girl setting up an interactive festival booth with mysterious wooden search boxes and playing cards in a school hall.",
+            "a smiling female quantum physicist with gentle eyes showing quantum state vectors and amplitude inversion reflection on a clean blackboard.",
+            "both characters smiling excitedly watching a glowing visual demonstration showing the target probability amplitude peak rising above the average wave.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit physics laboratory.",
+        ),
+        "ep98-allosteric-regulation-hemoglobin-cooperativity-structural-biology": _koma.__func__(
+            "a cute high school girl and a rival student debating intently over sigmoidal oxygen binding curves in a biology laboratory.",
+            "a kind female structural biologist with gentle smiling eyes holding a colorful hemoglobin tetramer model showing T-state to R-state transition.",
+            "both students smiling excitedly watching a 3D molecular dynamics animation of heme iron shifting and triggering cooperative subunit rotation on a monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in bright biochemistry laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

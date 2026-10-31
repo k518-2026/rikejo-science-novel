@@ -1150,5 +1150,17 @@
     "url": "stories/ep96-shannon-entropy-information-theory-coding.html",
     "image": "assets/images/ep96-shannon-entropy-information-theory-coding.png",
     "char_count": 6744
+  },
+  {
+    "no": 97,
+    "work_id": "ep97-quantum-grovers-algorithm-amplitude-amplification",
+    "title": "重ね合わせの海を照らす鏡――グローバーの量子探索と確率振幅の反転増幅",
+    "faculty": "理学部・物理学科 ／ 量子アルゴリズム・量子情報物理研究室",
+    "field": "数学・数理科学",
+    "theme": "整列されていないN個のデータの中から目的の1つを古典アルゴリズム（O(N)）を劇的に凌駕するO(√N)ステップで発見するグローバーの量子探索アルゴリズム（1996年）と、オラクル反転と幾何学的な平均周りの反転による「確率振幅増幅（Amplitude Amplification）」の数理",
+    "has_image": true,
+    "url": "stories/ep97-quantum-grovers-algorithm-amplitude-amplification.html",
+    "image": "assets/images/ep97-quantum-grovers-algorithm-amplitude-amplification.png",
+    "char_count": 7493
   }
 ]

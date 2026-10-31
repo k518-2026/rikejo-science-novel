@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **96** 話（うち挿絵付き **96** 話 / 最終更新: 2026-10-31 09:24 JST）
+- **収録作品数**: 全 **97** 話（うち挿絵付き **97** 話 / 最終更新: 2026-10-31 09:30 JST）
 
 ---
 
@@ -110,6 +110,7 @@
 | 94 | **[公開された南京錠と秘密の鍵――RSA公開鍵暗号と合同式の幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep94-public-key-rsa-cryptography-modular-arithmetic.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep94-public-key-rsa-cryptography-modular-arithmetic.html) | [📄原稿](content/2026-10-29_ep94_public_key_rsa_cryptography_modular_arithmetic.md) | [🎨挿絵](content/2026-10-29_ep94_public_key_rsa_cryptography_modular_arithmetic.png) | 理学部・数学科 ／ 情報数理科学研究室（代数的暗号理論・計算複雑性） | 誰でも鍵をかけられる「公開鍵」と本人しか開けられない「秘密鍵」を分離し、巨大素数の積の一方向性とオイラーの定理・フェルマーの小定理に基づく合同式（剰余算）によって安全な通信を実現する「RSA公開鍵暗号（1978年）」の数学的構造 | 7,966字 |
 | 95 | **[回折の壁を打ち破る光のドーナツ――超解像蛍光顕微鏡（STED）と分子ナノバイオロジー](https://k518-2026.github.io/rikejo-science-novel/stories/ep95-super-resolution-microscopy-sted-nanoscopy.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep95-super-resolution-microscopy-sted-nanoscopy.html) | [📄原稿](content/2026-10-29_ep95_super_resolution_microscopy_sted_nanoscopy.md) | [🎨挿絵](content/2026-10-29_ep95_super_resolution_microscopy_sted_nanoscopy.png) | 理学部・物理学科 ／ 生体分子フォトニクス・超解像ナノ計測研究室 | 光の波としての性質によるアッベの回折限界（約200nm）を、誘導放出を利用したドーナツ型レーザービームで外周部の蛍光分子を強制消光させることで突破し、十数ナノメートルの極限解像度を達成する「STED（誘導放出抑制）顕微鏡」（2014年ノーベル化学賞） | 7,536字 |
 | 96 | **[曖昧さを測るサイコロの目――シャノン情報エントロピーと符号化定理の数理](https://k518-2026.github.io/rikejo-science-novel/stories/ep96-shannon-entropy-information-theory-coding.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep96-shannon-entropy-information-theory-coding.html) | [📄原稿](content/2026-10-31_ep96_shannon_entropy_information_theory_coding.md) | [🎨挿絵](content/2026-10-31_ep96_shannon_entropy_information_theory_coding.png) | 情報理工学部・情報科学科 ／ 情報理論・符号化通信数理研究室 | 情報とは何かを確率変数と対数の期待値（エントロピー H = -∑ p log p）として数学的に定式化し、曖昧さの解消量として捉えるシャノン情報理論（1948年）と、ハフマン符号化に代表される可逆圧縮の限界（情報源符号化定理） | 6,744字 |
+| 97 | **[重ね合わせの海を照らす鏡――グローバーの量子探索と確率振幅の反転増幅](https://k518-2026.github.io/rikejo-science-novel/stories/ep97-quantum-grovers-algorithm-amplitude-amplification.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep97-quantum-grovers-algorithm-amplitude-amplification.html) | [📄原稿](content/2026-10-31_ep97_quantum_grovers_algorithm_amplitude_amplification.md) | [🎨挿絵](content/2026-10-31_ep97_quantum_grovers_algorithm_amplitude_amplification.png) | 理学部・物理学科 ／ 量子アルゴリズム・量子情報物理研究室 | 整列されていないN個のデータの中から目的の1つを古典アルゴリズム（O(N)）を劇的に凌駕するO(√N)ステップで発見するグローバーの量子探索アルゴリズム（1996年）と、オラクル反転と幾何学的な平均周りの反転による「確率振幅増幅（Amplitude Amplification）」の数理 | 7,493字 |
 
 ---
 

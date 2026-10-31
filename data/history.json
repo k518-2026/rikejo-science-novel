@@ -307,5 +307,20 @@
       "Donoho, D. L. (2006). Compressed sensing. *IEEE Transactions on Information Theory*, 52(4), 1289-1306. [https://doi.org/10.1109/tit.2006.871582](https://doi.org/10.1109/tit.2006.871582)",
       "Lustig, M., Donoho, D., Pauly, J. M. (2007). Sparse MRI: The application of compressed sensing for rapid MR imaging. *Magnetic Resonance in Medicine*, 58(6), 1182-1195. [https://doi.org/10.1002/mrm.21391](https://doi.org/10.1002/mrm.21391)"
     ]
+  },
+  {
+    "work_id": "ep22-ips-organoid-regenerative-medicine-pharmacology",
+    "episode_num": 22,
+    "faculty": "薬学部・創薬生命科学科 ／ iPS細胞研究所連携ラボ",
+    "theme": "人工多能性幹細胞（iPS細胞）の分化誘導と三次元ミニ臓器（オルガノイド）による難病創薬スクリーニング",
+    "episode_title": "シャーレの上の小さな鼓動――iPS細胞オルガノイドと未来の創薬",
+    "posted_at": "2026-10-31T09:01:52.701560+09:00",
+    "file_path": "content/2026-10-06_ep22_ips_organoid_regenerative_medicine_pharmacology.md",
+    "status": "publish",
+    "references": [
+      "Takahashi, K., Tanabe, K., Ohnuki, M., Narita, M., Ichisaka, T., Tomoda, K., et al. (2007). Induction of Pluripotent Stem Cells from Adult Human Fibroblasts by Defined Factors. *Cell*, 131(5), 861-872. [https://doi.org/10.1016/j.cell.2007.11.019](https://doi.org/10.1016/j.cell.2007.11.019)",
+      "Lancaster, M. A., Renner, M., Martin, C., Wenzel, D., Bicknell, L. S., Hurles, M. E., et al. (2013). Cerebral organoids model human brain development and microcephaly. *Nature*, 501(7467), 373-379. [https://doi.org/10.1038/nature12517](https://doi.org/10.1038/nature12517)",
+      "Clevers, H. (2016). Modeling Development and Disease with Organoids. *Cell*, 165(7), 1586-1597. [https://doi.org/10.1016/j.cell.2016.05.082](https://doi.org/10.1016/j.cell.2016.05.082)"
+    ]
   }
 ]

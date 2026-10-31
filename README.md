@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **99** 話（うち挿絵付き **99** 話 / 最終更新: 2026-10-31 22:54 JST）
+- **収録作品数**: 全 **100** 話（うち挿絵付き **100** 話 / 最終更新: 2026-10-31 23:00 JST）
 
 ---
 
@@ -113,6 +113,7 @@
 | 97 | **[重ね合わせの海を照らす鏡――グローバーの量子探索と確率振幅の反転増幅](https://k518-2026.github.io/rikejo-science-novel/stories/ep97-quantum-grovers-algorithm-amplitude-amplification.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep97-quantum-grovers-algorithm-amplitude-amplification.html) | [📄原稿](content/2026-10-31_ep97_quantum_grovers_algorithm_amplitude_amplification.md) | [🎨挿絵](content/2026-10-31_ep97_quantum_grovers_algorithm_amplitude_amplification.png) | 理学部・物理学科 ／ 量子アルゴリズム・量子情報物理研究室 | 整列されていないN個のデータの中から目的の1つを古典アルゴリズム（O(N)）を劇的に凌駕するO(√N)ステップで発見するグローバーの量子探索アルゴリズム（1996年）と、オラクル反転と幾何学的な平均周りの反転による「確率振幅増幅（Amplitude Amplification）」の数理 | 7,493字 |
 | 98 | **[形を変えて酸素を届ける四重奏――ヘモグロビンの協同舞踏と、次世代の科学者・教育者の夢](https://k518-2026.github.io/rikejo-science-novel/stories/ep98-allosteric-regulation-hemoglobin-cooperativity-structural-biology.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep98-allosteric-regulation-hemoglobin-cooperativity-structural-biology.html) | [📄原稿](content/2026-10-31_ep98_allosteric_regulation_hemoglobin_cooperativity_structural_biology.md) | [🎨挿絵](content/2026-10-31_ep98_allosteric_regulation_hemoglobin_cooperativity_structural_biology.png) | 理学部・生物化学科 ／ 構造生命科学・生体超分子機能モデリング研究室 | ヘモグロビンが4つのサブユニット（テトラマー）の協同作用によって、酸素濃度が高い肺で貪欲に酸素を結合し、酸素分圧が低い末梢組織で一気に酸素を解離・放出する「アロステリック効果（MWC協同遷移モデル・KNF誘導適合モデル）」とX線結晶構造解析によるT状態（緊張型）・R状態（弛緩型）の構造変化の数理 | 7,166字 |
 | 99 | **[誰も裏切れない沈黙の均衡――ナッシュ均衡と不動点定理の数理経済学](https://k518-2026.github.io/rikejo-science-novel/stories/ep99-game-theory-nash-equilibrium-fixed-point-theorem.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep99-game-theory-nash-equilibrium-fixed-point-theorem.html) | [📄原稿](content/2026-10-31_ep99_game_theory_nash_equilibrium_fixed_point_theorem.md) | [🎨挿絵](content/2026-10-31_ep99_game_theory_nash_equilibrium_fixed_point_theorem.png) | 理学部・数学科 ／ 応用数学・数理ゲーム理論研究室 | 複数のプレイヤーが互いの戦略を予測し合い、誰も自分だけ戦略を変更しても得をしない状態「ナッシュ均衡（Nash Equilibrium 1950）」の存在定理。角谷の不動点定理やブラウワーの不動点定理を用いた位相空間上のトポロジカルな証明と、囚人のジレンマに代表される非協力ゲームの数理構造 | 7,021字 |
+| 100 | **[遠ざかる光が告げる宇宙の加速――Ia型超新星と暗黒エネルギーの謎](https://k518-2026.github.io/rikejo-science-novel/stories/ep100-accelerating-universe-dark-energy-type-ia-supernovae.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep100-accelerating-universe-dark-energy-type-ia-supernovae.html) | [📄原稿](content/2026-10-31_ep100_accelerating_universe_dark_energy_type_ia_supernovae.md) | [🎨挿絵](content/2026-10-31_ep100_accelerating_universe_dark_energy_type_ia_supernovae.png) | 理学部・天文学科 ／ 宇宙物理学・観測的宇宙論研究室 | 白色矮星のチャンドラセカール限界質量爆発による「宇宙の標準光源」Ia型超新星の精密観測から、宇宙の膨張が減速するどころか、斥力をもたらす謎の「暗黒エネルギー（Dark Energy）」によって加速膨張していることを突き止めた現代天文学最大の発見（2011年ノーベル物理学賞） | 7,434字 |
 
 ---
 

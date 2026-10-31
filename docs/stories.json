@@ -1186,5 +1186,17 @@
     "url": "stories/ep99-game-theory-nash-equilibrium-fixed-point-theorem.html",
     "image": "assets/images/ep99-game-theory-nash-equilibrium-fixed-point-theorem.png",
     "char_count": 7021
+  },
+  {
+    "no": 100,
+    "work_id": "ep100-accelerating-universe-dark-energy-type-ia-supernovae",
+    "title": "遠ざかる光が告げる宇宙の加速――Ia型超新星と暗黒エネルギーの謎",
+    "faculty": "理学部・天文学科 ／ 宇宙物理学・観測的宇宙論研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "白色矮星のチャンドラセカール限界質量爆発による「宇宙の標準光源」Ia型超新星の精密観測から、宇宙の膨張が減速するどころか、斥力をもたらす謎の「暗黒エネルギー（Dark Energy）」によって加速膨張していることを突き止めた現代天文学最大の発見（2011年ノーベル物理学賞）",
+    "has_image": true,
+    "url": "stories/ep100-accelerating-universe-dark-energy-type-ia-supernovae.html",
+    "image": "assets/images/ep100-accelerating-universe-dark-energy-type-ia-supernovae.png",
+    "char_count": 7434
   }
 ]

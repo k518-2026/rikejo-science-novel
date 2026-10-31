@@ -1162,5 +1162,17 @@
     "url": "stories/ep97-quantum-grovers-algorithm-amplitude-amplification.html",
     "image": "assets/images/ep97-quantum-grovers-algorithm-amplitude-amplification.png",
     "char_count": 7493
+  },
+  {
+    "no": 98,
+    "work_id": "ep98-allosteric-regulation-hemoglobin-cooperativity-structural-biology",
+    "title": "形を変えて酸素を届ける四重奏――ヘモグロビンの協同舞踏と、次世代の科学者・教育者の夢",
+    "faculty": "理学部・生物化学科 ／ 構造生命科学・生体超分子機能モデリング研究室",
+    "field": "数学・数理科学",
+    "theme": "ヘモグロビンが4つのサブユニット（テトラマー）の協同作用によって、酸素濃度が高い肺で貪欲に酸素を結合し、酸素分圧が低い末梢組織で一気に酸素を解離・放出する「アロステリック効果（MWC協同遷移モデル・KNF誘導適合モデル）」とX線結晶構造解析によるT状態（緊張型）・R状態（弛緩型）の構造変化の数理",
+    "has_image": true,
+    "url": "stories/ep98-allosteric-regulation-hemoglobin-cooperativity-structural-biology.html",
+    "image": "assets/images/ep98-allosteric-regulation-hemoglobin-cooperativity-structural-biology.png",
+    "char_count": 7166
   }
 ]

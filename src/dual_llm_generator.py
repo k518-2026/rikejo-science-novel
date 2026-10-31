@@ -1474,10 +1474,10 @@ class DualLLMStoryGenerator:
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit physics laboratory.",
         ),
         "ep98-allosteric-regulation-hemoglobin-cooperativity-structural-biology": _koma.__func__(
-            "a cute high school girl and a rival student debating intently over sigmoidal oxygen binding curves in a biology laboratory.",
-            "a kind female structural biologist with gentle smiling eyes holding a colorful hemoglobin tetramer model showing T-state to R-state transition.",
-            "both students smiling excitedly watching a 3D molecular dynamics animation of heme iron shifting and triggering cooperative subunit rotation on a monitor.",
-            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in bright biochemistry laboratory.",
+            "a cute high school girl holding a biochemistry binder, visiting a structural biology and macromolecular laboratory with a curious warm smile.",
+            "a kind female structural biologist with gentle smiling eyes demonstrating hemoglobin allosteric transition and subunit rotation on a clean whiteboard.",
+            "both characters smiling cheerfully looking at a colorful computer display showing sigmoidal oxygen binding curve and tetramer structural model.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit biochemistry seminar room.",
         ),
     }
 

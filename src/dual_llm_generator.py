@@ -1479,6 +1479,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully looking at a colorful computer display showing sigmoidal oxygen binding curve and tetramer structural model.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit biochemistry seminar room.",
         ),
+        "ep99-game-theory-nash-equilibrium-fixed-point-theorem": _koma.__func__(
+            "a cute high school girl looking down at a complex matrix game payoff table with a discouraged expression in a quiet mathematics seminar room.",
+            "a smiling female mathematician with gentle kind eyes stirring a cup of coffee and sketching a continuous mapping fixed point theorem on a clean whiteboard.",
+            "both characters smiling cheerfully watching a colorful computer game theory simulation converging to a stable Nash equilibrium point on a screen.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit mathematics library.",
+        ),
+        "ep100-accelerating-universe-dark-energy-type-ia-supernovae": _koma.__func__(
+            "a cute high school girl acting as a student astronomy teacher, smiling gently as she shows a shiny telescope to curious young students in a classroom.",
+            "a smiling female astrophysicist with kind gentle eyes demonstrating expanding balloon universe model and Type Ia supernova standard candles on a whiteboard.",
+            "both characters smiling excitedly watching a glowing cosmic expansion distance-velocity curve plot accelerating upward into dark energy on a laptop monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles on an astronomical observatory rooftop at golden sunset.",
+        ),
+        "ep101-dna-double-helix-x-ray-diffraction-molecular-crystallography": _koma.__func__(
+            "a cute high school girl pointing an investigative red laser beam at a helical spring coil in a dim optical physics lab.",
+            "a smiling female crystallographer with kind gentle eyes showing Rosalind Franklin famous Photo 51 X-pattern diffraction and Bessel functions on a whiteboard.",
+            "both characters smiling cheerfully observing a colorful 3D molecular computer graphic model of the double-stranded DNA helix on a display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit molecular biophysics laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

@@ -322,5 +322,19 @@
       "Lancaster, M. A., Renner, M., Martin, C., Wenzel, D., Bicknell, L. S., Hurles, M. E., et al. (2013). Cerebral organoids model human brain development and microcephaly. *Nature*, 501(7467), 373-379. [https://doi.org/10.1038/nature12517](https://doi.org/10.1038/nature12517)",
       "Clevers, H. (2016). Modeling Development and Disease with Organoids. *Cell*, 165(7), 1586-1597. [https://doi.org/10.1016/j.cell.2016.05.082](https://doi.org/10.1016/j.cell.2016.05.082)"
     ]
+  },
+  {
+    "work_id": "ep23-topological-insulator-spintronics-physics",
+    "episode_num": 23,
+    "faculty": "理学部・物理学科 ／ 物性物理学研究所（量子物質・スピントロニクス研究室）",
+    "theme": "トポロジカル絶縁体（Topological Insulator）のディラック表面状態とゼロ散逸スピントロニクス",
+    "episode_title": "中身は電気を通さないのに、表面だけを電子が疾走する――トポロジカル絶縁体と次世代コンピュータ",
+    "posted_at": "2026-11-01T08:40:51.371717+09:00",
+    "file_path": "content/2026-10-07_ep23_topological_insulator_spintronics_physics.md",
+    "status": "publish",
+    "references": [
+      "Kane, C. L., Mele, E. J. (2005). Quantum Spin Hall Effect in Graphene. *Physical Review Letters*, 95(22). [https://doi.org/10.1103/physrevlett.95.226801](https://doi.org/10.1103/physrevlett.95.226801)",
+      "Xia, Y., Qian, D., Hsieh, D., Wray, L., Pal, A., Lin, H., et al. (2009). Observation of a large-gap topological-insulator class with a single Dirac cone on the surface. *Nature Physics*, 5(6), 398-402. [https://doi.org/10.1038/nphys1274](https://doi.org/10.1038/nphys1274)"
+    ]
   }
 ]

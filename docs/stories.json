@@ -1138,5 +1138,17 @@
     "url": "stories/ep95-super-resolution-microscopy-sted-nanoscopy.html",
     "image": "assets/images/ep95-super-resolution-microscopy-sted-nanoscopy.png",
     "char_count": 7536
+  },
+  {
+    "no": 96,
+    "work_id": "ep96-shannon-entropy-information-theory-coding",
+    "title": "曖昧さを測るサイコロの目――シャノン情報エントロピーと符号化定理の数理",
+    "faculty": "情報理工学部・情報科学科 ／ 情報理論・符号化通信数理研究室",
+    "field": "数学・数理科学",
+    "theme": "情報とは何かを確率変数と対数の期待値（エントロピー H = -∑ p log p）として数学的に定式化し、曖昧さの解消量として捉えるシャノン情報理論（1948年）と、ハフマン符号化に代表される可逆圧縮の限界（情報源符号化定理）",
+    "has_image": true,
+    "url": "stories/ep96-shannon-entropy-information-theory-coding.html",
+    "image": "assets/images/ep96-shannon-entropy-information-theory-coding.png",
+    "char_count": 6744
   }
 ]

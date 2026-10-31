@@ -15,10 +15,10 @@
       外部生成AI APIは一切使用せず、Mac mini M4 ローカルAI（Ollama Qwen3.5 &amp; shosetsu ＋ Draw Things FLUX.2）で執筆・挿絵生成し、GitHub Pagesで公開しています。
     </p>
     <div class="stats-bar">
-      <div class="stat-pill"><strong>95</strong> 収録エピソード</div>
-      <div class="stat-pill"><strong>95</strong> 挿絵付き作品</div>
+      <div class="stat-pill"><strong>96</strong> 収録エピソード</div>
+      <div class="stat-pill"><strong>96</strong> 挿絵付き作品</div>
       <div class="stat-pill"><strong>5</strong> 科学・数理・情報分野</div>
-      <div class="stat-pill">最終更新: 2026-10-31 09:01 JST</div>
+      <div class="stat-pill">最終更新: 2026-10-31 09:24 JST</div>
     </div>
   </header>
 
@@ -36,7 +36,7 @@
         </select>
         <select id="imageFilter" class="select-filter" onchange="filterCards()">
           <option value="">すべて表示</option>
-          <option value="yes">🎨 挿絵ありのみ (95)</option>
+          <option value="yes">🎨 挿絵ありのみ (96)</option>
         </select>
         <select id="sortOrder" class="select-filter" onchange="sortCards()">
           <option value="desc">新しい順（#大 → #01）</option>
@@ -47,6 +47,24 @@
     </div>
 
     <div class="story-grid" id="storyGrid">
+      <div class="story-card-wrap" data-no="96" data-field="数学・数理科学" data-illustrated="yes" data-search="曖昧さを測るサイコロの目――シャノン情報エントロピーと符号化定理の数理 情報理工学部・情報科学科 ／ 情報理論・符号化通信数理研究室 数学・数理科学 情報とは何かを確率変数と対数の期待値（エントロピー h = -∑ p log p）として数学的に定式化し、曖昧さの解消量として捉えるシャノン情報理論（1948年）と、ハフマン符号化に代表される可逆圧縮の限界（情報源符号化定理） シャノン・エントロピー（shannon entropy）、情報源符号化定理（可逆圧縮限界）、通信路容量（シャノンの限界定理）、ハフマン符号（プレフィックス木）、相互情報量とカルバック・ライブラー情報量 【パターン1：日常の謎・トラブル解決（名探偵型）】校内サーバのバックアップ容量が突如逼迫し、生徒会や部活動のデータ転送が遅延する謎のトラブルが発生。結衣は「画像もログも全部 zip で圧縮すれば一瞬で小さくなるはずなのに、なぜかファイルによって全くサイズが減らないものがある」という不可解な現象に首を傾げて澪助教の研究室へ相談に訪れる。澪助教から「それは圧縮ソフトの不具合ではなく、そのデータが持っている『情報の曖昧さ（エントロピー）』が原因だよ」と教えられ、20の質問ゲームや偏ったサイコロの例えでシャノンの公式 h(x) = -∑ p log₂ p を導く。一見規則的に見えて実はランダムノイズの混入した巨大計測データが原因だと突き止め、ハフマン符号化の最適木構造を用いて通信路をすっきりと復旧させる。 風見 結衣（かざみ ゆい・高2・情報科学部兼数学部） 有栖川 澪（ありすがわ みお・助教・情報基礎数理／高校情報・数学教職担当）">
+        <article class="story-card">
+          <a href="stories/ep96-shannon-entropy-information-theory-coding.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep96-shannon-entropy-information-theory-coding.png" alt="曖昧さを測るサイコロの目――シャノン情報エントロピーと符号化定理の数理" loading="lazy" />
+            <span class="card-no-badge">#96</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 情報理工学部・情報科学科 ／ 情報理論・符号化通信数理研究室</div>
+            <h2 class="card-title"><a href="stories/ep96-shannon-entropy-information-theory-coding.html">曖昧さを測るサイコロの目――シャノン情報エントロピーと符号化定理の数理</a></h2>
+            <div class="card-tech">🔬 情報とは何かを確率変数と対数の期待値（エントロピー H = -∑ p log p）として数学的に定式化し、曖昧さの解消量として捉えるシャノン情報理論（1948年）と、ハフマン符号化に代表される可逆圧縮の限界（情報源符号化定理）</div>
+            <p class="card-summary">【パターン1：日常の謎・トラブル解決（名探偵型）】校内サーバのバックアップ容量が突如逼迫し、生徒会や部活動のデータ転送が遅延する謎のトラブルが発生。結衣は「画像もログも全部 zip で圧縮すれば一瞬で小さくなるはずなのに、なぜかファイルによって全くサイズが減らないものがある」という不可解な現象に首を傾げて澪助教の研究室へ相談に訪れる。澪助教から「それは圧縮ソフトの不具合ではなく、そのデータが持っている『情報の曖昧さ（エントロピー）』が原因だよ」と教えられ、20の質問ゲームや偏ったサイコロの例えでシャノンの公式 H(X) = -∑ p log₂ p を導く。一見規則的に見えて実はランダムノイズの混入した巨大計測データが原因だと突き止め、ハフマン符号化の最適木構造を用いて通信路をすっきりと復旧させる。</p>
+            <div class="card-footer">
+              <span>約 6,744 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep96-shannon-entropy-information-theory-coding.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
       <div class="story-card-wrap" data-no="95" data-field="物理学・宇宙・光学" data-illustrated="yes" data-search="回折の壁を打ち破る光のドーナツ――超解像蛍光顕微鏡（sted）と分子ナノバイオロジー 理学部・物理学科 ／ 生体分子フォトニクス・超解像ナノ計測研究室 物理学・宇宙・光学 光の波としての性質によるアッベの回折限界（約200nm）を、誘導放出を利用したドーナツ型レーザービームで外周部の蛍光分子を強制消光させることで突破し、十数ナノメートルの極限解像度を達成する「sted（誘導放出抑制）顕微鏡」（2014年ノーベル化学賞） 励起レーザーパルスと誘導放出（sted）ドーナツビーム位相変調、アッベの回折限界突破（λ / 2naの壁）、単一分子局在化（palm/storm）、生細胞シナプス小胞リアルタイムナノ追跡 【パターン8：後輩指導・ミニ先生体験の奮闘】オープンキャンパスで見学に来た中学生から「顕微鏡の倍率をもっと上げれば、ウイルスや分子の形まで光学顕微鏡で見えるんじゃないの？」と素朴に尋ねられ、「波の回折限界（アッベの限界）があるから光では200nmより小さいものはぼやけて見えない」と教科書通りに答えて相手をがっかりさせてしまった紬。霞助教の助言を受け、「光で光を消すドーナツ状のビーム（sted）」の仕組みを、型抜きクッキーや光のマスキング工作で直感的に実演。中学生の瞳が輝いて「光の穴を小さく絞ればもっと見えちゃうんだ！」と歓声が上がった瞬間、知識を伝える歓びと教育者への夢を胸に刻む。 宮下 紬（みやした つむぎ・高校2年生・物理部兼生物部） 白鳥 霞（しらとり かすみ・助教・光量子工学・超解像生体イメージング／高校理科教職担当）">
         <article class="story-card">
           <a href="stories/ep95-super-resolution-microscopy-sted-nanoscopy.html" class="card-thumb-wrap">

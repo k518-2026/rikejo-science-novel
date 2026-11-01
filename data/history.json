@@ -336,5 +336,20 @@
       "Kane, C. L., Mele, E. J. (2005). Quantum Spin Hall Effect in Graphene. *Physical Review Letters*, 95(22). [https://doi.org/10.1103/physrevlett.95.226801](https://doi.org/10.1103/physrevlett.95.226801)",
       "Xia, Y., Qian, D., Hsieh, D., Wray, L., Pal, A., Lin, H., et al. (2009). Observation of a large-gap topological-insulator class with a single Dirac cone on the surface. *Nature Physics*, 5(6), 398-402. [https://doi.org/10.1038/nphys1274](https://doi.org/10.1038/nphys1274)"
     ]
+  },
+  {
+    "work_id": "ep24-click-chemistry-bioorthogonal-reaction",
+    "episode_num": 24,
+    "faculty": "理学部・化学科 ／ 化学生物学（ケミカルバイオロジー）研究室",
+    "theme": "クリックケミストリーと生体直交化学反応（Bioorthogonal Chemistry）による生細胞内糖鎖・分子イメージング",
+    "episode_title": "生きている細胞の中でパチンと留める分子のバックル――「カチッ」と鳴る科学の扉を開く少女たち（第 1 話）",
+    "posted_at": "2026-11-02T08:51:59.180220+09:00",
+    "file_path": "content/2026-10-07_ep24_click_chemistry_bioorthogonal_reaction.md",
+    "status": "publish",
+    "references": [
+      "Kolb, H. C., Finn, M. G., Sharpless, K. B. (2001). Click Chemistry: Diverse Chemical Function from a Few Good Reactions. *Angewandte Chemie International Edition*, 40(11), 2004-2021. [https://doi.org/10.1002/1521-3773(20010601)40:11<2004::aid-anie2004>3.0.co;2-5](https://doi.org/10.1002/1521-3773(20010601)",
+      "Agard, N. J., Prescher, J. A., Bertozzi, C. R. (2004). A Strain-Promoted [3 + 2] Azide−Alkyne Cycloaddition for Covalent Modification of Biomolecules in Living Systems. *Journal of the American Chemical Society*, 126(46), 15046-15047. [https://doi.org/10.1021/ja044996f](https://doi.org/10.1021/ja044996f)",
+      "Sletten, E. M., Bertozzi, C. R. (2009). Bioorthogonal Chemistry: Fishing for Selectivity in a Sea of Functionality. *Angewandte Chemie International Edition*, 48(38), 6974-6998. [https://doi.org/10.1002/anie.200900942](https://doi.org/10.1002/anie.200900942)"
+    ]
   }
 ]

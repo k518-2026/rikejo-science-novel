@@ -1222,5 +1222,17 @@
     "url": "stories/ep102-shortest-path-dijkstra-a-star-graph-algorithms.html",
     "image": "assets/images/ep102-shortest-path-dijkstra-a-star-graph-algorithms.png",
     "char_count": 7537
+  },
+  {
+    "no": 103,
+    "work_id": "ep103-scanning-probe-stm-afm-atomic-manipulation",
+    "title": "原子の山をなぞるトンネルの指先――走査型プローブ顕微鏡で描く、量子の詩",
+    "faculty": "理学部・物理学科 ／ 表面物性物理学・量子ナノ構造計測研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "原子レベルで尖らせた導電性探針を試料表面に1ナノメートル以下まで近づけた際に生じる「量子力学的トンネル効果」によるトンネル電流を利用して原子1個1個を可視化する走査型トンネル顕微鏡（STM、1986年ノーベル物理学賞）と、カンチレバーの原子間力で絶縁体も観測できる原子間力顕微鏡（AFM）、原子を1個ずつ並べて文字を描くナノマニピュレーション技術",
+    "has_image": true,
+    "url": "stories/ep103-scanning-probe-stm-afm-atomic-manipulation.html",
+    "image": "assets/images/ep103-scanning-probe-stm-afm-atomic-manipulation.png",
+    "char_count": 6929
   }
 ]

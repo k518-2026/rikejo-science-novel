@@ -1234,5 +1234,17 @@
     "url": "stories/ep103-scanning-probe-stm-afm-atomic-manipulation.html",
     "image": "assets/images/ep103-scanning-probe-stm-afm-atomic-manipulation.png",
     "char_count": 6929
+  },
+  {
+    "no": 104,
+    "work_id": "ep104-evolutionary-game-theory-hawk-dove-cooperation-math",
+    "title": "利己的な遺伝子が選ぶ譲り合い――進化的に安定な戦略が描く、協力の美学",
+    "faculty": "理学部・生物学科 ／ 数理生物学・進化生態情報学研究室",
+    "field": "数学・数理科学",
+    "theme": "個体ではなく集団全体の頻度依存淘汰の中で、突然変異的な異端戦略が侵入できない安定状態「進化的に安定な戦略（Evolutionary Stable Strategy: ESS 1973）」を定式化した進化ゲーム理論と、繰り返し囚人のジレンマゲームにおけるしっぺ返し戦略（Tit-for-Tat）が証明する「利己的な個体間における利他行動・協力の進化」（アクセルロッド 1981）",
+    "has_image": true,
+    "url": "stories/ep104-evolutionary-game-theory-hawk-dove-cooperation-math.html",
+    "image": "assets/images/ep104-evolutionary-game-theory-hawk-dove-cooperation-math.png",
+    "char_count": 6530
   }
 ]

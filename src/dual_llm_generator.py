@@ -1497,6 +1497,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully observing a colorful 3D molecular computer graphic model of the double-stranded DNA helix on a display.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit molecular biophysics laboratory.",
         ),
+        "ep102-shortest-path-dijkstra-a-star-graph-algorithms": _koma.__func__(
+            "a cute high school girl setting up a colorful maze game booth with LED display boards in a busy school festival hall.",
+            "a smiling female computer scientist with kind gentle eyes explaining Dijkstra graph tree search and A-star heuristic distance on a clean whiteboard.",
+            "both characters smiling cheerfully watching illuminated LED path finding lights race through the maze straight to the goal on a large display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit festival hall.",
+        ),
+        "ep103-scanning-probe-stm-afm-atomic-manipulation": _koma.__func__(
+            "a cute high school girl holding an experimental physics binder, visiting an ultra-high vacuum scanning probe microscopy laboratory with a curious warm smile.",
+            "a kind female nanotechnology physicist with gentle smiling eyes explaining quantum tunneling current and piezo scanner motion on a clean whiteboard.",
+            "both characters smiling cheerfully looking at a colorful computer display showing individual atomic surface corrugations of a hexagonal crystal lattice.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit nanophysics seminar room.",
+        ),
+        "ep104-evolutionary-game-theory-hawk-dove-cooperation-math": _koma.__func__(
+            "a cute high school girl looking down at an evolutionary population simulation error log with a discouraged expression in a biology computer lab.",
+            "a kind female theoretical biologist with gentle smiling eyes showing hawk-dove payoff matrix and Tit-for-Tat cooperation strategy on a clean whiteboard.",
+            "both characters smiling cheerfully watching colorful agent population graph curves reach a stable cooperative ESS equilibrium on a monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit biomathematics seminar room.",
+        ),
     }
 
     def generate_english_image_prompt(

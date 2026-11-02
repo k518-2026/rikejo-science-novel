@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **101** 話（うち挿絵付き **101** 話 / 最終更新: 2026-11-02 08:52 JST）
+- **収録作品数**: 全 **102** 話（うち挿絵付き **102** 話 / 最終更新: 2026-11-03 07:27 JST）
 
 ---
 
@@ -115,6 +115,7 @@
 | 99 | **[誰も裏切れない沈黙の均衡――ナッシュ均衡と不動点定理の数理経済学](https://k518-2026.github.io/rikejo-science-novel/stories/ep99-game-theory-nash-equilibrium-fixed-point-theorem.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep99-game-theory-nash-equilibrium-fixed-point-theorem.html) | [📄原稿](content/2026-10-31_ep99_game_theory_nash_equilibrium_fixed_point_theorem.md) | [🎨挿絵](content/2026-10-31_ep99_game_theory_nash_equilibrium_fixed_point_theorem.png) | 理学部・数学科 ／ 応用数学・数理ゲーム理論研究室 | 複数のプレイヤーが互いの戦略を予測し合い、誰も自分だけ戦略を変更しても得をしない状態「ナッシュ均衡（Nash Equilibrium 1950）」の存在定理。角谷の不動点定理やブラウワーの不動点定理を用いた位相空間上のトポロジカルな証明と、囚人のジレンマに代表される非協力ゲームの数理構造 | 7,021字 |
 | 100 | **[遠ざかる光が告げる宇宙の加速――Ia型超新星と暗黒エネルギーの謎](https://k518-2026.github.io/rikejo-science-novel/stories/ep100-accelerating-universe-dark-energy-type-ia-supernovae.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep100-accelerating-universe-dark-energy-type-ia-supernovae.html) | [📄原稿](content/2026-10-31_ep100_accelerating_universe_dark_energy_type_ia_supernovae.md) | [🎨挿絵](content/2026-10-31_ep100_accelerating_universe_dark_energy_type_ia_supernovae.png) | 理学部・天文学科 ／ 宇宙物理学・観測的宇宙論研究室 | 白色矮星のチャンドラセカール限界質量爆発による「宇宙の標準光源」Ia型超新星の精密観測から、宇宙の膨張が減速するどころか、斥力をもたらす謎の「暗黒エネルギー（Dark Energy）」によって加速膨張していることを突き止めた現代天文学最大の発見（2011年ノーベル物理学賞） | 7,434字 |
 | 101 | **[X 線が舞う春のキャンパス――Photo 51 と生命の二重らせんへの招待状](https://k518-2026.github.io/rikejo-science-novel/stories/ep101-dna-double-helix-x-ray-diffraction-molecular-crystallography.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep101-dna-double-helix-x-ray-diffraction-molecular-crystallography.html) | [📄原稿](content/2026-10-31_ep101_dna_double_helix_x_ray_diffraction_molecular_crystallography.md) | [🎨挿絵](content/2026-10-31_ep101_dna_double_helix_x_ray_diffraction_molecular_crystallography.png) | 理学部・物理学科 ／ 生体分子物理学・X線構造解析研究室 | 生命の遺伝情報を担うDNAの分子構造を、ロザリンド・フランクリンが撮影した歴史的X線回折写真「Photo 51」のX字状回折パターン（らせんのフーリエ変換）、シャルガフの等量則（A=T, G=C）、そして水素結合相補性に基づいて解き明かした二重らせん構造モデル（1953年、1962年ノーベル医学生理学賞） | 7,081字 |
+| 102 | **[迷路をほどく優先度付きの光――ダイクストラ法と A* 探索による最短経路幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep102-shortest-path-dijkstra-a-star-graph-algorithms.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep102-shortest-path-dijkstra-a-star-graph-algorithms.html) | [📄原稿](content/2026-11-03_ep102_shortest_path_dijkstra_a_star_graph_algorithms.md) | [🎨挿絵](content/2026-11-03_ep102_shortest_path_dijkstra_a_star_graph_algorithms.png) | 情報理工学部・知能情報学科 ／ 離散最適化・グラフアルゴリズム数理研究室 | 重み付きグラフにおいて始点から全頂点への最短経路を優先度付きキュー（ヒープ木）と緩和操作（relaxation）によって多項式時間で確定させるダイクストラ法（1959年）と、ユークリッド幾何ヒューリスティック関数 h(v) を用いてゴールへの探索を劇的に指向化・枝刈りするA*探索アルゴリズム（1968年） | 7,537字 |
 
 ---
 

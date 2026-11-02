@@ -15,10 +15,10 @@
       外部生成AI APIは一切使用せず、Mac mini M4 ローカルAI（Ollama Qwen3.5 &amp; shosetsu ＋ Draw Things FLUX.2）で執筆・挿絵生成し、GitHub Pagesで公開しています。
     </p>
     <div class="stats-bar">
-      <div class="stat-pill"><strong>101</strong> 収録エピソード</div>
-      <div class="stat-pill"><strong>101</strong> 挿絵付き作品</div>
+      <div class="stat-pill"><strong>102</strong> 収録エピソード</div>
+      <div class="stat-pill"><strong>102</strong> 挿絵付き作品</div>
       <div class="stat-pill"><strong>5</strong> 科学・数理・情報分野</div>
-      <div class="stat-pill">最終更新: 2026-11-02 08:52 JST</div>
+      <div class="stat-pill">最終更新: 2026-11-03 07:27 JST</div>
     </div>
   </header>
 
@@ -36,7 +36,7 @@
         </select>
         <select id="imageFilter" class="select-filter" onchange="filterCards()">
           <option value="">すべて表示</option>
-          <option value="yes">🎨 挿絵ありのみ (101)</option>
+          <option value="yes">🎨 挿絵ありのみ (102)</option>
         </select>
         <select id="sortOrder" class="select-filter" onchange="sortCards()">
           <option value="desc">新しい順（#大 → #01）</option>
@@ -47,6 +47,24 @@
     </div>
 
     <div class="story-grid" id="storyGrid">
+      <div class="story-card-wrap" data-no="102" data-field="数学・数理科学" data-illustrated="yes" data-search="迷路をほどく優先度付きの光――ダイクストラ法と a* 探索による最短経路幾何学 情報理工学部・知能情報学科 ／ 離散最適化・グラフアルゴリズム数理研究室 数学・数理科学 重み付きグラフにおいて始点から全頂点への最短経路を優先度付きキュー（ヒープ木）と緩和操作（relaxation）によって多項式時間で確定させるダイクストラ法（1959年）と、ユークリッド幾何ヒューリスティック関数 h(v) を用いてゴールへの探索を劇的に指向化・枝刈りするa*探索アルゴリズム（1968年） ダイクストラ法（dijkstra&#x27;s algorithm）、最短経路問題（shortest path problem）、辺の緩和操作（edge relaxation）、優先度付きキュー（二分ヒープ/フィボナッチヒープ）、a*探索（a-star algorithm）、許容的ヒューリスティック（admissible heuristic）、カーナビゲーション・ロボット経路計画 【パターン3：文化祭・オープンキャンパスの出展バトル（お祭り・エンタメ型）】秋の文化祭で「巨大迷路アトラクション」を出展することになった情報科学部。しかし、迷路の自動解法デモとして組んだ幅優先探索プログラムが、迷路が広大になるにつれて画面がフリーズし、来場者を退屈させてしまう問題に直面する芽衣。「どうすれば、小さな子どもでもひと目でわかるリアルタイムの最短ルート探索ゲームになるの？」と茜助教の研究室を訪れる。茜助教は「最短経路は、石を投げた水面の同心円の波のように広がるんだよ。そして目的地が見えているなら、光をゴールに向かって集めるレンズ（ヒューリスティック）を置けばいい」とアドバイス。ダイクストラの確固たる最短距離確定の波と、a*アルゴリズムの直線予測による劇的な高速化をledボードとプロジェクションマッピングで視覚化した体験展示を構築。文化祭当日の迷路ブースは大歓声と子どもたちの笑顔で埋め尽くされる。 橘 芽衣（たちばな めい・高2・情報科学部兼数学部） 早坂 茜（はやさか あかね・助教・離散数学・グラフ理論／高校情報・数学教職担当）">
+        <article class="story-card">
+          <a href="stories/ep102-shortest-path-dijkstra-a-star-graph-algorithms.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep102-shortest-path-dijkstra-a-star-graph-algorithms.png" alt="迷路をほどく優先度付きの光――ダイクストラ法と A* 探索による最短経路幾何学" loading="lazy" />
+            <span class="card-no-badge">#102</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 情報理工学部・知能情報学科 ／ 離散最適化・グラフアルゴリズム数理研究室</div>
+            <h2 class="card-title"><a href="stories/ep102-shortest-path-dijkstra-a-star-graph-algorithms.html">迷路をほどく優先度付きの光――ダイクストラ法と A* 探索による最短経路幾何学</a></h2>
+            <div class="card-tech">🔬 重み付きグラフにおいて始点から全頂点への最短経路を優先度付きキュー（ヒープ木）と緩和操作（relaxation）によって多項式時間で確定させるダイクストラ法（1959年）と、ユークリッド幾何ヒューリスティック関数 h(v) を用いてゴールへの探索を劇的に指向化・枝刈りするA*探索アルゴリズム（1968年）</div>
+            <p class="card-summary">【パターン3：文化祭・オープンキャンパスの出展バトル（お祭り・エンタメ型）】秋の文化祭で「巨大迷路アトラクション」を出展することになった情報科学部。しかし、迷路の自動解法デモとして組んだ幅優先探索プログラムが、迷路が広大になるにつれて画面がフリーズし、来場者を退屈させてしまう問題に直面する芽衣。「どうすれば、小さな子どもでもひと目でわかるリアルタイムの最短ルート探索ゲームになるの？」と茜助教の研究室を訪れる。茜助教は「最短経路は、石を投げた水面の同心円の波のように広がるんだよ。そして目的地が見えているなら、光をゴールに向かって集めるレンズ（ヒューリスティック）を置けばいい」とアドバイス。ダイクストラの確固たる最短距離確定の波と、A*アルゴリズムの直線予測による劇的な高速化をLEDボードとプロジェクションマッピングで視覚化した体験展示を構築。文化祭当日の迷路ブースは大歓声と子どもたちの笑顔で埋め尽くされる。</p>
+            <div class="card-footer">
+              <span>約 7,537 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep102-shortest-path-dijkstra-a-star-graph-algorithms.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
       <div class="story-card-wrap" data-no="101" data-field="情報学・AI" data-illustrated="yes" data-search="x 線が舞う春のキャンパス――photo 51 と生命の二重らせんへの招待状 理学部・物理学科 ／ 生体分子物理学・x線構造解析研究室 情報学・ai 生命の遺伝情報を担うdnaの分子構造を、ロザリンド・フランクリンが撮影した歴史的x線回折写真「photo 51」のx字状回折パターン（らせんのフーリエ変換）、シャルガフの等量則（a=t, g=c）、そして水素結合相補性に基づいて解き明かした二重らせん構造モデル（1953年、1962年ノーベル医学生理学賞） dna二重らせん構造（b型dna）、x線結晶回折とらせん対称性のフーリエ変換（ベッセル関数 j_n(x)）、photo 51（レイヤーラインとx字パターン）、シャルガフの規則（塩基組成比）、相補的水素結合（watson-crick塩基対）、反平行（antiparallel）鎖構造 【パターン1：日常の謎・トラブル解決（名探偵型）】物理部と生物部の合同実験室で、レーザーポインターを様々な細いワイヤーやバネに照射する光の回折実験中、なぜか特定の螺旋状スプリングに光を当てたときだけ、スクリーンに綺麗な『x字型の斑点模様』が浮かび上がる謎の現象に遭遇する綾香。「波がスリットを通ると同心円状に広がるはずなのに、どうして斜め十字に光が飛ぶの？」と首を傾げ、涼音助教の研究室を訪れる。涼音助教から「それは70年前に、生命最大の秘密を解き明かした光のサインだよ」と教えられ、ベッセル関数とらせん構造のフーリエ変換の幾何学を紐解いていく。バネのピッチと直径がx線の散乱角と直結することを自ら数式で証明し、photo 51の十字模様から生命の二重らせんの寸法を鮮やかに推理してみせる。 桐生 綾香（きりゅう あやか・高2・物理部兼生物部） 高坂 涼音（こうさか すずね・助教・量子結晶光学／高校物理・理科教職担当）">
         <article class="story-card">
           <a href="stories/ep101-dna-double-helix-x-ray-diffraction-molecular-crystallography.html" class="card-thumb-wrap">

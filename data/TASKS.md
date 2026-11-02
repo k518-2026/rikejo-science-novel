@@ -1,8 +1,8 @@
 # 📋 分散ローカルLLM 自動作業リスト (`rikejo-science-novel`)
 
 - **会話ID**: `03e1e31e-29c5-4db4-b211-06e49e17b8bd`
-- **最終同期日時 (JST)**: `2026-10-27T09:00:01`
-- **進捗サマリー**: 全 **92** 話 （完了: **92** / 挿絵待ち: **0** / **PC起動時実行キュー(`queued`)**: **0** / プロット作成済: **0** / 未着手待機: **0**）
+- **最終同期日時 (JST)**: `2026-11-02T09:00:02`
+- **進捗サマリー**: 全 **101** 話 （完了: **101** / 挿絵待ち: **0** / **PC起動時実行キュー(`queued`)**: **0** / プロット作成済: **0** / 未着手待機: **0**）
 
 ## 🖥️ 各ローカルLLMサーバーの役割分担（メインPC電源オフ時も各ノード単体で自律実行）
 
@@ -22,13 +22,13 @@
 
 | 話数 | タスクID | タイトル | 執筆担当ノード | 執筆日 | 校閲 (`sff7020`) | 挿絵 (`kenomac-mini`) |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|
+| #101 | `ep101-dna-double-helix-x-ray-diffraction-molecular-crystallography` | X線が暴いた生命の二重らせん――Photo 51と分子結晶学の真実 | `rtx5060lp` | 2026-10-31 | 未校閲 | 🎨 (kenomac-mini) |
+| #100 | `ep100-accelerating-universe-dark-energy-type-ia-supernovae` | 遠ざかる光が告げる宇宙の加速――Ia型超新星と暗黒エネルギーの謎 | `rtx5060lp` | 2026-10-31 | 未校閲 | 🎨 (kenomac-mini) |
+| #99 | `ep99-game-theory-nash-equilibrium-fixed-point-theorem` | 誰も裏切れない沈黙の均衡――ナッシュ均衡と不動点定理の数理経済学 | `rtx5060lp` | 2026-10-31 | 未校閲 | 🎨 (kenomac-mini) |
+| #98 | `ep98-allosteric-regulation-hemoglobin-cooperativity-structural-biology` | 形を変えて酸素を手渡す四重奏――ヘモグロビンのアロステリック協同性と分子呼吸 | `rtx5060lp` | 2026-10-31 | 未校閲 | 🎨 (kenomac-mini) |
+| #97 | `ep97-quantum-grovers-algorithm-amplitude-amplification` | 重ね合わせの海を照らす鏡――グローバーの量子探索と確率振幅の反転増幅 | `rtx5060lp` | 2026-10-31 | 未校閲 | 🎨 (kenomac-mini) |
+| #96 | `ep96-shannon-entropy-information-theory-coding` | 曖昧さを測るサイコロの目――シャノン情報エントロピーと符号化定理の数理 | `rtx5060lp` | 2026-10-31 | 未校閲 | 🎨 (kenomac-mini) |
+| #95 | `ep95-super-resolution-microscopy-sted-nanoscopy` | 回折の壁を打ち破る光のドーナツ――超解像蛍光顕微鏡（STED）と分子ナノバイオロジー | `rtx5060lp` | 2026-10-29 | 未校閲 | 🎨 (kenomac-mini) |
+| #94 | `ep94-public-key-rsa-cryptography-modular-arithmetic` | 公開された南京錠と秘密の鍵――RSA公開鍵暗号と合同式の幾何学 | `rtx5060lp` | 2026-10-29 | 未校閲 | 🎨 (kenomac-mini) |
+| #93 | `ep93-orbital-forcing-milankovitch-cycles-paleoclimate` | 天体の時計が刻む氷河期の鼓動――ミランコビッチ・サイクルと軌道古気候学 | `rtx5060lp` | 2026-10-29 | 未校閲 | 🎨 (kenomac-mini) |
 | #92 | `ep92-monte-carlo-tree-search-alphago-game-math` | ランダムな枝が切り拓く神の一手――モンテカルロ木探索（MCTS）とゲーム数理情報学 | `rtx5060lp` | 2026-10-26 | 未校閲 | 🎨 (kenomac-mini) |
-| #91 | `ep91-quantum-entanglement-bells-theorem-nonlocality` | 月が見ていなくても世界はあるか――ベルの不等式の破れと量子非局所性 | `rtx5060lp` | 2026-10-26 | 未校閲 | 🎨 (kenomac-mini) |
-| #90 | `ep90-crispr-base-editing-precision-genome-medicine` | 二重らせんを傷つけずに書き換える魔法のペン――CRISPR塩基編集（Base Editing）と精密遺伝子医療 | `rtx5060lp` | 2026-10-26 | 未校閲 | 🎨 (kenomac-mini) |
-| #89 | `ep89-quantum-computing-shors-algorithm-number-theory` | 量子の波がほどく素因数分解――ショアのアルゴリズムと量子超越性の数理 | `rtx5060lp` | 2026-10-25 | 未校閲 | 🎨 (kenomac-mini) |
-| #88 | `ep88-cosmic-microwave-background-big-bang-radiometry` | 二点七ケルビンの静寂が語るビッグバン――宇宙マイクロ波背景放射（CMB）と電波天文学の原点 | `rtx5060lp` | 2026-10-25 | 未校閲 | 🎨 (kenomac-mini) |
-| #87 | `ep87-differential-privacy-laplace-mechanism-cryptography` | 雑音のヴェールが守る個人の秘密――差分プライバシーと数理統計の防壁 | `rtx5060lp` | 2026-10-23 | 未校閲 | 🎨 (kenomac-mini) |
-| #86 | `ep86-radiocarbon-dating-accelerator-mass-spectrometry` | 炭素十四が刻んだ五万年の鼓動――放射性炭素年代測定と加速器質量分析の地球化学 | `rtx5060lp` | 2026-10-23 | 未校閲 | 🎨 (kenomac-mini) |
-| #85 | `ep85-optogenetics-neural-circuits-light-control` | 青い閃光が灯す記憶のシナプス――光遺伝学（オプトジェネティクス）と神経回路の生体制御 | `rtx5060lp` | 2026-10-23 | 未校閲 | 🎨 (kenomac-mini) |
-| #84 | `ep84-polynomial-time-primality-aks-algorithm-number-theory` | 素数の扉を開く多項式の鍵――AKS素数判定法と計算複雑性の奇跡 | `rtx5060lp` | 2026-10-21 | 未校閲 | 🎨 (kenomac-mini) |
-| #83 | `ep83-convolutional-neural-networks-visual-cortex-ai` | 視覚の受容野を畳み込むレンズ――畳み込みニューラルネットワーク（CNN）と画像認識の幾何学 | `rtx5060lp` | 2026-10-21 | 未校閲 | 🎨 (kenomac-mini) |

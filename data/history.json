@@ -351,5 +351,20 @@
       "Agard, N. J., Prescher, J. A., Bertozzi, C. R. (2004). A Strain-Promoted [3 + 2] Azide−Alkyne Cycloaddition for Covalent Modification of Biomolecules in Living Systems. *Journal of the American Chemical Society*, 126(46), 15046-15047. [https://doi.org/10.1021/ja044996f](https://doi.org/10.1021/ja044996f)",
       "Sletten, E. M., Bertozzi, C. R. (2009). Bioorthogonal Chemistry: Fishing for Selectivity in a Sea of Functionality. *Angewandte Chemie International Edition*, 48(38), 6974-6998. [https://doi.org/10.1002/anie.200900942](https://doi.org/10.1002/anie.200900942)"
     ]
+  },
+  {
+    "work_id": "ep25-fourier-transform-music-acoustics-math-teacher",
+    "episode_num": 25,
+    "faculty": "理学部・数学科 ／ 教育学部・数学教育コース（調和解析・音響数理ゼミ）",
+    "theme": "フーリエ級数・高速フーリエ変換（FFT）による楽音スペクトル解析と、数学の美しさを伝える教員への道",
+    "episode_title": "バイオリンの音色を数式に分解する放課後――フーリエ解析が奏でる「数学×音楽」のスプラッシュ",
+    "posted_at": "2026-11-03T11:37:39.667158+09:00",
+    "file_path": "content/2026-10-07_ep25_fourier_transform_music_acoustics_math_teacher.md",
+    "status": "publish",
+    "references": [
+      "Cooley, J. W., Tukey, J. W. (1965). An algorithm for the machine calculation of complex Fourier series. *Mathematics of Computation*, 19(90), 297-301. [https://doi.org/10.1090/s0025-5718-1965-0178586-1](https://doi.org/10.1090/s0025-5718-1965-0178586-1)",
+      "Fletcher, N. H. (1999). The nonlinear physics of musical instruments. *Reports on Progress in Physics*, 62(5), 723-764. [https://doi.org/10.1088/0034-4885/62/5/202](https://doi.org/10.1088/0034-4885/62/5/202)",
+      "Daubechies, I. (1990). The wavelet transform, time-frequency localization and signal analysis. *IEEE Transactions on Information Theory*, 36(5), 961-1005. [https://doi.org/10.1109/18.57199](https://doi.org/10.1109/18.57199)"
+    ]
   }
 ]

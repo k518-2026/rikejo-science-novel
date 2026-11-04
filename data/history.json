@@ -366,5 +366,20 @@
       "Fletcher, N. H. (1999). The nonlinear physics of musical instruments. *Reports on Progress in Physics*, 62(5), 723-764. [https://doi.org/10.1088/0034-4885/62/5/202](https://doi.org/10.1088/0034-4885/62/5/202)",
       "Daubechies, I. (1990). The wavelet transform, time-frequency localization and signal analysis. *IEEE Transactions on Information Theory*, 36(5), 961-1005. [https://doi.org/10.1109/18.57199](https://doi.org/10.1109/18.57199)"
     ]
+  },
+  {
+    "work_id": "ep26-optogenetics-channelrhodopsin-neuroscience",
+    "episode_num": 26,
+    "faculty": "理学部・生物科学科 ／ 脳神経科学研究センター（神経回路・オプトジェネティクス研究室）",
+    "theme": "光遺伝学（オプトジェネティクス・チャネルロドプシン）による特定神経回路の光制御と記憶エングラムの解明",
+    "episode_title": "青い光のスイッチで、眠っていた記憶が目を覚ます――光遺伝学と緑藻の贈りもの",
+    "posted_at": "2026-11-04T09:52:16.523176+09:00",
+    "file_path": "content/2026-10-08_ep26_optogenetics_channelrhodopsin_neuroscience.md",
+    "status": "publish",
+    "references": [
+      "Nagel, G., Szellas, T., Huhn, W., Kateriya, S., Adeishvili, N., Berthold, P., et al. (2003). Channelrhodopsin-2, a directly light-gated cation-selective membrane channel. *Proceedings of the National Academy of Sciences*, 100(24), 13940-13945. [https://doi.org/10.1073/pnas.1936192100](https://doi.org/10.1073/pnas.1936192100)",
+      "Boyden, E. S., Zhang, F., Bamberg, E., Nagel, G., Deisseroth, K. (2005). Millisecond-timescale, genetically targeted optical control of neural activity. *Nature Neuroscience*, 8(9), 1263-1268. [https://doi.org/10.1038/nn1525](https://doi.org/10.1038/nn1525)",
+      "Liu, X., Ramirez, S., Pang, P. T., Puryear, C. B., Govindarajan, A., Deisseroth, K., et al. (2012). Optogenetic stimulation of a hippocampal engram activates fear memory recall. *Nature*, 484(7394), 381-385. [https://doi.org/10.1038/nature11028](https://doi.org/10.1038/nature11028)"
+    ]
   }
 ]

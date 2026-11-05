@@ -381,5 +381,20 @@
       "Boyden, E. S., Zhang, F., Bamberg, E., Nagel, G., Deisseroth, K. (2005). Millisecond-timescale, genetically targeted optical control of neural activity. *Nature Neuroscience*, 8(9), 1263-1268. [https://doi.org/10.1038/nn1525](https://doi.org/10.1038/nn1525)",
       "Liu, X., Ramirez, S., Pang, P. T., Puryear, C. B., Govindarajan, A., Deisseroth, K., et al. (2012). Optogenetic stimulation of a hippocampal engram activates fear memory recall. *Nature*, 484(7394), 381-385. [https://doi.org/10.1038/nature11028](https://doi.org/10.1038/nature11028)"
     ]
+  },
+  {
+    "work_id": "ep27-autonomous-driving-slam-bayesian-informatics",
+    "episode_num": 27,
+    "faculty": "情報理工学部・知能機械情報学科（ロボティクス・確率推論研究室）",
+    "theme": "確率ロボティクス（SLAM：自己位置推定と環境地図構築の同時実行）とベイズ推定・カルマンフィルタ",
+    "episode_title": "霧のキャンパスを走る小さなロボット――ベイズ推定と自己位置推定のアルゴリズム",
+    "posted_at": "2026-11-05T10:02:37.176914+09:00",
+    "file_path": "content/2026-10-08_ep27_autonomous_driving_slam_bayesian_informatics.md",
+    "status": "publish",
+    "references": [
+      "Bailey, T., Durrant-Whyte, H. (2006). Simultaneous localization and mapping (SLAM): part II. *IEEE Robotics &amp; Automation Magazine*, 13(3), 108-117. [https://doi.org/10.1109/mra.2006.1678144](https://doi.org/10.1109/mra.2006.1678144)",
+      "Dellaert, F., Fox, D., Burgard, W., Thrun, S. (2020). Monte Carlo localization for mobile robots. *Proceedings 1999 IEEE International Conference on Robotics and Automation (Cat. No.99CH36288C)*, 2, 1322-1328. [https://doi.org/10.1109/robot.1999.772544](https://doi.org/10.1109/robot.1999.772544)",
+      "Davison, A. J., Reid, I. D., Molton, N. D., Stasse, O. (2007). MonoSLAM: Real-Time Single Camera SLAM. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 29(6), 1052-1067. [https://doi.org/10.1109/tpami.2007.1049](https://doi.org/10.1109/tpami.2007.1049)"
+    ]
   }
 ]

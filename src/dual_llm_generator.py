@@ -1515,6 +1515,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully watching colorful agent population graph curves reach a stable cooperative ESS equilibrium on a monitor.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit biomathematics seminar room.",
         ),
+        "ep105-stimulated-emission-laser-ruby-quantum-optics": _koma.__func__(
+            "a cute high school girl acting as a student physics teacher, smiling gently as she explains flashlight beam divergence to an eager junior student in a physics lab.",
+            "a smiling female laser physicist with kind gentle eyes demonstrating stimulated emission population inversion and ruby laser crystal cavity on a clean whiteboard.",
+            "both characters smiling excitedly watching a brilliant crimson red ruby laser beam shoot straight across optical mirrors without scattering on an optical bench.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit quantum optics laboratory.",
+        ),
+        "ep106-chaos-butterfly-effect-strange-attractor-lorenz-math": _koma.__func__(
+            "a cute high school girl looking puzzled at two diverging weather forecast simulation graphs with a tiny 0.0001 degree discrepancy on a computer monitor.",
+            "a smiling female meteorologist with kind gentle eyes demonstrating double pendulum chaotic motion and Lorenz attractor differential equations on a clean whiteboard.",
+            "both characters smiling cheerfully observing a glowing 3D computer graphics visualization of the butterfly-shaped strange attractor looping infinitely on a display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in bright geophysical fluid dynamics laboratory.",
+        ),
+        "ep107-green-fluorescent-protein-gfp-molecular-tagging-biochemistry": _koma.__func__(
+            "a cute high school girl setting up an interactive bio-imaging booth with glowing jellyfish posters and fluorescence microscopes in a school hall.",
+            "a smiling female biochemist with kind gentle eyes holding an eleven-stranded beta-barrel GFP cylinder molecular model on a clean lab desk.",
+            "both characters smiling excitedly watching living cellular microscopy video of glowing green fluorescent proteins migrating inside dividing cells on a monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit biochemistry laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

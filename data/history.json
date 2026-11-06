@@ -396,5 +396,20 @@
       "Dellaert, F., Fox, D., Burgard, W., Thrun, S. (2020). Monte Carlo localization for mobile robots. *Proceedings 1999 IEEE International Conference on Robotics and Automation (Cat. No.99CH36288C)*, 2, 1322-1328. [https://doi.org/10.1109/robot.1999.772544](https://doi.org/10.1109/robot.1999.772544)",
       "Davison, A. J., Reid, I. D., Molton, N. D., Stasse, O. (2007). MonoSLAM: Real-Time Single Camera SLAM. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 29(6), 1052-1067. [https://doi.org/10.1109/tpami.2007.1049](https://doi.org/10.1109/tpami.2007.1049)"
     ]
+  },
+  {
+    "work_id": "ep28-ice-core-paleoclimate-isotope-earth-science",
+    "episode_num": 28,
+    "faculty": "理学部・地球惑星環境学科 ／ 極地雪氷研究センター（古気候・同位体地球化学研究室）",
+    "theme": "南極氷床コアの酸素・水素安定同位体比解析と気泡内古大気分析による80万年の気候変動復元",
+    "episode_title": "氷床の時空を歩く――80 万年の記憶が語る地球の色",
+    "posted_at": "2026-11-06T10:06:12.508401+09:00",
+    "file_path": "content/2026-10-08_ep28_ice_core_paleoclimate_isotope_earth_science.md",
+    "status": "publish",
+    "references": [
+      "Lüthi, D., Le Floch, M., Bereiter, B., Blunier, T., Barnola, J., Siegenthaler, U., et al. (2008). High-resolution carbon dioxide concentration record 650,000–800,000 years before present. *Nature*, 453(7193), 379-382. [https://doi.org/10.1038/nature06949](https://doi.org/10.1038/nature06949)",
+      "Petit, J. R., Jouzel, J., Raynaud, D., Barkov, N. I., Barnola, J. -., Basile, I., et al. (1999). Climate and atmospheric history of the past 420,000 years from the Vostok ice core, Antarctica. *Nature*, 399(6735), 429-436. [https://doi.org/10.1038/20859](https://doi.org/10.1038/20859)",
+      "Dansgaard, W. (1964). Stable isotopes in precipitation. *Tellus*, 16(4), 436-468. [https://doi.org/10.1111/j.2153-3490.1964.tb00181.x](https://doi.org/10.1111/j.2153-3490.1964.tb00181.x)"
+    ]
   }
 ]

@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **106** 話（うち挿絵付き **106** 話 / 最終更新: 2026-11-07 08:41 JST）
+- **収録作品数**: 全 **107** 話（うち挿絵付き **107** 話 / 最終更新: 2026-11-07 08:47 JST）
 
 ---
 
@@ -120,6 +120,7 @@
 | 104 | **[利己的な遺伝子が選ぶ譲り合い――進化的に安定な戦略が描く、協力の美学](https://k518-2026.github.io/rikejo-science-novel/stories/ep104-evolutionary-game-theory-hawk-dove-cooperation-math.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep104-evolutionary-game-theory-hawk-dove-cooperation-math.html) | [📄原稿](content/2026-11-03_ep104_evolutionary_game_theory_hawk_dove_cooperation_math.md) | [🎨挿絵](content/2026-11-03_ep104_evolutionary_game_theory_hawk_dove_cooperation_math.png) | 理学部・生物学科 ／ 数理生物学・進化生態情報学研究室 | 個体ではなく集団全体の頻度依存淘汰の中で、突然変異的な異端戦略が侵入できない安定状態「進化的に安定な戦略（Evolutionary Stable Strategy: ESS 1973）」を定式化した進化ゲーム理論と、繰り返し囚人のジレンマゲームにおけるしっぺ返し戦略（Tit-for-Tat）が証明する「利己的な個体間における利他行動・協力の進化」（アクセルロッド 1981） | 6,530字 |
 | 105 | **[紅玉に宿る光の行進――誘導放出とレーザーの量子光学](https://k518-2026.github.io/rikejo-science-novel/stories/ep105-stimulated-emission-laser-ruby-quantum-optics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep105-stimulated-emission-laser-ruby-quantum-optics.html) | [📄原稿](content/2026-11-07_ep105_stimulated_emission_laser_ruby_quantum_optics.md) | [🎨挿絵](content/2026-11-07_ep105_stimulated_emission_laser_ruby_quantum_optics.png) | 理学部・物理学科 ／ 量子光学・光物性レーザー物理研究室 | アインシュタインが予言した誘導放出（Stimulated Emission）を光共振器（ファブリ・ペロー共振器）内で連鎖増幅させ、同位相・同波長・高指向性のコヒーレント光を生み出すルビーレーザー（メイマン 1960年）およびメーザー（タウンズら 1954年）の量子力学（1964年ノーベル物理学賞） | 7,531字 |
 | 106 | **[蝶の羽ばたきが描く無限の軌道――決定論的カオスとローレンツ・アトラクターの幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep106-chaos-butterfly-effect-strange-attractor-lorenz-math.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep106-chaos-butterfly-effect-strange-attractor-lorenz-math.html) | [📄原稿](content/2026-11-07_ep106_chaos_butterfly_effect_strange_attractor_lorenz_math.md) | [🎨挿絵](content/2026-11-07_ep106_chaos_butterfly_effect_strange_attractor_lorenz_math.png) | 理学部・地球惑星環境学科 ／ 大気海洋流体数理・非線形カオス力学研究室 | たった3変数の決定論的な非線形微分方程式から、初期値の極微な差異が時間とともに指数関数的に増大して未来予測を不可能にする「決定論的カオス（ローレンツ 1963年）」と、フラクタル次元を持つ奇妙な軌道「ストレンジ・アトラクター（ローレンツ・アトラクター）」、ロジスティック写像の周期倍分岐（メイ 1976年） | 7,145字 |
+| 107 | **[海月が灯す生きた細胞の道標――緑色蛍光タンパク質（GFP）で彩る「動く科学」](https://k518-2026.github.io/rikejo-science-novel/stories/ep107-green-fluorescent-protein-gfp-molecular-tagging-biochemistry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep107-green-fluorescent-protein-gfp-molecular-tagging-biochemistry.html) | [📄原稿](content/2026-11-07_ep107_green_fluorescent_protein_gfp_molecular_tagging_biochemistry.md) | [🎨挿絵](content/2026-11-07_ep107_green_fluorescent_protein_gfp_molecular_tagging_biochemistry.png) | 理学部・生物化学科 ／ 生体機能分子化学・バイオイメージング研究室 | オワンクラゲから発見された緑色蛍光タンパク質（GFP）が、外部酵素や補因子を一切必要とせず自身のポリペプチド鎖（Ser-Tyr-Gly）の自発的環化・酸化によって発光団を形成する奇跡の分子機構と、遺伝子工学によって標的タンパク質と融合させることで生きた細胞内の分子動態をリアルタイム追跡するバイオイメージング革命（下村脩・チャルフィー・チェン 2008年ノーベル化学賞） | 6,818字 |
 
 ---
 

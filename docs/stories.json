@@ -1270,5 +1270,17 @@
     "url": "stories/ep106-chaos-butterfly-effect-strange-attractor-lorenz-math.html",
     "image": "assets/images/ep106-chaos-butterfly-effect-strange-attractor-lorenz-math.png",
     "char_count": 7145
+  },
+  {
+    "no": 107,
+    "work_id": "ep107-green-fluorescent-protein-gfp-molecular-tagging-biochemistry",
+    "title": "海月が灯す生きた細胞の道標――緑色蛍光タンパク質（GFP）で彩る「動く科学」",
+    "faculty": "理学部・生物化学科 ／ 生体機能分子化学・バイオイメージング研究室",
+    "field": "化学・薬学・材料",
+    "theme": "オワンクラゲから発見された緑色蛍光タンパク質（GFP）が、外部酵素や補因子を一切必要とせず自身のポリペプチド鎖（Ser-Tyr-Gly）の自発的環化・酸化によって発光団を形成する奇跡の分子機構と、遺伝子工学によって標的タンパク質と融合させることで生きた細胞内の分子動態をリアルタイム追跡するバイオイメージング革命（下村脩・チャルフィー・チェン 2008年ノーベル化学賞）",
+    "has_image": true,
+    "url": "stories/ep107-green-fluorescent-protein-gfp-molecular-tagging-biochemistry.html",
+    "image": "assets/images/ep107-green-fluorescent-protein-gfp-molecular-tagging-biochemistry.png",
+    "char_count": 6818
   }
 ]

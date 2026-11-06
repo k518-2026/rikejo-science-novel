@@ -1246,5 +1246,17 @@
     "url": "stories/ep104-evolutionary-game-theory-hawk-dove-cooperation-math.html",
     "image": "assets/images/ep104-evolutionary-game-theory-hawk-dove-cooperation-math.png",
     "char_count": 6530
+  },
+  {
+    "no": 105,
+    "work_id": "ep105-stimulated-emission-laser-ruby-quantum-optics",
+    "title": "紅玉に宿る光の行進――誘導放出とレーザーの量子光学",
+    "faculty": "理学部・物理学科 ／ 量子光学・光物性レーザー物理研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "アインシュタインが予言した誘導放出（Stimulated Emission）を光共振器（ファブリ・ペロー共振器）内で連鎖増幅させ、同位相・同波長・高指向性のコヒーレント光を生み出すルビーレーザー（メイマン 1960年）およびメーザー（タウンズら 1954年）の量子力学（1964年ノーベル物理学賞）",
+    "has_image": true,
+    "url": "stories/ep105-stimulated-emission-laser-ruby-quantum-optics.html",
+    "image": "assets/images/ep105-stimulated-emission-laser-ruby-quantum-optics.png",
+    "char_count": 7531
   }
 ]

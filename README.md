@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **105** 話（うち挿絵付き **105** 話 / 最終更新: 2026-11-07 08:36 JST）
+- **収録作品数**: 全 **106** 話（うち挿絵付き **106** 話 / 最終更新: 2026-11-07 08:41 JST）
 
 ---
 
@@ -119,6 +119,7 @@
 | 103 | **[原子の山をなぞるトンネルの指先――走査型プローブ顕微鏡で描く、量子の詩](https://k518-2026.github.io/rikejo-science-novel/stories/ep103-scanning-probe-stm-afm-atomic-manipulation.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep103-scanning-probe-stm-afm-atomic-manipulation.html) | [📄原稿](content/2026-11-03_ep103_scanning_probe_stm_afm_atomic_manipulation.md) | [🎨挿絵](content/2026-11-03_ep103_scanning_probe_stm_afm_atomic_manipulation.png) | 理学部・物理学科 ／ 表面物性物理学・量子ナノ構造計測研究室 | 原子レベルで尖らせた導電性探針を試料表面に1ナノメートル以下まで近づけた際に生じる「量子力学的トンネル効果」によるトンネル電流を利用して原子1個1個を可視化する走査型トンネル顕微鏡（STM、1986年ノーベル物理学賞）と、カンチレバーの原子間力で絶縁体も観測できる原子間力顕微鏡（AFM）、原子を1個ずつ並べて文字を描くナノマニピュレーション技術 | 6,929字 |
 | 104 | **[利己的な遺伝子が選ぶ譲り合い――進化的に安定な戦略が描く、協力の美学](https://k518-2026.github.io/rikejo-science-novel/stories/ep104-evolutionary-game-theory-hawk-dove-cooperation-math.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep104-evolutionary-game-theory-hawk-dove-cooperation-math.html) | [📄原稿](content/2026-11-03_ep104_evolutionary_game_theory_hawk_dove_cooperation_math.md) | [🎨挿絵](content/2026-11-03_ep104_evolutionary_game_theory_hawk_dove_cooperation_math.png) | 理学部・生物学科 ／ 数理生物学・進化生態情報学研究室 | 個体ではなく集団全体の頻度依存淘汰の中で、突然変異的な異端戦略が侵入できない安定状態「進化的に安定な戦略（Evolutionary Stable Strategy: ESS 1973）」を定式化した進化ゲーム理論と、繰り返し囚人のジレンマゲームにおけるしっぺ返し戦略（Tit-for-Tat）が証明する「利己的な個体間における利他行動・協力の進化」（アクセルロッド 1981） | 6,530字 |
 | 105 | **[紅玉に宿る光の行進――誘導放出とレーザーの量子光学](https://k518-2026.github.io/rikejo-science-novel/stories/ep105-stimulated-emission-laser-ruby-quantum-optics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep105-stimulated-emission-laser-ruby-quantum-optics.html) | [📄原稿](content/2026-11-07_ep105_stimulated_emission_laser_ruby_quantum_optics.md) | [🎨挿絵](content/2026-11-07_ep105_stimulated_emission_laser_ruby_quantum_optics.png) | 理学部・物理学科 ／ 量子光学・光物性レーザー物理研究室 | アインシュタインが予言した誘導放出（Stimulated Emission）を光共振器（ファブリ・ペロー共振器）内で連鎖増幅させ、同位相・同波長・高指向性のコヒーレント光を生み出すルビーレーザー（メイマン 1960年）およびメーザー（タウンズら 1954年）の量子力学（1964年ノーベル物理学賞） | 7,531字 |
+| 106 | **[蝶の羽ばたきが描く無限の軌道――決定論的カオスとローレンツ・アトラクターの幾何学](https://k518-2026.github.io/rikejo-science-novel/stories/ep106-chaos-butterfly-effect-strange-attractor-lorenz-math.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep106-chaos-butterfly-effect-strange-attractor-lorenz-math.html) | [📄原稿](content/2026-11-07_ep106_chaos_butterfly_effect_strange_attractor_lorenz_math.md) | [🎨挿絵](content/2026-11-07_ep106_chaos_butterfly_effect_strange_attractor_lorenz_math.png) | 理学部・地球惑星環境学科 ／ 大気海洋流体数理・非線形カオス力学研究室 | たった3変数の決定論的な非線形微分方程式から、初期値の極微な差異が時間とともに指数関数的に増大して未来予測を不可能にする「決定論的カオス（ローレンツ 1963年）」と、フラクタル次元を持つ奇妙な軌道「ストレンジ・アトラクター（ローレンツ・アトラクター）」、ロジスティック写像の周期倍分岐（メイ 1976年） | 7,145字 |
 
 ---
 

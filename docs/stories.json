@@ -1258,5 +1258,17 @@
     "url": "stories/ep105-stimulated-emission-laser-ruby-quantum-optics.html",
     "image": "assets/images/ep105-stimulated-emission-laser-ruby-quantum-optics.png",
     "char_count": 7531
+  },
+  {
+    "no": 106,
+    "work_id": "ep106-chaos-butterfly-effect-strange-attractor-lorenz-math",
+    "title": "蝶の羽ばたきが描く無限の軌道――決定論的カオスとローレンツ・アトラクターの幾何学",
+    "faculty": "理学部・地球惑星環境学科 ／ 大気海洋流体数理・非線形カオス力学研究室",
+    "field": "数学・数理科学",
+    "theme": "たった3変数の決定論的な非線形微分方程式から、初期値の極微な差異が時間とともに指数関数的に増大して未来予測を不可能にする「決定論的カオス（ローレンツ 1963年）」と、フラクタル次元を持つ奇妙な軌道「ストレンジ・アトラクター（ローレンツ・アトラクター）」、ロジスティック写像の周期倍分岐（メイ 1976年）",
+    "has_image": true,
+    "url": "stories/ep106-chaos-butterfly-effect-strange-attractor-lorenz-math.html",
+    "image": "assets/images/ep106-chaos-butterfly-effect-strange-attractor-lorenz-math.png",
+    "char_count": 7145
   }
 ]

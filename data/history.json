@@ -426,5 +426,20 @@
       "Goto, Y., Hisatomi, T., Wang, Q., Higashi, T., Ishikiriyama, K., Maeda, T., et al. (2018). A Particulate Photocatalyst Water-Splitting Panel for Large-Scale Solar Hydrogen Generation. *Joule*, 2(3), 509-520. [https://doi.org/10.1016/j.joule.2017.12.009](https://doi.org/10.1016/j.joule.2017.12.009)",
       "Hisatomi, T., Kubota, J., Domen, K. (2015). ChemInform Abstract: Recent Advances in Semiconductors for Photocatalytic and Photoelectrochemical Water Splitting. *ChemInform*, 46(3). [https://doi.org/10.1002/chin.201503222](https://doi.org/10.1002/chin.201503222)"
     ]
+  },
+  {
+    "work_id": "ep30-graph-theory-four-color-theorem-math-teacher",
+    "episode_num": 30,
+    "faculty": "理学部・数学科 ／ 教育学部・数学教育専攻（離散数学・グラフ理論研究室）",
+    "theme": "四色定理（Appel & Haken）とグラフ彩色問題・計算機援用証明（形式検証 Coq）と数学教育",
+    "episode_title": "白地図を彩る四色の魔法――グラフ理論の鍵が解き明かす、世界の「つながり」",
+    "posted_at": "2026-11-08T08:55:37.533812+09:00",
+    "file_path": "content/2026-10-10_ep30_graph_theory_four_color_theorem_math_teacher.md",
+    "status": "publish",
+    "references": [
+      "Appel, K., Haken, W. (1976). Every planar map is four colorable. *Bulletin of the American Mathematical Society*, 82(5), 711-712. [https://doi.org/10.1090/s0002-9904-1976-14122-5](https://doi.org/10.1090/s0002-9904-1976-14122-5)",
+      "Robertson, N., Sanders, D., Seymour, P., Thomas, R. (1997). The Four-Colour Theorem. *Journal of Combinatorial Theory, Series B*, 70(1), 2-44. [https://doi.org/10.1006/jctb.1997.1750](https://doi.org/10.1006/jctb.1997.1750)",
+      "Wilson, R. (2026). The Four-Color Theorem 1852–1976. *Notices of the American Mathematical Society*, 73(03). [https://doi.org/10.1090/noti3305](https://doi.org/10.1090/noti3305)"
+    ]
   }
 ]

@@ -441,5 +441,20 @@
       "Robertson, N., Sanders, D., Seymour, P., Thomas, R. (1997). The Four-Colour Theorem. *Journal of Combinatorial Theory, Series B*, 70(1), 2-44. [https://doi.org/10.1006/jctb.1997.1750](https://doi.org/10.1006/jctb.1997.1750)",
       "Wilson, R. (2026). The Four-Color Theorem 1852–1976. *Notices of the American Mathematical Society*, 73(03). [https://doi.org/10.1090/noti3305](https://doi.org/10.1090/noti3305)"
     ]
+  },
+  {
+    "work_id": "ep31-exoplanet-transit-spectroscopy-astronomy",
+    "episode_num": 31,
+    "faculty": "理学部・宇宙地球物理学科 ／ 天文学専攻（太陽系外惑星・宇宙生物学研究室）",
+    "theme": "太陽系外惑星のトランジット法・視線速度法（Mayor & Queloz）と透過分光による惑星大気バイオシグネチャ探査",
+    "episode_title": "幾千光年かなたの星のまばたき――系外惑星トランジット法と生命のサイン",
+    "posted_at": "2026-11-09T08:58:53.542721+09:00",
+    "file_path": "content/2026-10-10_ep31_exoplanet_transit_spectroscopy_astronomy.md",
+    "status": "publish",
+    "references": [
+      "Mayor, M., Queloz, D. (1995). A Jupiter-mass companion to a solar-type star. *Nature*, 378(6555), 355-359. [https://doi.org/10.1038/378355a0](https://doi.org/10.1038/378355a0)",
+      "Charbonneau, D., Brown, T. M., Latham, D. W., Mayor, M. (2000). Detection of Planetary Transits Across a Sun-like Star. *The Astrophysical Journal*, 529(1), L45-L48. [https://doi.org/10.1086/312457](https://doi.org/10.1086/312457)",
+      "Seager, S., Deming, D. (2010). Exoplanet Atmospheres. *Annual Review of Astronomy and Astrophysics*, 48(1), 631-672. [https://doi.org/10.1146/annurev-astro-081309-130837](https://doi.org/10.1146/annurev-astro-081309-130837)"
+    ]
   }
 ]

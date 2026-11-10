@@ -456,5 +456,20 @@
       "Charbonneau, D., Brown, T. M., Latham, D. W., Mayor, M. (2000). Detection of Planetary Transits Across a Sun-like Star. *The Astrophysical Journal*, 529(1), L45-L48. [https://doi.org/10.1086/312457](https://doi.org/10.1086/312457)",
       "Seager, S., Deming, D. (2010). Exoplanet Atmospheres. *Annual Review of Astronomy and Astrophysics*, 48(1), 631-672. [https://doi.org/10.1146/annurev-astro-081309-130837](https://doi.org/10.1146/annurev-astro-081309-130837)"
     ]
+  },
+  {
+    "work_id": "ep32-gut-microbiome-brain-axis-bioscience",
+    "episode_num": 32,
+    "faculty": "農学部・応用生命化学科 ／ 薬学部・微生物薬品化学研究室（腸内細菌叢・神経免疫学）",
+    "theme": "腸内マイクロバイオーム（腸内細菌叢）が産生する短鎖脂肪酸・神経伝達物質前駆体と迷走神経を介した脳腸相関（Gut-Brain Axis）",
+    "episode_title": "お腹の中の小さな森が心を醸す――腸内フローラと『脳腸相関』の生命科学",
+    "posted_at": "2026-11-10T11:54:17.469123+09:00",
+    "file_path": "content/2026-10-10_ep32_gut_microbiome_brain_axis_bioscience.md",
+    "status": "publish",
+    "references": [
+      "Cryan, J. F., Dinan, T. G. (2012). Mind-altering microorganisms: the impact of the gut microbiota on brain and behaviour. *Nature Reviews Neuroscience*, 13(10), 701-712. [https://doi.org/10.1038/nrn3346](https://doi.org/10.1038/nrn3346)",
+      "Furusawa, Y., Obata, Y., Fukuda, S., Endo, T. A., Nakato, G., Takahashi, D., et al. (2013). Commensal microbe-derived butyrate induces the differentiation of colonic regulatory T cells. *Nature*, 504(7480), 446-450. [https://doi.org/10.1038/nature12721](https://doi.org/10.1038/nature12721)",
+      "The Human Microbiome Project Consortium (2012). Structure, function and diversity of the healthy human microbiome. *Nature*, 486(7402), 207-214. [https://doi.org/10.1038/nature11234](https://doi.org/10.1038/nature11234)"
+    ]
   }
 ]

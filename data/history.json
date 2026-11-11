@@ -471,5 +471,20 @@
       "Furusawa, Y., Obata, Y., Fukuda, S., Endo, T. A., Nakato, G., Takahashi, D., et al. (2013). Commensal microbe-derived butyrate induces the differentiation of colonic regulatory T cells. *Nature*, 504(7480), 446-450. [https://doi.org/10.1038/nature12721](https://doi.org/10.1038/nature12721)",
       "The Human Microbiome Project Consortium (2012). Structure, function and diversity of the healthy human microbiome. *Nature*, 486(7402), 207-214. [https://doi.org/10.1038/nature11234](https://doi.org/10.1038/nature11234)"
     ]
+  },
+  {
+    "work_id": "ep33-origami-engineering-miura-ori-space-solar-sail",
+    "episode_num": 33,
+    "faculty": "工学部・航空宇宙工学科 ／ 先端学際工学専攻（折紙工学・展開構造物研究室）",
+    "theme": "剛体折紙の幾何学（ミウラ折り・川崎の定理・前川の定理）と宇宙太陽発電パネル・医療ステントへの工学的応用",
+    "episode_title": "一枚の折り紙が宇宙で翼を広げる日――ミウラ折りと折紙工学の幾何学",
+    "posted_at": "2026-11-11T09:52:35.473744+09:00",
+    "file_path": "content/2026-10-11_ep33_origami_engineering_miura_ori_space_solar_sail.md",
+    "status": "publish",
+    "references": [
+      "Research Collaboration (2004). A Prediction Method of Bolted Junctions Microslip in High Stability Space Structures. *55th International Astronautical Congress of the International Astronautical Federation, the International Academy of Astronautics, and the International Institute of Space Law*. [https://doi.org/10.2514/6.iac-04-i.1.01](https://doi.org/10.2514/6.iac-04-i.1.01)",
+      "Wei, Z. Y., Guo, Z. V., Dudte, L., Liang, H. Y., Mahadevan, L. (2013). Geometric Mechanics of Periodic Pleated Origami. *Physical Review Letters*, 110(21). [https://doi.org/10.1103/physrevlett.110.215501](https://doi.org/10.1103/physrevlett.110.215501)",
+      "Silverberg, J. L., Evans, A. A., McLeod, L., Hayward, R. C., Hull, T., Santangelo, C. D., et al. (2014). Using origami design principles to fold reprogrammable mechanical metamaterials. *Science*, 345(6197), 647-650. [https://doi.org/10.1126/science.1252876](https://doi.org/10.1126/science.1252876)"
+    ]
   }
 ]

@@ -486,5 +486,20 @@
       "Wei, Z. Y., Guo, Z. V., Dudte, L., Liang, H. Y., Mahadevan, L. (2013). Geometric Mechanics of Periodic Pleated Origami. *Physical Review Letters*, 110(21). [https://doi.org/10.1103/physrevlett.110.215501](https://doi.org/10.1103/physrevlett.110.215501)",
       "Silverberg, J. L., Evans, A. A., McLeod, L., Hayward, R. C., Hull, T., Santangelo, C. D., et al. (2014). Using origami design principles to fold reprogrammable mechanical metamaterials. *Science*, 345(6197), 647-650. [https://doi.org/10.1126/science.1252876](https://doi.org/10.1126/science.1252876)"
     ]
+  },
+  {
+    "work_id": "ep34-bioluminescence-gfp-live-cell-imaging",
+    "episode_num": 34,
+    "faculty": "理学部・生物科学科 ／ 生命機能イメージング研究センター（分子細胞生物学研究室）",
+    "theme": "緑色蛍光タンパク質（GFP / 下村脩博士ら）の発見と生細胞ライブイメージングによる生命現象の可視化",
+    "episode_title": "オワンクラゲの緑の灯火――GFP が照らし出す生きた細胞の小宇宙",
+    "posted_at": "2026-11-12T10:59:49.617872+09:00",
+    "file_path": "content/2026-10-11_ep34_bioluminescence_gfp_live_cell_imaging.md",
+    "status": "publish",
+    "references": [
+      "Shimomura, O., Johnson, F. H., Saiga, Y. (1962). Extraction, Purification and Properties of Aequorin, a Bioluminescent Protein from the Luminous Hydromedusan, Aequorea. *Journal of Cellular and Comparative Physiology*, 59(3), 223-239. [https://doi.org/10.1002/jcp.1030590302](https://doi.org/10.1002/jcp.1030590302)",
+      "Chalfie, M., Tu, Y., Euskirchen, G., Ward, W. W., Prasher, D. C. (1994). Green Fluorescent Protein as a Marker for Gene Expression. *Science*, 263(5148), 802-805. [https://doi.org/10.1126/science.8303295](https://doi.org/10.1126/science.8303295)",
+      "Tsien, R. Y. (1998). THE GREEN FLUORESCENT PROTEIN. *Annual Review of Biochemistry*, 67(1), 509-544. [https://doi.org/10.1146/annurev.biochem.67.1.509](https://doi.org/10.1146/annurev.biochem.67.1.509)"
+    ]
   }
 ]

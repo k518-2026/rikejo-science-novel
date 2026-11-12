@@ -1282,5 +1282,17 @@
     "url": "stories/ep107-green-fluorescent-protein-gfp-molecular-tagging-biochemistry.html",
     "image": "assets/images/ep107-green-fluorescent-protein-gfp-molecular-tagging-biochemistry.png",
     "char_count": 6818
+  },
+  {
+    "no": 108,
+    "work_id": "ep108-bcs-theory-superconductivity-cooper-pairs",
+    "title": "極低温の海に手を取り合う電子――BCS 理論と超伝導クーパー対の量子凝縮",
+    "faculty": "理学部・物理学科 ／ 低温量子物性・超伝導物理学研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "本来は同符号の電荷で反発し合う電子同士が、結晶格子の歪み（フォノン）を介して引き合い、スピン逆向きの電子対「クーパー対（Cooper Pair 1956）」を形成してボース凝縮を起こすことで、電気抵抗が完全にゼロになる「BCS理論（バーディーン・クーパー・シュリーファー 1957年、1972年ノーベル物理学賞）」とマクロな量子位相・ジョセフソン効果（1973年ノーベル物理学賞）",
+    "has_image": true,
+    "url": "stories/ep108-bcs-theory-superconductivity-cooper-pairs.html",
+    "image": "assets/images/ep108-bcs-theory-superconductivity-cooper-pairs.png",
+    "char_count": 7161
   }
 ]

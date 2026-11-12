@@ -15,10 +15,10 @@
       外部生成AI APIは一切使用せず、Mac mini M4 ローカルAI（Ollama Qwen3.5 &amp; shosetsu ＋ Draw Things FLUX.2）で執筆・挿絵生成し、GitHub Pagesで公開しています。
     </p>
     <div class="stats-bar">
-      <div class="stat-pill"><strong>108</strong> 収録エピソード</div>
-      <div class="stat-pill"><strong>108</strong> 挿絵付き作品</div>
+      <div class="stat-pill"><strong>109</strong> 収録エピソード</div>
+      <div class="stat-pill"><strong>109</strong> 挿絵付き作品</div>
       <div class="stat-pill"><strong>5</strong> 科学・数理・情報分野</div>
-      <div class="stat-pill">最終更新: 2026-11-12 17:48 JST</div>
+      <div class="stat-pill">最終更新: 2026-11-12 17:53 JST</div>
     </div>
   </header>
 
@@ -36,7 +36,7 @@
         </select>
         <select id="imageFilter" class="select-filter" onchange="filterCards()">
           <option value="">すべて表示</option>
-          <option value="yes">🎨 挿絵ありのみ (108)</option>
+          <option value="yes">🎨 挿絵ありのみ (109)</option>
         </select>
         <select id="sortOrder" class="select-filter" onchange="sortCards()">
           <option value="desc">新しい順（#大 → #01）</option>
@@ -47,6 +47,24 @@
     </div>
 
     <div class="story-grid" id="storyGrid">
+      <div class="story-card-wrap" data-no="109" data-field="数学・数理科学" data-illustrated="yes" data-search="蜘蛛の巣をさまよう旅人の足跡――ページランクとマルコフ連鎖の情報数理 情報理工学部・数理情報学科 ／ ネットワーク数理・大規模アルゴリズム解析研究室 数学・数理科学 数十億のwebページがリンクで複雑に絡み合うハイパーリンク構造を巨大な有向グラフとみなし、ランダムサーファー（確率的ランダムウォーク）が各ページに滞在する極限確率分布をマルコフ連鎖の定常分布（ペロン・フロベニウスの定理・固有値1の固有ベクトル）として算出するgoogle創始者たちの「ページランク（pagerank 1998年）」の数学的構造 ページランク（pagerank algorithm）、推移確率行列とダンピングファクター（d ≈ 0.85）、既約・非周期マルコフ連鎖（エルゴード性）、ペロン・フロベニウスの定理（perron-frobenius theorem）、べき乗法（power iteration method）、web検索エンジン・巨大グラフ解析 【パターン5：落ちこぼれ・挫折からの大逆転（リベンジ・覚醒型）】学校の図書室の蔵書検索システムを改善するため、生徒たちの推薦コメントや参照リンクを張り巡らせた「本のネットワーク検索」を自作した柚葉。しかし、単純にリンクの数を数えるアルゴリズムでは、自分で自分を大量に相互参照させた悪質なダミーページが検索トップを独占してしまい、「私の作ったシステムはスパムに簡単に騙されて使い物にならない…」と自分のプログラミングと数学の力不足に激しく落ち込んでしまう。舞助教の研究室を訪ねると、助教は「リンクの数ではなく、『信頼できる場所から向けられたリンクか』という重みを考えればいいんだよ」と、webの海をサイコロを振って気まぐれに歩き続ける旅人（マルコフ連鎖）の比喩を提示。一定確率（1-d）でどこかへランダムジャンプするダンピングファクターを組み込み、巨大行列の主固有ベクトルをべき乗法で収束させるページランクのアルゴリズムを実装。悪質なループを綺麗に解消し、本当に価値のある名著が上位に美しく並ぶ大逆転を果たし、満面の笑顔を取り戻す。 相葉 柚葉（あいば ゆずは・高2・情報科学部兼数学部） 神楽坂 舞（かぐらざか まい・助教・応用確率解析・離散アルゴリズム／高校数学・情報教職担当）">
+        <article class="story-card">
+          <a href="stories/ep109-pagerank-random-walk-markov-chain-web-search-math.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep109-pagerank-random-walk-markov-chain-web-search-math.png" alt="蜘蛛の巣をさまよう旅人の足跡――ページランクとマルコフ連鎖の情報数理" loading="lazy" />
+            <span class="card-no-badge">#109</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 情報理工学部・数理情報学科 ／ ネットワーク数理・大規模アルゴリズム解析研究室</div>
+            <h2 class="card-title"><a href="stories/ep109-pagerank-random-walk-markov-chain-web-search-math.html">蜘蛛の巣をさまよう旅人の足跡――ページランクとマルコフ連鎖の情報数理</a></h2>
+            <div class="card-tech">🔬 数十億のWebページがリンクで複雑に絡み合うハイパーリンク構造を巨大な有向グラフとみなし、ランダムサーファー（確率的ランダムウォーク）が各ページに滞在する極限確率分布をマルコフ連鎖の定常分布（ペロン・フロベニウスの定理・固有値1の固有ベクトル）として算出するGoogle創始者たちの「ページランク（PageRank 1998年）」の数学的構造</div>
+            <p class="card-summary">【パターン5：落ちこぼれ・挫折からの大逆転（リベンジ・覚醒型）】学校の図書室の蔵書検索システムを改善するため、生徒たちの推薦コメントや参照リンクを張り巡らせた「本のネットワーク検索」を自作した柚葉。しかし、単純にリンクの数を数えるアルゴリズムでは、自分で自分を大量に相互参照させた悪質なダミーページが検索トップを独占してしまい、「私の作ったシステムはスパムに簡単に騙されて使い物にならない…」と自分のプログラミングと数学の力不足に激しく落ち込んでしまう。舞助教の研究室を訪ねると、助教は「リンクの数ではなく、『信頼できる場所から向けられたリンクか』という重みを考えればいいんだよ」と、Webの海をサイコロを振って気まぐれに歩き続ける旅人（マルコフ連鎖）の比喩を提示。一定確率（1-d）でどこかへランダムジャンプするダンピングファクターを組み込み、巨大行列の主固有ベクトルをべき乗法で収束させるページランクのアルゴリズムを実装。悪質なループを綺麗に解消し、本当に価値のある名著が上位に美しく並ぶ大逆転を果たし、満面の笑顔を取り戻す。</p>
+            <div class="card-footer">
+              <span>約 7,392 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep109-pagerank-random-walk-markov-chain-web-search-math.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
       <div class="story-card-wrap" data-no="108" data-field="物理学・宇宙・光学" data-illustrated="yes" data-search="極低温の海に手を取り合う電子――bcs 理論と超伝導クーパー対の量子凝縮 理学部・物理学科 ／ 低温量子物性・超伝導物理学研究室 物理学・宇宙・光学 本来は同符号の電荷で反発し合う電子同士が、結晶格子の歪み（フォノン）を介して引き合い、スピン逆向きの電子対「クーパー対（cooper pair 1956）」を形成してボース凝縮を起こすことで、電気抵抗が完全にゼロになる「bcs理論（バーディーン・クーパー・シュリーファー 1957年、1972年ノーベル物理学賞）」とマクロな量子位相・ジョセフソン効果（1973年ノーベル物理学賞） bcs理論（bardeen-cooper-schrieffer theory）、クーパー対（cooper pair / 有効引力フォノン相互作用）、超伝導エネルギーギャップ（δ）、マイスナー効果（完全反磁性）、ジョセフソン効果（量子トンネル電流・squid磁束計）、超伝導量子ビット・リニアモーターカー 【パターン4：ライバル・天敵との衝突と共闘（ライバル対決型）】物理コンテストの実技課題で、超伝導体の上に浮かぶネオジム磁石（マイスナー効果）と電気抵抗の急峻な転移温度測定を巡り、同じ部活で古典力学と熱力学の理論計算を得意とする男子生徒・成瀬と瑠衣の解釈が激突。「単に結晶内の電子の散乱が熱振動の低下でゼロに漸近しただけだ」と主張する成瀬に対し、瑠衣は「ある特定の臨界温度tcで急激にストンと抵抗がゼロになるのは、何か劇的な量子の状態変化が起きているはず」と譲らない。一条助教の研究室で液体ヘリウムを用いた精密な電気抵抗測定とジョセフソン素子の交流トンネル測定を共同で行う中、格子振動（フォノン）を介して2つの電子が手を取り合ってクーパー対となり、乱れのない一つの巨大な波として進む真理に到達。互いの測定データと量子統計モデルを組み合わせてコンテストの難問を解き明かし、対立を越えて笑顔でハイタッチを交わす。 羽鳥 瑠衣（はとり るい・高2・物理部） 一条 綾音（いちじょう あやね・助教・固体量子物理学／高校物理教職担当）">
         <article class="story-card">
           <a href="stories/ep108-bcs-theory-superconductivity-cooper-pairs.html" class="card-thumb-wrap">

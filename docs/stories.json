@@ -1294,5 +1294,17 @@
     "url": "stories/ep108-bcs-theory-superconductivity-cooper-pairs.html",
     "image": "assets/images/ep108-bcs-theory-superconductivity-cooper-pairs.png",
     "char_count": 7161
+  },
+  {
+    "no": 109,
+    "work_id": "ep109-pagerank-random-walk-markov-chain-web-search-math",
+    "title": "蜘蛛の巣をさまよう旅人の足跡――ページランクとマルコフ連鎖の情報数理",
+    "faculty": "情報理工学部・数理情報学科 ／ ネットワーク数理・大規模アルゴリズム解析研究室",
+    "field": "数学・数理科学",
+    "theme": "数十億のWebページがリンクで複雑に絡み合うハイパーリンク構造を巨大な有向グラフとみなし、ランダムサーファー（確率的ランダムウォーク）が各ページに滞在する極限確率分布をマルコフ連鎖の定常分布（ペロン・フロベニウスの定理・固有値1の固有ベクトル）として算出するGoogle創始者たちの「ページランク（PageRank 1998年）」の数学的構造",
+    "has_image": true,
+    "url": "stories/ep109-pagerank-random-walk-markov-chain-web-search-math.html",
+    "image": "assets/images/ep109-pagerank-random-walk-markov-chain-web-search-math.png",
+    "char_count": 7392
   }
 ]

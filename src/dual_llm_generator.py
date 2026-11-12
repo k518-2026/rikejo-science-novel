@@ -1533,6 +1533,24 @@ class DualLLMStoryGenerator:
             "both characters smiling excitedly watching living cellular microscopy video of glowing green fluorescent proteins migrating inside dividing cells on a monitor.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit biochemistry laboratory.",
         ),
+        "ep108-bcs-theory-superconductivity-cooper-pairs": _koma.__func__(
+            "a cute high school girl holding an experimental physics notebook, visiting a low-temperature superconductivity laboratory with a curious warm smile.",
+            "a smiling female solid-state physicist with kind gentle eyes demonstrating crystal lattice phononic vibrations and paired Cooper electrons on a clean whiteboard.",
+            "both characters smiling cheerfully looking at a colorful computer display showing zero electrical resistance drop and floating Meissner magnetic levitation.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit low-temperature physics seminar room.",
+        ),
+        "ep109-pagerank-random-walk-markov-chain-web-search-math": _koma.__func__(
+            "a cute high school girl looking down at an exploited library search algorithm code with a discouraged expression in a mathematics computer room.",
+            "a smiling female computer scientist with kind gentle eyes demonstrating random surfer Markov chains and Perron-Frobenius transition matrices on a clean whiteboard.",
+            "both characters smiling cheerfully watching a clean graph iteration plot converge to high-ranking trustworthy nodes on a large computer display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit mathematical informatics seminar room.",
+        ),
+        "ep110-sanger-dna-sequencing-dideoxy-chain-termination-genomics": _koma.__func__(
+            "a cute high school girl acting as a student science teacher, smiling gently as she shows colorful DNA double-helix models to curious students in a classroom.",
+            "a smiling female molecular geneticist with kind gentle eyes demonstrating dideoxy chain termination and four-color fluorescent peaks on a clean whiteboard.",
+            "both characters smiling excitedly watching a glowing four-color DNA electropherogram trace out A, T, G, C letter sequences clearly on a computer monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit molecular biology laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

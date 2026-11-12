@@ -1306,5 +1306,17 @@
     "url": "stories/ep109-pagerank-random-walk-markov-chain-web-search-math.html",
     "image": "assets/images/ep109-pagerank-random-walk-markov-chain-web-search-math.png",
     "char_count": 7392
+  },
+  {
+    "no": 110,
+    "work_id": "ep110-sanger-dna-sequencing-dideoxy-chain-termination-genomics",
+    "title": "鎖を止める四色の鍵――サンガー法とDNA配列解読の分子生物学",
+    "faculty": "理学部・生物学科 ／ 分子遺伝学・ゲノム情報解析研究室",
+    "field": "情報学・AI",
+    "theme": "DNAポリメラーゼによる複製の際、3'-OH基を欠くジデオキシヌクレオチド（ddNTP）を取り込ませることで塩基特異的に伸長反応を停止させ、ポリアクリルアミドゲル電気泳動やキャピラリー電気泳動で1塩基単位の長さの違いを四色蛍光標識で読み取る「サンガー法（鎖停止法 1977年、フレデリック・サンガー 1980年ノーベル化学賞）」とヒトゲノム計画を支えたシーケンシング技術の進化",
+    "has_image": true,
+    "url": "stories/ep110-sanger-dna-sequencing-dideoxy-chain-termination-genomics.html",
+    "image": "assets/images/ep110-sanger-dna-sequencing-dideoxy-chain-termination-genomics.png",
+    "char_count": 7194
   }
 ]

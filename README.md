@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **112** 話（うち挿絵付き **112** 話 / 最終更新: 2026-11-13 10:11 JST）
+- **収録作品数**: 全 **113** 話（うち挿絵付き **113** 話 / 最終更新: 2026-11-13 10:16 JST）
 
 ---
 
@@ -126,6 +126,7 @@
 | 110 | **[鎖を止める四色の鍵――サンガー法とDNA配列解読の分子生物学](https://k518-2026.github.io/rikejo-science-novel/stories/ep110-sanger-dna-sequencing-dideoxy-chain-termination-genomics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep110-sanger-dna-sequencing-dideoxy-chain-termination-genomics.html) | [📄原稿](content/2026-11-12_ep110_sanger_dna_sequencing_dideoxy_chain_termination_genomics.md) | [🎨挿絵](content/2026-11-12_ep110_sanger_dna_sequencing_dideoxy_chain_termination_genomics.png) | 理学部・生物学科 ／ 分子遺伝学・ゲノム情報解析研究室 | DNAポリメラーゼによる複製の際、3'-OH基を欠くジデオキシヌクレオチド（ddNTP）を取り込ませることで塩基特異的に伸長反応を停止させ、ポリアクリルアミドゲル電気泳動やキャピラリー電気泳動で1塩基単位の長さの違いを四色蛍光標識で読み取る「サンガー法（鎖停止法 1977年、フレデリック・サンガー 1980年ノーベル化学賞）」とヒトゲノム計画を支えたシーケンシング技術の進化 | 7,194字 |
 | 111 | **[記憶する抵抗器とシナプスの夢――メムリスタと脳型アナログ計算](https://k518-2026.github.io/rikejo-science-novel/stories/ep111-memristor-neuromorphic-computing-analog-ai.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep111-memristor-neuromorphic-computing-analog-ai.html) | [📄原稿](content/2026-11-13_ep111_memristor_neuromorphic_computing_analog_ai.md) | [🎨挿絵](content/2026-11-13_ep111_memristor_neuromorphic_computing_analog_ai.png) | 情報理工学部・情報エレクトロニクス学科 ／ ニューロモルフィック数理・ナノデバイス研究室 | 抵抗・コンデンサ・コイルに続く「第4の基本受動素子」としてレオン・チュアが1971年に数学的に予言し、2008年にHP研究所が酸化チタン薄膜で実証した「メムリスタ（Memristor / 記憶抵抗器）」。通過した電荷量（磁束）に応じて抵抗値が連続的に変化する不揮発性アナログ記憶素子を活用し、フォン・ノイマン・ボトルの壁を打ち破る脳型ニューロモルフィックAIハードウェアの数理物理 | 7,834字 |
 | 112 | **[縁を駆ける乱れなきスピン――トポロジカル絶縁体と量子スピンホール効果](https://k518-2026.github.io/rikejo-science-novel/stories/ep112-topological-insulator-quantum-spin-hall-effect-condensed-matter.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep112-topological-insulator-quantum-spin-hall-effect-condensed-matter.html) | [📄原稿](content/2026-11-13_ep112_topological_insulator_quantum_spin_hall_effect_condensed_matter.md) | [🎨挿絵](content/2026-11-13_ep112_topological_insulator_quantum_spin_hall_effect_condensed_matter.png) | 理学部・物理学科 ／ 凝縮系量子物性・トポロジカル相転移研究室 | 物質の内部（バルク）はエネルギーギャップを持つ絶縁体でありながら、表面や端（エッジ）にはトポロジー（数学的位相幾何学）の保護によって散乱を受けない金属状態が現れる「トポロジカル絶縁体（Topological Insulator）」。強いスピン軌道相互作用により、アップスピンとダウンスピンが逆方向に散乱なく走行する「量子スピンホール効果（ケーン・メーレ 2005年、2016年ノーベル物理学賞）」の物質物理 | 7,566字 |
+| 113 | **[光が回す分子の歯車――ブラウン運動の嵐を切り裂くナノローターの詩](https://k518-2026.github.io/rikejo-science-novel/stories/ep113-molecular-machines-nanomotors-rotaxane-supramolecular-chemistry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep113-molecular-machines-nanomotors-rotaxane-supramolecular-chemistry.html) | [📄原稿](content/2026-11-13_ep113_molecular_machines_nanomotors_rotaxane_supramolecular_chemistry.md) | [🎨挿絵](content/2026-11-13_ep113_molecular_machines_nanomotors_rotaxane_supramolecular_chemistry.png) | 理学部・化学科 ／ 有機機能超分子化学・ナノマシン創発研究室 | 共有結合ではなく機械的結合（インターロック構造）で絡み合うロタキサンやカテナン、光や熱の異性化反応を利用して360度一方向に連続回転するフェリンガ型「分子モーター（Molecular Motor）」（ソヴァージュ・ストッダート・フェリンガ 2016年ノーベル化学賞）。熱揺らぎ（ブラウン運動）が支配するナノスケールの世界で、ラチェット機構により指向性運動を取り出す分子機械の設計原理 | 7,442字 |
 
 ---
 

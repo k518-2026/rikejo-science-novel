@@ -1342,5 +1342,17 @@
     "url": "stories/ep112-topological-insulator-quantum-spin-hall-effect-condensed-matter.html",
     "image": "assets/images/ep112-topological-insulator-quantum-spin-hall-effect-condensed-matter.png",
     "char_count": 7566
+  },
+  {
+    "no": 113,
+    "work_id": "ep113-molecular-machines-nanomotors-rotaxane-supramolecular-chemistry",
+    "title": "光が回す分子の歯車――ブラウン運動の嵐を切り裂くナノローターの詩",
+    "faculty": "理学部・化学科 ／ 有機機能超分子化学・ナノマシン創発研究室",
+    "field": "化学・薬学・材料",
+    "theme": "共有結合ではなく機械的結合（インターロック構造）で絡み合うロタキサンやカテナン、光や熱の異性化反応を利用して360度一方向に連続回転するフェリンガ型「分子モーター（Molecular Motor）」（ソヴァージュ・ストッダート・フェリンガ 2016年ノーベル化学賞）。熱揺らぎ（ブラウン運動）が支配するナノスケールの世界で、ラチェット機構により指向性運動を取り出す分子機械の設計原理",
+    "has_image": true,
+    "url": "stories/ep113-molecular-machines-nanomotors-rotaxane-supramolecular-chemistry.html",
+    "image": "assets/images/ep113-molecular-machines-nanomotors-rotaxane-supramolecular-chemistry.png",
+    "char_count": 7442
   }
 ]

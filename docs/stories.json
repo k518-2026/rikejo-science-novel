@@ -1378,5 +1378,17 @@
     "url": "stories/ep115-cosmic-inflation-scalar-field-vacuum-energy-big-bang.html",
     "image": "assets/images/ep115-cosmic-inflation-scalar-field-vacuum-energy-big-bang.png",
     "char_count": 6604
+  },
+  {
+    "no": 116,
+    "work_id": "ep116-social-physics-opinion-dynamics-bounded-confidence-consensus",
+    "title": "孤立した島を架橋するエージェント――社会物理学と合意形成の数理モデル",
+    "faculty": "情報理工学部・知能情報学科 ／ 計算社会科学・複雑系ネットワーク研究室",
+    "field": "数学・数理科学",
+    "theme": "無数の人間が意見を交換する社会現象を、磁性体のスピンの揃い方（イジング模型）や粒子間相互作用に見立てて数理モデル化する「社会物理学（Sociophysics）」。意見の近い相手とだけ合意を形成する有界信頼モデル（Deffuantモデル、Hegselmann-Krauseモデル）において、エコーチェンバー現象や社会の分極化がなぜ発生し、どうすれば合意に至るかを解明する統計数理",
+    "has_image": true,
+    "url": "stories/ep116-social-physics-opinion-dynamics-bounded-confidence-consensus.html",
+    "image": "assets/images/ep116-social-physics-opinion-dynamics-bounded-confidence-consensus.png",
+    "char_count": 7202
   }
 ]

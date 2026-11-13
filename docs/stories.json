@@ -1330,5 +1330,17 @@
     "url": "stories/ep111-memristor-neuromorphic-computing-analog-ai.html",
     "image": "assets/images/ep111-memristor-neuromorphic-computing-analog-ai.png",
     "char_count": 7834
+  },
+  {
+    "no": 112,
+    "work_id": "ep112-topological-insulator-quantum-spin-hall-effect-condensed-matter",
+    "title": "縁を駆ける乱れなきスピン――トポロジカル絶縁体と量子スピンホール効果",
+    "faculty": "理学部・物理学科 ／ 凝縮系量子物性・トポロジカル相転移研究室",
+    "field": "数学・数理科学",
+    "theme": "物質の内部（バルク）はエネルギーギャップを持つ絶縁体でありながら、表面や端（エッジ）にはトポロジー（数学的位相幾何学）の保護によって散乱を受けない金属状態が現れる「トポロジカル絶縁体（Topological Insulator）」。強いスピン軌道相互作用により、アップスピンとダウンスピンが逆方向に散乱なく走行する「量子スピンホール効果（ケーン・メーレ 2005年、2016年ノーベル物理学賞）」の物質物理",
+    "has_image": true,
+    "url": "stories/ep112-topological-insulator-quantum-spin-hall-effect-condensed-matter.html",
+    "image": "assets/images/ep112-topological-insulator-quantum-spin-hall-effect-condensed-matter.png",
+    "char_count": 7566
   }
 ]

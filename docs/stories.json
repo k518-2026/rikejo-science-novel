@@ -1318,5 +1318,17 @@
     "url": "stories/ep110-sanger-dna-sequencing-dideoxy-chain-termination-genomics.html",
     "image": "assets/images/ep110-sanger-dna-sequencing-dideoxy-chain-termination-genomics.png",
     "char_count": 7194
+  },
+  {
+    "no": 111,
+    "work_id": "ep111-memristor-neuromorphic-computing-analog-ai",
+    "title": "記憶する抵抗器とシナプスの夢――メムリスタと脳型アナログ計算",
+    "faculty": "情報理工学部・情報エレクトロニクス学科 ／ ニューロモルフィック数理・ナノデバイス研究室",
+    "field": "数学・数理科学",
+    "theme": "抵抗・コンデンサ・コイルに続く「第4の基本受動素子」としてレオン・チュアが1971年に数学的に予言し、2008年にHP研究所が酸化チタン薄膜で実証した「メムリスタ（Memristor / 記憶抵抗器）」。通過した電荷量（磁束）に応じて抵抗値が連続的に変化する不揮発性アナログ記憶素子を活用し、フォン・ノイマン・ボトルの壁を打ち破る脳型ニューロモルフィックAIハードウェアの数理物理",
+    "has_image": true,
+    "url": "stories/ep111-memristor-neuromorphic-computing-analog-ai.html",
+    "image": "assets/images/ep111-memristor-neuromorphic-computing-analog-ai.png",
+    "char_count": 7834
   }
 ]

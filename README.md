@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **110** 話（うち挿絵付き **110** 話 / 最終更新: 2026-11-12 17:59 JST）
+- **収録作品数**: 全 **111** 話（うち挿絵付き **111** 話 / 最終更新: 2026-11-13 10:05 JST）
 
 ---
 
@@ -124,6 +124,7 @@
 | 108 | **[極低温の海に手を取り合う電子――BCS 理論と超伝導クーパー対の量子凝縮](https://k518-2026.github.io/rikejo-science-novel/stories/ep108-bcs-theory-superconductivity-cooper-pairs.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep108-bcs-theory-superconductivity-cooper-pairs.html) | [📄原稿](content/2026-11-12_ep108_bcs_theory_superconductivity_cooper_pairs.md) | [🎨挿絵](content/2026-11-12_ep108_bcs_theory_superconductivity_cooper_pairs.png) | 理学部・物理学科 ／ 低温量子物性・超伝導物理学研究室 | 本来は同符号の電荷で反発し合う電子同士が、結晶格子の歪み（フォノン）を介して引き合い、スピン逆向きの電子対「クーパー対（Cooper Pair 1956）」を形成してボース凝縮を起こすことで、電気抵抗が完全にゼロになる「BCS理論（バーディーン・クーパー・シュリーファー 1957年、1972年ノーベル物理学賞）」とマクロな量子位相・ジョセフソン効果（1973年ノーベル物理学賞） | 7,161字 |
 | 109 | **[蜘蛛の巣をさまよう旅人の足跡――ページランクとマルコフ連鎖の情報数理](https://k518-2026.github.io/rikejo-science-novel/stories/ep109-pagerank-random-walk-markov-chain-web-search-math.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep109-pagerank-random-walk-markov-chain-web-search-math.html) | [📄原稿](content/2026-11-12_ep109_pagerank_random_walk_markov_chain_web_search_math.md) | [🎨挿絵](content/2026-11-12_ep109_pagerank_random_walk_markov_chain_web_search_math.png) | 情報理工学部・数理情報学科 ／ ネットワーク数理・大規模アルゴリズム解析研究室 | 数十億のWebページがリンクで複雑に絡み合うハイパーリンク構造を巨大な有向グラフとみなし、ランダムサーファー（確率的ランダムウォーク）が各ページに滞在する極限確率分布をマルコフ連鎖の定常分布（ペロン・フロベニウスの定理・固有値1の固有ベクトル）として算出するGoogle創始者たちの「ページランク（PageRank 1998年）」の数学的構造 | 7,392字 |
 | 110 | **[鎖を止める四色の鍵――サンガー法とDNA配列解読の分子生物学](https://k518-2026.github.io/rikejo-science-novel/stories/ep110-sanger-dna-sequencing-dideoxy-chain-termination-genomics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep110-sanger-dna-sequencing-dideoxy-chain-termination-genomics.html) | [📄原稿](content/2026-11-12_ep110_sanger_dna_sequencing_dideoxy_chain_termination_genomics.md) | [🎨挿絵](content/2026-11-12_ep110_sanger_dna_sequencing_dideoxy_chain_termination_genomics.png) | 理学部・生物学科 ／ 分子遺伝学・ゲノム情報解析研究室 | DNAポリメラーゼによる複製の際、3'-OH基を欠くジデオキシヌクレオチド（ddNTP）を取り込ませることで塩基特異的に伸長反応を停止させ、ポリアクリルアミドゲル電気泳動やキャピラリー電気泳動で1塩基単位の長さの違いを四色蛍光標識で読み取る「サンガー法（鎖停止法 1977年、フレデリック・サンガー 1980年ノーベル化学賞）」とヒトゲノム計画を支えたシーケンシング技術の進化 | 7,194字 |
+| 111 | **[記憶する抵抗器とシナプスの夢――メムリスタと脳型アナログ計算](https://k518-2026.github.io/rikejo-science-novel/stories/ep111-memristor-neuromorphic-computing-analog-ai.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep111-memristor-neuromorphic-computing-analog-ai.html) | [📄原稿](content/2026-11-13_ep111_memristor_neuromorphic_computing_analog_ai.md) | [🎨挿絵](content/2026-11-13_ep111_memristor_neuromorphic_computing_analog_ai.png) | 情報理工学部・情報エレクトロニクス学科 ／ ニューロモルフィック数理・ナノデバイス研究室 | 抵抗・コンデンサ・コイルに続く「第4の基本受動素子」としてレオン・チュアが1971年に数学的に予言し、2008年にHP研究所が酸化チタン薄膜で実証した「メムリスタ（Memristor / 記憶抵抗器）」。通過した電荷量（磁束）に応じて抵抗値が連続的に変化する不揮発性アナログ記憶素子を活用し、フォン・ノイマン・ボトルの壁を打ち破る脳型ニューロモルフィックAIハードウェアの数理物理 | 7,834字 |
 
 ---
 

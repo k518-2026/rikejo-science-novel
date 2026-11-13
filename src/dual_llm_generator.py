@@ -1569,6 +1569,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully looking at a colorful 3D molecular computer graphics animation showing a Feringa motor rotating smoothly 360 degrees on a monitor.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit supramolecular chemistry laboratory.",
         ),
+        "ep114-black-scholes-merton-option-pricing-stochastic-calculus": _koma.__func__(
+            "a cute high school girl looking down at a fluctuating stock price random walk graph with a discouraged expression in a quiet mathematics seminar room.",
+            "a smiling female mathematician with kind gentle eyes demonstrating Ito's lemma and risk-neutral portfolio hedging on a clean whiteboard.",
+            "both characters smiling cheerfully watching a clean mathematical option pricing curve match market equilibrium data perfectly on a computer display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit financial mathematics seminar room.",
+        ),
+        "ep115-cosmic-inflation-scalar-field-vacuum-energy-big-bang": _koma.__func__(
+            "a cute high school girl acting as a student astronomy teacher, smiling gently as she shows an expanding universe balloon to curious children in a classroom.",
+            "a smiling female astrophysicist with kind gentle eyes demonstrating scalar field potential false vacuum energy and exponential cosmic inflation on a clean whiteboard.",
+            "both characters smiling excitedly watching a glowing 3D cosmic expansion simulation solve the horizon and flatness problems on a laptop monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles on an astronomical observatory rooftop at golden sunset.",
+        ),
+        "ep116-social-physics-opinion-dynamics-bounded-confidence-consensus": _koma.__func__(
+            "a cute high school girl looking puzzled at two polarized split opinion survey charts on a computer science laboratory monitor.",
+            "a smiling female statistical physicist with kind gentle eyes demonstrating bounded confidence agent interactions and bridging thresholds on a clean whiteboard.",
+            "both characters smiling cheerfully watching an agent-based opinion simulation converge smoothly into a harmonious unified consensus on a large screen.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit computational social science laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

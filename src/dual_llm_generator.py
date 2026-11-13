@@ -1551,6 +1551,24 @@ class DualLLMStoryGenerator:
             "both characters smiling excitedly watching a glowing four-color DNA electropherogram trace out A, T, G, C letter sequences clearly on a computer monitor.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit molecular biology laboratory.",
         ),
+        "ep111-memristor-neuromorphic-computing-analog-ai": _koma.__func__(
+            "a cute high school girl looking puzzled at an overheated power supply error monitor in a computer science server room.",
+            "a smiling female neuro-hardware engineer with kind gentle eyes demonstrating memristor crossbar array circuits and Ohm's law vector matrix multiplication on a clean whiteboard.",
+            "both characters smiling cheerfully looking at a colorful computer display showing ultra-low-power brain-inspired neural network analog computing in real time.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit neuromorphic electronics seminar room.",
+        ),
+        "ep112-topological-insulator-quantum-spin-hall-effect-condensed-matter": _koma.__func__(
+            "a cute high school girl setting up an interactive low-heat electronics booth with colorful ribbon models and toy cars in a school festival hall.",
+            "a smiling female condensed matter physicist with kind gentle eyes demonstrating bulk-edge correspondence and Mobius strip topology on a clean whiteboard.",
+            "both characters smiling excitedly watching glowing electron spin-up and spin-down wavepackets glide effortlessly along crystal edges without scattering on a display.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit physics laboratory.",
+        ),
+        "ep113-molecular-machines-nanomotors-rotaxane-supramolecular-chemistry": _koma.__func__(
+            "a cute high school girl holding a chemistry contest binder, visiting a supramolecular robotics laboratory with a curious warm smile.",
+            "a kind female organic chemist with gentle smiling eyes demonstrating light-driven unidirectional molecular rotor rotation and rotaxane rings on a clean whiteboard.",
+            "both characters smiling cheerfully looking at a colorful 3D molecular computer graphics animation showing a Feringa motor rotating smoothly 360 degrees on a monitor.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes and natural sweet smiles in sunlit supramolecular chemistry laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

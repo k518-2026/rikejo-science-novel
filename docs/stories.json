@@ -1354,5 +1354,17 @@
     "url": "stories/ep113-molecular-machines-nanomotors-rotaxane-supramolecular-chemistry.html",
     "image": "assets/images/ep113-molecular-machines-nanomotors-rotaxane-supramolecular-chemistry.png",
     "char_count": 7442
+  },
+  {
+    "no": 114,
+    "work_id": "ep114-black-scholes-merton-option-pricing-stochastic-calculus",
+    "title": "不確実な未来を形作る幾何学――ブラック・ショールの微笑みと、誰かの「わかる」ための方程式",
+    "faculty": "理学部・数学科 ／ 数理ファイナンス・確率解析モデリング研究室",
+    "field": "数学・数理科学",
+    "theme": "株価のランダムウォーク（幾何ブラウン運動）と伊藤の補題（確率微積分）から、原資産と無リスク資産を連続的にリバランスしてリスクを完全に相殺（複製ポートフォリオ）することで、オプション（将来買う権利・売る権利）の適正価格を一意に導く「ブラック・ショールズ・マートン方程式（1973年、1997年ノーベル経済学賞）」の数学的構造",
+    "has_image": true,
+    "url": "stories/ep114-black-scholes-merton-option-pricing-stochastic-calculus.html",
+    "image": "assets/images/ep114-black-scholes-merton-option-pricing-stochastic-calculus.png",
+    "char_count": 7172
   }
 ]

@@ -1366,5 +1366,17 @@
     "url": "stories/ep114-black-scholes-merton-option-pricing-stochastic-calculus.html",
     "image": "assets/images/ep114-black-scholes-merton-option-pricing-stochastic-calculus.png",
     "char_count": 7172
+  },
+  {
+    "no": 115,
+    "work_id": "ep115-cosmic-inflation-scalar-field-vacuum-energy-big-bang",
+    "title": "偽りの真空が引き裂いた瞬間――宇宙インフレーションと指数関数的急膨張",
+    "faculty": "理学部・天文学科 ／ 宇宙物理学・初期宇宙インフレーション理論研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "ビッグバンの火の玉宇宙が始まる直前、宇宙誕生からわずか10⁻³⁶秒後、量子力学的な「偽の真空のエネルギー（スカラー場インフラトン）」が斥力となって宇宙空間を光速を遥かに超える勢いで10²⁶倍以上に指数関数的急膨張させた「宇宙インフレーション理論（佐藤勝彦・アラン・グース 1981年）」と地平線問題・平坦性問題の解決",
+    "has_image": true,
+    "url": "stories/ep115-cosmic-inflation-scalar-field-vacuum-energy-big-bang.html",
+    "image": "assets/images/ep115-cosmic-inflation-scalar-field-vacuum-energy-big-bang.png",
+    "char_count": 6604
   }
 ]

@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **114** 話（うち挿絵付き **114** 話 / 最終更新: 2026-11-13 20:10 JST）
+- **収録作品数**: 全 **115** 話（うち挿絵付き **115** 話 / 最終更新: 2026-11-13 20:16 JST）
 
 ---
 
@@ -128,6 +128,7 @@
 | 112 | **[縁を駆ける乱れなきスピン――トポロジカル絶縁体と量子スピンホール効果](https://k518-2026.github.io/rikejo-science-novel/stories/ep112-topological-insulator-quantum-spin-hall-effect-condensed-matter.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep112-topological-insulator-quantum-spin-hall-effect-condensed-matter.html) | [📄原稿](content/2026-11-13_ep112_topological_insulator_quantum_spin_hall_effect_condensed_matter.md) | [🎨挿絵](content/2026-11-13_ep112_topological_insulator_quantum_spin_hall_effect_condensed_matter.png) | 理学部・物理学科 ／ 凝縮系量子物性・トポロジカル相転移研究室 | 物質の内部（バルク）はエネルギーギャップを持つ絶縁体でありながら、表面や端（エッジ）にはトポロジー（数学的位相幾何学）の保護によって散乱を受けない金属状態が現れる「トポロジカル絶縁体（Topological Insulator）」。強いスピン軌道相互作用により、アップスピンとダウンスピンが逆方向に散乱なく走行する「量子スピンホール効果（ケーン・メーレ 2005年、2016年ノーベル物理学賞）」の物質物理 | 7,566字 |
 | 113 | **[光が回す分子の歯車――ブラウン運動の嵐を切り裂くナノローターの詩](https://k518-2026.github.io/rikejo-science-novel/stories/ep113-molecular-machines-nanomotors-rotaxane-supramolecular-chemistry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep113-molecular-machines-nanomotors-rotaxane-supramolecular-chemistry.html) | [📄原稿](content/2026-11-13_ep113_molecular_machines_nanomotors_rotaxane_supramolecular_chemistry.md) | [🎨挿絵](content/2026-11-13_ep113_molecular_machines_nanomotors_rotaxane_supramolecular_chemistry.png) | 理学部・化学科 ／ 有機機能超分子化学・ナノマシン創発研究室 | 共有結合ではなく機械的結合（インターロック構造）で絡み合うロタキサンやカテナン、光や熱の異性化反応を利用して360度一方向に連続回転するフェリンガ型「分子モーター（Molecular Motor）」（ソヴァージュ・ストッダート・フェリンガ 2016年ノーベル化学賞）。熱揺らぎ（ブラウン運動）が支配するナノスケールの世界で、ラチェット機構により指向性運動を取り出す分子機械の設計原理 | 7,442字 |
 | 114 | **[不確実な未来を形作る幾何学――ブラック・ショールの微笑みと、誰かの「わかる」ための方程式](https://k518-2026.github.io/rikejo-science-novel/stories/ep114-black-scholes-merton-option-pricing-stochastic-calculus.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep114-black-scholes-merton-option-pricing-stochastic-calculus.html) | [📄原稿](content/2026-11-13_ep114_black_scholes_merton_option_pricing_stochastic_calculus.md) | [🎨挿絵](content/2026-11-13_ep114_black_scholes_merton_option_pricing_stochastic_calculus.png) | 理学部・数学科 ／ 数理ファイナンス・確率解析モデリング研究室 | 株価のランダムウォーク（幾何ブラウン運動）と伊藤の補題（確率微積分）から、原資産と無リスク資産を連続的にリバランスしてリスクを完全に相殺（複製ポートフォリオ）することで、オプション（将来買う権利・売る権利）の適正価格を一意に導く「ブラック・ショールズ・マートン方程式（1973年、1997年ノーベル経済学賞）」の数学的構造 | 7,172字 |
+| 115 | **[偽りの真空が引き裂いた瞬間――宇宙インフレーションと指数関数的急膨張](https://k518-2026.github.io/rikejo-science-novel/stories/ep115-cosmic-inflation-scalar-field-vacuum-energy-big-bang.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep115-cosmic-inflation-scalar-field-vacuum-energy-big-bang.html) | [📄原稿](content/2026-11-13_ep115_cosmic_inflation_scalar_field_vacuum_energy_big_bang.md) | [🎨挿絵](content/2026-11-13_ep115_cosmic_inflation_scalar_field_vacuum_energy_big_bang.png) | 理学部・天文学科 ／ 宇宙物理学・初期宇宙インフレーション理論研究室 | ビッグバンの火の玉宇宙が始まる直前、宇宙誕生からわずか10⁻³⁶秒後、量子力学的な「偽の真空のエネルギー（スカラー場インフラトン）」が斥力となって宇宙空間を光速を遥かに超える勢いで10²⁶倍以上に指数関数的急膨張させた「宇宙インフレーション理論（佐藤勝彦・アラン・グース 1981年）」と地平線問題・平坦性問題の解決 | 6,604字 |
 
 ---
 

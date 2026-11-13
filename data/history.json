@@ -501,5 +501,20 @@
       "Chalfie, M., Tu, Y., Euskirchen, G., Ward, W. W., Prasher, D. C. (1994). Green Fluorescent Protein as a Marker for Gene Expression. *Science*, 263(5148), 802-805. [https://doi.org/10.1126/science.8303295](https://doi.org/10.1126/science.8303295)",
       "Tsien, R. Y. (1998). THE GREEN FLUORESCENT PROTEIN. *Annual Review of Biochemistry*, 67(1), 509-544. [https://doi.org/10.1146/annurev.biochem.67.1.509](https://doi.org/10.1146/annurev.biochem.67.1.509)"
     ]
+  },
+  {
+    "work_id": "ep35-error-correcting-codes-reed-solomon-space-probe",
+    "episode_num": 35,
+    "faculty": "情報理工学部・数理情報工学科 ／ 教育学部・情報科教育専攻（符号理論・情報理論研究室）",
+    "theme": "シャノンの情報理論とハミング符号・リード・ソロモン符号による誤り訂正アルゴリズム（QRコード・小惑星探査機通信）",
+    "episode_title": "傷ついたQRコードと深宇宙からの手紙――誤り訂正符号の代数幾何学",
+    "posted_at": "2026-11-13T10:27:09.878856+09:00",
+    "file_path": "content/2026-10-11_ep35_error_correcting_codes_reed_solomon_space_probe.md",
+    "status": "publish",
+    "references": [
+      "Shannon, C. E. (1948). A Mathematical Theory of Communication. *Bell System Technical Journal*, 27(3), 379-423. [https://doi.org/10.1002/j.1538-7305.1948.tb01338.x](https://doi.org/10.1002/j.1538-7305.1948.tb01338.x)",
+      "Hamming, R. W. (1950). Error Detecting and Error Correcting Codes. *Bell System Technical Journal*, 29(2), 147-160. [https://doi.org/10.1002/j.1538-7305.1950.tb00463.x](https://doi.org/10.1002/j.1538-7305.1950.tb00463.x)",
+      "Reed, I. S., Solomon, G. (1960). Polynomial Codes Over Certain Finite Fields. *Journal of the Society for Industrial and Applied Mathematics*, 8(2), 300-304. [https://doi.org/10.1137/0108018](https://doi.org/10.1137/0108018)"
+    ]
   }
 ]

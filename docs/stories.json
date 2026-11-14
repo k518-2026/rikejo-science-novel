@@ -1390,5 +1390,17 @@
     "url": "stories/ep116-social-physics-opinion-dynamics-bounded-confidence-consensus.html",
     "image": "assets/images/ep116-social-physics-opinion-dynamics-bounded-confidence-consensus.png",
     "char_count": 7202
+  },
+  {
+    "no": 117,
+    "work_id": "ep117-optogenetics-channelrhodopsin-neural-circuits",
+    "title": "光のスイッチが拓く意識の回廊――光遺伝学（オプトジェネティクス）と神経回路制御",
+    "faculty": "医学部・生体制御学科 ／ 神経生理学・分子神経光遺伝学研究室",
+    "field": "生命科学・バイオ・医学",
+    "theme": "藻類由来の光受容イオンチャネル（チャネルロドプシン-2）を特定の神経細胞に発現させ、ミリ秒単位の光パルス照射で特定神経の発火や抑制を精密制御する「光遺伝学（オプトジェネティクス）」。文化祭での展示体験ブースを舞台に、脳内の複雑な神経回路の可視化と制御原理を実演・解説する分子神経科学",
+    "has_image": true,
+    "url": "stories/ep117-optogenetics-channelrhodopsin-neural-circuits.html",
+    "image": "assets/images/ep117-optogenetics-channelrhodopsin-neural-circuits.png",
+    "char_count": 6979
   }
 ]

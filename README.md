@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **116** 話（うち挿絵付き **116** 話 / 最終更新: 2026-11-14 10:00 JST）
+- **収録作品数**: 全 **117** 話（うち挿絵付き **117** 話 / 最終更新: 2026-11-15 08:17 JST）
 
 ---
 
@@ -130,6 +130,7 @@
 | 114 | **[不確実な未来を形作る幾何学――ブラック・ショールの微笑みと、誰かの「わかる」ための方程式](https://k518-2026.github.io/rikejo-science-novel/stories/ep114-black-scholes-merton-option-pricing-stochastic-calculus.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep114-black-scholes-merton-option-pricing-stochastic-calculus.html) | [📄原稿](content/2026-11-13_ep114_black_scholes_merton_option_pricing_stochastic_calculus.md) | [🎨挿絵](content/2026-11-13_ep114_black_scholes_merton_option_pricing_stochastic_calculus.png) | 理学部・数学科 ／ 数理ファイナンス・確率解析モデリング研究室 | 株価のランダムウォーク（幾何ブラウン運動）と伊藤の補題（確率微積分）から、原資産と無リスク資産を連続的にリバランスしてリスクを完全に相殺（複製ポートフォリオ）することで、オプション（将来買う権利・売る権利）の適正価格を一意に導く「ブラック・ショールズ・マートン方程式（1973年、1997年ノーベル経済学賞）」の数学的構造 | 7,172字 |
 | 115 | **[偽りの真空が引き裂いた瞬間――宇宙インフレーションと指数関数的急膨張](https://k518-2026.github.io/rikejo-science-novel/stories/ep115-cosmic-inflation-scalar-field-vacuum-energy-big-bang.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep115-cosmic-inflation-scalar-field-vacuum-energy-big-bang.html) | [📄原稿](content/2026-11-13_ep115_cosmic_inflation_scalar_field_vacuum_energy_big_bang.md) | [🎨挿絵](content/2026-11-13_ep115_cosmic_inflation_scalar_field_vacuum_energy_big_bang.png) | 理学部・天文学科 ／ 宇宙物理学・初期宇宙インフレーション理論研究室 | ビッグバンの火の玉宇宙が始まる直前、宇宙誕生からわずか10⁻³⁶秒後、量子力学的な「偽の真空のエネルギー（スカラー場インフラトン）」が斥力となって宇宙空間を光速を遥かに超える勢いで10²⁶倍以上に指数関数的急膨張させた「宇宙インフレーション理論（佐藤勝彦・アラン・グース 1981年）」と地平線問題・平坦性問題の解決 | 6,604字 |
 | 116 | **[孤立した島を架橋するエージェント――社会物理学と合意形成の数理モデル](https://k518-2026.github.io/rikejo-science-novel/stories/ep116-social-physics-opinion-dynamics-bounded-confidence-consensus.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep116-social-physics-opinion-dynamics-bounded-confidence-consensus.html) | [📄原稿](content/2026-11-13_ep116_social_physics_opinion_dynamics_bounded_confidence_consensus.md) | [🎨挿絵](content/2026-11-13_ep116_social_physics_opinion_dynamics_bounded_confidence_consensus.png) | 情報理工学部・知能情報学科 ／ 計算社会科学・複雑系ネットワーク研究室 | 無数の人間が意見を交換する社会現象を、磁性体のスピンの揃い方（イジング模型）や粒子間相互作用に見立てて数理モデル化する「社会物理学（Sociophysics）」。意見の近い相手とだけ合意を形成する有界信頼モデル（Deffuantモデル、Hegselmann-Krauseモデル）において、エコーチェンバー現象や社会の分極化がなぜ発生し、どうすれば合意に至るかを解明する統計数理 | 7,202字 |
+| 117 | **[光のスイッチが拓く意識の回廊――光遺伝学（オプトジェネティクス）と神経回路制御](https://k518-2026.github.io/rikejo-science-novel/stories/ep117-optogenetics-channelrhodopsin-neural-circuits.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep117-optogenetics-channelrhodopsin-neural-circuits.html) | [📄原稿](content/2026-11-15_ep117_optogenetics_channelrhodopsin_neural_circuits.md) | [🎨挿絵](content/2026-11-15_ep117_optogenetics_channelrhodopsin_neural_circuits.png) | 医学部・生体制御学科 ／ 神経生理学・分子神経光遺伝学研究室 | 藻類由来の光受容イオンチャネル（チャネルロドプシン-2）を特定の神経細胞に発現させ、ミリ秒単位の光パルス照射で特定神経の発火や抑制を精密制御する「光遺伝学（オプトジェネティクス）」。文化祭での展示体験ブースを舞台に、脳内の複雑な神経回路の可視化と制御原理を実演・解説する分子神経科学 | 6,979字 |
 
 ---
 

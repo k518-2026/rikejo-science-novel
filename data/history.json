@@ -516,5 +516,20 @@
       "Hamming, R. W. (1950). Error Detecting and Error Correcting Codes. *Bell System Technical Journal*, 29(2), 147-160. [https://doi.org/10.1002/j.1538-7305.1950.tb00463.x](https://doi.org/10.1002/j.1538-7305.1950.tb00463.x)",
       "Reed, I. S., Solomon, G. (1960). Polynomial Codes Over Certain Finite Fields. *Journal of the Society for Industrial and Applied Mathematics*, 8(2), 300-304. [https://doi.org/10.1137/0108018](https://doi.org/10.1137/0108018)"
     ]
+  },
+  {
+    "work_id": "ep36-superconductivity-meissner-quantum-levitation",
+    "episode_num": 36,
+    "faculty": "理学部・物理学科 ／ 物性物理学研究所（低温物理・超伝導物質研究室）",
+    "theme": "超伝導現象（電気抵抗ゼロ・マイスナー効果・磁束の量子化）とクーパー対（BCS理論）・リニアモーターカーや量子コンピュータへの応用",
+    "episode_title": "液体窒素の白い霧と空中に浮かぶ磁石――超伝導と量子ピン止め効果",
+    "posted_at": "2026-11-14T10:00:27.096486+09:00",
+    "file_path": "content/2026-10-11_ep36_superconductivity_meissner_quantum_levitation.md",
+    "status": "publish",
+    "references": [
+      "Bardeen, J., Cooper, L. N., Schrieffer, J. R. (1957). Theory of Superconductivity. *Physical Review*, 108(5), 1175-1204. [https://doi.org/10.1103/physrev.108.1175](https://doi.org/10.1103/physrev.108.1175)",
+      "Bednorz, J. G., M�ller, K. A. (1986). Possible highT c superconductivity in the Ba?La?Cu?O system. *Zeitschrift f�r Physik B Condensed Matter*, 64(2), 189-193. [https://doi.org/10.1007/bf01303701](https://doi.org/10.1007/bf01303701)",
+      "Takahashi, H., Igawa, K., Arii, K., Kamihara, Y., Hirano, M., Hosono, H. (2008). Superconductivity at 43 K in an iron-based layered compound LaO1-xFxFeAs. *Nature*, 453(7193), 376-378. [https://doi.org/10.1038/nature06972](https://doi.org/10.1038/nature06972)"
+    ]
   }
 ]

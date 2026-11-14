@@ -1422,9 +1422,9 @@
     "faculty": "理工学部・応用化学科 ／ 先進エネルギー材料・有機無機ハイブリッド太陽電池研究室",
     "field": "化学・薬学・材料",
     "theme": "塗布印刷で作製可能でありながらシリコン太陽電池に迫る26%超の高変換効率を達成し、軽量・フレキシブルな次世代太陽光発電として世界中が注目する有機無機ペロブスカイト材料（CH3NH3PbI3等）。結晶成長の欠陥で発電効率が上がらず挫折しかけた少女が、結晶化速度制御と界面エンジニアリングで大逆転を果たす材料化学",
-    "has_image": false,
+    "has_image": true,
     "url": "stories/ep119-perovskite-solar-cells-halide-photovoltaics-energy.html",
-    "image": "",
+    "image": "assets/images/ep119-perovskite-solar-cells-halide-photovoltaics-energy.png",
     "char_count": 7230
   }
 ]

@@ -1402,5 +1402,17 @@
     "url": "stories/ep117-optogenetics-channelrhodopsin-neural-circuits.html",
     "image": "assets/images/ep117-optogenetics-channelrhodopsin-neural-circuits.png",
     "char_count": 6979
+  },
+  {
+    "no": 118,
+    "work_id": "ep118-metamaterials-negative-index-refraction-invisibility-cloak",
+    "title": "光を曲げて世界を消す人工格子――メタマテリアルと負の屈折率物理学",
+    "faculty": "工学部・応用物理学科 ／ 電磁波動制御・先端メタマテリアル研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "自然界の物質には存在しない負の誘電率（ε）と負の透磁率（μ）を人工構造で同時に実現し、光の「負の屈折」や電磁波を回り込ませて物体を隠す透明マント（クローキング技術）を可能にする「メタマテリアル」。隣校の物理部エースとの合同実験での衝突と技術融合を描く電磁気工学・波動物理学",
+    "has_image": false,
+    "url": "stories/ep118-metamaterials-negative-index-refraction-invisibility-cloak.html",
+    "image": "",
+    "char_count": 7580
   }
 ]

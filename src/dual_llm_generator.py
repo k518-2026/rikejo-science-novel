@@ -1587,6 +1587,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully watching an agent-based opinion simulation converge smoothly into a harmonious unified consensus on a large screen.",
             "both characters smiling warmly and peacefully side by side with soft, kind eyes and sweet gentle smiles in sunlit computational social science laboratory.",
         ),
+        "ep117-optogenetics-channelrhodopsin-neural-circuits": _koma.__func__(
+            "a cute high school girl looking curious and excited at a culture flask of microalgae and neural circuit diagrams at a school festival booth table.",
+            "a smiling female neurophysiologist with kind gentle eyes demonstrating blue light stimulation of channelrhodopsin proteins on a luminous transparent board.",
+            "both characters smiling delightfully testing an interactive optogenetic circuit demonstration model glowing with gentle blue laser illumination.",
+            "both characters smiling warmly and happily side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles at the bustling science festival booth.",
+        ),
+        "ep118-metamaterials-negative-index-refraction-invisibility-cloak": _koma.__func__(
+            "a cute high school girl in physical science club observing split-ring resonator arrays and microwave waveguides in a physics laboratory.",
+            "a smiling female applied physicist with kind gentle eyes explaining negative refraction index and electromagnetic field transformation on a clean board.",
+            "both characters smiling cheerfully observing microwave transmission measurements bending smoothly around a cloaked object on an oscilloscope.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles in sunlit applied physics laboratory.",
+        ),
+        "ep119-perovskite-solar-cells-halide-photovoltaics-energy": _koma.__func__(
+            "a cute high school girl looking troubled at a cloudy opaque chemical thin-film glass substrate in an applied chemistry cleanroom.",
+            "a smiling female materials chemist with kind gentle eyes demonstrating antisolvent dripping technique and rapid perovskite crystallization under bright illumination.",
+            "both characters smiling happily as a gleaming mirror-smooth dark perovskite solar cell generates high electrical current on a digital multimeter.",
+            "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles in bright advanced materials laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

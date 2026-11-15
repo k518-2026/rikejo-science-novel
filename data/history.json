@@ -531,5 +531,20 @@
       "Bednorz, J. G., M�ller, K. A. (1986). Possible highT c superconductivity in the Ba?La?Cu?O system. *Zeitschrift f�r Physik B Condensed Matter*, 64(2), 189-193. [https://doi.org/10.1007/bf01303701](https://doi.org/10.1007/bf01303701)",
       "Takahashi, H., Igawa, K., Arii, K., Kamihara, Y., Hirano, M., Hosono, H. (2008). Superconductivity at 43 K in an iron-based layered compound LaO1-xFxFeAs. *Nature*, 453(7193), 376-378. [https://doi.org/10.1038/nature06972](https://doi.org/10.1038/nature06972)"
     ]
+  },
+  {
+    "work_id": "ep37-circadian-rhythm-clock-genes-chronobiology",
+    "episode_num": 37,
+    "faculty": "理学部・生物科学科 ／ 生命理学専攻（時間生物学・概日リズム研究室）",
+    "theme": "概日リズム（サーカディアンリズム）を生み出す時計遺伝子（Period / Timeless / Clock / Bmal1）の転写翻訳負帰還ループ",
+    "episode_title": "朝顔が咲く時刻を刻む細胞の振り子――時計遺伝子と体内時計の生物学",
+    "posted_at": "2026-11-15T09:13:11.568133+09:00",
+    "file_path": "content/2026-10-11_ep37_circadian_rhythm_clock_genes_chronobiology.md",
+    "status": "publish",
+    "references": [
+      "Hardin, P. E., Hall, J. C., Rosbash, M. (1990). Feedback of the Drosophila period gene product on circadian cycling of its messenger RNA levels. *Nature*, 343(6258), 536-540. [https://doi.org/10.1038/343536a0](https://doi.org/10.1038/343536a0)",
+      "King, D. P., Zhao, Y., Sangoram, A. M., Wilsbacher, L. D., Tanaka, M., Antoch, M. P., et al. (1997). Positional Cloning of the Mouse Circadian   Gene. *Cell*, 89(4), 641-653. [https://doi.org/10.1016/s0092-8674(00)80245-7](https://doi.org/10.1016/s0092-8674(00)",
+      "Nakajima, M., Imai, K., Ito, H., Nishiwaki, T., Murayama, Y., Iwasaki, H., et al. (2005). Reconstitution of Circadian Oscillation of Cyanobacterial KaiC Phosphorylation in Vitro. *Science*, 308(5720), 414-415. [https://doi.org/10.1126/science.1108451](https://doi.org/10.1126/science.1108451)"
+    ]
   }
 ]

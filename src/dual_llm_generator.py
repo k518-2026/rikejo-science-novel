@@ -1605,6 +1605,24 @@ class DualLLMStoryGenerator:
             "both characters smiling happily as a gleaming mirror-smooth dark perovskite solar cell generates high electrical current on a digital multimeter.",
             "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles in bright advanced materials laboratory.",
         ),
+        "ep120-stochastic-resonance-noise-signal-physics": _koma.__func__(
+            "a cute high school girl teaching a junior student looking puzzled at faint noisy waveforms on an oscilloscope screen in a physics laboratory.",
+            "a smiling female physicist with kind gentle eyes demonstrating stochastic resonance and noise-induced threshold transitions on a clean whiteboard.",
+            "both characters smiling delightfully as adding optimized white noise makes a hidden periodic signal emerge vividly and clearly on the oscilloscope.",
+            "both characters smiling warmly and encouragingly side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles in sunlit physics laboratory.",
+        ),
+        "ep121-crispr-base-editing-dna-single-nucleotide-chemistry": _koma.__func__(
+            "a cute high school girl in biology club examining wilted tomato seedlings with magnifying glass in a botanical greenhouse.",
+            "a smiling female chemical biologist with kind gentle eyes demonstrating single-nucleotide base editing deamination mechanism on a glowing molecular model screen.",
+            "both characters smiling joyfully observing lush green revitalized tomato plants thriving under greenhouse sunlight after precise DNA base repair.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles in sunlit laboratory greenhouse.",
+        ),
+        "ep122-astrobiology-hydrothermal-vent-serpentinization-origin-of-life": _koma.__func__(
+            "a cute high school girl looking fascinated at a deep-sea hydrothermal vent rock specimen and ocean planet globe in an earth science classroom.",
+            "a smiling female planetary scientist with kind gentle eyes explaining serpentinization energy and proton gradients on a luminous transparent board.",
+            "both characters smiling cheerfully demonstrating an illuminated glass aquarium diorama of an alkaline hydrothermal chimney with glowing chemical gradients.",
+            "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles at the bustling science open campus booth.",
+        ),
     }
 
     def generate_english_image_prompt(

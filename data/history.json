@@ -546,5 +546,20 @@
       "King, D. P., Zhao, Y., Sangoram, A. M., Wilsbacher, L. D., Tanaka, M., Antoch, M. P., et al. (1997). Positional Cloning of the Mouse Circadian   Gene. *Cell*, 89(4), 641-653. [https://doi.org/10.1016/s0092-8674(00)80245-7](https://doi.org/10.1016/s0092-8674(00)",
       "Nakajima, M., Imai, K., Ito, H., Nishiwaki, T., Murayama, Y., Iwasaki, H., et al. (2005). Reconstitution of Circadian Oscillation of Cyanobacterial KaiC Phosphorylation in Vitro. *Science*, 308(5720), 414-415. [https://doi.org/10.1126/science.1108451](https://doi.org/10.1126/science.1108451)"
     ]
+  },
+  {
+    "work_id": "ep38-causal-inference-natural-experiment-data-science",
+    "episode_num": 38,
+    "faculty": "データサイエンス学部 ／ 経済・数理統計学科（統計的因果推論・教育データ科学研究室）",
+    "theme": "疑似相関（交絡因子）の排除と統計的因果推論（反事実モデル・傾向スコア・差分の差分法・回帰不連続デザイン）",
+    "episode_title": "相関は嘘つき？「もし・たら」の魔法を解き放て！――データから因果を読み取る統計学への招待",
+    "posted_at": "2026-11-16T09:20:10.752731+09:00",
+    "file_path": "content/2026-10-11_ep38_causal_inference_natural_experiment_data_science.md",
+    "status": "publish",
+    "references": [
+      "Rubin, D. B. (1974). Estimating causal effects of treatments in randomized and nonrandomized studies.. *Journal of Educational Psychology*, 66(5), 688-701. [https://doi.org/10.1037/h0037350](https://doi.org/10.1037/h0037350)",
+      "ROSENBAUM, P. R., RUBIN, D. B. (1983). The central role of the propensity score in observational studies for causal effects. *Biometrika*, 70(1), 41-55. [https://doi.org/10.1093/biomet/70.1.41](https://doi.org/10.1093/biomet/70.1.41)",
+      "Angrist, J. D., Imbens, G. W., Rubin, D. B. (1996). Identification of Causal Effects Using Instrumental Variables: Rejoinder. *Journal of the American Statistical Association*, 91(434), 468. [https://doi.org/10.2307/2291634](https://doi.org/10.2307/2291634)"
+    ]
   }
 ]

@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **120** 話（うち挿絵付き **120** 話 / 最終更新: 2026-11-16 19:41 JST）
+- **収録作品数**: 全 **121** 話（うち挿絵付き **121** 話 / 最終更新: 2026-11-16 19:47 JST）
 
 ---
 
@@ -134,6 +134,7 @@
 | 118 | **[光を曲げて世界を消す人工格子――メタマテリアルと負の屈折率物理学](https://k518-2026.github.io/rikejo-science-novel/stories/ep118-metamaterials-negative-index-refraction-invisibility-cloak.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep118-metamaterials-negative-index-refraction-invisibility-cloak.html) | [📄原稿](content/2026-11-15_ep118_metamaterials_negative_index_refraction_invisibility_cloak.md) | [🎨挿絵](content/2026-11-15_ep118_metamaterials_negative_index_refraction_invisibility_cloak.png) | 工学部・応用物理学科 ／ 電磁波動制御・先端メタマテリアル研究室 | 自然界の物質には存在しない負の誘電率（ε）と負の透磁率（μ）を人工構造で同時に実現し、光の「負の屈折」や電磁波を回り込ませて物体を隠す透明マント（クローキング技術）を可能にする「メタマテリアル」。隣校の物理部エースとの合同実験での衝突と技術融合を描く電磁気工学・波動物理学 | 7,580字 |
 | 119 | **[結晶が奏でる光の旋律――ペロブスカイトの欠陥パッシベーションと、次へ繋ぐ教職への歩み](https://k518-2026.github.io/rikejo-science-novel/stories/ep119-perovskite-solar-cells-halide-photovoltaics-energy.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep119-perovskite-solar-cells-halide-photovoltaics-energy.html) | [📄原稿](content/2026-11-15_ep119_perovskite_solar_cells_halide_photovoltaics_energy.md) | [🎨挿絵](content/2026-11-15_ep119_perovskite_solar_cells_halide_photovoltaics_energy.png) | 理工学部・応用化学科 ／ 先進エネルギー材料・有機無機ハイブリッド太陽電池研究室 | 塗布印刷で作製可能でありながらシリコン太陽電池に迫る26%超の高変換効率を達成し、軽量・フレキシブルな次世代太陽光発電として世界中が注目する有機無機ペロブスカイト材料（CH3NH3PbI3等）。結晶成長の欠陥で発電効率が上がらず挫折しかけた少女が、結晶化速度制御と界面エンジニアリングで大逆転を果たす材料化学 | 7,230字 |
 | 120 | **[雑音の彼方に届く微かな声――確率共鳴と非線形ダイナミクス](https://k518-2026.github.io/rikejo-science-novel/stories/ep120-stochastic-resonance-noise-signal-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep120-stochastic-resonance-noise-signal-physics.html) | [📄原稿](content/2026-11-16_ep120_stochastic_resonance_noise_signal_physics.md) | [🎨挿絵](content/2026-11-16_ep120_stochastic_resonance_noise_signal_physics.png) | 基礎工学部・システム創成学科 ／ 非線形物理学・生体信号計測システム研究室 | 通常は信号を乱す邪魔者とされる「ノイズ（雑音）」を適切な強度で微弱信号に加えることで、閾値を超えてかえって信号の検出感度や伝達効率が飛躍的に向上する物理現象「確率共鳴（Stochastic Resonance）」。新入部員向けの後輩指導と実験教室を舞台に、非線形閾値系とホワイトノイズが織りなす逆転の発想を描く統計物理学 | 7,081字 |
+| 121 | **[二重螺旋の文字を切り取らずに書き換える――CRISPR塩基編集と精密ゲノム化学](https://k518-2026.github.io/rikejo-science-novel/stories/ep121-crispr-base-editing-dna-single-nucleotide-chemistry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep121-crispr-base-editing-dna-single-nucleotide-chemistry.html) | [📄原稿](content/2026-11-16_ep121_crispr_base_editing_dna_single_nucleotide_chemistry.md) | [🎨挿絵](content/2026-11-16_ep121_crispr_base_editing_dna_single_nucleotide_chemistry.png) | 農学部・生命機能科学科 ／ 分子生命工学・ゲノム精密編集化学研究室 | DNAの二重鎖を切断（二本鎖切断：DSB）することなく、シチジン脱アミノ化酵素等の化学反応を用いて特定の1塩基（C→TやA→G）だけをピンポイントで直接化学変換する「塩基編集技術（Base Editing）」。校内生物園の植物苗が原因不明の点変異で枯れ始めた謎を解き明かす分子生物学・ケミカルバイオロジー | 6,771字 |
 
 ---
 

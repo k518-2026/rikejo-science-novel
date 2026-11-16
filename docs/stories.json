@@ -1450,5 +1450,17 @@
     "url": "stories/ep121-crispr-base-editing-dna-single-nucleotide-chemistry.html",
     "image": "assets/images/ep121-crispr-base-editing-dna-single-nucleotide-chemistry.png",
     "char_count": 6771
+  },
+  {
+    "no": 122,
+    "work_id": "ep122-astrobiology-hydrothermal-vent-serpentinization-origin-of-life",
+    "title": "暗黒の海底に灯る原初の熱源――深海熱水噴出孔と生命起源の宇宙生物学",
+    "faculty": "理学部・地球惑星科学科 ／ 極限環境生命科学・アストロバイオロジー研究室",
+    "field": "化学・薬学・材料",
+    "theme": "海底のアルカリ熱水噴出孔（ロストシティ型）において、蛇紋岩化作用（熱水とマントル岩石の化学反応）が生み出す水素ガスと天然のプロトン濃度勾配が、生命誕生のエネルギー代謝（プロトン起電力）の起源となったとする「深海生命起源説」。文化祭・オープンキャンパスでの巨大深海ジオラマ＆模擬熱水実験展示の出展バトルを描く地球惑星進化学・アストロバイオロジー",
+    "has_image": true,
+    "url": "stories/ep122-astrobiology-hydrothermal-vent-serpentinization-origin-of-life.html",
+    "image": "assets/images/ep122-astrobiology-hydrothermal-vent-serpentinization-origin-of-life.png",
+    "char_count": 7068
   }
 ]

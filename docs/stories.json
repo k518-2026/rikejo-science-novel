@@ -1426,5 +1426,17 @@
     "url": "stories/ep119-perovskite-solar-cells-halide-photovoltaics-energy.html",
     "image": "assets/images/ep119-perovskite-solar-cells-halide-photovoltaics-energy.png",
     "char_count": 7230
+  },
+  {
+    "no": 120,
+    "work_id": "ep120-stochastic-resonance-noise-signal-physics",
+    "title": "雑音の彼方に届く微かな声――確率共鳴と非線形ダイナミクス",
+    "faculty": "基礎工学部・システム創成学科 ／ 非線形物理学・生体信号計測システム研究室",
+    "field": "数学・数理科学",
+    "theme": "通常は信号を乱す邪魔者とされる「ノイズ（雑音）」を適切な強度で微弱信号に加えることで、閾値を超えてかえって信号の検出感度や伝達効率が飛躍的に向上する物理現象「確率共鳴（Stochastic Resonance）」。新入部員向けの後輩指導と実験教室を舞台に、非線形閾値系とホワイトノイズが織りなす逆転の発想を描く統計物理学",
+    "has_image": true,
+    "url": "stories/ep120-stochastic-resonance-noise-signal-physics.html",
+    "image": "assets/images/ep120-stochastic-resonance-noise-signal-physics.png",
+    "char_count": 7081
   }
 ]

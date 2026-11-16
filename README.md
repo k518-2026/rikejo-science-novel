@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **119** 話（うち挿絵付き **119** 話 / 最終更新: 2026-11-16 09:20 JST）
+- **収録作品数**: 全 **120** 話（うち挿絵付き **120** 話 / 最終更新: 2026-11-16 19:41 JST）
 
 ---
 
@@ -133,6 +133,7 @@
 | 117 | **[光のスイッチが拓く意識の回廊――光遺伝学（オプトジェネティクス）と神経回路制御](https://k518-2026.github.io/rikejo-science-novel/stories/ep117-optogenetics-channelrhodopsin-neural-circuits.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep117-optogenetics-channelrhodopsin-neural-circuits.html) | [📄原稿](content/2026-11-15_ep117_optogenetics_channelrhodopsin_neural_circuits.md) | [🎨挿絵](content/2026-11-15_ep117_optogenetics_channelrhodopsin_neural_circuits.png) | 医学部・生体制御学科 ／ 神経生理学・分子神経光遺伝学研究室 | 藻類由来の光受容イオンチャネル（チャネルロドプシン-2）を特定の神経細胞に発現させ、ミリ秒単位の光パルス照射で特定神経の発火や抑制を精密制御する「光遺伝学（オプトジェネティクス）」。文化祭での展示体験ブースを舞台に、脳内の複雑な神経回路の可視化と制御原理を実演・解説する分子神経科学 | 6,979字 |
 | 118 | **[光を曲げて世界を消す人工格子――メタマテリアルと負の屈折率物理学](https://k518-2026.github.io/rikejo-science-novel/stories/ep118-metamaterials-negative-index-refraction-invisibility-cloak.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep118-metamaterials-negative-index-refraction-invisibility-cloak.html) | [📄原稿](content/2026-11-15_ep118_metamaterials_negative_index_refraction_invisibility_cloak.md) | [🎨挿絵](content/2026-11-15_ep118_metamaterials_negative_index_refraction_invisibility_cloak.png) | 工学部・応用物理学科 ／ 電磁波動制御・先端メタマテリアル研究室 | 自然界の物質には存在しない負の誘電率（ε）と負の透磁率（μ）を人工構造で同時に実現し、光の「負の屈折」や電磁波を回り込ませて物体を隠す透明マント（クローキング技術）を可能にする「メタマテリアル」。隣校の物理部エースとの合同実験での衝突と技術融合を描く電磁気工学・波動物理学 | 7,580字 |
 | 119 | **[結晶が奏でる光の旋律――ペロブスカイトの欠陥パッシベーションと、次へ繋ぐ教職への歩み](https://k518-2026.github.io/rikejo-science-novel/stories/ep119-perovskite-solar-cells-halide-photovoltaics-energy.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep119-perovskite-solar-cells-halide-photovoltaics-energy.html) | [📄原稿](content/2026-11-15_ep119_perovskite_solar_cells_halide_photovoltaics_energy.md) | [🎨挿絵](content/2026-11-15_ep119_perovskite_solar_cells_halide_photovoltaics_energy.png) | 理工学部・応用化学科 ／ 先進エネルギー材料・有機無機ハイブリッド太陽電池研究室 | 塗布印刷で作製可能でありながらシリコン太陽電池に迫る26%超の高変換効率を達成し、軽量・フレキシブルな次世代太陽光発電として世界中が注目する有機無機ペロブスカイト材料（CH3NH3PbI3等）。結晶成長の欠陥で発電効率が上がらず挫折しかけた少女が、結晶化速度制御と界面エンジニアリングで大逆転を果たす材料化学 | 7,230字 |
+| 120 | **[雑音の彼方に届く微かな声――確率共鳴と非線形ダイナミクス](https://k518-2026.github.io/rikejo-science-novel/stories/ep120-stochastic-resonance-noise-signal-physics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep120-stochastic-resonance-noise-signal-physics.html) | [📄原稿](content/2026-11-16_ep120_stochastic_resonance_noise_signal_physics.md) | [🎨挿絵](content/2026-11-16_ep120_stochastic_resonance_noise_signal_physics.png) | 基礎工学部・システム創成学科 ／ 非線形物理学・生体信号計測システム研究室 | 通常は信号を乱す邪魔者とされる「ノイズ（雑音）」を適切な強度で微弱信号に加えることで、閾値を超えてかえって信号の検出感度や伝達効率が飛躍的に向上する物理現象「確率共鳴（Stochastic Resonance）」。新入部員向けの後輩指導と実験教室を舞台に、非線形閾値系とホワイトノイズが織りなす逆転の発想を描く統計物理学 | 7,081字 |
 
 ---
 

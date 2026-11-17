@@ -561,5 +561,20 @@
       "ROSENBAUM, P. R., RUBIN, D. B. (1983). The central role of the propensity score in observational studies for causal effects. *Biometrika*, 70(1), 41-55. [https://doi.org/10.1093/biomet/70.1.41](https://doi.org/10.1093/biomet/70.1.41)",
       "Angrist, J. D., Imbens, G. W., Rubin, D. B. (1996). Identification of Causal Effects Using Instrumental Variables: Rejoinder. *Journal of the American Statistical Association*, 91(434), 468. [https://doi.org/10.2307/2291634](https://doi.org/10.2307/2291634)"
     ]
+  },
+  {
+    "work_id": "ep39-metamaterials-acoustic-cloaking-wave-physics",
+    "episode_num": 39,
+    "faculty": "工学部・物理工学科 ／ 先端フォトニクス・音響工学研究センター（波動メタマテリアル研究室）",
+    "theme": "負の屈折率を持つ人工微細構造『メタマテリアル』と変換光学・音響メタマテリアルによる防音・超解像レンズ",
+    "episode_title": "光と音を曲げる透明マント：波の幾何学が描く未来』（～メタマテリアルと変換光学への招待）",
+    "posted_at": "2026-11-17T12:07:52.419626+09:00",
+    "file_path": "content/2026-10-12_ep39_metamaterials_acoustic_cloaking_wave_physics.md",
+    "status": "publish",
+    "references": [
+      "Pendry, J. B., Schurig, D., Smith, D. R. (2006). Controlling Electromagnetic Fields. *Science*, 312(5781), 1780-1782. [https://doi.org/10.1126/science.1125907](https://doi.org/10.1126/science.1125907)",
+      "Schurig, D., Mock, J. J., Justice, B. J., Cummer, S. A., Pendry, J. B., Starr, A. F., et al. (2006). Metamaterial Electromagnetic Cloak at Microwave Frequencies. *Science*, 314(5801), 977-980. [https://doi.org/10.1126/science.1133628](https://doi.org/10.1126/science.1133628)",
+      "Khorasaninejad, M., Chen, W. T., Devlin, R. C., Oh, J., Zhu, A. Y., Capasso, F. (2016). Metalenses at visible wavelengths: Diffraction-limited focusing and subwavelength resolution imaging. *Science*, 352(6290), 1190-1194. [https://doi.org/10.1126/science.aaf6644](https://doi.org/10.1126/science.aaf6644)"
+    ]
   }
 ]

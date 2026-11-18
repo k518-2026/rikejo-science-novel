@@ -1611,11 +1611,13 @@ class DualLLMStoryGenerator:
             "both characters smiling delightfully as adding optimized white noise makes a hidden periodic signal emerge vividly and clearly on the oscilloscope.",
             "both characters smiling warmly and encouragingly side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles in sunlit physics laboratory.",
         ),
-        "ep121-crispr-base-editing-dna-single-nucleotide-chemistry": _koma.__func__(
-            "a cute high school girl in biology club examining wilted tomato seedlings with magnifying glass in a botanical greenhouse.",
-            "a smiling female chemical biologist with kind gentle eyes demonstrating single-nucleotide base editing deamination mechanism on a glowing molecular model screen.",
-            "both characters smiling joyfully observing lush green revitalized tomato plants thriving under greenhouse sunlight after precise DNA base repair.",
-            "both characters smiling warmly and peacefully side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles in sunlit laboratory greenhouse.",
+        "ep121-crispr-base-editing-dna-single-nucleotide-chemistry": (
+            "Vertical four-panel comic strip, Japanese yonkoma manga layout, exactly 4 rectangular panels stacked vertically from top to bottom with clean white borders separating the 4 panels, full color Japanese anime art style. "
+            "Top panel 1: a cute Japanese high school girl in laboratory coat inspecting potted tomato seedlings with a magnifying glass in a bright botany greenhouse, beautiful anime eyes, neat gentle eyebrows, warm sweet smile. "
+            "Second panel 2: a smiling female chemical biologist with kind gentle eyes and neatly drawn natural eyebrows demonstrating a 3D molecular model of DNA base pairs on a clear transparent board. "
+            "Third panel 3: both female characters smiling happily together holding a thriving green tomato plant with bright red ripe tomatoes in the sunlit greenhouse, flawless facial anatomy, charming gentle eyes. "
+            "Bottom panel 4: two friendly female characters standing side by side smiling sweetly with beautiful big expressive anime eyes, finely detailed round pupils and iris, soft relaxed eyelids, neat delicate thin eyebrows, and warm sweet smiles in greenhouse. "
+            "Masterpiece anime 4-panel comic strip, exactly 4 distinct vertical panels, clean panel division, rich deep colors, high contrast, crisp lines, completely pure illustration, beautiful detailed anime eyes with clear pupils and iris, soft relaxed eyelids, natural warm friendly smiles, sweet gentle expressions, NO speech bubbles, NO text, NO words, NO letters, NO Japanese characters, NO sound effects."
         ),
         "ep122-astrobiology-hydrothermal-vent-serpentinization-origin-of-life": _koma.__func__(
             "a cute high school girl looking fascinated at a deep-sea hydrothermal vent rock specimen and ocean planet globe in an earth science classroom.",

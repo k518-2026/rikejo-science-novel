@@ -1462,5 +1462,17 @@
     "url": "stories/ep122-astrobiology-hydrothermal-vent-serpentinization-origin-of-life.html",
     "image": "assets/images/ep122-astrobiology-hydrothermal-vent-serpentinization-origin-of-life.png",
     "char_count": 7068
+  },
+  {
+    "no": 123,
+    "work_id": "ep123-asymmetric-catalysis-chiral-binap-molecular-symmetry",
+    "title": "鏡の迷宮で片手だけを創る――不斉合成触媒とキラル対称性の化学",
+    "faculty": "理学部・化学科 ／ 有機合成化学・触媒分子設計研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "右手と左手のように鏡像異性体（エナンチオマー）が存在し、片方だけが劇薬や特効薬となる分子の世界。光学活性な不斉触媒（BINAPルテニウム錯体等）を用いることで、等量生成してしまうラセミ体を排し、目的の立体異性体のみを99%以上の超高純度で作り分ける「不斉触媒反応」。他校の強豪化学部ライバルとの合成コンテストでの衝突と技術共闘を描く立体化学・有機触媒化学",
+    "has_image": true,
+    "url": "stories/ep123-asymmetric-catalysis-chiral-binap-molecular-symmetry.html",
+    "image": "assets/images/ep123-asymmetric-catalysis-chiral-binap-molecular-symmetry.png",
+    "char_count": 7155
   }
 ]

@@ -1,8 +1,8 @@
 # 📋 分散ローカルLLM 自動作業リスト (`rikejo-science-novel`)
 
 - **会話ID**: `03e1e31e-29c5-4db4-b211-06e49e17b8bd`
-- **最終同期日時 (JST)**: `2026-11-16T09:10:26`
-- **進捗サマリー**: 全 **119** 話 （完了: **119** / 挿絵待ち: **0** / **PC起動時実行キュー(`queued`)**: **0** / プロット作成済: **0** / 未着手待機: **0**）
+- **最終同期日時 (JST)**: `2026-11-17T09:00:01`
+- **進捗サマリー**: 全 **122** 話 （完了: **122** / 挿絵待ち: **0** / **PC起動時実行キュー(`queued`)**: **0** / プロット作成済: **0** / 未着手待機: **0**）
 
 ## 🖥️ 各ローカルLLMサーバーの役割分担（メインPC電源オフ時も各ノード単体で自律実行）
 
@@ -22,6 +22,9 @@
 
 | 話数 | タスクID | タイトル | 執筆担当ノード | 執筆日 | 校閲 (`sff7020`) | 挿絵 (`kenomac-mini`) |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|
+| #122 | `ep122-astrobiology-hydrothermal-vent-serpentinization-origin-of-life` | 暗黒の海底に灯る原初の熱源――深海熱水噴出孔と生命起源の宇宙生物学 | `rtx5060lp` | 2026-11-16 | 未校閲 | 🎨 (kenomac-mini) |
+| #121 | `ep121-crispr-base-editing-dna-single-nucleotide-chemistry` | 二重螺旋の文字を切り取らずに書き換える――CRISPR塩基編集と精密ゲノム化学 | `rtx5060lp` | 2026-11-16 | 未校閲 | 🎨 (kenomac-mini) |
+| #120 | `ep120-stochastic-resonance-noise-signal-physics` | 雑音の彼方に届く微かな声――確率共鳴と非線形ダイナミクス | `rtx5060lp` | 2026-11-16 | 未校閲 | 🎨 (kenomac-mini) |
 | #119 | `ep119-perovskite-solar-cells-halide-photovoltaics-energy` | 結晶の奇跡が紡ぐ次世代の光――ペロブスカイト太陽電池とハロゲン化光電変換 | `rtx5060lp` | 2026-11-15 | 未校閲 | 🎨 (kenomac-mini) |
 | #118 | `ep118-metamaterials-negative-index-refraction-invisibility-cloak` | 光を曲げて世界を消す人工格子――メタマテリアルと負の屈折率物理学 | `rtx5060lp` | 2026-11-15 | 未校閲 | 🎨 (kenomac-mini) |
 | #117 | `ep117-optogenetics-channelrhodopsin-neural-circuits` | 光のスイッチが拓く意識の回廊――光遺伝学（オプトジェネティクス）と神経回路制御 | `rtx5060lp` | 2026-11-15 | 未校閲 | 🎨 (kenomac-mini) |
@@ -29,6 +32,3 @@
 | #115 | `ep115-cosmic-inflation-scalar-field-vacuum-energy-big-bang` | 偽りの真空が引き裂いた瞬間――宇宙インフレーションと指数関数的急膨張 | `rtx5060lp` | 2026-11-13 | 未校閲 | 🎨 (kenomac-mini) |
 | #114 | `ep114-black-scholes-merton-option-pricing-stochastic-calculus` | 不確実な未来に価格をつける方程式――ブラック・ショールズ方程式と確率微積分の幾何学 | `rtx5060lp` | 2026-11-13 | 未校閲 | 🎨 (kenomac-mini) |
 | #113 | `ep113-molecular-machines-nanomotors-rotaxane-supramolecular-chemistry` | 光で回転する分子の歯車――超分子機械とナノローターの有機化学 | `rtx5060lp` | 2026-11-13 | 未校閲 | 🎨 (kenomac-mini) |
-| #112 | `ep112-topological-insulator-quantum-spin-hall-effect-condensed-matter` | 縁を駆ける乱れなきスピン――トポロジカル絶縁体と量子スピンホール効果 | `rtx5060lp` | 2026-11-13 | 未校閲 | 🎨 (kenomac-mini) |
-| #111 | `ep111-memristor-neuromorphic-computing-analog-ai` | 記憶する抵抗器とシナプスの夢――メムリスタと脳型アナログ計算 | `rtx5060lp` | 2026-11-13 | 未校閲 | 🎨 (kenomac-mini) |
-| #110 | `ep110-sanger-dna-sequencing-dideoxy-chain-termination-genomics` | 鎖を止める四色の鍵――サンガー法とDNA配列解読の分子生物学 | `rtx5060lp` | 2026-11-12 | 未校閲 | 🎨 (kenomac-mini) |

@@ -1623,6 +1623,24 @@ class DualLLMStoryGenerator:
             "both characters smiling cheerfully demonstrating an illuminated glass aquarium diorama of an alkaline hydrothermal chimney with glowing chemical gradients.",
             "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles at the bustling science open campus booth.",
         ),
+        "ep123-asymmetric-catalysis-chiral-binap-molecular-symmetry": _koma.__func__(
+            "a cute high school girl in chemistry club examining chiral molecular models and crystal flasks in a chemical laboratory.",
+            "a smiling female organic chemist with kind gentle eyes demonstrating BINAP ligand geometry and enantioselective hydrogenation on a clean board.",
+            "both characters smiling joyfully as a chiral HPLC monitor displays a single sharp enantiomeric peak with over 99 percent enantiomeric excess.",
+            "both characters smiling warmly and friendly side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles in sunlit organic synthesis laboratory.",
+        ),
+        "ep124-cosmic-microwave-background-anisotropy-big-bang-echo": _koma.__func__(
+            "a cute high school girl in astronomy club looking troubled at noisy raw microwave telescope receiver data on a laboratory monitor.",
+            "a smiling female astrophysicist with kind gentle eyes demonstrating 2.7 Kelvin blackbody radiation and differential sky temperature mapping on a whiteboard.",
+            "both characters smiling excitedly as an all-sky cosmic microwave background temperature anisotropy map emerges vividly on the screen.",
+            "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles in sunlit astrophysics observatory.",
+        ),
+        "ep125-quantum-teleportation-entanglement-photon-qubit-transfer": _koma.__func__(
+            "a cute high school girl teaching curious junior students using polarization filters and quantum entanglement state cards in a laboratory.",
+            "a smiling female quantum information scientist with kind gentle eyes explaining Bell state measurement and qubit state transfer on a transparent glass board.",
+            "both characters smiling delightfully as an entangled photon quantum teleportation circuit successfully transfers polarization qubits without physical transport.",
+            "both characters smiling warmly and encouragingly side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles in sunlit quantum optics laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

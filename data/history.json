@@ -576,5 +576,20 @@
       "Schurig, D., Mock, J. J., Justice, B. J., Cummer, S. A., Pendry, J. B., Starr, A. F., et al. (2006). Metamaterial Electromagnetic Cloak at Microwave Frequencies. *Science*, 314(5801), 977-980. [https://doi.org/10.1126/science.1133628](https://doi.org/10.1126/science.1133628)",
       "Khorasaninejad, M., Chen, W. T., Devlin, R. C., Oh, J., Zhu, A. Y., Capasso, F. (2016). Metalenses at visible wavelengths: Diffraction-limited focusing and subwavelength resolution imaging. *Science*, 352(6290), 1190-1194. [https://doi.org/10.1126/science.aaf6644](https://doi.org/10.1126/science.aaf6644)"
     ]
+  },
+  {
+    "work_id": "ep40-explainable-ai-medical-imaging-informatics-teacher",
+    "episode_num": 40,
+    "faculty": "情報学部・知能情報学科 ／ 教育学部・情報教育課程（人間中心AI・医療画像解析研究室）",
+    "theme": "深層学習のブラックボックス問題と説明可能なAI（Explainable AI: Grad-CAM / SHAP / 協力ゲーム理論のシャープレイ値）",
+    "episode_title": "AI の「まなざし」を言葉に翻訳する――説明可能な AI と信頼のアルゴリズム",
+    "posted_at": "2026-11-18T11:34:49.026316+09:00",
+    "file_path": "content/2026-10-12_ep40_explainable_ai_medical_imaging_informatics_teacher.md",
+    "status": "publish",
+    "references": [
+      "Selvaraju, R. R., Cogswell, M., Das, A., Vedantam, R., Parikh, D., Batra, D. (2017). Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization. *2017 IEEE International Conference on Computer Vision (ICCV)*, 618-626. [https://doi.org/10.1109/iccv.2017.74](https://doi.org/10.1109/iccv.2017.74)",
+      "Covert, I., Kim, C., Lee, S., Zou, J., Hashimoto, T. (2024). Stochastic Amortization: A Unified Approach to Accelerate Feature and Data Attribution. *Advances in Neural Information Processing Systems 37*, 4374-4423. [https://doi.org/10.52202/079017-0143](https://doi.org/10.52202/079017-0143)",
+      "Ribeiro, M. T., Singh, S., Guestrin, C. (2016). \"Why Should I Trust You?\". *Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*, 1135-1144. [https://doi.org/10.1145/2939672.2939778](https://doi.org/10.1145/2939672.2939778)"
+    ]
   }
 ]

@@ -1486,5 +1486,17 @@
     "url": "stories/ep124-cosmic-microwave-background-anisotropy-big-bang-echo.html",
     "image": "assets/images/ep124-cosmic-microwave-background-anisotropy-big-bang-echo.png",
     "char_count": 7145
+  },
+  {
+    "no": 125,
+    "work_id": "ep125-quantum-teleportation-entanglement-photon-qubit-transfer",
+    "title": "絡み合う光子が運ぶ未知の影――量子テレポーテーションともつれのも通信数理",
+    "faculty": "情報理工学部・数理情報学科 ／ 量子計算・量子通信アーキテクチャ研究室",
+    "field": "数学・数理科学",
+    "theme": "物質そのものを瞬間移動させるのではなく、アインシュタインが「不気味な遠隔作用」と呼んだ量子もつれ（EPR対）の相関と古典通信（2ビット）を利用して、未知の量子状態（qubit）を一切破壊・複製することなく別の場所にある粒子へ忠実に転送する「量子テレポーテーション」。新入生向けの後輩指導と実験教室を舞台に、情報と物理の境界線を解き明かす量子情報数理",
+    "has_image": true,
+    "url": "stories/ep125-quantum-teleportation-entanglement-photon-qubit-transfer.html",
+    "image": "assets/images/ep125-quantum-teleportation-entanglement-photon-qubit-transfer.png",
+    "char_count": 7622
   }
 ]

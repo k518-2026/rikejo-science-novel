@@ -1474,5 +1474,17 @@
     "url": "stories/ep123-asymmetric-catalysis-chiral-binap-molecular-symmetry.html",
     "image": "assets/images/ep123-asymmetric-catalysis-chiral-binap-molecular-symmetry.png",
     "char_count": 7155
+  },
+  {
+    "no": 124,
+    "work_id": "ep124-cosmic-microwave-background-anisotropy-big-bang-echo",
+    "title": "太古の宇宙が囁く三度の残響――ノイズの中で光る 10万分の1 の奇跡",
+    "faculty": "理学部・物理学科 ／ 宇宙線物理学・観測的宇宙論研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "ビッグバンから約38万年後、電子と陽子が結合して光が直進できるようになった「宇宙の晴れ上がり」。全天を満たす絶対温度約2.7Kの「宇宙マイクロ波背景放射（CMB）」と、10万分の1という極微な温度の「異方性（揺らぎ）」が、現在の銀河や星の種となった宇宙創成のドラマ。ノイズ除去に失敗し挫折しかけた少女が、電波観測データの解析で大逆転を果たす観測的宇宙論・電波天文学",
+    "has_image": true,
+    "url": "stories/ep124-cosmic-microwave-background-anisotropy-big-bang-echo.html",
+    "image": "assets/images/ep124-cosmic-microwave-background-anisotropy-big-bang-echo.png",
+    "char_count": 7145
   }
 ]

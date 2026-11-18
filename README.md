@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **123** 話（うち挿絵付き **123** 話 / 最終更新: 2026-11-18 15:55 JST）
+- **収録作品数**: 全 **124** 話（うち挿絵付き **124** 話 / 最終更新: 2026-11-18 16:01 JST）
 
 ---
 
@@ -137,6 +137,7 @@
 | 121 | **[二重螺旋の文字を切り取らずに書き換える――CRISPR塩基編集と精密ゲノム化学](https://k518-2026.github.io/rikejo-science-novel/stories/ep121-crispr-base-editing-dna-single-nucleotide-chemistry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep121-crispr-base-editing-dna-single-nucleotide-chemistry.html) | [📄原稿](content/2026-11-16_ep121_crispr_base_editing_dna_single_nucleotide_chemistry.md) | [🎨挿絵](content/2026-11-16_ep121_crispr_base_editing_dna_single_nucleotide_chemistry.png) | 農学部・生命機能科学科 ／ 分子生命工学・ゲノム精密編集化学研究室 | DNAの二重鎖を切断（二本鎖切断：DSB）することなく、シチジン脱アミノ化酵素等の化学反応を用いて特定の1塩基（C→TやA→G）だけをピンポイントで直接化学変換する「塩基編集技術（Base Editing）」。校内生物園の植物苗が原因不明の点変異で枯れ始めた謎を解き明かす分子生物学・ケミカルバイオロジー | 6,771字 |
 | 122 | **[暗黒の海底に灯る原初の熱源――深海熱水噴出孔と生命起源の宇宙生物学](https://k518-2026.github.io/rikejo-science-novel/stories/ep122-astrobiology-hydrothermal-vent-serpentinization-origin-of-life.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep122-astrobiology-hydrothermal-vent-serpentinization-origin-of-life.html) | [📄原稿](content/2026-11-16_ep122_astrobiology_hydrothermal_vent_serpentinization_origin_of_life.md) | [🎨挿絵](content/2026-11-16_ep122_astrobiology_hydrothermal_vent_serpentinization_origin_of_life.png) | 理学部・地球惑星科学科 ／ 極限環境生命科学・アストロバイオロジー研究室 | 海底のアルカリ熱水噴出孔（ロストシティ型）において、蛇紋岩化作用（熱水とマントル岩石の化学反応）が生み出す水素ガスと天然のプロトン濃度勾配が、生命誕生のエネルギー代謝（プロトン起電力）の起源となったとする「深海生命起源説」。文化祭・オープンキャンパスでの巨大深海ジオラマ＆模擬熱水実験展示の出展バトルを描く地球惑星進化学・アストロバイオロジー | 7,068字 |
 | 123 | **[鏡の迷宮で片手だけを創る――不斉合成触媒とキラル対称性の化学](https://k518-2026.github.io/rikejo-science-novel/stories/ep123-asymmetric-catalysis-chiral-binap-molecular-symmetry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep123-asymmetric-catalysis-chiral-binap-molecular-symmetry.html) | [📄原稿](content/2026-11-18_ep123_asymmetric_catalysis_chiral_binap_molecular_symmetry.md) | [🎨挿絵](content/2026-11-18_ep123_asymmetric_catalysis_chiral_binap_molecular_symmetry.png) | 理学部・化学科 ／ 有機合成化学・触媒分子設計研究室 | 右手と左手のように鏡像異性体（エナンチオマー）が存在し、片方だけが劇薬や特効薬となる分子の世界。光学活性な不斉触媒（BINAPルテニウム錯体等）を用いることで、等量生成してしまうラセミ体を排し、目的の立体異性体のみを99%以上の超高純度で作り分ける「不斉触媒反応」。他校の強豪化学部ライバルとの合成コンテストでの衝突と技術共闘を描く立体化学・有機触媒化学 | 7,155字 |
+| 124 | **[太古の宇宙が囁く三度の残響――ノイズの中で光る 10万分の1 の奇跡](https://k518-2026.github.io/rikejo-science-novel/stories/ep124-cosmic-microwave-background-anisotropy-big-bang-echo.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep124-cosmic-microwave-background-anisotropy-big-bang-echo.html) | [📄原稿](content/2026-11-18_ep124_cosmic_microwave_background_anisotropy_big_bang_echo.md) | [🎨挿絵](content/2026-11-18_ep124_cosmic_microwave_background_anisotropy_big_bang_echo.png) | 理学部・物理学科 ／ 宇宙線物理学・観測的宇宙論研究室 | ビッグバンから約38万年後、電子と陽子が結合して光が直進できるようになった「宇宙の晴れ上がり」。全天を満たす絶対温度約2.7Kの「宇宙マイクロ波背景放射（CMB）」と、10万分の1という極微な温度の「異方性（揺らぎ）」が、現在の銀河や星の種となった宇宙創成のドラマ。ノイズ除去に失敗し挫折しかけた少女が、電波観測データの解析で大逆転を果たす観測的宇宙論・電波天文学 | 7,145字 |
 
 ---
 

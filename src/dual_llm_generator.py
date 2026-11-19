@@ -1643,6 +1643,24 @@ class DualLLMStoryGenerator:
             "both characters smiling delightfully as an entangled photon quantum teleportation circuit successfully transfers polarization qubits without physical transport.",
             "both characters smiling warmly and encouragingly side by side with soft, kind eyes, relaxed eyelids and sweet gentle smiles in sunlit quantum optics laboratory.",
         ),
+        "ep126-cellular-automata-game-of-life-complex-systems": _koma.__func__(
+            "a cute Japanese high school girl looking excited at colorful Conway Game of Life dot patterns on a large interactive touch monitor in a computer laboratory, neat delicate eyebrows, beautiful clear anime eyes.",
+            "a smiling female complexity scientist with kind gentle eyes and neatly drawn eyebrows explaining cellular automata rules and edge of chaos dynamics on a clean whiteboard.",
+            "both female characters smiling joyfully as dynamic gliders and oscillating patterns propagate across a luminous digital grid display.",
+            "both characters smiling warmly and happily side by side with soft, kind eyes, relaxed eyelids, neat delicate thin eyebrows, and sweet gentle smiles in sunlit information science laboratory.",
+        ),
+        "ep127-microfluidics-lab-on-a-chip-laminar-flow-biochemistry": _koma.__func__(
+            "a cute Japanese high school girl in chemistry club examining a transparent PDMS microfluidic chip with hair-thin microchannels, delicate face, neat eyebrows, beautiful eyes.",
+            "a smiling female biochemical engineer with kind gentle eyes and neat eyebrows demonstrating laminar flow mixing and chaotic herringbone grooves on a clean board.",
+            "both female characters smiling pleasantly as colorful laminar dye streams mix instantly through microchannel loops on a lab workbench.",
+            "both characters smiling warmly and friendly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in sunlit bioanalytical chemistry laboratory.",
+        ),
+        "ep128-cryo-electron-microscopy-vitrification-resolution-revolution": _koma.__func__(
+            "a cute Japanese high school girl in biology club looking troubled at cloudy protein precipitation tubes in a biophysics cold room, delicate facial features, neat eyebrows.",
+            "a smiling female biophysicist with kind gentle eyes and neat eyebrows demonstrating rapid vitrification plunging into liquid ethane and electron cryo-microscopy on a display.",
+            "both female characters smiling delightedly as a high-resolution 3D atomic density map of a membrane protein glows clearly on a computer workstation.",
+            "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in bright cryo-EM laboratory.",
+        ),
     }
 
     def generate_english_image_prompt(

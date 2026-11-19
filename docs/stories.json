@@ -1498,5 +1498,17 @@
     "url": "stories/ep125-quantum-teleportation-entanglement-photon-qubit-transfer.html",
     "image": "assets/images/ep125-quantum-teleportation-entanglement-photon-qubit-transfer.png",
     "char_count": 7622
+  },
+  {
+    "no": 126,
+    "work_id": "ep126-cellular-automata-game-of-life-complex-systems",
+    "title": "方眼紙のグリッドに踊る生命の規則——セル・オートマトンで紡ぐ「創発」への招待状",
+    "faculty": "情報理工学部・情報科学科 ／ 計算複雑系・創発知能アーキテクチャ研究室",
+    "field": "数学・数理科学",
+    "theme": "単純な近傍ルール（誕生・生存・過密・過疎）の反復によって、誰の設計でもないグライダーや繁殖型パターンといった驚くべき高次の秩序や計算能力が自発的に生まれる「セル・オートマトン（ライフゲーム等）」。文化祭での展示体験ブースの出展バトルを舞台に、決定論と創発の美学を解き明かす計算理論・複雑系数理",
+    "has_image": true,
+    "url": "stories/ep126-cellular-automata-game-of-life-complex-systems.html",
+    "image": "assets/images/ep126-cellular-automata-game-of-life-complex-systems.png",
+    "char_count": 7846
   }
 ]

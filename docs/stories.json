@@ -1522,5 +1522,17 @@
     "url": "stories/ep127-microfluidics-lab-on-a-chip-laminar-flow-biochemistry.html",
     "image": "assets/images/ep127-microfluidics-lab-on-a-chip-laminar-flow-biochemistry.png",
     "char_count": 6477
+  },
+  {
+    "no": 128,
+    "work_id": "ep128-cryo-electron-microscopy-vitrification-resolution-revolution",
+    "title": "極冷の氷に凍結された生命の鼓動――クライオ電子顕微鏡と原子分解能の革命",
+    "faculty": "理学部・生物物理学科 ／ 構造生命科学・クライオ電子顕微鏡解析研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "生体分子を結晶化することなく、液体窒素温度の極低温で液体エタン中に急速凍結（ガラス化）させ、放射線損傷を抑えながら電子線で撮影した十万枚もの透過像から三次元原子構造を再構築する「クライオ電子顕微鏡（Cryo-EM）」。タンパク質の結晶化に失敗し続け挫折しかけた少女が、単粒子解析で大逆転を果たす構造生物物理学",
+    "has_image": true,
+    "url": "stories/ep128-cryo-electron-microscopy-vitrification-resolution-revolution.html",
+    "image": "assets/images/ep128-cryo-electron-microscopy-vitrification-resolution-revolution.png",
+    "char_count": 6889
   }
 ]

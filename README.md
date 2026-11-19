@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **127** 話（うち挿絵付き **127** 話 / 最終更新: 2026-11-19 17:57 JST）
+- **収録作品数**: 全 **128** 話（うち挿絵付き **128** 話 / 最終更新: 2026-11-19 18:03 JST）
 
 ---
 
@@ -141,6 +141,7 @@
 | 125 | **[絡み合う光子が運ぶ未知の影――量子テレポーテーションともつれのも通信数理](https://k518-2026.github.io/rikejo-science-novel/stories/ep125-quantum-teleportation-entanglement-photon-qubit-transfer.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep125-quantum-teleportation-entanglement-photon-qubit-transfer.html) | [📄原稿](content/2026-11-18_ep125_quantum_teleportation_entanglement_photon_qubit_transfer.md) | [🎨挿絵](content/2026-11-18_ep125_quantum_teleportation_entanglement_photon_qubit_transfer.png) | 情報理工学部・数理情報学科 ／ 量子計算・量子通信アーキテクチャ研究室 | 物質そのものを瞬間移動させるのではなく、アインシュタインが「不気味な遠隔作用」と呼んだ量子もつれ（EPR対）の相関と古典通信（2ビット）を利用して、未知の量子状態（qubit）を一切破壊・複製することなく別の場所にある粒子へ忠実に転送する「量子テレポーテーション」。新入生向けの後輩指導と実験教室を舞台に、情報と物理の境界線を解き明かす量子情報数理 | 7,622字 |
 | 126 | **[方眼紙のグリッドに踊る生命の規則——セル・オートマトンで紡ぐ「創発」への招待状](https://k518-2026.github.io/rikejo-science-novel/stories/ep126-cellular-automata-game-of-life-complex-systems.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep126-cellular-automata-game-of-life-complex-systems.html) | [📄原稿](content/2026-11-19_ep126_cellular_automata_game_of_life_complex_systems.md) | [🎨挿絵](content/2026-11-19_ep126_cellular_automata_game_of_life_complex_systems.png) | 情報理工学部・情報科学科 ／ 計算複雑系・創発知能アーキテクチャ研究室 | 単純な近傍ルール（誕生・生存・過密・過疎）の反復によって、誰の設計でもないグライダーや繁殖型パターンといった驚くべき高次の秩序や計算能力が自発的に生まれる「セル・オートマトン（ライフゲーム等）」。文化祭での展示体験ブースの出展バトルを舞台に、決定論と創発の美学を解き明かす計算理論・複雑系数理 | 7,846字 |
 | 127 | **[一滴の液体が巡る微小な迷宮――マイクロ流体工学とチップ上の実験室](https://k518-2026.github.io/rikejo-science-novel/stories/ep127-microfluidics-lab-on-a-chip-laminar-flow-biochemistry.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep127-microfluidics-lab-on-a-chip-laminar-flow-biochemistry.html) | [📄原稿](content/2026-11-19_ep127_microfluidics_lab_on_a_chip_laminar_flow_biochemistry.md) | [🎨挿絵](content/2026-11-19_ep127_microfluidics_lab_on_a_chip_laminar_flow_biochemistry.png) | 工学部・応用化学科 ／ マイクロ生体医工学・ラボオンチップ研究室 | 数ミリ角のPDMS（ポリジメチルシロキサン）樹脂チップ内に微細流路を刻み、層流（低レイノルズ数）環境下で無数の試験管に相当する化学・生体分析を指先サイズで高速自動化する「マイクロ流体工学（Lab-on-a-Chip / マイクロTAS）」。他校の分析化学ライバルとの合同実験コンテストでの衝突と技術共闘を描く界面流体工学・分析化学 | 6,477字 |
+| 128 | **[極冷の氷に凍結された生命の鼓動――クライオ電子顕微鏡と原子分解能の革命](https://k518-2026.github.io/rikejo-science-novel/stories/ep128-cryo-electron-microscopy-vitrification-resolution-revolution.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep128-cryo-electron-microscopy-vitrification-resolution-revolution.html) | [📄原稿](content/2026-11-19_ep128_cryo_electron_microscopy_vitrification_resolution_revolution.md) | [🎨挿絵](content/2026-11-19_ep128_cryo_electron_microscopy_vitrification_resolution_revolution.png) | 理学部・生物物理学科 ／ 構造生命科学・クライオ電子顕微鏡解析研究室 | 生体分子を結晶化することなく、液体窒素温度の極低温で液体エタン中に急速凍結（ガラス化）させ、放射線損傷を抑えながら電子線で撮影した十万枚もの透過像から三次元原子構造を再構築する「クライオ電子顕微鏡（Cryo-EM）」。タンパク質の結晶化に失敗し続け挫折しかけた少女が、単粒子解析で大逆転を果たす構造生物物理学 | 6,889字 |
 
 ---
 

@@ -591,5 +591,20 @@
       "Covert, I., Kim, C., Lee, S., Zou, J., Hashimoto, T. (2024). Stochastic Amortization: A Unified Approach to Accelerate Feature and Data Attribution. *Advances in Neural Information Processing Systems 37*, 4374-4423. [https://doi.org/10.52202/079017-0143](https://doi.org/10.52202/079017-0143)",
       "Ribeiro, M. T., Singh, S., Guestrin, C. (2016). \"Why Should I Trust You?\". *Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*, 1135-1144. [https://doi.org/10.1145/2939672.2939778](https://doi.org/10.1145/2939672.2939778)"
     ]
+  },
+  {
+    "work_id": "ep41-quantum-teleportation-entanglement-photon-physics",
+    "episode_num": 41,
+    "faculty": "理学部・物理学科 ／ 量子情報物理学研究センター（量子光学・光量子情報研究室）",
+    "theme": "量子力学の非局所性（アインシュタインのEPRパラドックス・ベルの不等式）と光子対による量子テレポーテーション実験（Zeilingerらノーベル物理学賞）",
+    "episode_title": "二つの光子が織りなす見えない糸――量子もつれとテレポーテーションの物理",
+    "posted_at": "2026-11-19T10:58:59.932820+09:00",
+    "file_path": "content/2026-10-12_ep41_quantum_teleportation_entanglement_photon_physics.md",
+    "status": "publish",
+    "references": [
+      "Bennett, C. H., Brassard, G., Crépeau, C., Jozsa, R., Peres, A., Wootters, W. K. (1993). Teleporting an unknown quantum state via dual classical and Einstein-Podolsky-Rosen channels. *Physical Review Letters*, 70(13), 1895-1899. [https://doi.org/10.1103/physrevlett.70.1895](https://doi.org/10.1103/physrevlett.70.1895)",
+      "Bouwmeester, D., Pan, J., Mattle, K., Eibl, M., Weinfurter, H., Zeilinger, A. (1997). Experimental quantum teleportation. *Nature*, 390(6660), 575-579. [https://doi.org/10.1038/37539](https://doi.org/10.1038/37539)",
+      "Aspect, A., Dalibard, J., Roger, G. (1982). Experimental Test of Bell's Inequalities Using Time- Varying Analyzers. *Physical Review Letters*, 49(25), 1804-1807. [https://doi.org/10.1103/physrevlett.49.1804](https://doi.org/10.1103/physrevlett.49.1804)"
+    ]
   }
 ]

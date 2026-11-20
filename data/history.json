@@ -606,5 +606,20 @@
       "Bouwmeester, D., Pan, J., Mattle, K., Eibl, M., Weinfurter, H., Zeilinger, A. (1997). Experimental quantum teleportation. *Nature*, 390(6660), 575-579. [https://doi.org/10.1038/37539](https://doi.org/10.1038/37539)",
       "Aspect, A., Dalibard, J., Roger, G. (1982). Experimental Test of Bell's Inequalities Using Time- Varying Analyzers. *Physical Review Letters*, 49(25), 1804-1807. [https://doi.org/10.1103/physrevlett.49.1804](https://doi.org/10.1103/physrevlett.49.1804)"
     ]
+  },
+  {
+    "work_id": "ep42-paleoclimatology-milankovitch-cycles-earth-science",
+    "episode_num": 42,
+    "faculty": "理学部・地球惑星科学科 ／ 大気海洋研究所・古環境動態研究部門（古気候モデリング・堆積物解析研究室）",
+    "theme": "地球の離心率・地軸傾斜・歳差運動（ミランコビッチ・サイクル）による氷期・間氷期サイクルの数理天文学と、深海堆積物・氷床コア同位体比記録",
+    "episode_title": "星屑が織りなす氷の旋律――ミランコビッチ・サイクルで解く地球の鼓動",
+    "posted_at": "2026-11-20T10:53:57.969591+09:00",
+    "file_path": "content/2026-10-13_ep42_paleoclimatology_milankovitch_cycles_earth_science.md",
+    "status": "publish",
+    "references": [
+      "Hays, J. D., Imbrie, J., Shackleton, N. J. (1976). Variations in the Earth's Orbit: Pacemaker of the Ice Ages. *Science*, 194(4270), 1121-1132. [https://doi.org/10.1126/science.194.4270.1121](https://doi.org/10.1126/science.194.4270.1121)",
+      "Berger, A. (1978). Long-Term Variations of Daily Insolation and Quaternary Climatic Changes. *Journal of the Atmospheric Sciences*, 35(12), 2362-2367. [https://doi.org/10.1175/1520-0469(1978)035<2362:ltvodi>2.0.co;2](https://doi.org/10.1175/1520-0469(1978)",
+      "Laskar, J., Robutel, P., Joutel, F., Gastineau, M., Correia, A. C. M., Levrard, B. (2004). A long-term numerical solution for the insolation quantities of the Earth. *Astronomy &amp; Astrophysics*, 428(1), 261-285. [https://doi.org/10.1051/0004-6361:20041335](https://doi.org/10.1051/0004-6361:20041335)"
+    ]
   }
 ]

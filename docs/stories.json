@@ -1546,5 +1546,17 @@
     "url": "stories/ep129-gravitational-lensing-dark-matter-einstein-ring.html",
     "image": "assets/images/ep129-gravitational-lensing-dark-matter-einstein-ring.png",
     "char_count": 7052
+  },
+  {
+    "no": 130,
+    "work_id": "ep130-optical-tweezers-radiation-pressure-single-molecule-biophysics",
+    "title": "光の指先が触れるナノの鼓動――光ピンセットと単一分子生物物理学",
+    "faculty": "理工学部・物理工学科 ／ 生体ナノ計測・光放射圧物理研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "強く絞り込んだレーザー光の勾配力（放射圧）を利用し、生きた細胞やDNA、分子モーターなどの微小粒子を非接触・無傷で捕捉し、ピコニュートン（pN）オーダーの極微な力を測定・操作する「光ピンセット（Optical Tweezers）」。新入生向けの後輩指導と実験教室を舞台に、光が力を持つ直感的驚きを描く光量子力学・生体物理工学",
+    "has_image": true,
+    "url": "stories/ep130-optical-tweezers-radiation-pressure-single-molecule-biophysics.html",
+    "image": "assets/images/ep130-optical-tweezers-radiation-pressure-single-molecule-biophysics.png",
+    "char_count": 7648
   }
 ]

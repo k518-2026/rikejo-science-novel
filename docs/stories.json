@@ -1558,5 +1558,17 @@
     "url": "stories/ep130-optical-tweezers-radiation-pressure-single-molecule-biophysics.html",
     "image": "assets/images/ep130-optical-tweezers-radiation-pressure-single-molecule-biophysics.png",
     "char_count": 7648
+  },
+  {
+    "no": 131,
+    "work_id": "ep131-topological-data-analysis-persistent-homology-data-shape",
+    "title": "データの雲が結ぶかたちの輪郭――トポロジカルデータ解析とパーシステントホモロジー",
+    "faculty": "情報理工学部・数理情報学科 ／ 応用代数トポロジー・高次元データ幾何学研究室",
+    "field": "数学・数理科学",
+    "theme": "高次元空間に散らばる複雑な点群データ（ポイントクラウド）に対し、各点を半径rの球で膨らませて重なり具合を追跡することで、スケールを超えて生き残る「穴（空洞）」の特徴をバーコードやダイアグラムとして抽出する「トポロジカルデータ解析（TDA）」。文化祭での出展バトルを舞台に、データの形を見る数学の美しさを解き明かす応用幾何学・数理データサイエンス",
+    "has_image": true,
+    "url": "stories/ep131-topological-data-analysis-persistent-homology-data-shape.html",
+    "image": "assets/images/ep131-topological-data-analysis-persistent-homology-data-shape.png",
+    "char_count": 8283
   }
 ]

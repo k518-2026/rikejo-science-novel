@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **130** 話（うち挿絵付き **130** 話 / 最終更新: 2026-11-21 23:01 JST）
+- **収録作品数**: 全 **131** 話（うち挿絵付き **131** 話 / 最終更新: 2026-11-21 23:07 JST）
 
 ---
 
@@ -144,6 +144,7 @@
 | 128 | **[極冷の氷に凍結された生命の鼓動――クライオ電子顕微鏡と原子分解能の革命](https://k518-2026.github.io/rikejo-science-novel/stories/ep128-cryo-electron-microscopy-vitrification-resolution-revolution.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep128-cryo-electron-microscopy-vitrification-resolution-revolution.html) | [📄原稿](content/2026-11-19_ep128_cryo_electron_microscopy_vitrification_resolution_revolution.md) | [🎨挿絵](content/2026-11-19_ep128_cryo_electron_microscopy_vitrification_resolution_revolution.png) | 理学部・生物物理学科 ／ 構造生命科学・クライオ電子顕微鏡解析研究室 | 生体分子を結晶化することなく、液体窒素温度の極低温で液体エタン中に急速凍結（ガラス化）させ、放射線損傷を抑えながら電子線で撮影した十万枚もの透過像から三次元原子構造を再構築する「クライオ電子顕微鏡（Cryo-EM）」。タンパク質の結晶化に失敗し続け挫折しかけた少女が、単粒子解析で大逆転を果たす構造生物物理学 | 6,889字 |
 | 129 | **[歪んだ星影が暴く見えない質量 ―― 重力の弓矢とダークマターの秘密](https://k518-2026.github.io/rikejo-science-novel/stories/ep129-gravitational-lensing-dark-matter-einstein-ring.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep129-gravitational-lensing-dark-matter-einstein-ring.html) | [📄原稿](content/2026-11-21_ep129_gravitational_lensing_dark_matter_einstein_ring.md) | [🎨挿絵](content/2026-11-21_ep129_gravitational_lensing_dark_matter_einstein_ring.png) | 理学部・天文学科 ／ 宇宙物理学・銀河進化学観測研究室 | 遠方の銀河やクエーサーから届く光が、手前にある巨大銀河や銀河団の時空の歪みによって曲げられ、多重像や円弧状のアーク、完全なリング（アインシュタイン・リング）として観測される「重力レンズ効果」。天文台の撮像データに現れた謎の二重天体トラブルを解明する観測的宇宙物理学 | 7,052字 |
 | 130 | **[光の指先が触れるナノの鼓動――光ピンセットと単一分子生物物理学](https://k518-2026.github.io/rikejo-science-novel/stories/ep130-optical-tweezers-radiation-pressure-single-molecule-biophysics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep130-optical-tweezers-radiation-pressure-single-molecule-biophysics.html) | [📄原稿](content/2026-11-21_ep130_optical_tweezers_radiation_pressure_single_molecule_biophysics.md) | [🎨挿絵](content/2026-11-21_ep130_optical_tweezers_radiation_pressure_single_molecule_biophysics.png) | 理工学部・物理工学科 ／ 生体ナノ計測・光放射圧物理研究室 | 強く絞り込んだレーザー光の勾配力（放射圧）を利用し、生きた細胞やDNA、分子モーターなどの微小粒子を非接触・無傷で捕捉し、ピコニュートン（pN）オーダーの極微な力を測定・操作する「光ピンセット（Optical Tweezers）」。新入生向けの後輩指導と実験教室を舞台に、光が力を持つ直感的驚きを描く光量子力学・生体物理工学 | 7,648字 |
+| 131 | **[データの雲が結ぶかたちの輪郭――トポロジカルデータ解析とパーシステントホモロジー](https://k518-2026.github.io/rikejo-science-novel/stories/ep131-topological-data-analysis-persistent-homology-data-shape.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep131-topological-data-analysis-persistent-homology-data-shape.html) | [📄原稿](content/2026-11-21_ep131_topological_data_analysis_persistent_homology_data_shape.md) | [🎨挿絵](content/2026-11-21_ep131_topological_data_analysis_persistent_homology_data_shape.png) | 情報理工学部・数理情報学科 ／ 応用代数トポロジー・高次元データ幾何学研究室 | 高次元空間に散らばる複雑な点群データ（ポイントクラウド）に対し、各点を半径rの球で膨らませて重なり具合を追跡することで、スケールを超えて生き残る「穴（空洞）」の特徴をバーコードやダイアグラムとして抽出する「トポロジカルデータ解析（TDA）」。文化祭での出展バトルを舞台に、データの形を見る数学の美しさを解き明かす応用幾何学・数理データサイエンス | 8,283字 |
 
 ---
 

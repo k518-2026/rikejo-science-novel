@@ -1661,6 +1661,24 @@ class DualLLMStoryGenerator:
             "both female characters smiling delightedly as a high-resolution 3D atomic density map of a membrane protein glows clearly on a computer workstation.",
             "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in bright cryo-EM laboratory.",
         ),
+        "ep129-gravitational-lensing-dark-matter-einstein-ring": _koma.__func__(
+            "a cute Japanese high school girl in astronomy club looking puzzled at twin identical quasar spectra and distorted arc images on an observatory monitor, neat thin eyebrows, beautiful clear anime eyes.",
+            "a smiling female astrophysicist with kind gentle eyes and neatly drawn eyebrows explaining spacetime curvature, gravitational lensing, and Einstein rings on a glowing digital chalkboard.",
+            "both female characters smiling joyfully as a computer simulation reveals a dark matter mass distribution map bending background galaxy light into a glowing blue ring.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in sunlit astronomical observatory.",
+        ),
+        "ep130-optical-tweezers-radiation-pressure-single-molecule-biophysics": _koma.__func__(
+            "a cute Japanese high school girl teaching a junior student looking curious at an optical breadboard and focused laser microscope setup, delicate face, neat eyebrows, beautiful eyes.",
+            "a smiling female biophysicist with kind gentle eyes and neat eyebrows demonstrating laser radiation pressure, gradient force, and microscopic trapping physics on a clean whiteboard.",
+            "both female characters smiling happily observing a tiny luminous bead trapped and manipulated effortlessly by an invisible focused laser beam on the microscope screen.",
+            "both characters smiling warmly and encouragingly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in sunlit biophysics laboratory.",
+        ),
+        "ep131-topological-data-analysis-persistent-homology-data-shape": _koma.__func__(
+            "a cute Japanese high school girl looking fascinated at high-dimensional point cloud clusters on a large interactive workstation in a data science laboratory, neat delicate eyebrows, beautiful anime eyes.",
+            "a smiling female algebraic topologist with kind gentle eyes and neat eyebrows demonstrating expanding spheres, Vietoris-Rips complexes, and persistence barcodes on a transparent glass board.",
+            "both female characters smiling pleasantly as topological data analysis extracts glowing topological tunnels, loops, and geometric skeletons from complex data clouds on the screen.",
+            "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles at the bustling science festival booth.",
+        ),
     }
 
     def generate_english_image_prompt(

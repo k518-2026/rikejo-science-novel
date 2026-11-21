@@ -1534,5 +1534,17 @@
     "url": "stories/ep128-cryo-electron-microscopy-vitrification-resolution-revolution.html",
     "image": "assets/images/ep128-cryo-electron-microscopy-vitrification-resolution-revolution.png",
     "char_count": 6889
+  },
+  {
+    "no": 129,
+    "work_id": "ep129-gravitational-lensing-dark-matter-einstein-ring",
+    "title": "歪んだ星影が暴く見えない質量 ―― 重力の弓矢とダークマターの秘密",
+    "faculty": "理学部・天文学科 ／ 宇宙物理学・銀河進化学観測研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "遠方の銀河やクエーサーから届く光が、手前にある巨大銀河や銀河団の時空の歪みによって曲げられ、多重像や円弧状のアーク、完全なリング（アインシュタイン・リング）として観測される「重力レンズ効果」。天文台の撮像データに現れた謎の二重天体トラブルを解明する観測的宇宙物理学",
+    "has_image": true,
+    "url": "stories/ep129-gravitational-lensing-dark-matter-einstein-ring.html",
+    "image": "assets/images/ep129-gravitational-lensing-dark-matter-einstein-ring.png",
+    "char_count": 7052
   }
 ]

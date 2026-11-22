@@ -636,5 +636,20 @@
       "Hutchison, C. A., Chuang, R., Noskov, V. N., Assad-Garcia, N., Deerinck, T. J., Ellisman, M. H., et al. (2016). Design and synthesis of a minimal bacterial genome. *Science*, 351(6280). [https://doi.org/10.1126/science.aad6253](https://doi.org/10.1126/science.aad6253)",
       "Glass, J. I., Assad-Garcia, N., Alperovich, N., Yooseph, S., Lewis, M. R., Maruf, M., et al. (2006). Essential genes of a minimal bacterium. *Proceedings of the National Academy of Sciences*, 103(2), 425-430. [https://doi.org/10.1073/pnas.0510013103](https://doi.org/10.1073/pnas.0510013103)"
     ]
+  },
+  {
+    "work_id": "ep44-p-vs-np-computational-complexity-math-informatics",
+    "episode_num": 44,
+    "faculty": "情報理工学部・数理情報学科 ／ 理学部・情報科学科（計算量理論・アルゴリズム幾何学研究室）",
+    "theme": "ミレニアム懸賞問題「P対NP問題」とNP完全性理論、多項式時間還元、暗号理論と計算困難性の本質",
+    "episode_title": "解く難しさと確かめる優しさの狭間で――P対NP問題と計算量理論の地平",
+    "posted_at": "2026-11-22T09:39:06.251974+09:00",
+    "file_path": "content/2026-10-13_ep44_p_vs_np_computational_complexity_math_informatics.md",
+    "status": "publish",
+    "references": [
+      "Cook, S. A. (1971). The complexity of theorem-proving procedures. *Proceedings of the third annual ACM symposium on Theory of computing  - STOC '71*, 151-158. [https://doi.org/10.1145/800157.805047](https://doi.org/10.1145/800157.805047)",
+      "Karp, R. M. (1972). Reducibility among Combinatorial Problems. *Complexity of Computer Computations*, 85-103. [https://doi.org/10.1007/978-1-4684-2001-2_9](https://doi.org/10.1007/978-1-4684-2001-2_9)",
+      "Impagliazzo, R. (2020). A personal view of average-case complexity. *Proceedings of Structure in Complexity Theory. Tenth Annual IEEE Conference*, 134-147. [https://doi.org/10.1109/sct.1995.514853](https://doi.org/10.1109/sct.1995.514853)"
+    ]
   }
 ]

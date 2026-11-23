@@ -651,5 +651,20 @@
       "Karp, R. M. (1972). Reducibility among Combinatorial Problems. *Complexity of Computer Computations*, 85-103. [https://doi.org/10.1007/978-1-4684-2001-2_9](https://doi.org/10.1007/978-1-4684-2001-2_9)",
       "Impagliazzo, R. (2020). A personal view of average-case complexity. *Proceedings of Structure in Complexity Theory. Tenth Annual IEEE Conference*, 134-147. [https://doi.org/10.1109/sct.1995.514853](https://doi.org/10.1109/sct.1995.514853)"
     ]
+  },
+  {
+    "work_id": "ep45-higgs-boson-standard-model-particle-physics",
+    "episode_num": 45,
+    "faculty": "理学部・物理学科 ／ 素粒子物理学研究センター（加速器実験・ヒッグス物理研究室）",
+    "theme": "標準模型における自発的対称性の破れとヒッグス機構、LHC実験によるヒッグス粒子発見",
+    "episode_title": "宇宙に質量を与えた見えない海――ヒッグス粒子と素粒子の標準模型",
+    "posted_at": "2026-11-23T10:07:20.549188+09:00",
+    "file_path": "content/2026-10-14_ep45_higgs_boson_standard_model_particle_physics.md",
+    "status": "publish",
+    "references": [
+      "Higgs, P. W. (1964). Broken Symmetries and the Masses of Gauge Bosons. *Physical Review Letters*, 13(16), 508-509. [https://doi.org/10.1103/physrevlett.13.508](https://doi.org/10.1103/physrevlett.13.508)",
+      "Mountricha, E. (2020). Search for the Standard Model Higgs boson with the ATLAS experiment at the LHC leading to the observation of a new particle compatible with the Higgs boson. *Agence Bibliographique de l'Enseignement Supérieur*. [https://doi.org/10.70675/c28791cczf8e4z4253z8ecez91411a310ea9](https://doi.org/10.70675/c28791cczf8e4z4253z8ecez91411a310ea9)",
+      "MARIOTTI, C., ON BEHALF OF THE CMS COLLABORATION (2015). OBSERVATION OF A NEW BOSON AT A MASS OF 125 GEV WITH THE CMS EXPERIMENT AT THE LHC. *The Thirteenth Marcel Grossmann Meeting*, 352-372. [https://doi.org/10.1142/9789814623995_0019](https://doi.org/10.1142/9789814623995_0019)"
+    ]
   }
 ]

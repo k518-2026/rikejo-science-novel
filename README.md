@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **137** 話（うち挿絵付き **137** 話 / 最終更新: 2026-11-24 11:40 JST）
+- **収録作品数**: 全 **138** 話（うち挿絵付き **138** 話 / 最終更新: 2026-11-24 11:46 JST）
 
 ---
 
@@ -151,6 +151,7 @@
 | 135 | **[改ざん不可能な鎖を紡ぐ暗号理論――ブロックチェーンとハッシュ関数の数学的証明 (非対称鍵暗号や椭圆曲線暗号を用いた分散型台帳技術。一人の学生が持つ学歴・成績データを『デジタルアイデンティティ』として安全に管理するシステム構築を通じて、数論（素因数分解）と情報セキュリティの実用性を描く)](https://k518-2026.github.io/rikejo-science-novel/stories/ep135-blockchain-cryptography-hash-function-decentralized-identity-systems.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep135-blockchain-cryptography-hash-function-decentralized-identity-systems.html) | [📄原稿](content/2026-11-23_ep135_blockchain_cryptography_hash_function_decentralized_identity_systems.md) | [🎨挿絵](content/2026-11-23_ep135_blockchain_cryptography_hash_function_decentralized_identity_systems.png) | 工学部・電気通信学科 / 法学部（知的財産法務センター） | 暗号学と分散システム工学 | 6,333字 |
 | 136 | **[ナッシュ均衡を奏でる学習の旋律——時間の中で舞うアダプティブ・ラーニング](https://k518-2026.github.io/rikejo-science-novel/stories/ep136-gamification-learning-analytics-adaptive-curriculum-design-systems.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep136-gamification-learning-analytics-adaptive-curriculum-design-systems.html) | [📄原稿](content/2026-11-23_ep136_gamification_learning_analytics_adaptive_curriculum_design_systems.md) | [🎨挿絵](content/2026-11-23_ep136_gamification_learning_analytics_adaptive_curriculum_design_systems.png) | 教育学部・学習科学専攻 / 情報科学研究科（知的システムデザイン） | ゲーム理論とアダプティブ・ラーニング | 6,968字 |
 | 137 | **[七色の粒が放つ純粋な光――量子ドットと閉じ込められた電子の物理化学](https://k518-2026.github.io/rikejo-science-novel/stories/ep132-quantum-dot-nanocrystals-quantum-confinement-display.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep132-quantum-dot-nanocrystals-quantum-confinement-display.html) | [📄原稿](content/2026-11-24_ep132_quantum_dot_nanocrystals_quantum_confinement_display.md) | [🎨挿絵](content/2026-11-24_ep132_quantum_dot_nanocrystals_quantum_confinement_display.png) | 工学部・応用化学科 ／ ナノ光電子材料・半導体量子ナノ結晶研究室 | 半導体微粒子を数ナノメートルの極微サイズまで小さくすることで、物質の組成を変えずに「サイズ（粒子径）」を変えるだけで発光色を青から赤まで自在に制御できる「量子閉じ込め効果（Quantum Confinement Effect）」。他校の光学材料ライバルとのコンテストでの衝突と技術共闘を描くナノ半導体物理化学 | 7,674字 |
+| 138 | **[一滴の泥水が語る未知の生命圏――メタゲノミクスと環境微生物ゲノム解析](https://k518-2026.github.io/rikejo-science-novel/stories/ep133-metagenomics-environmental-dna-unseen-microbiome.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep133-metagenomics-environmental-dna-unseen-microbiome.html) | [📄原稿](content/2026-11-24_ep133_metagenomics_environmental_dna_unseen_microbiome.md) | [🎨挿絵](content/2026-11-24_ep133_metagenomics_environmental_dna_unseen_microbiome.png) | 農学部・生物資源科学科 ／ 環境分子微生物学・生命情報メタゲノム研究室 | 地球上の微生物の99%以上が培地で培養できない「難培養性微生物（Dark Microbiome）」。環境中の土壌や海水からDNAを直接丸ごと抽出し、次世代シーケンサーとバイオインフォマティクスで解読・再構築する「メタゲノミクス（Metagenomics）」。土壌細菌の培養にことごとく失敗し挫折しかけた少女が、環境DNAショットガン解析で大逆転を果たす環境分子生物学 | 7,431字 |
 
 ---
 

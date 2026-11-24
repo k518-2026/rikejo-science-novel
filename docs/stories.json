@@ -1642,5 +1642,17 @@
     "url": "stories/ep132-quantum-dot-nanocrystals-quantum-confinement-display.html",
     "image": "assets/images/ep132-quantum-dot-nanocrystals-quantum-confinement-display.png",
     "char_count": 7674
+  },
+  {
+    "no": 138,
+    "work_id": "ep133-metagenomics-environmental-dna-unseen-microbiome",
+    "title": "一滴の泥水が語る未知の生命圏――メタゲノミクスと環境微生物ゲノム解析",
+    "faculty": "農学部・生物資源科学科 ／ 環境分子微生物学・生命情報メタゲノム研究室",
+    "field": "情報学・AI",
+    "theme": "地球上の微生物の99%以上が培地で培養できない「難培養性微生物（Dark Microbiome）」。環境中の土壌や海水からDNAを直接丸ごと抽出し、次世代シーケンサーとバイオインフォマティクスで解読・再構築する「メタゲノミクス（Metagenomics）」。土壌細菌の培養にことごとく失敗し挫折しかけた少女が、環境DNAショットガン解析で大逆転を果たす環境分子生物学",
+    "has_image": true,
+    "url": "stories/ep133-metagenomics-environmental-dna-unseen-microbiome.html",
+    "image": "assets/images/ep133-metagenomics-environmental-dna-unseen-microbiome.png",
+    "char_count": 7431
   }
 ]

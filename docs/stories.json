@@ -1570,5 +1570,77 @@
     "url": "stories/ep131-topological-data-analysis-persistent-homology-data-shape.html",
     "image": "assets/images/ep131-topological-data-analysis-persistent-homology-data-shape.png",
     "char_count": 8283
+  },
+  {
+    "no": 132,
+    "work_id": "ep132-manifold-learning-dimensionality-reduction-neural-net-teacher",
+    "title": "データの皺が描く多様体の地形――「教え合う」AI の心臓は幾何学の呼吸にある",
+    "faculty": "理工学部・情報学科 / 教育学研究科（デジタル教育デザイン研究室）",
+    "field": "情報学・AI",
+    "theme": "データサイエンスと教育工学の融合",
+    "has_image": true,
+    "url": "stories/ep132-manifold-learning-dimensionality-reduction-neural-net-teacher.html",
+    "image": "assets/images/ep132-manifold-learning-dimensionality-reduction-neural-net-teacher.png",
+    "char_count": 7746
+  },
+  {
+    "no": 133,
+    "work_id": "ep133-fractal-geometry-polymer-synthesis-nanoreactor-biology",
+    "title": "自己相似の樹海を歩く分形合成――フラクタル幾何とポリマーナノリアクター",
+    "faculty": "理学部・応用物理学科 / 生物資源学部（ナノバイオセンター）",
+    "field": "物理学・宇宙・光学",
+    "theme": "分形幾何学と高分子合成化学",
+    "has_image": true,
+    "url": "stories/ep133-fractal-geometry-polymer-synthesis-nanoreactor-biology.html",
+    "image": "assets/images/ep133-fractal-geometry-polymer-synthesis-nanoreactor-biology.png",
+    "char_count": 6537
+  },
+  {
+    "no": 134,
+    "work_id": "ep134-cybernetics-control-theory-bipedal-robot-walking-mechanics",
+    "title": "反発のバネで歩く制御論――サイバーネティクスと二足歩行ロボットの力学 (ニュートン・オイラー方程式に基づく運動量保存則を逆算し、エネルギー回復型スプリングローダー機構を用いた自律性あるくロボット開発。『フィードバックループ』という概念を実際の物理動作に落とし込み、制御工学の美しさを感じる物語)",
+    "faculty": "理工学部・機械工学科 / 情報理工学院（ロボティクスラボ）",
+    "field": "情報学・AI",
+    "theme": "制御理論とロボティクス工学",
+    "has_image": true,
+    "url": "stories/ep134-cybernetics-control-theory-bipedal-robot-walking-mechanics.html",
+    "image": "assets/images/ep134-cybernetics-control-theory-bipedal-robot-walking-mechanics.png",
+    "char_count": 6341
+  },
+  {
+    "no": 135,
+    "work_id": "ep135-blockchain-cryptography-hash-function-decentralized-identity-systems",
+    "title": "改ざん不可能な鎖を紡ぐ暗号理論――ブロックチェーンとハッシュ関数の数学的証明 (非対称鍵暗号や椭圆曲線暗号を用いた分散型台帳技術。一人の学生が持つ学歴・成績データを『デジタルアイデンティティ』として安全に管理するシステム構築を通じて、数論（素因数分解）と情報セキュリティの実用性を描く)",
+    "faculty": "工学部・電気通信学科 / 法学部（知的財産法務センター）",
+    "field": "情報学・AI",
+    "theme": "暗号学と分散システム工学",
+    "has_image": true,
+    "url": "stories/ep135-blockchain-cryptography-hash-function-decentralized-identity-systems.html",
+    "image": "assets/images/ep135-blockchain-cryptography-hash-function-decentralized-identity-systems.png",
+    "char_count": 6333
+  },
+  {
+    "no": 136,
+    "work_id": "ep136-gamification-learning-analytics-adaptive-curriculum-design-systems",
+    "title": "ナッシュ均衡を奏でる学習の旋律——時間の中で舞うアダプティブ・ラーニング",
+    "faculty": "教育学部・学習科学専攻 / 情報科学研究科（知的システムデザイン）",
+    "field": "情報学・AI",
+    "theme": "ゲーム理論とアダプティブ・ラーニング",
+    "has_image": true,
+    "url": "stories/ep136-gamification-learning-analytics-adaptive-curriculum-design-systems.html",
+    "image": "assets/images/ep136-gamification-learning-analytics-adaptive-curriculum-design-systems.png",
+    "char_count": 6968
+  },
+  {
+    "no": 137,
+    "work_id": "ep132-quantum-dot-nanocrystals-quantum-confinement-display",
+    "title": "七色の粒が放つ純粋な光――量子ドットと閉じ込められた電子の物理化学",
+    "faculty": "工学部・応用化学科 ／ ナノ光電子材料・半導体量子ナノ結晶研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "半導体微粒子を数ナノメートルの極微サイズまで小さくすることで、物質の組成を変えずに「サイズ（粒子径）」を変えるだけで発光色を青から赤まで自在に制御できる「量子閉じ込め効果（Quantum Confinement Effect）」。他校の光学材料ライバルとのコンテストでの衝突と技術共闘を描くナノ半導体物理化学",
+    "has_image": true,
+    "url": "stories/ep132-quantum-dot-nanocrystals-quantum-confinement-display.html",
+    "image": "assets/images/ep132-quantum-dot-nanocrystals-quantum-confinement-display.png",
+    "char_count": 7674
   }
 ]

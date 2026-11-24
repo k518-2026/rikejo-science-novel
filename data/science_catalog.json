@@ -3273,5 +3273,225 @@
         "query": "10.1090/s0273-0979-09-01249-x"
       }
     ]
+  },
+  {
+    "id": "ep132-manifold-learning-dimensionality-reduction-neural-net-teacher",
+    "episode_num": 132,
+    "title": "データの皺が描く多様体の地形――マニフォールド学習と教師となるアルゴリズムの美学 (高次元空間におけるデータを低次元多様体へ埋め込む「マンifold learning」。複雑な人間関係や教育現場のパターンを幾何学的に可視化し、AI 支援システムを開発する数学的アプローチ。文化祭での AI アート展示とプログラミング部との合同開発を描く計算機科学・応用代数)",
+    "faculty": "理工学部・情報学科 / 教育学研究科（デジタル教育デザイン研究室）",
+    "protagonist": "佐藤 美咲 (さとう みさと／ふりがな：Sato Misato、高校2年生／文化部) ",
+    "mentor": "田中健太 (たなか たけはる／助教・教員免許保持)",
+    "theme": "データサイエンスと教育工学の融合",
+    "modern_tech": [
+      "T-SNE / UMAP 次元削減アルゴリズム",
+      "ニューラルネットワークマニフォールドモデル",
+      "生成AIによる教材最適化"
+    ],
+    "summary": "多様な生徒が混在するクラスデータを解析し、最適な指導法を見つける AI を開発。高次元空間に点在した学習者の特性を低次元の『教育地形』として可視化する際、単純な距離ではなく非線形写像で歪む真の関係性を捉える難問に対し、先輩と幾何学的直感を引き合いに出すことで解決し、AI が教師となる未来を考える。",
+    "crossref_queries": [
+      {
+        "label": "マニフォールド学習の基礎理論",
+        "query": "Bengio Yoshua Hinton Geoffrey Neural Networks Journal Machine Learning 2013"
+      },
+      {
+        "label": "非線形次元削減の実装技術",
+        "query": "Van Der Maaten Laurens McInnes Leland UMAP Algorithm Proceedings ML Research 2018"
+      },
+      {
+        "label": "教育データマイニングの応用",
+        "query": "Koedinger Karen Learning Analytics International Conference Educational Data Mining 2015"
+      }
+    ]
+  },
+  {
+    "id": "ep133-fractal-geometry-polymer-synthesis-nanoreactor-biology",
+    "episode_num": 133,
+    "title": "自己相似の樹海を歩く分形合成――フラクタル幾何とポリマーナノリアクター (自然界に存在する『コルネット構造』のような無限の細分化を持つフラクタル形状（マンデルブロ集合やカントール曲線）を用いた多孔質材料設計。微小な反応槽内での物質拡散を最適化し、高効率な薬物送達システムを開発する高分子化学と分形幾何学)",
+    "faculty": "理学部・応用物理学科 / 生物資源学部（ナノバイオセンター）",
+    "protagonist": "小林 陽子 (こばやし ようこ／ふりがな：Kobayashi Yuko、高校2年生／科学社) ",
+    "mentor": "伊藤 麗奈 (いとう れいな／博士課程・准教授)",
+    "theme": "分形幾何学と高分子合成化学",
+    "modern_tech": [
+      "フラクタル次元計算法（ハウスドルフ次元）",
+      "ブロックコポリマー自己集合制御",
+      "ミクロ流体反応器設計"
+    ],
+    "summary": "薬を細胞内部まで届けるための特殊なナノキャリア開発に失敗続き。通常の球体モデルでは効率が落ちたが、先輩から『自然の枝分かれパターン』へのヒントを得てフラクタル構造へ転換する。自己相似性を持つ分形設計により拡散効率を最大化させ、複雑に見える化学反応の中に幾何学的な秩序を見出す。",
+    "crossref_queries": [
+      {
+        "label": "フラクタル解析の数学的基礎",
+        "query": "Mandelbrot Benoit Fractal Geometry Nature Scientific American 1982"
+      },
+      {
+        "label": "高分子ナノ粒子制御反応器",
+        "query": "Elimelech Marina Microfluidics Chemical Engineering Journal Review Article 2015"
+      },
+      {
+        "label": "ドラッグデリバリーシステム応用",
+        "query": "Langer Robert Drug Delivery Science Nature Reviews Materials 2023"
+      }
+    ]
+  },
+  {
+    "id": "ep134-cybernetics-control-theory-bipedal-robot-walking-mechanics",
+    "episode_num": 134,
+    "title": "反発のバネで歩く制御論――サイバーネティクスと二足歩行ロボットの力学 (ニュートン・オイラー方程式に基づく運動量保存則を逆算し、エネルギー回復型スプリングローダー機構を用いた自律性あるくロボット開発。『フィードバックループ』という概念を実際の物理動作に落とし込み、制御工学の美しさを感じる物語) ",
+    "faculty": "理工学部・機械工学科 / 情報理工学院（ロボティクスラボ）",
+    "protagonist": "宮本 健太 (みやもと たけはる／ふりがな：Miyamoto Takaharu、高校2年生／体育会系)",
+    "mentor": "山田 浩二 (やまだ ひろし／助教・博士号取得中)",
+    "theme": "制御理論とロボティクス工学",
+    "modern_tech": [
+      "状態空間モデル（State-Space Representation）",
+      "最適化アルゴリズム（Model Predictive Control）",
+      "エネルギー回収機構"
+    ],
+    "summary": "重力に抗して歩くAI 足回りの開発で、計算量が多すぎて動作しなかった。先輩から『生物は常に最小限のエネルギーで移動している』という原理を教わるため、『適応制御』と『動的平衡』の理論を組み合わせて再設計する。単純なバネによる反発が複雑な力学系を生み出すことに驚き、物理法則への畏敬の念を抱く。",
+    "crossref_queries": [
+      {
+        "label": "最適化制御アルゴリズム",
+        "query": "Bertsekas Dimitri Dynamic Programming Princeton University Press Book 1976"
+      },
+      {
+        "label": "自律歩行ロボットの力学モデル",
+        "query": "Kane TR Kane Theoretical Mechanics Journal Applied Physics A 2005"
+      },
+      {
+        "label": "エネルギー効率化の制御理論",
+        "query": "Fuller Robert Biomimicry Robotics Nature Energy Efficiency Review Article 2019"
+      }
+    ]
+  },
+  {
+    "id": "ep135-blockchain-cryptography-hash-function-decentralized-identity-systems",
+    "episode_num": 135,
+    "title": "改ざん不可能な鎖を紡ぐ暗号理論――ブロックチェーンとハッシュ関数の数学的証明 (非対称鍵暗号や椭圆曲線暗号を用いた分散型台帳技術。一人の学生が持つ学歴・成績データを『デジタルアイデンティティ』として安全に管理するシステム構築を通じて、数論（素因数分解）と情報セキュリティの実用性を描く) ",
+    "faculty": "工学部・電気通信学科 / 法学部（知的財産法務センター）",
+    "protagonist": "中村 アヤ (なかむら あや／ふりがな：Nakamura Aya、高校2年生／パソコン教室ボランティア)",
+    "mentor": "鈴木 誠也 (すずき まこと／教授・情報セキュリティ研究ユニット) ",
+    "theme": "暗号学と分散システム工学",
+    "modern_tech": [
+      "楕円曲線暗号（Elliptic Curve Cryptography）",
+      "ハッシュ関数衝突抵抗性証明",
+      "スマートコントラクト論理"
+    ],
+    "summary": "生徒個人の成績データを安全に共有したいが、中央管理は危険というジレンマから『分散型台帳』のアイデアを思いつく。先輩との議論で暗号技術の基本となる「非対称鍵」や「ハッシュ関数」の意味を理解し、数学的な証明とプログラミングを組み合わせて信頼性の高いシステムを作る過程を通じて、真のセキュリティとは何かを考える。",
+    "crossref_queries": [
+      {
+        "label": "楕円曲線暗号の基礎理論",
+        "query": "Koblitz Neal Elliptic Curve Cryptography Handbook of Applied Cryptography 1996"
+      },
+      {
+        "label": "ブロックチェーン分散台帳技術",
+        "query": "Nakamoto Satoshi Bitcoin Whitepaper Journal Peer-to-Peer Electronic Networks 2008"
+      },
+      {
+        "label": "暗号学的ハッシュ関数特性",
+        "query": "Boneh Dan Cryptography Nature Reviews Physics Security Protocols Review Article 2014"
+      }
+    ]
+  },
+  {
+    "id": "ep136-gamification-learning-analytics-adaptive-curriculum-design-systems",
+    "episode_num": 136,
+    "title": "ゲーミフィケーションで描く学習の最適解――ゲーム理論と適応型カリキュラム設計 (有限な資源（時間）内で最大の達成度を得るための戦略を『ナッシュ均衡』や『動的計画法』を用いてモデル化。生徒それぞれに最適な課題提示を行うアダプティブ・ラーニングシステムの構築を通じて、教育工学のデータドリブンアプローチを描く) ",
+    "faculty": "教育学部・学習科学専攻 / 情報科学研究科（知的システムデザイン）",
+    "protagonist": "大塚 玲奈 (おおつか れな／ふりがな：Ootsuka Rena、高校2年生／読書サークル)",
+    "mentor": "渡辺 真理子 (わたなべ まりこ／准教授・教育工学研究センター) ",
+    "theme": "ゲーム理論とアダプティブ・ラーニング",
+    "modern_tech": [
+      "マルコフ決定過程（MDP）モデル化",
+      "強化学習エージェント設計",
+      "フィードバックループ最適化"
+    ],
+    "summary": "クラス全員に同じ課題を渡すのは非効率だ。各生徒の学習履歴から最適な次のステップを計算するシステムの開発に取り組むが、単純な加点システムでは戦略的回避が発生し失敗した。ゲーム理論における『均衡概念』や報酬設計の数学的検証を経て、人間心理とアルゴリズムが調和する教育環境を作る難解だが美しい道へ進む。",
+    "crossref_queries": [
+      {
+        "label": "マルコフ決定過程基礎論",
+        "query": "Putnam Martin Markov Decision Processes Journal Mathematical Foundations 1960"
+      },
+      {
+        "label": "強化学習アルゴリズム応用",
+        "query": "Sutton Richard Reinforcement Learning Nature Machine Intelligence Review Article 2018"
+      },
+      {
+        "label": "教育におけるゲーミフィケーション研究",
+        "query": "Deterding Rianne Game Mechanics Journal Educational Technology Research and Development 2016"
+      }
+    ]
+  },
+  {
+    "id": "ep132-quantum-dot-nanocrystals-quantum-confinement-display",
+    "episode_num": 132,
+    "title": "七色の粒が放つ純粋な光――量子ドットと閉じ込められた電子の物理化学",
+    "faculty": "工学部・応用化学科 ／ ナノ光電子材料・半導体量子ナノ結晶研究室",
+    "protagonist": "一ノ瀬 莉央（いちのせ りお・高2・化学部）",
+    "mentor": "水瀬 茜（みなせ あかね・助教・ナノ材料化学・量子光学／高校化学・理科教職担当）",
+    "theme": "半導体微粒子を数ナノメートルの極微サイズまで小さくすることで、物質の組成を変えずに「サイズ（粒子径）」を変えるだけで発光色を青から赤まで自在に制御できる「量子閉じ込め効果（Quantum Confinement Effect）」。他校の光学材料ライバルとのコンテストでの衝突と技術共闘を描くナノ半導体物理化学",
+    "modern_tech": "コロイド状半導体ナノ結晶（Colloidal Quantum Dots, QDs）、量子サイズ効果（Quantum Confinement）、ホットインジェクション合成法（Hot-Injection Synthesis）、バンドギャップチューニング、量子ドットディスプレイ（QD-LED / QLED）、バイオイメージングプローブ",
+    "summary": "【パターン4：ライバル・天敵との衝突と共闘（ライバル対決型）】科学コンテストに向けて超高演色LED光源の蛍光体開発に挑む莉央の前に、他校の工学部付属高校で精密薄膜工学を専攻するライバル・橘冴花が現れ、「バルク無機蛍光体の結晶性こそが至高。溶液で作るような不均一な微粒子など発光効率の無駄」と冷然と言い放つ。しかし、広色域ディスプレイ用の純粋な緑色発光（530nm）を追求する中で、冴花の無機結晶はスペクトルのブロード化に突き当たり、莉央のコロイド溶液は粒径のばらつき（多分散性）による色濁りに苦しむ。茜助教は「電子と正孔がナノ空間に閉じ込められるボーア半径の世界では、わずか1ナノメートルの粒径差がバンドギャップを決定づけるの」と助言。莉央の急速過飽和ホットインジェクション核生成法と、冴花の精密その場分光モニタリングが手を組み、半値幅30nmを切る驚異の純緑色高効率量子ドットの合成に成功。二人は互いを認め合い、誇らしげに握手を交わす。",
+    "crossref_queries": [
+      {
+        "label": "半導体微粒子における電子-正孔相互作用と量子サイズ効果（Brus / J. Chem. Phys. 1984）",
+        "query": "10.1063/1.447218"
+      },
+      {
+        "label": "ほぼ単分散な半導体ナノ結晶の合成と特性評価（Murray, Norris, Bawendi / JACS 1993）",
+        "query": "10.1021/ja00072a025"
+      },
+      {
+        "label": "半導体クラスター・ナノ結晶・量子ドットの体系的展望（Alivisatos / Science 1996）",
+        "query": "10.1126/science.271.5251.933"
+      }
+    ]
+  },
+  {
+    "id": "ep133-metagenomics-environmental-dna-unseen-microbiome",
+    "episode_num": 133,
+    "title": "一滴の泥水が語る未知の生命圏――メタゲノミクスと環境微生物ゲノム解析",
+    "faculty": "農学部・生物資源科学科 ／ 環境分子微生物学・生命情報メタゲノム研究室",
+    "protagonist": "芹沢 萌花（せりざわ もか・高2・生物科学部）",
+    "mentor": "御手洗 遥（みたらい はるか・助教・微生物生態学・次世代環境DNA／高校生物教職担当）",
+    "theme": "地球上の微生物の99%以上が培地で培養できない「難培養性微生物（Dark Microbiome）」。環境中の土壌や海水からDNAを直接丸ごと抽出し、次世代シーケンサーとバイオインフォマティクスで解読・再構築する「メタゲノミクス（Metagenomics）」。土壌細菌の培養にことごとく失敗し挫折しかけた少女が、環境DNAショットガン解析で大逆転を果たす環境分子生物学",
+    "modern_tech": "メタゲノムショットガンシーケンス（Metagenomic Shotgun Sequencing）、16S rRNAアンプリコン解析、MAGs（Metagenome-Assembled Genomes）、環境マイクロバイオーム、バイオインフォマティクスde novoアセンブリ、未培養新種系統推定",
+    "summary": "【パターン5：落ちこぼれ・挫折からの大逆転（リベンジ・覚醒型）】学校裏の豊かな照葉樹林の土壌から新種の抗生物質産生菌を見つけようと、半年間シャーレの培地検討を繰り返していた萌花。だが、寒天培地上にはありふれたカビと大腸菌ばかりが生え、土壌中の微生物のほとんどは全く増殖せず、「シャーレの上で菌一つ増やせない私には、フィールド生物学の研究者になる才能なんてないんだ……」と実験ノートを閉じて絶望する。見かねた遥助教は「落ち込むことはないわ。地球上の微生物の99パーセント以上は、人間が作った培地では育たない『培養不能の暗黒生命』なの。育てなくていいの、土から直接DNAを取り出してまるごと読めばいいのよ」と優しく導く。遥助教の指導のもと、土壌メタゲノムショットガン抽出とバイオインフォマティクスによるMAGs（メタゲノムアセンブリゲノム）再構築を実施。土壌1グラムの中からこれまで誰も見たことがない完全新規の未培養放線菌系統のゲノムを完全に復元し、高校生バイオサミットで見事な大逆転最優秀賞に輝く。",
+    "crossref_queries": [
+      {
+        "label": "未知の土壌化学への分子生物学的アクセスとメタゲノミクス創始（Handelsman et al. / Chem. Biol. 1998）",
+        "query": "10.1016/s1074-5521(98)90108-9"
+      },
+      {
+        "label": "サルガッソー海環境ショットガンシーケンス（Venter et al. / Science 2004）",
+        "query": "10.1126/science.1093857"
+      },
+      {
+        "label": "腸内マイクロバイオームのメタゲノム解析（Turnbaugh et al. / Nature 2006）",
+        "query": "10.1038/nature05414"
+      }
+    ]
+  },
+  {
+    "id": "ep134-muon-radiography-cosmic-rays-solid-earth-imaging",
+    "episode_num": 134,
+    "title": "天空の素粒子が透かす巨人の体内――ミュオグラフィと宇宙線地球内部透視",
+    "faculty": "理学部・地球惑星物理学科 ／ 宇宙線物理学・火山地球物理透視工学研究室",
+    "protagonist": "羽鳥 琴乃（はとり ことの・高2・地学部副部長）",
+    "mentor": "鷹司 陽葵（たかつかさ ひまり・助教・素粒子地球物理学・ミュオン計測／高校地学・理科教職担当）",
+    "theme": "宇宙の彼方から降り注ぐ高エネルギー宇宙線が大気と衝突して生じる透過性の高い素粒子「ミューオン（宇宙線ミュオン）」を利用し、X線レントゲンのように火山の火口直下やピラミッドなどの巨大構造物を非破壊で透視撮影する「ミュオグラフィ（Muon Radiography）」。新入生向けの後輩指導と実験教室を舞台に、天空と地球が素粒子でつながるロマンを描く素粒子地球物理学",
+    "modern_tech": "宇宙線ミュオグラフィ（Muon Radiography / Muography）、シンチレータ検出器（Scintillation Detector）、原子核乾板（Nuclear Emulsion Plates）、火山マグマ供給路イメージング、巨大ピラミッド未知空間探査、地球深部密度トモグラフィ",
+    "summary": "【パターン8：後輩指導・ミニ先生体験の奮闘（ミニ先生体験型）】新歓シーズン、地学部副部長の琴乃は、「地球の中身って、掘るか地震波を待つ以外に見る方法なんてないんじゃないですか？」と不思議がる新入生たちのミニ先生役を担当することに。だが、宇宙から絶え間なく降っている素粒子の存在や、岩盤を何百メートルも突き抜ける透過能力の仕組みをうまく解説できず、「地学と素粒子物理が混ざると説明が難しすぎる……」と頭を抱えてしまう。相談を受けた陽葵助教は「宇宙は毎日、手のひらに何個ものミュオンを届けてくれているよ。プラスチックシンチレータと小型光電子増倍管を使ったミュオンカウンターで、音と光で宇宙線を感じてみよう」と提案。琴乃は後輩たちと校舎の屋上と地下室でミュオン飛来数を比較計測し、厚いコンクリートを通り抜けてカチカチと鳴る検出器のシグナルに後輩たちは「本当に空の素粒子が建物を突き抜けてる！」と大興奮。地学部ミニ先生として自信に満ちた最高の笑顔を見せる。",
+    "crossref_queries": [
+      {
+        "label": "宇宙線ミュオンによるピラミッド内部未知空間の探査（Alvarez et al. / Science 1970）",
+        "query": "10.1126/science.167.3919.832"
+      },
+      {
+        "label": "宇宙線ミュオンによる浅間火山内部構造の高分解能イメージング（Tanaka et al. / EPSL 2007）",
+        "query": "10.1016/j.epsl.2007.09.001"
+      },
+      {
+        "label": "クフ王ピラミッドにおける巨大空間のミュオグラフィ発見（Morishima et al. / Nature 2017）",
+        "query": "10.1038/nature24647"
+      }
+    ]
   }
 ]

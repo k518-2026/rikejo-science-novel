@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **138** 話（うち挿絵付き **138** 話 / 最終更新: 2026-11-24 11:46 JST）
+- **収録作品数**: 全 **139** 話（うち挿絵付き **139** 話 / 最終更新: 2026-11-24 11:51 JST）
 
 ---
 
@@ -152,6 +152,7 @@
 | 136 | **[ナッシュ均衡を奏でる学習の旋律——時間の中で舞うアダプティブ・ラーニング](https://k518-2026.github.io/rikejo-science-novel/stories/ep136-gamification-learning-analytics-adaptive-curriculum-design-systems.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep136-gamification-learning-analytics-adaptive-curriculum-design-systems.html) | [📄原稿](content/2026-11-23_ep136_gamification_learning_analytics_adaptive_curriculum_design_systems.md) | [🎨挿絵](content/2026-11-23_ep136_gamification_learning_analytics_adaptive_curriculum_design_systems.png) | 教育学部・学習科学専攻 / 情報科学研究科（知的システムデザイン） | ゲーム理論とアダプティブ・ラーニング | 6,968字 |
 | 137 | **[七色の粒が放つ純粋な光――量子ドットと閉じ込められた電子の物理化学](https://k518-2026.github.io/rikejo-science-novel/stories/ep132-quantum-dot-nanocrystals-quantum-confinement-display.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep132-quantum-dot-nanocrystals-quantum-confinement-display.html) | [📄原稿](content/2026-11-24_ep132_quantum_dot_nanocrystals_quantum_confinement_display.md) | [🎨挿絵](content/2026-11-24_ep132_quantum_dot_nanocrystals_quantum_confinement_display.png) | 工学部・応用化学科 ／ ナノ光電子材料・半導体量子ナノ結晶研究室 | 半導体微粒子を数ナノメートルの極微サイズまで小さくすることで、物質の組成を変えずに「サイズ（粒子径）」を変えるだけで発光色を青から赤まで自在に制御できる「量子閉じ込め効果（Quantum Confinement Effect）」。他校の光学材料ライバルとのコンテストでの衝突と技術共闘を描くナノ半導体物理化学 | 7,674字 |
 | 138 | **[一滴の泥水が語る未知の生命圏――メタゲノミクスと環境微生物ゲノム解析](https://k518-2026.github.io/rikejo-science-novel/stories/ep133-metagenomics-environmental-dna-unseen-microbiome.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep133-metagenomics-environmental-dna-unseen-microbiome.html) | [📄原稿](content/2026-11-24_ep133_metagenomics_environmental_dna_unseen_microbiome.md) | [🎨挿絵](content/2026-11-24_ep133_metagenomics_environmental_dna_unseen_microbiome.png) | 農学部・生物資源科学科 ／ 環境分子微生物学・生命情報メタゲノム研究室 | 地球上の微生物の99%以上が培地で培養できない「難培養性微生物（Dark Microbiome）」。環境中の土壌や海水からDNAを直接丸ごと抽出し、次世代シーケンサーとバイオインフォマティクスで解読・再構築する「メタゲノミクス（Metagenomics）」。土壌細菌の培養にことごとく失敗し挫折しかけた少女が、環境DNAショットガン解析で大逆転を果たす環境分子生物学 | 7,431字 |
+| 139 | **[天空の素粒子が透かす巨人の体内――ミュオグラフィと宇宙線地球内部透視](https://k518-2026.github.io/rikejo-science-novel/stories/ep134-muon-radiography-cosmic-rays-solid-earth-imaging.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep134-muon-radiography-cosmic-rays-solid-earth-imaging.html) | [📄原稿](content/2026-11-24_ep134_muon_radiography_cosmic_rays_solid_earth_imaging.md) | [🎨挿絵](content/2026-11-24_ep134_muon_radiography_cosmic_rays_solid_earth_imaging.png) | 理学部・地球惑星物理学科 ／ 宇宙線物理学・火山地球物理透視工学研究室 | 宇宙の彼方から降り注ぐ高エネルギー宇宙線が大気と衝突して生じる透過性の高い素粒子「ミューオン（宇宙線ミュオン）」を利用し、X線レントゲンのように火山の火口直下やピラミッドなどの巨大構造物を非破壊で透視撮影する「ミュオグラフィ（Muon Radiography）」。新入生向けの後輩指導と実験教室を舞台に、天空と地球が素粒子でつながるロマンを描く素粒子地球物理学 | 6,962字 |
 
 ---
 

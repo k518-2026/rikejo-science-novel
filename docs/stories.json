@@ -1654,5 +1654,17 @@
     "url": "stories/ep133-metagenomics-environmental-dna-unseen-microbiome.html",
     "image": "assets/images/ep133-metagenomics-environmental-dna-unseen-microbiome.png",
     "char_count": 7431
+  },
+  {
+    "no": 139,
+    "work_id": "ep134-muon-radiography-cosmic-rays-solid-earth-imaging",
+    "title": "天空の素粒子が透かす巨人の体内――ミュオグラフィと宇宙線地球内部透視",
+    "faculty": "理学部・地球惑星物理学科 ／ 宇宙線物理学・火山地球物理透視工学研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "宇宙の彼方から降り注ぐ高エネルギー宇宙線が大気と衝突して生じる透過性の高い素粒子「ミューオン（宇宙線ミュオン）」を利用し、X線レントゲンのように火山の火口直下やピラミッドなどの巨大構造物を非破壊で透視撮影する「ミュオグラフィ（Muon Radiography）」。新入生向けの後輩指導と実験教室を舞台に、天空と地球が素粒子でつながるロマンを描く素粒子地球物理学",
+    "has_image": true,
+    "url": "stories/ep134-muon-radiography-cosmic-rays-solid-earth-imaging.html",
+    "image": "assets/images/ep134-muon-radiography-cosmic-rays-solid-earth-imaging.png",
+    "char_count": 6962
   }
 ]

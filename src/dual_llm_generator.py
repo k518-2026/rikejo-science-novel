@@ -1679,6 +1679,24 @@ class DualLLMStoryGenerator:
             "both female characters smiling pleasantly as topological data analysis extracts glowing topological tunnels, loops, and geometric skeletons from complex data clouds on the screen.",
             "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles at the bustling science festival booth.",
         ),
+        "ep132-quantum-dot-nanocrystals-quantum-confinement-display": _koma.__func__(
+            "a cute Japanese high school girl in chemistry club examining colloidal flasks of glowing colorful quantum dot solutions under UV light, delicate facial features, neat eyebrows, beautiful eyes.",
+            "a smiling female materials chemist with kind gentle eyes and neat eyebrows explaining quantum confinement size-dependent bandgap tuning and hot-injection synthesis on a whiteboard.",
+            "both female characters smiling happily observing a brilliantly pure green quantum dot LED illumination with a sharp narrow spectrum peak on a spectrometer monitor.",
+            "both characters smiling warmly and friendly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in bright nanomaterials chemistry laboratory.",
+        ),
+        "ep133-metagenomics-environmental-dna-unseen-microbiome": _koma.__func__(
+            "a cute Japanese high school girl in biology club looking troubled at blank sterile agar petri dishes in a microbiology laboratory, delicate face, neat eyebrows, gentle anime eyes.",
+            "a smiling female microbial geneticist with kind gentle eyes and neat eyebrows explaining unculturable dark microbiome and environmental DNA shotgun sequencing on a glowing digital display.",
+            "both female characters smiling triumphantly as bioinformatic metagenome-assembled genome contigs reconstruct a complete novel bacterial genome on a computer workstation.",
+            "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in sunlit molecular biology laboratory.",
+        ),
+        "ep134-muon-radiography-cosmic-rays-solid-earth-imaging": _koma.__func__(
+            "a cute Japanese high school girl teaching curious junior students using a portable cosmic ray muon scintillator detector in an earth science laboratory, neat delicate eyebrows, clear eyes.",
+            "a smiling female geophysicist with kind gentle eyes and neat eyebrows demonstrating relativistic cosmic muon penetration and volcano magma chamber radiograph on a glass board.",
+            "both female characters smiling joyfully watching real-time muon detector flash counts and a high-contrast density radiographic cross-section image on a monitor.",
+            "both characters smiling warmly and encouragingly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in sunlit geophysics observatory.",
+        ),
     }
 
     def generate_english_image_prompt(

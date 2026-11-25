@@ -1666,5 +1666,17 @@
     "url": "stories/ep134-muon-radiography-cosmic-rays-solid-earth-imaging.html",
     "image": "assets/images/ep134-muon-radiography-cosmic-rays-solid-earth-imaging.png",
     "char_count": 6962
+  },
+  {
+    "no": 140,
+    "work_id": "ep135-majorana-fermion-topological-qubit-quantum-computing",
+    "title": "境界線上のリボン――ノイズを弾くマヨラナの歌",
+    "faculty": "理学部・物理学科 ／ 凝縮系量子物性・トポロジカル量子エレクトロニクス研究室",
+    "field": "情報学・AI",
+    "theme": "粒子と反粒子が同一という特異な性質を持ち、ナノワイヤー両端に空間的に離れて局在することで局所的な環境ノイズに対して圧倒的な耐性を持つ「マヨラナ準粒子（Majorana Zero Mode）」。文化祭での出展バトルを舞台に、非可換エニオンの編み込み（ブレイディング）による誤り耐性トポロジカル量子計算の原理を描く物性物理学・量子情報科学",
+    "has_image": true,
+    "url": "stories/ep135-majorana-fermion-topological-qubit-quantum-computing.html",
+    "image": "assets/images/ep135-majorana-fermion-topological-qubit-quantum-computing.png",
+    "char_count": 7476
   }
 ]

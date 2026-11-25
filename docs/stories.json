@@ -1678,5 +1678,17 @@
     "url": "stories/ep135-majorana-fermion-topological-qubit-quantum-computing.html",
     "image": "assets/images/ep135-majorana-fermion-topological-qubit-quantum-computing.png",
     "char_count": 7476
+  },
+  {
+    "no": 141,
+    "work_id": "ep136-synthetic-biology-genetic-oscillator-repressilator-circuits",
+    "title": "生命のコードに組み込むクロック――遺伝子発振回路リプレシレーターの分子生物学",
+    "faculty": "生命理工学部・生体機能学科 ／ 合成生物学・生体分子回路デザイン研究室",
+    "field": "生命科学・バイオ・医学",
+    "theme": "3つの転写抑制因子が互いに次の抑制因子の発現を順繰りに抑制し合う（三すくみ阻害）人工遺伝子回路を大腸菌に組み込むことで、電気回路の発振器のように周期的な蛍光明滅を自発的に生み出す「リプレシレーター（Repressilator）」。他校の合成生物学ライバルとの合同実験コンテストでの衝突と技術共闘を描く分子生物学・合成生物工学",
+    "has_image": true,
+    "url": "stories/ep136-synthetic-biology-genetic-oscillator-repressilator-circuits.html",
+    "image": "assets/images/ep136-synthetic-biology-genetic-oscillator-repressilator-circuits.png",
+    "char_count": 6840
   }
 ]

@@ -1690,5 +1690,17 @@
     "url": "stories/ep136-synthetic-biology-genetic-oscillator-repressilator-circuits.html",
     "image": "assets/images/ep136-synthetic-biology-genetic-oscillator-repressilator-circuits.png",
     "char_count": 6840
+  },
+  {
+    "no": 142,
+    "work_id": "ep137-astrochemistry-interstellar-dust-molecular-clouds-origin-of-water",
+    "title": "絶対零度の塵に凍る生命の種――星間分子雲と宇宙化学の夜明け",
+    "faculty": "理学部・化学科 ／ 宇宙化学・星間分子電波分光研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "マイナス260度という極低温・超高真空の星間分子雲において、塵（星間ダスト）表面の微小氷微粒子上で水素原子のトンネル効果やラジカル反応が進み、水（H2O）やメタノール、アミノ酸前駆体といった複雑な有機分子が合成される「星間ダスト表面化学」。電波望遠鏡の分子輝線スペクトル分離に失敗し挫折しかけた少女が、実験室宇宙化学の手法で大逆転を果たす宇宙化学・電波天文学",
+    "has_image": true,
+    "url": "stories/ep137-astrochemistry-interstellar-dust-molecular-clouds-origin-of-water.html",
+    "image": "assets/images/ep137-astrochemistry-interstellar-dust-molecular-clouds-origin-of-water.png",
+    "char_count": 6691
   }
 ]

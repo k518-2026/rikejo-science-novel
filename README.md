@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **141** 話（うち挿絵付き **141** 話 / 最終更新: 2026-11-25 20:06 JST）
+- **収録作品数**: 全 **142** 話（うち挿絵付き **142** 話 / 最終更新: 2026-11-25 20:12 JST）
 
 ---
 
@@ -155,6 +155,7 @@
 | 139 | **[天空の素粒子が透かす巨人の体内――ミュオグラフィと宇宙線地球内部透視](https://k518-2026.github.io/rikejo-science-novel/stories/ep134-muon-radiography-cosmic-rays-solid-earth-imaging.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep134-muon-radiography-cosmic-rays-solid-earth-imaging.html) | [📄原稿](content/2026-11-24_ep134_muon_radiography_cosmic_rays_solid_earth_imaging.md) | [🎨挿絵](content/2026-11-24_ep134_muon_radiography_cosmic_rays_solid_earth_imaging.png) | 理学部・地球惑星物理学科 ／ 宇宙線物理学・火山地球物理透視工学研究室 | 宇宙の彼方から降り注ぐ高エネルギー宇宙線が大気と衝突して生じる透過性の高い素粒子「ミューオン（宇宙線ミュオン）」を利用し、X線レントゲンのように火山の火口直下やピラミッドなどの巨大構造物を非破壊で透視撮影する「ミュオグラフィ（Muon Radiography）」。新入生向けの後輩指導と実験教室を舞台に、天空と地球が素粒子でつながるロマンを描く素粒子地球物理学 | 6,962字 |
 | 140 | **[境界線上のリボン――ノイズを弾くマヨラナの歌](https://k518-2026.github.io/rikejo-science-novel/stories/ep135-majorana-fermion-topological-qubit-quantum-computing.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep135-majorana-fermion-topological-qubit-quantum-computing.html) | [📄原稿](content/2026-11-25_ep135_majorana_fermion_topological_qubit_quantum_computing.md) | [🎨挿絵](content/2026-11-25_ep135_majorana_fermion_topological_qubit_quantum_computing.png) | 理学部・物理学科 ／ 凝縮系量子物性・トポロジカル量子エレクトロニクス研究室 | 粒子と反粒子が同一という特異な性質を持ち、ナノワイヤー両端に空間的に離れて局在することで局所的な環境ノイズに対して圧倒的な耐性を持つ「マヨラナ準粒子（Majorana Zero Mode）」。文化祭での出展バトルを舞台に、非可換エニオンの編み込み（ブレイディング）による誤り耐性トポロジカル量子計算の原理を描く物性物理学・量子情報科学 | 7,476字 |
 | 141 | **[生命のコードに組み込むクロック――遺伝子発振回路リプレシレーターの分子生物学](https://k518-2026.github.io/rikejo-science-novel/stories/ep136-synthetic-biology-genetic-oscillator-repressilator-circuits.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep136-synthetic-biology-genetic-oscillator-repressilator-circuits.html) | [📄原稿](content/2026-11-25_ep136_synthetic_biology_genetic_oscillator_repressilator_circuits.md) | [🎨挿絵](content/2026-11-25_ep136_synthetic_biology_genetic_oscillator_repressilator_circuits.png) | 生命理工学部・生体機能学科 ／ 合成生物学・生体分子回路デザイン研究室 | 3つの転写抑制因子が互いに次の抑制因子の発現を順繰りに抑制し合う（三すくみ阻害）人工遺伝子回路を大腸菌に組み込むことで、電気回路の発振器のように周期的な蛍光明滅を自発的に生み出す「リプレシレーター（Repressilator）」。他校の合成生物学ライバルとの合同実験コンテストでの衝突と技術共闘を描く分子生物学・合成生物工学 | 6,840字 |
+| 142 | **[絶対零度の塵に凍る生命の種――星間分子雲と宇宙化学の夜明け](https://k518-2026.github.io/rikejo-science-novel/stories/ep137-astrochemistry-interstellar-dust-molecular-clouds-origin-of-water.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep137-astrochemistry-interstellar-dust-molecular-clouds-origin-of-water.html) | [📄原稿](content/2026-11-25_ep137_astrochemistry_interstellar_dust_molecular_clouds_origin_of_water.md) | [🎨挿絵](content/2026-11-25_ep137_astrochemistry_interstellar_dust_molecular_clouds_origin_of_water.png) | 理学部・化学科 ／ 宇宙化学・星間分子電波分光研究室 | マイナス260度という極低温・超高真空の星間分子雲において、塵（星間ダスト）表面の微小氷微粒子上で水素原子のトンネル効果やラジカル反応が進み、水（H2O）やメタノール、アミノ酸前駆体といった複雑な有機分子が合成される「星間ダスト表面化学」。電波望遠鏡の分子輝線スペクトル分離に失敗し挫折しかけた少女が、実験室宇宙化学の手法で大逆転を果たす宇宙化学・電波天文学 | 6,691字 |
 
 ---
 

@@ -1679,11 +1679,13 @@ class DualLLMStoryGenerator:
             "both female characters smiling pleasantly as topological data analysis extracts glowing topological tunnels, loops, and geometric skeletons from complex data clouds on the screen.",
             "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles at the bustling science festival booth.",
         ),
-        "ep132-quantum-dot-nanocrystals-quantum-confinement-display": _koma.__func__(
-            "a cute Japanese high school girl in chemistry club examining colloidal flasks of glowing colorful quantum dot solutions under UV light, delicate facial features, neat eyebrows, beautiful eyes.",
-            "a smiling female materials chemist with kind gentle eyes and neat eyebrows explaining quantum confinement size-dependent bandgap tuning and hot-injection synthesis on a whiteboard.",
-            "both female characters smiling happily observing a brilliantly pure green quantum dot LED illumination with a sharp narrow spectrum peak on a spectrometer monitor.",
-            "both characters smiling warmly and friendly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in bright nanomaterials chemistry laboratory.",
+        "ep132-quantum-dot-nanocrystals-quantum-confinement-display": (
+            "Vertical four-panel comic strip, Japanese yonkoma manga layout, exactly 4 rectangular panels stacked vertically from top to bottom with clean white borders separating the 4 panels, full color Japanese anime art style. "
+            "Top panel 1: a cute Japanese high school girl in laboratory coat examining glowing colorful quantum dot glass vials with a sweet smile, neat delicate eyebrows, clear round eyes. "
+            "Second panel 2: a smiling female materials chemist with kind gentle eyes and neat eyebrows explaining size-dependent bandgap tuning on a clean transparent board in the chemistry laboratory. "
+            "Third panel 3: both female characters smiling happily observing a brilliantly pure green quantum dot luminescence on a laboratory workbench. "
+            "Bottom panel 4: two friendly female characters standing side by side smiling sweetly with beautiful big expressive anime eyes, finely detailed pupils, soft relaxed eyelids, neat delicate thin eyebrows, and warm sweet smiles in bright nanomaterials laboratory. "
+            "Masterpiece anime 4-panel comic strip, exactly 4 distinct rectangular panels, clean panel division, rich deep colors, high contrast, crisp lines, completely pure illustration, beautiful detailed anime eyes with clear pupils, soft relaxed eyelids, natural warm friendly smiles, sweet gentle expressions, NO speech bubbles, NO text, NO words, NO letters, NO Japanese characters, NO sound effects, NO distorted characters."
         ),
         "ep133-metagenomics-environmental-dna-unseen-microbiome": _koma.__func__(
             "a cute Japanese high school girl in biology club looking troubled at blank sterile agar petri dishes in a microbiology laboratory, delicate face, neat eyebrows, gentle anime eyes.",
@@ -1696,6 +1698,24 @@ class DualLLMStoryGenerator:
             "a smiling female geophysicist with kind gentle eyes and neat eyebrows demonstrating relativistic cosmic muon penetration and volcano magma chamber radiograph on a glass board.",
             "both female characters smiling joyfully watching real-time muon detector flash counts and a high-contrast density radiographic cross-section image on a monitor.",
             "both characters smiling warmly and encouragingly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in sunlit geophysics observatory.",
+        ),
+        "ep135-majorana-fermion-topological-qubit-quantum-computing": _koma.__func__(
+            "a cute Japanese high school girl looking fascinated at a gleaming cryogenic dilution refrigerator in a quantum physics laboratory, neat delicate eyebrows, beautiful anime eyes.",
+            "a smiling female quantum physicist with kind gentle eyes and neat eyebrows demonstrating semiconductor nanowire zero modes and non-Abelian braiding on a luminous whiteboard.",
+            "both female characters smiling joyfully as an interactive topological qubit braid simulation reveals zero-energy Majorana peaks on a computer workstation.",
+            "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles at the bustling science festival booth.",
+        ),
+        "ep136-synthetic-biology-genetic-oscillator-repressilator-circuits": _koma.__func__(
+            "a cute Japanese high school girl in biology club examining glowing bacterial culture tubes in a synthetic biology cleanroom, delicate face, neat eyebrows, beautiful eyes.",
+            "a smiling female bioengineer with kind gentle eyes and neat eyebrows demonstrating three-gene cyclic transcriptional repression loops and limit cycle equations on a transparent glass board.",
+            "both female characters smiling triumphantly watching synchronized periodic green fluorescent protein pulses pulsing rhythmically under a timelapse fluorescence microscope.",
+            "both characters smiling warmly and friendly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in sunlit molecular biology laboratory.",
+        ),
+        "ep137-astrochemistry-interstellar-dust-molecular-clouds-origin-of-water": _koma.__func__(
+            "a cute Japanese high school girl looking troubled at messy radio telescope spectral line charts in an astronomy laboratory, delicate features, neat eyebrows.",
+            "a smiling female astrochemist with kind gentle eyes and neat eyebrows explaining interstellar ice grain mantle reactions and quantum tunneling on a digital display.",
+            "both female characters smiling excitedly as an ultra-high vacuum cryogenic chamber infrared spectrum matches pure organic molecule emission peaks on an ALMA radio spectrum.",
+            "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in sunlit astrophysics observatory.",
         ),
     }
 

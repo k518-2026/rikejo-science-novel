@@ -681,5 +681,20 @@
       "Devlin, J., Chang, M., Lee, K., Toutanova, K. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. *Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)*, 4171-4186. [https://doi.org/10.18653/v1/n19-1423](https://doi.org/10.18653/v1/n19-1423)",
       "Antonello, R., Vaidya, A., Huth, A. (2023). Scaling laws for language encoding models in fMRI. *Advances in Neural Information Processing Systems 36*, 21895-21907. [https://doi.org/10.52202/075280-0958](https://doi.org/10.52202/075280-0958)"
     ]
+  },
+  {
+    "work_id": "ep47-lithium-ion-battery-intercalation-chemistry",
+    "episode_num": 47,
+    "faculty": "工学部・応用化学科 ／ 蓄電材料研究センター（固体イオニクス・電池材料研究室）",
+    "theme": "リチウムイオン電池の層状酸化物へのインターカレーション反応と正極・負極材料の設計（2019年ノーベル化学賞）",
+    "episode_title": "リチウムイオンが旅する結晶の隙間――充電池の化学とノーベル賞の物語",
+    "posted_at": "2026-11-25T12:43:31.816546+09:00",
+    "file_path": "content/2026-10-14_ep47_lithium_ion_battery_intercalation_chemistry.md",
+    "status": "publish",
+    "references": [
+      "Mizushima, K., Jones, P. C., Wiseman, P. J., Goodenough, J. B. (1980). LixCoO2 (0&lt;x&lt;-1): A new cathode material for batteries of high energy density. *Materials Research Bulletin*, 15(6), 783-789. [https://doi.org/10.1016/0025-5408(80)90012-4](https://doi.org/10.1016/0025-5408(80)",
+      "Goodenough, J. B., Park, K. (2013). The Li-Ion Rechargeable Battery: A Perspective. *Journal of the American Chemical Society*, 135(4), 1167-1176. [https://doi.org/10.1021/ja3091438](https://doi.org/10.1021/ja3091438)",
+      "Tarascon, J. -., Armand, M. (2001). Issues and challenges facing rechargeable lithium batteries. *Nature*, 414(6861), 359-367. [https://doi.org/10.1038/35104644](https://doi.org/10.1038/35104644)"
+    ]
   }
 ]

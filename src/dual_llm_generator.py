@@ -1717,6 +1717,24 @@ class DualLLMStoryGenerator:
             "both female characters smiling excitedly as an ultra-high vacuum cryogenic chamber infrared spectrum matches pure organic molecule emission peaks on an ALMA radio spectrum.",
             "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in sunlit astrophysics observatory.",
         ),
+        "ep138-synchrotron-radiation-undulator-relativistic-optics": _koma.__func__(
+            "a cute Japanese high school girl teaching curious junior students using a miniature undulator magnet array model in a physics laboratory, neat delicate eyebrows, clear round eyes.",
+            "a smiling female accelerator physicist with kind gentle eyes and neat eyebrows explaining relativistic beaming and Lorentz contracted magnetic periods on a clean whiteboard.",
+            "both female characters smiling delightedly observing an intense coherent synchrotron X-ray beam spot diffracting on a fluorescence screen.",
+            "both characters smiling warmly and encouragingly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in sunlit synchrotron facility laboratory.",
+        ),
+        "ep139-chaos-control-ogy-method-nonlinear-stabilization": _koma.__func__(
+            "a cute Japanese high school girl looking puzzled at erratic chaotic trajectory curves of a smart transport robot on an engineering workstation, neat delicate eyebrows, clear eyes.",
+            "a smiling female systems engineer with kind gentle eyes and neat eyebrows demonstrating unstable periodic orbits and OGY feedback control formulas on a transparent glass board.",
+            "both female characters smiling happily watching the smart robot recover perfectly smooth stable periodic motion via minute microsecond pulse adjustments.",
+            "both characters smiling warmly and peacefully side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles in sunlit intelligent robotics laboratory.",
+        ),
+        "ep140-bioorthogonal-chemistry-in-vivo-copper-free-click": _koma.__func__(
+            "a cute Japanese high school girl in chemistry club examining glowing azide-labeled cell culture flasks in a chemical biology laboratory, delicate facial features, neat eyebrows.",
+            "a smiling female chemical biologist with kind gentle eyes and neat eyebrows explaining strained cyclooctyne click chemistry and copper-free bioconjugation on a glowing digital display.",
+            "both female characters smiling joyfully watching living cells light up with vibrant emerald green fluorescence after instant bioorthogonal click labeling under a microscope.",
+            "both characters smiling warmly and proudly side by side with soft, kind eyes, relaxed eyelids, neat delicate eyebrows, and sweet gentle smiles at the bustling science festival booth.",
+        ),
     }
 
     def generate_english_image_prompt(

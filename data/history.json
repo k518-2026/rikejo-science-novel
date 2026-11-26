@@ -696,5 +696,20 @@
       "Goodenough, J. B., Park, K. (2013). The Li-Ion Rechargeable Battery: A Perspective. *Journal of the American Chemical Society*, 135(4), 1167-1176. [https://doi.org/10.1021/ja3091438](https://doi.org/10.1021/ja3091438)",
       "Tarascon, J. -., Armand, M. (2001). Issues and challenges facing rechargeable lithium batteries. *Nature*, 414(6861), 359-367. [https://doi.org/10.1038/35104644](https://doi.org/10.1038/35104644)"
     ]
+  },
+  {
+    "work_id": "ep48-muography-cosmic-ray-imaging-physics",
+    "episode_num": 48,
+    "faculty": "理学部・物理学科 ／ 地震研究所・火山噴火予知研究推進センター（高エネルギー素粒子地球物理学研究室）",
+    "theme": "宇宙線ミューオンの物質透過性とエネルギー損失、巨大構造物・火山マグマ流路のレントゲン透視技術（ミュオグラフィ）",
+    "episode_title": "空から降る素粒子で地球の鼓動を透視する――ミュオグラフィと宇宙線イメージング",
+    "posted_at": "2026-11-26T12:03:27.456535+09:00",
+    "file_path": "content/2026-10-15_ep48_muography_cosmic_ray_imaging_physics.md",
+    "status": "publish",
+    "references": [
+      "Tanaka, H. K. M., Nakano, T., Takahashi, S., Yoshida, J., Niwa, K. (2007). Development of an emulsion imaging system for cosmic-ray muon radiography to explore the internal structure of a volcano, Mt. Asama. *Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment*, 575(3), 489-497. [https://doi.org/10.1016/j.nima.2007.02.104](https://doi.org/10.1016/j.nima.2007.02.104)",
+      "Morishima, K., Kuno, M., Nishio, A., Kitagawa, N., Manabe, Y., Moto, M., et al. (2017). Discovery of a big void in Khufu’s Pyramid by observation of cosmic-ray muons. *Nature*, 552(7685), 386-390. [https://doi.org/10.1038/nature24647](https://doi.org/10.1038/nature24647)",
+      "Alvarez, L. W., Anderson, J. A., Bedwei, F. E., Burkhard, J., Fakhry, A., Girgis, A., et al. (1970). Search for Hidden Chambers in the Pyramids. *Science*, 167(3919), 832-839. [https://doi.org/10.1126/science.167.3919.832](https://doi.org/10.1126/science.167.3919.832)"
+    ]
   }
 ]

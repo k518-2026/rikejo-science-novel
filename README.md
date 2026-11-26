@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **144** 話（うち挿絵付き **144** 話 / 最終更新: 2026-11-26 12:57 JST）
+- **収録作品数**: 全 **145** 話（うち挿絵付き **145** 話 / 最終更新: 2026-11-26 13:03 JST）
 
 ---
 
@@ -158,6 +158,7 @@
 | 142 | **[絶対零度の塵に凍る生命の種――星間分子雲と宇宙化学の夜明け](https://k518-2026.github.io/rikejo-science-novel/stories/ep137-astrochemistry-interstellar-dust-molecular-clouds-origin-of-water.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep137-astrochemistry-interstellar-dust-molecular-clouds-origin-of-water.html) | [📄原稿](content/2026-11-25_ep137_astrochemistry_interstellar_dust_molecular_clouds_origin_of_water.md) | [🎨挿絵](content/2026-11-25_ep137_astrochemistry_interstellar_dust_molecular_clouds_origin_of_water.png) | 理学部・化学科 ／ 宇宙化学・星間分子電波分光研究室 | マイナス260度という極低温・超高真空の星間分子雲において、塵（星間ダスト）表面の微小氷微粒子上で水素原子のトンネル効果やラジカル反応が進み、水（H2O）やメタノール、アミノ酸前駆体といった複雑な有機分子が合成される「星間ダスト表面化学」。電波望遠鏡の分子輝線スペクトル分離に失敗し挫折しかけた少女が、実験室宇宙化学の手法で大逆転を果たす宇宙化学・電波天文学 | 6,691字 |
 | 143 | **[光速の電子が放つ極限の閃光――アンジュレータで紡ぐ相対論的共鳴](https://k518-2026.github.io/rikejo-science-novel/stories/ep138-synchrotron-radiation-undulator-relativistic-optics.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep138-synchrotron-radiation-undulator-relativistic-optics.html) | [📄原稿](content/2026-11-26_ep138_synchrotron_radiation_undulator_relativistic_optics.md) | [🎨挿絵](content/2026-11-26_ep138_synchrotron_radiation_undulator_relativistic_optics.png) | 理学部・物理学科 ／ 高エネルギー加速器物理学・放射光量子物性研究室 | 光速近くまで加速された電子が磁場で軌道を曲げられる際に、前方に鋭い指向性を持って放出される「放射光（Synchrotron Radiation）」。周期的な交番磁場（アンジュレータ）によって光を干渉・増幅させ、太陽の100億倍以上明るい極限のコヒーレントX線ビームを生み出す相対論的電磁気学と加速器科学。新入生向けの後輩指導と実験教室を舞台に、特殊相対性理論（ローレンツ収縮・ドップラー効果）の美しさを描く物理学 | 7,264字 |
 | 144 | **[嵐の軌道を蝶のひと振りで手懐ける――カオス制御と非線形フィードバック数理](https://k518-2026.github.io/rikejo-science-novel/stories/ep139-chaos-control-ogy-method-nonlinear-stabilization.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep139-chaos-control-ogy-method-nonlinear-stabilization.html) | [📄原稿](content/2026-11-26_ep139_chaos_control_ogy_method_nonlinear_stabilization.md) | [🎨挿絵](content/2026-11-26_ep139_chaos_control_ogy_method_nonlinear_stabilization.png) | 工学部・知能機械創成学科 ／ 非線形ダイナミクス・カオス制御システム研究室 | 初期値鋭敏性により未来予測が困難なカオス系において、無限に埋め込まれた不安定周期軌道（UPO）を捉え、微小な摂動（ピンポイントの小さな力）を適切なタイミングで加えるだけで、最小のエネルギーで望む周期状態へピタリと安定化させる「カオス制御（OGY法：Ott-Grebogi-Yorke法）」。校内の自動運転台車や倒立振子ロボットの暴走トラブルを解決する非線形力学・制御工学 | 7,304字 |
+| 145 | **[生きた細胞を傷つけずに結ぶ絆――生体内生体直交クリック化学と分子追跡](https://k518-2026.github.io/rikejo-science-novel/stories/ep140-bioorthogonal-chemistry-in-vivo-copper-free-click.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep140-bioorthogonal-chemistry-in-vivo-copper-free-click.html) | [📄原稿](content/2026-11-26_ep140_bioorthogonal_chemistry_in_vivo_copper_free_click.md) | [🎨挿絵](content/2026-11-26_ep140_bioorthogonal_chemistry_in_vivo_copper_free_click.png) | 薬学部・創薬生命科学科 ／ ケミカルバイオロジー・生体内分子修飾研究室 | 生体本来の複雑な生化学反応を一切妨害せず、また生体分子からも邪魔されない条件下で、生きた細胞内や生体内で狙った官能基同士のみを選択的に連結する「生体直交化学（Bioorthogonal Chemistry）」。毒性のある銅触媒を必要としない環ひずみ駆動型アジド-アルキン付加環化反応（SPAAC）の実演と出展バトルを描くケミカルバイオロジー・有機合成化学 | 8,246字 |
 
 ---
 

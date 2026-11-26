@@ -1726,5 +1726,17 @@
     "url": "stories/ep139-chaos-control-ogy-method-nonlinear-stabilization.html",
     "image": "assets/images/ep139-chaos-control-ogy-method-nonlinear-stabilization.png",
     "char_count": 7304
+  },
+  {
+    "no": 145,
+    "work_id": "ep140-bioorthogonal-chemistry-in-vivo-copper-free-click",
+    "title": "生きた細胞を傷つけずに結ぶ絆――生体内生体直交クリック化学と分子追跡",
+    "faculty": "薬学部・創薬生命科学科 ／ ケミカルバイオロジー・生体内分子修飾研究室",
+    "field": "化学・薬学・材料",
+    "theme": "生体本来の複雑な生化学反応を一切妨害せず、また生体分子からも邪魔されない条件下で、生きた細胞内や生体内で狙った官能基同士のみを選択的に連結する「生体直交化学（Bioorthogonal Chemistry）」。毒性のある銅触媒を必要としない環ひずみ駆動型アジド-アルキン付加環化反応（SPAAC）の実演と出展バトルを描くケミカルバイオロジー・有機合成化学",
+    "has_image": true,
+    "url": "stories/ep140-bioorthogonal-chemistry-in-vivo-copper-free-click.html",
+    "image": "assets/images/ep140-bioorthogonal-chemistry-in-vivo-copper-free-click.png",
+    "char_count": 8246
   }
 ]

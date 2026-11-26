@@ -1714,5 +1714,17 @@
     "url": "stories/ep138-synchrotron-radiation-undulator-relativistic-optics.html",
     "image": "assets/images/ep138-synchrotron-radiation-undulator-relativistic-optics.png",
     "char_count": 7264
+  },
+  {
+    "no": 144,
+    "work_id": "ep139-chaos-control-ogy-method-nonlinear-stabilization",
+    "title": "嵐の軌道を蝶のひと振りで手懐ける――カオス制御と非線形フィードバック数理",
+    "faculty": "工学部・知能機械創成学科 ／ 非線形ダイナミクス・カオス制御システム研究室",
+    "field": "化学・薬学・材料",
+    "theme": "初期値鋭敏性により未来予測が困難なカオス系において、無限に埋め込まれた不安定周期軌道（UPO）を捉え、微小な摂動（ピンポイントの小さな力）を適切なタイミングで加えるだけで、最小のエネルギーで望む周期状態へピタリと安定化させる「カオス制御（OGY法：Ott-Grebogi-Yorke法）」。校内の自動運転台車や倒立振子ロボットの暴走トラブルを解決する非線形力学・制御工学",
+    "has_image": true,
+    "url": "stories/ep139-chaos-control-ogy-method-nonlinear-stabilization.html",
+    "image": "assets/images/ep139-chaos-control-ogy-method-nonlinear-stabilization.png",
+    "char_count": 7304
   }
 ]

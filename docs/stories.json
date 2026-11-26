@@ -1702,5 +1702,17 @@
     "url": "stories/ep137-astrochemistry-interstellar-dust-molecular-clouds-origin-of-water.html",
     "image": "assets/images/ep137-astrochemistry-interstellar-dust-molecular-clouds-origin-of-water.png",
     "char_count": 6691
+  },
+  {
+    "no": 143,
+    "work_id": "ep138-synchrotron-radiation-undulator-relativistic-optics",
+    "title": "光速の電子が放つ極限の閃光――アンジュレータで紡ぐ相対論的共鳴",
+    "faculty": "理学部・物理学科 ／ 高エネルギー加速器物理学・放射光量子物性研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "光速近くまで加速された電子が磁場で軌道を曲げられる際に、前方に鋭い指向性を持って放出される「放射光（Synchrotron Radiation）」。周期的な交番磁場（アンジュレータ）によって光を干渉・増幅させ、太陽の100億倍以上明るい極限のコヒーレントX線ビームを生み出す相対論的電磁気学と加速器科学。新入生向けの後輩指導と実験教室を舞台に、特殊相対性理論（ローレンツ収縮・ドップラー効果）の美しさを描く物理学",
+    "has_image": true,
+    "url": "stories/ep138-synchrotron-radiation-undulator-relativistic-optics.html",
+    "image": "assets/images/ep138-synchrotron-radiation-undulator-relativistic-optics.png",
+    "char_count": 7264
   }
 ]

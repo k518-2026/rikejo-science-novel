@@ -711,5 +711,20 @@
       "Morishima, K., Kuno, M., Nishio, A., Kitagawa, N., Manabe, Y., Moto, M., et al. (2017). Discovery of a big void in Khufu’s Pyramid by observation of cosmic-ray muons. *Nature*, 552(7685), 386-390. [https://doi.org/10.1038/nature24647](https://doi.org/10.1038/nature24647)",
       "Alvarez, L. W., Anderson, J. A., Bedwei, F. E., Burkhard, J., Fakhry, A., Girgis, A., et al. (1970). Search for Hidden Chambers in the Pyramids. *Science*, 167(3919), 832-839. [https://doi.org/10.1126/science.167.3919.832](https://doi.org/10.1126/science.167.3919.832)"
     ]
+  },
+  {
+    "work_id": "ep49-catastrophe-theory-bifurcation-nonlinear-math",
+    "episode_num": 49,
+    "faculty": "理学部・数学科 ／ 数理科学研究科（微分トポロジー・力学系理論研究室）",
+    "theme": "微分トポロジー・特異点論に基づくカタストロフィー理論（トム、ジーマン）と非線形力学系の分岐現象（急変・相転移の数理）",
+    "episode_title": "折れ曲がる曲面が教える突然の変容――カタストロピー理論と非線形ダイナミクス",
+    "posted_at": "2026-11-27T12:14:14.214620+09:00",
+    "file_path": "content/2026-10-15_ep49_catastrophe_theory_bifurcation_nonlinear_math.md",
+    "status": "publish",
+    "references": [
+      "Thom, R. (1976). Structural stability and morphogenesis. *Pattern Recognition*, 8(1), 61. [https://doi.org/10.1016/0031-3203(76)90030-3](https://doi.org/10.1016/0031-3203(76)",
+      "Zeeman, E. C. (1976). Catastrophe Theory. *Scientific American*, 234(4), 65-83. [https://doi.org/10.1038/scientificamerican0476-65](https://doi.org/10.1038/scientificamerican0476-65)",
+      "Scheffer, M., Bascompte, J., Brock, W. A., Brovkin, V., Carpenter, S. R., Dakos, V., et al. (2009). Early-warning signals for critical transitions. *Nature*, 461(7260), 53-59. [https://doi.org/10.1038/nature08227](https://doi.org/10.1038/nature08227)"
+    ]
   }
 ]

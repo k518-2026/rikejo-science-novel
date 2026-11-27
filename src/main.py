@@ -394,10 +394,8 @@ def main():
                 history_mgr.append_catalog_works(new_themes)
                 targets = history_mgr.select_unstocked_works(count=args.stock_count)
         if not targets:
-            logger.info("All catalog episodes are already generated in content/!")
-            build_github_pages(history_mgr)
-            print_stock_status(history_mgr)
-            return
+            logger.error("Failed to select or generate any new catalog episodes for stock generation!")
+            sys.exit(1)
 
         generated_files: List[Path] = []
         for idx, work in enumerate(targets, start=1):

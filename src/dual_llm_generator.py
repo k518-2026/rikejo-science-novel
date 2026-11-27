@@ -375,6 +375,7 @@ class DualLLMStoryGenerator:
         timeout: int = 900,
         max_retries: int = 3,
         keep_alive: Optional[Any] = None,
+        response_format: Optional[Any] = None,
     ) -> str:
         """
         Calls either Ollama (/api/chat on rtx5060lp:11434) or LM Studio OpenAI API
@@ -398,6 +399,8 @@ class DualLLMStoryGenerator:
         }
         if keep_alive is not None:
             ollama_payload["keep_alive"] = keep_alive
+        if response_format is not None:
+            ollama_payload["format"] = response_format
 
         hosts_to_try = [self.ollama_host] + [h for h in self.ollama_hosts if h != self.ollama_host]
         last_err: Optional[Exception] = None
@@ -1921,102 +1924,112 @@ Based on the following Japanese science novel episode (structured into 4 scenes:
         count: int = 3,
     ) -> List[Dict[str, Any]]:
         """
-        Uses `qwen3.5:9b` (Director) to automatically design new episode entries for `data/science_catalog.json`
-        when all existing catalog themes have been stocked or published, featuring Mathematics, Informatics,
-        Natural Sciences, Engineering, and the career path of becoming a school teacher.
+        Uses `qwen3.5:9b` (Director) with Ollama JSON Schema constrained decoding (1 item per call + retries)
+        to reliably design new episode entries for `data/science_catalog.json`.
         """
-        next_ep_num = max([w.get("episode_num", 0) for w in existing_catalog], default=0) + 1
-        existing_titles = "\n".join([f"- {w.get('id')}: {w.get('title')} ({w.get('theme')})" for w in existing_catalog[-15:]])
+        patterns = [
+            "パターン1：日常の謎・トラブル解決（名探偵型）",
+            "パターン3：文化祭・オープンキャンパスの出展バトル（お祭り・エンタメ型）",
+            "パターン4：ライバル・天敵との衝突と共闘（ライバル対決型）",
+            "パターン5：落ちこぼれ・挫折からの大逆転（リベンジ・覚醒型）",
+            "パターン8：後輩指導・ミニ先生体験の奮闘（ミニ先生体験型）",
+        ]
+        item_schema = {
+            "type": "object",
+            "properties": {
+                "slug": {"type": "string"},
+                "title": {"type": "string"},
+                "faculty": {"type": "string"},
+                "protagonist": {"type": "string"},
+                "mentor": {"type": "string"},
+                "theme": {"type": "string"},
+                "modern_tech": {"type": "string"},
+                "summary": {"type": "string"},
+                "crossref_queries": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "label": {"type": "string"},
+                            "query": {"type": "string"},
+                        },
+                        "required": ["label", "query"],
+                    },
+                },
+            },
+            "required": ["slug", "title", "faculty", "protagonist", "mentor", "theme", "modern_tech", "summary", "crossref_queries"],
+        }
 
-        prompt = f"""あなたは『放課後サイエンス・キャンパス』の構成作家（{self.director_model}）です。
-既存のエピソードと重複しない、新しい魅力的な科学・数学・情報学・教職キャリアのライトノベル企画を **{count} 話分** 作成し、**純粋なJSON配列のみ** で出力してください。
+        base_ep_num = max([w.get("episode_num", 0) for w in existing_catalog], default=0)
+        existing_ids = {w.get("id", "") for w in existing_catalog}
+        generated: List[Dict[str, Any]] = []
 
-【既存エピソード一覧（これらと重複しないこと）】
+        for idx in range(count):
+            ep_n = base_ep_num + idx + 1
+            assigned_pattern = patterns[(ep_n - 1) % len(patterns)]
+            recent_list = (existing_catalog + generated)[-20:]
+            existing_titles = "\n".join([f"- {w.get('id')}: {w.get('title')} ({w.get('theme')})" for w in recent_list])
+
+            prompt = f"""あなたは『放課後サイエンス・キャンパス』の構成作家です。
+既存のエピソードと重複しない、新しい魅力的な科学・数学・情報学・教職キャリアのライトノベル企画を **1話分（第{ep_n}話）** 作成し、JSONオブジェクトで出力してください。
+
+【既存エピソード（重複厳禁）】
 {existing_titles}
 
-【必須条件】
-1. 数学（代数学・幾何学・確率統計・数理モデル等）、情報学（AI・アルゴリズム・暗号・データサイエンス・量子計算等）、物理・化学・生物・地学・工学・薬学・農学、そして「教職課程を履修して数学・情報・理科の先生（高校・中学教員）になる道」をバランスよく取り入れること。
-2. 物語の展開構成は、以下の5つの承認済みパターンのいずれかを順番にローテーションして `summary` に自然に組み込むこと：
-   - パターン1：日常の謎・トラブル解決（名探偵型）
-   - パターン3：文化祭・オープンキャンパスの出展バトル（お祭り・エンタメ型）
-   - パターン4：ライバル・天敵との衝突と共闘（ライバル対決型）
-   - パターン5：落ちこぼれ・挫折からの大逆転（リベンジ・覚醒型）
-   - パターン8：後輩指導・ミニ先生体験の奮闘（ミニ先生体験型）
-3. 各エピソードの `crossref_queries` には、Crossref APIで確実にヒットする超有名な実在の英語論文（ノーベル賞・フィールズ賞・チューリング賞・Nature・Science等の歴史的または最新の有名論文）の著者名・英語タイトルキーワード・雑誌名・年を3件指定すること。
-4. 以下のJSONスキーマの配列（`[ ... ]`）のみを出力し、前後に説明文を入れないこと：
+【今回の指定条件】
+1. 物語の構成パターンは必ず **{assigned_pattern}** とし、`summary` にその展開を具体的に盛り込むこと。
+2. 数学・情報学・物理・化学・生物・地学・工学・薬学・農学・教職課程（数学・情報・理科の先生になる道）から、直近と異なる新鮮な専門分野を選ぶこと。
+3. `slug` は英小文字とハイフンのみ（例: `topological-photonics-laser-cavity`）。
+4. `crossref_queries` には、Crossref APIで確実にヒットする実在の有名な英語論文（Nature, Science, PRL, PNAS, Cell, JACS等）の著者名・英語キーワード・雑誌名・年を3件指定すること。"""
 
-[
-  {{
-    "id": "ep{next_ep_num:02d}-english-slug-here",
-    "episode_num": {next_ep_num},
-    "title": "詩的で魅力的な日本語タイトル（第？話はつけない）",
-    "faculty": "理学部・〇〇学科 ／ 教育学部・〇〇専攻（研究室名）",
-    "protagonist": "姓 名（ふりがな・高校2年生・部活名）",
-    "mentor": "姓 名（ふりがな・大学院生または助教・教員免許保持など）",
-    "theme": "扱う学問テーマとキャリアテーマ",
-    "modern_tech": "具体的な専門キーワード3つ",
-    "summary": "女子高校生がキャンパスや研究室を訪れ、先輩や先生との対話・実験・数理体験を通じて学問の美しさと将来の道（研究者や先生になる夢）に目覚める200文字程度のあらすじ。",
-    "crossref_queries": [
-      {{
-        "label": "日本語のトピック見出し1",
-        "query": "Author1 Author2 Famous Paper Title Keyword Journal Year"
-      }},
-      {{
-        "label": "日本語のトピック見出し2",
-        "query": "Author1 Author2 Famous Paper Title Keyword Journal Year"
-      }},
-      {{
-        "label": "日本語のトピック見出し3",
-        "query": "Author1 Author2 Famous Paper Title Keyword Journal Year"
-      }}
-    ]
-  }}
-]"""
-        try:
-            logger.info(f"[Director: {self.director_model}] Designing {count} new catalog themes automatically...")
-            raw_json = self.call_ollama_chat(
-                model=self.director_model,
-                messages=[
-                    {"role": "system", "content": "You are a JSON generator. Output valid JSON array only."},
-                    {"role": "user", "content": prompt},
-                ],
-                temperature=0.7,
-                num_predict=2800,
-                num_ctx=8192,
-            )
-            cleaned = self._clean_llm_output(raw_json)
-            m = re.search(r"\[\s*\{.*\}\s*\]", cleaned, flags=re.DOTALL)
-            if m:
-                cleaned = m.group(0)
-            items = json.loads(cleaned, strict=False)
-            if isinstance(items, list):
-                valid_items = []
-                existing_ids = {w.get("id") for w in existing_catalog}
-                for idx, item in enumerate(items):
+            for attempt in range(1, 4):
+                try:
+                    logger.info(f"[Director: {self.director_model}] Designing new catalog theme {idx + 1}/{count} (ep#{ep_n}, attempt {attempt})...")
+                    raw_json = self.call_ollama_chat(
+                        model=self.director_model,
+                        messages=[
+                            {"role": "system", "content": "Output a single valid JSON object matching the schema."},
+                            {"role": "user", "content": prompt},
+                        ],
+                        temperature=0.72,
+                        num_predict=1400,
+                        num_ctx=8192,
+                        response_format=item_schema,
+                    )
+                    item = json.loads(self._clean_llm_output(raw_json), strict=False)
                     if isinstance(item, dict) and item.get("title") and item.get("theme"):
-                        ep_n = next_ep_num + idx
-                        raw_id = str(item.get("id", f"ep{ep_n:02d}-auto-science")).strip()
-                        if not raw_id.startswith(f"ep{ep_n:02d}-"):
-                            slug = re.sub(r"[^a-z0-9-]+", "-", raw_id.lower()).strip("-")
-                            raw_id = f"ep{ep_n:02d}-{slug or 'science-campus'}"
+                        slug = re.sub(r"[^a-z0-9-]+", "-", str(item.get("slug", "science-campus")).lower()).strip("-")
+                        slug = re.sub(r"^ep\d+-", "", slug) or "science-campus"
+                        raw_id = f"ep{ep_n:02d}-{slug}"
                         if raw_id in existing_ids:
                             raw_id = f"{raw_id}-{int(time.time()) % 1000}"
-                        item["id"] = raw_id
-                        item["episode_num"] = ep_n
-                        if not item.get("crossref_queries"):
-                            item["crossref_queries"] = [
-                                {
-                                    "label": item["theme"],
-                                    "query": "Jumper Hassabis Highly accurate protein structure prediction with AlphaFold Nature 2021",
-                                }
-                            ]
-                        valid_items.append(item)
-                if valid_items:
-                    logger.info(f"Successfully generated {len(valid_items)} new catalog episode theme(s)!")
-                    return valid_items
-        except Exception as e:
-            logger.warning(f"Failed to auto-generate new catalog themes via LLM: {e}")
-        return []
+                        existing_ids.add(raw_id)
+                        queries = [
+                            q for q in (item.get("crossref_queries") or [])
+                            if isinstance(q, dict) and q.get("label") and q.get("query")
+                        ][:3]
+                        if not queries:
+                            queries = [{"label": item["theme"], "query": "Jumper Hassabis AlphaFold Nature 2021"}]
+                        clean_item = {
+                            "id": raw_id,
+                            "episode_num": ep_n,
+                            "title": str(item["title"]).strip(),
+                            "faculty": str(item.get("faculty") or "理学部・数理科学科").strip(),
+                            "protagonist": str(item.get("protagonist") or "星野 結菜（高校2年生・科学部）").strip(),
+                            "mentor": str(item.get("mentor") or "白石 凛（大学院修士2年・教職課程履修）").strip(),
+                            "theme": str(item["theme"]).strip(),
+                            "modern_tech": str(item.get("modern_tech") or item["theme"]).strip(),
+                            "summary": str(item.get("summary") or item["theme"]).strip(),
+                            "crossref_queries": queries,
+                        }
+                        generated.append(clean_item)
+                        logger.info(f"  -> Designed ep#{ep_n}: {raw_id} | {clean_item['title']}")
+                        break
+                except Exception as e:
+                    logger.warning(f"Theme design attempt {attempt} for ep#{ep_n} failed: {e}")
+                    time.sleep(2)
+
+        return generated
 
     def generate_complete_episode(
         self,

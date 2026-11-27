@@ -82,8 +82,10 @@ def git_sync_and_push(generated_files: List[Path]) -> bool:
 
         msg = f"feat(pages): Add {len(generated_files)} Rikejo science novel asset(s) via Mac mini M4 & update GitHub Pages"
         subprocess.run(["git", "commit", "-m", msg], check=True)
-        logger.info("Syncing with remote GitHub repository (git pull --rebase origin main)...")
-        subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=False)
+        logger.info("Syncing with remote GitHub repository (git fetch & merge -X ours origin/main)...")
+        git_env = {**os.environ, "GIT_EDITOR": "true"}
+        subprocess.run(["git", "fetch", "origin", "main"], check=False, env=git_env)
+        subprocess.run(["git", "merge", "--no-edit", "-X", "ours", "origin/main"], check=False, env=git_env)
         logger.info("Pushing to origin/main...")
         subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
         logger.info("Successfully pushed episodes, illustrations & GitHub Pages to GitHub!")

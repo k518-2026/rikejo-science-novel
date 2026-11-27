@@ -1789,8 +1789,8 @@ Based on the following Japanese science novel episode (structured into 4 scenes:
    - Second panel 2 (Development / 承): The girl meets the female mentor researcher and engages in interactive experiment or demonstration.
    - Third panel 3 (Climax / 転): Both smiling in wonder at the breathtaking visual scientific or mathematical phenomenon.
    - Bottom panel 4 (Resolution / 結): Both characters smiling joyfully together looking toward their future under the evening sky.
-3. NEVER mention speech bubbles, words, text, letters, book covers, titles, or dialogue.
-4. End with: "Masterpiece anime comic strip, clean panel division, rich deep colors, high contrast, crisp lines, completely pure illustration, NO speech bubbles, NO text, NO words, NO letters, NO Japanese characters, NO sound effects."
+3. NEVER mention speech bubbles, words, text, letters, book covers, titles, winking, or dialogue.
+4. End with: "Masterpiece anime comic strip, exactly 4 distinct rectangular panels stacked vertically, clean panel division, rich deep colors, high contrast, crisp lines, completely pure illustration, beautiful detailed anime eyes with clear round pupils and iris, neat delicate thin eyebrows, soft relaxed eyelids, natural warm sweet smiles, NO speech bubbles, NO text, NO words, NO letters, NO Japanese characters, NO sound effects."
 """
         try:
             logger.info(f"[Director: {self.director_model}] Generating English 4-panel manga prompt for FLUX.2...")
@@ -1936,8 +1936,14 @@ Based on the following Japanese science novel episode (structured into 4 scenes:
 
 【必須条件】
 1. 数学（代数学・幾何学・確率統計・数理モデル等）、情報学（AI・アルゴリズム・暗号・データサイエンス・量子計算等）、物理・化学・生物・地学・工学・薬学・農学、そして「教職課程を履修して数学・情報・理科の先生（高校・中学教員）になる道」をバランスよく取り入れること。
-2. 各エピソードの `crossref_queries` には、Crossref APIで確実にヒットする超有名な実在の英語論文（ノーベル賞・フィールズ賞・チューリング賞・Nature・Science等の歴史的または最新の有名論文）の著者名・英語タイトルキーワード・雑誌名・年を3件指定すること。
-3. 以下のJSONスキーマの配列（`[ ... ]`）のみを出力し、前後に説明文を入れないこと：
+2. 物語の展開構成は、以下の5つの承認済みパターンのいずれかを順番にローテーションして `summary` に自然に組み込むこと：
+   - パターン1：日常の謎・トラブル解決（名探偵型）
+   - パターン3：文化祭・オープンキャンパスの出展バトル（お祭り・エンタメ型）
+   - パターン4：ライバル・天敵との衝突と共闘（ライバル対決型）
+   - パターン5：落ちこぼれ・挫折からの大逆転（リベンジ・覚醒型）
+   - パターン8：後輩指導・ミニ先生体験の奮闘（ミニ先生体験型）
+3. 各エピソードの `crossref_queries` には、Crossref APIで確実にヒットする超有名な実在の英語論文（ノーベル賞・フィールズ賞・チューリング賞・Nature・Science等の歴史的または最新の有名論文）の著者名・英語タイトルキーワード・雑誌名・年を3件指定すること。
+4. 以下のJSONスキーマの配列（`[ ... ]`）のみを出力し、前後に説明文を入れないこと：
 
 [
   {{

@@ -3643,5 +3643,92 @@
         "query": "10.1002/anie.200900942"
       }
     ]
+  },
+  {
+    "id": "ep141-kelvin-scale-thermal-equilibrium-energy-transfer",
+    "episode_num": 141,
+    "title": "熱平衡の境界で描く絶対零度の謎――ケルビンスケールとエネルギー保存則の実験室探偵 (温度計がなぜ壊れたのか、という日常トラブルを解決する物理実験)",
+    "faculty": "理学部・物理学学科 ／ 物性理論研究室",
+    "protagonist": "天野 りな（あまの りな／高校2年生・科学部）",
+    "mentor": "山本 健太郎（やまもと たけはる／助教／博士号取得後、教育修士課程修了予定）",
+    "theme": "熱力学と温度測定の基礎 / プラティナ抵抗 thermometer のキャリブレーション技術",
+    "modern_tech": [
+      "ケルビン・スケール定義 (2019)",
+      "ボーズ＝アインシュタイン凝縮 (BEC) への導入",
+      "定積熱量計"
+    ],
+    "summary": "実験室の温度計が壊れたという日常トラブルを解決するために、高校生のりなは熱平衡とエントロピー増大則を復習。先輩や教授と共に絶対零度の定義変更（2019年）に関する歴史的背景を読み解きながら、プラチナ抵抗 thermometer のキャリブレーションを実行する中で、「温度とは何か」という物理学的本質に気づく",
+    "crossref_queries": [
+      {
+        "label": "ケルビン定義の変更と絶対零度",
+        "query": "BIPM 2019 Redefinition of the Kelvin Boltzmann Constant Nature"
+      },
+      {
+        "label": "熱平衡のエントロピー原理",
+        "query": "Clausius Entropy Second Law Thermodynamics Journal Year"
+      },
+      {
+        "label": "温度計のキャリブレーション技術",
+        "query": "Callendar Garnet Resistance Platinum Temperature Measurement Science 1927"
+      }
+    ]
+  },
+  {
+    "id": "ep142-graphene-hall-effect-quantum-materials-display-battle",
+    "episode_num": 142,
+    "title": "二重層のグラフェンが放つ異常ハル効果――二次元物質科学と文化祭出展バトル (半導体ではなく金属のように振る舞う不思議な材料を巡る対決)",
+    "faculty": "工学部・マテリアル工学科 ／ ナノ構造制御チーム",
+    "protagonist": "佐々木 光（さざき ひかり／高校2年生・ロボティクス同好会）",
+    "mentor": "田中 美咲（たなか みさと／博士課程学生／教育実習経験あり）",
+    "theme": "二次元物質科学とトポロジカル絶縁体 / グラフェン応用デバイス化",
+    "modern_tech": [
+      "異常ハル効果 (Quantum Hall Effect)",
+      "グラフェン（Graphene）合成・特性評価",
+      "ペイアーリング転移"
+    ],
+    "summary": "文化祭の出展バトルに向け、ライバルチームとの技術対決に挑む高校生。グラフェンの電気伝導度や異常ハル効果を理解し、トポロジカル絶縁体の概念を応用した光センサーのプロ토타입を開発する過程で、「素材の美しさ」と「教育現場での理科実験の可能性」を見出す",
+    "crossref_queries": [
+      {
+        "label": "グラフェンと異常ハル効果",
+        "query": "Novoselov Geim Nobel Prize Graphene Hall Effect Nature 2010"
+      },
+      {
+        "label": "トポロジカル絶縁体理論",
+        "query": "Kane Mele Topological Insulator Quantum Spin Hall Physics Review Letters 2005"
+      },
+      {
+        "label": "ペイアーリング転移の発見",
+        "query": "Rashba Peierls Transition Solid State Chemistry Journal Year"
+      }
+    ]
+  },
+  {
+    "id": "ep143-digital-twin-neural-network-simulation-climate-modeling",
+    "episode_num": 143,
+    "title": "デジタルツインでシミュレーションする気象の未来――ニューラルネットワークと機械学習による環境予測 (リアルタイムデータ解析とAIモデル構築)",
+    "faculty": "理学部・情報科学科 ／ データサイエンス研究所",
+    "protagonist": "鈴木 蓮（すずき れん／高校2年生・天文同好会）",
+    "mentor": "高橋 直樹（たかはし なおき／助教／AI教育普及活動家）",
+    "theme": "機械学習と気象予測モデル / デジタルツイン技術の応用",
+    "modern_tech": [
+      "深層学習 (Deep Learning)",
+      "時系列データ解析",
+      "数値天気予報"
+    ],
+    "summary": "落胆してばかりだった主人公が、過去の実験データを再分析するプロジェクトに挑戦。過去の失敗パターンから教師あり学習モデルを構築し、「デジタルツイン」技術を駆使して気象現象の再現度を高めることで、挫折からの大逆転を果たす",
+    "crossref_queries": [
+      {
+        "label": "深層学習と数値天気予報",
+        "query": "Deep Learning Numerical Weather Prediction Nature 2018"
+      },
+      {
+        "label": "時系列予測のアルゴリズム",
+        "query": "Hinton Recurrent Neural Networks LSTM Science 2015"
+      },
+      {
+        "label": "気候モデルとデータ同化",
+        "query": "Kanamitsu Data Assimilation Climate Model Journal Year"
+      }
+    ]
   }
 ]

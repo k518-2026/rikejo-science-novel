@@ -1738,5 +1738,17 @@
     "url": "stories/ep140-bioorthogonal-chemistry-in-vivo-copper-free-click.html",
     "image": "assets/images/ep140-bioorthogonal-chemistry-in-vivo-copper-free-click.png",
     "char_count": 8246
+  },
+  {
+    "no": 146,
+    "work_id": "ep141-kelvin-scale-thermal-equilibrium-energy-transfer",
+    "title": "熱平衡の境界を越えて――絶対零度の謎を解く実験室探偵物語",
+    "faculty": "理学部・物理学学科 ／ 物性理論研究室",
+    "field": "物理学・宇宙・光学",
+    "theme": "熱力学と温度測定の基礎 / プラティナ抵抗 thermometer のキャリブレーション技術",
+    "has_image": true,
+    "url": "stories/ep141-kelvin-scale-thermal-equilibrium-energy-transfer.html",
+    "image": "assets/images/ep141-kelvin-scale-thermal-equilibrium-energy-transfer.png",
+    "char_count": 7712
   }
 ]

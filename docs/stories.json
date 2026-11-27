@@ -1750,5 +1750,17 @@
     "url": "stories/ep141-kelvin-scale-thermal-equilibrium-energy-transfer.html",
     "image": "assets/images/ep141-kelvin-scale-thermal-equilibrium-energy-transfer.png",
     "char_count": 7712
+  },
+  {
+    "no": 147,
+    "work_id": "ep142-graphene-hall-effect-quantum-materials-display-battle",
+    "title": "二重層の舞踏が奏でる異常ハル効果――光を捉えるグラフェンと、未来へ繋ぐ「伝える」の意味",
+    "faculty": "工学部・マテリアル工学科 ／ ナノ構造制御チーム",
+    "field": "化学・薬学・材料",
+    "theme": "二次元物質科学とトポロジカル絶縁体 / グラフェン応用デバイス化",
+    "has_image": true,
+    "url": "stories/ep142-graphene-hall-effect-quantum-materials-display-battle.html",
+    "image": "assets/images/ep142-graphene-hall-effect-quantum-materials-display-battle.png",
+    "char_count": 7835
   }
 ]

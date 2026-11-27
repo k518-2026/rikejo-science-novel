@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **147** 話（うち挿絵付き **147** 話 / 最終更新: 2026-11-27 22:10 JST）
+- **収録作品数**: 全 **148** 話（うち挿絵付き **148** 話 / 最終更新: 2026-11-27 22:15 JST）
 
 ---
 
@@ -161,6 +161,7 @@
 | 145 | **[生きた細胞を傷つけずに結ぶ絆――生体内生体直交クリック化学と分子追跡](https://k518-2026.github.io/rikejo-science-novel/stories/ep140-bioorthogonal-chemistry-in-vivo-copper-free-click.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep140-bioorthogonal-chemistry-in-vivo-copper-free-click.html) | [📄原稿](content/2026-11-26_ep140_bioorthogonal_chemistry_in_vivo_copper_free_click.md) | [🎨挿絵](content/2026-11-26_ep140_bioorthogonal_chemistry_in_vivo_copper_free_click.png) | 薬学部・創薬生命科学科 ／ ケミカルバイオロジー・生体内分子修飾研究室 | 生体本来の複雑な生化学反応を一切妨害せず、また生体分子からも邪魔されない条件下で、生きた細胞内や生体内で狙った官能基同士のみを選択的に連結する「生体直交化学（Bioorthogonal Chemistry）」。毒性のある銅触媒を必要としない環ひずみ駆動型アジド-アルキン付加環化反応（SPAAC）の実演と出展バトルを描くケミカルバイオロジー・有機合成化学 | 8,246字 |
 | 146 | **[熱平衡の境界を越えて――絶対零度の謎を解く実験室探偵物語](https://k518-2026.github.io/rikejo-science-novel/stories/ep141-kelvin-scale-thermal-equilibrium-energy-transfer.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep141-kelvin-scale-thermal-equilibrium-energy-transfer.html) | [📄原稿](content/2026-11-27_ep141_kelvin_scale_thermal_equilibrium_energy_transfer.md) | [🎨挿絵](content/2026-11-27_ep141_kelvin_scale_thermal_equilibrium_energy_transfer.png) | 理学部・物理学学科 ／ 物性理論研究室 | 熱力学と温度測定の基礎 / プラティナ抵抗 thermometer のキャリブレーション技術 | 7,712字 |
 | 147 | **[二重層の舞踏が奏でる異常ハル効果――光を捉えるグラフェンと、未来へ繋ぐ「伝える」の意味](https://k518-2026.github.io/rikejo-science-novel/stories/ep142-graphene-hall-effect-quantum-materials-display-battle.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep142-graphene-hall-effect-quantum-materials-display-battle.html) | [📄原稿](content/2026-11-27_ep142_graphene_hall_effect_quantum_materials_display_battle.md) | [🎨挿絵](content/2026-11-27_ep142_graphene_hall_effect_quantum_materials_display_battle.png) | 工学部・マテリアル工学科 ／ ナノ構造制御チーム | 二次元物質科学とトポロジカル絶縁体 / グラフェン応用デバイス化 | 7,835字 |
+| 148 | **[デジタルツインでシミュレーションする気象の未来――ニューラルネットワークと機械学習による環境予測 (リアルタイムデータ解析とAIモデル構築)](https://k518-2026.github.io/rikejo-science-novel/stories/ep143-digital-twin-neural-network-simulation-climate-modeling.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep143-digital-twin-neural-network-simulation-climate-modeling.html) | [📄原稿](content/2026-11-27_ep143_digital_twin_neural_network_simulation_climate_modeling.md) | [🎨挿絵](content/2026-11-27_ep143_digital_twin_neural_network_simulation_climate_modeling.png) | 理学部・情報科学科 ／ データサイエンス研究所 | 機械学習と気象予測モデル / デジタルツイン技術の応用 | 7,270字 |
 
 ---
 

@@ -1762,5 +1762,17 @@
     "url": "stories/ep142-graphene-hall-effect-quantum-materials-display-battle.html",
     "image": "assets/images/ep142-graphene-hall-effect-quantum-materials-display-battle.png",
     "char_count": 7835
+  },
+  {
+    "no": 148,
+    "work_id": "ep143-digital-twin-neural-network-simulation-climate-modeling",
+    "title": "デジタルツインでシミュレーションする気象の未来――ニューラルネットワークと機械学習による環境予測 (リアルタイムデータ解析とAIモデル構築)",
+    "faculty": "理学部・情報科学科 ／ データサイエンス研究所",
+    "field": "情報学・AI",
+    "theme": "機械学習と気象予測モデル / デジタルツイン技術の応用",
+    "has_image": true,
+    "url": "stories/ep143-digital-twin-neural-network-simulation-climate-modeling.html",
+    "image": "assets/images/ep143-digital-twin-neural-network-simulation-climate-modeling.png",
+    "char_count": 7270
   }
 ]

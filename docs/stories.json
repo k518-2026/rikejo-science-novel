@@ -1786,5 +1786,17 @@
     "url": "stories/ep144-non-linear-dynamics-lock-in-chaos-synchronization.html",
     "image": "assets/images/ep144-non-linear-dynamics-lock-in-chaos-synchronization.png",
     "char_count": 6859
+  },
+  {
+    "no": 150,
+    "work_id": "ep145-spontaneous-symmetry-breaking-crystal-growth-ferroelectric-polarization",
+    "title": "結晶内部で踊る対称性の破れ――スピングラスと強誘電体の自発的分極 (Spontaneous Symmetry Breaking in Ferroelectrics)",
+    "faculty": "理学部・物理学系 / 材料工学科（固体物理・機能性無機材料）",
+    "field": "数学・数理科学",
+    "theme": "非平衡統計力学と相転移現象 / スピングラス・強誘電体における自発的対称性の破れ (Spontaneous Symmetry Breaking)",
+    "has_image": true,
+    "url": "stories/ep145-spontaneous-symmetry-breaking-crystal-growth-ferroelectric-polarization.html",
+    "image": "assets/images/ep145-spontaneous-symmetry-breaking-crystal-growth-ferroelectric-polarization.png",
+    "char_count": 6660
   }
 ]

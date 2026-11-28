@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **149** 話（うち挿絵付き **149** 話 / 最終更新: 2026-11-28 09:25 JST）
+- **収録作品数**: 全 **150** 話（うち挿絵付き **150** 話 / 最終更新: 2026-11-28 09:30 JST）
 
 ---
 
@@ -163,6 +163,7 @@
 | 147 | **[二重層の舞踏が奏でる異常ハル効果――光を捉えるグラフェンと、未来へ繋ぐ「伝える」の意味](https://k518-2026.github.io/rikejo-science-novel/stories/ep142-graphene-hall-effect-quantum-materials-display-battle.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep142-graphene-hall-effect-quantum-materials-display-battle.html) | [📄原稿](content/2026-11-27_ep142_graphene_hall_effect_quantum_materials_display_battle.md) | [🎨挿絵](content/2026-11-27_ep142_graphene_hall_effect_quantum_materials_display_battle.png) | 工学部・マテリアル工学科 ／ ナノ構造制御チーム | 二次元物質科学とトポロジカル絶縁体 / グラフェン応用デバイス化 | 7,835字 |
 | 148 | **[デジタルツインでシミュレーションする気象の未来――ニューラルネットワークと機械学習による環境予測 (リアルタイムデータ解析とAIモデル構築)](https://k518-2026.github.io/rikejo-science-novel/stories/ep143-digital-twin-neural-network-simulation-climate-modeling.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep143-digital-twin-neural-network-simulation-climate-modeling.html) | [📄原稿](content/2026-11-27_ep143_digital_twin_neural_network_simulation_climate_modeling.md) | [🎨挿絵](content/2026-11-27_ep143_digital_twin_neural_network_simulation_climate_modeling.png) | 理学部・情報科学科 ／ データサイエンス研究所 | 機械学習と気象予測モデル / デジタルツイン技術の応用 | 7,270字 |
 | 149 | **[嵐の中のダンス――カオス同期の美学：「計算できない」が教えてくれる世界](https://k518-2026.github.io/rikejo-science-novel/stories/ep144-non-linear-dynamics-lock-in-chaos-synchronization.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep144-non-linear-dynamics-lock-in-chaos-synchronization.html) | [📄原稿](content/2026-11-28_ep144_non_linear_dynamics_lock_in_chaos_synchronization.md) | [🎨挿絵](content/2026-11-28_ep144_non_linear_dynamics_lock_in_chaos_synchronization.png) | 理学部・物理学科（数理物理学）/ リスク管理コース | 複雑系物理学とネットワーク理論 | 6,859字 |
+| 150 | **[結晶内部で踊る対称性の破れ――スピングラスと強誘電体の自発的分極 (Spontaneous Symmetry Breaking in Ferroelectrics)](https://k518-2026.github.io/rikejo-science-novel/stories/ep145-spontaneous-symmetry-breaking-crystal-growth-ferroelectric-polarization.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep145-spontaneous-symmetry-breaking-crystal-growth-ferroelectric-polarization.html) | [📄原稿](content/2026-11-28_ep145_spontaneous_symmetry_breaking_crystal_growth_ferroelectric_polarization.md) | [🎨挿絵](content/2026-11-28_ep145_spontaneous_symmetry_breaking_crystal_growth_ferroelectric_polarization.png) | 理学部・物理学系 / 材料工学科（固体物理・機能性無機材料） | 非平衡統計力学と相転移現象 / スピングラス・強誘電体における自発的対称性の破れ (Spontaneous Symmetry Breaking) | 6,660字 |
 
 ---
 

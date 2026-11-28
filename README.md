@@ -6,7 +6,7 @@
 
 - **執筆・挿絵生成（完全ローカルAI）**: Mac mini M4 ローカル環境（Ollama 構成作家 `qwen3.5:9b` × 執筆作家 `shosetsu` ＆ Draw Things `FLUX.2 [klein] 4B`）
 - **外部生成AI API不使用**: 外部の有料・商用生成AI APIは一切利用せず、Mac mini M4 上で文章と挿絵を作成して GitHub Pages に蓄積・公開しています。
-- **収録作品数**: 全 **150** 話（うち挿絵付き **150** 話 / 最終更新: 2026-11-28 09:30 JST）
+- **収録作品数**: 全 **151** 話（うち挿絵付き **151** 話 / 最終更新: 2026-11-28 09:36 JST）
 
 ---
 
@@ -164,6 +164,7 @@
 | 148 | **[デジタルツインでシミュレーションする気象の未来――ニューラルネットワークと機械学習による環境予測 (リアルタイムデータ解析とAIモデル構築)](https://k518-2026.github.io/rikejo-science-novel/stories/ep143-digital-twin-neural-network-simulation-climate-modeling.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep143-digital-twin-neural-network-simulation-climate-modeling.html) | [📄原稿](content/2026-11-27_ep143_digital_twin_neural_network_simulation_climate_modeling.md) | [🎨挿絵](content/2026-11-27_ep143_digital_twin_neural_network_simulation_climate_modeling.png) | 理学部・情報科学科 ／ データサイエンス研究所 | 機械学習と気象予測モデル / デジタルツイン技術の応用 | 7,270字 |
 | 149 | **[嵐の中のダンス――カオス同期の美学：「計算できない」が教えてくれる世界](https://k518-2026.github.io/rikejo-science-novel/stories/ep144-non-linear-dynamics-lock-in-chaos-synchronization.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep144-non-linear-dynamics-lock-in-chaos-synchronization.html) | [📄原稿](content/2026-11-28_ep144_non_linear_dynamics_lock_in_chaos_synchronization.md) | [🎨挿絵](content/2026-11-28_ep144_non_linear_dynamics_lock_in_chaos_synchronization.png) | 理学部・物理学科（数理物理学）/ リスク管理コース | 複雑系物理学とネットワーク理論 | 6,859字 |
 | 150 | **[結晶内部で踊る対称性の破れ――スピングラスと強誘電体の自発的分極 (Spontaneous Symmetry Breaking in Ferroelectrics)](https://k518-2026.github.io/rikejo-science-novel/stories/ep145-spontaneous-symmetry-breaking-crystal-growth-ferroelectric-polarization.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep145-spontaneous-symmetry-breaking-crystal-growth-ferroelectric-polarization.html) | [📄原稿](content/2026-11-28_ep145_spontaneous_symmetry_breaking_crystal_growth_ferroelectric_polarization.md) | [🎨挿絵](content/2026-11-28_ep145_spontaneous_symmetry_breaking_crystal_growth_ferroelectric_polarization.png) | 理学部・物理学系 / 材料工学科（固体物理・機能性無機材料） | 非平衡統計力学と相転移現象 / スピングラス・強誘電体における自発的対称性の破れ (Spontaneous Symmetry Breaking) | 6,660字 |
+| 151 | **[時空に刻む光の紋様――霧をすり抜ける「もつれ」の眼](https://k518-2026.github.io/rikejo-science-novel/stories/ep146-quantum-lidar-spatial-temporal-interferometry-navigation.html)** | [🌐Web版](https://k518-2026.github.io/rikejo-science-novel/stories/ep146-quantum-lidar-spatial-temporal-interferometry-navigation.html) | [📄原稿](content/2026-11-28_ep146_quantum_lidar_spatial_temporal_interferometry_navigation.md) | [🎨挿絵](content/2026-11-28_ep146_quantum_lidar_spatial_temporal_interferometry_navigation.png) | 情報理工学部・応用物理学コース（教授：山本先生、准教授：佐藤先生） | 量子力学と情報工学、特に『空間干渉計（Spatial Interferometry）』を用いた高精度距離測定技術。単なるレーザー測量ではなく、『相関光子対（エンタングルドフォトンペア）』を利用することで、散乱光や屈折率の影響を受けにくい超長距離・暗視下での位置特定を目指す科学物語です。 | 7,725字 |
 
 ---
 

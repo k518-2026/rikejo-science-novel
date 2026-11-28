@@ -15,10 +15,10 @@
       外部生成AI APIは一切使用せず、Mac mini M4 ローカルAI（Ollama Qwen3.5 &amp; shosetsu ＋ Draw Things FLUX.2）で執筆・挿絵生成し、GitHub Pagesで公開しています。
     </p>
     <div class="stats-bar">
-      <div class="stat-pill"><strong>150</strong> 収録エピソード</div>
-      <div class="stat-pill"><strong>150</strong> 挿絵付き作品</div>
+      <div class="stat-pill"><strong>151</strong> 収録エピソード</div>
+      <div class="stat-pill"><strong>151</strong> 挿絵付き作品</div>
       <div class="stat-pill"><strong>5</strong> 科学・数理・情報分野</div>
-      <div class="stat-pill">最終更新: 2026-11-28 09:30 JST</div>
+      <div class="stat-pill">最終更新: 2026-11-28 09:36 JST</div>
     </div>
   </header>
 
@@ -36,7 +36,7 @@
         </select>
         <select id="imageFilter" class="select-filter" onchange="filterCards()">
           <option value="">すべて表示</option>
-          <option value="yes">🎨 挿絵ありのみ (150)</option>
+          <option value="yes">🎨 挿絵ありのみ (151)</option>
         </select>
         <select id="sortOrder" class="select-filter" onchange="sortCards()">
           <option value="desc">新しい順（#大 → #01）</option>
@@ -47,6 +47,24 @@
     </div>
 
     <div class="story-grid" id="storyGrid">
+      <div class="story-card-wrap" data-no="151" data-field="情報学・AI" data-illustrated="yes" data-search="時空に刻む光の紋様――霧をすり抜ける「もつれ」の眼 情報理工学部・応用物理学コース（教授：山本先生、准教授：佐藤先生） 情報学・ai 量子力学と情報工学、特に『空間干渉計（spatial interferometry）』を用いた高精度距離測定技術。単なるレーザー測量ではなく、『相関光子対（エンタングルドフォトンペア）』を利用することで、散乱光や屈折率の影響を受けにくい超長距離・暗視下での位置特定を目指す科学物語です。 量子もつれ光源を用いた『ダウンコンバージョン型単一光子検出器（spadアレイ）』『時間相関単一光子計数法（tcspc）による高精度距離測定』 文化祭の模擬実験「無人自律ドローン配送システム」において、神谷教授が提唱する次世代測量技術『量子lidar』の実証実験に失敗した事件。通常のリチウムイオンレーザーでは霧や雨の影響で計測精度が低下し、校内倉庫から屋上までの移動経路を誤認識して衝突事故を起こしてしまうのだ。「光の回折限界」による物理的な制約に対し、「光子のもつれ（エンタングルメント）」という量子力学的性質を利用すれば、散乱した光子同士でも相関関係を保ちながら位置情報を復元できるはずだと神谷教授は説く。しかし、既存の研究論文が「真空中でのみ成立する」という条件を課しているため、大気中のノイズ下で動作させるのは不可能視されていた。星野涼馬とチームは、「都市部の街灯や窓ガラスからの反射光（バックグラウンド雑音）」という最大の敵に立ち向かうことになる。彼らは「時間分解能1ピコ秒以下の高速光子計数器」を自作し、散乱した一対のエンタングルドフォトンが持つ『相関統計分布』からノイズ成分を取り除くアルゴリズムを開発する過程で、「古典的な光測定」とは異なる非局所性の美しさを実感させられる。最終的に、文化祭当日に豪雨の中でも屋上と倉庫の位置関係を正確に見極め、無人ドローンが安全に荷物を運ぶ姿を描き出す。 物理工学科3年生・星野 涼馬（ほしの りょうま） 「光の回折限界を超えて位置を測ろう」という夢を抱く応用光学研究室所属の上級生・神谷先生">
+        <article class="story-card">
+          <a href="stories/ep146-quantum-lidar-spatial-temporal-interferometry-navigation.html" class="card-thumb-wrap">
+            <img class="card-thumb" src="assets/images/ep146-quantum-lidar-spatial-temporal-interferometry-navigation.png" alt="時空に刻む光の紋様――霧をすり抜ける「もつれ」の眼" loading="lazy" />
+            <span class="card-no-badge">#151</span>
+          </a>
+          <div class="card-body">
+            <div class="card-faculty">🏛️ 情報理工学部・応用物理学コース（教授：山本先生、准教授：佐藤先生）</div>
+            <h2 class="card-title"><a href="stories/ep146-quantum-lidar-spatial-temporal-interferometry-navigation.html">時空に刻む光の紋様――霧をすり抜ける「もつれ」の眼</a></h2>
+            <div class="card-tech">🔬 量子力学と情報工学、特に『空間干渉計（Spatial Interferometry）』を用いた高精度距離測定技術。単なるレーザー測量ではなく、『相関光子対（エンタングルドフォトンペア）』を利用することで、散乱光や屈折率の影響を受けにくい超長距離・暗視下での位置特定を目指す科学物語です。</div>
+            <p class="card-summary">文化祭の模擬実験「無人自律ドローン配送システム」において、神谷教授が提唱する次世代測量技術『量子LiDAR』の実証実験に失敗した事件。通常のリチウムイオンレーザーでは霧や雨の影響で計測精度が低下し、校内倉庫から屋上までの移動経路を誤認識して衝突事故を起こしてしまうのだ。「光の回折限界」による物理的な制約に対し、「光子のもつれ（エンタングルメント）」という量子力学的性質を利用すれば、散乱した光子同士でも相関関係を保ちながら位置情報を復元できるはずだと神谷教授は説く。しかし、既存の研究論文が「真空中でのみ成立する」という条件を課しているため、大気中のノイズ下で動作させるのは不可能視されていた。星野涼馬とチームは、「都市部の街灯や窓ガラスからの反射光（バックグラウンド雑音）」という最大の敵に立ち向かうことになる。彼らは「時間分解能1ピコ秒以下の高速光子計数器」を自作し、散乱した一対のエンタングルドフォトンが持つ『相関統計分布』からノイズ成分を取り除くアルゴリズムを開発する過程で、「古典的な光測定」とは異なる非局所性の美しさを実感させられる。最終的に、文化祭当日に豪雨の中でも屋上と倉庫の位置関係を正確に見極め、無人ドローンが安全に荷物を運ぶ姿を描き出す。</p>
+            <div class="card-footer">
+              <span>約 7,725 文字 🎨 挿絵あり</span>
+              <a class="read-link" href="stories/ep146-quantum-lidar-spatial-temporal-interferometry-navigation.html">物語を読む →</a>
+            </div>
+          </div>
+        </article>
+      </div>
       <div class="story-card-wrap" data-no="150" data-field="数学・数理科学" data-illustrated="yes" data-search="結晶内部で踊る対称性の破れ――スピングラスと強誘電体の自発的分極 (spontaneous symmetry breaking in ferroelectrics) 理学部・物理学系 / 材料工学科（固体物理・機能性無機材料） 数学・数理科学 非平衡統計力学と相転移現象 / スピングラス・強誘電体における自発的対称性の破れ (spontaneous symmetry breaking) 超高速走査トンネル顕微鏡（stm）による表面原子配列の直接観測、パルスレーザー加熱を用いた結晶成長制御 **パターン8：後輩指導・ミニ先生体験の奮闘**。文化祭準備のため、『材料と科学』部主催の実験教室を担任する高橋先輩の下で2年次の佐藤君が「講師役（ミニ先生）」を務める。テーマは『結晶内部で踊る対称性の破れ：スピングラスと強誘電体の自発的分極』。実験室内では、等方的な高温液体から特定の低温固体へと相転移する際、「エネルギー最低点」を選ばずに複数の局所最適解（ドメイン壁）が競合し合う「スピンガラス状態」を模倣したシミュレーションを実演する計画だった。しかし、実機である超高速走査トンネル顕微鏡（stm）のプローブ先端位置制御でトラブルが発生し、预期通りの整列パターンが出ない。「これは単なるミスではなく、熱揺らぎが対称性の破れをどう促進するかという物理の本質的な現象かもしれない」と田中先生に指摘下された佐藤君は、急遽「観測者が系に影響を与える（測定問題）」ことを逆手に取り、「乱雑な配列こそが自然の持つ美しさである」事を証明するデモに変更し、生徒たちに見せながら対称性の破れの普遍性について熱く語る奮闘を描きます。 佐藤健太君（2年次、物性の謎に魅了された学生） 田中先生（60歳代、結晶成長の美学を語る元研究者）、後輩指導担当：高橋先輩">
         <article class="story-card">
           <a href="stories/ep145-spontaneous-symmetry-breaking-crystal-growth-ferroelectric-polarization.html" class="card-thumb-wrap">

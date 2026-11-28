@@ -1798,5 +1798,17 @@
     "url": "stories/ep145-spontaneous-symmetry-breaking-crystal-growth-ferroelectric-polarization.html",
     "image": "assets/images/ep145-spontaneous-symmetry-breaking-crystal-growth-ferroelectric-polarization.png",
     "char_count": 6660
+  },
+  {
+    "no": 151,
+    "work_id": "ep146-quantum-lidar-spatial-temporal-interferometry-navigation",
+    "title": "時空に刻む光の紋様――霧をすり抜ける「もつれ」の眼",
+    "faculty": "情報理工学部・応用物理学コース（教授：山本先生、准教授：佐藤先生）",
+    "field": "情報学・AI",
+    "theme": "量子力学と情報工学、特に『空間干渉計（Spatial Interferometry）』を用いた高精度距離測定技術。単なるレーザー測量ではなく、『相関光子対（エンタングルドフォトンペア）』を利用することで、散乱光や屈折率の影響を受けにくい超長距離・暗視下での位置特定を目指す科学物語です。",
+    "has_image": true,
+    "url": "stories/ep146-quantum-lidar-spatial-temporal-interferometry-navigation.html",
+    "image": "assets/images/ep146-quantum-lidar-spatial-temporal-interferometry-navigation.png",
+    "char_count": 7725
   }
 ]

@@ -726,5 +726,20 @@
       "Zeeman, E. C. (1976). Catastrophe Theory. *Scientific American*, 234(4), 65-83. [https://doi.org/10.1038/scientificamerican0476-65](https://doi.org/10.1038/scientificamerican0476-65)",
       "Scheffer, M., Bascompte, J., Brock, W. A., Brovkin, V., Carpenter, S. R., Dakos, V., et al. (2009). Early-warning signals for critical transitions. *Nature*, 461(7260), 53-59. [https://doi.org/10.1038/nature08227](https://doi.org/10.1038/nature08227)"
     ]
+  },
+  {
+    "work_id": "ep50-cryo-electron-microscopy-structural-biology",
+    "episode_num": 50,
+    "faculty": "薬学部・創薬科学科 ／ 放射光・クライオバイオ解析センター（分子構造薬理学研究室）",
+    "theme": "急速凍結ガラス状氷包埋によるクライオ電子顕微鏡単粒子解析（Cryo-EM SPA）と生体高分子の原子分解能立体構造解明（2017年ノーベル化学賞）",
+    "episode_title": "マイナス百九十度の氷が捉えた生命の素顔――クライオ電子顕微鏡と構造生物学",
+    "posted_at": "2026-11-28T11:56:23.515530+09:00",
+    "file_path": "content/2026-10-15_ep50_cryo_electron_microscopy_structural_biology.md",
+    "status": "publish",
+    "references": [
+      "Frank, J. (2009). Single-particle reconstruction of biological macromolecules in electron microscopy – 30 years. *Quarterly Reviews of Biophysics*, 42(3), 139-158. [https://doi.org/10.1017/s0033583509990059](https://doi.org/10.1017/s0033583509990059)",
+      "Kühlbrandt, W. (2014). The Resolution Revolution. *Science*, 343(6178), 1443-1444. [https://doi.org/10.1126/science.1251652](https://doi.org/10.1126/science.1251652)",
+      "Henderson, R. (1995). The potential and limitations of neutrons, electrons and X-rays for atomic resolution microscopy of unstained biological molecules. *Quarterly Reviews of Biophysics*, 28(2), 171-193. [https://doi.org/10.1017/s003358350000305x](https://doi.org/10.1017/s003358350000305x)"
+    ]
   }
 ]

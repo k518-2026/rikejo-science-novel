@@ -3730,5 +3730,76 @@
         "query": "Kanamitsu Data Assimilation Climate Model Journal Year"
       }
     ]
+  },
+  {
+    "id": "ep144-non-linear-dynamics-lock-in-chaos-synchronization",
+    "episode_num": 144,
+    "title": "嵐の中のダンス――カオス同期と非線形ダイナミクスの美学",
+    "faculty": "理学部・物理学科（数理物理学）/ リスク管理コース",
+    "protagonist": "佐々木 蓮 (ささえき れん)",
+    "mentor": "高橋 美咲先生 (たかはしみさく / チェアスマンが兼務する教員)",
+    "theme": "複雑系物理学とネットワーク理論",
+    "modern_tech": "非同期・分散型コンピューティングによるカオスシミュレーションの高速化（GPU クラスタ）",
+    "summary": "理科室で「計算が合わない」「実験値は散らばる」という理由から、数年前に理科教師を目指す夢を捨てた落ちこぼれ男子学生・佐々木蓮。クラスメイトからは「失敗癖のある凡人」扱いされ続けていた彼だが、ある日突如として校内の自動化システム制御プログラムが暴走し、「予測不能な振る舞い」として挙動する不規則パターンに陥った。この状態を数学的に解明しようとするも、従来の線形モデルでは収束しない挫折感を味わう蓮は、 mentor の高橋先生から「完全な秩序を作る必要はない」ことを諭される。そして彼はあることに気づく──システム内の複数の不安定要素が互いに影響し合い、一見無秩序だが全体として位相を揃えて振動する現象、「カオス同期（Chaos Synchronization）」であるのだ。蓮は自身の「計算ミス」と思っていた散らばるデータこそが、この非線形ネットワークにおける重要なノードであることを発見した。GPU クラスタを用いた並列演算でシミュレーションを加速させながら、古典的なロレンツルリアト attractor をベースに拡張し、自らの経験則を組み込んだ新しい制御アルゴリズムを開発する過程を描く。「計算できないもの」こそが「自然の真のパターン」と気づき、かつて挫折したことで培った直感性と最新の数理を融合させる大逆転劇。最終的には文化祭での出展バトルで、この理論を用いた自律的な光表現装置を見せつけ、「予測不能だったからこそ美しい」という非線形ダイナミクスの美しさを証明して見せるリベンジストーリー。",
+    "crossref_queries": [
+      {
+        "label": "Chaos synchronization theory classic",
+        "query": "Pythagoras, Pecora & Carroll chaos synchronization nature physics review letters 1990"
+      },
+      {
+        "label": "Kuramoto model oscillator networks",
+        "query": "Kuramoto collective oscillators science journal of theoretical biology 2007 (or related high impact paper on Kuramoto)"
+      },
+      {
+        "label": "Nonlinear dynamics applied control",
+        "query": "Ott Grebogi Yorke OGY method chaos control physical review letters 1983"
+      }
+    ]
+  },
+  {
+    "id": "ep145-spontaneous-symmetry-breaking-crystal-growth-ferroelectric-polarization",
+    "episode_num": 145,
+    "title": "結晶内部で踊る対称性の破れ――スピングラスと強誘電体の自発的分極 (Spontaneous Symmetry Breaking in Ferroelectrics)",
+    "faculty": "理学部・物理学系 / 材料工学科（固体物理・機能性無機材料）",
+    "protagonist": "佐藤健太君（2年次、物性の謎に魅了された学生）",
+    "mentor": "田中先生（60歳代、結晶成長の美学を語る元研究者）、後輩指導担当：高橋先輩",
+    "theme": "非平衡統計力学と相転移現象 / スピングラス・強誘電体における自発的対称性の破れ (Spontaneous Symmetry Breaking)",
+    "modern_tech": "超高速走査トンネル顕微鏡（STM）による表面原子配列の直接観測、パルスレーザー加熱を用いた結晶成長制御",
+    "summary": "**パターン8：後輩指導・ミニ先生体験の奮闘**。文化祭準備のため、『材料と科学』部主催の実験教室を担任する高橋先輩の下で2年次の佐藤君が「講師役（ミニ先生）」を務める。テーマは『結晶内部で踊る対称性の破れ：スピングラスと強誘電体の自発的分極』。実験室内では、等方的な高温液体から特定の低温固体へと相転移する際、「エネルギー最低点」を選ばずに複数の局所最適解（ドメイン壁）が競合し合う「スピンガラス状態」を模倣したシミュレーションを実演する計画だった。しかし、実機である超高速走査トンネル顕微鏡（STM）のプローブ先端位置制御でトラブルが発生し、预期通りの整列パターンが出ない。「これは単なるミスではなく、熱揺らぎが対称性の破れをどう促進するかという物理の本質的な現象かもしれない」と田中先生に指摘下された佐藤君は、急遽「観測者が系に影響を与える（測定問題）」ことを逆手に取り、「乱雑な配列こそが自然の持つ美しさである」事を証明するデモに変更し、生徒たちに見せながら対称性の破れの普遍性について熱く語る奮闘を描きます。",
+    "crossref_queries": [
+      {
+        "label": "Symmetry Breaking in Ferroelectrics (Nature, 1970)",
+        "query": "spontaneous symmetry breaking ferroelectric phase transition Landau theory Ginzburg"
+      },
+      {
+        "label": "Spin Glass and Random Field Models (PRB/PRL, classic papers like Edwards-Anderson or Sherrington-Kirkpatrick context applied to magnets)",
+        "query": "spin glass random field Ising model domain wall frustration free energy landscape"
+      },
+      {
+        "label": "Atomic Scale Observation of Ferroelectric Domains via STM (Nature/Nano, recent work e.g., by Felser or similar groups on BaTiO3 surfaces)",
+        "query": "scanning tunneling microscope ferroelectric domain wall atomic resolution polarization pattern surface reconstruction"
+      }
+    ]
+  },
+  {
+    "id": "ep146-quantum-lidar-spatial-temporal-interferometry-navigation",
+    "episode_num": 146,
+    "title": "時空に刻む光の紋様――量子LiDARと空間干渉計によるナビゲーション",
+    "faculty": "情報理工学部・応用物理学コース（教授：山本先生、准教授：佐藤先生）",
+    "protagonist": "物理工学科3年生・星野 涼馬（ほしの りょうま）",
+    "mentor": "「光の回折限界を超えて位置を測ろう」という夢を抱く応用光学研究室所属の上級生・神谷先生",
+    "theme": "量子力学と情報工学、特に『空間干渉計（Spatial Interferometry）』を用いた高精度距離測定技術。単なるレーザー測量ではなく、『相関光子対（エンタングルドフォトンペア）』を利用することで、散乱光や屈折率の影響を受けにくい超長距離・暗視下での位置特定を目指す科学物語です。",
+    "modern_tech": "量子もつれ光源を用いた『ダウンコンバージョン型単一光子検出器（SPADアレイ）』『時間相関単一光子計数法（TCSPC）による高精度距離測定』",
+    "summary": "文化祭の模擬実験「無人自律ドローン配送システム」において、神谷教授が提唱する次世代測量技術『量子LiDAR』の実証実験に失敗した事件。通常のリチウムイオンレーザーでは霧や雨の影響で計測精度が低下し、校内倉庫から屋上までの移動経路を誤認識して衝突事故を起こしてしまうのだ。「光の回折限界」による物理的な制約に対し、「光子のもつれ（エンタングルメント）」という量子力学的性質を利用すれば、散乱した光子同士でも相関関係を保ちながら位置情報を復元できるはずだと神谷教授は説く。しかし、既存の研究論文が「真空中でのみ成立する」という条件を課しているため、大気中のノイズ下で動作させるのは不可能視されていた。星野涼馬とチームは、「都市部の街灯や窓ガラスからの反射光（バックグラウンド雑音）」という最大の敵に立ち向かうことになる。彼らは「時間分解能1ピコ秒以下の高速光子計数器」を自作し、散乱した一対のエンタングルドフォトンが持つ『相関統計分布』からノイズ成分を取り除くアルゴリズムを開発する過程で、「古典的な光測定」とは異なる非局所性の美しさを実感させられる。最終的に、文化祭当日に豪雨の中でも屋上と倉庫の位置関係を正確に見極め、無人ドローンが安全に荷物を運ぶ姿を描き出す。",
+    "crossref_queries": [
+      {
+        "label": "Quantum LiDAR Fundamentals (Nature Physics)",
+        "query": "quantum lidar entangled photons ranging resolution noise suppression"
+      },
+      {
+        "label": "Ghost Imaging Technique (Science/PRX)",
+        "query": "ghost imaging spatial correlations image reconstruction without direct illumination target"
+      }
+    ]
   }
 ]
